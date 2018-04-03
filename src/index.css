@@ -3,3 +3,17 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+@font-face {
+  font-family: 'JennaSue';
+  src: url('./assets/fonts/JennaSue.ttf');
+}
+
+/*FONTS*/
+.font-jennasue {
+	font-family: 'JennaSue';
+}
+
+.font-montserrat {
+	font-family: 'Montserrat', sans-serif;
+}
