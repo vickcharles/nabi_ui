@@ -6,5 +6,5 @@ body {
 
 @font-face {
   font-family: 'JennaSue';
-  src: url('../assets/fonts/JennaSue.ttf');
+  src: url('./assets/fonts/JennaSue.ttf');
 }
