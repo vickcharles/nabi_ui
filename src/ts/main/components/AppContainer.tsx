@@ -5,7 +5,7 @@ class AppContainer extends React.Component {
     return (
       <>
         <header>
-          <h1 className="text-center">Nabi Music</h1>
+          <h1 className="text-center font-montserrat text-bold">Nabi Music</h1>
         </header>
       </>
     );

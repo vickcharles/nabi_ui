@@ -9,13 +9,18 @@ body {
   src: url('../fonts/JennaSue.ttf');
 }
 
-/*FONTS*/
+/*FONT FAMILY*/
 .font-jennasue {
 	font-family: 'JennaSue';
 }
 
 .font-montserrat {
 	font-family: 'Montserrat', sans-serif;
+}
+
+/*FONT WEIGHT*/
+.text-bold {
+	font-weight: 600;
 }
 
 /*TEXT ALIGN*/
