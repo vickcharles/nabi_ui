@@ -1,12 +1,11 @@
 import * as React from 'react';
+import Header from './Header';
 
 class AppContainer extends React.Component {
   render() {
     return (
       <>
-        <header>
-          <h1 className="text-center font-montserrat text-extrabold">Nabi Music</h1>
-        </header>
+        <Header/>
       </>
     );
   }
