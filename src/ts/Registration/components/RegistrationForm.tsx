@@ -67,14 +67,13 @@ const RegistrationForm = () => {
           <FormControlLabel value="parent" control={<Radio />} label="For my child" />
         </RadioGroup>
       </FormControl>
-
-      // TODO: ADD SELECT FIELD 
     </form>
   );
 };
 
 export default RegistrationForm;
 
+// TODO: ADD SELECT FIELD 
 /* 
 TODO: ADD PROPTYPES 
 RegistrationForm.propTypes = {
