@@ -19,7 +19,11 @@ body {
 }
 
 /*FONT WEIGHT*/
-.text-bold {
+.text-extrabold {
+	font-weight: 800;
+}
+
+.text-mediumbold {
 	font-weight: 600;
 }
 
