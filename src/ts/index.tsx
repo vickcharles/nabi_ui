@@ -1,8 +1,8 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import AppContainer from './AppContainer';
-import registerServiceWorker from './registerServiceWorker';
-import './index.css';
+import AppContainer from './main/components/AppContainer';
+import registerServiceWorker from '../registerServiceWorker';
+import '../assets/css/index.css';
 
 ReactDOM.render(
   <AppContainer />,

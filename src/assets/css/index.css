@@ -6,7 +6,7 @@ body {
 
 @font-face {
   font-family: 'JennaSue';
-  src: url('./assets/fonts/JennaSue.ttf');
+  src: url('../fonts/JennaSue.ttf');
 }
 
 /*FONTS*/
@@ -16,4 +16,9 @@ body {
 
 .font-montserrat {
 	font-family: 'Montserrat', sans-serif;
+}
+
+/*TEXT ALIGN*/
+.text-center {
+	text-align: center;
 }
