@@ -3,7 +3,7 @@ import * as React from 'react';
 const Header = () => {
     return (
         <header>
-            <h1 className="text-center font-montserrat text-extrabold">Nabi Music</h1>
+            <h1 className="nabi-text-center nabi-font-montserrat nabi-text-extrabold">Nabi Music</h1>
         </header>
     );
 };
