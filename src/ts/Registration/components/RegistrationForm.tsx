@@ -96,11 +96,3 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
 export default withStyles(styles)<Props>(RegistrationForm);
 
 // TODO: ADD SELECT FIELD 
-/* 
-TODO: ADD PROPTYPES 
-RegistrationForm.propTypes = {
-  classes : PropTypes.object.isRequired,
-  handleChange: PropTypes.func.isRequired,
-  selectedRole: PropTypes.string.isRequired,
-  onSave: PropTypes.func.isRequired
-} */
