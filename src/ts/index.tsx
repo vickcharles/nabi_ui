@@ -16,6 +16,39 @@ const theme = createMuiTheme({
         color: '#717a8a',
         fontWeight: 500
       }
+    },
+    MuiInput: {
+      focused: {
+        border: '2px solid #06c3e1 !important',
+        borderRadius: '5px',
+      },
+      input : {
+        '&::placeholder': {
+          color: '#717a8a !important'
+        },
+        background: '#f3f6f9',
+        color: '#717a8a !important',
+        borderRadius: '5px',
+        padding: '17px 40px'
+      },
+      root: {
+        border: '2px solid #ebeef1 !important',
+        borderRadius: '5px'
+      },
+      underline: {
+        '&:after': {
+          backgroundColor: 'transparent !important'
+        },
+        '&:before': {
+          backgroundColor: 'transparent !important'
+        },
+        backgroundColor: 'transparent !important'
+      }
+    },
+    MuiTypography : {
+      root: {
+        color: '#717a8a !important'
+      }
     }
   }
 });

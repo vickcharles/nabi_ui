@@ -44,7 +44,7 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
       <TextField
         required={true}
         id="firstName"
-        label="First Name"
+        placeholder="First Name"
         margin="normal"
         name="firstName"
         className={classes.formFields}
@@ -53,7 +53,7 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
       <TextField
         required={true}
         id="lastName"
-        label="Last Name"
+        placeholder="Last Name"
         margin="normal"
         name="lastName"
         className={classes.formFields}
@@ -62,7 +62,7 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
       <TextField
         required={true}
         id="zipCode"
-        label="ZIP Code"
+        placeholder="ZIP Code"
         margin="normal"
         name="zipCode"
         className={classes.formFields}
@@ -71,7 +71,7 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
       <TextField
         required={true}
         id="email"
-        label="Email"
+        placeholder="Email"
         margin="normal"
         name="email"
         className={classes.formFields}
@@ -80,13 +80,13 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
       <TextField
         required={true}
         id="password"
-        label="Password"
+        placeholder="Password"
         margin="normal"
         name="password"
         className={classes.formFields}
       />
 
-      <FormControl component="fieldset" required={true}>
+      <FormControl component="fieldset" required={true} className={classes.formFields}>
         <FormLabel component="legend">Are the lessons for you or for your child?</FormLabel>
         <RadioGroup
           aria-label="role"
@@ -97,7 +97,7 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
         </RadioGroup>
       </FormControl>
       
-      <FormControl>
+      <FormControl className={classes.formFields}>
           <InputLabel htmlFor="hear-about-us">How did you hear about us?</InputLabel>
           <Select
             value=""
