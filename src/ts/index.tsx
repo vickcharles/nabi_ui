@@ -9,10 +9,6 @@ import { MuiThemeProvider } from 'material-ui/styles';
 const theme = createMuiTheme({
   typography: {
     fontFamily: '\'Montserrat\', sans-serif !important',
-    body1: {
-      color: '#717A8A',
-      backgroundColor: '#f0f3f6'
-    }
   }
 });
 
