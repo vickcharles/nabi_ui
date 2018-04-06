@@ -3,6 +3,11 @@
   src: url('../fonts/JennaSue.ttf');
 }
 
+/*BACKGROUND COLOR*/
+.nabi-background-color {
+  background-color: #f0f3f6
+}
+
 /*FONT FAMILY*/
 .nabi-font-jennasue {
 	font-family: 'JennaSue';
@@ -31,7 +36,12 @@
 }
 
 /****CUSTOM ELEMENTS****/
+/*Container*/
+.nabi-container {
+  padding: 20px;
+}
 
+/*Page Title*/
 .nabi-page-title {
   color: #06c3e1 !important;
   text-transform: uppercase;
@@ -39,4 +49,22 @@
   margin-top: 20px !important;
   font-size: 20px !important;
   font-weight: 500 !important;
+}
+
+/* iPads (landscape) ----------- */
+@media only screen  and (min-width : 768px) {
+  /****CUSTOM ELEMENTS****/
+  /*Container*/
+  .nabi-container {
+    width: 690px;
+    margin: 0 auto;
+  }
+}
+
+/* Small laptops ----------- */
+@media only screen  and (min-width : 1024px) {
+  /***** HOME *****/
+  .nabi-container {
+    width: 900px;
+  }
 }

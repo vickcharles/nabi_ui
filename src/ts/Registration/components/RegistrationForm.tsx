@@ -25,7 +25,11 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
   const { classes } = props;
   
   return (
-    <form className="nabi-general-form nabi-margin-top-medium" noValidate={true} autoComplete="off">
+    <form 
+      className="nabi-general-form nabi-margin-top-medium nabi-background-color" 
+      noValidate={true} 
+      autoComplete="off"
+    >
       <FormControl component="fieldset" required={true}>
         <FormLabel component="legend">What would you like to do?</FormLabel>
         <RadioGroup
