@@ -84,6 +84,7 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
         margin="normal"
         name="password"
         className={classes.formFields}
+        type="password"
       />
 
       <FormControl component="fieldset" required={true} className={classes.formFields}>

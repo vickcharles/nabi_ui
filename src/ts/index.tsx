@@ -15,6 +15,11 @@ const theme = createMuiTheme({
       root: {
         color: '#717a8a',
         fontWeight: 500
+      },
+      focused: {
+        marginLeft: '20px',
+        marginTop: '0px !important',
+        color: '#06c3e1'
       }
     },
     MuiInput: {
@@ -43,6 +48,13 @@ const theme = createMuiTheme({
           backgroundColor: 'transparent !important'
         },
         backgroundColor: 'transparent !important'
+      }
+    },
+    MuiInputLabel: {
+      root: {
+        zIndex: 10,
+        marginLeft: '20px',
+        marginTop: '12px'
       }
     },
     MuiTypography : {
