@@ -1,12 +1,14 @@
 import * as React from 'react';
 import { FormLabel, FormControl, FormControlLabel } from 'material-ui/Form';
 import Button from 'material-ui/Button';
-import { MenuItem } from 'material-ui/Menu';
+import Divider from 'material-ui/Divider';
 import Input, { InputLabel } from 'material-ui/Input';
+import { MenuItem } from 'material-ui/Menu';
 import Radio, { RadioGroup } from 'material-ui/Radio';
 import Select from 'material-ui/Select';
 import TextField from 'material-ui/TextField';
 import { Theme, withStyles, WithStyles } from 'material-ui/styles';
+import Typography from 'material-ui/Typography/Typography';
 
 const styles = (theme: Theme) => ({
     formFields: {
@@ -41,6 +43,12 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
           <FormControlLabel value="instructor" control={<Radio />} label="Find teaching jobs" />
         </RadioGroup>
       </FormControl>
+
+      <Divider className="nabi-margin-top-small"/>
+
+      <Typography className="nabi-margin-top-small" variant="body2">
+        Register as a student      
+      </Typography>
 
       <TextField
         required={true}
@@ -87,17 +95,18 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
         className={classes.formFields}
         type="password"
       />
-
-      <FormControl component="fieldset" required={true} className={classes.formFields}>
-        <FormLabel component="legend">Are the lessons for you or for your child?</FormLabel>
-        <RadioGroup
-          aria-label="role"
-          name="role"
-        >
-          <FormControlLabel value="student" control={<Radio />} label="For me" />
-          <FormControlLabel value="parent" control={<Radio />} label="For my child" />
-        </RadioGroup>
-      </FormControl>
+      <div className="nabi-margin-top-small">
+        <FormControl component="fieldset" required={true} className={classes.formFields}>
+          <FormLabel component="legend">Are the lessons for you or for your child?</FormLabel>
+          <RadioGroup
+            aria-label="role"
+            name="role"
+          >
+            <FormControlLabel value="student" control={<Radio />} label="For me" />
+            <FormControlLabel value="parent" control={<Radio />} label="For my child" />
+          </RadioGroup>
+        </FormControl>
+      </div>
       
       <FormControl className={classes.formFields}>
           <InputLabel htmlFor="hear-about-us">How did you hear about us?</InputLabel>

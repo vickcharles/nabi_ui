@@ -8,9 +8,16 @@ import { MuiThemeProvider } from 'material-ui/styles';
 
 const theme = createMuiTheme({
   overrides: {
+    MuiDivider: {
+      root: {
+        height: '2px',
+        backgroundColor: '#ebeef1'
+      }
+    },
     MuiFormLabel : {
       root: {
         color: '#717a8a',
+        fontSize: '14px',
         fontWeight: 500
       },
       focused: {
