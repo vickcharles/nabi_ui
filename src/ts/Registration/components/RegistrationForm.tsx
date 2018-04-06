@@ -8,7 +8,7 @@ import TextField from 'material-ui/TextField';
 import { Theme, withStyles, WithStyles } from 'material-ui/styles';
 
 const styles = (theme: Theme) => ({
-    textField: {
+    formFields: {
       marginLeft: theme.spacing.unit,
       marginRight: theme.spacing.unit,
       width: '100%'
@@ -19,7 +19,7 @@ interface Props {
 
 }
 
-type PropsWithStyles = Props & WithStyles<'textField'>;
+type PropsWithStyles = Props & WithStyles<'formFields'>;
 
 const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
   const { classes } = props;
@@ -43,7 +43,7 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
         label="First Name"
         margin="normal"
         name="firstName"
-        className={classes.textField}
+        className={classes.formFields}
       />
 
       <TextField
@@ -52,7 +52,7 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
         label="Last Name"
         margin="normal"
         name="lastName"
-        className={classes.textField}
+        className={classes.formFields}
       />
 
       <TextField
@@ -61,7 +61,7 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
         label="ZIP Code"
         margin="normal"
         name="zipCode"
-        className={classes.textField}
+        className={classes.formFields}
       />
 
       <TextField
@@ -70,7 +70,7 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
         label="Email"
         margin="normal"
         name="email"
-        className={classes.textField}
+        className={classes.formFields}
       />
 
       <TextField
@@ -79,7 +79,7 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
         label="Password"
         margin="normal"
         name="password"
-        className={classes.textField}
+        className={classes.formFields}
       />
 
       <FormControl component="fieldset" required={true}>
@@ -94,11 +94,11 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
       </FormControl>
       
       <FormControl>
-          <InputLabel htmlFor="age-helper">How did you hear about us?</InputLabel>
+          <InputLabel htmlFor="hear-about-us">How did you hear about us?</InputLabel>
           <Select
             value=""
-            input={<Input name="age" id="age-helper" />}
-            className={classes.textField}
+            input={<Input name="hear-about-us" id="hear-about-us" />}
+            className={classes.formFields}
           >
             <MenuItem value="google">Google</MenuItem>
             <MenuItem value="facebook">Facebook</MenuItem>
@@ -114,5 +114,3 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
 };
 
 export default withStyles(styles)<Props>(RegistrationForm);
-
-// TODO: ADD SELECT FIELD 
