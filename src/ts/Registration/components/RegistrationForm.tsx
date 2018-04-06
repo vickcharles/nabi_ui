@@ -1,6 +1,9 @@
 import * as React from 'react';
 import { FormLabel, FormControl, FormControlLabel } from 'material-ui/Form';
+import { MenuItem } from 'material-ui/Menu';
+import Input, { InputLabel } from 'material-ui/Input';
 import Radio, { RadioGroup } from 'material-ui/Radio';
+import Select from 'material-ui/Select';
 import TextField from 'material-ui/TextField';
 import { Theme, withStyles, WithStyles } from 'material-ui/styles';
 
@@ -89,6 +92,23 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
           <FormControlLabel value="parent" control={<Radio />} label="For my child" />
         </RadioGroup>
       </FormControl>
+      
+      <FormControl>
+          <InputLabel htmlFor="age-helper">How did you hear about us?</InputLabel>
+          <Select
+            value=""
+            input={<Input name="age" id="age-helper" />}
+            className={classes.textField}
+          >
+            <MenuItem value="google">Google</MenuItem>
+            <MenuItem value="facebook">Facebook</MenuItem>
+            <MenuItem value="craigslist">Craigslist</MenuItem>
+            <MenuItem value="printAds">Print Ads</MenuItem>
+            <MenuItem value="wordofmouth">Word of Mouth</MenuItem>
+            <MenuItem value="studentReferral">Student Referral</MenuItem>
+            <MenuItem value="other">Other</MenuItem>
+          </Select>
+        </FormControl>
     </form>
   );
 };
