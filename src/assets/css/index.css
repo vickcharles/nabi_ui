@@ -12,6 +12,10 @@ body {
   background-color: #f0f3f6;
 }
 
+.nabi-background-white {
+  background-color: #fff;
+}
+
 /*FONT FAMILY*/
 .nabi-font-jennasue {
 	font-family: 'JennaSue';
@@ -53,6 +57,11 @@ body {
   margin-top: 20px !important;
   font-size: 20px !important;
   font-weight: 500 !important;
+}
+
+/*Section*/
+.nabi-section {
+  padding: 2em;
 }
 
 /* iPads (landscape) ----------- */

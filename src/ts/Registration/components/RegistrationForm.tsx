@@ -26,7 +26,7 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
   
   return (
     <form 
-      className="nabi-general-form nabi-margin-top-medium nabi-background-color" 
+      className="nabi-general-form nabi-margin-top-medium" 
       noValidate={true} 
       autoComplete="off"
     >

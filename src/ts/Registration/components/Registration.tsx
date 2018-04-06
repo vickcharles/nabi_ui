@@ -8,7 +8,9 @@ const Registration = () => {
       <Typography className="nabi-page-title">
         REGISTRATION
       </Typography>
-      <RegistrationForm/>
+      <div className="nabi-background-white nabi-section ">
+        <RegistrationForm/>
+      </div>
     </div>
   );
 };
