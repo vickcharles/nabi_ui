@@ -7,9 +7,6 @@ import createMuiTheme from 'material-ui/styles/createMuiTheme';
 import { MuiThemeProvider } from 'material-ui/styles';
 
 const theme = createMuiTheme({
-  typography: {
-    fontFamily: '\'Montserrat\', sans-serif !important',
-  },
   overrides: {
     MuiFormLabel : {
       root: {
@@ -17,9 +14,17 @@ const theme = createMuiTheme({
         fontWeight: 500
       },
       focused: {
-        marginLeft: '20px',
         marginTop: '0px !important',
         color: '#06c3e1'
+      }
+    },
+    MuiButton: {
+      raised: {
+        backgroundColor: '#06c3e1 !important',
+        borderRadius: '3px',
+        boxShadow: 'inset 0 -3px 0 rgba(0,0,0,.1)',
+        fontWeight: 600,
+        padding: '18px 40px'
       }
     },
     MuiInput: {
@@ -62,6 +67,9 @@ const theme = createMuiTheme({
         color: '#717a8a !important'
       }
     }
+  },
+  typography: {
+    fontFamily: '\'Montserrat\', sans-serif !important',
   }
 });
 

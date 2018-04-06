@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { FormLabel, FormControl, FormControlLabel } from 'material-ui/Form';
+import Button from 'material-ui/Button';
 import { MenuItem } from 'material-ui/Menu';
 import Input, { InputLabel } from 'material-ui/Input';
 import Radio, { RadioGroup } from 'material-ui/Radio';
@@ -114,6 +115,11 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
             <MenuItem value="other">Other</MenuItem>
           </Select>
         </FormControl>
+        <div className="nabi-text-center nabi-margin-top-large">
+          <Button variant="raised" color="primary">
+              Submit
+          </Button>
+        </div>
     </form>
   );
 };

@@ -43,6 +43,36 @@ body {
 	text-align: center;
 }
 
+/****** MARGIN ******/
+.nabi-margin-small {
+  margin: 20px
+}
+
+.nabi-margin-medium {
+  margin: 30px
+}
+
+.nabi-margin-large {
+  margin: 40px
+}
+
+.nabi-margin-bottom-large {
+  margin-bottom: 40px !important;
+}
+
+.nabi-margin-top-small {
+  margin-top: 20px !important;
+}
+
+.nabi-margin-top-medium {
+  margin-top: 30px !important;
+}
+
+.nabi-margin-top-large {
+  margin-top: 40px !important;
+}
+
+
 /****CUSTOM ELEMENTS****/
 /*Container*/
 .nabi-container {
