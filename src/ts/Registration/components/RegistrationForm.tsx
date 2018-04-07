@@ -12,8 +12,6 @@ import Typography from 'material-ui/Typography/Typography';
 
 const styles = (theme: Theme) => ({
     formFields: {
-      marginLeft: theme.spacing.unit,
-      marginRight: theme.spacing.unit,
       width: '100%'
     }
 });
@@ -39,7 +37,7 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
         <RadioGroup
           name="role"
           onChange={handleChange}
-          value={selectedRole}
+          value={(selectedRole !== 'instructor') ? 'student' : 'instructor'}
         >
           <FormControlLabel value="student" control={<Radio />} label="Find a music instructor" />
           <FormControlLabel value="instructor" control={<Radio />} label="Find teaching jobs" />
@@ -49,7 +47,9 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
       <Divider className="nabi-margin-top-small"/>
 
       <Typography className="nabi-margin-top-small" variant="body2">
-        Register as a student      
+        {(selectedRole === 'student') ?  'Register as a student' : 
+        (selectedRole === 'parent') ? 'Register as a parent' :
+        'Register as an instructor'}  
       </Typography>
 
       <TextField
@@ -102,19 +102,23 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
         required={true}
         type="password"
       />
-      <div className="nabi-margin-top-small">
-        <FormControl className={classes.formFields} component="fieldset" required={true}>
-          <FormLabel component="legend">Are the lessons for you or for your child?</FormLabel>
-          <RadioGroup
-            name="role"
-            onChange={handleChange}
-            value={selectedRole}
-          >
-            <FormControlLabel control={<Radio />} label="For me" value="student" />
-            <FormControlLabel control={<Radio />} label="For my child" value="parent" />
-          </RadioGroup>
-        </FormControl>
-      </div>
+      {
+        (selectedRole !== 'instructor') ?
+          <div className="nabi-margin-top-small">
+            <FormControl className={classes.formFields} component="fieldset" required={true}>
+              <FormLabel component="legend">Are the lessons for you or for your child?</FormLabel>
+              <RadioGroup
+                name="role"
+                onChange={handleChange}
+                value={selectedRole}
+              >
+                <FormControlLabel control={<Radio />} label="For me" value="student" />
+                <FormControlLabel control={<Radio />} label="For my child" value="parent" />
+              </RadioGroup>
+            </FormControl>
+          </div>
+      : ''
+    }
       
       <FormControl className={classes.formFields}>
           <InputLabel htmlFor="hearAboutUs">How did you hear about us?</InputLabel>
