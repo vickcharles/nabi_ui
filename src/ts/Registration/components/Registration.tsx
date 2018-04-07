@@ -1,19 +1,10 @@
 import * as React from 'react';
 import Typography from 'material-ui/Typography';
 import RegistrationForm from './RegistrationForm';
+import { RegistrationState } from '../model';
 
 interface RegistrationProps {
 
-}
-
-interface RegistrationState {
-  firstName: string;
-  lastName: string;
-  email: string;
-  password: string;
-  zipCode: string;
-  role: string;
-  hearAboutUs: string;
 }
 
 class Registration extends React.Component<RegistrationProps, RegistrationState> {
@@ -47,7 +38,8 @@ class Registration extends React.Component<RegistrationProps, RegistrationState>
 
   public handleSubmit(event: React.SyntheticEvent<HTMLInputElement>): void {
     event.preventDefault();
-    const userValues = {
+    
+    const userValues: RegistrationState = {
       firstName: this.state.firstName,
       lastName: this.state.lastName,
       email: this.state.email,
@@ -56,6 +48,7 @@ class Registration extends React.Component<RegistrationProps, RegistrationState>
       role: this.state.role,
       hearAboutUs: this.state.hearAboutUs
     };
+
     console.log(userValues);
   }
 
@@ -65,6 +58,7 @@ class Registration extends React.Component<RegistrationProps, RegistrationState>
         <Typography variant="title" className="nabi-margin-top-medium nabi-margin-bottom-medium">
           REGISTRATION
         </Typography>
+        
         <div className="nabi-background-white nabi-section ">
           <RegistrationForm
             handleChange={this.handleChange}
