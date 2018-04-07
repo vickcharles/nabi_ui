@@ -8,6 +8,15 @@ import { MuiThemeProvider } from 'material-ui/styles';
 
 const theme = createMuiTheme({
   overrides: {
+    MuiButton: {
+      raised: {
+        backgroundColor: '#06c3e1 !important',
+        borderRadius: '3px',
+        boxShadow: 'inset 0 -3px 0 rgba(0,0,0,.1)',
+        fontWeight: 600,
+        padding: '18px 40px'
+      }
+    },
     MuiDivider: {
       root: {
         height: '2px',
@@ -23,15 +32,6 @@ const theme = createMuiTheme({
       focused: {
         marginTop: '0px !important',
         color: '#06c3e1'
-      }
-    },
-    MuiButton: {
-      raised: {
-        backgroundColor: '#06c3e1 !important',
-        borderRadius: '3px',
-        boxShadow: 'inset 0 -3px 0 rgba(0,0,0,.1)',
-        fontWeight: 600,
-        padding: '18px 40px'
       }
     },
     MuiInput: {
@@ -67,6 +67,11 @@ const theme = createMuiTheme({
         zIndex: 10,
         marginLeft: '20px',
         marginTop: '12px'
+      }
+    },
+    MuiRadio: {
+      checked: {
+        color: '#06c3e1 !important'
       }
     },
     MuiTypography : {
