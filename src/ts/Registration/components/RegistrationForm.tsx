@@ -122,7 +122,7 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
       : ''
     }
       
-      <FormControl className={classes.formFields}>
+      <FormControl className={classes.formFields} required={true}>
         <InputLabel htmlFor="hearAboutUs">How did you hear about us?</InputLabel>
         <Select
           className={classes.formFields}
