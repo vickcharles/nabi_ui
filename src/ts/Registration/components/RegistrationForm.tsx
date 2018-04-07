@@ -18,13 +18,15 @@ const styles = (theme: Theme) => ({
 
 interface RegistrationFormProps {
   handleChange: (event: React.FormEvent<{}>) => void;
+  handleSubmit: (event: React.FormEvent<{}>) => void;
+  hearAboutUs: string;
   selectedRole: string;
 }
 
 type PropsWithStyles = RegistrationFormProps & WithStyles<'formFields'>;
 
 const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
-  const { classes, handleChange, selectedRole } = props;
+  const { classes, handleChange, handleSubmit, hearAboutUs, selectedRole } = props;
   
   return (
     <form 
@@ -32,7 +34,7 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
       noValidate={true} 
       autoComplete="off"
     >
-      {/* <FormControl component="fieldset" required={true}> */}
+      <FormControl component="fieldset" required={true}>
         <FormLabel component="legend">What would you like to do?</FormLabel>
         <RadioGroup
           name="role"
@@ -42,7 +44,7 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
           <FormControlLabel value="student" control={<Radio />} label="Find a music instructor" />
           <FormControlLabel value="instructor" control={<Radio />} label="Find teaching jobs" />
         </RadioGroup>
-      {/* </FormControl> */}
+      </FormControl>
 
       <Divider className="nabi-margin-top-small"/>
 
@@ -121,26 +123,28 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
     }
       
       <FormControl className={classes.formFields}>
-          <InputLabel htmlFor="hearAboutUs">How did you hear about us?</InputLabel>
-          <Select
-            value=""
-            input={<Input id="hearAboutUs" name="hearAboutUs" />}
-            className={classes.formFields}
-          >
-            <MenuItem value="google">Google</MenuItem>
-            <MenuItem value="facebook">Facebook</MenuItem>
-            <MenuItem value="craigslist">Craigslist</MenuItem>
-            <MenuItem value="printAds">Print Ads</MenuItem>
-            <MenuItem value="wordofmouth">Word of Mouth</MenuItem>
-            <MenuItem value="studentReferral">Student Referral</MenuItem>
-            <MenuItem value="other">Other</MenuItem>
-          </Select>
-        </FormControl>
-        <div className="nabi-text-center nabi-margin-top-large">
-          <Button color="primary" variant="raised">
-              Submit
-          </Button>
-        </div>
+        <InputLabel htmlFor="hearAboutUs">How did you hear about us?</InputLabel>
+        <Select
+          className={classes.formFields}
+          input={<Input id="hearAboutUs" name="hearAboutUs" />}
+          onChange={handleChange}
+          value={hearAboutUs}
+        >
+          <MenuItem value="google">Google</MenuItem>
+          <MenuItem value="facebook">Facebook</MenuItem>
+          <MenuItem value="craigslist">Craigslist</MenuItem>
+          <MenuItem value="printAds">Print Ads</MenuItem>
+          <MenuItem value="wordofmouth">Word of Mouth</MenuItem>
+          <MenuItem value="studentReferral">Student Referral</MenuItem>
+          <MenuItem value="other">Other</MenuItem>
+        </Select>
+      </FormControl>
+
+      <div className="nabi-text-center nabi-margin-top-large">
+        <Button color="primary" onClick={handleSubmit} variant="raised">
+            Submit
+        </Button>
+      </div>
     </form>
   );
 };
