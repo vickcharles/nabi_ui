@@ -46,6 +46,24 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
         </RadioGroup>
       </FormControl>
 
+      {
+        (selectedRole !== 'instructor') ?
+          <div className="nabi-margin-top-small">
+            <FormControl className={classes.formFields} component="fieldset" required={true}>
+              <FormLabel component="legend">Are the lessons for you or for your child?</FormLabel>
+              <RadioGroup
+                name="role"
+                onChange={handleChange}
+                value={selectedRole}
+              >
+                <FormControlLabel control={<Radio />} label="For me" value="student" />
+                <FormControlLabel control={<Radio />} label="For my child" value="parent" />
+              </RadioGroup>
+            </FormControl>
+          </div>
+        : ''
+      }
+      
       <Divider className="nabi-margin-top-small"/>
 
       <Typography className="nabi-margin-top-small" variant="body2">
@@ -104,23 +122,6 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
         required={true}
         type="password"
       />
-      {
-        (selectedRole !== 'instructor') ?
-          <div className="nabi-margin-top-small">
-            <FormControl className={classes.formFields} component="fieldset" required={true}>
-              <FormLabel component="legend">Are the lessons for you or for your child?</FormLabel>
-              <RadioGroup
-                name="role"
-                onChange={handleChange}
-                value={selectedRole}
-              >
-                <FormControlLabel control={<Radio />} label="For me" value="student" />
-                <FormControlLabel control={<Radio />} label="For my child" value="parent" />
-              </RadioGroup>
-            </FormControl>
-          </div>
-      : ''
-    }
       
       <FormControl className={classes.formFields} required={true}>
         <InputLabel htmlFor="hearAboutUs">How did you hear about us?</InputLabel>
