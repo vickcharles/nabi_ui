@@ -67,6 +67,9 @@ const theme = createMuiTheme({
         zIndex: 10,
         marginLeft: '20px',
         marginTop: '12px'
+      },
+      shrink: {
+        marginTop: '0px'
       }
     },
     MuiRadio: {
