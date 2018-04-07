@@ -29,6 +29,18 @@ class Registration extends React.Component<RegistrationProps, RegistrationState>
       role: 'student',
       hearAboutUs: ''
     };
+
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  public handleChange(event: React.SyntheticEvent<HTMLInputElement>): void {
+    const target = event.currentTarget;
+    const value = target.value;
+    const name = target.name;
+    this.setState({
+      ...this.state,
+      [name]: value
+    });
   }
 
   public render (): JSX.Element {
@@ -38,7 +50,10 @@ class Registration extends React.Component<RegistrationProps, RegistrationState>
           REGISTRATION
         </Typography>
         <div className="nabi-background-white nabi-section ">
-          <RegistrationForm/>
+          <RegistrationForm
+            handleChange={this.handleChange}
+            selectedRole={this.state.role}
+          />
         </div>
       </div>
     );

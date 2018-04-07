@@ -18,14 +18,15 @@ const styles = (theme: Theme) => ({
     }
 });
 
-interface Props {
-
+interface RegistrationFormProps {
+  handleChange: (event: React.FormEvent<{}>) => void;
+  selectedRole: string;
 }
 
-type PropsWithStyles = Props & WithStyles<'formFields'>;
+type PropsWithStyles = RegistrationFormProps & WithStyles<'formFields'>;
 
 const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
-  const { classes } = props;
+  const { classes, handleChange, selectedRole } = props;
   
   return (
     <form 
@@ -33,16 +34,17 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
       noValidate={true} 
       autoComplete="off"
     >
-      <FormControl component="fieldset" required={true}>
+      {/* <FormControl component="fieldset" required={true}> */}
         <FormLabel component="legend">What would you like to do?</FormLabel>
         <RadioGroup
-          aria-label="role"
           name="role"
+          onChange={handleChange}
+          value={selectedRole}
         >
           <FormControlLabel value="student" control={<Radio />} label="Find a music instructor" />
           <FormControlLabel value="instructor" control={<Radio />} label="Find teaching jobs" />
         </RadioGroup>
-      </FormControl>
+      {/* </FormControl> */}
 
       <Divider className="nabi-margin-top-small"/>
 
@@ -51,68 +53,74 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
       </Typography>
 
       <TextField
-        required={true}
+        className={classes.formFields}
         id="firstName"
-        placeholder="First Name"
         margin="normal"
         name="firstName"
-        className={classes.formFields}
+        onChange={handleChange}
+        placeholder="First Name"
+        required={true}
       />
 
       <TextField
-        required={true}
+        className={classes.formFields}
         id="lastName"
-        placeholder="Last Name"
         margin="normal"
         name="lastName"
-        className={classes.formFields}
+        onChange={handleChange}
+        placeholder="Last Name"
+        required={true}
       />
 
       <TextField
-        required={true}
+        className={classes.formFields}
         id="zipCode"
-        placeholder="ZIP Code"
         margin="normal"
         name="zipCode"
-        className={classes.formFields}
+        onChange={handleChange}
+        placeholder="ZIP Code"
+        required={true}
       />
 
       <TextField
-        required={true}
+        className={classes.formFields}
         id="email"
-        placeholder="Email"
         margin="normal"
         name="email"
-        className={classes.formFields}
+        onChange={handleChange}
+        placeholder="Email"
+        required={true}
       />
 
       <TextField
-        required={true}
+        className={classes.formFields}
         id="password"
-        placeholder="Password"
         margin="normal"
         name="password"
-        className={classes.formFields}
+        onChange={handleChange}
+        placeholder="Password"
+        required={true}
         type="password"
       />
       <div className="nabi-margin-top-small">
-        <FormControl component="fieldset" required={true} className={classes.formFields}>
+        <FormControl className={classes.formFields} component="fieldset" required={true}>
           <FormLabel component="legend">Are the lessons for you or for your child?</FormLabel>
           <RadioGroup
-            aria-label="role"
             name="role"
+            onChange={handleChange}
+            value={selectedRole}
           >
-            <FormControlLabel value="student" control={<Radio />} label="For me" />
-            <FormControlLabel value="parent" control={<Radio />} label="For my child" />
+            <FormControlLabel control={<Radio />} label="For me" value="student" />
+            <FormControlLabel control={<Radio />} label="For my child" value="parent" />
           </RadioGroup>
         </FormControl>
       </div>
       
       <FormControl className={classes.formFields}>
-          <InputLabel htmlFor="hear-about-us">How did you hear about us?</InputLabel>
+          <InputLabel htmlFor="hearAboutUs">How did you hear about us?</InputLabel>
           <Select
             value=""
-            input={<Input name="hear-about-us" id="hear-about-us" />}
+            input={<Input id="hearAboutUs" name="hearAboutUs" />}
             className={classes.formFields}
           >
             <MenuItem value="google">Google</MenuItem>
@@ -125,7 +133,7 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
           </Select>
         </FormControl>
         <div className="nabi-text-center nabi-margin-top-large">
-          <Button variant="raised" color="primary">
+          <Button color="primary" variant="raised">
               Submit
           </Button>
         </div>
@@ -133,4 +141,4 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
   );
 };
 
-export default withStyles(styles)<Props>(RegistrationForm);
+export default withStyles(styles)<RegistrationFormProps>(RegistrationForm);
