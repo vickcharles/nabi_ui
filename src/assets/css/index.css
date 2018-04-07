@@ -60,6 +60,10 @@ body {
   margin-bottom: 40px !important;
 }
 
+.nabi-margin-bottom-medium {
+  margin-bottom: 30px !important;
+}
+
 .nabi-margin-top-small {
   margin-top: 20px !important;
 }
@@ -80,20 +84,10 @@ body {
   padding-right: 25px;
 }
 
-/*Page Title*/
-.nabi-page-title {
-  color: #06c3e1 !important;
-  font-size: 20px !important;
-  font-weight: 500 !important;
-  margin-top: 20px !important;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 /*Section*/
 .nabi-section {
   border-radius: 17px;
-  padding: 50px 100px;
+  padding: 25px;
 }
 
 /* iPads (landscape) ----------- */
@@ -105,6 +99,11 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     width: 700px;
+  }
+
+  /*Section*/
+  .nabi-section {
+    padding: 50px 100px;
   }
 }
 

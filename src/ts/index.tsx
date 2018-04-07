@@ -80,6 +80,14 @@ const theme = createMuiTheme({
     MuiTypography : {
       root: {
         color: '#717a8a !important'
+      },
+      title: {
+        color: '#06c3e1 !important',
+        fontSize: '24px !important',
+        fontWeight: 500,
+        marginTop: '20px !important',
+        textAlign: 'center',
+        textTransform: 'uppercase'
       }
     }
   },

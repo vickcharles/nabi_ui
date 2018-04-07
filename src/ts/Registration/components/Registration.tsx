@@ -62,7 +62,7 @@ class Registration extends React.Component<RegistrationProps, RegistrationState>
   public render (): JSX.Element {
     return (
       <div className="nabi-container">
-        <Typography className="nabi-page-title">
+        <Typography variant="title" className="nabi-margin-top-medium nabi-margin-bottom-medium">
           REGISTRATION
         </Typography>
         <div className="nabi-background-white nabi-section ">
