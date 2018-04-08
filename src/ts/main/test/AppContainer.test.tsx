@@ -1,9 +1,20 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
 import AppContainer from '../components/AppContainer';
 import { MemoryRouter } from 'react-router-dom';
+import { shallow } from 'enzyme';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<MemoryRouter><AppContainer /></MemoryRouter>, div);
+describe('AppContainer', () => {
+  let wrapper: any = null;
+
+  beforeEach(() => {
+    wrapper = shallow(
+      <MemoryRouter>
+        <AppContainer />
+      </MemoryRouter>
+    ).find(AppContainer).dive();
+  });
+
+  it('Renders the component', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
 });
