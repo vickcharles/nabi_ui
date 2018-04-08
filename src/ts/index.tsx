@@ -5,6 +5,7 @@ import registerServiceWorker from '../registerServiceWorker';
 import '../assets/css/index.css';
 import createMuiTheme from 'material-ui/styles/createMuiTheme';
 import { MuiThemeProvider } from 'material-ui/styles';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 const theme = createMuiTheme({
   overrides: {
@@ -97,9 +98,11 @@ const theme = createMuiTheme({
 });
 
 ReactDOM.render(
-  <MuiThemeProvider theme={theme}>
-    <AppContainer />
-  </MuiThemeProvider>,
+  <BrowserRouter>
+    <MuiThemeProvider theme={theme}>
+      <Route path="/" render={() => <AppContainer />} />
+    </MuiThemeProvider>
+  </BrowserRouter>,
   document.getElementById('root') as HTMLElement
 );
 registerServiceWorker();
