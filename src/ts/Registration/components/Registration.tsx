@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Typography from 'material-ui/Typography';
 import RegistrationForm from './RegistrationForm';
-import { RegistrationState } from '../model';
+import { RegistrationState, Role } from '../model';
 
 interface RegistrationProps {
 
@@ -17,7 +17,7 @@ export class Registration extends React.Component<RegistrationProps, Registratio
       email: '',
       password: '',
       zipCode: '',
-      role: 'student',
+      role: Role.student,
       hearAboutUs: ''
     };
 

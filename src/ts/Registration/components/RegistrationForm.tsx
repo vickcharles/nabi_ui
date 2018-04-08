@@ -9,6 +9,7 @@ import Select from 'material-ui/Select';
 import TextField from 'material-ui/TextField';
 import { Theme, withStyles, WithStyles } from 'material-ui/styles';
 import Typography from 'material-ui/Typography/Typography';
+import { Role } from '../model';
 
 const styles = (theme: Theme) => ({
     formFields: {
@@ -39,15 +40,15 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
         <RadioGroup
           name="role"
           onChange={handleChange}
-          value={(selectedRole !== 'instructor') ? 'student' : 'instructor'}
+          value={(selectedRole !== Role.instructor) ? Role.student : Role.instructor}
         >
-          <FormControlLabel value="student" control={<Radio />} label="Find a music instructor" />
-          <FormControlLabel value="instructor" control={<Radio />} label="Find teaching jobs" />
+          <FormControlLabel value={Role.student} control={<Radio />} label="Find a music instructor" />
+          <FormControlLabel value={Role.instructor} control={<Radio />} label="Find teaching jobs" />
         </RadioGroup>
       </FormControl>
 
       {
-        (selectedRole !== 'instructor') ?
+        (selectedRole !== Role.instructor) ?
           <div className="nabi-margin-top-small">
             <FormControl className={classes.formFields} component="fieldset" required={true}>
               <FormLabel component="legend">Are the lessons for you or for your child?</FormLabel>
@@ -56,19 +57,19 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
                 onChange={handleChange}
                 value={selectedRole}
               >
-                <FormControlLabel control={<Radio />} label="For me" value="student" />
-                <FormControlLabel control={<Radio />} label="For my child" value="parent" />
+                <FormControlLabel control={<Radio />} label="For me" value={Role.student} />
+                <FormControlLabel control={<Radio />} label="For my child" value={Role.parent} />
               </RadioGroup>
             </FormControl>
           </div>
         : ''
       }
-      
+
       <Divider className="nabi-margin-top-small"/>
 
       <Typography className="nabi-margin-top-small" variant="body2">
-        {(selectedRole === 'student') ?  'Register as a student' : 
-        (selectedRole === 'parent') ? 'Register as a parent' :
+        {(selectedRole === Role.student) ?  'Register as a student' : 
+        (selectedRole === Role.parent) ? 'Register as a parent' :
         'Register as an instructor'}  
       </Typography>
 
