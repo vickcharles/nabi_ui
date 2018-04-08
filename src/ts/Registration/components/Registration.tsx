@@ -7,7 +7,7 @@ interface RegistrationProps {
 
 }
 
-class Registration extends React.Component<RegistrationProps, RegistrationState> {
+export class Registration extends React.Component<RegistrationProps, RegistrationState> {
   constructor(props: RegistrationProps) {
     super(props);
 
