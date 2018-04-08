@@ -19,8 +19,8 @@ const theme = createMuiTheme({
     },
     MuiDivider: {
       root: {
-        height: '2px',
-        backgroundColor: '#ebeef1'
+        backgroundColor: '#ebeef1',
+        height: '2px'
       }
     },
     MuiFormLabel : {
@@ -30,8 +30,8 @@ const theme = createMuiTheme({
         fontWeight: 500
       },
       focused: {
-        marginTop: '0px !important',
-        color: '#06c3e1'
+        color: '#06c3e1',
+        marginTop: '0px !important'
       }
     },
     MuiInput: {
@@ -44,8 +44,8 @@ const theme = createMuiTheme({
           color: '#717a8a !important'
         },
         background: '#f3f6f9',
-        color: '#717a8a !important',
         borderRadius: '5px',
+        color: '#717a8a !important',
         padding: '17px 40px'
       },
       root: {
@@ -64,9 +64,9 @@ const theme = createMuiTheme({
     },
     MuiInputLabel: {
       root: {
-        zIndex: 10,
         marginLeft: '20px',
-        marginTop: '12px'
+        marginTop: '12px',
+        zIndex: 10
       },
       shrink: {
         marginTop: '0px'

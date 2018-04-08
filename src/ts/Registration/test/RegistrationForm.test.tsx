@@ -2,7 +2,6 @@ import * as React from 'react';
 import RegistrationForm from '../components/RegistrationForm';
 import { mount, shallow } from 'enzyme';
 import { Role } from '../model';
-// import Select from 'material-ui/Select';
 
 describe('RegistrationForm', () => {
   let wrapper: any;
