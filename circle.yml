@@ -1,0 +1,9 @@
+machine:
+  node:
+    version: 8.9.4
+test:
+  override:
+    - npm test -- --coverage
+  post:
+    - npm install -g codeclimate-test-reporter
+    - codeclimate-test-reporter < coverage/lcov.info
