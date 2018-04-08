@@ -11,7 +11,7 @@ describe('AppContainer', () => {
       <MemoryRouter>
         <AppContainer />
       </MemoryRouter>
-    ).find(AppContainer);
+    ).find(AppContainer).dive();
   });
 
   it('Renders the component', () => {
