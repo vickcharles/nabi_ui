@@ -100,7 +100,7 @@
     ],
     "globals": {
       "ts-jest": {
-        "tsConfigFile": "/Users/iamvane/Documents/nabi_ui/tsconfig.test.json"
+        "tsConfigFile": "/tsconfig.test.json"
       }
     }
   },
