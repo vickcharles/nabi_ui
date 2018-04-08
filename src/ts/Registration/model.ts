@@ -4,7 +4,7 @@ export enum Role {
   parent = 'parent'
 }
 
-export interface RegistrationState {
+export interface UserState {
   firstName: string;
   lastName: string;
   email: string;
@@ -13,3 +13,5 @@ export interface RegistrationState {
   role: Role;
   hearAboutUs: string;
 }
+
+export type IState = UserState[];

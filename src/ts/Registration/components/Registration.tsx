@@ -1,13 +1,13 @@
 import * as React from 'react';
 import Typography from 'material-ui/Typography';
 import RegistrationForm from './RegistrationForm';
-import { RegistrationState, Role } from '../model';
+import { UserState, Role } from '../model';
 
 interface RegistrationProps {
 
 }
 
-export class Registration extends React.Component<RegistrationProps, RegistrationState> {
+export class Registration extends React.Component<RegistrationProps, UserState> {
   constructor(props: RegistrationProps) {
     super(props);
 
@@ -39,7 +39,7 @@ export class Registration extends React.Component<RegistrationProps, Registratio
   public handleSubmit(event: React.SyntheticEvent<HTMLInputElement>): void {
     event.preventDefault();
     
-    const userValues: RegistrationState = {
+    const userValues: UserState = {
       firstName: this.state.firstName,
       lastName: this.state.lastName,
       email: this.state.email,
