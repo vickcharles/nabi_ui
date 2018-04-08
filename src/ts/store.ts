@@ -1,4 +1,4 @@
-import { createBrowserHistory, History } from 'history';
+import { History } from 'history';
 import { createStore, applyMiddleware, Store } from 'redux';
 import rootRouter from './reducer';
 import reduxThunk from 'redux-thunk';
