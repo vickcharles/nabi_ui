@@ -57,6 +57,9 @@
     "typescript": "^2.7.2"
   },
   "jest": {
+    "unmockedModulePathPatterns": [
+      "react"
+    ],
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}"
     ],
