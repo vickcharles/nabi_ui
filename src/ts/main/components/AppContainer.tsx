@@ -27,7 +27,6 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
           <Route 
             exact={true} 
             path="/registration" 
-            component={Registration} 
             render={() => <Registration createUser={dispatchCreateUser} />}
           />
         </Switch>
