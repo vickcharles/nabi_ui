@@ -6,14 +6,14 @@ const styles = (theme: Theme) => ({
 
 });
 
-interface RegistrationFormProps {
+interface ProfileBuilderProps {
   handleChange: (event: React.FormEvent<{}>) => void;
   handleSubmit: (event: React.FormEvent<{}>) => void;
   hearAboutUs: string;
   selectedRole: string;
 }
 
-type PropsWithStyles = RegistrationFormProps & WithStyles<'formFields'>;
+type PropsWithStyles = ProfileBuilderProps & WithStyles<''>;
 
 const ProfileBuilder: React.StatelessComponent<PropsWithStyles> = props => {  
   return (
@@ -25,4 +25,4 @@ const ProfileBuilder: React.StatelessComponent<PropsWithStyles> = props => {
   );
 };
 
-export default withStyles(styles)<RegistrationFormProps>(ProfileBuilder);
+export default withStyles(styles)<ProfileBuilderProps>(ProfileBuilder);
