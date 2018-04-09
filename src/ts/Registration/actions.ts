@@ -7,7 +7,7 @@ interface CreateUser extends Action {
 }
 
 // Create user
-export function addEndpoint(user: UserState): CreateUser {
+export function createUser(user: UserState): CreateUser {
   return {
     user,
     type: RegistrationActions.CREATE_USER

@@ -4,7 +4,7 @@ import RegistrationForm from './RegistrationForm';
 import { UserState, Role } from '../model';
 
 interface RegistrationProps {
-
+  createUser: (user: any) => void;
 }
 
 export class Registration extends React.Component<RegistrationProps, UserState> {
@@ -49,7 +49,7 @@ export class Registration extends React.Component<RegistrationProps, UserState> 
       hearAboutUs: this.state.hearAboutUs
     };
 
-    console.log(userValues);
+    this.props.createUser(userValues);
   }
 
   public render (): JSX.Element {

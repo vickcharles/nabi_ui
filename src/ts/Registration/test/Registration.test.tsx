@@ -4,11 +4,14 @@ import { shallow } from 'enzyme';
 
 describe('Registration', () => {
   let wrapper: any;
-  
+  const createUser: () => {} = jest.fn();
+
   beforeEach(() => {
-      wrapper = shallow(
-        <Registration />
-      );
+    wrapper = shallow(
+      <Registration 
+        createUser={createUser}
+      />
+    );
   });
 
   it('Matches snapshot', () => {
