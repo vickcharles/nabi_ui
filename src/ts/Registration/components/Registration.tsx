@@ -2,12 +2,17 @@ import * as React from 'react';
 import Typography from 'material-ui/Typography';
 import RegistrationForm from './RegistrationForm';
 import { UserState, Role } from '../model';
+import { Redirect } from 'react-router-dom';
 
 interface RegistrationProps {
   createUser: (user: UserState) => void;
 }
 
-export class Registration extends React.Component<RegistrationProps, UserState> {
+interface RedirectState {
+  fireRedirect: boolean;
+}
+
+export class Registration extends React.Component<RegistrationProps, UserState & RedirectState> {
   constructor(props: RegistrationProps) {
     super(props);
 
@@ -18,7 +23,8 @@ export class Registration extends React.Component<RegistrationProps, UserState> 
       password: '',
       zipCode: '',
       role: Role.student,
-      hearAboutUs: ''
+      hearAboutUs: '',
+      fireRedirect: false
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -50,8 +56,12 @@ export class Registration extends React.Component<RegistrationProps, UserState> 
       role: this.state.role,
       hearAboutUs: this.state.hearAboutUs
     };
-
-    this.props.createUser(userValues);
+    
+    if (!this.state.fireRedirect) {
+      this.setState({ fireRedirect: true }, () => {
+        this.props.createUser(userValues);
+      });
+    }
   }
 
   public render (): JSX.Element {
@@ -69,6 +79,9 @@ export class Registration extends React.Component<RegistrationProps, UserState> 
             selectedRole={this.state.role}
           />
         </div>
+        {this.state.fireRedirect && (
+          <Redirect to="profile-builder" />
+        )}
       </div>
     );
   }

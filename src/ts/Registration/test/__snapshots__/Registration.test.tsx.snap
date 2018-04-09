@@ -36,6 +36,7 @@ ShallowWrapper {
             selectedRole="student"
           />
         </div>,
+        false,
       ],
       "className": "nabi-container",
     },
@@ -84,6 +85,7 @@ ShallowWrapper {
         },
         "type": "div",
       },
+      false,
     ],
     "type": "div",
   },
@@ -110,6 +112,7 @@ ShallowWrapper {
               selectedRole="student"
             />
           </div>,
+          false,
         ],
         "className": "nabi-container",
       },
@@ -158,6 +161,7 @@ ShallowWrapper {
           },
           "type": "div",
         },
+        false,
       ],
       "type": "div",
     },
