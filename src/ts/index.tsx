@@ -103,11 +103,11 @@ const store = getStore();
 
 ReactDOM.render(
   <Provider store={store}>
-  <BrowserRouter>
-    <MuiThemeProvider theme={theme}>
-      <Route path="/" render={() => <AppContainer />} />
-    </MuiThemeProvider>
-  </BrowserRouter>
+    <BrowserRouter>
+      <MuiThemeProvider theme={theme}>
+        <Route path="/" render={() => <AppContainer />} />
+      </MuiThemeProvider>
+    </BrowserRouter>
   </Provider>,
   document.getElementById('root') as HTMLElement
 );
