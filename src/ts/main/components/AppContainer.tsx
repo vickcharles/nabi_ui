@@ -6,6 +6,7 @@ import Homepage from './Homepage';
 import { createUser, Registration } from '../../Registration';
 import { Route, withRouter, Switch } from 'react-router-dom';
 import { UserState } from '../../Registration/model';
+import { ProfileBuilder } from '../../ProfileBuilder';
 
 export interface AppContainerStateProps {
   dispatch: Dispatch<{}>;
@@ -30,6 +31,7 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
             path="/registration" 
             render={() => <Registration createUser={dispatchCreateUser} />}
           />
+          <Route exact={true} path="/profile-builder" component={ProfileBuilder} />
         </Switch>
       </>
     );
