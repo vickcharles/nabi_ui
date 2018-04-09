@@ -6,6 +6,8 @@ import '../assets/css/index.css';
 import createMuiTheme from 'material-ui/styles/createMuiTheme';
 import { MuiThemeProvider } from 'material-ui/styles';
 import { BrowserRouter, Route } from 'react-router-dom';
+import { getStore } from './store';
+import { Provider } from 'react-redux';
 
 const theme = createMuiTheme({
   overrides: {
@@ -97,12 +99,16 @@ const theme = createMuiTheme({
   }
 });
 
+const store = getStore();
+
 ReactDOM.render(
-  <BrowserRouter>
-    <MuiThemeProvider theme={theme}>
-      <Route path="/" render={() => <AppContainer />} />
-    </MuiThemeProvider>
-  </BrowserRouter>,
+  <Provider store={store}>
+    <BrowserRouter>
+      <MuiThemeProvider theme={theme}>
+        <Route path="/" render={() => <AppContainer />} />
+      </MuiThemeProvider>
+    </BrowserRouter>
+  </Provider>,
   document.getElementById('root') as HTMLElement
 );
 registerServiceWorker();
