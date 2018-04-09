@@ -5,6 +5,7 @@ import Header from './Header';
 import Homepage from './Homepage';
 import { createUser, Registration } from '../../Registration';
 import { Route, withRouter, Switch } from 'react-router-dom';
+import { UserState } from '../../Registration/model';
 
 export interface AppContainerStateProps {
   dispatch: Dispatch<{}>;
@@ -17,7 +18,7 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
     
     const { dispatch } = this.props;
 
-    const dispatchCreateUser: any = (user: any) => dispatch(createUser(user));
+    const dispatchCreateUser: any = (user: UserState) => dispatch(createUser(user));
     
     return (
       <>

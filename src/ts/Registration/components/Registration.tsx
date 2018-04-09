@@ -4,7 +4,7 @@ import RegistrationForm from './RegistrationForm';
 import { UserState, Role } from '../model';
 
 interface RegistrationProps {
-  createUser: (user: any) => void;
+  createUser: (user: UserState) => void;
 }
 
 export class Registration extends React.Component<RegistrationProps, UserState> {
@@ -37,8 +37,10 @@ export class Registration extends React.Component<RegistrationProps, UserState> 
   }
 
   public handleSubmit(event: React.SyntheticEvent<HTMLInputElement>): void {
-    event.preventDefault();
-    
+    if (event) {
+      event.preventDefault();
+    }
+     
     const userValues: UserState = {
       firstName: this.state.firstName,
       lastName: this.state.lastName,

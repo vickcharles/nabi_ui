@@ -1,10 +1,11 @@
 import * as React from 'react';
 import { Registration } from '../';
 import { shallow } from 'enzyme';
+import { UserState } from '../model';
 
 describe('Registration', () => {
   let wrapper: any;
-  const createUser: () => {} = jest.fn();
+  const createUser: (user: UserState) => {} = jest.fn();
 
   beforeEach(() => {
     wrapper = shallow(
@@ -49,7 +50,9 @@ describe('Registration', () => {
     beforeEach(() => {
       wrapper.instance().handleSubmit();
     });
-    // TODO: write test for handleSubmit
-    // once handleSubmit has more functionality
+
+    it('Calls createUser', () => {
+      expect(createUser).toBeCalled();
+    });
   });
 });
