@@ -86,7 +86,16 @@ body {
 /*Section*/
 .nabi-section {
   border-radius: 17px;
-  padding: 25px;
+  padding: 25px 20px;
+}
+
+/*Responsive Hide*/
+.hide-on-mobile {
+	display: none !important;
+}
+
+.hide-on-desktop {
+	display: block !important;
 }
 
 /* iPads (landscape) ----------- */
@@ -102,11 +111,23 @@ body {
 
   /*Section*/
   .nabi-section {
-    padding: 50px 100px;
+    padding: 50px 80px;
   }
 }
 
-/* Small laptops ----------- */
+/* Tablets small laptops ----------- */
+@media (min-width: 960px) { 
+   /****CUSTOM ELEMENTS****/
+   /*Responsive Hide*/
+	.hide-on-mobile {
+		display: block !important;
+	}
+	.hide-on-desktop {
+		display: none !important;
+  }
+}
+
+/* Laptops ----------- */
 @media only screen  and (min-width : 1200px) {
   /***** HOME *****/
   .nabi-container {

@@ -71,7 +71,7 @@ export class Registration extends React.Component<RegistrationProps, UserState &
           REGISTRATION
         </Typography>
         
-        <div className="nabi-background-white nabi-section ">
+        <div className="nabi-background-white nabi-section">
           <RegistrationForm
             handleChange={this.handleChange}
             handleSubmit={this.handleSubmit}

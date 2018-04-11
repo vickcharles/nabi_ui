@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/icons": "^1.0.0-beta.42",
     "@types/react-redux": "^5.0.15",
     "@types/react-router-dom": "^4.2.6",
     "@types/react-router-redux": "^5.0.13",

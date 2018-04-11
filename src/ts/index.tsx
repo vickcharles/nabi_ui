@@ -12,6 +12,9 @@ import { Provider } from 'react-redux';
 const theme = createMuiTheme({
   overrides: {
     MuiButton: {
+      disabled: {
+        color: '#c6c9d0'
+      },
       raised: {
         backgroundColor: '#06c3e1 !important',
         borderRadius: '3px',
@@ -75,8 +78,29 @@ const theme = createMuiTheme({
         marginTop: '0px'
       }
     },
+    MuiLinearProgress : { 
+      barColorPrimary: {
+        backgroundColor: '#06c3e1'
+      },
+      colorPrimary: { 
+        backgroundColor: 'rgba(6, 195, 225, 0.25)'
+      }
+    },
+    MuiMobileStepper: {
+      root: {
+        background: '#fff'
+      }
+    },
     MuiRadio: {
       checked: {
+        color: '#06c3e1 !important'
+      }
+    },
+    MuiStepIcon: {
+      root: {
+        color: '#c6c9d0 !important'
+      },
+      active: {
         color: '#06c3e1 !important'
       }
     },
