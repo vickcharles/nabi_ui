@@ -25,8 +25,6 @@ interface ProfileBuilderProps {
   classes: any;
 }
 
-// type PropsWithStyles = ProfileBuilderProps & WithStyles<''>;
-
 interface ProfileBuilderState {
   activeStep: number;
   completed: any;
@@ -84,8 +82,6 @@ export class ProfileBuilder extends React.Component
     let activeStep;
 
     if (this.isLastStep() && !this.allStepsCompleted()) {
-      // It's the last step, but not all steps have been completed,
-      // find the first step that has been completed
       const steps = getSteps();
       activeStep = steps.findIndex((step, i) => !(i in this.state.completed));
     } else {
