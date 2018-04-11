@@ -79,7 +79,7 @@ export class Registration extends React.Component<RegistrationProps, UserState &
             selectedRole={this.state.role}
           />
         </div>
-        {this.state.fireRedirect && (
+        {this.state.fireRedirect && this.state.role === 'instructor' && (
           <Redirect to="profile-builder" />
         )}
       </div>
