@@ -33,17 +33,17 @@ function getSteps() {
 function getStepContent(stepIndex: any) {
   switch (stepIndex) {
     case 0:
-      return 'Basic Info';
+      return '';
     case 1:
-      return 'Education';
+      return '';
     case 2:
-      return 'Experience';
+      return '';
     case 3:
-      return 'Qualifications';
+      return '';
     case 4:
-      return 'Recommendations';
+      return '';
     default:
-      return 'sd';
+      return '';
   }
 }
 
