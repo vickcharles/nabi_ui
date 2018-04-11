@@ -80,6 +80,14 @@ const theme = createMuiTheme({
         color: '#06c3e1 !important'
       }
     },
+    MuiStepIcon: {
+      root: {
+        color: '#D3D6D8 !important'
+      },
+      active: {
+        color: '#06c3e1 !important'
+      }
+    },
     MuiTypography : {
       root: {
         color: '#717a8a !important'
