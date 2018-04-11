@@ -121,6 +121,28 @@ export class ProfileBuilder extends React.Component
     });
   }
 
+  public renderStepper(): JSX.Element {
+    const steps = getSteps();
+    const { activeStep } = this.state;
+
+    return (
+      <Stepper nonLinear={true} activeStep={activeStep}>
+      {steps.map((label, index) => {
+        return (
+          <Step key={label}>
+            <StepButton
+              onClick={this.handleStep(index)}
+              completed={this.state.completed[index]}
+            >
+              {label}
+            </StepButton>
+          </Step>
+        );
+      })}
+    </Stepper>
+    );
+  }
+
   public render(): JSX.Element { 
     const { classes } = this.props;
     const steps = getSteps();
@@ -132,60 +154,52 @@ export class ProfileBuilder extends React.Component
           PROFILE BUILDER
         </Typography>
       
-        <Stepper nonLinear={true} activeStep={activeStep}>
-          {steps.map((label, index) => {
-            return (
-              <Step key={label}>
-                <StepButton
-                  onClick={this.handleStep(index)}
-                  completed={this.state.completed[index]}
-                >
-                  {label}
-                </StepButton>
-              </Step>
-            );
-          })}
-        </Stepper>
-        <div>
-          {this.allStepsCompleted() ? (
-            <div>
-              <Typography className={classes.instructions}>
-                All steps completed - you&quot;re finished
-              </Typography>
-              <Button onClick={this.handleReset}>Reset</Button>
-            </div>
-          ) : (
-            <div>
-              <Typography className={classes.instructions}>{getStepContent(activeStep)}</Typography>
+        <div className="nabi-background-white nabi-section">
+          
+          {this.renderStepper()}
+
+          <div>
+            {this.allStepsCompleted() ? (
               <div>
-                <Button
-                  disabled={activeStep === 0}
-                  onClick={this.handleBack}
-                  className={classes.button}
-                >
-                  Back
-                </Button>
-                <Button
-                  variant="raised"
-                  color="primary"
-                  onClick={this.handleNext}
-                  className={classes.button}
-                >
-                  Next
-                </Button>
-                {activeStep !== steps.length &&
-                  (this.state.completed[this.state.activeStep] ? (
-                    <Typography variant="caption" className={classes.completed}>
-                      Step {activeStep + 1} already completed
-                    </Typography>
-                  ) : (
-                    <Button variant="raised" color="primary" onClick={this.handleComplete}>
-                      {this.completedSteps() === this.totalSteps() - 1 ? 'Finish' : 'Complete Step'}
-                    </Button>
-                  ))}
+                <Typography className={classes.instructions}>
+                  All steps completed - you&quot;re finished
+                </Typography>
+                <Button onClick={this.handleReset}>Reset</Button>
               </div>
-            </div>
-          )}
+            ) : (
+              <div>
+                {getStepContent(activeStep)}
+                
+                <div>
+                  <Button
+                    disabled={activeStep === 0}
+                    onClick={this.handleBack}
+                    className={classes.button}
+                  >
+                    Back
+                  </Button>
+                  <Button
+                    variant="raised"
+                    color="primary"
+                    onClick={this.handleNext}
+                    className={classes.button}
+                  >
+                    Next
+                  </Button>
+                  {activeStep !== steps.length &&
+                    (this.state.completed[this.state.activeStep] ? (
+                      <Typography variant="caption" className={classes.completed}>
+                        Step {activeStep + 1} already completed
+                      </Typography>
+                    ) : (
+                      <Button variant="raised" color="primary" onClick={this.handleComplete}>
+                        {this.completedSteps() === this.totalSteps() - 1 ? 'Finish' : 'Complete Step'}
+                      </Button>
+                    ))}
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     );

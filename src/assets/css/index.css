@@ -86,7 +86,7 @@ body {
 /*Section*/
 .nabi-section {
   border-radius: 17px;
-  padding: 25px;
+  padding: 25px 20px;
 }
 
 /* iPads (landscape) ----------- */
@@ -102,7 +102,7 @@ body {
 
   /*Section*/
   .nabi-section {
-    padding: 50px 100px;
+    padding: 50px 80px;
   }
 }
 
