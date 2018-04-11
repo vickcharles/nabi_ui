@@ -15,14 +15,16 @@ interface ProfileBuilderProps {
 
 type PropsWithStyles = ProfileBuilderProps & WithStyles<''>;
 
-const ProfileBuilder: React.StatelessComponent<PropsWithStyles> = props => {  
-  return (
-    <div className="nabi-container">
-      <Typography variant="title" className="nabi-margin-top-medium nabi-margin-bottom-medium">
-        PROFILE BUILDER
-      </Typography>
-    </div>
-  );
-};
+export class ProfileBuilder extends React.Component<PropsWithStyles> { 
+  public render(): JSX.Element { 
+      return (
+        <div className="nabi-container">
+          <Typography variant="title" className="nabi-margin-top-medium nabi-margin-bottom-medium">
+            PROFILE BUILDER
+          </Typography>
+        </div>
+      );
+    }
+  }
 
 export default withStyles(styles)<ProfileBuilderProps>(ProfileBuilder);
