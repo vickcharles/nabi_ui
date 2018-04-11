@@ -6,6 +6,7 @@ import Button from 'material-ui/Button';
 import MobileStepper from 'material-ui/MobileStepper';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
+import BasicInfo from './BasicInfo/BasicInfo';
 
 const styles = (theme: Theme) => ({
   button: {
@@ -37,7 +38,7 @@ function getSteps() {
 function getStepContent(stepIndex: any) {
   switch (stepIndex) {
     case 0:
-      return '';
+      return <BasicInfo />;
     case 1:
       return '';
     case 2:
