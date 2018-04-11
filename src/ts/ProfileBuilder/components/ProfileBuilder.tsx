@@ -18,10 +18,6 @@ const styles = (theme: Theme) => ({
 });
 
 interface ProfileBuilderProps {
-  handleChange: (event: React.FormEvent<{}>) => void;
-  handleSubmit: (event: React.FormEvent<{}>) => void;
-  hearAboutUs: string;
-  selectedRole: string;
   classes: any;
 }
 
