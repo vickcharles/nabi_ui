@@ -3,6 +3,9 @@ import { Theme, withStyles, WithStyles } from 'material-ui/styles';
 import Typography from 'material-ui/Typography/Typography';
 import Stepper, { Step, StepButton } from 'material-ui/Stepper';
 import Button from 'material-ui/Button';
+import MobileStepper from 'material-ui/MobileStepper';
+import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
+import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 
 const styles = (theme: Theme) => ({
   button: {
@@ -19,6 +22,7 @@ const styles = (theme: Theme) => ({
 
 interface ProfileBuilderProps {
   classes: any;
+  theme: any;
 }
 
 interface ProfileBuilderState {
@@ -140,7 +144,7 @@ export class ProfileBuilder extends React.Component
   }
 
   public render(): JSX.Element { 
-    const { classes } = this.props;
+    const { classes, theme } = this.props;
     const steps = getSteps();
     const { activeStep } = this.state;
    
@@ -154,6 +158,24 @@ export class ProfileBuilder extends React.Component
           
           {this.renderStepper()}
 
+          <MobileStepper
+            variant="progress"
+            steps={6}
+            position="static"
+            activeStep={this.state.activeStep}
+            className={classes.root}
+            nextButton={
+              <Button size="small" onClick={this.handleNext} disabled={this.state.activeStep === 5}>
+                Next
+                {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
+              </Button>}
+            backButton={
+              <Button size="small" onClick={this.handleBack} disabled={this.state.activeStep === 0}>
+                {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
+                Back
+              </Button>}
+          />
+          
           <div>
             {this.allStepsCompleted() ? (
               <div>
@@ -202,4 +224,4 @@ export class ProfileBuilder extends React.Component
   }
 }
 
-export default withStyles(styles)<ProfileBuilderProps>(ProfileBuilder);
+export default withStyles(styles, { withTheme: true })<ProfileBuilderProps>(ProfileBuilder);

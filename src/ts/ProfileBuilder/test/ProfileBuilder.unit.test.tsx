@@ -5,11 +5,13 @@ import { shallow } from 'enzyme';
 describe('ProfileBuilder', () => {
   let wrapper: any;
   let classes: object;
+  let theme: object;
 
   beforeEach(() => {
     wrapper = shallow(
       <ProfileBuilder 
         classes={classes}
+        theme={theme}
       />
     );
   });

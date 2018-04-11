@@ -6,6 +6,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <WithStyles(ProfileBuilder)
     classes={undefined}
+    theme={undefined}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -24,6 +25,7 @@ ShallowWrapper {
         "completed": "ProfileBuilder-completed-2",
         "instructions": "ProfileBuilder-instructions-3",
       },
+      "theme": undefined,
     },
     "ref": null,
     "rendered": null,
@@ -40,6 +42,7 @@ ShallowWrapper {
           "completed": "ProfileBuilder-completed-2",
           "instructions": "ProfileBuilder-instructions-3",
         },
+        "theme": undefined,
       },
       "ref": null,
       "rendered": null,
