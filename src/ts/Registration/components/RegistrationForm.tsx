@@ -9,7 +9,7 @@ import Select from 'material-ui/Select';
 import TextField from 'material-ui/TextField';
 import { Theme, withStyles, WithStyles } from 'material-ui/styles';
 import Typography from 'material-ui/Typography/Typography';
-import { Role } from '../model';
+import { Role , hearAboutUsInfo } from '../model';
 
 const styles = (theme: Theme) => ({
     formFields: {
@@ -29,6 +29,12 @@ type PropsWithStyles = RegistrationFormProps & WithStyles<'formFields'>;
 const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
   const { classes, handleChange, handleSubmit, hearAboutUs, selectedRole } = props;
   
+  const options: any = [];
+  
+  for (const [key, value] of Object.entries(hearAboutUsInfo)) {
+    options.push(<MenuItem key={key} value={value.value}>{value.label}</MenuItem>);
+  }
+
   return (
     <form 
       className="nabi-general-form nabi-margin-top-medium" 
@@ -132,13 +138,7 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
           onChange={handleChange}
           value={hearAboutUs}
         >
-          <MenuItem value="google">Google</MenuItem>
-          <MenuItem value="facebook">Facebook</MenuItem>
-          <MenuItem value="craigslist">Craigslist</MenuItem>
-          <MenuItem value="printAds">Print Ads</MenuItem>
-          <MenuItem value="wordofmouth">Word of Mouth</MenuItem>
-          <MenuItem value="studentReferral">Student Referral</MenuItem>
-          <MenuItem value="other">Other</MenuItem>
+          {options}
         </Select>
       </FormControl>
 
