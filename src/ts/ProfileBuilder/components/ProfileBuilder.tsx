@@ -121,33 +121,108 @@ export class ProfileBuilder extends React.Component
     });
   }
 
-  public renderStepper(): JSX.Element {
+  public renderDesktopStepper(): JSX.Element {
     const steps = getSteps();
     const { activeStep } = this.state;
 
     return (
-      <Stepper nonLinear={true} activeStep={activeStep}>
-      {steps.map((label, index) => {
-        return (
-          <Step key={label}>
-            <StepButton
-              onClick={this.handleStep(index)}
-              completed={this.state.completed[index]}
-            >
-              {label}
-            </StepButton>
-          </Step>
-        );
-      })}
-    </Stepper>
+      <div className="hide-on-mobile">
+        <Stepper nonLinear={true} activeStep={activeStep}>
+        {steps.map((label, index) => {
+          return (
+            <Step key={label}>
+              <StepButton
+                onClick={this.handleStep(index)}
+                completed={this.state.completed[index]}
+              >
+                {label}
+              </StepButton>
+            </Step>
+          );
+        })}
+      </Stepper>
+    </div>
     );
   }
 
-  public render(): JSX.Element { 
-    const { classes, theme } = this.props;
+  public renderDesktopButtons(): JSX.Element {
     const steps = getSteps();
     const { activeStep } = this.state;
-   
+    const { classes } = this.props;
+
+    return (
+      <div className="hide-on-mobile">
+        {this.allStepsCompleted() ? (
+          <div>
+            <Typography className={classes.instructions}>
+              All steps completed - you&quot;re finished
+            </Typography>
+            <Button onClick={this.handleReset}>Reset</Button>
+          </div>
+        ) : (
+          <div>
+            {getStepContent(activeStep)}
+            
+            <div>
+              <Button
+                disabled={activeStep === 0}
+                onClick={this.handleBack}
+                className={classes.button}
+              >
+                Back
+              </Button>
+              <Button
+                variant="raised"
+                color="primary"
+                onClick={this.handleNext}
+                className={classes.button}
+              >
+                Next
+              </Button>
+              {activeStep !== steps.length &&
+                (this.state.completed[this.state.activeStep] ? (
+                  <Typography variant="caption" className={classes.completed}>
+                    Step {activeStep + 1} already completed
+                  </Typography>
+                ) : (
+                  <Button variant="raised" color="primary" onClick={this.handleComplete}>
+                    {this.completedSteps() === this.totalSteps() - 1 ? 'Finish' : 'Complete Step'}
+                  </Button>
+                ))}
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  public renderMobileStepper(): JSX.Element {
+    const { classes, theme } = this.props;
+
+    return (
+      <div className="hide-on-desktop">
+        <MobileStepper
+          variant="progress"
+          steps={6}
+          position="static"
+          activeStep={this.state.activeStep}
+          className={classes.root}
+          nextButton={
+            <Button size="small" onClick={this.handleNext} disabled={this.state.activeStep === 5}>
+              Next
+              {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
+            </Button>}
+          backButton={
+            <Button size="small" onClick={this.handleBack} disabled={this.state.activeStep === 0}>
+              {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
+              Back
+            </Button>}
+        />
+      </div>
+    );
+  }
+
+  public render(): JSX.Element {    
     return (
       <div className="nabi-container">
         <Typography variant="title" className="nabi-margin-top-medium nabi-margin-bottom-medium">
@@ -155,69 +230,11 @@ export class ProfileBuilder extends React.Component
         </Typography>
       
         <div className="nabi-background-white nabi-section">
+          {this.renderMobileStepper()}
           
-          {this.renderStepper()}
+          {this.renderDesktopStepper()}
 
-          <MobileStepper
-            variant="progress"
-            steps={6}
-            position="static"
-            activeStep={this.state.activeStep}
-            className={classes.root}
-            nextButton={
-              <Button size="small" onClick={this.handleNext} disabled={this.state.activeStep === 5}>
-                Next
-                {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
-              </Button>}
-            backButton={
-              <Button size="small" onClick={this.handleBack} disabled={this.state.activeStep === 0}>
-                {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
-                Back
-              </Button>}
-          />
-          
-          <div>
-            {this.allStepsCompleted() ? (
-              <div>
-                <Typography className={classes.instructions}>
-                  All steps completed - you&quot;re finished
-                </Typography>
-                <Button onClick={this.handleReset}>Reset</Button>
-              </div>
-            ) : (
-              <div>
-                {getStepContent(activeStep)}
-                
-                <div>
-                  <Button
-                    disabled={activeStep === 0}
-                    onClick={this.handleBack}
-                    className={classes.button}
-                  >
-                    Back
-                  </Button>
-                  <Button
-                    variant="raised"
-                    color="primary"
-                    onClick={this.handleNext}
-                    className={classes.button}
-                  >
-                    Next
-                  </Button>
-                  {activeStep !== steps.length &&
-                    (this.state.completed[this.state.activeStep] ? (
-                      <Typography variant="caption" className={classes.completed}>
-                        Step {activeStep + 1} already completed
-                      </Typography>
-                    ) : (
-                      <Button variant="raised" color="primary" onClick={this.handleComplete}>
-                        {this.completedSteps() === this.totalSteps() - 1 ? 'Finish' : 'Complete Step'}
-                      </Button>
-                    ))}
-                </div>
-              </div>
-            )}
-          </div>
+          {this.renderDesktopButtons()}
         </div>
       </div>
     );
