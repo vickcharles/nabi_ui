@@ -1,3 +1,17 @@
+export enum hearAboutUsOptions {
+  Google = 'google',
+  Facebook = 'facebook',
+  Craigslist = 'craigslist',
+  PrintAds = 'printAds',
+  WordOfMouth = 'wordOfMouth',
+  CurrentNabiUser = 'currentNabiUser',
+  Other= 'other'
+}
+
+export interface HearAboutUsInfo {
+  hearAboutUsOptions: hearAboutUsOptions;
+}
+
 export enum Role {
   student = 'student',
   instructor = 'instructor',
