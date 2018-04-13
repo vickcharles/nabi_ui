@@ -6,7 +6,31 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <WithStyles(ProfileBuilder)
     classes={undefined}
+    match={
+      Object {
+        "isExact": true,
+        "params": Object {
+          "id": "qux",
+        },
+        "path": "/profile-builder/:id",
+        "url": "/profile-builder/qux",
+      }
+    }
     theme={undefined}
+    users={
+      Array [
+        Object {
+          "email": "oreo",
+          "firstName": "foo",
+          "hearAboutUs": "",
+          "id": "",
+          "lastName": "bar",
+          "password": "",
+          "role": "instructor",
+          "zipCode": "",
+        },
+      ]
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -26,7 +50,27 @@ ShallowWrapper {
         "instructions": "ProfileBuilder-instructions-4",
         "mobileStepper": "ProfileBuilder-mobileStepper-1",
       },
+      "match": Object {
+        "isExact": true,
+        "params": Object {
+          "id": "qux",
+        },
+        "path": "/profile-builder/:id",
+        "url": "/profile-builder/qux",
+      },
       "theme": undefined,
+      "users": Array [
+        Object {
+          "email": "oreo",
+          "firstName": "foo",
+          "hearAboutUs": "",
+          "id": "",
+          "lastName": "bar",
+          "password": "",
+          "role": "instructor",
+          "zipCode": "",
+        },
+      ],
     },
     "ref": null,
     "rendered": null,
@@ -44,7 +88,27 @@ ShallowWrapper {
           "instructions": "ProfileBuilder-instructions-4",
           "mobileStepper": "ProfileBuilder-mobileStepper-1",
         },
+        "match": Object {
+          "isExact": true,
+          "params": Object {
+            "id": "qux",
+          },
+          "path": "/profile-builder/:id",
+          "url": "/profile-builder/qux",
+        },
         "theme": undefined,
+        "users": Array [
+          Object {
+            "email": "oreo",
+            "firstName": "foo",
+            "hearAboutUs": "",
+            "id": "",
+            "lastName": "bar",
+            "password": "",
+            "role": "instructor",
+            "zipCode": "",
+          },
+        ],
       },
       "ref": null,
       "rendered": null,

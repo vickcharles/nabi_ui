@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { match } from 'react-router-dom';
+
 import { Theme, withStyles, WithStyles } from 'material-ui/styles';
 import Typography from 'material-ui/Typography/Typography';
 import Stepper, { Step, StepButton } from 'material-ui/Stepper';
@@ -7,6 +9,7 @@ import MobileStepper from 'material-ui/MobileStepper';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import BasicInfo from './BasicInfo/BasicInfo';
+import { Role, UserState } from '../../Registration/model';
 
 const styles = (theme: Theme) => ({
   mobileStepper: {
@@ -24,14 +27,21 @@ const styles = (theme: Theme) => ({
   },
 });
 
+interface IdParams {
+  id: string;
+}
+
 interface ProfileBuilderProps {
+  users: UserState[];
   classes: any;
-  theme: any;
+  theme?: any;
+  match: match<IdParams>;
 }
 
 interface ProfileBuilderState {
   activeStep: number;
   completed: any;
+  user: UserState;
 }
 
 function getSteps() {
@@ -56,13 +66,23 @@ function getStepContent(stepIndex: any) {
 }
 
 export class ProfileBuilder extends React.Component
-<ProfileBuilderProps & WithStyles<'button' | 'completed' | 'instructions'>, ProfileBuilderState> { 
-  constructor(props: ProfileBuilderProps ) {
+<ProfileBuilderProps, ProfileBuilderState> { 
+  constructor(props: ProfileBuilderProps & WithStyles<'button' | 'completed' | 'instructions'> ) {
     super(props);
 
     this.state = {
       activeStep: 0,
-      completed: {}
+      completed: {},
+      user: {
+        id: '',
+        firstName: '',
+        lastName: '',
+        email: '',
+        password: '',
+        zipCode: '',
+        role: Role.instructor,
+        hearAboutUs: ''
+      }
     };
   }
 
@@ -122,6 +142,38 @@ export class ProfileBuilder extends React.Component
     this.setState({
       activeStep: 0,
       completed: {},
+    });
+  }
+
+  public componentWillMount(): void {
+    console.log(this.props.users);
+    // const user: UserState = this.getSingleUser(this.props.users);
+    // if (user) { this.setState({ user }); }
+  }
+
+  public componentWillReceiveProps(nextProps: ProfileBuilderProps): void {
+    const user = this.getSingleUser(nextProps.users);
+
+    if (this.state.user !== user) {
+      this.setState({
+        ...this.state,
+        user: {
+          ...this.state.user,
+          firstName: user.firstName,
+          lastName: user.lastName,
+          email: user.email,
+          password: user.password,
+          zipCode: user.zipCode,
+          hearAboutUs: user.hearAboutUs
+        }
+      });
+    }
+  }
+  
+  // TODO: replace this with actual api call
+  public getSingleUser(users: any[]): UserState {
+    return users.find((user: UserState) => {
+      return user.id === this.props.match.params.id;
     });
   }
 

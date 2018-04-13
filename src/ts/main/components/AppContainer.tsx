@@ -9,18 +9,28 @@ import { UserState } from '../../Registration/model';
 import { ProfileBuilder } from '../../ProfileBuilder';
 
 export interface AppContainerStateProps {
+  users: UserState[];
   dispatch: Dispatch<{}>;
 }
 
-interface AppContainerProps extends AppContainerStateProps {}
+export interface AppContainerProps extends AppContainerStateProps {}
 
 class AppContainer extends React.Component<AppContainerProps, {}> {
   public render(): JSX.Element {
     
-    const { dispatch } = this.props;
+    const { dispatch, users } = this.props;
 
     const dispatchCreateUser: any = (user: UserState) => dispatch(createUser(user));
-    
+
+    const mockMatch = {
+      isExact: true,
+      path: '',
+      url: '',
+      params: {
+        id: ''
+      }
+    };
+
     return (
       <>
         <Header />
@@ -31,7 +41,14 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
             path="/registration" 
             render={() => <Registration createUser={dispatchCreateUser} />}
           />
-          <Route exact={true} path="/profile-builder/:id" component={ProfileBuilder} />
+          <Route 
+            exact={true} 
+            path="/profile-builder/:id" 
+            render={() => 
+             
+            <ProfileBuilder users={users} match={mockMatch} classes={null}/>
+          }
+          />
         </Switch>
       </>
     );
@@ -39,7 +56,7 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
 }
 
 const mapStateToProps = (state: any, _ownProps: any) => ({
-
+  users: state.userReducer
 });
 
 export default withRouter(connect(mapStateToProps)(AppContainer));
