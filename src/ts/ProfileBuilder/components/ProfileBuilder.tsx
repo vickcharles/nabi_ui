@@ -9,6 +9,9 @@ import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import BasicInfo from './BasicInfo/BasicInfo';
 
 const styles = (theme: Theme) => ({
+  mobileStepper: {
+    padding: '0px'
+  },
   button: {
     marginRight: theme.spacing.unit,
   },
@@ -207,7 +210,7 @@ export class ProfileBuilder extends React.Component
           steps={6}
           position="static"
           activeStep={this.state.activeStep}
-          className={classes.root}
+          className={classes.mobileStepper}
           nextButton={
             <Button size="small" onClick={this.handleNext} disabled={this.state.activeStep === 5}>
               Next
