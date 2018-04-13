@@ -21,9 +21,10 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "classes": Object {
-        "button": "ProfileBuilder-button-1",
-        "completed": "ProfileBuilder-completed-2",
-        "instructions": "ProfileBuilder-instructions-3",
+        "button": "ProfileBuilder-button-2",
+        "completed": "ProfileBuilder-completed-3",
+        "instructions": "ProfileBuilder-instructions-4",
+        "mobileStepper": "ProfileBuilder-mobileStepper-1",
       },
       "theme": undefined,
     },
@@ -38,9 +39,10 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "classes": Object {
-          "button": "ProfileBuilder-button-1",
-          "completed": "ProfileBuilder-completed-2",
-          "instructions": "ProfileBuilder-instructions-3",
+          "button": "ProfileBuilder-button-2",
+          "completed": "ProfileBuilder-completed-3",
+          "instructions": "ProfileBuilder-instructions-4",
+          "mobileStepper": "ProfileBuilder-mobileStepper-1",
         },
         "theme": undefined,
       },
