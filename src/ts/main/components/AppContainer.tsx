@@ -31,7 +31,7 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
             path="/registration" 
             render={() => <Registration createUser={dispatchCreateUser} />}
           />
-          <Route exact={true} path="/profile-builder" component={ProfileBuilder} />
+          <Route exact={true} path="/profile-builder/:id" component={ProfileBuilder} />
         </Switch>
       </>
     );
