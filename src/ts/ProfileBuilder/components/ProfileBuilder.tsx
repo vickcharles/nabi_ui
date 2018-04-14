@@ -48,23 +48,6 @@ function getSteps() {
   return ['Basic Info', 'Education', 'Experience', 'Qualifications', 'Recommendations'];
 }
 
-function getStepContent(stepIndex: any) {
-  switch (stepIndex) {
-    case 0:
-      return <BasicInfo />;
-    case 1:
-      return '';
-    case 2:
-      return '';
-    case 3:
-      return '';
-    case 4:
-      return '';
-    default:
-      return '';
-  }
-}
-
 export class ProfileBuilder extends React.Component
 <ProfileBuilderProps, ProfileBuilderState> { 
   constructor(props: ProfileBuilderProps & WithStyles<'button' | 'completed' | 'instructions'> ) {
@@ -84,6 +67,23 @@ export class ProfileBuilder extends React.Component
         hearAboutUs: ''
       }
     };
+  }
+  
+  getStepContent(stepIndex: any) {
+    switch (stepIndex) {
+      case 0:
+        return <BasicInfo user={this.state.user} />;
+      case 1:
+        return '';
+      case 2:
+        return '';
+      case 3:
+        return '';
+      case 4:
+        return '';
+      default:
+        return '';
+    }
   }
 
   completedSteps() {
@@ -146,9 +146,9 @@ export class ProfileBuilder extends React.Component
   }
 
   public componentWillMount(): void {
+    const user: UserState = this.getSingleUser(this.props.users);
     console.log(this.props.users);
-    // const user: UserState = this.getSingleUser(this.props.users);
-    // if (user) { this.setState({ user }); }
+    if (user) { this.setState({ user }); }
   }
 
   public componentWillReceiveProps(nextProps: ProfileBuilderProps): void {
@@ -217,7 +217,7 @@ export class ProfileBuilder extends React.Component
           </div>
         ) : (
           <div>
-            {getStepContent(activeStep)}
+            {this.getStepContent(activeStep)}
             
             <div>
               <Button

@@ -1,13 +1,14 @@
 import * as React from 'react';
-import Typography from 'material-ui/Typography';
+import { UserState } from '../../../Registration/model';
+import NameAndLocation from './NameAndLocation';
 
-const BasicInfo = () => {
+interface BasicInfoProps {
+    user: UserState;
+  }
+
+const BasicInfo: React.StatelessComponent<BasicInfoProps> = props => {
     return (
-        // this typography element is temporary
-        // TODO: remove typography
-        <Typography variant="title" className="nabi-margin-top-medium nabi-margin-bottom-medium">
-            Basic Info
-        </Typography>
+        <NameAndLocation firstName={props.user.firstName} zipCode={props.user.zipCode} />
     );
 };
 
