@@ -59,6 +59,7 @@ export interface UserState {
   zipCode: string;
   role: Role;
   hearAboutUs: string;
+  bio?: string;
 }
 
 export type IState = UserState[];
