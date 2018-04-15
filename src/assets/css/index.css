@@ -27,7 +27,7 @@ body {
 
 /*FONT WEIGHT*/
 .nabi-text-mediumbold {
-	font-weight: 500;
+  font-weight: 500 !important;
 }
 
 .nabi-text-semibold {
@@ -56,12 +56,20 @@ body {
   margin: 40px
 }
 
-.nabi-margin-bottom-large {
-  margin-bottom: 40px !important;
+.nabi-margin-bottom-xsmall {
+    margin-bottom: 10px !important;
+}
+
+.nabi-margin-bottom-small {
+  margin-bottom: 20px !important;
 }
 
 .nabi-margin-bottom-medium {
   margin-bottom: 30px !important;
+}
+
+.nabi-margin-bottom-large {
+  margin-bottom: 40px !important;
 }
 
 .nabi-margin-top-small {
