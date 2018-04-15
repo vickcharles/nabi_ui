@@ -153,7 +153,7 @@ export class ProfileBuilder extends React.Component
 
   public componentWillReceiveProps(nextProps: ProfileBuilderProps): void {
     const user = this.getSingleUser(nextProps.users);
-
+    console.log(user);
     if (this.state.user !== user) {
       this.setState({
         ...this.state,

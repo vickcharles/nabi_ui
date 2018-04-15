@@ -31,26 +31,35 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
       }
     };
 
+    const renderRegistration = (props: any) => (
+      <Registration createUser={dispatchCreateUser} />
+    );
+
+    const renderProfileBuilder = (props: any) => (
+      <ProfileBuilder users={users} match={mockMatch} classes={null}/>
+    );
+
     return (
-      <>
+      <div>
         <Header />
         <Switch>
-          <Route exact={true} path="/" component={Homepage} />
+          <Route 
+            exact={true} 
+            path="/" 
+            component={Homepage} 
+          />
           <Route 
             exact={true} 
             path="/registration" 
-            render={() => <Registration createUser={dispatchCreateUser} />}
+            render={renderRegistration}
           />
           <Route 
             exact={true} 
             path="/profile-builder/:id" 
-            render={() => 
-             
-            <ProfileBuilder users={users} match={mockMatch} classes={null}/>
-          }
+            render={renderProfileBuilder}
           />
         </Switch>
-      </>
+      </div>
     );
   }
 }
