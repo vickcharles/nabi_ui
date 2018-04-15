@@ -1,13 +1,13 @@
 import * as React from 'react';
 import Typography from 'material-ui/Typography';
 
-interface NameAndLocationProps {
+interface NameLocationBioProps {
     firstName: string;
     lastName: string;
     zipCode: string;
   }
 
-const NameAndLocation: React.StatelessComponent<NameAndLocationProps> = props => {
+const NameLocationBio: React.StatelessComponent<NameLocationBioProps> = props => {
   return (
     <div>
       <Typography className="nabi-text-center nabi-text-mediumbold nabi-margin-bottom-xsmall">
@@ -20,4 +20,4 @@ const NameAndLocation: React.StatelessComponent<NameAndLocationProps> = props =>
   );
 };
 
-export default NameAndLocation;
+export default NameLocationBio;

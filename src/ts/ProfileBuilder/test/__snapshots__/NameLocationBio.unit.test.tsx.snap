@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NameAndLocation Matches snapshot 1`] = `
+exports[`NameLocationBio Matches snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <NameAndLocation
+  Symbol(enzyme.__unrendered__): <NameLocationBio
     firstName="foo"
     lastName="bar"
     zipCode="02920"
