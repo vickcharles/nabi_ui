@@ -212,7 +212,7 @@ export class ProfileBuilder extends React.Component
     const { classes } = this.props;
 
     return (
-      <div className="hide-on-mobile">
+      <div className="hide-on-mobile nabi-margin-top-large">
         {this.allStepsCompleted() ? (
           <div>
             <Typography className={classes.instructions}>

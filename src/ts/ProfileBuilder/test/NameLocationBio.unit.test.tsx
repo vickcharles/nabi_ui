@@ -1,13 +1,13 @@
 import * as React from 'react';
-import NameAndLocation from '../components/BasicInfo/NameAndLocation';
+import NameLocationBio from '../components/BasicInfo/NameLocationBio';
 import { shallow } from 'enzyme';
 
-describe('NameAndLocation', () => {
+describe('NameLocationBio', () => {
   let wrapper: any;
 
   beforeEach(() => {
     wrapper = shallow(
-      <NameAndLocation 
+      <NameLocationBio 
         firstName="foo"
         lastName="bar"
         zipCode="02920"

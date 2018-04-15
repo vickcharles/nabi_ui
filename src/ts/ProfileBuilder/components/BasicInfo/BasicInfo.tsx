@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { UserState } from '../../../Registration/model';
-import NameAndLocation from './NameAndLocation';
+import NameLocationBio from './NameLocationBio';
 
 interface BasicInfoProps {
   user: UserState;
@@ -8,7 +8,7 @@ interface BasicInfoProps {
 
 const BasicInfo: React.StatelessComponent<BasicInfoProps> = props => {
   return (
-  <NameAndLocation 
+  <NameLocationBio 
     firstName={props.user.firstName}
     lastName={props.user.lastName}
     zipCode={props.user.zipCode} 

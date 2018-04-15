@@ -45,6 +45,9 @@ const theme = createMuiTheme({
         border: '2px solid #06c3e1 !important',
         borderRadius: '5px',
       },
+      fullWidth: {
+        width: 'auto'
+      },
       input : {
         '&::placeholder': {
           color: '#717a8a !important'
@@ -54,18 +57,21 @@ const theme = createMuiTheme({
         color: '#717a8a !important',
         padding: '17px 40px'
       },
+      multiline: {
+        padding: '20px'
+      },
       root: {
         border: '2px solid #ebeef1 !important',
         borderRadius: '5px'
       },
       underline: {
         '&:after': {
-          backgroundColor: 'transparent !important'
+          backgroundColor: '#f3f6f9 !important'
         },
         '&:before': {
-          backgroundColor: 'transparent !important'
+          backgroundColor: '#f3f6f9 !important'
         },
-        backgroundColor: 'transparent !important'
+        backgroundColor: '#f3f6f9 !important'
       }
     },
     MuiInputLabel: {
