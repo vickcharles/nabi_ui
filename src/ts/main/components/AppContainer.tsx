@@ -22,21 +22,21 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
 
     const dispatchCreateUser: any = (user: UserState) => dispatch(createUser(user));
 
-    const mockMatch = {
-      isExact: true,
-      path: '',
-      url: '',
-      params: {
-        id: ''
-      }
-    };
+    // const mockMatch = {
+    //   isExact: true,
+    //   path: '',
+    //   url: '',
+    //   params: {
+    //     id: ''
+    //   }
+    // };
 
     const renderRegistration = (props: any) => (
       <Registration createUser={dispatchCreateUser} />
     );
 
     const renderProfileBuilder = (props: any) => (
-      <ProfileBuilder users={users} match={mockMatch} classes={null}/>
+      <ProfileBuilder users={users} classes={null}/>
     );
 
     return (

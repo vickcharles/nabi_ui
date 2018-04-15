@@ -19,22 +19,12 @@ describe('ProfileBuilder', () => {
     hearAboutUs: ''
   };
 
-  const mockMatch = {
-    isExact: true,
-    path: '/profile-builder/:id',
-    url: '/profile-builder/qux',
-    params: {
-      id: 'qux'
-    }
-  };
-
   beforeEach(() => {
     wrapper = shallow(
       <ProfileBuilder 
         classes={classes}
         theme={theme}
         users={[mockUser]}
-        match={mockMatch}
       />
     );
   });

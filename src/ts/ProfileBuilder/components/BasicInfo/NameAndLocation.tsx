@@ -8,7 +8,7 @@ interface NameAndLocationProps {
 
 const NameAndLocation: React.StatelessComponent<NameAndLocationProps> = props => {
     return (
-        <Typography variant="title" className="nabi-margin-top-medium nabi-margin-bottom-medium">
+        <Typography className="">
             {props.firstName}
             {props.zipCode}
         </Typography>

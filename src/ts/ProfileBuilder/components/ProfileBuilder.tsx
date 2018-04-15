@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { match } from 'react-router-dom';
+import { match, withRouter, RouteComponentProps } from 'react-router-dom';
 
 import { Theme, withStyles, WithStyles } from 'material-ui/styles';
 import Typography from 'material-ui/Typography/Typography';
@@ -31,7 +31,7 @@ interface IdParams {
   id: string;
 }
 
-interface ProfileBuilderProps {
+interface ProfileBuilderProps extends RouteComponentProps<{}> {
   users: UserState[];
   classes: any;
   theme?: any;
@@ -147,6 +147,8 @@ export class ProfileBuilder extends React.Component
 
   public componentWillMount(): void {
     const user: UserState = this.getSingleUser(this.props.users);
+    console.log(user);
+    console.log('vanessa');
     console.log(this.props.users);
     if (user) { this.setState({ user }); }
   }
@@ -168,10 +170,13 @@ export class ProfileBuilder extends React.Component
         }
       });
     }
+    this.getSingleUser = this.getSingleUser.bind(this);
   }
   
   // TODO: replace this with actual api call
   public getSingleUser(users: any[]): UserState {
+    console.log('single user');
+    console.log(this.props.match.params.id);
     return users.find((user: UserState) => {
       return user.id === this.props.match.params.id;
     });
@@ -297,4 +302,4 @@ export class ProfileBuilder extends React.Component
   }
 }
 
-export default withStyles(styles, { withTheme: true })<ProfileBuilderProps>(ProfileBuilder);
+export default withRouter(withStyles(styles, { withTheme: true })<ProfileBuilderProps>(ProfileBuilder));

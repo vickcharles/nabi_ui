@@ -4,18 +4,8 @@ exports[`ProfileBuilder Matches snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <WithStyles(ProfileBuilder)
+  Symbol(enzyme.__unrendered__): <withRouter(WithStyles(ProfileBuilder))
     classes={undefined}
-    match={
-      Object {
-        "isExact": true,
-        "params": Object {
-          "id": "qux",
-        },
-        "path": "/profile-builder/:id",
-        "url": "/profile-builder/qux",
-      }
-    }
     theme={undefined}
     users={
       Array [
@@ -44,33 +34,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "classes": Object {
-        "button": "ProfileBuilder-button-2",
-        "completed": "ProfileBuilder-completed-3",
-        "instructions": "ProfileBuilder-instructions-4",
-        "mobileStepper": "ProfileBuilder-mobileStepper-1",
-      },
-      "match": Object {
-        "isExact": true,
-        "params": Object {
-          "id": "qux",
-        },
-        "path": "/profile-builder/:id",
-        "url": "/profile-builder/qux",
-      },
-      "theme": undefined,
-      "users": Array [
-        Object {
-          "email": "oreo",
-          "firstName": "foo",
-          "hearAboutUs": "",
-          "id": "",
-          "lastName": "bar",
-          "password": "",
-          "role": "instructor",
-          "zipCode": "",
-        },
-      ],
+      "render": [Function],
     },
     "ref": null,
     "rendered": null,
@@ -82,33 +46,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "classes": Object {
-          "button": "ProfileBuilder-button-2",
-          "completed": "ProfileBuilder-completed-3",
-          "instructions": "ProfileBuilder-instructions-4",
-          "mobileStepper": "ProfileBuilder-mobileStepper-1",
-        },
-        "match": Object {
-          "isExact": true,
-          "params": Object {
-            "id": "qux",
-          },
-          "path": "/profile-builder/:id",
-          "url": "/profile-builder/qux",
-        },
-        "theme": undefined,
-        "users": Array [
-          Object {
-            "email": "oreo",
-            "firstName": "foo",
-            "hearAboutUs": "",
-            "id": "",
-            "lastName": "bar",
-            "password": "",
-            "role": "instructor",
-            "zipCode": "",
-          },
-        ],
+        "render": [Function],
       },
       "ref": null,
       "rendered": null,
