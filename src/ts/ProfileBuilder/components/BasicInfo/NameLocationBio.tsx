@@ -17,21 +17,22 @@ const NameLocationBio: React.StatelessComponent<NameLocationBioProps> = props =>
       <Typography className="nabi-text-center nabi-margin-bottom-medium">
         {props.zipCode}
       </Typography>
+
+      <Typography className="nabi-margin-top-small" variant="body2">
+        Bio
+      </Typography>
+
       <TextField
         id="bio"
         margin="normal"
         name="bio"
-        label="Bio"
-        InputLabelProps={{
-          shrink: true,
-        }}
         // TODO: add onChange
         // onChange={handleChange}
-        placeholder="Bio"
+        placeholder="What would you like your students to know  about you?"
         required={true}
         multiline={true}
         fullWidth={true}
-        rows={9}
+        rows={6}
       />
     </div>
   );

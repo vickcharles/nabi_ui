@@ -32,21 +32,21 @@ ShallowWrapper {
         >
           02920
         </WithStyles(Typography)>,
+        <WithStyles(Typography)
+          className="nabi-margin-top-small"
+          variant="body2"
+        >
+          Bio
+        </WithStyles(Typography)>,
         <TextField
-          InputLabelProps={
-            Object {
-              "shrink": true,
-            }
-          }
           fullWidth={true}
           id="bio"
-          label="Bio"
           margin="normal"
           multiline={true}
           name="bio"
-          placeholder="Bio"
+          placeholder="What would you like your students to know  about you?"
           required={true}
-          rows={9}
+          rows={6}
           select={false}
         />,
       ],
@@ -80,20 +80,29 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Bio",
+          "className": "nabi-margin-top-small",
+          "variant": "body2",
+        },
+        "ref": null,
+        "rendered": "Bio",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "InputLabelProps": Object {
-            "shrink": true,
-          },
           "fullWidth": true,
           "id": "bio",
-          "label": "Bio",
           "margin": "normal",
           "multiline": true,
           "name": "bio",
-          "placeholder": "Bio",
+          "placeholder": "What would you like your students to know  about you?",
           "required": true,
-          "rows": 9,
+          "rows": 6,
           "select": false,
         },
         "ref": null,
@@ -120,21 +129,21 @@ ShallowWrapper {
           >
             02920
           </WithStyles(Typography)>,
+          <WithStyles(Typography)
+            className="nabi-margin-top-small"
+            variant="body2"
+          >
+            Bio
+          </WithStyles(Typography)>,
           <TextField
-            InputLabelProps={
-              Object {
-                "shrink": true,
-              }
-            }
             fullWidth={true}
             id="bio"
-            label="Bio"
             margin="normal"
             multiline={true}
             name="bio"
-            placeholder="Bio"
+            placeholder="What would you like your students to know  about you?"
             required={true}
-            rows={9}
+            rows={6}
             select={false}
           />,
         ],
@@ -168,20 +177,29 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Bio",
+            "className": "nabi-margin-top-small",
+            "variant": "body2",
+          },
+          "ref": null,
+          "rendered": "Bio",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "InputLabelProps": Object {
-              "shrink": true,
-            },
             "fullWidth": true,
             "id": "bio",
-            "label": "Bio",
             "margin": "normal",
             "multiline": true,
             "name": "bio",
-            "placeholder": "Bio",
+            "placeholder": "What would you like your students to know  about you?",
             "required": true,
-            "rows": 9,
+            "rows": 6,
             "select": false,
           },
           "ref": null,

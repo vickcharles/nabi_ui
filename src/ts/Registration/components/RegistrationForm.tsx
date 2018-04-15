@@ -27,7 +27,7 @@ interface RegistrationFormProps {
 type PropsWithStyles = RegistrationFormProps & WithStyles<'formFields'>;
 
 const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
-  const { classes, handleChange, handleSubmit, hearAboutUs, selectedRole } = props;
+  const { handleChange, handleSubmit, hearAboutUs, selectedRole } = props;
   
   const selectOptions: any = [];
   
@@ -56,7 +56,7 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
       {
         (selectedRole !== Role.instructor) ?
           <div className="nabi-margin-top-small">
-            <FormControl className={classes.formFields} component="fieldset" required={true}>
+            <FormControl fullWidth={true} component="fieldset" required={true}>
               <FormLabel component="legend">Are the lessons for you or for your child?</FormLabel>
               <RadioGroup
                 name="role"
@@ -80,7 +80,7 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
       </Typography>
 
       <TextField
-        className={classes.formFields}
+        fullWidth={true}
         id="firstName"
         margin="normal"
         name="firstName"
@@ -90,7 +90,7 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
       />
 
       <TextField
-        className={classes.formFields}
+        fullWidth={true}
         id="lastName"
         margin="normal"
         name="lastName"
@@ -100,7 +100,7 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
       />
 
       <TextField
-        className={classes.formFields}
+        fullWidth={true}
         id="zipCode"
         margin="normal"
         name="zipCode"
@@ -110,7 +110,7 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
       />
 
       <TextField
-        className={classes.formFields}
+        fullWidth={true}
         id="email"
         margin="normal"
         name="email"
@@ -120,7 +120,7 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
       />
 
       <TextField
-        className={classes.formFields}
+        fullWidth={true}
         id="password"
         margin="normal"
         name="password"
@@ -130,10 +130,10 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
         type="password"
       />
       
-      <FormControl className={classes.formFields} required={true}>
+      <FormControl fullWidth={true} required={true}>
         <InputLabel htmlFor="hearAboutUs">How did you hear about us?</InputLabel>
         <Select
-          className={classes.formFields}
+          fullWidth={true}
           input={<Input id="hearAboutUs" name="hearAboutUs" />}
           onChange={handleChange}
           value={hearAboutUs}
