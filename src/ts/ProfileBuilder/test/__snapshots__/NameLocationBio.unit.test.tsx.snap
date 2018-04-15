@@ -36,7 +36,7 @@ ShallowWrapper {
           className="nabi-margin-top-small"
           variant="body2"
         >
-          Bio
+          Bio *
         </WithStyles(Typography)>,
         <TextField
           fullWidth={true}
@@ -48,6 +48,9 @@ ShallowWrapper {
           required={true}
           rows={6}
           select={false}
+        />,
+        <WithStyles(Divider)
+          className="nabi-margin-top-small"
         />,
       ],
     },
@@ -82,12 +85,12 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": "Bio",
+          "children": "Bio *",
           "className": "nabi-margin-top-small",
           "variant": "body2",
         },
         "ref": null,
-        "rendered": "Bio",
+        "rendered": "Bio *",
         "type": [Function],
       },
       Object {
@@ -104,6 +107,17 @@ ShallowWrapper {
           "required": true,
           "rows": 6,
           "select": false,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "className": "nabi-margin-top-small",
         },
         "ref": null,
         "rendered": null,
@@ -133,7 +147,7 @@ ShallowWrapper {
             className="nabi-margin-top-small"
             variant="body2"
           >
-            Bio
+            Bio *
           </WithStyles(Typography)>,
           <TextField
             fullWidth={true}
@@ -145,6 +159,9 @@ ShallowWrapper {
             required={true}
             rows={6}
             select={false}
+          />,
+          <WithStyles(Divider)
+            className="nabi-margin-top-small"
           />,
         ],
       },
@@ -179,12 +196,12 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "Bio",
+            "children": "Bio *",
             "className": "nabi-margin-top-small",
             "variant": "body2",
           },
           "ref": null,
-          "rendered": "Bio",
+          "rendered": "Bio *",
           "type": [Function],
         },
         Object {
@@ -201,6 +218,17 @@ ShallowWrapper {
             "required": true,
             "rows": 6,
             "select": false,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "className": "nabi-margin-top-small",
           },
           "ref": null,
           "rendered": null,

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Typography from 'material-ui/Typography';
 import TextField from 'material-ui/TextField';
+import Divider from 'material-ui/Divider';
 
 interface NameLocationBioProps {
     firstName: string;
@@ -19,7 +20,7 @@ const NameLocationBio: React.StatelessComponent<NameLocationBioProps> = props =>
       </Typography>
 
       <Typography className="nabi-margin-top-small" variant="body2">
-        Bio
+        Bio *
       </Typography>
 
       <TextField
@@ -34,6 +35,8 @@ const NameLocationBio: React.StatelessComponent<NameLocationBioProps> = props =>
         fullWidth={true}
         rows={6}
       />
+
+      <Divider className="nabi-margin-top-small"/>
     </div>
   );
 };
