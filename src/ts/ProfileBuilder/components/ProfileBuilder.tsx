@@ -222,8 +222,6 @@ export class ProfileBuilder extends React.Component
           </div>
         ) : (
           <div>
-            {this.getStepContent(activeStep)}
-            
             <div>
               <Button
                 disabled={activeStep === 0}
@@ -291,11 +289,14 @@ export class ProfileBuilder extends React.Component
         </Typography>
       
         <div className="nabi-background-white nabi-section">
-          {this.renderMobileStepper()}
           
           {this.renderDesktopStepper()}
 
+          {this.getStepContent(this.state.activeStep)}
+          
           {this.renderDesktopButtons()}
+
+           {this.renderMobileStepper()}
         </div>
       </div>
     );
