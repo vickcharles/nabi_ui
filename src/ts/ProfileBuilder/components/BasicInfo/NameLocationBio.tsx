@@ -15,6 +15,7 @@ const NameLocationBio: React.StatelessComponent<NameLocationBioProps> = props =>
       <Typography className="nabi-text-center nabi-text-mediumbold nabi-margin-bottom-xsmall">
         {`${props.firstName} ${props.lastName}`}
       </Typography>
+      
       <Typography className="nabi-text-center nabi-margin-bottom-medium">
         {props.zipCode}
       </Typography>
