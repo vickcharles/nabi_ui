@@ -54,6 +54,9 @@ const theme = createMuiTheme({
         color: '#717a8a !important',
         padding: '17px 40px'
       },
+      multiline: {
+        padding: '0px'
+      },
       root: {
         border: '2px solid #ebeef1 !important',
         borderRadius: '5px'
