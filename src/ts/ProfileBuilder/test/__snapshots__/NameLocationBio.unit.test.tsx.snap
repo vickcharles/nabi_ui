@@ -32,6 +32,23 @@ ShallowWrapper {
         >
           02920
         </WithStyles(Typography)>,
+        <TextField
+          InputLabelProps={
+            Object {
+              "shrink": true,
+            }
+          }
+          fullWidth={true}
+          id="bio"
+          label="Bio"
+          margin="normal"
+          multiline={true}
+          name="bio"
+          placeholder="Bio"
+          required={true}
+          rows={9}
+          select={false}
+        />,
       ],
     },
     "ref": null,
@@ -60,6 +77,29 @@ ShallowWrapper {
         "rendered": "02920",
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "InputLabelProps": Object {
+            "shrink": true,
+          },
+          "fullWidth": true,
+          "id": "bio",
+          "label": "Bio",
+          "margin": "normal",
+          "multiline": true,
+          "name": "bio",
+          "placeholder": "Bio",
+          "required": true,
+          "rows": 9,
+          "select": false,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": "div",
   },
@@ -80,6 +120,23 @@ ShallowWrapper {
           >
             02920
           </WithStyles(Typography)>,
+          <TextField
+            InputLabelProps={
+              Object {
+                "shrink": true,
+              }
+            }
+            fullWidth={true}
+            id="bio"
+            label="Bio"
+            margin="normal"
+            multiline={true}
+            name="bio"
+            placeholder="Bio"
+            required={true}
+            rows={9}
+            select={false}
+          />,
         ],
       },
       "ref": null,
@@ -106,6 +163,29 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": "02920",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "InputLabelProps": Object {
+              "shrink": true,
+            },
+            "fullWidth": true,
+            "id": "bio",
+            "label": "Bio",
+            "margin": "normal",
+            "multiline": true,
+            "name": "bio",
+            "placeholder": "Bio",
+            "required": true,
+            "rows": 9,
+            "select": false,
+          },
+          "ref": null,
+          "rendered": null,
           "type": [Function],
         },
       ],
