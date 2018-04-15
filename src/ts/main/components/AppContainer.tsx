@@ -9,37 +9,59 @@ import { UserState } from '../../Registration/model';
 import { ProfileBuilder } from '../../ProfileBuilder';
 
 export interface AppContainerStateProps {
+  users: UserState[];
   dispatch: Dispatch<{}>;
 }
 
-interface AppContainerProps extends AppContainerStateProps {}
+export interface AppContainerProps extends AppContainerStateProps {}
 
 class AppContainer extends React.Component<AppContainerProps, {}> {
   public render(): JSX.Element {
     
-    const { dispatch } = this.props;
+    const { dispatch, users } = this.props;
 
     const dispatchCreateUser: any = (user: UserState) => dispatch(createUser(user));
-    
+
+    const renderRegistration = (props: any) => (
+      <Registration 
+        createUser={dispatchCreateUser} 
+      />
+    );
+
+    const renderProfileBuilder = (props: any) => (
+      <ProfileBuilder 
+        users={users} 
+        classes={null}
+      />
+    );
+
     return (
-      <>
+      <div>
         <Header />
         <Switch>
-          <Route exact={true} path="/" component={Homepage} />
+          <Route 
+            exact={true} 
+            path="/" 
+            component={Homepage} 
+          />
           <Route 
             exact={true} 
             path="/registration" 
-            render={() => <Registration createUser={dispatchCreateUser} />}
+            render={renderRegistration}
           />
-          <Route exact={true} path="/profile-builder" component={ProfileBuilder} />
+          <Route 
+            exact={true} 
+            path="/profile-builder/:id" 
+            render={renderProfileBuilder}
+          />
         </Switch>
-      </>
+      </div>
     );
   }
 }
 
 const mapStateToProps = (state: any, _ownProps: any) => ({
-
+  users: state.userReducer
 });
 
 export default withRouter(connect(mapStateToProps)(AppContainer));

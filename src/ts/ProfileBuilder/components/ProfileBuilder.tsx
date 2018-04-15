@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { match, withRouter, RouteComponentProps } from 'react-router-dom';
+
 import { Theme, withStyles, WithStyles } from 'material-ui/styles';
 import Typography from 'material-ui/Typography/Typography';
 import Stepper, { Step, StepButton } from 'material-ui/Stepper';
@@ -7,6 +9,7 @@ import MobileStepper from 'material-ui/MobileStepper';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import BasicInfo from './BasicInfo/BasicInfo';
+import { Role, UserState } from '../../Registration/model';
 
 const styles = (theme: Theme) => ({
   mobileStepper: {
@@ -24,46 +27,63 @@ const styles = (theme: Theme) => ({
   },
 });
 
-interface ProfileBuilderProps {
+interface IdParams {
+  id: string;
+}
+
+interface ProfileBuilderProps extends RouteComponentProps<{}> {
+  users: UserState[];
   classes: any;
-  theme: any;
+  theme?: any;
+  match: match<IdParams>;
 }
 
 interface ProfileBuilderState {
   activeStep: number;
   completed: any;
+  user: UserState;
 }
 
 function getSteps() {
   return ['Basic Info', 'Education', 'Experience', 'Qualifications', 'Recommendations'];
 }
 
-function getStepContent(stepIndex: any) {
-  switch (stepIndex) {
-    case 0:
-      return <BasicInfo />;
-    case 1:
-      return '';
-    case 2:
-      return '';
-    case 3:
-      return '';
-    case 4:
-      return '';
-    default:
-      return '';
-  }
-}
-
 export class ProfileBuilder extends React.Component
-<ProfileBuilderProps & WithStyles<'button' | 'completed' | 'instructions'>, ProfileBuilderState> { 
-  constructor(props: ProfileBuilderProps ) {
+<ProfileBuilderProps, ProfileBuilderState> { 
+  constructor(props: ProfileBuilderProps & WithStyles<'button' | 'completed' | 'instructions'> ) {
     super(props);
 
     this.state = {
       activeStep: 0,
-      completed: {}
+      completed: {},
+      user: {
+        id: '',
+        firstName: '',
+        lastName: '',
+        email: '',
+        password: '',
+        zipCode: '',
+        role: Role.instructor,
+        hearAboutUs: ''
+      }
     };
+  }
+  
+  getStepContent(stepIndex: any) {
+    switch (stepIndex) {
+      case 0:
+        return <BasicInfo user={this.state.user} />;
+      case 1:
+        return '';
+      case 2:
+        return '';
+      case 3:
+        return '';
+      case 4:
+        return '';
+      default:
+        return '';
+    }
   }
 
   completedSteps() {
@@ -125,6 +145,43 @@ export class ProfileBuilder extends React.Component
     });
   }
 
+  public componentWillMount(): void {
+    const user: UserState = this.getSingleUser(this.props.users);
+    console.log(user);
+    console.log('vanessa');
+    console.log(this.props.users);
+    if (user) { this.setState({ user }); }
+  }
+
+  public componentWillReceiveProps(nextProps: ProfileBuilderProps): void {
+    const user = this.getSingleUser(nextProps.users);
+    console.log(user);
+    if (this.state.user !== user) {
+      this.setState({
+        ...this.state,
+        user: {
+          ...this.state.user,
+          firstName: user.firstName,
+          lastName: user.lastName,
+          email: user.email,
+          password: user.password,
+          zipCode: user.zipCode,
+          hearAboutUs: user.hearAboutUs
+        }
+      });
+    }
+    this.getSingleUser = this.getSingleUser.bind(this);
+  }
+  
+  // TODO: replace this with actual api call
+  public getSingleUser(users: any[]): UserState {
+    console.log('single user');
+    console.log(this.props.match.params.id);
+    return users.find((user: UserState) => {
+      return user.id === this.props.match.params.id;
+    });
+  }
+
   public renderDesktopStepper(): JSX.Element {
     const steps = getSteps();
     const { activeStep } = this.state;
@@ -165,8 +222,6 @@ export class ProfileBuilder extends React.Component
           </div>
         ) : (
           <div>
-            {getStepContent(activeStep)}
-            
             <div>
               <Button
                 disabled={activeStep === 0}
@@ -234,15 +289,18 @@ export class ProfileBuilder extends React.Component
         </Typography>
       
         <div className="nabi-background-white nabi-section">
-          {this.renderMobileStepper()}
           
           {this.renderDesktopStepper()}
 
+          {this.getStepContent(this.state.activeStep)}
+          
           {this.renderDesktopButtons()}
+
+           {this.renderMobileStepper()}
         </div>
       </div>
     );
   }
 }
 
-export default withStyles(styles, { withTheme: true })<ProfileBuilderProps>(ProfileBuilder);
+export default withRouter(withStyles(styles, { withTheme: true })<ProfileBuilderProps>(ProfileBuilder));

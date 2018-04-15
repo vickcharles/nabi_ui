@@ -4,9 +4,23 @@ exports[`ProfileBuilder Matches snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <WithStyles(ProfileBuilder)
+  Symbol(enzyme.__unrendered__): <withRouter(WithStyles(ProfileBuilder))
     classes={undefined}
     theme={undefined}
+    users={
+      Array [
+        Object {
+          "email": "oreo",
+          "firstName": "foo",
+          "hearAboutUs": "",
+          "id": "",
+          "lastName": "bar",
+          "password": "",
+          "role": "instructor",
+          "zipCode": "",
+        },
+      ]
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -20,13 +34,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "classes": Object {
-        "button": "ProfileBuilder-button-2",
-        "completed": "ProfileBuilder-completed-3",
-        "instructions": "ProfileBuilder-instructions-4",
-        "mobileStepper": "ProfileBuilder-mobileStepper-1",
-      },
-      "theme": undefined,
+      "render": [Function],
     },
     "ref": null,
     "rendered": null,
@@ -38,13 +46,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "classes": Object {
-          "button": "ProfileBuilder-button-2",
-          "completed": "ProfileBuilder-completed-3",
-          "instructions": "ProfileBuilder-instructions-4",
-          "mobileStepper": "ProfileBuilder-mobileStepper-1",
-        },
-        "theme": undefined,
+        "render": [Function],
       },
       "ref": null,
       "rendered": null,
