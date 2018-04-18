@@ -2,7 +2,7 @@ import reducer from '../';
 import { RegistrationActions } from '../constants/ActionTypes';
 import { Role, UserState, IState } from '../model';
 
-describe('Configurations reducer', () => {
+describe('Users reducer', () => {
   let state: IState;
 
   beforeEach(() => {

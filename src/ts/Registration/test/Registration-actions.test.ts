@@ -3,8 +3,8 @@ import * as actions from '../actions';
 import { RegistrationActions } from '../constants/ActionTypes';
 import { Role, UserState } from '../model';
 
-describe('Configurations actions', () => {
-  it('Creates an action to add configuration', () => {
+describe('Users actions', () => {
+  it('Creates an action to add user', () => {
     const user: UserState = {
       id: 'foo',
       firstName: 'bar',
