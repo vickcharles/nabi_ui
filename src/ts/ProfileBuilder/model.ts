@@ -4,4 +4,3 @@ export interface InstructorState {
 }
 
 export type IState = InstructorState[];
-  
