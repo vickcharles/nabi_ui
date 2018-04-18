@@ -30,7 +30,6 @@ const NameLocationBio: React.StatelessComponent<NameLocationBioProps> = props =>
         margin="normal"
         name="bio"
         onChange={props.changeBio}
-        // TODO: add onChange
         placeholder="What would you like your students to know  about you?"
         required={true}
         multiline={true}

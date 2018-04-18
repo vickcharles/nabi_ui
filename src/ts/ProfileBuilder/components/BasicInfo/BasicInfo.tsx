@@ -1,16 +1,13 @@
 import * as React from 'react';
 import { UserState } from '../../../Registration/model';
 import NameLocationBio from './NameLocationBio';
-import { changeBio } from '../../actions';
-import { Action, Dispatch } from 'redux';
-import { ThunkAction } from 'redux-thunk';
+// import { changeBio } from '../../actions';
+// import { Action, Dispatch } from 'redux';
+// import { ThunkAction } from 'redux-thunk';
 import { connect } from 'react-redux';
 
 interface BasicInfoStateProps {
-}
-
-interface BasicInfoDispatchProps {
-  changeBio: (id: string, bio: string) => void;
+  users: UserState[];
 }
 
 interface BasicInfoOwnProps { 
@@ -19,27 +16,36 @@ interface BasicInfoOwnProps {
 
 interface BasicInfoProps extends
   BasicInfoStateProps,
-  BasicInfoDispatchProps,
   BasicInfoOwnProps { }
 
 export class BasicInfo extends React.Component<BasicInfoProps, {}> {
   constructor(props: BasicInfoProps) {
     super(props);
 
+    this.state = {
+      bio: ''
+    };
+
     this.handleChangeBio = this.handleChangeBio.bind(this);
   }
 
-  public handleChangeBio(event: React.ChangeEvent<HTMLSelectElement>): void {
-    this.props.changeBio(event.target.value, 'f=h');
+  public handleChangeBio(event: any): void {
+    const target = event.target;
+    const value = target.value;
+    const name = target.name;
+    
+    this.setState({
+      ...this.state,
+      [name]: value
+    });
   }
 
   public render(): JSX.Element {
-    
     return (
     <NameLocationBio 
       firstName={this.props.user.firstName}
       lastName={this.props.user.lastName}
-      zipCode={this.props.user.zipCode} 
+      zipCode={this.props.user.zipCode}
       changeBio={this.handleChangeBio}
     />
     );
@@ -48,17 +54,8 @@ export class BasicInfo extends React.Component<BasicInfoProps, {}> {
 
 function mapStateToProps(state: any, _ownProps: BasicInfoOwnProps): BasicInfoStateProps {
   return {
-    user: state.user
+    users: state.user
   };
 }
 
-function mapDispatchToProps(
-  dispatch: Dispatch<Action | ThunkAction<{}, {}, {}>>,
-  _ownProps: BasicInfoOwnProps
-): BasicInfoDispatchProps {
-  return {
-    changeBio: (id: string, bio: string) => dispatch(changeBio(id, bio))
-  };
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(BasicInfo);
+export default connect(mapStateToProps)(BasicInfo);

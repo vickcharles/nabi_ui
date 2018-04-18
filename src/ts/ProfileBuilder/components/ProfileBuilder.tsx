@@ -147,15 +147,11 @@ export class ProfileBuilder extends React.Component
 
   public componentWillMount(): void {
     const user: UserState = this.getSingleUser(this.props.users);
-    console.log(user);
-    console.log('vanessa');
-    console.log(this.props.users);
     if (user) { this.setState({ user }); }
   }
 
   public componentWillReceiveProps(nextProps: ProfileBuilderProps): void {
     const user = this.getSingleUser(nextProps.users);
-    console.log(user);
     if (this.state.user !== user) {
       this.setState({
         ...this.state,
@@ -175,8 +171,6 @@ export class ProfileBuilder extends React.Component
   
   // TODO: replace this with actual api call
   public getSingleUser(users: any[]): UserState {
-    console.log('single user');
-    console.log(this.props.match.params.id);
     return users.find((user: UserState) => {
       return user.id === this.props.match.params.id;
     });

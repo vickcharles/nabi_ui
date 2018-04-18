@@ -1,5 +1,5 @@
 import * as React from 'react';
-import BasicInfo from '../components/BasicInfo/BasicInfo';
+import { BasicInfo } from '../components/BasicInfo/BasicInfo';
 import { shallow } from 'enzyme';
 import { Role, UserState } from '../../Registration/model';
 
@@ -21,6 +21,7 @@ describe('BasicInfo', () => {
     wrapper = shallow(
       <BasicInfo 
         user={mockUser}
+        users={[]}
       />
     );
   });
