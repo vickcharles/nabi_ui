@@ -1,13 +1,20 @@
 import * as React from 'react';
+import { Dispatch } from 'redux';
+
 import { UserState } from '../../../Registration/model';
+import { InstructorState } from '../../model';
 import NameLocationBio from './NameLocationBio';
-// import { changeBio } from '../../actions';
+import { updateInstructor } from '../../actions';
 // import { Action, Dispatch } from 'redux';
 // import { ThunkAction } from 'redux-thunk';
 import { connect } from 'react-redux';
 
 interface BasicInfoStateProps {
-  users: UserState[];
+  dispatch: Dispatch<{}>;
+}
+
+interface BasicInfoState {
+  bio: string;
 }
 
 interface BasicInfoOwnProps { 
@@ -18,7 +25,7 @@ interface BasicInfoProps extends
   BasicInfoStateProps,
   BasicInfoOwnProps { }
 
-export class BasicInfo extends React.Component<BasicInfoProps, {}> {
+export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
   constructor(props: BasicInfoProps) {
     super(props);
 
@@ -27,6 +34,7 @@ export class BasicInfo extends React.Component<BasicInfoProps, {}> {
     };
 
     this.handleChangeBio = this.handleChangeBio.bind(this);
+    this.handleBlurBio = this.handleBlurBio.bind(this);
   }
 
   public handleChangeBio(event: any): void {
@@ -40,6 +48,14 @@ export class BasicInfo extends React.Component<BasicInfoProps, {}> {
     });
   }
 
+  public handleBlurBio(event: any): void {
+    const instructor: InstructorState =  {
+      userId: this.props.user.id,
+      bio: this.state.bio
+    };
+    this.props.dispatch(updateInstructor(instructor));
+  }
+
   public render(): JSX.Element {
     return (
     <NameLocationBio 
@@ -47,15 +63,16 @@ export class BasicInfo extends React.Component<BasicInfoProps, {}> {
       lastName={this.props.user.lastName}
       zipCode={this.props.user.zipCode}
       changeBio={this.handleChangeBio}
+      blurBio={this.handleBlurBio}
     />
     );
   }
 }
 
-function mapStateToProps(state: any, _ownProps: BasicInfoOwnProps): BasicInfoStateProps {
-  return {
-    users: state.users
-  };
-}
+// function mapStateToProps(state: any, _ownProps: BasicInfoOwnProps): BasicInfoStateProps {
+//   return {
+//     users: state.users
+//   };
+// }
 
-export default connect(mapStateToProps)(BasicInfo);
+export default connect()(BasicInfo);

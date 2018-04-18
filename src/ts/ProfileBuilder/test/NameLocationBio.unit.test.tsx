@@ -5,6 +5,7 @@ import { shallow } from 'enzyme';
 describe('NameLocationBio', () => {
   let wrapper: any;
   const changeBio: () => {} = jest.fn();
+  const blurBio: () => {} = jest.fn();
 
   beforeEach(() => {
     wrapper = shallow(
@@ -13,6 +14,7 @@ describe('NameLocationBio', () => {
         lastName="bar"
         zipCode="02920"
         changeBio={changeBio}
+        blurBio={blurBio}
       />
     );
   });

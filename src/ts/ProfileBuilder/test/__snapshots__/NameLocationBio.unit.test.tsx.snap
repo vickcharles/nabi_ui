@@ -5,6 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <NameLocationBio
+    blurBio={[MockFunction]}
     changeBio={[MockFunction]}
     firstName="foo"
     lastName="bar"
@@ -45,6 +46,7 @@ ShallowWrapper {
           margin="normal"
           multiline={true}
           name="bio"
+          onBlur={[MockFunction]}
           onChange={[MockFunction]}
           placeholder="What would you like your students to know  about you?"
           required={true}
@@ -105,6 +107,7 @@ ShallowWrapper {
           "margin": "normal",
           "multiline": true,
           "name": "bio",
+          "onBlur": [MockFunction],
           "onChange": [MockFunction],
           "placeholder": "What would you like your students to know  about you?",
           "required": true,
@@ -158,6 +161,7 @@ ShallowWrapper {
             margin="normal"
             multiline={true}
             name="bio"
+            onBlur={[MockFunction]}
             onChange={[MockFunction]}
             placeholder="What would you like your students to know  about you?"
             required={true}
@@ -218,6 +222,7 @@ ShallowWrapper {
             "margin": "normal",
             "multiline": true,
             "name": "bio",
+            "onBlur": [MockFunction],
             "onChange": [MockFunction],
             "placeholder": "What would you like your students to know  about you?",
             "required": true,
