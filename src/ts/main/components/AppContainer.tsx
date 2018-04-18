@@ -61,7 +61,7 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
 }
 
 const mapStateToProps = (state: any, _ownProps: any) => ({
-  users: state.userReducer
+  users: state.users
 });
 
 export default withRouter(connect(mapStateToProps)(AppContainer));

@@ -54,7 +54,7 @@ export class BasicInfo extends React.Component<BasicInfoProps, {}> {
 
 function mapStateToProps(state: any, _ownProps: BasicInfoOwnProps): BasicInfoStateProps {
   return {
-    users: state.user
+    users: state.users
   };
 }
 

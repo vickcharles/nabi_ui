@@ -3,7 +3,7 @@ import userReducer from './Registration';
 import { State } from './store';
 
 const rootReducer = combineReducers<State>({
-  userReducer
+  users: userReducer
 });
 
 export default rootReducer;
