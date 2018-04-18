@@ -1,3 +1,4 @@
-export enum ProfileBuilderActions {
-  CHANGE_BIO = 'PROFILE/CHANGE_BIO'
+export enum InstructorActions {
+  CREATE_INSTUCTOR = 'INSTRUCTOR/CREATE_INSTUCTOR',
+  UPDATE_INSTRUCTOR = 'INSTRUCTOR/UPDATE_INSTRUCTOR'
 }

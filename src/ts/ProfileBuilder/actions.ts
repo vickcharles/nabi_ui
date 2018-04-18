@@ -1,17 +1,27 @@
 import { Action } from 'redux';
-import { ProfileBuilderActions } from './constants/ActionTypes';
-// import { UserState } from '../Registration/model';
+import { InstructorActions } from './constants/ActionTypes';
+import { InstructorState } from './model';
 
-interface ChangeBio extends Action {
-  bio: string;
-  id: string;
+interface CreateInstructor extends Action {
+  instructor: InstructorState;
 }
 
-// Change bio
-export function changeBio(bio: string, id: string): ChangeBio {
+interface UpdateInstructor extends Action {
+  instructor: InstructorState;
+}
+
+// Create instructor
+export function createInstructor(instructor: InstructorState): CreateInstructor {
   return {
-    bio,
-    id,
-    type: ProfileBuilderActions.CHANGE_BIO
+    instructor,
+    type: InstructorActions.CREATE_INSTUCTOR
+  };
+}
+
+// Update instructor
+export function updateInstructor(instructor: InstructorState): UpdateInstructor {
+  return {
+    instructor,
+    type: InstructorActions.UPDATE_INSTRUCTOR
   };
 }
