@@ -5,8 +5,6 @@ import { UserState } from '../../../Registration/model';
 import { InstructorState } from '../../model';
 import NameLocationBio from './NameLocationBio';
 import { updateInstructor } from '../../actions';
-// import { Action, Dispatch } from 'redux';
-// import { ThunkAction } from 'redux-thunk';
 import { connect } from 'react-redux';
 
 interface BasicInfoStateProps {
@@ -58,21 +56,15 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
 
   public render(): JSX.Element {
     return (
-    <NameLocationBio 
-      firstName={this.props.user.firstName}
-      lastName={this.props.user.lastName}
-      zipCode={this.props.user.zipCode}
-      changeBio={this.handleChangeBio}
-      blurBio={this.handleBlurBio}
-    />
+      <NameLocationBio 
+        firstName={this.props.user.firstName}
+        lastName={this.props.user.lastName}
+        zipCode={this.props.user.zipCode}
+        changeBio={this.handleChangeBio}
+        blurBio={this.handleBlurBio}
+      />
     );
   }
 }
-
-// function mapStateToProps(state: any, _ownProps: BasicInfoOwnProps): BasicInfoStateProps {
-//   return {
-//     users: state.users
-//   };
-// }
 
 export default connect()(BasicInfo);
