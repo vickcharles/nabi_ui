@@ -4,7 +4,7 @@ import { InstructorActions } from './constants/ActionTypes';
 
 const initialState: InstructorState[] = [];
 
-export default function usersReducer(state: IState = initialState, action: AnyAction): IState {
+export default function instructorsReducer(state: IState = initialState, action: AnyAction): IState {
   switch (action.type) {
     case InstructorActions.CREATE_INSTUCTOR:
       return [...state, action.instructor];
