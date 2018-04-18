@@ -7,6 +7,8 @@ interface NameLocationBioProps {
     firstName: string;
     lastName: string;
     zipCode: string;
+    changeBio: (event: React.FormEvent<{}>) => void;
+    blurBio: (event: React.FormEvent<{}>) => void;
   }
 
 const NameLocationBio: React.StatelessComponent<NameLocationBioProps> = props => {
@@ -28,8 +30,8 @@ const NameLocationBio: React.StatelessComponent<NameLocationBioProps> = props =>
         id="bio"
         margin="normal"
         name="bio"
-        // TODO: add onChange
-        // onChange={handleChange}
+        onChange={props.changeBio}
+        onBlur={props.blurBio}
         placeholder="What would you like your students to know  about you?"
         required={true}
         multiline={true}

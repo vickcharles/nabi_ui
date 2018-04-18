@@ -5,6 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <BasicInfo
+    dispatch={undefined}
     user={
       Object {
         "email": "oreo",
@@ -30,6 +31,8 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
+      "blurBio": [Function],
+      "changeBio": [Function],
       "firstName": "foo",
       "lastName": "bar",
       "zipCode": "",
@@ -44,6 +47,8 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
+        "blurBio": [Function],
+        "changeBio": [Function],
         "firstName": "foo",
         "lastName": "bar",
         "zipCode": "",
