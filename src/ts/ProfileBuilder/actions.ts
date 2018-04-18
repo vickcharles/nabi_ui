@@ -1,15 +1,17 @@
 import { Action } from 'redux';
 import { ProfileBuilderActions } from './constants/ActionTypes';
-import { UserState } from '../Registration/model';
+// import { UserState } from '../Registration/model';
 
-interface CreateBio extends Action {
-  user: UserState;
+interface ChangeBio extends Action {
+  bio: string;
+  id: string;
 }
 
 // Change bio
-export function changeBio(user: UserState): CreateBio {
+export function changeBio(bio: string, id: string): ChangeBio {
   return {
-    user,
+    bio,
+    id,
     type: ProfileBuilderActions.CHANGE_BIO
   };
 }

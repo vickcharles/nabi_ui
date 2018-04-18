@@ -74,7 +74,7 @@ export class ProfileBuilder extends React.Component
       case 0:
         return <BasicInfo user={this.state.user} />;
       case 1:
-        return '';
+        return 'hola desde 1';
       case 2:
         return '';
       case 3:
