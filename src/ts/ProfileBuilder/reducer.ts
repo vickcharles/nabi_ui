@@ -11,7 +11,7 @@ export default function instructorsReducer(state: IState = initialState, action:
 
     case InstructorActions.UPDATE_INSTRUCTOR:
     return <IState> state.map(instructor =>
-      instructor.id === action.instructor.id
+      instructor.userId === action.instructor.userId
         ? { 
             ...instructor, 
             ...action.instructor

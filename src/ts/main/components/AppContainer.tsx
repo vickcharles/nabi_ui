@@ -1,12 +1,14 @@
 import * as React from 'react';
 import { Dispatch } from 'redux';
 import { connect } from 'react-redux';
+import { Route, withRouter, Switch } from 'react-router-dom';
+
 import Header from './Header';
 import Homepage from './Homepage';
 import { createUser, Registration } from '../../Registration';
-import { Route, withRouter, Switch } from 'react-router-dom';
 import { UserState } from '../../Registration/model';
-import { ProfileBuilder } from '../../ProfileBuilder';
+import { createInstructor, ProfileBuilder } from '../../ProfileBuilder';
+import { InstructorState } from '../../ProfileBuilder/model';
 
 export interface AppContainerStateProps {
   users: UserState[];
@@ -21,10 +23,12 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
     const { dispatch, users } = this.props;
 
     const dispatchCreateUser: any = (user: UserState) => dispatch(createUser(user));
+    const dispatchCreateInstructor: any = (instructor: InstructorState) => dispatch(createInstructor(instructor));
 
     const renderRegistration = (props: any) => (
       <Registration 
         createUser={dispatchCreateUser} 
+        createInstructor={dispatchCreateInstructor}
       />
     );
 
