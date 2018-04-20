@@ -1,11 +1,12 @@
 import * as React from 'react';
 import { Dispatch } from 'redux';
+import { connect } from 'react-redux';
 
 import { UserState } from '../../../Registration/model';
 import { InstructorState } from '../../model';
-import NameLocationBio from './NameLocationBio';
 import { updateInstructor } from '../../actions';
-import { connect } from 'react-redux';
+import NameLocationBio from './NameLocationBio';
+import ImageUploader from './ImageUploader';
 
 interface BasicInfoStateProps {
   dispatch: Dispatch<{}>;
@@ -17,6 +18,7 @@ interface BasicInfoState {
 
 interface BasicInfoOwnProps { 
   user: UserState;
+  changeAvatar: (email: string, avatar: string) => void;
 }
 
 interface BasicInfoProps extends
@@ -56,13 +58,16 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
 
   public render(): JSX.Element {
     return (
-      <NameLocationBio 
-        firstName={this.props.user.firstName}
-        lastName={this.props.user.lastName}
-        zipCode={this.props.user.zipCode}
-        changeBio={this.handleChangeBio}
-        blurBio={this.handleBlurBio}
-      />
+      <div>
+        <ImageUploader imageChanged={(avatar: string) => {this.props.changeAvatar('', avatar); }}/>
+        <NameLocationBio 
+          firstName={this.props.user.firstName}
+          lastName={this.props.user.lastName}
+          zipCode={this.props.user.zipCode}
+          changeBio={this.handleChangeBio}
+          blurBio={this.handleBlurBio}
+        />
+      </div>
     );
   }
 }

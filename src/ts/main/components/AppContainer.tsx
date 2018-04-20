@@ -5,7 +5,7 @@ import { Route, withRouter, Switch } from 'react-router-dom';
 
 import Header from './Header';
 import Homepage from './Homepage';
-import { createUser, Registration } from '../../Registration';
+import { createUser, changeAvatar, Registration } from '../../Registration';
 import { UserState } from '../../Registration/model';
 import { createInstructor, ProfileBuilder } from '../../ProfileBuilder';
 import { InstructorState } from '../../ProfileBuilder/model';
@@ -24,7 +24,8 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
 
     const dispatchCreateUser: any = (user: UserState) => dispatch(createUser(user));
     const dispatchCreateInstructor: any = (instructor: InstructorState) => dispatch(createInstructor(instructor));
-
+    const dispatchChangeAvatar: any = (id: string, avatar: string) => dispatch(changeAvatar(id, avatar ));
+    
     const renderRegistration = (props: any) => (
       <Registration 
         createUser={dispatchCreateUser} 
@@ -36,6 +37,7 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
       <ProfileBuilder 
         users={users} 
         classes={null}
+        changeAvatar={dispatchChangeAvatar}
       />
     );
 

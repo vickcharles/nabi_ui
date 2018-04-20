@@ -36,6 +36,7 @@ interface ProfileBuilderProps extends RouteComponentProps<{}> {
   classes: any;
   theme?: any;
   match: match<IdParams>;
+  changeAvatar(id: string, avatar: string): void;
 }
 
 interface ProfileBuilderState {
@@ -67,12 +68,14 @@ export class ProfileBuilder extends React.Component
         hearAboutUs: ''
       }
     };
+
+    this.renderDesktopButtons = this.renderDesktopButtons.bind(this);
   }
   
   getStepContent(stepIndex: any) {
     switch (stepIndex) {
       case 0:
-        return <BasicInfo user={this.state.user} />;
+        return <BasicInfo user={this.state.user} changeAvatar={this.props.changeAvatar}/>;
       case 1:
         return '';
       case 2:
@@ -275,18 +278,21 @@ export class ProfileBuilder extends React.Component
     );
   }
 
-  public render(): JSX.Element {    
+  public render(): JSX.Element {
+    const { activeStep } = this.state;
     return (
       <div className="nabi-container">
         <Typography variant="title" className="nabi-margin-top-medium nabi-margin-bottom-medium">
           PROFILE BUILDER
         </Typography>
-      
+
         <div className="nabi-background-white nabi-section">
           
           {this.renderDesktopStepper()}
+          
+          {/* {getStepContent(activeStep, this.props)} */}
 
-          {this.getStepContent(this.state.activeStep)}
+          {this.getStepContent(activeStep)}
           
           {this.renderDesktopButtons()}
 
