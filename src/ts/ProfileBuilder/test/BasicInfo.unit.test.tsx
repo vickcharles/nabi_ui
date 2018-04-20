@@ -8,6 +8,7 @@ import { Role, UserState } from '../../Registration/model';
 describe('BasicInfo', () => {
   let wrapper: any;
   let dispatch: Dispatch<{}>;
+  const changeAvatar: (email: string, avatar: string) => {} = jest.fn();
 
   const mockUser: UserState = {
     id: '',
@@ -25,6 +26,7 @@ describe('BasicInfo', () => {
       <BasicInfo 
         user={mockUser}
         dispatch={dispatch}
+        changeAvatar={changeAvatar}
       />
     );
   });

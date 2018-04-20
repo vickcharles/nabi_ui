@@ -12,7 +12,7 @@ export interface HearAboutUsInfo {
   value: HearAboutUs;
   label: string;
 }
- 
+
 export const hearAboutUsInfo = {
   Google: <HearAboutUsInfo> {
     value: HearAboutUs.Google,
@@ -59,6 +59,7 @@ export interface UserState {
   zipCode: string;
   role: Role;
   hearAboutUs: string;
+  avatar?: string;
 }
 
 export type IState = UserState[];

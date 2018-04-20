@@ -7,6 +7,7 @@ describe('ProfileBuilder', () => {
   let wrapper: any;
   let classes: object;
   let theme: object;
+  let changeAvatar: any;
 
   const mockUser: UserState = {
     id: '',
@@ -20,11 +21,13 @@ describe('ProfileBuilder', () => {
   };
 
   beforeEach(() => {
+    changeAvatar = (id: string, avatar: string): void => { console.log( avatar ); };
     wrapper = shallow(
-      <ProfileBuilder 
+      <ProfileBuilder
         classes={classes}
         theme={theme}
         users={[mockUser]}
+        changeAvatar={changeAvatar}
       />
     );
   });

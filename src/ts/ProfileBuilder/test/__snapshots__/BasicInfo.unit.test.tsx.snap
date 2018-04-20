@@ -5,6 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <BasicInfo
+    changeAvatar={[MockFunction]}
     dispatch={undefined}
     user={
       Object {
@@ -29,33 +30,101 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
-      "blurBio": [Function],
-      "changeBio": [Function],
-      "firstName": "foo",
-      "lastName": "bar",
-      "zipCode": "",
+      "children": Array [
+        <ImageUploader
+          imageChanged={[Function]}
+        />,
+        <NameLocationBio
+          blurBio={[Function]}
+          changeBio={[Function]}
+          firstName="foo"
+          lastName="bar"
+          zipCode=""
+        />,
+      ],
     },
     "ref": null,
-    "rendered": null,
-    "type": [Function],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "imageChanged": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "blurBio": [Function],
+          "changeBio": [Function],
+          "firstName": "foo",
+          "lastName": "bar",
+          "zipCode": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
-        "blurBio": [Function],
-        "changeBio": [Function],
-        "firstName": "foo",
-        "lastName": "bar",
-        "zipCode": "",
+        "children": Array [
+          <ImageUploader
+            imageChanged={[Function]}
+          />,
+          <NameLocationBio
+            blurBio={[Function]}
+            changeBio={[Function]}
+            firstName="foo"
+            lastName="bar"
+            zipCode=""
+          />,
+        ],
       },
       "ref": null,
-      "rendered": null,
-      "type": [Function],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "imageChanged": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "blurBio": [Function],
+            "changeBio": [Function],
+            "firstName": "foo",
+            "lastName": "bar",
+            "zipCode": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
