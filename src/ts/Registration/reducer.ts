@@ -8,7 +8,18 @@ export default function usersReducer(state: IState = initialState, action: AnyAc
   switch (action.type) {
     case RegistrationActions.CREATE_USER:
       return [...state, action.user];
+    
     case RegistrationActions.CHANGE_AVATAR:
+      console.log('change avatar');
+      // return <IState> state.map(user =>
+      //   user.id === action.id
+      //     ? { 
+      //       ...user, 
+      //       avatar: action.avatar
+      //       // ...action.user
+      //     }
+      //     : user
+      // );
       if (state.length === 0) {
         let nuser: UserState = Object.assign(
           {},

@@ -18,7 +18,7 @@ interface BasicInfoState {
 
 interface BasicInfoOwnProps { 
   user: UserState;
-  changeAvatar: (email: string, avatar: string) => void;
+  changeAvatar: (id: string, avatar: string) => void;
 }
 
 interface BasicInfoProps extends
