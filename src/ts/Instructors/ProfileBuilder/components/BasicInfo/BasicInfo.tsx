@@ -2,9 +2,9 @@ import * as React from 'react';
 import { Dispatch } from 'redux';
 import { connect } from 'react-redux';
 
-import { UserState } from '../../../Registration/model';
-import { InstructorState } from '../../model';
-import { updateInstructor } from '../../actions';
+import { UserState } from '../../../../Users/model';
+import { InstructorState } from '../../../model';
+import { updateInstructor } from '../../../actions';
 import NameLocationBio from './NameLocationBio';
 import ImageUploader from './ImageUploader';
 

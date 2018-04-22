@@ -5,10 +5,10 @@ import { Route, withRouter, Switch } from 'react-router-dom';
 
 import Header from './Header';
 import Homepage from './Homepage';
-import { createUser, changeAvatar, Registration } from '../../Registration';
-import { UserState } from '../../Registration/model';
-import { createInstructor, ProfileBuilder } from '../../ProfileBuilder';
-import { InstructorState } from '../../ProfileBuilder/model';
+import { createUser, changeAvatar, Registration } from '../../Users/';
+import { UserState } from '../../Users/model';
+import { createInstructor, ProfileBuilder } from '../../Instructors';
+import { InstructorState } from '../../Instructors/model';
 
 export interface AppContainerStateProps {
   users: UserState[];

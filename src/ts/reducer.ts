@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import userReducer from './Registration';
-import instructorReducer from './ProfileBuilder';
+import userReducer from './Users';
+import instructorReducer from './Instructors';
 
 import { State } from './store';
 
