@@ -1,5 +1,5 @@
 import { AnyAction } from 'redux';
-import { UserState, IState, Role } from './model';
+import { UserState, IState } from './model';
 import { RegistrationActions } from './constants/ActionTypes';
 
 const initialState: UserState[] = [];
@@ -10,40 +10,14 @@ export default function usersReducer(state: IState = initialState, action: AnyAc
       return [...state, action.user];
     
     case RegistrationActions.CHANGE_AVATAR:
-      console.log('change avatar');
-      // return <IState> state.map(user =>
-      //   user.id === action.id
-      //     ? { 
-      //       ...user, 
-      //       avatar: action.avatar
-      //       // ...action.user
-      //     }
-      //     : user
-      // );
-      if (state.length === 0) {
-        let nuser: UserState = Object.assign(
-          {},
-          {
-            id: '',
-            firstName: '',
-            lastName: '',
-            email: '',
-            password: '',
-            zipCode: '',
-            role: Role.instructor,
-            hearAboutUs: '',
-            avatar: ''},
-          {avatar: action.avatar}
-        );
-        return [...state, nuser];
-      }
-      let newState = state.map((obj, i) => {
-        if (obj.id === action.id) {
-          obj.avatar = action.avatar;
-        }
-        return obj;
-      });
-      return [...newState];
+      return <IState> state.map(user =>
+        user.id === action.id
+          ? { 
+            ...user, 
+            avatar: action.avatar
+          }
+          : user
+      );
     default:
       return state;
   }

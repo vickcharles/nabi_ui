@@ -8,6 +8,7 @@ import Button from 'material-ui/Button';
 import MobileStepper from 'material-ui/MobileStepper';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
+
 import BasicInfo from './BasicInfo/BasicInfo';
 import { Role, UserState } from '../../Registration/model';
 

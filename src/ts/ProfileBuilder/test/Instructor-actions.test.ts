@@ -25,7 +25,7 @@ describe('Instructors actions', () => {
     };
 
     const expectedAction = {
-        instructor,
+      instructor,
       type: InstructorActions.UPDATE_INSTRUCTOR
     };
 
