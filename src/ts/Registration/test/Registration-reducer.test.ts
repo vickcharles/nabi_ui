@@ -58,4 +58,28 @@ describe('Users reducer', () => {
       }
     ]);
   });
+
+  describe('Handles CHANGE_AVATAR', () => {
+    it('when all values are set in payload', () => {
+      expect(
+        reducer(state, {
+          type: RegistrationActions.CHANGE_AVATAR,
+          id: 'foo',
+          avatar: 'something'
+        })
+      ).toEqual([
+        {
+          id: 'foo',
+          firstName: 'bar',
+          lastName: 'col',
+          email: 'qux',
+          password: 'foobar',
+          zipCode: 'barfoo',
+          role: Role.student,
+          hearAboutUs: 'afufaki',
+          avatar: 'something'
+        }
+      ]);
+    });
+  });
 });

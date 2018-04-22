@@ -18,7 +18,7 @@ interface BasicInfoState {
 
 interface BasicInfoOwnProps { 
   user: UserState;
-  changeAvatar: (email: string, avatar: string) => void;
+  changeAvatar: (id: string, avatar: string) => void;
 }
 
 interface BasicInfoProps extends
@@ -59,7 +59,9 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
   public render(): JSX.Element {
     return (
       <div>
-        <ImageUploader imageChanged={(avatar: string) => {this.props.changeAvatar('', avatar); }}/>
+        <ImageUploader 
+          imageChanged={(avatar: string) => {this.props.changeAvatar(this.props.user.id, avatar); }}
+        />
         <NameLocationBio 
           firstName={this.props.user.firstName}
           lastName={this.props.user.lastName}

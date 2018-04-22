@@ -23,4 +23,14 @@ describe('Users actions', () => {
 
     expect(actions.createUser(user)).toEqual(expectedAction);
   });
+
+  it('Creates an action to chnage avatar', () => {
+    const expectedAction = {
+      id: 'foo',
+      avatar: 'caracas',
+      type: RegistrationActions.CHANGE_AVATAR
+    };
+
+    expect(actions.changeAvatar('foo', 'caracas')).toEqual(expectedAction);
+  });
 });

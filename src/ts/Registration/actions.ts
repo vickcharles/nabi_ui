@@ -10,6 +10,7 @@ interface ChangeAvatar extends Action {
   id: string;
   avatar: string;
 }
+
 // Create user
 export function createUser(user: UserState): CreateUser {
   return {
