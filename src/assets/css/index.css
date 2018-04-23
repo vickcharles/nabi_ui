@@ -16,6 +16,15 @@ body {
   background-color: #fff;
 }
 
+.nabi-background-white {
+  background-color: #fff;
+}
+
+/*DISPLAY*/
+.nabi-display-inline-block {
+  display: inline-block !important;
+}
+
 /*FONT FAMILY*/
 .nabi-font-jennasue {
 	font-family: 'JennaSue';
@@ -56,6 +65,38 @@ body {
   margin: 40px
 }
 
+.nabi-margin-top-xsmall {
+  margin-top: 10px !important;
+}
+
+.nabi-margin-top-small {
+  margin-top: 20px !important;
+}
+
+.nabi-margin-top-medium {
+  margin-top: 30px !important;
+}
+
+.nabi-margin-top-large {
+  margin-top: 40px !important;
+}
+
+.nabi-margin-right-xsmall {
+  margin-right: 10px !important;
+}
+
+.nabi-margin-right-small {
+  margin-right: 20px !important;
+}
+
+.nabi-margin-right-medium {
+  margin-right: 30px !important;
+}
+
+.nabi-margin-right-large {
+  margin-right: 40px !important;
+}
+
 .nabi-margin-bottom-xsmall {
     margin-bottom: 10px !important;
 }
@@ -72,16 +113,20 @@ body {
   margin-bottom: 40px !important;
 }
 
-.nabi-margin-top-small {
-  margin-top: 20px !important;
+.nabi-margin-left-xsmall {
+  margin-left: 10px !important;
 }
 
-.nabi-margin-top-medium {
-  margin-top: 30px !important;
+.nabi-margin-left-small {
+  margin-left: 20px !important;
 }
 
-.nabi-margin-top-large {
-  margin-top: 40px !important;
+.nabi-margin-left-medium {
+  margin-left: 30px !important;
+}
+
+.nabi-margin-left-large {
+  margin-left: 40px !important;
 }
 
 /****CUSTOM ELEMENTS****/
@@ -104,6 +149,13 @@ body {
 
 .hide-on-desktop {
 	display: block !important;
+}
+
+/*Highlighted text*/
+.nabi-highlighted-text {
+  background: rgba(6,195,225, 0.3);
+  border-radius: 3px;
+  padding: 4px 6px;
 }
 
 /* iPads (landscape) ----------- */

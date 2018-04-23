@@ -15,12 +15,34 @@ const theme = createMuiTheme({
       disabled: {
         color: '#c6c9d0'
       },
+      flatPrimary: {
+        color: '#06c3e1'
+      },
       raised: {
         backgroundColor: '#06c3e1 !important',
         borderRadius: '3px',
         boxShadow: 'inset 0 -3px 0 rgba(0,0,0,.1)',
         fontWeight: 600,
         padding: '18px 40px'
+      },
+      root: {
+        color: '#717a8a'
+      }
+    },
+    MuiDialogActions: {
+      root: {
+        padding: '0px 20px 20px'
+      }
+    },
+    MuiDialogContent: {
+      root: {
+        padding: '24px 40px 24px 40px'
+      }
+    },
+    MuiDialogTitle: {
+      root: {
+        padding: '6px 24px 19px 24px',
+        background: '#eef1f4'
       }
     },
     MuiDivider: {
@@ -38,6 +60,16 @@ const theme = createMuiTheme({
       focused: {
         color: '#06c3e1',
         marginTop: '0px !important'
+      }
+    },
+    MuiIconButton: {
+      root: {
+        '&:hover': {
+          background: 'rgba(6,195,225, 0.3)'
+        },
+        borderRadius: '3px',
+        height: '28px',
+        width: '30px'
       }
     },
     MuiInput: {
@@ -108,6 +140,11 @@ const theme = createMuiTheme({
       },
       active: {
         color: '#06c3e1 !important'
+      }
+    },
+    MuiSvgIcon: {
+      root: {
+        fill: '#717a8a !important'
       }
     },
     MuiTypography : {

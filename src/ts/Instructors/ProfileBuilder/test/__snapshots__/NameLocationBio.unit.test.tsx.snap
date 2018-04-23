@@ -24,11 +24,23 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <WithStyles(Typography)
-          className="nabi-text-center nabi-text-mediumbold nabi-margin-bottom-xsmall"
+        <div
+          className="nabi-text-center"
         >
-          foo bar
-        </WithStyles(Typography)>,
+          <WithStyles(Typography)
+            className="nabi-text-center nabi-text-mediumbold nabi-margin-bottom-xsmall 
+            nabi-display-inline-block nabi nabi-margin-right-xsmall "
+          >
+            foo bar
+          </WithStyles(Typography)>
+          <WithStyles(IconButton)
+            onClick={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+          >
+            <pure(Edit) />
+          </WithStyles(IconButton)>
+        </div>,
         <WithStyles(Typography)
           className="nabi-text-center nabi-margin-bottom-medium"
         >
@@ -56,6 +68,12 @@ ShallowWrapper {
         <WithStyles(Divider)
           className="nabi-margin-top-small"
         />,
+        <EditName
+          closeHandler={[Function]}
+          firstName="foo"
+          isFormDialogOpen={false}
+          lastName="bar"
+        />,
       ],
     },
     "ref": null,
@@ -63,14 +81,64 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "host",
         "props": Object {
-          "children": "foo bar",
-          "className": "nabi-text-center nabi-text-mediumbold nabi-margin-bottom-xsmall",
+          "children": Array [
+            <WithStyles(Typography)
+              className="nabi-text-center nabi-text-mediumbold nabi-margin-bottom-xsmall 
+            nabi-display-inline-block nabi nabi-margin-right-xsmall "
+            >
+              foo bar
+            </WithStyles(Typography)>,
+            <WithStyles(IconButton)
+              onClick={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+            >
+              <pure(Edit) />
+            </WithStyles(IconButton)>,
+          ],
+          "className": "nabi-text-center",
         },
         "ref": null,
-        "rendered": "foo bar",
-        "type": [Function],
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "foo bar",
+              "className": "nabi-text-center nabi-text-mediumbold nabi-margin-bottom-xsmall 
+            nabi-display-inline-block nabi nabi-margin-right-xsmall ",
+            },
+            "ref": null,
+            "rendered": "foo bar",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <pure(Edit) />,
+              "onClick": [Function],
+              "onMouseOut": [Function],
+              "onMouseOver": [Function],
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": "div",
       },
       Object {
         "instance": null,
@@ -129,6 +197,20 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "closeHandler": [Function],
+          "firstName": "foo",
+          "isFormDialogOpen": false,
+          "lastName": "bar",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": "div",
   },
@@ -139,11 +221,23 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <WithStyles(Typography)
-            className="nabi-text-center nabi-text-mediumbold nabi-margin-bottom-xsmall"
+          <div
+            className="nabi-text-center"
           >
-            foo bar
-          </WithStyles(Typography)>,
+            <WithStyles(Typography)
+              className="nabi-text-center nabi-text-mediumbold nabi-margin-bottom-xsmall 
+            nabi-display-inline-block nabi nabi-margin-right-xsmall "
+            >
+              foo bar
+            </WithStyles(Typography)>
+            <WithStyles(IconButton)
+              onClick={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+            >
+              <pure(Edit) />
+            </WithStyles(IconButton)>
+          </div>,
           <WithStyles(Typography)
             className="nabi-text-center nabi-margin-bottom-medium"
           >
@@ -171,6 +265,12 @@ ShallowWrapper {
           <WithStyles(Divider)
             className="nabi-margin-top-small"
           />,
+          <EditName
+            closeHandler={[Function]}
+            firstName="foo"
+            isFormDialogOpen={false}
+            lastName="bar"
+          />,
         ],
       },
       "ref": null,
@@ -178,14 +278,64 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "host",
           "props": Object {
-            "children": "foo bar",
-            "className": "nabi-text-center nabi-text-mediumbold nabi-margin-bottom-xsmall",
+            "children": Array [
+              <WithStyles(Typography)
+                className="nabi-text-center nabi-text-mediumbold nabi-margin-bottom-xsmall 
+            nabi-display-inline-block nabi nabi-margin-right-xsmall "
+              >
+                foo bar
+              </WithStyles(Typography)>,
+              <WithStyles(IconButton)
+                onClick={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+              >
+                <pure(Edit) />
+              </WithStyles(IconButton)>,
+            ],
+            "className": "nabi-text-center",
           },
           "ref": null,
-          "rendered": "foo bar",
-          "type": [Function],
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "foo bar",
+                "className": "nabi-text-center nabi-text-mediumbold nabi-margin-bottom-xsmall 
+            nabi-display-inline-block nabi nabi-margin-right-xsmall ",
+              },
+              "ref": null,
+              "rendered": "foo bar",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <pure(Edit) />,
+                "onClick": [Function],
+                "onMouseOut": [Function],
+                "onMouseOver": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": "div",
         },
         Object {
           "instance": null,
@@ -239,6 +389,20 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "className": "nabi-margin-top-small",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "closeHandler": [Function],
+            "firstName": "foo",
+            "isFormDialogOpen": false,
+            "lastName": "bar",
           },
           "ref": null,
           "rendered": null,
