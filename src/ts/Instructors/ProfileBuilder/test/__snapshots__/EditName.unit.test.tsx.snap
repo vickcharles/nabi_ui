@@ -1,0 +1,676 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EditName Shallow Matches snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <EditName
+    closeHandler={[MockFunction]}
+    firstName=""
+    isFormDialogOpen={false}
+    lastName=""
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <WithStyles(Dialog)
+        aria-labelledby="form-dialog-title"
+        onClose={[MockFunction]}
+        open={false}
+      >
+        <WithStyles(DialogTitle)
+          id="form-dialog-title"
+        >
+          Edit Name
+        </WithStyles(DialogTitle)>
+        <WithStyles(DialogContent)>
+          <WithStyles(DialogContentText)
+            className="nabi-margin-bottom-small"
+          >
+            Choose display name
+          </WithStyles(DialogContentText)>
+          <WithStyles(FormControl)
+            component="fieldset"
+            required={true}
+          >
+            <RadioGroup
+              name="displayName"
+              value=""
+            >
+              <WithStyles(FormControlLabel)
+                className="nabi-margin-bottom-xsmall"
+                control={<WithStyles(Radio) />}
+                label="Show my full name:  "
+                value=""
+              />
+              <WithStyles(FormControlLabel)
+                control={<WithStyles(Radio) />}
+                label="Show only my first name and last initial:  ."
+                value=""
+              />
+            </RadioGroup>
+          </WithStyles(FormControl)>
+        </WithStyles(DialogContent)>
+        <WithStyles(DialogActions)>
+          <WithStyles(Button)
+            color="default"
+            onClick={[MockFunction]}
+          >
+            Close
+          </WithStyles(Button)>
+          <WithStyles(Button)
+            color="primary"
+            onClick={[MockFunction]}
+            variant="raised"
+          >
+            Save
+          </WithStyles(Button)>
+        </WithStyles(DialogActions)>
+      </WithStyles(Dialog)>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "aria-labelledby": "form-dialog-title",
+        "children": Array [
+          <WithStyles(DialogTitle)
+            id="form-dialog-title"
+          >
+            Edit Name
+          </WithStyles(DialogTitle)>,
+          <WithStyles(DialogContent)>
+            <WithStyles(DialogContentText)
+              className="nabi-margin-bottom-small"
+            >
+              Choose display name
+            </WithStyles(DialogContentText)>
+            <WithStyles(FormControl)
+              component="fieldset"
+              required={true}
+            >
+              <RadioGroup
+                name="displayName"
+                value=""
+              >
+                <WithStyles(FormControlLabel)
+                  className="nabi-margin-bottom-xsmall"
+                  control={<WithStyles(Radio) />}
+                  label="Show my full name:  "
+                  value=""
+                />
+                <WithStyles(FormControlLabel)
+                  control={<WithStyles(Radio) />}
+                  label="Show only my first name and last initial:  ."
+                  value=""
+                />
+              </RadioGroup>
+            </WithStyles(FormControl)>
+          </WithStyles(DialogContent)>,
+          <WithStyles(DialogActions)>
+            <WithStyles(Button)
+              color="default"
+              onClick={[MockFunction]}
+            >
+              Close
+            </WithStyles(Button)>
+            <WithStyles(Button)
+              color="primary"
+              onClick={[MockFunction]}
+              variant="raised"
+            >
+              Save
+            </WithStyles(Button)>
+          </WithStyles(DialogActions)>,
+        ],
+        "onClose": [MockFunction],
+        "open": false,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Edit Name",
+            "id": "form-dialog-title",
+          },
+          "ref": null,
+          "rendered": "Edit Name",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <WithStyles(DialogContentText)
+                className="nabi-margin-bottom-small"
+              >
+                Choose display name
+              </WithStyles(DialogContentText)>,
+              <WithStyles(FormControl)
+                component="fieldset"
+                required={true}
+              >
+                <RadioGroup
+                  name="displayName"
+                  value=""
+                >
+                  <WithStyles(FormControlLabel)
+                    className="nabi-margin-bottom-xsmall"
+                    control={<WithStyles(Radio) />}
+                    label="Show my full name:  "
+                    value=""
+                  />
+                  <WithStyles(FormControlLabel)
+                    control={<WithStyles(Radio) />}
+                    label="Show only my first name and last initial:  ."
+                    value=""
+                  />
+                </RadioGroup>
+              </WithStyles(FormControl)>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Choose display name",
+                "className": "nabi-margin-bottom-small",
+              },
+              "ref": null,
+              "rendered": "Choose display name",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <RadioGroup
+                  name="displayName"
+                  value=""
+                >
+                  <WithStyles(FormControlLabel)
+                    className="nabi-margin-bottom-xsmall"
+                    control={<WithStyles(Radio) />}
+                    label="Show my full name:  "
+                    value=""
+                  />
+                  <WithStyles(FormControlLabel)
+                    control={<WithStyles(Radio) />}
+                    label="Show only my first name and last initial:  ."
+                    value=""
+                  />
+                </RadioGroup>,
+                "component": "fieldset",
+                "required": true,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <WithStyles(FormControlLabel)
+                      className="nabi-margin-bottom-xsmall"
+                      control={<WithStyles(Radio) />}
+                      label="Show my full name:  "
+                      value=""
+                    />,
+                    <WithStyles(FormControlLabel)
+                      control={<WithStyles(Radio) />}
+                      label="Show only my first name and last initial:  ."
+                      value=""
+                    />,
+                  ],
+                  "name": "displayName",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "className": "nabi-margin-bottom-xsmall",
+                      "control": <WithStyles(Radio) />,
+                      "label": "Show my full name:  ",
+                      "value": "",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "control": <WithStyles(Radio) />,
+                      "label": "Show only my first name and last initial:  .",
+                      "value": "",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <WithStyles(Button)
+                color="default"
+                onClick={[MockFunction]}
+              >
+                Close
+              </WithStyles(Button)>,
+              <WithStyles(Button)
+                color="primary"
+                onClick={[MockFunction]}
+                variant="raised"
+              >
+                Save
+              </WithStyles(Button)>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Close",
+                "color": "default",
+                "onClick": [MockFunction],
+              },
+              "ref": null,
+              "rendered": "Close",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Save",
+                "color": "primary",
+                "onClick": [MockFunction],
+                "variant": "raised",
+              },
+              "ref": null,
+              "rendered": "Save",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <WithStyles(Dialog)
+          aria-labelledby="form-dialog-title"
+          onClose={[MockFunction]}
+          open={false}
+        >
+          <WithStyles(DialogTitle)
+            id="form-dialog-title"
+          >
+            Edit Name
+          </WithStyles(DialogTitle)>
+          <WithStyles(DialogContent)>
+            <WithStyles(DialogContentText)
+              className="nabi-margin-bottom-small"
+            >
+              Choose display name
+            </WithStyles(DialogContentText)>
+            <WithStyles(FormControl)
+              component="fieldset"
+              required={true}
+            >
+              <RadioGroup
+                name="displayName"
+                value=""
+              >
+                <WithStyles(FormControlLabel)
+                  className="nabi-margin-bottom-xsmall"
+                  control={<WithStyles(Radio) />}
+                  label="Show my full name:  "
+                  value=""
+                />
+                <WithStyles(FormControlLabel)
+                  control={<WithStyles(Radio) />}
+                  label="Show only my first name and last initial:  ."
+                  value=""
+                />
+              </RadioGroup>
+            </WithStyles(FormControl)>
+          </WithStyles(DialogContent)>
+          <WithStyles(DialogActions)>
+            <WithStyles(Button)
+              color="default"
+              onClick={[MockFunction]}
+            >
+              Close
+            </WithStyles(Button)>
+            <WithStyles(Button)
+              color="primary"
+              onClick={[MockFunction]}
+              variant="raised"
+            >
+              Save
+            </WithStyles(Button)>
+          </WithStyles(DialogActions)>
+        </WithStyles(Dialog)>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "aria-labelledby": "form-dialog-title",
+          "children": Array [
+            <WithStyles(DialogTitle)
+              id="form-dialog-title"
+            >
+              Edit Name
+            </WithStyles(DialogTitle)>,
+            <WithStyles(DialogContent)>
+              <WithStyles(DialogContentText)
+                className="nabi-margin-bottom-small"
+              >
+                Choose display name
+              </WithStyles(DialogContentText)>
+              <WithStyles(FormControl)
+                component="fieldset"
+                required={true}
+              >
+                <RadioGroup
+                  name="displayName"
+                  value=""
+                >
+                  <WithStyles(FormControlLabel)
+                    className="nabi-margin-bottom-xsmall"
+                    control={<WithStyles(Radio) />}
+                    label="Show my full name:  "
+                    value=""
+                  />
+                  <WithStyles(FormControlLabel)
+                    control={<WithStyles(Radio) />}
+                    label="Show only my first name and last initial:  ."
+                    value=""
+                  />
+                </RadioGroup>
+              </WithStyles(FormControl)>
+            </WithStyles(DialogContent)>,
+            <WithStyles(DialogActions)>
+              <WithStyles(Button)
+                color="default"
+                onClick={[MockFunction]}
+              >
+                Close
+              </WithStyles(Button)>
+              <WithStyles(Button)
+                color="primary"
+                onClick={[MockFunction]}
+                variant="raised"
+              >
+                Save
+              </WithStyles(Button)>
+            </WithStyles(DialogActions)>,
+          ],
+          "onClose": [MockFunction],
+          "open": false,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Edit Name",
+              "id": "form-dialog-title",
+            },
+            "ref": null,
+            "rendered": "Edit Name",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(DialogContentText)
+                  className="nabi-margin-bottom-small"
+                >
+                  Choose display name
+                </WithStyles(DialogContentText)>,
+                <WithStyles(FormControl)
+                  component="fieldset"
+                  required={true}
+                >
+                  <RadioGroup
+                    name="displayName"
+                    value=""
+                  >
+                    <WithStyles(FormControlLabel)
+                      className="nabi-margin-bottom-xsmall"
+                      control={<WithStyles(Radio) />}
+                      label="Show my full name:  "
+                      value=""
+                    />
+                    <WithStyles(FormControlLabel)
+                      control={<WithStyles(Radio) />}
+                      label="Show only my first name and last initial:  ."
+                      value=""
+                    />
+                  </RadioGroup>
+                </WithStyles(FormControl)>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Choose display name",
+                  "className": "nabi-margin-bottom-small",
+                },
+                "ref": null,
+                "rendered": "Choose display name",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <RadioGroup
+                    name="displayName"
+                    value=""
+                  >
+                    <WithStyles(FormControlLabel)
+                      className="nabi-margin-bottom-xsmall"
+                      control={<WithStyles(Radio) />}
+                      label="Show my full name:  "
+                      value=""
+                    />
+                    <WithStyles(FormControlLabel)
+                      control={<WithStyles(Radio) />}
+                      label="Show only my first name and last initial:  ."
+                      value=""
+                    />
+                  </RadioGroup>,
+                  "component": "fieldset",
+                  "required": true,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      <WithStyles(FormControlLabel)
+                        className="nabi-margin-bottom-xsmall"
+                        control={<WithStyles(Radio) />}
+                        label="Show my full name:  "
+                        value=""
+                      />,
+                      <WithStyles(FormControlLabel)
+                        control={<WithStyles(Radio) />}
+                        label="Show only my first name and last initial:  ."
+                        value=""
+                      />,
+                    ],
+                    "name": "displayName",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "className": "nabi-margin-bottom-xsmall",
+                        "control": <WithStyles(Radio) />,
+                        "label": "Show my full name:  ",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "control": <WithStyles(Radio) />,
+                        "label": "Show only my first name and last initial:  .",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(Button)
+                  color="default"
+                  onClick={[MockFunction]}
+                >
+                  Close
+                </WithStyles(Button)>,
+                <WithStyles(Button)
+                  color="primary"
+                  onClick={[MockFunction]}
+                  variant="raised"
+                >
+                  Save
+                </WithStyles(Button)>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Close",
+                  "color": "default",
+                  "onClick": [MockFunction],
+                },
+                "ref": null,
+                "rendered": "Close",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Save",
+                  "color": "primary",
+                  "onClick": [MockFunction],
+                  "variant": "raised",
+                },
+                "ref": null,
+                "rendered": "Save",
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { UserState } from '../../../../Users/model';
 import { InstructorState } from '../../../model';
 import { updateInstructor } from '../../../actions';
-import NameLocationBio from './NameLocationBio';
+import NameLocationBio from './NameLocationBio/NameLocationBio';
 import ImageUploader from './ImageUploader';
 
 interface BasicInfoStateProps {
