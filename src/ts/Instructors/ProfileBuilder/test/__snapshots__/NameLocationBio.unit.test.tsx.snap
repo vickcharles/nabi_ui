@@ -29,7 +29,7 @@ ShallowWrapper {
         >
           <WithStyles(Typography)
             className="nabi-text-center nabi-text-mediumbold nabi-margin-bottom-xsmall 
-            nabi-display-inline-block nabi nabi-margin-right-xsmall "
+            nabi-display-inline-block "
           >
             foo bar
           </WithStyles(Typography)>
@@ -86,7 +86,7 @@ ShallowWrapper {
           "children": Array [
             <WithStyles(Typography)
               className="nabi-text-center nabi-text-mediumbold nabi-margin-bottom-xsmall 
-            nabi-display-inline-block nabi nabi-margin-right-xsmall "
+            nabi-display-inline-block "
             >
               foo bar
             </WithStyles(Typography)>,
@@ -109,7 +109,7 @@ ShallowWrapper {
             "props": Object {
               "children": "foo bar",
               "className": "nabi-text-center nabi-text-mediumbold nabi-margin-bottom-xsmall 
-            nabi-display-inline-block nabi nabi-margin-right-xsmall ",
+            nabi-display-inline-block ",
             },
             "ref": null,
             "rendered": "foo bar",
@@ -226,7 +226,7 @@ ShallowWrapper {
           >
             <WithStyles(Typography)
               className="nabi-text-center nabi-text-mediumbold nabi-margin-bottom-xsmall 
-            nabi-display-inline-block nabi nabi-margin-right-xsmall "
+            nabi-display-inline-block "
             >
               foo bar
             </WithStyles(Typography)>
@@ -283,7 +283,7 @@ ShallowWrapper {
             "children": Array [
               <WithStyles(Typography)
                 className="nabi-text-center nabi-text-mediumbold nabi-margin-bottom-xsmall 
-            nabi-display-inline-block nabi nabi-margin-right-xsmall "
+            nabi-display-inline-block "
               >
                 foo bar
               </WithStyles(Typography)>,
@@ -306,7 +306,7 @@ ShallowWrapper {
               "props": Object {
                 "children": "foo bar",
                 "className": "nabi-text-center nabi-text-mediumbold nabi-margin-bottom-xsmall 
-            nabi-display-inline-block nabi nabi-margin-right-xsmall ",
+            nabi-display-inline-block ",
               },
               "ref": null,
               "rendered": "foo bar",

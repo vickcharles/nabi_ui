@@ -178,6 +178,9 @@ body {
 /* Tablets small laptops ----------- */
 @media (min-width: 960px) { 
    /****CUSTOM ELEMENTS****/
+  .nabi-container {
+    width: 800px;
+  }
    /*Responsive Hide*/
 	.hide-on-mobile {
 		display: block !important;
