@@ -54,7 +54,7 @@ export class NameLocationBio extends React.Component<NameLocationBioProps, NameL
         <div className="nabi-text-center"> 
           <Typography 
             className={`nabi-text-center nabi-text-mediumbold nabi-margin-bottom-xsmall 
-            nabi-display-inline-block nabi nabi-margin-right-xsmall ${this.highlightedClass()}`}
+            nabi-display-inline-block ${this.highlightedClass()}`}
           >
             {`${this.props.firstName} ${this.props.lastName}`}
           </Typography>

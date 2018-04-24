@@ -42,7 +42,7 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
       autoComplete="off"
     >
       <FormControl component="fieldset" required={true}>
-        <FormLabel component="legend">What would you like to do?</FormLabel>
+        <FormLabel className="nabi-margin-bottom-xsmall" component="legend">What would you like to do?</FormLabel>
         <RadioGroup
           name="role"
           onChange={handleChange}
@@ -57,7 +57,12 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
         (selectedRole !== Role.instructor) ?
           <div className="nabi-margin-top-small">
             <FormControl fullWidth={true} component="fieldset" required={true}>
-              <FormLabel component="legend">Are the lessons for you or for your child?</FormLabel>
+              <FormLabel 
+                className="nabi-margin-bottom-xsmall" 
+                component="legend"
+              >
+                Are the lessons for you or for your child?
+              </FormLabel>
               <RadioGroup
                 name="role"
                 onChange={handleChange}

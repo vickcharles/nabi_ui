@@ -67,6 +67,7 @@ const theme = createMuiTheme({
         '&:hover': {
           background: 'rgba(6,195,225, 0.3)'
         },
+        color: '#717a8a !important',
         borderRadius: '3px',
         height: '28px',
         width: '30px'
@@ -129,6 +130,11 @@ const theme = createMuiTheme({
         background: '#fff'
       }
     },
+    MuiPaper: {
+      rounded: {
+        borderRadius: '3px'
+      }
+    },
     MuiRadio: {
       checked: {
         color: '#06c3e1 !important'
@@ -140,11 +146,6 @@ const theme = createMuiTheme({
       },
       active: {
         color: '#06c3e1 !important'
-      }
-    },
-    MuiSvgIcon: {
-      root: {
-        fill: '#717a8a !important'
       }
     },
     MuiTypography : {
