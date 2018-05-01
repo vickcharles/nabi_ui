@@ -10,7 +10,7 @@ import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 
 import BasicInfo from './BasicInfo/BasicInfo';
-import { Role, UserState } from '../../../Users/model';
+import { Role, UserState } from '../../Users/model';
 
 const styles = (theme: Theme) => ({
   mobileStepper: {
