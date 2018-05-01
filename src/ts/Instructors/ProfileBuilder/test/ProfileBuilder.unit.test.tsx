@@ -17,7 +17,8 @@ describe('ProfileBuilder', () => {
     password: '',
     zipCode: '',
     role: Role.instructor,
-    hearAboutUs: ''
+    hearAboutUs: '',
+    displayName: ''
   };
 
   beforeEach(() => {

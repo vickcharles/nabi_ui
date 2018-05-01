@@ -5,7 +5,9 @@ import { mount, shallow } from 'enzyme';
 describe('EditName', () => {
   let wrapper: any;
   const closeHandler: () => void = jest.fn();
-  
+  const handleChange: () => void = jest.fn();
+  const handleSubmit: () => void = jest.fn();
+
   describe('Mount', () => {
     beforeEach(() => {
       wrapper = mount(
@@ -14,6 +16,9 @@ describe('EditName', () => {
           lastName=""
           isFormDialogOpen={false}
           closeHandler={closeHandler}
+          handleChange={handleChange}
+          handleSubmit={handleSubmit}
+          displayName=""
         />
       );
     });
@@ -27,6 +32,9 @@ describe('EditName', () => {
           lastName=""
           isFormDialogOpen={false}
           closeHandler={closeHandler}
+          handleChange={handleChange}
+          handleSubmit={handleSubmit}
+          displayName=""
         />
       );
     });

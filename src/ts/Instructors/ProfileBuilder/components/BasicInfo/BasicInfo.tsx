@@ -1,19 +1,18 @@
 import * as React from 'react';
-import { Dispatch } from 'redux';
+import { Action, Dispatch } from 'redux';
+import { ThunkAction } from 'redux-thunk';
 import { connect } from 'react-redux';
 
 import { UserState } from '../../../../Users/model';
+import { updateUser } from '../../../../Users';
 import { InstructorState } from '../../../model';
-import { updateInstructor } from '../../../actions';
+import { updateInstructor } from '../../../';
 import NameLocationBio from './NameLocationBio/NameLocationBio';
 import ImageUploader from './ImageUploader';
 
-interface BasicInfoStateProps {
-  dispatch: Dispatch<{}>;
-}
-
-interface BasicInfoState {
-  bio: string;
+interface BasicInfoDispatchProps {
+  updateInstructor: (instructor: InstructorState) => void;
+  updateUser: (user: UserState) => void;
 }
 
 interface BasicInfoOwnProps { 
@@ -21,8 +20,13 @@ interface BasicInfoOwnProps {
   changeAvatar: (id: string, avatar: string) => void;
 }
 
+interface BasicInfoState {
+  bio: string;
+  displayName: string;
+}
+
 interface BasicInfoProps extends
-  BasicInfoStateProps,
+  BasicInfoDispatchProps,
   BasicInfoOwnProps { }
 
 export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
@@ -30,14 +34,23 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
     super(props);
 
     this.state = {
-      bio: ''
+      bio: '',
+      displayName: ''
     };
 
-    this.handleChangeBio = this.handleChangeBio.bind(this);
+    this.handleChange = this.handleChange.bind(this);
     this.handleBlurBio = this.handleBlurBio.bind(this);
+    this.updateName = this.updateName.bind(this);
   }
 
-  public handleChangeBio(event: any): void {
+  public componentWillMount(): void {
+    this.setState({
+      ...this.state,
+        displayName: `${this.props.user.firstName} ${this.props.user.lastName}`
+    });
+  }
+
+  public handleChange(event: any): void {
     const target = event.target;
     const value = target.value;
     const name = target.name;
@@ -53,7 +66,15 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
       userId: this.props.user.id,
       bio: this.state.bio
     };
-    this.props.dispatch(updateInstructor(instructor));
+    this.props.updateInstructor(instructor);
+  }
+
+  public updateName(event: any): void {
+    const user =  {
+      ...this.props.user,
+      displayName: this.state.displayName
+    };
+    this.props.updateUser(user);
   }
 
   public render(): JSX.Element {
@@ -63,15 +84,26 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
           imageChanged={(avatar: string) => {this.props.changeAvatar(this.props.user.id, avatar); }}
         />
         <NameLocationBio 
-          firstName={this.props.user.firstName}
-          lastName={this.props.user.lastName}
-          zipCode={this.props.user.zipCode}
-          changeBio={this.handleChangeBio}
-          blurBio={this.handleBlurBio}
+          user={this.props.user}
+          bioBlur={this.handleBlurBio}
+          bioChange={this.handleChange}
+          updateName={this.updateName}
+          handleChange={this.handleChange}
+          displayName={this.state.displayName}
         />
       </div>
     );
   }
 }
 
-export default connect()(BasicInfo);
+function mapDispatchToProps(
+  dispatch: Dispatch<Action | ThunkAction<{}, {}, {}>>,
+  _ownProps: BasicInfoOwnProps
+): BasicInfoDispatchProps {
+  return {
+    updateInstructor: (instructor: InstructorState) => dispatch(updateInstructor(instructor)),
+    updateUser: (user: UserState) => dispatch(updateUser(user))
+  };
+}
+
+export default connect(null, mapDispatchToProps)(BasicInfo);

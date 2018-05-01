@@ -18,6 +18,17 @@ export default function usersReducer(state: IState = initialState, action: AnyAc
           }
           : user
       );
+
+    case RegistrationActions.UPDATE_USER:
+      return <IState> state.map(user =>
+      user.id === action.user.id
+        ? { 
+            ...user, 
+            ...action.user
+        }
+        : user
+      );
+
     default:
       return state;
   }

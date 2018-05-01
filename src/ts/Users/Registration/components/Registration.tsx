@@ -27,7 +27,8 @@ export class Registration extends React.Component<RegistrationProps, UserState &
       zipCode: '',
       role: Role.student,
       hearAboutUs: '',
-      fireRedirect: false
+      fireRedirect: false,
+      displayName: ''
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -72,7 +73,8 @@ export class Registration extends React.Component<RegistrationProps, UserState &
       password: this.state.password,
       zipCode: this.state.zipCode,
       role: this.state.role,
-      hearAboutUs: this.state.hearAboutUs
+      hearAboutUs: this.state.hearAboutUs,
+      displayName: `${this.state.firstName} ${this.state.lastName}`
     };
     
     this.props.createUser(userValues);

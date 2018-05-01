@@ -5,11 +5,24 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <NameLocationBio
-    blurBio={[MockFunction]}
-    changeBio={[MockFunction]}
-    firstName="foo"
-    lastName="bar"
-    zipCode="02920"
+    bioBlur={[MockFunction]}
+    bioChange={[MockFunction]}
+    displayName=""
+    handleChange={[MockFunction]}
+    updateName={[MockFunction]}
+    user={
+      Object {
+        "displayName": "",
+        "email": "",
+        "firstName": "",
+        "hearAboutUs": "",
+        "id": "",
+        "lastName": "",
+        "password": "",
+        "role": "instructor",
+        "zipCode": "",
+      }
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -31,7 +44,7 @@ ShallowWrapper {
             className="nabi-text-center nabi-text-mediumbold nabi-margin-bottom-xsmall 
             nabi-display-inline-block "
           >
-            foo bar
+            
           </WithStyles(Typography)>
           <WithStyles(IconButton)
             onClick={[Function]}
@@ -44,7 +57,7 @@ ShallowWrapper {
         <WithStyles(Typography)
           className="nabi-text-center nabi-margin-bottom-medium"
         >
-          02920
+          
         </WithStyles(Typography)>,
         <WithStyles(Typography)
           className="nabi-margin-top-small"
@@ -70,9 +83,12 @@ ShallowWrapper {
         />,
         <EditName
           closeHandler={[Function]}
-          firstName="foo"
+          displayName=""
+          firstName=""
+          handleChange={[MockFunction]}
+          handleSubmit={[Function]}
           isFormDialogOpen={false}
-          lastName="bar"
+          lastName=""
         />,
       ],
     },
@@ -88,7 +104,7 @@ ShallowWrapper {
               className="nabi-text-center nabi-text-mediumbold nabi-margin-bottom-xsmall 
             nabi-display-inline-block "
             >
-              foo bar
+              
             </WithStyles(Typography)>,
             <WithStyles(IconButton)
               onClick={[Function]}
@@ -107,12 +123,12 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": "foo bar",
+              "children": "",
               "className": "nabi-text-center nabi-text-mediumbold nabi-margin-bottom-xsmall 
             nabi-display-inline-block ",
             },
             "ref": null,
-            "rendered": "foo bar",
+            "rendered": "",
             "type": [Function],
           },
           Object {
@@ -145,11 +161,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": "02920",
+          "children": "",
           "className": "nabi-text-center nabi-margin-bottom-medium",
         },
         "ref": null,
-        "rendered": "02920",
+        "rendered": "",
         "type": [Function],
       },
       Object {
@@ -203,9 +219,12 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "closeHandler": [Function],
-          "firstName": "foo",
+          "displayName": "",
+          "firstName": "",
+          "handleChange": [MockFunction],
+          "handleSubmit": [Function],
           "isFormDialogOpen": false,
-          "lastName": "bar",
+          "lastName": "",
         },
         "ref": null,
         "rendered": null,
@@ -228,7 +247,7 @@ ShallowWrapper {
               className="nabi-text-center nabi-text-mediumbold nabi-margin-bottom-xsmall 
             nabi-display-inline-block "
             >
-              foo bar
+              
             </WithStyles(Typography)>
             <WithStyles(IconButton)
               onClick={[Function]}
@@ -241,7 +260,7 @@ ShallowWrapper {
           <WithStyles(Typography)
             className="nabi-text-center nabi-margin-bottom-medium"
           >
-            02920
+            
           </WithStyles(Typography)>,
           <WithStyles(Typography)
             className="nabi-margin-top-small"
@@ -267,9 +286,12 @@ ShallowWrapper {
           />,
           <EditName
             closeHandler={[Function]}
-            firstName="foo"
+            displayName=""
+            firstName=""
+            handleChange={[MockFunction]}
+            handleSubmit={[Function]}
             isFormDialogOpen={false}
-            lastName="bar"
+            lastName=""
           />,
         ],
       },
@@ -285,7 +307,7 @@ ShallowWrapper {
                 className="nabi-text-center nabi-text-mediumbold nabi-margin-bottom-xsmall 
             nabi-display-inline-block "
               >
-                foo bar
+                
               </WithStyles(Typography)>,
               <WithStyles(IconButton)
                 onClick={[Function]}
@@ -304,12 +326,12 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": "foo bar",
+                "children": "",
                 "className": "nabi-text-center nabi-text-mediumbold nabi-margin-bottom-xsmall 
             nabi-display-inline-block ",
               },
               "ref": null,
-              "rendered": "foo bar",
+              "rendered": "",
               "type": [Function],
             },
             Object {
@@ -342,11 +364,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "02920",
+            "children": "",
             "className": "nabi-text-center nabi-margin-bottom-medium",
           },
           "ref": null,
-          "rendered": "02920",
+          "rendered": "",
           "type": [Function],
         },
         Object {
@@ -400,9 +422,12 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "closeHandler": [Function],
-            "firstName": "foo",
+            "displayName": "",
+            "firstName": "",
+            "handleChange": [MockFunction],
+            "handleSubmit": [Function],
             "isFormDialogOpen": false,
-            "lastName": "bar",
+            "lastName": "",
           },
           "ref": null,
           "rendered": null,

@@ -14,6 +14,7 @@ describe('Users actions', () => {
       zipCode: 'barfoo',
       role: Role.student,
       hearAboutUs: 'afufaki',
+      displayName: 'foo bar'
     };
 
     const expectedAction = {
@@ -32,5 +33,26 @@ describe('Users actions', () => {
     };
 
     expect(actions.changeAvatar('foo', 'caracas')).toEqual(expectedAction);
+  });
+
+  it('Creates an action to update User', () => {
+    const user: UserState = {
+      id: 'foo',
+      firstName: 'yix',
+      lastName: 'eut',
+      email: 'di',
+      password: 'et',
+      zipCode: 'barfoo',
+      role: Role.student,
+      hearAboutUs: 'fon',
+      displayName: 'ber'
+    };
+
+    const expectedAction = {
+      user,
+      type: RegistrationActions.UPDATE_USER
+    };
+
+    expect(actions.updateUser(user)).toEqual(expectedAction);
   });
 });

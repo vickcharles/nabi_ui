@@ -66,7 +66,8 @@ export class ProfileBuilder extends React.Component
         password: '',
         zipCode: '',
         role: Role.instructor,
-        hearAboutUs: ''
+        hearAboutUs: '',
+        displayName: ''
       }
     };
 
@@ -166,7 +167,8 @@ export class ProfileBuilder extends React.Component
           email: user.email,
           password: user.password,
           zipCode: user.zipCode,
-          hearAboutUs: user.hearAboutUs
+          hearAboutUs: user.hearAboutUs,
+          displayName: user.firstName + user.lastName
         }
       });
     }
