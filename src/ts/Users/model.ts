@@ -60,6 +60,7 @@ export interface UserState {
   role: Role;
   hearAboutUs: string;
   avatar?: string;
+  displayName: string;
 }
 
 export type IState = UserState[];

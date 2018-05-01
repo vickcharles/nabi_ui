@@ -11,6 +11,10 @@ interface ChangeAvatar extends Action {
   avatar: string;
 }
 
+interface UpdateUser extends Action {
+  user: UserState;
+}
+
 // Create user
 export function createUser(user: UserState): CreateUser {
   return {
@@ -30,5 +34,17 @@ export function changeAvatar(id: string, avatar: string): ChangeAvatar {
     id: id,
     avatar: avatar ,
     type: RegistrationActions.CHANGE_AVATAR
+  };
+}
+
+/**
+ * Action to update user
+ * 
+ * @param {string} user - The new user
+ */
+export function updateUser(user: UserState): UpdateUser {
+  return {
+    user: user,
+    type: RegistrationActions.UPDATE_USER
   };
 }

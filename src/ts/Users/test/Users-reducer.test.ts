@@ -15,7 +15,8 @@ describe('Users reducer', () => {
         password: 'foobar',
         zipCode: 'barfoo',
         role: Role.student,
-        hearAboutUs: 'afufaki'
+        hearAboutUs: 'afufaki',
+        displayName: 'foo bar'
       }
     ];
   });
@@ -32,7 +33,8 @@ describe('Users reducer', () => {
           password: 'foobar',
           zipCode: 'bread',
           role: Role.instructor,
-          hearAboutUs: 'fal'
+          hearAboutUs: 'fal',
+          displayName: 'hello something'
         } as UserState
       })
     ).toEqual([
@@ -44,7 +46,8 @@ describe('Users reducer', () => {
         password: 'foobar',
         zipCode: 'barfoo',
         role: Role.student,
-        hearAboutUs: 'afufaki'
+        hearAboutUs: 'afufaki',
+        displayName: 'foo bar'
       },
       {
         id: 'hello',
@@ -54,7 +57,8 @@ describe('Users reducer', () => {
         password: 'foobar',
         zipCode: 'bread',
         role: Role.instructor,
-        hearAboutUs: 'fal'
+        hearAboutUs: 'fal',
+        displayName: 'hello something'
       }
     ]);
   });
@@ -77,7 +81,8 @@ describe('Users reducer', () => {
           zipCode: 'barfoo',
           role: Role.student,
           hearAboutUs: 'afufaki',
-          avatar: 'something'
+          avatar: 'something',
+          displayName: 'foo bar'
         }
       ]);
     });

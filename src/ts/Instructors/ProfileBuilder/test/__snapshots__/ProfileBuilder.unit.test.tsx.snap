@@ -11,6 +11,7 @@ ShallowWrapper {
     users={
       Array [
         Object {
+          "displayName": "",
           "email": "oreo",
           "firstName": "foo",
           "hearAboutUs": "",
