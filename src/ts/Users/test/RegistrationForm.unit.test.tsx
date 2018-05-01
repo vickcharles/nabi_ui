@@ -1,7 +1,7 @@
 import * as React from 'react';
 import RegistrationForm from '../components/RegistrationForm';
 import { mount, shallow } from 'enzyme';
-import { Role } from '../../model';
+import { Role } from '../model';
 
 describe('RegistrationForm', () => {
   let wrapper: any;

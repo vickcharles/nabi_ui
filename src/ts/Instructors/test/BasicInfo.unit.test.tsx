@@ -2,7 +2,7 @@ import * as React from 'react';
 import { shallow } from 'enzyme';
 
 import { BasicInfo } from '../components/BasicInfo/BasicInfo';
-import { Role, UserState } from '../../../Users/model';
+import { Role, UserState } from '../../Users/model';
 
 describe('BasicInfo', () => {
   let wrapper: any;

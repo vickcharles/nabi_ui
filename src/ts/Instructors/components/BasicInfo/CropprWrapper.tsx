@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Cropper from 'cropperjs';
-import * as logo from '../../../../../assets/images/user-picture-2.png';
-import  '../../../../../../node_modules/cropperjs/dist/cropper.min.css';
+import * as logo from '../../../../assets/images/user-picture-2.png';
+import  '../../../../../node_modules/cropperjs/dist/cropper.min.css';
 import Button from 'material-ui/Button';
 import { Theme, withStyles, WithStyles } from 'material-ui/styles';
 import blur from './blur';

@@ -7,7 +7,7 @@ import Edit from '@material-ui/icons/Edit';
 import IconButton from 'material-ui/IconButton';
 
 import EditName from './EditName';
-import { UserState } from '../../../../../Users/model';
+import { UserState } from '../../../../Users/model';
 
 interface NameLocationBioOwnProps {
   user: UserState;

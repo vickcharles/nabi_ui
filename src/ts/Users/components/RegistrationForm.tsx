@@ -9,7 +9,7 @@ import Select from 'material-ui/Select';
 import TextField from 'material-ui/TextField';
 import { Theme, withStyles, WithStyles } from 'material-ui/styles';
 import Typography from 'material-ui/Typography/Typography';
-import { Role, hearAboutUsInfo } from '../../model';
+import { Role, hearAboutUsInfo } from '../model';
 
 const styles = (theme: Theme) => ({
     formFields: {

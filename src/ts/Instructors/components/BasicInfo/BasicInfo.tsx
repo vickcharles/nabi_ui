@@ -3,10 +3,10 @@ import { Action, Dispatch } from 'redux';
 import { ThunkAction } from 'redux-thunk';
 import { connect } from 'react-redux';
 
-import { UserState } from '../../../../Users/model';
-import { updateUser } from '../../../../Users';
-import { InstructorState } from '../../../model';
-import { updateInstructor } from '../../../';
+import { UserState } from '../../../Users/model';
+import { updateUser } from '../../../Users';
+import { InstructorState } from '../../model';
+import { updateInstructor } from '../../';
 import NameLocationBio from './NameLocationBio/NameLocationBio';
 import ImageUploader from './ImageUploader';
 
