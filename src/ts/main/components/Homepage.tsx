@@ -1,7 +1,9 @@
 import * as React from 'react';
 import  { Link } from 'react-router-dom';
 import Typography from 'material-ui/Typography';
-
+/** 
+ * Homepage Stateless Component
+*/
 const Homepage = () => {
     return (
         <header>

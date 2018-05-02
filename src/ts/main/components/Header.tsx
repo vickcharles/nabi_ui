@@ -1,5 +1,7 @@
 import * as React from 'react';
-
+/** 
+ * Header Stateless Component
+*/
 const Header = () => {
     return (
         <header>
