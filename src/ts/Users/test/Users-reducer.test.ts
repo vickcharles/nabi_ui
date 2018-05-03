@@ -1,5 +1,5 @@
 import reducer from '../';
-import { RegistrationActions } from '../constants/ActionTypes';
+import { UserActions } from '../constants/ActionTypes';
 import { Role, UserState, IState } from '../model';
 
 describe('Users reducer', () => {
@@ -24,7 +24,7 @@ describe('Users reducer', () => {
   it('Handles CREATE_USER', () => {
     expect(
       reducer(state, {
-        type: RegistrationActions.CREATE_USER,
+        type: UserActions.CREATE_USER,
         user: {
           id: 'hello',
           firstName: 'something',
@@ -67,7 +67,7 @@ describe('Users reducer', () => {
     it('when all values are set in payload', () => {
       expect(
         reducer(state, {
-          type: RegistrationActions.CHANGE_AVATAR,
+          type: UserActions.CHANGE_AVATAR,
           id: 'foo',
           avatar: 'something'
         })

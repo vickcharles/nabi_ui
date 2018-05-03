@@ -1,6 +1,6 @@
 import * as actions from '../actions';
 
-import { RegistrationActions } from '../constants/ActionTypes';
+import { UserActions } from '../constants/ActionTypes';
 import { Role, UserState } from '../model';
 
 describe('Users actions', () => {
@@ -19,7 +19,7 @@ describe('Users actions', () => {
 
     const expectedAction = {
       user,
-      type: RegistrationActions.CREATE_USER
+      type: UserActions.CREATE_USER
     };
 
     expect(actions.createUser(user)).toEqual(expectedAction);
@@ -29,7 +29,7 @@ describe('Users actions', () => {
     const expectedAction = {
       id: 'foo',
       avatar: 'caracas',
-      type: RegistrationActions.CHANGE_AVATAR
+      type: UserActions.CHANGE_AVATAR
     };
 
     expect(actions.changeAvatar('foo', 'caracas')).toEqual(expectedAction);
@@ -50,7 +50,7 @@ describe('Users actions', () => {
 
     const expectedAction = {
       user,
-      type: RegistrationActions.UPDATE_USER
+      type: UserActions.UPDATE_USER
     };
 
     expect(actions.updateUser(user)).toEqual(expectedAction);
