@@ -1,4 +1,4 @@
-export enum RegistrationActions {
+export enum UserActions {
     CREATE_USER = 'USERS/CREATE_USER',
     CHANGE_AVATAR = 'USERS/CHANGE_AVATAR',
     UPDATE_USER = 'USERS/UPDATE_USER'
