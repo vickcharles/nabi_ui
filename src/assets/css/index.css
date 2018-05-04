@@ -58,7 +58,7 @@ header {
 	text-align: center;
 }
 
-/****** MARGIN ******/
+/*MARGIN*/
 .nabi-margin-small {
   margin: 20px
 }
@@ -159,25 +159,32 @@ header {
 
 /*Logo anchor*/
 #nabi-logo-anchor {
+  color: #000;
   display: inherit;
   text-decoration: none;
-  color: #000;
 }
 
 /*Logo logo*/
 #nabi-logo {
-  margin: 0 auto;
-  width: 75px;
-  text-align: center;
   display: inherit;
+  margin: 0 auto;
+  text-align: center;
+  width: 75px;
+  width: 75px;
 }
 
 /*Logo text*/
 #nabi-logo-text {
-  text-transform: uppercase;
   font-size: 22px;
   margin-top: 4px;
   margin-bottom: 0px;
+  text-transform: uppercase;
+}
+
+/*Page title*/
+#nabi-page-title {
+  font-size: 25px !important;
+  margin: 30px !important;
 }
 
 /*Highlighted text*/

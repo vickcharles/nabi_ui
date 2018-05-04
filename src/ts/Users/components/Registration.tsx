@@ -1,9 +1,10 @@
 import * as React from 'react';
-import Typography from 'material-ui/Typography';
+import { Redirect } from 'react-router-dom';
+
 import RegistrationForm from './RegistrationForm';
 import { UserState, Role } from '../model';
-import { Redirect } from 'react-router-dom';
 import { InstructorState } from '../../Instructors/model';
+import { PageTitle } from '../../main';
 
 interface RegistrationProps {
   createUser: (user: UserState) => void;
@@ -97,9 +98,7 @@ export class Registration extends React.Component<RegistrationProps, UserState &
   public render (): JSX.Element {
     return (
       <div className="nabi-container">
-        <Typography variant="title" className="nabi-margin-top-medium nabi-margin-bottom-medium">
-          REGISTRATION
-        </Typography>
+        <PageTitle pageTitle="REGISTRATION" />
         
         <div className="nabi-background-white nabi-section">
           <RegistrationForm
