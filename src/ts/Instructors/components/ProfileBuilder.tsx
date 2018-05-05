@@ -50,7 +50,13 @@ interface ProfileBuilderState {
 function getSteps() {
   return ['Basic Info', 'Education', 'Experience', 'Qualifications', 'Recommendations'];
 }
-
+/**
+ * Profile Builder Component In Steps
+ * 
+ * @export
+ * @class ProfileBuilder
+ * @extends {React.Component<ProfileBuilderProps, ProfileBuilderState>}
+ */
 export class ProfileBuilder extends React.Component
 <ProfileBuilderProps, ProfileBuilderState> { 
   constructor(props: ProfileBuilderProps & WithStyles<'button' | 'completed' | 'instructions'> ) {

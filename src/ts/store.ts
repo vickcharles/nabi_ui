@@ -15,7 +15,12 @@ const initialState: State = {
 
 let history: History;
 let store: Store<State>;
-
+/**
+ * Store Singleton from Redux
+ * 
+ * @export
+ * @returns State
+ */
 export const getStore = () => {
     if (store) {
       return store;

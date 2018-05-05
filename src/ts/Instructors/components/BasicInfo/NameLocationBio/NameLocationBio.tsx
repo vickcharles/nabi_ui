@@ -25,7 +25,13 @@ interface NameLocationBioState {
   isModalOpenEditName: boolean;
   hovered: boolean;
 }
-
+/**
+ * Basic Biography Form
+ * 
+ * @export
+ * @class NameLocationBio
+ * @extends {React.Component<NameLocationBioProps, NameLocationBioState>}
+ */
 export class NameLocationBio extends React.Component<NameLocationBioProps, NameLocationBioState> {
   constructor(props: NameLocationBioProps) {
     super(props);

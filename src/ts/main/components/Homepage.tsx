@@ -4,7 +4,7 @@ import PageTitle from './PageTitle';
 
 /** 
  * Homepage Stateless Component
-*/
+ */
 const Homepage = () => {
     return (
         <div>

@@ -44,7 +44,7 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
     const dispatchChangeAvatar: any = (id: string, avatar: string) => dispatch(changeAvatar(id, avatar ));
     /** 
      * Registration Component Helper
-    */
+     */
     const renderRegistration = (props: any) => (
       <Registration 
         createUser={dispatchCreateUser} 
@@ -53,7 +53,7 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
     );
     /** 
      * Profile Builder Component Helper
-    */
+     */
     const renderProfileBuilder = (props: any) => (
       <ProfileBuilder 
         users={users} 
@@ -88,7 +88,7 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
 }
 /** 
  * Maps Redux Store State to React Component Props
-*/
+ */
 const mapStateToProps = (state: any, _ownProps: any) => ({
   users: state.users
 });

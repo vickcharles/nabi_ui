@@ -28,7 +28,13 @@ interface BasicInfoState {
 interface BasicInfoProps extends
   BasicInfoDispatchProps,
   BasicInfoOwnProps { }
-
+/**
+ * Step One Profile Builder 
+ * 
+ * @export
+ * @class BasicInfo
+ * @extends {React.Component<BasicInfoProps, BasicInfoState>}
+ */
 export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
   constructor(props: BasicInfoProps) {
     super(props);

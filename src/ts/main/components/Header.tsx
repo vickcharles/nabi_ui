@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 /** 
  * Header Stateless Component
-*/
+ */
 const Header = () => {
     return (
         <header>
