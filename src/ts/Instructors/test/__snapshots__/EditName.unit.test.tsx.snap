@@ -6,7 +6,10 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <EditName
     closeHandler={[MockFunction]}
+    displayName=""
     firstName=""
+    handleChange={[MockFunction]}
+    handleSubmit={[MockFunction]}
     isFormDialogOpen={false}
     lastName=""
   />,
@@ -44,18 +47,19 @@ ShallowWrapper {
           >
             <RadioGroup
               name="displayName"
+              onChange={[MockFunction]}
               value=""
             >
               <WithStyles(FormControlLabel)
                 className="nabi-margin-bottom-xsmall"
                 control={<WithStyles(Radio) />}
                 label="Show my full name:  "
-                value=""
+                value=" "
               />
               <WithStyles(FormControlLabel)
                 control={<WithStyles(Radio) />}
                 label="Show only my first name and last initial:  ."
-                value=""
+                value=" ."
               />
             </RadioGroup>
           </WithStyles(FormControl)>
@@ -102,18 +106,19 @@ ShallowWrapper {
             >
               <RadioGroup
                 name="displayName"
+                onChange={[MockFunction]}
                 value=""
               >
                 <WithStyles(FormControlLabel)
                   className="nabi-margin-bottom-xsmall"
                   control={<WithStyles(Radio) />}
                   label="Show my full name:  "
-                  value=""
+                  value=" "
                 />
                 <WithStyles(FormControlLabel)
                   control={<WithStyles(Radio) />}
                   label="Show only my first name and last initial:  ."
-                  value=""
+                  value=" ."
                 />
               </RadioGroup>
             </WithStyles(FormControl)>
@@ -168,18 +173,19 @@ ShallowWrapper {
               >
                 <RadioGroup
                   name="displayName"
+                  onChange={[MockFunction]}
                   value=""
                 >
                   <WithStyles(FormControlLabel)
                     className="nabi-margin-bottom-xsmall"
                     control={<WithStyles(Radio) />}
                     label="Show my full name:  "
-                    value=""
+                    value=" "
                   />
                   <WithStyles(FormControlLabel)
                     control={<WithStyles(Radio) />}
                     label="Show only my first name and last initial:  ."
-                    value=""
+                    value=" ."
                   />
                 </RadioGroup>
               </WithStyles(FormControl)>,
@@ -206,18 +212,19 @@ ShallowWrapper {
               "props": Object {
                 "children": <RadioGroup
                   name="displayName"
+                  onChange={[MockFunction]}
                   value=""
                 >
                   <WithStyles(FormControlLabel)
                     className="nabi-margin-bottom-xsmall"
                     control={<WithStyles(Radio) />}
                     label="Show my full name:  "
-                    value=""
+                    value=" "
                   />
                   <WithStyles(FormControlLabel)
                     control={<WithStyles(Radio) />}
                     label="Show only my first name and last initial:  ."
-                    value=""
+                    value=" ."
                   />
                 </RadioGroup>,
                 "component": "fieldset",
@@ -234,15 +241,16 @@ ShallowWrapper {
                       className="nabi-margin-bottom-xsmall"
                       control={<WithStyles(Radio) />}
                       label="Show my full name:  "
-                      value=""
+                      value=" "
                     />,
                     <WithStyles(FormControlLabel)
                       control={<WithStyles(Radio) />}
                       label="Show only my first name and last initial:  ."
-                      value=""
+                      value=" ."
                     />,
                   ],
                   "name": "displayName",
+                  "onChange": [MockFunction],
                   "value": "",
                 },
                 "ref": null,
@@ -255,7 +263,7 @@ ShallowWrapper {
                       "className": "nabi-margin-bottom-xsmall",
                       "control": <WithStyles(Radio) />,
                       "label": "Show my full name:  ",
-                      "value": "",
+                      "value": " ",
                     },
                     "ref": null,
                     "rendered": null,
@@ -268,7 +276,7 @@ ShallowWrapper {
                     "props": Object {
                       "control": <WithStyles(Radio) />,
                       "label": "Show only my first name and last initial:  .",
-                      "value": "",
+                      "value": " .",
                     },
                     "ref": null,
                     "rendered": null,
@@ -368,18 +376,19 @@ ShallowWrapper {
             >
               <RadioGroup
                 name="displayName"
+                onChange={[MockFunction]}
                 value=""
               >
                 <WithStyles(FormControlLabel)
                   className="nabi-margin-bottom-xsmall"
                   control={<WithStyles(Radio) />}
                   label="Show my full name:  "
-                  value=""
+                  value=" "
                 />
                 <WithStyles(FormControlLabel)
                   control={<WithStyles(Radio) />}
                   label="Show only my first name and last initial:  ."
-                  value=""
+                  value=" ."
                 />
               </RadioGroup>
             </WithStyles(FormControl)>
@@ -426,18 +435,19 @@ ShallowWrapper {
               >
                 <RadioGroup
                   name="displayName"
+                  onChange={[MockFunction]}
                   value=""
                 >
                   <WithStyles(FormControlLabel)
                     className="nabi-margin-bottom-xsmall"
                     control={<WithStyles(Radio) />}
                     label="Show my full name:  "
-                    value=""
+                    value=" "
                   />
                   <WithStyles(FormControlLabel)
                     control={<WithStyles(Radio) />}
                     label="Show only my first name and last initial:  ."
-                    value=""
+                    value=" ."
                   />
                 </RadioGroup>
               </WithStyles(FormControl)>
@@ -492,18 +502,19 @@ ShallowWrapper {
                 >
                   <RadioGroup
                     name="displayName"
+                    onChange={[MockFunction]}
                     value=""
                   >
                     <WithStyles(FormControlLabel)
                       className="nabi-margin-bottom-xsmall"
                       control={<WithStyles(Radio) />}
                       label="Show my full name:  "
-                      value=""
+                      value=" "
                     />
                     <WithStyles(FormControlLabel)
                       control={<WithStyles(Radio) />}
                       label="Show only my first name and last initial:  ."
-                      value=""
+                      value=" ."
                     />
                   </RadioGroup>
                 </WithStyles(FormControl)>,
@@ -530,18 +541,19 @@ ShallowWrapper {
                 "props": Object {
                   "children": <RadioGroup
                     name="displayName"
+                    onChange={[MockFunction]}
                     value=""
                   >
                     <WithStyles(FormControlLabel)
                       className="nabi-margin-bottom-xsmall"
                       control={<WithStyles(Radio) />}
                       label="Show my full name:  "
-                      value=""
+                      value=" "
                     />
                     <WithStyles(FormControlLabel)
                       control={<WithStyles(Radio) />}
                       label="Show only my first name and last initial:  ."
-                      value=""
+                      value=" ."
                     />
                   </RadioGroup>,
                   "component": "fieldset",
@@ -558,15 +570,16 @@ ShallowWrapper {
                         className="nabi-margin-bottom-xsmall"
                         control={<WithStyles(Radio) />}
                         label="Show my full name:  "
-                        value=""
+                        value=" "
                       />,
                       <WithStyles(FormControlLabel)
                         control={<WithStyles(Radio) />}
                         label="Show only my first name and last initial:  ."
-                        value=""
+                        value=" ."
                       />,
                     ],
                     "name": "displayName",
+                    "onChange": [MockFunction],
                     "value": "",
                   },
                   "ref": null,
@@ -579,7 +592,7 @@ ShallowWrapper {
                         "className": "nabi-margin-bottom-xsmall",
                         "control": <WithStyles(Radio) />,
                         "label": "Show my full name:  ",
-                        "value": "",
+                        "value": " ",
                       },
                       "ref": null,
                       "rendered": null,
@@ -592,7 +605,7 @@ ShallowWrapper {
                       "props": Object {
                         "control": <WithStyles(Radio) />,
                         "label": "Show only my first name and last initial:  .",
-                        "value": "",
+                        "value": " .",
                       },
                       "ref": null,
                       "rendered": null,

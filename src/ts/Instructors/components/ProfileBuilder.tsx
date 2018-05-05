@@ -9,8 +9,9 @@ import MobileStepper from 'material-ui/MobileStepper';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 
+import { PageTitle } from '../../main';
 import BasicInfo from './BasicInfo/BasicInfo';
-import { Role, UserState } from '../../../Users/model';
+import { Role, UserState } from '../../Users/model';
 
 const styles = (theme: Theme) => ({
   mobileStepper: {
@@ -66,7 +67,8 @@ export class ProfileBuilder extends React.Component
         password: '',
         zipCode: '',
         role: Role.instructor,
-        hearAboutUs: ''
+        hearAboutUs: '',
+        displayName: ''
       }
     };
 
@@ -166,7 +168,8 @@ export class ProfileBuilder extends React.Component
           email: user.email,
           password: user.password,
           zipCode: user.zipCode,
-          hearAboutUs: user.hearAboutUs
+          hearAboutUs: user.hearAboutUs,
+          displayName: user.firstName + user.lastName
         }
       });
     }
@@ -283,21 +286,16 @@ export class ProfileBuilder extends React.Component
     const { activeStep } = this.state;
     return (
       <div className="nabi-container">
-        <Typography variant="title" className="nabi-margin-top-medium nabi-margin-bottom-medium">
-          PROFILE BUILDER
-        </Typography>
-
+        <PageTitle pageTitle="PROFILE BUILDER" />
+        
         <div className="nabi-background-white nabi-section">
-          
           {this.renderDesktopStepper()}
-          
-          {/* {getStepContent(activeStep, this.props)} */}
 
           {this.getStepContent(activeStep)}
           
           {this.renderDesktopButtons()}
 
-           {this.renderMobileStepper()}
+          {this.renderMobileStepper()}
         </div>
       </div>
     );

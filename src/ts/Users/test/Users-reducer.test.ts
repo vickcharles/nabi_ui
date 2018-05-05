@@ -1,5 +1,5 @@
 import reducer from '../';
-import { RegistrationActions } from '../constants/ActionTypes';
+import { UserActions } from '../constants/ActionTypes';
 import { Role, UserState, IState } from '../model';
 
 describe('Users reducer', () => {
@@ -15,7 +15,8 @@ describe('Users reducer', () => {
         password: 'foobar',
         zipCode: 'barfoo',
         role: Role.student,
-        hearAboutUs: 'afufaki'
+        hearAboutUs: 'afufaki',
+        displayName: 'foo bar'
       }
     ];
   });
@@ -23,7 +24,7 @@ describe('Users reducer', () => {
   it('Handles CREATE_USER', () => {
     expect(
       reducer(state, {
-        type: RegistrationActions.CREATE_USER,
+        type: UserActions.CREATE_USER,
         user: {
           id: 'hello',
           firstName: 'something',
@@ -32,7 +33,8 @@ describe('Users reducer', () => {
           password: 'foobar',
           zipCode: 'bread',
           role: Role.instructor,
-          hearAboutUs: 'fal'
+          hearAboutUs: 'fal',
+          displayName: 'hello something'
         } as UserState
       })
     ).toEqual([
@@ -44,7 +46,8 @@ describe('Users reducer', () => {
         password: 'foobar',
         zipCode: 'barfoo',
         role: Role.student,
-        hearAboutUs: 'afufaki'
+        hearAboutUs: 'afufaki',
+        displayName: 'foo bar'
       },
       {
         id: 'hello',
@@ -54,7 +57,8 @@ describe('Users reducer', () => {
         password: 'foobar',
         zipCode: 'bread',
         role: Role.instructor,
-        hearAboutUs: 'fal'
+        hearAboutUs: 'fal',
+        displayName: 'hello something'
       }
     ]);
   });
@@ -63,7 +67,7 @@ describe('Users reducer', () => {
     it('when all values are set in payload', () => {
       expect(
         reducer(state, {
-          type: RegistrationActions.CHANGE_AVATAR,
+          type: UserActions.CHANGE_AVATAR,
           id: 'foo',
           avatar: 'something'
         })
@@ -77,7 +81,8 @@ describe('Users reducer', () => {
           zipCode: 'barfoo',
           role: Role.student,
           hearAboutUs: 'afufaki',
-          avatar: 'something'
+          avatar: 'something',
+          displayName: 'foo bar'
         }
       ]);
     });

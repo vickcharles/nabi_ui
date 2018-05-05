@@ -5,6 +5,12 @@
 
 body {
   background: #f0f3f6;
+  margin: 0px;
+}
+
+header {
+  background: white;
+  padding: 12px;
 }
 
 /*BACKGROUND COLOR*/
@@ -52,7 +58,7 @@ body {
 	text-align: center;
 }
 
-/****** MARGIN ******/
+/*MARGIN*/
 .nabi-margin-small {
   margin: 20px
 }
@@ -149,6 +155,36 @@ body {
 
 .hide-on-desktop {
 	display: block !important;
+}
+
+/*Logo anchor*/
+#nabi-logo-anchor {
+  color: #000;
+  display: inherit;
+  text-decoration: none;
+}
+
+/*Logo logo*/
+#nabi-logo {
+  display: inherit;
+  margin: 0 auto;
+  text-align: center;
+  width: 75px;
+  width: 75px;
+}
+
+/*Logo text*/
+#nabi-logo-text {
+  font-size: 22px;
+  margin-top: 4px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+
+/*Page title*/
+#nabi-page-title {
+  font-size: 25px !important;
+  margin: 30px !important;
 }
 
 /*Highlighted text*/

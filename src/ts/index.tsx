@@ -22,11 +22,12 @@ const theme = createMuiTheme({
         backgroundColor: '#06c3e1 !important',
         borderRadius: '3px',
         boxShadow: 'inset 0 -3px 0 rgba(0,0,0,.1)',
-        fontWeight: 600,
-        padding: '18px 40px'
+        fontWeight: 500
       },
       root: {
-        color: '#717a8a'
+        color: '#717a8a',
+        padding: '12px 25px',
+        textTransform: 'none'
       }
     },
     MuiDialogActions: {

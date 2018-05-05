@@ -21,12 +21,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <WithStyles(Typography)
-          className="nabi-margin-top-medium nabi-margin-bottom-medium"
-          variant="title"
-        >
-          REGISTRATION
-        </WithStyles(Typography)>,
+        <PageTitle
+          pageTitle="REGISTRATION"
+        />,
         <div
           className="nabi-background-white nabi-section"
         >
@@ -46,14 +43,12 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "function",
         "props": Object {
-          "children": "REGISTRATION",
-          "className": "nabi-margin-top-medium nabi-margin-bottom-medium",
-          "variant": "title",
+          "pageTitle": "REGISTRATION",
         },
         "ref": null,
-        "rendered": "REGISTRATION",
+        "rendered": null,
         "type": [Function],
       },
       Object {
@@ -97,12 +92,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <WithStyles(Typography)
-            className="nabi-margin-top-medium nabi-margin-bottom-medium"
-            variant="title"
-          >
-            REGISTRATION
-          </WithStyles(Typography)>,
+          <PageTitle
+            pageTitle="REGISTRATION"
+          />,
           <div
             className="nabi-background-white nabi-section"
           >
@@ -122,14 +114,12 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "function",
           "props": Object {
-            "children": "REGISTRATION",
-            "className": "nabi-margin-top-medium nabi-margin-bottom-medium",
-            "variant": "title",
+            "pageTitle": "REGISTRATION",
           },
           "ref": null,
-          "rendered": "REGISTRATION",
+          "rendered": null,
           "type": [Function],
         },
         Object {

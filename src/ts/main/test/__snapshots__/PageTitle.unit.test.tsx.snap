@@ -1,27 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ProfileBuilder Matches snapshot 1`] = `
+exports[`PageTitle Renders the component 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <withRouter(WithStyles(ProfileBuilder))
-    changeAvatar={[Function]}
-    classes={undefined}
-    theme={undefined}
-    users={
-      Array [
-        Object {
-          "email": "oreo",
-          "firstName": "foo",
-          "hearAboutUs": "",
-          "id": "",
-          "lastName": "bar",
-          "password": "",
-          "role": "instructor",
-          "zipCode": "",
-        },
-      ]
-    }
+  Symbol(enzyme.__unrendered__): <PageTitle
+    pageTitle="Foo"
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -35,10 +19,12 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "render": [Function],
+      "children": "Foo",
+      "id": "nabi-page-title",
+      "variant": "title",
     },
     "ref": null,
-    "rendered": null,
+    "rendered": "Foo",
     "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
@@ -47,10 +33,12 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "render": [Function],
+        "children": "Foo",
+        "id": "nabi-page-title",
+        "variant": "title",
       },
       "ref": null,
-      "rendered": null,
+      "rendered": "Foo",
       "type": [Function],
     },
   ],

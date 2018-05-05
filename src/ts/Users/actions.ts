@@ -1,5 +1,5 @@
 import { Action } from 'redux';
-import { RegistrationActions } from './constants/ActionTypes';
+import { UserActions } from './constants/ActionTypes';
 import { UserState } from './model';
 
 interface CreateUser extends Action {
@@ -11,11 +11,15 @@ interface ChangeAvatar extends Action {
   avatar: string;
 }
 
+interface UpdateUser extends Action {
+  user: UserState;
+}
+
 // Create user
 export function createUser(user: UserState): CreateUser {
   return {
     user,
-    type: RegistrationActions.CREATE_USER
+    type: UserActions.CREATE_USER
   };
 }
 
@@ -29,6 +33,18 @@ export function changeAvatar(id: string, avatar: string): ChangeAvatar {
   return {
     id: id,
     avatar: avatar ,
-    type: RegistrationActions.CHANGE_AVATAR
+    type: UserActions.CHANGE_AVATAR
+  };
+}
+
+/**
+ * Action to update user
+ * 
+ * @param {string} user - The new user
+ */
+export function updateUser(user: UserState): UpdateUser {
+  return {
+    user: user,
+    type: UserActions.UPDATE_USER
   };
 }

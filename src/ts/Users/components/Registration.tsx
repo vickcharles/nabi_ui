@@ -1,9 +1,10 @@
 import * as React from 'react';
-import Typography from 'material-ui/Typography';
-import RegistrationForm from './RegistrationForm';
-import { UserState, Role } from '../../model';
 import { Redirect } from 'react-router-dom';
-import { InstructorState } from '../../../Instructors/model';
+
+import RegistrationForm from './RegistrationForm';
+import { UserState, Role } from '../model';
+import { InstructorState } from '../../Instructors/model';
+import { PageTitle } from '../../main';
 
 interface RegistrationProps {
   createUser: (user: UserState) => void;
@@ -27,7 +28,8 @@ export class Registration extends React.Component<RegistrationProps, UserState &
       zipCode: '',
       role: Role.student,
       hearAboutUs: '',
-      fireRedirect: false
+      fireRedirect: false,
+      displayName: ''
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -72,7 +74,8 @@ export class Registration extends React.Component<RegistrationProps, UserState &
       password: this.state.password,
       zipCode: this.state.zipCode,
       role: this.state.role,
-      hearAboutUs: this.state.hearAboutUs
+      hearAboutUs: this.state.hearAboutUs,
+      displayName: `${this.state.firstName} ${this.state.lastName}`
     };
     
     this.props.createUser(userValues);
@@ -95,9 +98,7 @@ export class Registration extends React.Component<RegistrationProps, UserState &
   public render (): JSX.Element {
     return (
       <div className="nabi-container">
-        <Typography variant="title" className="nabi-margin-top-medium nabi-margin-bottom-medium">
-          REGISTRATION
-        </Typography>
+        <PageTitle pageTitle="REGISTRATION" />
         
         <div className="nabi-background-white nabi-section">
           <RegistrationForm

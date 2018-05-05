@@ -1,11 +1,26 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
+
 /** 
  * Header Stateless Component
 */
 const Header = () => {
     return (
         <header>
-            <h1 className="nabi-text-center nabi-font-montserrat nabi-text-extrabold">Nabi Music</h1>
+            <Link id="nabi-logo-anchor" to="/">
+                <img 
+                    id="nabi-logo" 
+                    className="nabi-text-center" 
+                    alt="logo" 
+                    src={require('../../../assets/images/logo.png')}
+                />
+                <p 
+                    id="nabi-logo-text" 
+                    className="nabi-text-center nabi-font-montserrat nabi-text-extrabold"
+                >
+                    Nabi Music
+                </p>
+            </Link>
         </header>
     );
 };

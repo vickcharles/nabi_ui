@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { ProfileBuilder } from '../../';
+import { ProfileBuilder } from '../';
 import { shallow } from 'enzyme';
-import { Role, UserState } from '../../../Users/model';
+import { Role, UserState } from '../../Users/model';
 
 describe('ProfileBuilder', () => {
   let wrapper: any;
@@ -17,7 +17,8 @@ describe('ProfileBuilder', () => {
     password: '',
     zipCode: '',
     role: Role.instructor,
-    hearAboutUs: ''
+    hearAboutUs: '',
+    displayName: ''
   };
 
   beforeEach(() => {

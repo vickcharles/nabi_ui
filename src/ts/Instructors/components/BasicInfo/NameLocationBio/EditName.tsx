@@ -11,13 +11,19 @@ import Dialog, {
 } from 'material-ui/Dialog';
 
 interface EditNameProps {
+  displayName: string;
   firstName: string;
   lastName: string;
   isFormDialogOpen: boolean;
   closeHandler: () => void;
+  handleChange: (event: React.FormEvent<{}>) => void;
+  handleSubmit: (event: React.FormEvent<{}>) => void;
 }
+
 const EditName: React.StatelessComponent<EditNameProps> = props => {
   const lastNameinitial = props.lastName.charAt(0);
+  const fullName = `${props.firstName} ${props.lastName}`;
+  const nameAndLasInitial = `${props.firstName} ${lastNameinitial}.`;
 
   return (
     <div>
@@ -34,18 +40,19 @@ const EditName: React.StatelessComponent<EditNameProps> = props => {
           <FormControl component="fieldset" required={true}>
           <RadioGroup
             name="displayName"
-            value=""
+            value={props.displayName}
+            onChange={props.handleChange}
           >
             <FormControlLabel 
               className="nabi-margin-bottom-xsmall"
-              value="" 
+              value={fullName}
               control={<Radio />} 
-              label={`Show my full name: ${props.firstName} ${props.lastName}`} 
+              label={`Show my full name: ${fullName}`} 
             />
             <FormControlLabel 
-              value="" 
+              value={nameAndLasInitial}
               control={<Radio />} 
-              label={`Show only my first name and last initial: ${props.firstName} ${lastNameinitial}.`}
+              label={`Show only my first name and last initial: ${nameAndLasInitial}`}
             />
           </RadioGroup>
         </FormControl>
@@ -54,7 +61,7 @@ const EditName: React.StatelessComponent<EditNameProps> = props => {
           <Button onClick={props.closeHandler} color="default">
             Close
           </Button>
-          <Button variant="raised" onClick={props.closeHandler} color="primary">
+          <Button variant="raised" onClick={props.handleSubmit} color="primary">
             Save
           </Button>
         </DialogActions>

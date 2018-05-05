@@ -1,17 +1,16 @@
 import * as React from 'react';
 import  { Link } from 'react-router-dom';
-import Typography from 'material-ui/Typography';
+import PageTitle from './PageTitle';
+
 /** 
  * Homepage Stateless Component
 */
 const Homepage = () => {
     return (
-        <header>
-            <Typography variant="title" className="nabi-margin-top-medium nabi-margin-bottom-medium">
-                HOMEPAGE
-            </Typography>
+        <div>
+            <PageTitle pageTitle="HOMEPAGE" />
             <Link to="/registration">Registration</Link>
-        </header>
+        </div>
     );
 };
 
