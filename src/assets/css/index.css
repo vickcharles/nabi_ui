@@ -31,6 +31,10 @@ li {
 }
 
 /*DISPLAY*/
+.nabi-display-inline {
+  display: inline !important;
+}
+
 .nabi-display-inline-block {
   display: inline-block !important;
 }
@@ -207,6 +211,19 @@ li {
   margin-top: 15px !important;
 }
 
+/*Rates*/
+.nabi-rates-field input {
+  width: 70px;
+} 
+
+/* iPhones(landscape) ----------- */
+@media only screen  and (min-width : 375px) {
+  /*Rates*/
+  .nabi-rates-field {
+    display: inline !important;
+  }
+}
+
 /* iPads (landscape) ----------- */
 @media only screen  and (min-width : 768px) {
   /****CUSTOM ELEMENTS****/
@@ -252,6 +269,11 @@ li {
 
   /*Selected Instruments */
   .selected-instruments {
+    width: 40%
+  }
+
+  /*Rates*/
+  .rates {
     width: 40%
   }
 }
