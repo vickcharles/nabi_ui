@@ -27,7 +27,7 @@ ShallowWrapper {
         <div
           className="nabi-background-white nabi-section"
         >
-          <WithStyles(RegistrationForm)
+          <RegistrationForm
             handleChange={[Function]}
             handleSubmit={[Function]}
             hearAboutUs=""
@@ -56,7 +56,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <WithStyles(RegistrationForm)
+          "children": <RegistrationForm
             handleChange={[Function]}
             handleSubmit={[Function]}
             hearAboutUs=""
@@ -68,7 +68,7 @@ ShallowWrapper {
         "rendered": Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "function",
           "props": Object {
             "handleChange": [Function],
             "handleSubmit": [Function],
@@ -98,7 +98,7 @@ ShallowWrapper {
           <div
             className="nabi-background-white nabi-section"
           >
-            <WithStyles(RegistrationForm)
+            <RegistrationForm
               handleChange={[Function]}
               handleSubmit={[Function]}
               hearAboutUs=""
@@ -127,7 +127,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <WithStyles(RegistrationForm)
+            "children": <RegistrationForm
               handleChange={[Function]}
               handleSubmit={[Function]}
               hearAboutUs=""
@@ -139,7 +139,7 @@ ShallowWrapper {
           "rendered": Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "function",
             "props": Object {
               "handleChange": [Function],
               "handleSubmit": [Function],

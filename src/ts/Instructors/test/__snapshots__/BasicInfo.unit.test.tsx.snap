@@ -58,6 +58,7 @@ ShallowWrapper {
             }
           }
         />,
+        <Instruments />,
       ],
     },
     "ref": null,
@@ -99,6 +100,15 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": "div",
   },
@@ -132,6 +142,7 @@ ShallowWrapper {
               }
             }
           />,
+          <Instruments />,
         ],
       },
       "ref": null,
@@ -169,6 +180,15 @@ ShallowWrapper {
               "zipCode": "",
             },
           },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
           "ref": null,
           "rendered": null,
           "type": [Function],

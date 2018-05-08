@@ -89,7 +89,7 @@ export class NameLocationBio extends React.Component<NameLocationBioProps, NameL
         </Typography>
 
         <Typography className="nabi-margin-top-small" variant="body2">
-          Bio *
+          Bio
         </Typography>
 
         <TextField

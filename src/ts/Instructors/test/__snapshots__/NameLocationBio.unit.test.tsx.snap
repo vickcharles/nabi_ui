@@ -63,7 +63,7 @@ ShallowWrapper {
           className="nabi-margin-top-small"
           variant="body2"
         >
-          Bio *
+          Bio
         </WithStyles(Typography)>,
         <TextField
           fullWidth={true}
@@ -173,12 +173,12 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": "Bio *",
+          "children": "Bio",
           "className": "nabi-margin-top-small",
           "variant": "body2",
         },
         "ref": null,
-        "rendered": "Bio *",
+        "rendered": "Bio",
         "type": [Function],
       },
       Object {
@@ -266,7 +266,7 @@ ShallowWrapper {
             className="nabi-margin-top-small"
             variant="body2"
           >
-            Bio *
+            Bio
           </WithStyles(Typography)>,
           <TextField
             fullWidth={true}
@@ -376,12 +376,12 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "Bio *",
+            "children": "Bio",
             "className": "nabi-margin-top-small",
             "variant": "body2",
           },
           "ref": null,
-          "rendered": "Bio *",
+          "rendered": "Bio",
           "type": [Function],
         },
         Object {

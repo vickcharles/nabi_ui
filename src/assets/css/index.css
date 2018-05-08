@@ -194,6 +194,16 @@ header {
   padding: 4px 6px;
 }
 
+
+/*Instruments text*/
+.nabi-instruments-select {
+  width: 100%;
+}
+
+.nabi-instruments-add {
+  margin-top: 15px !important;
+}
+
 /* iPads (landscape) ----------- */
 @media only screen  and (min-width : 768px) {
   /****CUSTOM ELEMENTS****/
@@ -223,6 +233,18 @@ header {
 	}
 	.hide-on-desktop {
 		display: none !important;
+  }
+
+  /*Instruments text*/
+  .nabi-instruments-select {
+    width: 38%;
+    margin-right: 1% !important;
+  }
+
+  /*Instruments add*/
+  .nabi-instruments-add {
+    width: 22%;
+    margin-top: 0px !important;
   }
 }
 

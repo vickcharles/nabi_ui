@@ -9,6 +9,7 @@ import { InstructorState } from '../../model';
 import { updateInstructor } from '../../';
 import NameLocationBio from './NameLocationBio/NameLocationBio';
 import ImageUploader from './ImageUploader';
+import Instruments from './Instruments';
 
 interface BasicInfoDispatchProps {
   updateInstructor: (instructor: InstructorState) => void;
@@ -91,6 +92,7 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
           handleChange={this.handleChange}
           displayName={this.state.displayName}
         />
+        <Instruments />
       </div>
     );
   }
