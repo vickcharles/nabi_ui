@@ -1,4 +1,5 @@
 import * as React from 'react';
+
 import { FormLabel, FormControl, FormControlLabel } from 'material-ui/Form';
 import Button from 'material-ui/Button';
 import Divider from 'material-ui/Divider';
@@ -7,15 +8,9 @@ import { MenuItem } from 'material-ui/Menu';
 import Radio, { RadioGroup } from 'material-ui/Radio';
 import Select from 'material-ui/Select';
 import TextField from 'material-ui/TextField';
-import { Theme, withStyles, WithStyles } from 'material-ui/styles';
 import Typography from 'material-ui/Typography/Typography';
-import { Role, hearAboutUsInfo } from '../model';
 
-const styles = (theme: Theme) => ({
-    formFields: {
-      width: '100%'
-    }
-});
+import { Role, hearAboutUsInfo } from '../model';
 
 interface RegistrationFormProps {
   handleChange: (event: React.FormEvent<{}>) => void;
@@ -24,9 +19,7 @@ interface RegistrationFormProps {
   selectedRole: string;
 }
 
-type PropsWithStyles = RegistrationFormProps & WithStyles<'formFields'>;
-
-const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
+const RegistrationForm: React.StatelessComponent<RegistrationFormProps> = props => {
   const { handleChange, handleSubmit, hearAboutUs, selectedRole } = props;
   
   const selectOptions: any = [];
@@ -156,4 +149,4 @@ const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
   );
 };
 
-export default withStyles(styles)<RegistrationFormProps>(RegistrationForm);
+export default RegistrationForm;

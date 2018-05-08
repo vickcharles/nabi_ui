@@ -26,7 +26,7 @@ const theme = createMuiTheme({
       },
       root: {
         color: '#717a8a',
-        padding: '12px 25px',
+        padding: '17px 25px',
         textTransform: 'none'
       }
     },
