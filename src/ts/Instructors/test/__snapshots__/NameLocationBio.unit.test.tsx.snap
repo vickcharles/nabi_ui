@@ -55,7 +55,7 @@ ShallowWrapper {
           </WithStyles(IconButton)>
         </div>,
         <WithStyles(Typography)
-          className="nabi-text-center nabi-margin-bottom-medium"
+          className="nabi-text-center"
         >
           
         </WithStyles(Typography)>,
@@ -162,7 +162,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": "",
-          "className": "nabi-text-center nabi-margin-bottom-medium",
+          "className": "nabi-text-center",
         },
         "ref": null,
         "rendered": "",
@@ -258,7 +258,7 @@ ShallowWrapper {
             </WithStyles(IconButton)>
           </div>,
           <WithStyles(Typography)
-            className="nabi-text-center nabi-margin-bottom-medium"
+            className="nabi-text-center"
           >
             
           </WithStyles(Typography)>,
@@ -365,7 +365,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": "",
-            "className": "nabi-text-center nabi-margin-bottom-medium",
+            "className": "nabi-text-center",
           },
           "ref": null,
           "rendered": "",

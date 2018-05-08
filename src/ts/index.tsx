@@ -66,9 +66,9 @@ const theme = createMuiTheme({
     MuiIconButton: {
       root: {
         '&:hover': {
-          background: 'rgba(6,195,225, 0.3)'
+          background: 'rgba(6,195,225, 0.2)'
         },
-        color: '#717a8a !important',
+        color: '#06c3e1 !important',
         borderRadius: '3px',
         height: '28px',
         width: '30px'

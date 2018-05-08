@@ -3,13 +3,16 @@ import { Action, Dispatch } from 'redux';
 import { ThunkAction } from 'redux-thunk';
 import { connect } from 'react-redux';
 
+import Typography from 'material-ui/Typography';
+
 import { UserState } from '../../../Users/model';
 import { updateUser } from '../../../Users';
-import { InstructorState } from '../../model';
+import { InstructorState, InstrumentsType, SkillLevel } from '../../model';
 import { updateInstructor } from '../../';
 import NameLocationBio from './NameLocationBio/NameLocationBio';
 import ImageUploader from './ImageUploader';
-import Instruments from './Instruments';
+import Instruments from './Instruments/Instruments';
+import SelectedInstrument from './Instruments/SelectedInstrument';
 
 interface BasicInfoDispatchProps {
   updateInstructor: (instructor: InstructorState) => void;
@@ -24,6 +27,9 @@ interface BasicInfoOwnProps {
 interface BasicInfoState {
   bio: string;
   displayName: string;
+  instrument: string;
+  skillLevel: SkillLevel;
+  instruments: InstrumentsType[];
 }
 
 interface BasicInfoProps extends
@@ -36,12 +42,17 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
 
     this.state = {
       bio: '',
-      displayName: ''
+      displayName: '',
+      instrument: '',
+      skillLevel: SkillLevel.beginner,
+      instruments: []
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleBlurBio = this.handleBlurBio.bind(this);
     this.updateName = this.updateName.bind(this);
+    this.addInstrument = this.addInstrument.bind(this);
+    this.deleteInstrument = this.deleteInstrument.bind(this);
   }
 
   public componentWillMount(): void {
@@ -67,7 +78,7 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
       userId: this.props.user.id,
       bio: this.state.bio
     };
-    this.props.updateInstructor(instructor);
+    this.updateInstructorCall(instructor);
   }
 
   public updateName(event: any): void {
@@ -78,7 +89,52 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
     this.props.updateUser(user);
   }
 
+  public addInstrument(event: any): void {
+    const instrumentToAdd: InstrumentsType = {
+      instrument: this.state.instrument,
+      skillLevel: this.state.skillLevel
+    };
+
+    if (instrumentToAdd.instrument && instrumentToAdd.skillLevel) {
+      this.setState(
+        { instruments: [...this.state.instruments, instrumentToAdd] },
+        () => {
+        const instructor: InstructorState =  {
+          userId: this.props.user.id,
+          instruments: this.state.instruments
+        };
+        this.updateInstructorCall(instructor);
+      });
+    }
+  }
+
+  public updateInstructorCall(instructor: InstructorState): void {
+    this.props.updateInstructor(instructor);
+  }
+
+  public deleteInstrument(instrumentName: string): void {
+    this.setState(
+      { instruments: this.state.instruments.filter(
+        instrument => instrumentName.indexOf(instrument.instrument) === -1)},
+      () => {
+      const instructor: InstructorState =  {
+        userId: this.props.user.id,
+        instruments: this.state.instruments
+      };
+      this.updateInstructorCall(instructor);
+    });
+  }
+
   public render(): JSX.Element {
+    const selectedInstruments = this.state.instruments.map((instrument, i) => (
+      <SelectedInstrument
+        key={i}
+        instrument={instrument.instrument}
+        skillLevel={instrument.skillLevel}
+        deleteInstrument={(instrumentName: string) => this.deleteInstrument(instrumentName)}
+      />
+    ));
+
     return (
       <div>
         <ImageUploader 
@@ -92,7 +148,16 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
           handleChange={this.handleChange}
           displayName={this.state.displayName}
         />
-        <Instruments />
+        <Typography className="nabi-margin-top-small" variant="body2">
+          Instruments
+        </Typography>
+        {selectedInstruments}
+        <Instruments
+          instrument={this.state.instrument}
+          skillLevel={this.state.skillLevel}
+          handleChange={this.handleChange}
+          addInstrument={this.addInstrument}
+        />
       </div>
     );
   }

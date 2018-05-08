@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { shallow } from 'enzyme';
-
 import { BasicInfo } from '../components/BasicInfo/BasicInfo';
 import { Role, UserState } from '../../Users/model';
 
 describe('BasicInfo', () => {
   let wrapper: any;
   const updateInstructor = jest.fn();
+  const updateInstructorCall = jest.spyOn(BasicInfo.prototype, 'updateInstructorCall');
   const updateUser = jest.fn();
   const changeAvatar: (email: string, avatar: string) => {} = jest.fn();
 
@@ -78,6 +78,26 @@ describe('BasicInfo', () => {
 
     it('Calls updateUser', () => {
       expect(updateUser).toBeCalled();
+    });
+  });
+
+  describe('Method addInstrument()', () => {
+    beforeEach(() => {
+      wrapper.instance().addInstrument();
+    });
+
+    it('Calls updateInstructorCall', () => {
+      expect(updateInstructorCall).toBeCalled();
+    });
+  });
+
+  describe('Method deleteInstrument()', () => {
+    beforeEach(() => {
+      wrapper.instance().deleteInstrument();
+    });
+
+    it('Calls updateInstructorCall', () => {
+      expect(updateInstructorCall).toBeCalled();
     });
   });
 });

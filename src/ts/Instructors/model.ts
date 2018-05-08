@@ -4,13 +4,15 @@ export enum SkillLevel {
   advanced = 'Advanced'
 }
 
+export interface InstrumentsType {
+  instrument: string;
+  skillLevel: SkillLevel;
+}
+
 export interface InstructorState {
   userId: string;
   bio?: string;
-  instrument?: {
-    instrument: string,
-    skillLevel: SkillLevel
-  };
+  instruments?: InstrumentsType[];
 }
 
 export type IState = InstructorState[];

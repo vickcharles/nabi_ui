@@ -84,7 +84,7 @@ export class NameLocationBio extends React.Component<NameLocationBioProps, NameL
           </IconButton>
         </div>
         
-        <Typography className="nabi-text-center nabi-margin-bottom-medium">
+        <Typography className="nabi-text-center">
           {this.props.user.zipCode}
         </Typography>
 
