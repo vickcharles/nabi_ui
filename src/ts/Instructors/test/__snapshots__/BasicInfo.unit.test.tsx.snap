@@ -58,7 +58,19 @@ ShallowWrapper {
             }
           }
         />,
-        <Instruments />,
+        <WithStyles(Typography)
+          className="nabi-margin-top-small"
+          variant="body2"
+        >
+          Instruments
+        </WithStyles(Typography)>,
+        Array [],
+        <Instruments
+          addInstrument={[Function]}
+          handleChange={[Function]}
+          instrument=""
+          skillLevel="Beginner"
+        />,
       ],
     },
     "ref": null,
@@ -103,8 +115,26 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Instruments",
+          "className": "nabi-margin-top-small",
+          "variant": "body2",
+        },
+        "ref": null,
+        "rendered": "Instruments",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "addInstrument": [Function],
+          "handleChange": [Function],
+          "instrument": "",
+          "skillLevel": "Beginner",
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -142,7 +172,19 @@ ShallowWrapper {
               }
             }
           />,
-          <Instruments />,
+          <WithStyles(Typography)
+            className="nabi-margin-top-small"
+            variant="body2"
+          >
+            Instruments
+          </WithStyles(Typography)>,
+          Array [],
+          <Instruments
+            addInstrument={[Function]}
+            handleChange={[Function]}
+            instrument=""
+            skillLevel="Beginner"
+          />,
         ],
       },
       "ref": null,
@@ -187,8 +229,26 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Instruments",
+            "className": "nabi-margin-top-small",
+            "variant": "body2",
+          },
+          "ref": null,
+          "rendered": "Instruments",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "addInstrument": [Function],
+            "handleChange": [Function],
+            "instrument": "",
+            "skillLevel": "Beginner",
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],

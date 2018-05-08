@@ -13,6 +13,10 @@ header {
   padding: 12px;
 }
 
+li {
+  list-style: none;
+}
+
 /*BACKGROUND COLOR*/
 .nabi-background-color {
   background-color: #f0f3f6;
@@ -194,8 +198,7 @@ header {
   padding: 4px 6px;
 }
 
-
-/*Instruments text*/
+/*Instruments fields*/
 .nabi-instruments-select {
   width: 100%;
 }
@@ -241,10 +244,15 @@ header {
     margin-right: 1% !important;
   }
 
-  /*Instruments add*/
+  /*Instruments add button*/
   .nabi-instruments-add {
     width: 22%;
     margin-top: 0px !important;
+  }
+
+  /*Selected Instruments */
+  .selected-instruments {
+    width: 40%
   }
 }
 

@@ -1,20 +1,18 @@
 import * as React from 'react';
-import Instruments from '../components/BasicInfo/Instruments/Instruments';
+import SelectedInstrument from '../components/BasicInfo/Instruments/SelectedInstrument';
 import { shallow } from 'enzyme';
 
-describe('Instruments', () => {
+describe('SelectedInstrument', () => {
   let wrapper: any;
-  const handleChange: () => void = jest.fn();
-  const addInstrument: () => void = jest.fn();
+  const deleteInstrument: (instrumentName: string) => void = jest.fn();
 
   describe('Shallow', () => {
     beforeEach(() => {
       wrapper = shallow(
-        <Instruments 
+        <SelectedInstrument 
           instrument=""
           skillLevel=""
-          handleChange={handleChange}
-          addInstrument={addInstrument}
+          deleteInstrument={deleteInstrument}
         />
       );
     });
