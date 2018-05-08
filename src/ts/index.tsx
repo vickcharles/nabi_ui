@@ -89,7 +89,7 @@ const theme = createMuiTheme({
         background: '#f3f6f9',
         borderRadius: '5px',
         color: '#717a8a !important',
-        padding: '17px 40px'
+        padding: '17px 18px'
       },
       multiline: {
         padding: '20px'
@@ -147,6 +147,11 @@ const theme = createMuiTheme({
       },
       active: {
         color: '#06c3e1 !important'
+      }
+    },
+    MuiSvgIcon: {
+      colorPrimary: {
+        color: '#06c3e1'
       }
     },
     MuiTypography : {

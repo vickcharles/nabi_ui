@@ -13,6 +13,7 @@ import NameLocationBio from './NameLocationBio/NameLocationBio';
 import ImageUploader from './ImageUploader';
 import Instruments from './Instruments/Instruments';
 import SelectedInstrument from './Instruments/SelectedInstrument';
+import Rates from './Rates';
 
 interface BasicInfoDispatchProps {
   updateInstructor: (instructor: InstructorState) => void;
@@ -158,6 +159,7 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
           handleChange={this.handleChange}
           addInstrument={this.addInstrument}
         />
+        <Rates handleChange={this.handleChange} />
       </div>
     );
   }
