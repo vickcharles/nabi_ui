@@ -1,3 +1,15 @@
+export enum PlaceForLessonsOptions {
+  home = 'Student\'s home',
+  studio = 'Instructor\'s studio',
+  online = 'Online',
+}
+
+export interface PlaceForLessonsState {
+  home: boolean;
+  studio: boolean;
+  online: boolean;
+}
+
 export enum LessonDuration {
   thirtyMins = '30 mins',
   fortyFiveMins = '45 mins',
@@ -28,6 +40,8 @@ export interface InstructorState {
   bio?: string;
   instruments?: InstrumentsType[];
   rates?: RatesState;
+  placeForLessons?: PlaceForLessonsState;
+  studio?: string;
 }
 
 export type IState = InstructorState[];
