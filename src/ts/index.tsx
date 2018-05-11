@@ -63,6 +63,11 @@ const theme = createMuiTheme({
         marginTop: '0px !important'
       }
     },
+    MuiGridListTileBar: {
+      root: {
+        background: '#c6c9d0'
+      }
+    },
     MuiIconButton: {
       root: {
         '&:hover': {
