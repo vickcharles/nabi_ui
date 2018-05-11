@@ -5,7 +5,12 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Rates
+    fortyFiveMinsRate={0}
     handleChange={[MockFunction]}
+    ninetyMinsRate={0}
+    sixtyMinsRate={0}
+    thirtyMinsRate={0}
+    updateRates={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -42,11 +47,14 @@ ShallowWrapper {
               <TextField
                 className="nabi-rates-field"
                 fullWidth={true}
-                id="firstName"
-                name="firstName"
+                id="thirtyMinsRate"
+                name="thirtyMinsRate"
+                onBlur={[MockFunction]}
                 onChange={[MockFunction]}
+                placeholder="0.00"
                 required={true}
                 select={false}
+                type="number"
               />
             </WithStyles(ListItemSecondaryAction)>
           </WithStyles(ListItem)>
@@ -63,11 +71,14 @@ ShallowWrapper {
               <TextField
                 className="nabi-rates-field"
                 fullWidth={true}
-                id="firstName"
-                name="firstName"
+                id="fortyFiveMinsRate"
+                name="fortyFiveMinsRate"
+                onBlur={[MockFunction]}
                 onChange={[MockFunction]}
+                placeholder="0.00"
                 required={true}
                 select={false}
+                type="number"
               />
             </WithStyles(ListItemSecondaryAction)>
           </WithStyles(ListItem)>
@@ -84,11 +95,14 @@ ShallowWrapper {
               <TextField
                 className="nabi-rates-field"
                 fullWidth={true}
-                id="firstName"
-                name="firstName"
+                id="sixtyMinsRate"
+                name="sixtyMinsRate"
+                onBlur={[MockFunction]}
                 onChange={[MockFunction]}
+                placeholder="0.00"
                 required={true}
                 select={false}
+                type="number"
               />
             </WithStyles(ListItemSecondaryAction)>
           </WithStyles(ListItem)>
@@ -105,11 +119,14 @@ ShallowWrapper {
               <TextField
                 className="nabi-rates-field"
                 fullWidth={true}
-                id="firstName"
-                name="firstName"
+                id="ninetyMinsRate"
+                name="ninetyMinsRate"
+                onBlur={[MockFunction]}
                 onChange={[MockFunction]}
+                placeholder="0.00"
                 required={true}
                 select={false}
+                type="number"
               />
             </WithStyles(ListItemSecondaryAction)>
           </WithStyles(ListItem)>
@@ -153,11 +170,14 @@ ShallowWrapper {
                 <TextField
                   className="nabi-rates-field"
                   fullWidth={true}
-                  id="firstName"
-                  name="firstName"
+                  id="thirtyMinsRate"
+                  name="thirtyMinsRate"
+                  onBlur={[MockFunction]}
                   onChange={[MockFunction]}
+                  placeholder="0.00"
                   required={true}
                   select={false}
+                  type="number"
                 />
               </WithStyles(ListItemSecondaryAction)>
             </WithStyles(ListItem)>,
@@ -174,11 +194,14 @@ ShallowWrapper {
                 <TextField
                   className="nabi-rates-field"
                   fullWidth={true}
-                  id="firstName"
-                  name="firstName"
+                  id="fortyFiveMinsRate"
+                  name="fortyFiveMinsRate"
+                  onBlur={[MockFunction]}
                   onChange={[MockFunction]}
+                  placeholder="0.00"
                   required={true}
                   select={false}
+                  type="number"
                 />
               </WithStyles(ListItemSecondaryAction)>
             </WithStyles(ListItem)>,
@@ -195,11 +218,14 @@ ShallowWrapper {
                 <TextField
                   className="nabi-rates-field"
                   fullWidth={true}
-                  id="firstName"
-                  name="firstName"
+                  id="sixtyMinsRate"
+                  name="sixtyMinsRate"
+                  onBlur={[MockFunction]}
                   onChange={[MockFunction]}
+                  placeholder="0.00"
                   required={true}
                   select={false}
+                  type="number"
                 />
               </WithStyles(ListItemSecondaryAction)>
             </WithStyles(ListItem)>,
@@ -216,11 +242,14 @@ ShallowWrapper {
                 <TextField
                   className="nabi-rates-field"
                   fullWidth={true}
-                  id="firstName"
-                  name="firstName"
+                  id="ninetyMinsRate"
+                  name="ninetyMinsRate"
+                  onBlur={[MockFunction]}
                   onChange={[MockFunction]}
+                  placeholder="0.00"
                   required={true}
                   select={false}
+                  type="number"
                 />
               </WithStyles(ListItemSecondaryAction)>
             </WithStyles(ListItem)>,
@@ -231,7 +260,7 @@ ShallowWrapper {
         "rendered": Array [
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "0",
             "nodeType": "class",
             "props": Object {
               "children": Array [
@@ -245,11 +274,14 @@ ShallowWrapper {
                   <TextField
                     className="nabi-rates-field"
                     fullWidth={true}
-                    id="firstName"
-                    name="firstName"
+                    id="thirtyMinsRate"
+                    name="thirtyMinsRate"
+                    onBlur={[MockFunction]}
                     onChange={[MockFunction]}
+                    placeholder="0.00"
                     required={true}
                     select={false}
+                    type="number"
                   />
                 </WithStyles(ListItemSecondaryAction)>,
               ],
@@ -280,11 +312,14 @@ ShallowWrapper {
                     <TextField
                       className="nabi-rates-field"
                       fullWidth={true}
-                      id="firstName"
-                      name="firstName"
+                      id="thirtyMinsRate"
+                      name="thirtyMinsRate"
+                      onBlur={[MockFunction]}
                       onChange={[MockFunction]}
+                      placeholder="0.00"
                       required={true}
                       select={false}
+                      type="number"
                     />,
                   ],
                 },
@@ -308,11 +343,14 @@ ShallowWrapper {
                     "props": Object {
                       "className": "nabi-rates-field",
                       "fullWidth": true,
-                      "id": "firstName",
-                      "name": "firstName",
+                      "id": "thirtyMinsRate",
+                      "name": "thirtyMinsRate",
+                      "onBlur": [MockFunction],
                       "onChange": [MockFunction],
+                      "placeholder": "0.00",
                       "required": true,
                       "select": false,
+                      "type": "number",
                     },
                     "ref": null,
                     "rendered": null,
@@ -326,7 +364,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "1",
             "nodeType": "class",
             "props": Object {
               "children": Array [
@@ -340,11 +378,14 @@ ShallowWrapper {
                   <TextField
                     className="nabi-rates-field"
                     fullWidth={true}
-                    id="firstName"
-                    name="firstName"
+                    id="fortyFiveMinsRate"
+                    name="fortyFiveMinsRate"
+                    onBlur={[MockFunction]}
                     onChange={[MockFunction]}
+                    placeholder="0.00"
                     required={true}
                     select={false}
+                    type="number"
                   />
                 </WithStyles(ListItemSecondaryAction)>,
               ],
@@ -375,11 +416,14 @@ ShallowWrapper {
                     <TextField
                       className="nabi-rates-field"
                       fullWidth={true}
-                      id="firstName"
-                      name="firstName"
+                      id="fortyFiveMinsRate"
+                      name="fortyFiveMinsRate"
+                      onBlur={[MockFunction]}
                       onChange={[MockFunction]}
+                      placeholder="0.00"
                       required={true}
                       select={false}
+                      type="number"
                     />,
                   ],
                 },
@@ -403,11 +447,14 @@ ShallowWrapper {
                     "props": Object {
                       "className": "nabi-rates-field",
                       "fullWidth": true,
-                      "id": "firstName",
-                      "name": "firstName",
+                      "id": "fortyFiveMinsRate",
+                      "name": "fortyFiveMinsRate",
+                      "onBlur": [MockFunction],
                       "onChange": [MockFunction],
+                      "placeholder": "0.00",
                       "required": true,
                       "select": false,
+                      "type": "number",
                     },
                     "ref": null,
                     "rendered": null,
@@ -421,7 +468,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "2",
             "nodeType": "class",
             "props": Object {
               "children": Array [
@@ -435,11 +482,14 @@ ShallowWrapper {
                   <TextField
                     className="nabi-rates-field"
                     fullWidth={true}
-                    id="firstName"
-                    name="firstName"
+                    id="sixtyMinsRate"
+                    name="sixtyMinsRate"
+                    onBlur={[MockFunction]}
                     onChange={[MockFunction]}
+                    placeholder="0.00"
                     required={true}
                     select={false}
+                    type="number"
                   />
                 </WithStyles(ListItemSecondaryAction)>,
               ],
@@ -470,11 +520,14 @@ ShallowWrapper {
                     <TextField
                       className="nabi-rates-field"
                       fullWidth={true}
-                      id="firstName"
-                      name="firstName"
+                      id="sixtyMinsRate"
+                      name="sixtyMinsRate"
+                      onBlur={[MockFunction]}
                       onChange={[MockFunction]}
+                      placeholder="0.00"
                       required={true}
                       select={false}
+                      type="number"
                     />,
                   ],
                 },
@@ -498,11 +551,14 @@ ShallowWrapper {
                     "props": Object {
                       "className": "nabi-rates-field",
                       "fullWidth": true,
-                      "id": "firstName",
-                      "name": "firstName",
+                      "id": "sixtyMinsRate",
+                      "name": "sixtyMinsRate",
+                      "onBlur": [MockFunction],
                       "onChange": [MockFunction],
+                      "placeholder": "0.00",
                       "required": true,
                       "select": false,
+                      "type": "number",
                     },
                     "ref": null,
                     "rendered": null,
@@ -516,7 +572,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "3",
             "nodeType": "class",
             "props": Object {
               "children": Array [
@@ -530,11 +586,14 @@ ShallowWrapper {
                   <TextField
                     className="nabi-rates-field"
                     fullWidth={true}
-                    id="firstName"
-                    name="firstName"
+                    id="ninetyMinsRate"
+                    name="ninetyMinsRate"
+                    onBlur={[MockFunction]}
                     onChange={[MockFunction]}
+                    placeholder="0.00"
                     required={true}
                     select={false}
+                    type="number"
                   />
                 </WithStyles(ListItemSecondaryAction)>,
               ],
@@ -565,11 +624,14 @@ ShallowWrapper {
                     <TextField
                       className="nabi-rates-field"
                       fullWidth={true}
-                      id="firstName"
-                      name="firstName"
+                      id="ninetyMinsRate"
+                      name="ninetyMinsRate"
+                      onBlur={[MockFunction]}
                       onChange={[MockFunction]}
+                      placeholder="0.00"
                       required={true}
                       select={false}
+                      type="number"
                     />,
                   ],
                 },
@@ -593,11 +655,14 @@ ShallowWrapper {
                     "props": Object {
                       "className": "nabi-rates-field",
                       "fullWidth": true,
-                      "id": "firstName",
-                      "name": "firstName",
+                      "id": "ninetyMinsRate",
+                      "name": "ninetyMinsRate",
+                      "onBlur": [MockFunction],
                       "onChange": [MockFunction],
+                      "placeholder": "0.00",
                       "required": true,
                       "select": false,
+                      "type": "number",
                     },
                     "ref": null,
                     "rendered": null,
@@ -655,11 +720,14 @@ ShallowWrapper {
                 <TextField
                   className="nabi-rates-field"
                   fullWidth={true}
-                  id="firstName"
-                  name="firstName"
+                  id="thirtyMinsRate"
+                  name="thirtyMinsRate"
+                  onBlur={[MockFunction]}
                   onChange={[MockFunction]}
+                  placeholder="0.00"
                   required={true}
                   select={false}
+                  type="number"
                 />
               </WithStyles(ListItemSecondaryAction)>
             </WithStyles(ListItem)>
@@ -676,11 +744,14 @@ ShallowWrapper {
                 <TextField
                   className="nabi-rates-field"
                   fullWidth={true}
-                  id="firstName"
-                  name="firstName"
+                  id="fortyFiveMinsRate"
+                  name="fortyFiveMinsRate"
+                  onBlur={[MockFunction]}
                   onChange={[MockFunction]}
+                  placeholder="0.00"
                   required={true}
                   select={false}
+                  type="number"
                 />
               </WithStyles(ListItemSecondaryAction)>
             </WithStyles(ListItem)>
@@ -697,11 +768,14 @@ ShallowWrapper {
                 <TextField
                   className="nabi-rates-field"
                   fullWidth={true}
-                  id="firstName"
-                  name="firstName"
+                  id="sixtyMinsRate"
+                  name="sixtyMinsRate"
+                  onBlur={[MockFunction]}
                   onChange={[MockFunction]}
+                  placeholder="0.00"
                   required={true}
                   select={false}
+                  type="number"
                 />
               </WithStyles(ListItemSecondaryAction)>
             </WithStyles(ListItem)>
@@ -718,11 +792,14 @@ ShallowWrapper {
                 <TextField
                   className="nabi-rates-field"
                   fullWidth={true}
-                  id="firstName"
-                  name="firstName"
+                  id="ninetyMinsRate"
+                  name="ninetyMinsRate"
+                  onBlur={[MockFunction]}
                   onChange={[MockFunction]}
+                  placeholder="0.00"
                   required={true}
                   select={false}
+                  type="number"
                 />
               </WithStyles(ListItemSecondaryAction)>
             </WithStyles(ListItem)>
@@ -766,11 +843,14 @@ ShallowWrapper {
                   <TextField
                     className="nabi-rates-field"
                     fullWidth={true}
-                    id="firstName"
-                    name="firstName"
+                    id="thirtyMinsRate"
+                    name="thirtyMinsRate"
+                    onBlur={[MockFunction]}
                     onChange={[MockFunction]}
+                    placeholder="0.00"
                     required={true}
                     select={false}
+                    type="number"
                   />
                 </WithStyles(ListItemSecondaryAction)>
               </WithStyles(ListItem)>,
@@ -787,11 +867,14 @@ ShallowWrapper {
                   <TextField
                     className="nabi-rates-field"
                     fullWidth={true}
-                    id="firstName"
-                    name="firstName"
+                    id="fortyFiveMinsRate"
+                    name="fortyFiveMinsRate"
+                    onBlur={[MockFunction]}
                     onChange={[MockFunction]}
+                    placeholder="0.00"
                     required={true}
                     select={false}
+                    type="number"
                   />
                 </WithStyles(ListItemSecondaryAction)>
               </WithStyles(ListItem)>,
@@ -808,11 +891,14 @@ ShallowWrapper {
                   <TextField
                     className="nabi-rates-field"
                     fullWidth={true}
-                    id="firstName"
-                    name="firstName"
+                    id="sixtyMinsRate"
+                    name="sixtyMinsRate"
+                    onBlur={[MockFunction]}
                     onChange={[MockFunction]}
+                    placeholder="0.00"
                     required={true}
                     select={false}
+                    type="number"
                   />
                 </WithStyles(ListItemSecondaryAction)>
               </WithStyles(ListItem)>,
@@ -829,11 +915,14 @@ ShallowWrapper {
                   <TextField
                     className="nabi-rates-field"
                     fullWidth={true}
-                    id="firstName"
-                    name="firstName"
+                    id="ninetyMinsRate"
+                    name="ninetyMinsRate"
+                    onBlur={[MockFunction]}
                     onChange={[MockFunction]}
+                    placeholder="0.00"
                     required={true}
                     select={false}
+                    type="number"
                   />
                 </WithStyles(ListItemSecondaryAction)>
               </WithStyles(ListItem)>,
@@ -844,7 +933,7 @@ ShallowWrapper {
           "rendered": Array [
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "0",
               "nodeType": "class",
               "props": Object {
                 "children": Array [
@@ -858,11 +947,14 @@ ShallowWrapper {
                     <TextField
                       className="nabi-rates-field"
                       fullWidth={true}
-                      id="firstName"
-                      name="firstName"
+                      id="thirtyMinsRate"
+                      name="thirtyMinsRate"
+                      onBlur={[MockFunction]}
                       onChange={[MockFunction]}
+                      placeholder="0.00"
                       required={true}
                       select={false}
+                      type="number"
                     />
                   </WithStyles(ListItemSecondaryAction)>,
                 ],
@@ -893,11 +985,14 @@ ShallowWrapper {
                       <TextField
                         className="nabi-rates-field"
                         fullWidth={true}
-                        id="firstName"
-                        name="firstName"
+                        id="thirtyMinsRate"
+                        name="thirtyMinsRate"
+                        onBlur={[MockFunction]}
                         onChange={[MockFunction]}
+                        placeholder="0.00"
                         required={true}
                         select={false}
+                        type="number"
                       />,
                     ],
                   },
@@ -921,11 +1016,14 @@ ShallowWrapper {
                       "props": Object {
                         "className": "nabi-rates-field",
                         "fullWidth": true,
-                        "id": "firstName",
-                        "name": "firstName",
+                        "id": "thirtyMinsRate",
+                        "name": "thirtyMinsRate",
+                        "onBlur": [MockFunction],
                         "onChange": [MockFunction],
+                        "placeholder": "0.00",
                         "required": true,
                         "select": false,
+                        "type": "number",
                       },
                       "ref": null,
                       "rendered": null,
@@ -939,7 +1037,7 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "1",
               "nodeType": "class",
               "props": Object {
                 "children": Array [
@@ -953,11 +1051,14 @@ ShallowWrapper {
                     <TextField
                       className="nabi-rates-field"
                       fullWidth={true}
-                      id="firstName"
-                      name="firstName"
+                      id="fortyFiveMinsRate"
+                      name="fortyFiveMinsRate"
+                      onBlur={[MockFunction]}
                       onChange={[MockFunction]}
+                      placeholder="0.00"
                       required={true}
                       select={false}
+                      type="number"
                     />
                   </WithStyles(ListItemSecondaryAction)>,
                 ],
@@ -988,11 +1089,14 @@ ShallowWrapper {
                       <TextField
                         className="nabi-rates-field"
                         fullWidth={true}
-                        id="firstName"
-                        name="firstName"
+                        id="fortyFiveMinsRate"
+                        name="fortyFiveMinsRate"
+                        onBlur={[MockFunction]}
                         onChange={[MockFunction]}
+                        placeholder="0.00"
                         required={true}
                         select={false}
+                        type="number"
                       />,
                     ],
                   },
@@ -1016,11 +1120,14 @@ ShallowWrapper {
                       "props": Object {
                         "className": "nabi-rates-field",
                         "fullWidth": true,
-                        "id": "firstName",
-                        "name": "firstName",
+                        "id": "fortyFiveMinsRate",
+                        "name": "fortyFiveMinsRate",
+                        "onBlur": [MockFunction],
                         "onChange": [MockFunction],
+                        "placeholder": "0.00",
                         "required": true,
                         "select": false,
+                        "type": "number",
                       },
                       "ref": null,
                       "rendered": null,
@@ -1034,7 +1141,7 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "2",
               "nodeType": "class",
               "props": Object {
                 "children": Array [
@@ -1048,11 +1155,14 @@ ShallowWrapper {
                     <TextField
                       className="nabi-rates-field"
                       fullWidth={true}
-                      id="firstName"
-                      name="firstName"
+                      id="sixtyMinsRate"
+                      name="sixtyMinsRate"
+                      onBlur={[MockFunction]}
                       onChange={[MockFunction]}
+                      placeholder="0.00"
                       required={true}
                       select={false}
+                      type="number"
                     />
                   </WithStyles(ListItemSecondaryAction)>,
                 ],
@@ -1083,11 +1193,14 @@ ShallowWrapper {
                       <TextField
                         className="nabi-rates-field"
                         fullWidth={true}
-                        id="firstName"
-                        name="firstName"
+                        id="sixtyMinsRate"
+                        name="sixtyMinsRate"
+                        onBlur={[MockFunction]}
                         onChange={[MockFunction]}
+                        placeholder="0.00"
                         required={true}
                         select={false}
+                        type="number"
                       />,
                     ],
                   },
@@ -1111,11 +1224,14 @@ ShallowWrapper {
                       "props": Object {
                         "className": "nabi-rates-field",
                         "fullWidth": true,
-                        "id": "firstName",
-                        "name": "firstName",
+                        "id": "sixtyMinsRate",
+                        "name": "sixtyMinsRate",
+                        "onBlur": [MockFunction],
                         "onChange": [MockFunction],
+                        "placeholder": "0.00",
                         "required": true,
                         "select": false,
+                        "type": "number",
                       },
                       "ref": null,
                       "rendered": null,
@@ -1129,7 +1245,7 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "3",
               "nodeType": "class",
               "props": Object {
                 "children": Array [
@@ -1143,11 +1259,14 @@ ShallowWrapper {
                     <TextField
                       className="nabi-rates-field"
                       fullWidth={true}
-                      id="firstName"
-                      name="firstName"
+                      id="ninetyMinsRate"
+                      name="ninetyMinsRate"
+                      onBlur={[MockFunction]}
                       onChange={[MockFunction]}
+                      placeholder="0.00"
                       required={true}
                       select={false}
+                      type="number"
                     />
                   </WithStyles(ListItemSecondaryAction)>,
                 ],
@@ -1178,11 +1297,14 @@ ShallowWrapper {
                       <TextField
                         className="nabi-rates-field"
                         fullWidth={true}
-                        id="firstName"
-                        name="firstName"
+                        id="ninetyMinsRate"
+                        name="ninetyMinsRate"
+                        onBlur={[MockFunction]}
                         onChange={[MockFunction]}
+                        placeholder="0.00"
                         required={true}
                         select={false}
+                        type="number"
                       />,
                     ],
                   },
@@ -1206,11 +1328,14 @@ ShallowWrapper {
                       "props": Object {
                         "className": "nabi-rates-field",
                         "fullWidth": true,
-                        "id": "firstName",
-                        "name": "firstName",
+                        "id": "ninetyMinsRate",
+                        "name": "ninetyMinsRate",
+                        "onBlur": [MockFunction],
                         "onChange": [MockFunction],
+                        "placeholder": "0.00",
                         "required": true,
                         "select": false,
+                        "type": "number",
                       },
                       "ref": null,
                       "rendered": null,
