@@ -4,7 +4,15 @@ exports[`PlaceForLessons Shallow Matches snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <PlaceForLessons />,
+  Symbol(enzyme.__unrendered__): <PlaceForLessons
+    handleChange={[MockFunction]}
+    handleChangePlaceForLessons={[MockFunction]}
+    home={false}
+    online={false}
+    studio={false}
+    studioAddress=""
+    updateStudioAddress={[MockFunction]}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -30,7 +38,9 @@ ShallowWrapper {
           <WithStyles(FormControlLabel)
             control={
               <WithStyles(Checkbox)
-                value=""
+                checked={false}
+                name="home"
+                onChange={[MockFunction]}
               />
             }
             label="Student's home"
@@ -38,7 +48,9 @@ ShallowWrapper {
           <WithStyles(FormControlLabel)
             control={
               <WithStyles(Checkbox)
-                value=""
+                checked={false}
+                name="studio"
+                onChange={[MockFunction]}
               />
             }
             label="Instructor's studio"
@@ -46,20 +58,15 @@ ShallowWrapper {
           <WithStyles(FormControlLabel)
             control={
               <WithStyles(Checkbox)
-                value=""
+                checked={false}
+                name="online"
+                onChange={[MockFunction]}
               />
             }
             label="Online"
           />
         </WithStyles(FormGroup)>,
-        <TextField
-          className="nabi-margin-top-xsmall"
-          fullWidth={true}
-          placeholder="Enter your studio address"
-          required={true}
-          select={false}
-          type="number"
-        />,
+        false,
         <WithStyles(Divider)
           className="nabi-margin-top-small"
         />,
@@ -89,7 +96,9 @@ ShallowWrapper {
             <WithStyles(FormControlLabel)
               control={
                 <WithStyles(Checkbox)
-                  value=""
+                  checked={false}
+                  name="home"
+                  onChange={[MockFunction]}
                 />
               }
               label="Student's home"
@@ -97,7 +106,9 @@ ShallowWrapper {
             <WithStyles(FormControlLabel)
               control={
                 <WithStyles(Checkbox)
-                  value=""
+                  checked={false}
+                  name="studio"
+                  onChange={[MockFunction]}
                 />
               }
               label="Instructor's studio"
@@ -105,7 +116,9 @@ ShallowWrapper {
             <WithStyles(FormControlLabel)
               control={
                 <WithStyles(Checkbox)
-                  value=""
+                  checked={false}
+                  name="online"
+                  onChange={[MockFunction]}
                 />
               }
               label="Online"
@@ -121,7 +134,9 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "control": <WithStyles(Checkbox)
-                value=""
+                checked={false}
+                name="home"
+                onChange={[MockFunction]}
               />,
               "label": "Student's home",
             },
@@ -135,7 +150,9 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "control": <WithStyles(Checkbox)
-                value=""
+                checked={false}
+                name="studio"
+                onChange={[MockFunction]}
               />,
               "label": "Instructor's studio",
             },
@@ -149,7 +166,9 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "control": <WithStyles(Checkbox)
-                value=""
+                checked={false}
+                name="online"
+                onChange={[MockFunction]}
               />,
               "label": "Online",
             },
@@ -160,22 +179,7 @@ ShallowWrapper {
         ],
         "type": [Function],
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "className": "nabi-margin-top-xsmall",
-          "fullWidth": true,
-          "placeholder": "Enter your studio address",
-          "required": true,
-          "select": false,
-          "type": "number",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
+      false,
       Object {
         "instance": null,
         "key": undefined,
@@ -209,7 +213,9 @@ ShallowWrapper {
             <WithStyles(FormControlLabel)
               control={
                 <WithStyles(Checkbox)
-                  value=""
+                  checked={false}
+                  name="home"
+                  onChange={[MockFunction]}
                 />
               }
               label="Student's home"
@@ -217,7 +223,9 @@ ShallowWrapper {
             <WithStyles(FormControlLabel)
               control={
                 <WithStyles(Checkbox)
-                  value=""
+                  checked={false}
+                  name="studio"
+                  onChange={[MockFunction]}
                 />
               }
               label="Instructor's studio"
@@ -225,20 +233,15 @@ ShallowWrapper {
             <WithStyles(FormControlLabel)
               control={
                 <WithStyles(Checkbox)
-                  value=""
+                  checked={false}
+                  name="online"
+                  onChange={[MockFunction]}
                 />
               }
               label="Online"
             />
           </WithStyles(FormGroup)>,
-          <TextField
-            className="nabi-margin-top-xsmall"
-            fullWidth={true}
-            placeholder="Enter your studio address"
-            required={true}
-            select={false}
-            type="number"
-          />,
+          false,
           <WithStyles(Divider)
             className="nabi-margin-top-small"
           />,
@@ -268,7 +271,9 @@ ShallowWrapper {
               <WithStyles(FormControlLabel)
                 control={
                   <WithStyles(Checkbox)
-                    value=""
+                    checked={false}
+                    name="home"
+                    onChange={[MockFunction]}
                   />
                 }
                 label="Student's home"
@@ -276,7 +281,9 @@ ShallowWrapper {
               <WithStyles(FormControlLabel)
                 control={
                   <WithStyles(Checkbox)
-                    value=""
+                    checked={false}
+                    name="studio"
+                    onChange={[MockFunction]}
                   />
                 }
                 label="Instructor's studio"
@@ -284,7 +291,9 @@ ShallowWrapper {
               <WithStyles(FormControlLabel)
                 control={
                   <WithStyles(Checkbox)
-                    value=""
+                    checked={false}
+                    name="online"
+                    onChange={[MockFunction]}
                   />
                 }
                 label="Online"
@@ -300,7 +309,9 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "control": <WithStyles(Checkbox)
-                  value=""
+                  checked={false}
+                  name="home"
+                  onChange={[MockFunction]}
                 />,
                 "label": "Student's home",
               },
@@ -314,7 +325,9 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "control": <WithStyles(Checkbox)
-                  value=""
+                  checked={false}
+                  name="studio"
+                  onChange={[MockFunction]}
                 />,
                 "label": "Instructor's studio",
               },
@@ -328,7 +341,9 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "control": <WithStyles(Checkbox)
-                  value=""
+                  checked={false}
+                  name="online"
+                  onChange={[MockFunction]}
                 />,
                 "label": "Online",
               },
@@ -339,22 +354,7 @@ ShallowWrapper {
           ],
           "type": [Function],
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "className": "nabi-margin-top-xsmall",
-            "fullWidth": true,
-            "placeholder": "Enter your studio address",
-            "required": true,
-            "select": false,
-            "type": "number",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
+        false,
         Object {
           "instance": null,
           "key": undefined,

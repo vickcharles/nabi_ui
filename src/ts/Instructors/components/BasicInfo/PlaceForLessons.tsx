@@ -7,7 +7,28 @@ import TextField from 'material-ui/TextField';
 
 import { PlaceForLessonsOptions } from '../../model';
 
-const PlaceForLessons: React.StatelessComponent<{}> = props => {
+interface PlaceForLessonsProps {
+  handleChange: (event: React.FormEvent<{}>) => void;
+  handleChangePlaceForLessons: (event: React.FormEvent<{}>) => void;
+  home: boolean;
+  studio: boolean;
+  online: boolean;
+  studioAddress: string;
+  updateStudioAddress: (event: React.FormEvent<{}>) => void;
+}
+
+const PlaceForLessons: React.StatelessComponent<PlaceForLessonsProps> = props => {
+  const studioAddressTextfield = props.studio && (
+    <TextField
+      fullWidth={true}
+      name="studioAddress"
+      onChange={props.handleChange}
+      required={true}
+      className="nabi-margin-top-xsmall"
+      placeholder="Enter your studio address"
+      onBlur={props.updateStudioAddress}
+    />
+  );
 
   return (
     <div>
@@ -18,9 +39,9 @@ const PlaceForLessons: React.StatelessComponent<{}> = props => {
         <FormControlLabel
           control={
             <Checkbox
-              // checked={this.state.gilad}
-              // onChange={this.handleChange('gilad')}
-              value=""
+              name="home"
+              checked={props.home}
+              onChange={props.handleChangePlaceForLessons}
             />
           }
           label={PlaceForLessonsOptions.home}
@@ -28,9 +49,9 @@ const PlaceForLessons: React.StatelessComponent<{}> = props => {
         <FormControlLabel
           control={
             <Checkbox
-              // checked={this.state.jason}
-              // onChange={this.handleChange('jason')}
-              value=""
+              name="studio"
+              checked={props.studio}
+              onChange={props.handleChangePlaceForLessons}
             />
           }
           label={PlaceForLessonsOptions.studio}
@@ -38,25 +59,15 @@ const PlaceForLessons: React.StatelessComponent<{}> = props => {
         <FormControlLabel
           control={
             <Checkbox
-              // checked={this.state.antoine}
-              // onChange={this.handleChange('antoine')}
-              value=""
+              name="online"
+              checked={props.online}
+              onChange={props.handleChangePlaceForLessons}
             />
           }
           label={PlaceForLessonsOptions.online}
         />
       </FormGroup>
-      <TextField
-        fullWidth={true}
-        // id={list.name}
-        // name={list.name}
-        // onChange={props.handleChange}
-        required={true}
-        className="nabi-margin-top-xsmall"
-        placeholder="Enter your studio address"
-        type="number"
-        // onBlur={props.updateRates}
-      />
+      {studioAddressTextfield}
       <Divider className="nabi-margin-top-small"/>
     </div>
   );
