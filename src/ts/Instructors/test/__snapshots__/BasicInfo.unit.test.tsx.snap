@@ -79,6 +79,7 @@ ShallowWrapper {
           thirtyMinsRate={0}
           updateRates={[Function]}
         />,
+        <PlaceForLessons />,
       ],
     },
     "ref": null,
@@ -163,6 +164,15 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": "div",
   },
@@ -217,6 +227,7 @@ ShallowWrapper {
             thirtyMinsRate={0}
             updateRates={[Function]}
           />,
+          <PlaceForLessons />,
         ],
       },
       "ref": null,
@@ -297,6 +308,15 @@ ShallowWrapper {
             "thirtyMinsRate": 0,
             "updateRates": [Function],
           },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
           "ref": null,
           "rendered": null,
           "type": [Function],

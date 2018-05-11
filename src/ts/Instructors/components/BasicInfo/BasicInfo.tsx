@@ -14,6 +14,7 @@ import ImageUploader from './ImageUploader';
 import Instruments from './Instruments/Instruments';
 import SelectedInstrument from './Instruments/SelectedInstrument';
 import Rates from './Rates';
+import PlaceForLessons from './PlaceForLessons';
 
 interface BasicInfoDispatchProps {
   updateInstructor: (instructor: InstructorState) => void;
@@ -188,6 +189,7 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
           ninetyMinsRate={this.state.ninetyMinsRate}
           updateRates={this.updateRates}
         />
+        <PlaceForLessons />
       </div>
     );
   }
