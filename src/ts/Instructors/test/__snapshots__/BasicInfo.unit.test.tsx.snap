@@ -79,7 +79,15 @@ ShallowWrapper {
           thirtyMinsRate={0}
           updateRates={[Function]}
         />,
-        <PlaceForLessons />,
+        <PlaceForLessons
+          handleChange={[Function]}
+          handleChangePlaceForLessons={[Function]}
+          home={false}
+          online={false}
+          studio={false}
+          studioAddress=""
+          updateStudioAddress={[Function]}
+        />,
       ],
     },
     "ref": null,
@@ -168,7 +176,15 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "handleChange": [Function],
+          "handleChangePlaceForLessons": [Function],
+          "home": false,
+          "online": false,
+          "studio": false,
+          "studioAddress": "",
+          "updateStudioAddress": [Function],
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -227,7 +243,15 @@ ShallowWrapper {
             thirtyMinsRate={0}
             updateRates={[Function]}
           />,
-          <PlaceForLessons />,
+          <PlaceForLessons
+            handleChange={[Function]}
+            handleChangePlaceForLessons={[Function]}
+            home={false}
+            online={false}
+            studio={false}
+            studioAddress=""
+            updateStudioAddress={[Function]}
+          />,
         ],
       },
       "ref": null,
@@ -316,7 +340,15 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "handleChange": [Function],
+            "handleChangePlaceForLessons": [Function],
+            "home": false,
+            "online": false,
+            "studio": false,
+            "studioAddress": "",
+            "updateStudioAddress": [Function],
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],

@@ -41,7 +41,7 @@ export interface InstructorState {
   instruments?: InstrumentsType[];
   rates?: RatesState;
   placeForLessons?: PlaceForLessonsState;
-  studio?: string;
+  studioAddress?: string;
 }
 
 export type IState = InstructorState[];

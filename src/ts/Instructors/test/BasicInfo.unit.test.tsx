@@ -111,4 +111,39 @@ describe('BasicInfo', () => {
       expect(updateInstructorCall).toBeCalled();
     });
   });
+
+  describe('Method handleChangePlaceForLessons()', () => {
+    function test_handleChange(theName: string, checkedValue: boolean): void {
+      describe(`When the event contains ${theName} for name and ${checkedValue} for value`, () => {
+        beforeEach(() => {
+          const e = {
+            target: {
+              name: theName,
+              checked: checkedValue
+            }
+          };
+
+          wrapper.instance().handleChangePlaceForLessons(e);
+        });
+
+        it(`Sets the state's ${theName} to ${checkedValue}`, () => {
+          expect(wrapper.state(theName)).toBe(checkedValue);
+        });
+      });
+    }
+
+    test_handleChange('online', true);
+    test_handleChange('home', false);
+    test_handleChange('bio', true);
+  });
+
+  describe('Method updateStudioAddress()', () => {
+    beforeEach(() => {
+      wrapper.instance().updateStudioAddress();
+    });
+
+    it('Calls updateInstructorCall', () => {
+      expect(updateInstructorCall).toBeCalled();
+    });
+  });
 });

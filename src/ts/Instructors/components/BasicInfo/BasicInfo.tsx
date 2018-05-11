@@ -7,7 +7,7 @@ import Typography from 'material-ui/Typography';
 
 import { UserState } from '../../../Users/model';
 import { updateUser } from '../../../Users';
-import { InstructorState, InstrumentsType, RatesState, SkillLevel } from '../../model';
+import { InstructorState, InstrumentsType, PlaceForLessonsState, RatesState, SkillLevel } from '../../model';
 import { updateInstructor } from '../../';
 import NameLocationBio from './NameLocationBio/NameLocationBio';
 import ImageUploader from './ImageUploader';
@@ -26,12 +26,13 @@ interface BasicInfoOwnProps {
   changeAvatar: (id: string, avatar: string) => void;
 }
 
-interface BasicInfoState extends RatesState {
+interface BasicInfoState extends RatesState, PlaceForLessonsState {
   bio: string;
   displayName: string;
   instrument: string;
   skillLevel: SkillLevel;
   instruments: InstrumentsType[];
+  studioAddress: string;
 }
 
 interface BasicInfoProps extends
@@ -51,7 +52,11 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
       thirtyMinsRate: 0,
       fortyFiveMinsRate: 0,
       sixtyMinsRate: 0,
-      ninetyMinsRate: 0
+      ninetyMinsRate: 0,
+      home: false,
+      studio: false,
+      online: false,
+      studioAddress: ''
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -60,6 +65,8 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
     this.addInstrument = this.addInstrument.bind(this);
     this.deleteInstrument = this.deleteInstrument.bind(this);
     this.updateRates = this.updateRates.bind(this);
+    this.handleChangePlaceForLessons = this.handleChangePlaceForLessons.bind(this);
+    this.updateStudioAddress = this.updateStudioAddress.bind(this);
   }
 
   public componentWillMount(): void {
@@ -73,11 +80,12 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
     const target = event.target;
     const value = target.value;
     const name = target.name;
-    
+
     this.setState({
       ...this.state,
       [name]: value
     });
+    
   }
 
   public handleBlurBio(event: any): void {
@@ -147,6 +155,50 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
 
     this.updateInstructorCall(instructor);
   }
+
+  public handleChangePlaceForLessons(event: any): void {
+    const target = event.target;
+    const name = target.name;
+    
+    if (target.checked) {
+      this.setState({ [name]: true }, () => {
+        const placeForLessons = {
+          home: this.state.home,
+          studio: this.state.studio,
+          online: this.state.online
+        };
+    
+        const instructor: InstructorState =  {
+          userId: this.props.user.id,
+          placeForLessons: placeForLessons
+        };
+        this.updateInstructorCall(instructor);
+      });
+    } else {
+      this.setState({ [name]: false }, () => {
+        const placeForLessons = {
+          home: this.state.home,
+          studio: this.state.studio,
+          online: this.state.online
+        };
+    
+        const instructor: InstructorState =  {
+          userId: this.props.user.id,
+          placeForLessons: placeForLessons
+        };
+        this.updateInstructorCall(instructor);
+      });
+    }
+  }
+
+  public updateStudioAddress(event: any): void {
+    const instructor: InstructorState =  {
+      userId: this.props.user.id,
+      studioAddress: this.state.studioAddress
+    };
+
+    this.updateInstructorCall(instructor);
+  }
   
   public render(): JSX.Element {
     const selectedInstruments = this.state.instruments.map((instrument, i) => (
@@ -189,7 +241,15 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
           ninetyMinsRate={this.state.ninetyMinsRate}
           updateRates={this.updateRates}
         />
-        <PlaceForLessons />
+        <PlaceForLessons 
+          handleChange={this.handleChange}
+          handleChangePlaceForLessons={this.handleChangePlaceForLessons}
+          home={this.state.home}
+          studio={this.state.studio}
+          online={this.state.online}
+          studioAddress={this.state.studioAddress}
+          updateStudioAddress={this.updateStudioAddress}
+        />
       </div>
     );
   }
