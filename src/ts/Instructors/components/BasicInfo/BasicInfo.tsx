@@ -7,7 +7,7 @@ import Typography from 'material-ui/Typography';
 
 import { UserState } from '../../../Users/model';
 import { updateUser } from '../../../Users';
-import { InstructorState, InstrumentsType, SkillLevel } from '../../model';
+import { InstructorState, InstrumentsType, RatesState, SkillLevel } from '../../model';
 import { updateInstructor } from '../../';
 import NameLocationBio from './NameLocationBio/NameLocationBio';
 import ImageUploader from './ImageUploader';
@@ -25,7 +25,7 @@ interface BasicInfoOwnProps {
   changeAvatar: (id: string, avatar: string) => void;
 }
 
-interface BasicInfoState {
+interface BasicInfoState extends RatesState {
   bio: string;
   displayName: string;
   instrument: string;
@@ -46,7 +46,11 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
       displayName: '',
       instrument: '',
       skillLevel: SkillLevel.beginner,
-      instruments: []
+      instruments: [],
+      thirtyMinsRate: 0,
+      fortyFiveMinsRate: 0,
+      sixtyMinsRate: 0,
+      ninetyMinsRate: 0
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -54,6 +58,7 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
     this.updateName = this.updateName.bind(this);
     this.addInstrument = this.addInstrument.bind(this);
     this.deleteInstrument = this.deleteInstrument.bind(this);
+    this.updateRates = this.updateRates.bind(this);
   }
 
   public componentWillMount(): void {
@@ -126,6 +131,22 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
     });
   }
 
+  public updateRates(event: any): void {
+    const rates: RatesState = {
+      thirtyMinsRate: this.state.thirtyMinsRate,
+      fortyFiveMinsRate: this.state.fortyFiveMinsRate,
+      sixtyMinsRate: this.state.sixtyMinsRate,
+      ninetyMinsRate: this.state.ninetyMinsRate,
+    };
+
+    const instructor: InstructorState =  {
+      userId: this.props.user.id,
+      rates: rates
+    };
+
+    this.updateInstructorCall(instructor);
+  }
+  
   public render(): JSX.Element {
     const selectedInstruments = this.state.instruments.map((instrument, i) => (
       <SelectedInstrument
@@ -159,7 +180,14 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
           handleChange={this.handleChange}
           addInstrument={this.addInstrument}
         />
-        <Rates handleChange={this.handleChange} />
+        <Rates 
+          handleChange={this.handleChange} 
+          thirtyMinsRate={this.state.thirtyMinsRate}
+          fortyFiveMinsRate={this.state.fortyFiveMinsRate}
+          sixtyMinsRate={this.state.sixtyMinsRate}
+          ninetyMinsRate={this.state.ninetyMinsRate}
+          updateRates={this.updateRates}
+        />
       </div>
     );
   }

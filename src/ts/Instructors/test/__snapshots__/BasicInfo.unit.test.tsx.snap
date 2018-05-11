@@ -72,7 +72,12 @@ ShallowWrapper {
           skillLevel="Beginner"
         />,
         <Rates
+          fortyFiveMinsRate={0}
           handleChange={[Function]}
+          ninetyMinsRate={0}
+          sixtyMinsRate={0}
+          thirtyMinsRate={0}
+          updateRates={[Function]}
         />,
       ],
     },
@@ -147,7 +152,12 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "fortyFiveMinsRate": 0,
           "handleChange": [Function],
+          "ninetyMinsRate": 0,
+          "sixtyMinsRate": 0,
+          "thirtyMinsRate": 0,
+          "updateRates": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -200,7 +210,12 @@ ShallowWrapper {
             skillLevel="Beginner"
           />,
           <Rates
+            fortyFiveMinsRate={0}
             handleChange={[Function]}
+            ninetyMinsRate={0}
+            sixtyMinsRate={0}
+            thirtyMinsRate={0}
+            updateRates={[Function]}
           />,
         ],
       },
@@ -275,7 +290,12 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "fortyFiveMinsRate": 0,
             "handleChange": [Function],
+            "ninetyMinsRate": 0,
+            "sixtyMinsRate": 0,
+            "thirtyMinsRate": 0,
+            "updateRates": [Function],
           },
           "ref": null,
           "rendered": null,

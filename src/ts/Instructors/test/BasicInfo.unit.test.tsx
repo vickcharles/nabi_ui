@@ -59,6 +59,7 @@ describe('BasicInfo', () => {
 
     test_handleChange('bio', 'yo naci en esta rivera');
     test_handleChange('displayName', 'La Va');
+    test_handleChange('instrument', 'Piano');
   });
 
   describe('Method handleBlurBio()', () => {
@@ -94,6 +95,16 @@ describe('BasicInfo', () => {
   describe('Method deleteInstrument()', () => {
     beforeEach(() => {
       wrapper.instance().deleteInstrument();
+    });
+
+    it('Calls updateInstructorCall', () => {
+      expect(updateInstructorCall).toBeCalled();
+    });
+  });
+
+  describe('Method updateRates()', () => {
+    beforeEach(() => {
+      wrapper.instance().updateRates();
     });
 
     it('Calls updateInstructorCall', () => {
