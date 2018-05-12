@@ -65,7 +65,8 @@ const theme = createMuiTheme({
     },
     MuiGridListTileBar: {
       root: {
-        background: '#c6c9d0'
+        background: '#c6c9d0',
+        borderRadius: '3px'
       }
     },
     MuiIconButton: {
