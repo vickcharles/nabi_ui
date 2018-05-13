@@ -1,6 +1,12 @@
 import * as React from 'react';
 import Typography from 'material-ui/Typography';
 import GridList, { GridListTile, GridListTileBar } from 'material-ui/GridList';
+import { InstructorState } from '../../model';
+
+interface AvailabilityProps {
+  updateInstructor: (instructor: InstructorState) => void;
+  userId: string;
+}
 
 interface AvailabilityState {
   monEarlyMorning: boolean;
@@ -33,8 +39,9 @@ interface AvailabilityState {
   sunLateAfternoon: boolean;
 }
 
-export class Availability extends React.Component<{}, AvailabilityState & any> {
-  constructor(props: {}) {
+// NOTE: I am passing any as state type to fix linting warning, this may need attention
+export class Availability extends React.Component<AvailabilityProps, AvailabilityState & any> {
+  constructor(props: AvailabilityProps) {
     super(props);
 
     this.state = {
@@ -72,8 +79,16 @@ export class Availability extends React.Component<{}, AvailabilityState & any> {
 
   public toggleAvailability(dayTime: string): void {
     const isAvailable = this.state[dayTime] === false ? true : false;
-    this.setState({ [dayTime]: isAvailable });
-    console.log(dayTime);
+    
+    this.setState(
+      { [dayTime]: isAvailable }, 
+      () => {
+      const instructor = {
+        userId: this.props.userId,
+        availability: this.state.friEarlyAfternoon
+      };
+      this.props.updateInstructor(instructor);
+    });
   }
 
   public render(): JSX.Element {      

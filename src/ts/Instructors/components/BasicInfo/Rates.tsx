@@ -38,24 +38,24 @@ const Rates: React.StatelessComponent<RatesProps> = props => {
   const ratesListItems = ratesListContent.map( (list, i) => {
     return (
       <ListItem key={i} className="nabi-margin-bottom-small">
-          <ListItemText
-            primary={`- ${list.listText} lesson`}
+        <ListItemText
+          primary={`- ${list.listText} lesson`}
+        />
+        <ListItemSecondaryAction>
+          <MoneyIcon color="primary"/>
+          <TextField
+            fullWidth={true}
+            id={list.name}
+            name={list.name}
+            onChange={props.handleChange}
+            required={true}
+            className="nabi-rates-field"
+            placeholder="0.00"
+            type="number"
+            onBlur={props.updateRates}
           />
-          <ListItemSecondaryAction>
-            <MoneyIcon color="primary"/>
-            <TextField
-              fullWidth={true}
-              id={list.name}
-              name={list.name}
-              onChange={props.handleChange}
-              required={true}
-              className="nabi-rates-field"
-              placeholder="0.00"
-              type="number"
-              onBlur={props.updateRates}
-            />
-          </ListItemSecondaryAction>
-        </ListItem>
+        </ListItemSecondaryAction>
+      </ListItem>
     );
   });
   

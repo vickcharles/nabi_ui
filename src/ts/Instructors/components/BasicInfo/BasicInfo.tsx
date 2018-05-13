@@ -274,7 +274,10 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
           studioAddress={this.state.studioAddress}
           updateStudioAddress={this.updateStudioAddress}
         />
-        <Availability />
+        <Availability 
+          updateInstructor={(instructor: InstructorState) => this.updateInstructorCall(instructor)}
+          userId={this.props.user.id}
+        />
       </div>
     );
   }
