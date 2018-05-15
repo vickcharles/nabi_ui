@@ -16,12 +16,7 @@ interface RedirectState {
   fireRedirect: boolean;
 }
 
-interface ErrorDialogState {
-  showBDErrorDialogue: boolean;
-}
-
-export class Registration extends React.Component<RegistrationProps, 
-  UserState & RedirectState & ErrorDialogState> {
+export class Registration extends React.Component<RegistrationProps, UserState & RedirectState> {
   constructor(props: RegistrationProps) {
     super(props);
 
@@ -35,8 +30,7 @@ export class Registration extends React.Component<RegistrationProps,
       role: Role.student,
       hearAboutUs: '',
       fireRedirect: false,
-      displayName: '',
-      showBDErrorDialogue: false
+      displayName: ''
     };
 
     this.handleChange = this.handleChange.bind(this);
