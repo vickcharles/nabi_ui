@@ -9,13 +9,19 @@ import { PageTitle } from '../../main';
 interface RegistrationProps {
   createUser: (user: UserState) => void;
   createInstructor: (instructor: InstructorState) => void;
+  searchZipCode: (user: UserState) => void;
 }
 
 interface RedirectState {
   fireRedirect: boolean;
 }
 
-export class Registration extends React.Component<RegistrationProps, UserState & RedirectState> {
+interface ErrorDialogState {
+  showBDErrorDialogue: boolean;
+}
+
+export class Registration extends React.Component<RegistrationProps, 
+  UserState & RedirectState & ErrorDialogState> {
   constructor(props: RegistrationProps) {
     super(props);
 
@@ -29,7 +35,8 @@ export class Registration extends React.Component<RegistrationProps, UserState &
       role: Role.student,
       hearAboutUs: '',
       fireRedirect: false,
-      displayName: ''
+      displayName: '',
+      showBDErrorDialogue: false
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -86,6 +93,10 @@ export class Registration extends React.Component<RegistrationProps, UserState &
 
     if ( this.state.role === Role.instructor) {
       this.props.createInstructor(userId);
+    }
+
+    if ( this.state.zipCode && true) {
+      this.props.searchZipCode(userValues);
     }
   }
   

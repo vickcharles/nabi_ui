@@ -1,6 +1,7 @@
-import { Action } from 'redux';
-import { UserActions } from './constants/ActionTypes';
+import { Action, Dispatch } from 'redux';
+import { UserActions, ZipCodeActions } from './constants/ActionTypes';
 import { UserState } from './model';
+import axios  from 'axios';
 
 interface CreateUser extends Action {
   user: UserState;
@@ -13,6 +14,10 @@ interface ChangeAvatar extends Action {
 
 interface UpdateUser extends Action {
   user: UserState;
+}
+
+interface ZipCodeFetch extends Action {
+  zipcodedata: any;
 }
 
 // Create user
@@ -47,4 +52,59 @@ export function updateUser(user: UserState): UpdateUser {
     user: user,
     type: UserActions.UPDATE_USER
   };
+}
+
+function fetch_zip_start(): Action {
+ return {
+   type: ZipCodeActions.FETCH_ZIPADDRESS_START
+ };
+}
+
+function fetch_zip_done(city: string, state: string, id: string): ZipCodeFetch {
+ return {
+   zipcodedata: { city: city, state: state, id: id},
+   type: ZipCodeActions.FETCH_ZIPADDRES_DONE
+ };
+}
+
+function fetch_zip_error(): Action {
+ return {
+   type: ZipCodeActions.FETCH_ZIPADDRESS_ERROR
+ };
+}
+
+/**
+ * Special Action for Fetching with axios, Gets user zipcode and dispatches
+ * 3 actions, Starting, Done Fetching, Some Error. This way is best practice
+ * to load data from API so UI doesn't depend on internal calls. 
+ * 
+ * @export
+ * @param {UserState} user 
+ * @returns 
+ */
+export function fetchZipCodeAddress( user: UserState ) {
+ return async (dispatch: Dispatch<UserState>): Promise<void> => {
+   dispatch(fetch_zip_start());
+   let url = `https://maps.googleapis.com/maps/api/geocode/json?`;
+   url += `address=${user.zipCode}&key=AIzaSyDFRiJ2j-4brJg2_MLmxZ-TXK4ObZee69c`;
+   return axios.get(url)
+   .then(
+     (res) => {
+       console.log(res);
+       let AddressForm = res.data.results[0].formatted_address.split(',') || [];
+       if ( AddressForm.length ) {
+         user.city = AddressForm[0];
+         user.state = AddressForm[1];
+         dispatch( fetch_zip_done( user.city || ''  , user.state || '' , user.id || '' ));
+       } else {
+         dispatch( fetch_zip_done( '', '', user.id ) );
+       }
+     }
+   )
+   .catch(
+     (err) => {
+         dispatch(fetch_zip_error());
+     } 
+   );
+ };
 }

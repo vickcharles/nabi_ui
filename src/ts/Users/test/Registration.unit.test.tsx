@@ -8,12 +8,14 @@ describe('Registration', () => {
   let wrapper: any;
   const createUser: (user: UserState) => {} = jest.fn();
   const createInstructor: (instructor: InstructorState) => {} = jest.fn();
+  const searchZipCode: (user: UserState) => {} = jest.fn();
 
   beforeEach(() => {
     wrapper = shallow(
       <Registration 
         createUser={createUser}
         createInstructor={createInstructor}
+        searchZipCode={searchZipCode}
       />
     );
   });
