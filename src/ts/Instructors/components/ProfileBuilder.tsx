@@ -29,10 +29,17 @@ const styles = (theme: Theme) => ({
   },
 });
 
+/**
+ * Id params
+ * @interface {IdParams}
+ */
 interface IdParams {
   id: string;
 }
-
+/**
+ * Props for ProfileBuilder
+ * @interface {ProfileBuilderProps}
+ */
 interface ProfileBuilderProps extends RouteComponentProps<{}> {
   users: UserState[];
   classes: any;
@@ -41,6 +48,10 @@ interface ProfileBuilderProps extends RouteComponentProps<{}> {
   changeAvatar(id: string, avatar: string): void;
 }
 
+/**
+ * State for ProfileBuilder
+ * @interface {ProfileBuilderState}
+ */
 interface ProfileBuilderState {
   activeStep: number;
   completed: any;
@@ -51,9 +62,7 @@ function getSteps() {
   return ['Basic Info', 'Education', 'Experience', 'Qualifications', 'Recommendations'];
 }
 /**
- * Profile Builder Component In Steps
- * 
- * @export
+ * Contains a stepper component for building an instructor profile
  * @class ProfileBuilder
  * @extends {React.Component<ProfileBuilderProps, ProfileBuilderState>}
  */

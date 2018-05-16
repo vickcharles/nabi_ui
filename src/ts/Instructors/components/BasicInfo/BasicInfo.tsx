@@ -10,30 +10,46 @@ import { updateInstructor } from '../../';
 import NameLocationBio from './NameLocationBio/NameLocationBio';
 import ImageUploader from './ImageUploader';
 
+/**
+ * BasicInfo's own props
+ * @interface BasicInfoDispatchProps
+ */
 interface BasicInfoDispatchProps {
   updateInstructor: (instructor: InstructorState) => void;
   updateUser: (user: UserState) => void;
 }
 
+/**
+ * BasicInfo's own props
+ * @interface BasicInfoOwnProps
+ */
 interface BasicInfoOwnProps { 
   user: UserState;
   changeAvatar: (id: string, avatar: string) => void;
 }
 
+/**
+ * State interface for BasicInfo
+ * @interface BasicInfoState
+ */
 interface BasicInfoState {
   bio: string;
   displayName: string;
 }
 
+/**
+ * Props interface for BasicInfo
+ * @interface BasicInfoProps
+ * @extends BasicInfoDispatchProps & BasicInfoOwnProps
+ */
 interface BasicInfoProps extends
   BasicInfoDispatchProps,
   BasicInfoOwnProps { }
+
 /**
- * Step One Profile Builder 
- * 
- * @export
+ * BasicInfo: First step on the Profile Builder
  * @class BasicInfo
- * @extends {React.Component<BasicInfoProps, BasicInfoState>}
+ * @extends React.Component<BasicInfoProps, BasicInfoState>
  */
 export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
   constructor(props: BasicInfoProps) {

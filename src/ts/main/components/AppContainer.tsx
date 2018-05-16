@@ -9,10 +9,9 @@ import { createUser, changeAvatar, Registration } from '../../Users/';
 import { UserState } from '../../Users/model';
 import { createInstructor, ProfileBuilder } from '../../Instructors';
 import { InstructorState } from '../../Instructors/model';
+
 /**
- * State Props to use with Redux connect
- * 
- * @export
+ * State props to use with Redux connect
  * @interface AppContainerStateProps
  */
 export interface AppContainerStateProps {
@@ -20,19 +19,15 @@ export interface AppContainerStateProps {
   dispatch: Dispatch<{}>;
 }
 /**
- * Extends React Component Props
- * 
- * @export
+ * Props for AppContainer
  * @interface AppContainerProps
- * @extends {AppContainerStateProps}
+ * @extends AppContainerStateProps
  */
 export interface AppContainerProps extends AppContainerStateProps {}
 /**
- * Application Main Container
- * It handles user actions and redux store 
- * 
+ * This is the application's main container
  * @class AppContainer
- * @extends {React.Component<AppContainerProps, {}>}
+ * @extends React.Component<AppContainerProps, {}>
  */
 class AppContainer extends React.Component<AppContainerProps, {}> {
   public render(): JSX.Element {
@@ -43,7 +38,7 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
     const dispatchCreateInstructor: any = (instructor: InstructorState) => dispatch(createInstructor(instructor));
     const dispatchChangeAvatar: any = (id: string, avatar: string) => dispatch(changeAvatar(id, avatar ));
     /** 
-     * Registration Component Helper
+     * Renders Registration component
      */
     const renderRegistration = (props: any) => (
       <Registration 
@@ -52,7 +47,7 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
       />
     );
     /** 
-     * Profile Builder Component Helper
+     * Renders ProfileBuilder component
      */
     const renderProfileBuilder = (props: any) => (
       <ProfileBuilder 
@@ -87,7 +82,7 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
   }
 }
 /** 
- * Maps Redux Store State to React Component Props
+ * Maps redux store state to props
  */
 const mapStateToProps = (state: any, _ownProps: any) => ({
   users: state.users

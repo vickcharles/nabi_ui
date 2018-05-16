@@ -6,12 +6,19 @@ import Button from 'material-ui/Button';
 import { Theme, withStyles, WithStyles } from 'material-ui/styles';
 import blur from './blur';
 
+/**
+ * State interface for Croppr
+ * @interface CropprState
+ */
 interface CropprState {
   isLoading: boolean;
   isCropping: boolean;
   baseImage: any;
 }
-
+/**
+ * Props interface for Croppr
+ * @interface CropprProps
+ */
 interface CropprProps {
   originalImage?: any;
   imageChanged?(avatar: string): void;
@@ -27,6 +34,11 @@ const styles = (theme: Theme) => ({
 
 type PropsWithStyles = CropprProps & WithStyles<'inIfiniteSpace'>;
 
+/**
+ * Crops an image file
+ * @class CropprWrapper
+ * @extends React.Component<PropsWithStyles, CropprState>
+ */
 class CropprWrapper extends React.Component<PropsWithStyles, CropprState> {
   cropperInstance: any;
   imageHolder: any;

@@ -17,20 +17,26 @@ interface NameLocationBioOwnProps {
   updateName: (event: React.FormEvent<{}>) => void;
   handleChange: (event: React.FormEvent<{}>) => void;
 }
-
+/**
+ * Props interface for NameLocationBio
+ * @interface NameLocationBioProps
+ */
 interface NameLocationBioProps extends
 NameLocationBioOwnProps { }
 
+/**
+ * State interface for NameLocationBio
+ * @interface NameLocationBioState
+ */
 interface NameLocationBioState {
   isModalOpenEditName: boolean;
   hovered: boolean;
 }
+
 /**
- * Basic Biography Form
- * 
- * @export
+ * Contains name, location and bio section in BasicInfo
  * @class NameLocationBio
- * @extends {React.Component<NameLocationBioProps, NameLocationBioState>}
+ * @extends React.Component<NameLocationBioProps, NameLocationBioState>
  */
 export class NameLocationBio extends React.Component<NameLocationBioProps, NameLocationBioState> {
   constructor(props: NameLocationBioProps) {

@@ -3,7 +3,7 @@ import  { Link } from 'react-router-dom';
 import PageTitle from './PageTitle';
 
 /** 
- * Homepage Stateless Component
+ * Homepage component
  */
 const Homepage = () => {
     return (

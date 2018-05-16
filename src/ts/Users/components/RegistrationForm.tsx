@@ -17,6 +17,10 @@ const styles = (theme: Theme) => ({
     }
 });
 
+/**
+ * Props for RegistrationForm
+ * @interface {RegistrationFormProps}
+ */
 interface RegistrationFormProps {
   handleChange: (event: React.FormEvent<{}>) => void;
   handleSubmit: (event: React.FormEvent<{}>) => void;
@@ -24,8 +28,16 @@ interface RegistrationFormProps {
   selectedRole: string;
 }
 
+/**
+ * Contains the registration form fields 
+ * @type {PropsWithStyles} - equals the component's props and styles
+ */
 type PropsWithStyles = RegistrationFormProps & WithStyles<'formFields'>;
 
+/**
+ * Contains the registration form fields 
+ * @param PropsWithStyles props - The component's props
+ */
 const RegistrationForm: React.StatelessComponent<PropsWithStyles> = props => {
   const { handleChange, handleSubmit, hearAboutUs, selectedRole } = props;
   

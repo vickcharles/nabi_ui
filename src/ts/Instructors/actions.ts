@@ -10,7 +10,10 @@ interface UpdateInstructor extends Action {
   instructor: InstructorState;
 }
 
-// Create instructor
+/**
+ * Action to create a new instructor
+ * @param {string} user - The new instructor
+ */
 export function createInstructor(instructor: InstructorState): CreateInstructor {
   return {
     instructor,
@@ -18,7 +21,10 @@ export function createInstructor(instructor: InstructorState): CreateInstructor 
   };
 }
 
-// Update instructor
+/**
+ * Action to update instructor
+ * @param {string} instructor - The updated instructor's state
+ */
 export function updateInstructor(instructor: InstructorState): UpdateInstructor {
   return {
     instructor,

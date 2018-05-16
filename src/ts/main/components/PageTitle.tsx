@@ -1,12 +1,15 @@
 import * as React from 'react';
 import Typography from 'material-ui/Typography';
 
+/**
+ * Props for PageTitle
+ * @interface PageTitleProps
+ */
 interface PageTitleProps {
-    pageTitle: string;
-  }
+  pageTitle: string;
+}
 /**
  * Page Title
- * 
  * @param {PageTitleProps} props 
  * @returns 
  */

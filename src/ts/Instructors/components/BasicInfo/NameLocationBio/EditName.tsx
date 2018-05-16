@@ -9,10 +9,10 @@ import Dialog, {
   DialogContentText,
   DialogTitle,
 } from 'material-ui/Dialog';
+
 /**
- * Edit Name Display Dialogue
- * 
- * @interface EditNameProps
+ * Props for EditName
+ * @interface {EditNameProps}
  */
 interface EditNameProps {
   displayName: string;
@@ -23,11 +23,10 @@ interface EditNameProps {
   handleChange: (event: React.FormEvent<{}>) => void;
   handleSubmit: (event: React.FormEvent<{}>) => void;
 }
+
 /**
- * Edit Name Display Config Dialog
- * 
- * @param {any} props 
- * @returns 
+ * Displays a dialog to change the user's displayName
+ * @param {EditNameProps} props - The component's props
  */
 const EditName: React.StatelessComponent<EditNameProps> = props => {
   const lastNameinitial = props.lastName.charAt(0);

@@ -1,15 +1,17 @@
 import * as React from 'react';
-// import Typography from 'material-ui/Typography';
 import CropprWrapper from './CropprWrapper';
 
+/**
+ * Props interface for ImageUploader
+ * @interface ImageUploaderProps 
+ */
 interface ImageUploaderProps {
   imageChanged( avatar: string ): void;
 }
+
 /**
- * Avatar Cropper  and Uploader on Base 64
- * 
- * @param {ImageUploaderProps} props 
- * @returns 
+ * Wraps AvatarCropper
+ * @param {ImageUploaderProps} props - The component's props 
  */
 const ImageUploader = (props: ImageUploaderProps) => {
     return (
