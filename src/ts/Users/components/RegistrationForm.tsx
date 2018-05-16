@@ -23,8 +23,13 @@ interface RegistrationFormProps {
   selectedRole: string;
 }
 
+/**
+ * Contains the registration form fields 
+ * @param RegistrationFormProps props - The component's props
+ */
 const RegistrationForm: React.StatelessComponent<RegistrationFormProps> = props => {
   const { handleChange, handleSubmit, hearAboutUs, selectedRole } = props;
+  
   const selectOptions: any = [];
   
   for (const [key, value] of Object.entries(hearAboutUsInfo)) {
