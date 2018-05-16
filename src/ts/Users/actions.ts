@@ -60,9 +60,9 @@ function fetch_zip_start(): Action {
  };
 }
 
-function fetch_zip_done(city: string, state: string, id: string): ZipCodeFetch {
+function fetch_zip_done(city: string, state: string, country: string, id: string): ZipCodeFetch {
  return {
-   zipcodedata: { city: city, state: state, id: id},
+   zipcodedata: { city: city, state: state, country: country, id: id},
    type: ZipCodeActions.FETCH_ZIPADDRES_DONE
  };
 }
@@ -90,20 +90,26 @@ export function fetchZipCodeAddress( user: UserState ) {
    return axios.get(url)
    .then(
      (res) => {
-       console.log(res);
-       let AddressForm = res.data.results[0].formatted_address.split(',') || [];
-       if ( AddressForm.length ) {
-         user.city = AddressForm[0];
-         user.state = AddressForm[1];
-         dispatch( fetch_zip_done( user.city || ''  , user.state || '' , user.id || '' ));
+        console.log(res);
+        let AddressForm = res.data.results[0] || [];
+        if ( res.data.results.length ) {
+          function getValues(values: string[]) {
+            return AddressForm.address_components.filter( (obj: any) => {
+              return obj.types.some((o: any) => values.includes(o));
+            });
+          }
+          user.city = getValues(['neighborhood', 'locality', 'sublocality'])[0].short_name;
+          user.state = getValues(['administrative_area_level_1'])[0].short_name;
+          user.country = getValues(['country'])[0].short_name;
+          dispatch( fetch_zip_done( user.city || ''  , user.state || '' , user.id || '', user.country || '' ));
        } else {
-         dispatch( fetch_zip_done( '', '', user.id ) );
+          dispatch( fetch_zip_done( '', '', '', user.id ) );
        }
      }
    )
    .catch(
      (err) => {
-         dispatch(fetch_zip_error());
+        dispatch(fetch_zip_error());
      } 
    );
  };

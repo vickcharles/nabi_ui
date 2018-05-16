@@ -63,6 +63,7 @@ export interface UserState {
   displayName: string;
   state?: string;
   city?: string;
+  country?: string;
 }
 
 export type IState = UserState[];
