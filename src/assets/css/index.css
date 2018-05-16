@@ -286,19 +286,18 @@ color: #f0f3f6;
   #banner h1{
     width: 350px !important;
     font-size: 25px !important;
-    }
-    #banner p{
-      font-size: 15px !important;
-      width: 250px;
-      font-weight: 250 !important;
-    }
-    #banner button{
-      margin-top: 10px !important;
-      margin-right: 10px !important;
-      padding: 15px 20px !important;
-      font-size: 10px !important;
-    }
- 
+  }
+  #banner p{
+    font-size: 15px !important;
+    width: 250px;
+    font-weight: 250 !important;
+  }
+  #banner button{
+    margin-top: 10px !important;
+    margin-right: 10px !important;
+    padding: 15px 20px !important;
+    font-size: 10px !important;
+  }
 }
 
 /* iPads (landscape) ----------- */
