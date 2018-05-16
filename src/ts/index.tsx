@@ -26,7 +26,7 @@ const theme = createMuiTheme({
       },
       root: {
         color: '#717a8a',
-        padding: '12px 25px',
+        padding: '17px 25px',
         textTransform: 'none'
       }
     },
@@ -66,9 +66,9 @@ const theme = createMuiTheme({
     MuiIconButton: {
       root: {
         '&:hover': {
-          background: 'rgba(6,195,225, 0.3)'
+          background: 'rgba(6,195,225, 0.2)'
         },
-        color: '#717a8a !important',
+        color: '#06c3e1 !important',
         borderRadius: '3px',
         height: '28px',
         width: '30px'
@@ -89,7 +89,7 @@ const theme = createMuiTheme({
         background: '#f3f6f9',
         borderRadius: '5px',
         color: '#717a8a !important',
-        padding: '17px 40px'
+        padding: '17px 18px'
       },
       multiline: {
         padding: '20px'
@@ -147,6 +147,11 @@ const theme = createMuiTheme({
       },
       active: {
         color: '#06c3e1 !important'
+      }
+    },
+    MuiSvgIcon: {
+      colorPrimary: {
+        color: '#06c3e1'
       }
     },
     MuiTypography : {

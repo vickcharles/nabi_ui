@@ -1,0 +1,1376 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rates Shallow Matches snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Rates
+    fortyFiveMinsRate={0}
+    handleChange={[MockFunction]}
+    ninetyMinsRate={0}
+    sixtyMinsRate={0}
+    thirtyMinsRate={0}
+    updateRates={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <WithStyles(Typography)
+          className="nabi-margin-top-small"
+          variant="body2"
+        >
+          Rates
+        </WithStyles(Typography)>,
+        <div
+          className="rates"
+        >
+          <WithStyles(ListItem)
+            className="nabi-margin-bottom-small"
+          >
+            <WithStyles(ListItemText)
+              primary="- 30 mins lesson"
+            />
+            <WithStyles(ListItemSecondaryAction)>
+              <pure(AttachMoney)
+                color="primary"
+              />
+              <TextField
+                className="nabi-rates-field"
+                fullWidth={true}
+                id="thirtyMinsRate"
+                name="thirtyMinsRate"
+                onBlur={[MockFunction]}
+                onChange={[MockFunction]}
+                placeholder="0.00"
+                required={true}
+                select={false}
+                type="number"
+              />
+            </WithStyles(ListItemSecondaryAction)>
+          </WithStyles(ListItem)>
+          <WithStyles(ListItem)
+            className="nabi-margin-bottom-small"
+          >
+            <WithStyles(ListItemText)
+              primary="- 45 mins lesson"
+            />
+            <WithStyles(ListItemSecondaryAction)>
+              <pure(AttachMoney)
+                color="primary"
+              />
+              <TextField
+                className="nabi-rates-field"
+                fullWidth={true}
+                id="fortyFiveMinsRate"
+                name="fortyFiveMinsRate"
+                onBlur={[MockFunction]}
+                onChange={[MockFunction]}
+                placeholder="0.00"
+                required={true}
+                select={false}
+                type="number"
+              />
+            </WithStyles(ListItemSecondaryAction)>
+          </WithStyles(ListItem)>
+          <WithStyles(ListItem)
+            className="nabi-margin-bottom-small"
+          >
+            <WithStyles(ListItemText)
+              primary="- 60 mins lesson"
+            />
+            <WithStyles(ListItemSecondaryAction)>
+              <pure(AttachMoney)
+                color="primary"
+              />
+              <TextField
+                className="nabi-rates-field"
+                fullWidth={true}
+                id="sixtyMinsRate"
+                name="sixtyMinsRate"
+                onBlur={[MockFunction]}
+                onChange={[MockFunction]}
+                placeholder="0.00"
+                required={true}
+                select={false}
+                type="number"
+              />
+            </WithStyles(ListItemSecondaryAction)>
+          </WithStyles(ListItem)>
+          <WithStyles(ListItem)
+            className="nabi-margin-bottom-small"
+          >
+            <WithStyles(ListItemText)
+              primary="- 90 mins lesson"
+            />
+            <WithStyles(ListItemSecondaryAction)>
+              <pure(AttachMoney)
+                color="primary"
+              />
+              <TextField
+                className="nabi-rates-field"
+                fullWidth={true}
+                id="ninetyMinsRate"
+                name="ninetyMinsRate"
+                onBlur={[MockFunction]}
+                onChange={[MockFunction]}
+                placeholder="0.00"
+                required={true}
+                select={false}
+                type="number"
+              />
+            </WithStyles(ListItemSecondaryAction)>
+          </WithStyles(ListItem)>
+        </div>,
+        <WithStyles(Divider)
+          className="nabi-margin-top-small"
+        />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Rates",
+          "className": "nabi-margin-top-small",
+          "variant": "body2",
+        },
+        "ref": null,
+        "rendered": "Rates",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <WithStyles(ListItem)
+              className="nabi-margin-bottom-small"
+            >
+              <WithStyles(ListItemText)
+                primary="- 30 mins lesson"
+              />
+              <WithStyles(ListItemSecondaryAction)>
+                <pure(AttachMoney)
+                  color="primary"
+                />
+                <TextField
+                  className="nabi-rates-field"
+                  fullWidth={true}
+                  id="thirtyMinsRate"
+                  name="thirtyMinsRate"
+                  onBlur={[MockFunction]}
+                  onChange={[MockFunction]}
+                  placeholder="0.00"
+                  required={true}
+                  select={false}
+                  type="number"
+                />
+              </WithStyles(ListItemSecondaryAction)>
+            </WithStyles(ListItem)>,
+            <WithStyles(ListItem)
+              className="nabi-margin-bottom-small"
+            >
+              <WithStyles(ListItemText)
+                primary="- 45 mins lesson"
+              />
+              <WithStyles(ListItemSecondaryAction)>
+                <pure(AttachMoney)
+                  color="primary"
+                />
+                <TextField
+                  className="nabi-rates-field"
+                  fullWidth={true}
+                  id="fortyFiveMinsRate"
+                  name="fortyFiveMinsRate"
+                  onBlur={[MockFunction]}
+                  onChange={[MockFunction]}
+                  placeholder="0.00"
+                  required={true}
+                  select={false}
+                  type="number"
+                />
+              </WithStyles(ListItemSecondaryAction)>
+            </WithStyles(ListItem)>,
+            <WithStyles(ListItem)
+              className="nabi-margin-bottom-small"
+            >
+              <WithStyles(ListItemText)
+                primary="- 60 mins lesson"
+              />
+              <WithStyles(ListItemSecondaryAction)>
+                <pure(AttachMoney)
+                  color="primary"
+                />
+                <TextField
+                  className="nabi-rates-field"
+                  fullWidth={true}
+                  id="sixtyMinsRate"
+                  name="sixtyMinsRate"
+                  onBlur={[MockFunction]}
+                  onChange={[MockFunction]}
+                  placeholder="0.00"
+                  required={true}
+                  select={false}
+                  type="number"
+                />
+              </WithStyles(ListItemSecondaryAction)>
+            </WithStyles(ListItem)>,
+            <WithStyles(ListItem)
+              className="nabi-margin-bottom-small"
+            >
+              <WithStyles(ListItemText)
+                primary="- 90 mins lesson"
+              />
+              <WithStyles(ListItemSecondaryAction)>
+                <pure(AttachMoney)
+                  color="primary"
+                />
+                <TextField
+                  className="nabi-rates-field"
+                  fullWidth={true}
+                  id="ninetyMinsRate"
+                  name="ninetyMinsRate"
+                  onBlur={[MockFunction]}
+                  onChange={[MockFunction]}
+                  placeholder="0.00"
+                  required={true}
+                  select={false}
+                  type="number"
+                />
+              </WithStyles(ListItemSecondaryAction)>
+            </WithStyles(ListItem)>,
+          ],
+          "className": "rates",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(ListItemText)
+                  primary="- 30 mins lesson"
+                />,
+                <WithStyles(ListItemSecondaryAction)>
+                  <pure(AttachMoney)
+                    color="primary"
+                  />
+                  <TextField
+                    className="nabi-rates-field"
+                    fullWidth={true}
+                    id="thirtyMinsRate"
+                    name="thirtyMinsRate"
+                    onBlur={[MockFunction]}
+                    onChange={[MockFunction]}
+                    placeholder="0.00"
+                    required={true}
+                    select={false}
+                    type="number"
+                  />
+                </WithStyles(ListItemSecondaryAction)>,
+              ],
+              "className": "nabi-margin-bottom-small",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "primary": "- 30 mins lesson",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <pure(AttachMoney)
+                      color="primary"
+                    />,
+                    <TextField
+                      className="nabi-rates-field"
+                      fullWidth={true}
+                      id="thirtyMinsRate"
+                      name="thirtyMinsRate"
+                      onBlur={[MockFunction]}
+                      onChange={[MockFunction]}
+                      placeholder="0.00"
+                      required={true}
+                      select={false}
+                      type="number"
+                    />,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "color": "primary",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "className": "nabi-rates-field",
+                      "fullWidth": true,
+                      "id": "thirtyMinsRate",
+                      "name": "thirtyMinsRate",
+                      "onBlur": [MockFunction],
+                      "onChange": [MockFunction],
+                      "placeholder": "0.00",
+                      "required": true,
+                      "select": false,
+                      "type": "number",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(ListItemText)
+                  primary="- 45 mins lesson"
+                />,
+                <WithStyles(ListItemSecondaryAction)>
+                  <pure(AttachMoney)
+                    color="primary"
+                  />
+                  <TextField
+                    className="nabi-rates-field"
+                    fullWidth={true}
+                    id="fortyFiveMinsRate"
+                    name="fortyFiveMinsRate"
+                    onBlur={[MockFunction]}
+                    onChange={[MockFunction]}
+                    placeholder="0.00"
+                    required={true}
+                    select={false}
+                    type="number"
+                  />
+                </WithStyles(ListItemSecondaryAction)>,
+              ],
+              "className": "nabi-margin-bottom-small",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "primary": "- 45 mins lesson",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <pure(AttachMoney)
+                      color="primary"
+                    />,
+                    <TextField
+                      className="nabi-rates-field"
+                      fullWidth={true}
+                      id="fortyFiveMinsRate"
+                      name="fortyFiveMinsRate"
+                      onBlur={[MockFunction]}
+                      onChange={[MockFunction]}
+                      placeholder="0.00"
+                      required={true}
+                      select={false}
+                      type="number"
+                    />,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "color": "primary",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "className": "nabi-rates-field",
+                      "fullWidth": true,
+                      "id": "fortyFiveMinsRate",
+                      "name": "fortyFiveMinsRate",
+                      "onBlur": [MockFunction],
+                      "onChange": [MockFunction],
+                      "placeholder": "0.00",
+                      "required": true,
+                      "select": false,
+                      "type": "number",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(ListItemText)
+                  primary="- 60 mins lesson"
+                />,
+                <WithStyles(ListItemSecondaryAction)>
+                  <pure(AttachMoney)
+                    color="primary"
+                  />
+                  <TextField
+                    className="nabi-rates-field"
+                    fullWidth={true}
+                    id="sixtyMinsRate"
+                    name="sixtyMinsRate"
+                    onBlur={[MockFunction]}
+                    onChange={[MockFunction]}
+                    placeholder="0.00"
+                    required={true}
+                    select={false}
+                    type="number"
+                  />
+                </WithStyles(ListItemSecondaryAction)>,
+              ],
+              "className": "nabi-margin-bottom-small",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "primary": "- 60 mins lesson",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <pure(AttachMoney)
+                      color="primary"
+                    />,
+                    <TextField
+                      className="nabi-rates-field"
+                      fullWidth={true}
+                      id="sixtyMinsRate"
+                      name="sixtyMinsRate"
+                      onBlur={[MockFunction]}
+                      onChange={[MockFunction]}
+                      placeholder="0.00"
+                      required={true}
+                      select={false}
+                      type="number"
+                    />,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "color": "primary",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "className": "nabi-rates-field",
+                      "fullWidth": true,
+                      "id": "sixtyMinsRate",
+                      "name": "sixtyMinsRate",
+                      "onBlur": [MockFunction],
+                      "onChange": [MockFunction],
+                      "placeholder": "0.00",
+                      "required": true,
+                      "select": false,
+                      "type": "number",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "3",
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(ListItemText)
+                  primary="- 90 mins lesson"
+                />,
+                <WithStyles(ListItemSecondaryAction)>
+                  <pure(AttachMoney)
+                    color="primary"
+                  />
+                  <TextField
+                    className="nabi-rates-field"
+                    fullWidth={true}
+                    id="ninetyMinsRate"
+                    name="ninetyMinsRate"
+                    onBlur={[MockFunction]}
+                    onChange={[MockFunction]}
+                    placeholder="0.00"
+                    required={true}
+                    select={false}
+                    type="number"
+                  />
+                </WithStyles(ListItemSecondaryAction)>,
+              ],
+              "className": "nabi-margin-bottom-small",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "primary": "- 90 mins lesson",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <pure(AttachMoney)
+                      color="primary"
+                    />,
+                    <TextField
+                      className="nabi-rates-field"
+                      fullWidth={true}
+                      id="ninetyMinsRate"
+                      name="ninetyMinsRate"
+                      onBlur={[MockFunction]}
+                      onChange={[MockFunction]}
+                      placeholder="0.00"
+                      required={true}
+                      select={false}
+                      type="number"
+                    />,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "color": "primary",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "className": "nabi-rates-field",
+                      "fullWidth": true,
+                      "id": "ninetyMinsRate",
+                      "name": "ninetyMinsRate",
+                      "onBlur": [MockFunction],
+                      "onChange": [MockFunction],
+                      "placeholder": "0.00",
+                      "required": true,
+                      "select": false,
+                      "type": "number",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "className": "nabi-margin-top-small",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <WithStyles(Typography)
+            className="nabi-margin-top-small"
+            variant="body2"
+          >
+            Rates
+          </WithStyles(Typography)>,
+          <div
+            className="rates"
+          >
+            <WithStyles(ListItem)
+              className="nabi-margin-bottom-small"
+            >
+              <WithStyles(ListItemText)
+                primary="- 30 mins lesson"
+              />
+              <WithStyles(ListItemSecondaryAction)>
+                <pure(AttachMoney)
+                  color="primary"
+                />
+                <TextField
+                  className="nabi-rates-field"
+                  fullWidth={true}
+                  id="thirtyMinsRate"
+                  name="thirtyMinsRate"
+                  onBlur={[MockFunction]}
+                  onChange={[MockFunction]}
+                  placeholder="0.00"
+                  required={true}
+                  select={false}
+                  type="number"
+                />
+              </WithStyles(ListItemSecondaryAction)>
+            </WithStyles(ListItem)>
+            <WithStyles(ListItem)
+              className="nabi-margin-bottom-small"
+            >
+              <WithStyles(ListItemText)
+                primary="- 45 mins lesson"
+              />
+              <WithStyles(ListItemSecondaryAction)>
+                <pure(AttachMoney)
+                  color="primary"
+                />
+                <TextField
+                  className="nabi-rates-field"
+                  fullWidth={true}
+                  id="fortyFiveMinsRate"
+                  name="fortyFiveMinsRate"
+                  onBlur={[MockFunction]}
+                  onChange={[MockFunction]}
+                  placeholder="0.00"
+                  required={true}
+                  select={false}
+                  type="number"
+                />
+              </WithStyles(ListItemSecondaryAction)>
+            </WithStyles(ListItem)>
+            <WithStyles(ListItem)
+              className="nabi-margin-bottom-small"
+            >
+              <WithStyles(ListItemText)
+                primary="- 60 mins lesson"
+              />
+              <WithStyles(ListItemSecondaryAction)>
+                <pure(AttachMoney)
+                  color="primary"
+                />
+                <TextField
+                  className="nabi-rates-field"
+                  fullWidth={true}
+                  id="sixtyMinsRate"
+                  name="sixtyMinsRate"
+                  onBlur={[MockFunction]}
+                  onChange={[MockFunction]}
+                  placeholder="0.00"
+                  required={true}
+                  select={false}
+                  type="number"
+                />
+              </WithStyles(ListItemSecondaryAction)>
+            </WithStyles(ListItem)>
+            <WithStyles(ListItem)
+              className="nabi-margin-bottom-small"
+            >
+              <WithStyles(ListItemText)
+                primary="- 90 mins lesson"
+              />
+              <WithStyles(ListItemSecondaryAction)>
+                <pure(AttachMoney)
+                  color="primary"
+                />
+                <TextField
+                  className="nabi-rates-field"
+                  fullWidth={true}
+                  id="ninetyMinsRate"
+                  name="ninetyMinsRate"
+                  onBlur={[MockFunction]}
+                  onChange={[MockFunction]}
+                  placeholder="0.00"
+                  required={true}
+                  select={false}
+                  type="number"
+                />
+              </WithStyles(ListItemSecondaryAction)>
+            </WithStyles(ListItem)>
+          </div>,
+          <WithStyles(Divider)
+            className="nabi-margin-top-small"
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Rates",
+            "className": "nabi-margin-top-small",
+            "variant": "body2",
+          },
+          "ref": null,
+          "rendered": "Rates",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <WithStyles(ListItem)
+                className="nabi-margin-bottom-small"
+              >
+                <WithStyles(ListItemText)
+                  primary="- 30 mins lesson"
+                />
+                <WithStyles(ListItemSecondaryAction)>
+                  <pure(AttachMoney)
+                    color="primary"
+                  />
+                  <TextField
+                    className="nabi-rates-field"
+                    fullWidth={true}
+                    id="thirtyMinsRate"
+                    name="thirtyMinsRate"
+                    onBlur={[MockFunction]}
+                    onChange={[MockFunction]}
+                    placeholder="0.00"
+                    required={true}
+                    select={false}
+                    type="number"
+                  />
+                </WithStyles(ListItemSecondaryAction)>
+              </WithStyles(ListItem)>,
+              <WithStyles(ListItem)
+                className="nabi-margin-bottom-small"
+              >
+                <WithStyles(ListItemText)
+                  primary="- 45 mins lesson"
+                />
+                <WithStyles(ListItemSecondaryAction)>
+                  <pure(AttachMoney)
+                    color="primary"
+                  />
+                  <TextField
+                    className="nabi-rates-field"
+                    fullWidth={true}
+                    id="fortyFiveMinsRate"
+                    name="fortyFiveMinsRate"
+                    onBlur={[MockFunction]}
+                    onChange={[MockFunction]}
+                    placeholder="0.00"
+                    required={true}
+                    select={false}
+                    type="number"
+                  />
+                </WithStyles(ListItemSecondaryAction)>
+              </WithStyles(ListItem)>,
+              <WithStyles(ListItem)
+                className="nabi-margin-bottom-small"
+              >
+                <WithStyles(ListItemText)
+                  primary="- 60 mins lesson"
+                />
+                <WithStyles(ListItemSecondaryAction)>
+                  <pure(AttachMoney)
+                    color="primary"
+                  />
+                  <TextField
+                    className="nabi-rates-field"
+                    fullWidth={true}
+                    id="sixtyMinsRate"
+                    name="sixtyMinsRate"
+                    onBlur={[MockFunction]}
+                    onChange={[MockFunction]}
+                    placeholder="0.00"
+                    required={true}
+                    select={false}
+                    type="number"
+                  />
+                </WithStyles(ListItemSecondaryAction)>
+              </WithStyles(ListItem)>,
+              <WithStyles(ListItem)
+                className="nabi-margin-bottom-small"
+              >
+                <WithStyles(ListItemText)
+                  primary="- 90 mins lesson"
+                />
+                <WithStyles(ListItemSecondaryAction)>
+                  <pure(AttachMoney)
+                    color="primary"
+                  />
+                  <TextField
+                    className="nabi-rates-field"
+                    fullWidth={true}
+                    id="ninetyMinsRate"
+                    name="ninetyMinsRate"
+                    onBlur={[MockFunction]}
+                    onChange={[MockFunction]}
+                    placeholder="0.00"
+                    required={true}
+                    select={false}
+                    type="number"
+                  />
+                </WithStyles(ListItemSecondaryAction)>
+              </WithStyles(ListItem)>,
+            ],
+            "className": "rates",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(ListItemText)
+                    primary="- 30 mins lesson"
+                  />,
+                  <WithStyles(ListItemSecondaryAction)>
+                    <pure(AttachMoney)
+                      color="primary"
+                    />
+                    <TextField
+                      className="nabi-rates-field"
+                      fullWidth={true}
+                      id="thirtyMinsRate"
+                      name="thirtyMinsRate"
+                      onBlur={[MockFunction]}
+                      onChange={[MockFunction]}
+                      placeholder="0.00"
+                      required={true}
+                      select={false}
+                      type="number"
+                    />
+                  </WithStyles(ListItemSecondaryAction)>,
+                ],
+                "className": "nabi-margin-bottom-small",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "primary": "- 30 mins lesson",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      <pure(AttachMoney)
+                        color="primary"
+                      />,
+                      <TextField
+                        className="nabi-rates-field"
+                        fullWidth={true}
+                        id="thirtyMinsRate"
+                        name="thirtyMinsRate"
+                        onBlur={[MockFunction]}
+                        onChange={[MockFunction]}
+                        placeholder="0.00"
+                        required={true}
+                        select={false}
+                        type="number"
+                      />,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "color": "primary",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "className": "nabi-rates-field",
+                        "fullWidth": true,
+                        "id": "thirtyMinsRate",
+                        "name": "thirtyMinsRate",
+                        "onBlur": [MockFunction],
+                        "onChange": [MockFunction],
+                        "placeholder": "0.00",
+                        "required": true,
+                        "select": false,
+                        "type": "number",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(ListItemText)
+                    primary="- 45 mins lesson"
+                  />,
+                  <WithStyles(ListItemSecondaryAction)>
+                    <pure(AttachMoney)
+                      color="primary"
+                    />
+                    <TextField
+                      className="nabi-rates-field"
+                      fullWidth={true}
+                      id="fortyFiveMinsRate"
+                      name="fortyFiveMinsRate"
+                      onBlur={[MockFunction]}
+                      onChange={[MockFunction]}
+                      placeholder="0.00"
+                      required={true}
+                      select={false}
+                      type="number"
+                    />
+                  </WithStyles(ListItemSecondaryAction)>,
+                ],
+                "className": "nabi-margin-bottom-small",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "primary": "- 45 mins lesson",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      <pure(AttachMoney)
+                        color="primary"
+                      />,
+                      <TextField
+                        className="nabi-rates-field"
+                        fullWidth={true}
+                        id="fortyFiveMinsRate"
+                        name="fortyFiveMinsRate"
+                        onBlur={[MockFunction]}
+                        onChange={[MockFunction]}
+                        placeholder="0.00"
+                        required={true}
+                        select={false}
+                        type="number"
+                      />,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "color": "primary",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "className": "nabi-rates-field",
+                        "fullWidth": true,
+                        "id": "fortyFiveMinsRate",
+                        "name": "fortyFiveMinsRate",
+                        "onBlur": [MockFunction],
+                        "onChange": [MockFunction],
+                        "placeholder": "0.00",
+                        "required": true,
+                        "select": false,
+                        "type": "number",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(ListItemText)
+                    primary="- 60 mins lesson"
+                  />,
+                  <WithStyles(ListItemSecondaryAction)>
+                    <pure(AttachMoney)
+                      color="primary"
+                    />
+                    <TextField
+                      className="nabi-rates-field"
+                      fullWidth={true}
+                      id="sixtyMinsRate"
+                      name="sixtyMinsRate"
+                      onBlur={[MockFunction]}
+                      onChange={[MockFunction]}
+                      placeholder="0.00"
+                      required={true}
+                      select={false}
+                      type="number"
+                    />
+                  </WithStyles(ListItemSecondaryAction)>,
+                ],
+                "className": "nabi-margin-bottom-small",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "primary": "- 60 mins lesson",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      <pure(AttachMoney)
+                        color="primary"
+                      />,
+                      <TextField
+                        className="nabi-rates-field"
+                        fullWidth={true}
+                        id="sixtyMinsRate"
+                        name="sixtyMinsRate"
+                        onBlur={[MockFunction]}
+                        onChange={[MockFunction]}
+                        placeholder="0.00"
+                        required={true}
+                        select={false}
+                        type="number"
+                      />,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "color": "primary",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "className": "nabi-rates-field",
+                        "fullWidth": true,
+                        "id": "sixtyMinsRate",
+                        "name": "sixtyMinsRate",
+                        "onBlur": [MockFunction],
+                        "onChange": [MockFunction],
+                        "placeholder": "0.00",
+                        "required": true,
+                        "select": false,
+                        "type": "number",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "3",
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(ListItemText)
+                    primary="- 90 mins lesson"
+                  />,
+                  <WithStyles(ListItemSecondaryAction)>
+                    <pure(AttachMoney)
+                      color="primary"
+                    />
+                    <TextField
+                      className="nabi-rates-field"
+                      fullWidth={true}
+                      id="ninetyMinsRate"
+                      name="ninetyMinsRate"
+                      onBlur={[MockFunction]}
+                      onChange={[MockFunction]}
+                      placeholder="0.00"
+                      required={true}
+                      select={false}
+                      type="number"
+                    />
+                  </WithStyles(ListItemSecondaryAction)>,
+                ],
+                "className": "nabi-margin-bottom-small",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "primary": "- 90 mins lesson",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      <pure(AttachMoney)
+                        color="primary"
+                      />,
+                      <TextField
+                        className="nabi-rates-field"
+                        fullWidth={true}
+                        id="ninetyMinsRate"
+                        name="ninetyMinsRate"
+                        onBlur={[MockFunction]}
+                        onChange={[MockFunction]}
+                        placeholder="0.00"
+                        required={true}
+                        select={false}
+                        type="number"
+                      />,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "color": "primary",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "className": "nabi-rates-field",
+                        "fullWidth": true,
+                        "id": "ninetyMinsRate",
+                        "name": "ninetyMinsRate",
+                        "onBlur": [MockFunction],
+                        "onChange": [MockFunction],
+                        "placeholder": "0.00",
+                        "required": true,
+                        "select": false,
+                        "type": "number",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "className": "nabi-margin-top-small",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

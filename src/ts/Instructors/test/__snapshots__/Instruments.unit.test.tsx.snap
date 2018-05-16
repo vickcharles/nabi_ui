@@ -1,0 +1,3534 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Instruments Shallow Matches snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Instruments
+    addInstrument={[MockFunction]}
+    handleChange={[MockFunction]}
+    instrument=""
+    skillLevel=""
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <WithStyles(FormControl)
+          className="nabi-instruments-select"
+        >
+          <WithStyles(InputLabel)
+            htmlFor="instrument"
+          >
+            Select instrument
+          </WithStyles(InputLabel)>
+          <WithStyles(Select)
+            input={
+              <WithStyles(Input)
+                id="instrument"
+                name="instrument"
+              />
+            }
+            onChange={[MockFunction]}
+            value=""
+          >
+            <WithStyles(MenuItem)
+              value="accordion"
+            >
+              Accordion
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="air horn"
+            >
+              Air horn
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="bagpipe"
+            >
+              Bagpipe
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="banjo"
+            >
+              Banjo
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="bass guitar"
+            >
+              Bass guitar
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="bassoon"
+            >
+              Bassoon
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="bugle"
+            >
+              Bugle
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="calliope"
+            >
+              Calliope
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="cello"
+            >
+              Cello
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="clarinet"
+            >
+              Clarinet
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="clavichord"
+            >
+              Clavichord
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="concertina"
+            >
+              Concertina
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="didgeridoo"
+            >
+              Didgeridoo
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="dobro"
+            >
+              Dobro
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="dulcimer"
+            >
+              Dulcimer
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="fiddle"
+            >
+              Fiddle
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="fife"
+            >
+              Fife
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="flugelhorn"
+            >
+              Flugelhorn
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="flute"
+            >
+              Flute
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="french horn"
+            >
+              French horn
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="glockenspiel"
+            >
+              Glockenspiel
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="grand piano"
+            >
+              Grand piano
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="guitar"
+            >
+              Guitar
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="harmonica"
+            >
+              Harmonica
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="harp"
+            >
+              Harp
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="harpsichord"
+            >
+              Harpsichord
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="hurdy-gurdy"
+            >
+              Hurdy-gurdy
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="kazoo"
+            >
+              Kazoo
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="kick drum"
+            >
+              Kick drum
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="lute"
+            >
+              Lute
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="lyre"
+            >
+              Lyre
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="mandolin"
+            >
+              Mandolin
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="marimba"
+            >
+              Marimba
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="mellotran"
+            >
+              Mellotran
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="melodica"
+            >
+              Melodica
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="oboe"
+            >
+              Oboe
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="pan flute"
+            >
+              Pan flute
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="piano"
+            >
+              Piano
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="piccolo"
+            >
+              Piccolo
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="pipe organ"
+            >
+              Pipe organ
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="saxaphone"
+            >
+              Saxaphone
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="sitar"
+            >
+              Sitar
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="sousaphone"
+            >
+              Sousaphone
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="tambourine"
+            >
+              Tambourine
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="theremin"
+            >
+              Theremin
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="trombone"
+            >
+              Trombone
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="tuba"
+            >
+              Tuba
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="ukulele"
+            >
+              Ukulele
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="viola"
+            >
+              Viola
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="violin"
+            >
+              Violin
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="vuvuzela"
+            >
+              Vuvuzela
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="washtub bass"
+            >
+              Washtub bass
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="xylophone"
+            >
+              Xylophone
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="zither"
+            >
+              Zither
+            </WithStyles(MenuItem)>
+          </WithStyles(Select)>
+        </WithStyles(FormControl)>,
+        <WithStyles(FormControl)
+          className="nabi-instruments-select"
+        >
+          <WithStyles(InputLabel)
+            htmlFor="skillLevel"
+          >
+            Skill level
+          </WithStyles(InputLabel)>
+          <WithStyles(Select)
+            input={
+              <WithStyles(Input)
+                id="skillLevel"
+                name="skillLevel"
+              />
+            }
+            onChange={[MockFunction]}
+            value=""
+          >
+            <WithStyles(MenuItem)
+              value="Beginner"
+            >
+              Beginner
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="Intermediate"
+            >
+              Intermediate
+            </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              value="Advanced"
+            >
+              Advanced
+            </WithStyles(MenuItem)>
+          </WithStyles(Select)>
+        </WithStyles(FormControl)>,
+        <WithStyles(Button)
+          className="nabi-instruments-add"
+          color="primary"
+          onClick={[MockFunction]}
+          variant="raised"
+        >
+          Add
+        </WithStyles(Button)>,
+        <WithStyles(Divider)
+          className="nabi-margin-top-small"
+        />,
+      ],
+      "className": "nabi-instruments",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <WithStyles(InputLabel)
+              htmlFor="instrument"
+            >
+              Select instrument
+            </WithStyles(InputLabel)>,
+            <WithStyles(Select)
+              input={
+                <WithStyles(Input)
+                  id="instrument"
+                  name="instrument"
+                />
+              }
+              onChange={[MockFunction]}
+              value=""
+            >
+              <WithStyles(MenuItem)
+                value="accordion"
+              >
+                Accordion
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="air horn"
+              >
+                Air horn
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="bagpipe"
+              >
+                Bagpipe
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="banjo"
+              >
+                Banjo
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="bass guitar"
+              >
+                Bass guitar
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="bassoon"
+              >
+                Bassoon
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="bugle"
+              >
+                Bugle
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="calliope"
+              >
+                Calliope
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="cello"
+              >
+                Cello
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="clarinet"
+              >
+                Clarinet
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="clavichord"
+              >
+                Clavichord
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="concertina"
+              >
+                Concertina
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="didgeridoo"
+              >
+                Didgeridoo
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="dobro"
+              >
+                Dobro
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="dulcimer"
+              >
+                Dulcimer
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="fiddle"
+              >
+                Fiddle
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="fife"
+              >
+                Fife
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="flugelhorn"
+              >
+                Flugelhorn
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="flute"
+              >
+                Flute
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="french horn"
+              >
+                French horn
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="glockenspiel"
+              >
+                Glockenspiel
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="grand piano"
+              >
+                Grand piano
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="guitar"
+              >
+                Guitar
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="harmonica"
+              >
+                Harmonica
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="harp"
+              >
+                Harp
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="harpsichord"
+              >
+                Harpsichord
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="hurdy-gurdy"
+              >
+                Hurdy-gurdy
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="kazoo"
+              >
+                Kazoo
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="kick drum"
+              >
+                Kick drum
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="lute"
+              >
+                Lute
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="lyre"
+              >
+                Lyre
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="mandolin"
+              >
+                Mandolin
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="marimba"
+              >
+                Marimba
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="mellotran"
+              >
+                Mellotran
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="melodica"
+              >
+                Melodica
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="oboe"
+              >
+                Oboe
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="pan flute"
+              >
+                Pan flute
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="piano"
+              >
+                Piano
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="piccolo"
+              >
+                Piccolo
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="pipe organ"
+              >
+                Pipe organ
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="saxaphone"
+              >
+                Saxaphone
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="sitar"
+              >
+                Sitar
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="sousaphone"
+              >
+                Sousaphone
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="tambourine"
+              >
+                Tambourine
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="theremin"
+              >
+                Theremin
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="trombone"
+              >
+                Trombone
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="tuba"
+              >
+                Tuba
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="ukulele"
+              >
+                Ukulele
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="viola"
+              >
+                Viola
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="violin"
+              >
+                Violin
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="vuvuzela"
+              >
+                Vuvuzela
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="washtub bass"
+              >
+                Washtub bass
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="xylophone"
+              >
+                Xylophone
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="zither"
+              >
+                Zither
+              </WithStyles(MenuItem)>
+            </WithStyles(Select)>,
+          ],
+          "className": "nabi-instruments-select",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Select instrument",
+              "htmlFor": "instrument",
+            },
+            "ref": null,
+            "rendered": "Select instrument",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(MenuItem)
+                  value="accordion"
+                >
+                  Accordion
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="air horn"
+                >
+                  Air horn
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="bagpipe"
+                >
+                  Bagpipe
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="banjo"
+                >
+                  Banjo
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="bass guitar"
+                >
+                  Bass guitar
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="bassoon"
+                >
+                  Bassoon
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="bugle"
+                >
+                  Bugle
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="calliope"
+                >
+                  Calliope
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="cello"
+                >
+                  Cello
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="clarinet"
+                >
+                  Clarinet
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="clavichord"
+                >
+                  Clavichord
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="concertina"
+                >
+                  Concertina
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="didgeridoo"
+                >
+                  Didgeridoo
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="dobro"
+                >
+                  Dobro
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="dulcimer"
+                >
+                  Dulcimer
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="fiddle"
+                >
+                  Fiddle
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="fife"
+                >
+                  Fife
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="flugelhorn"
+                >
+                  Flugelhorn
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="flute"
+                >
+                  Flute
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="french horn"
+                >
+                  French horn
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="glockenspiel"
+                >
+                  Glockenspiel
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="grand piano"
+                >
+                  Grand piano
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="guitar"
+                >
+                  Guitar
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="harmonica"
+                >
+                  Harmonica
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="harp"
+                >
+                  Harp
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="harpsichord"
+                >
+                  Harpsichord
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="hurdy-gurdy"
+                >
+                  Hurdy-gurdy
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="kazoo"
+                >
+                  Kazoo
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="kick drum"
+                >
+                  Kick drum
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="lute"
+                >
+                  Lute
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="lyre"
+                >
+                  Lyre
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="mandolin"
+                >
+                  Mandolin
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="marimba"
+                >
+                  Marimba
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="mellotran"
+                >
+                  Mellotran
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="melodica"
+                >
+                  Melodica
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="oboe"
+                >
+                  Oboe
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="pan flute"
+                >
+                  Pan flute
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="piano"
+                >
+                  Piano
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="piccolo"
+                >
+                  Piccolo
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="pipe organ"
+                >
+                  Pipe organ
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="saxaphone"
+                >
+                  Saxaphone
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="sitar"
+                >
+                  Sitar
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="sousaphone"
+                >
+                  Sousaphone
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="tambourine"
+                >
+                  Tambourine
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="theremin"
+                >
+                  Theremin
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="trombone"
+                >
+                  Trombone
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="tuba"
+                >
+                  Tuba
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="ukulele"
+                >
+                  Ukulele
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="viola"
+                >
+                  Viola
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="violin"
+                >
+                  Violin
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="vuvuzela"
+                >
+                  Vuvuzela
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="washtub bass"
+                >
+                  Washtub bass
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="xylophone"
+                >
+                  Xylophone
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="zither"
+                >
+                  Zither
+                </WithStyles(MenuItem)>,
+              ],
+              "input": <WithStyles(Input)
+                id="instrument"
+                name="instrument"
+              />,
+              "onChange": [MockFunction],
+              "value": "",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "accordion",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Accordion",
+                  "value": "accordion",
+                },
+                "ref": null,
+                "rendered": "Accordion",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "air horn",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Air horn",
+                  "value": "air horn",
+                },
+                "ref": null,
+                "rendered": "Air horn",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "bagpipe",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Bagpipe",
+                  "value": "bagpipe",
+                },
+                "ref": null,
+                "rendered": "Bagpipe",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "banjo",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Banjo",
+                  "value": "banjo",
+                },
+                "ref": null,
+                "rendered": "Banjo",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "bass guitar",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Bass guitar",
+                  "value": "bass guitar",
+                },
+                "ref": null,
+                "rendered": "Bass guitar",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "bassoon",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Bassoon",
+                  "value": "bassoon",
+                },
+                "ref": null,
+                "rendered": "Bassoon",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "bugle",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Bugle",
+                  "value": "bugle",
+                },
+                "ref": null,
+                "rendered": "Bugle",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "calliope",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Calliope",
+                  "value": "calliope",
+                },
+                "ref": null,
+                "rendered": "Calliope",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "cello",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Cello",
+                  "value": "cello",
+                },
+                "ref": null,
+                "rendered": "Cello",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "clarinet",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Clarinet",
+                  "value": "clarinet",
+                },
+                "ref": null,
+                "rendered": "Clarinet",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "clavichord",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Clavichord",
+                  "value": "clavichord",
+                },
+                "ref": null,
+                "rendered": "Clavichord",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "concertina",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Concertina",
+                  "value": "concertina",
+                },
+                "ref": null,
+                "rendered": "Concertina",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "didgeridoo",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Didgeridoo",
+                  "value": "didgeridoo",
+                },
+                "ref": null,
+                "rendered": "Didgeridoo",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "dobro",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Dobro",
+                  "value": "dobro",
+                },
+                "ref": null,
+                "rendered": "Dobro",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "dulcimer",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Dulcimer",
+                  "value": "dulcimer",
+                },
+                "ref": null,
+                "rendered": "Dulcimer",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "fiddle",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Fiddle",
+                  "value": "fiddle",
+                },
+                "ref": null,
+                "rendered": "Fiddle",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "fife",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Fife",
+                  "value": "fife",
+                },
+                "ref": null,
+                "rendered": "Fife",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "flugelhorn",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Flugelhorn",
+                  "value": "flugelhorn",
+                },
+                "ref": null,
+                "rendered": "Flugelhorn",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "flute",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Flute",
+                  "value": "flute",
+                },
+                "ref": null,
+                "rendered": "Flute",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "french horn",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "French horn",
+                  "value": "french horn",
+                },
+                "ref": null,
+                "rendered": "French horn",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "glockenspiel",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Glockenspiel",
+                  "value": "glockenspiel",
+                },
+                "ref": null,
+                "rendered": "Glockenspiel",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "grand piano",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Grand piano",
+                  "value": "grand piano",
+                },
+                "ref": null,
+                "rendered": "Grand piano",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "guitar",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Guitar",
+                  "value": "guitar",
+                },
+                "ref": null,
+                "rendered": "Guitar",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "harmonica",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Harmonica",
+                  "value": "harmonica",
+                },
+                "ref": null,
+                "rendered": "Harmonica",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "harp",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Harp",
+                  "value": "harp",
+                },
+                "ref": null,
+                "rendered": "Harp",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "harpsichord",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Harpsichord",
+                  "value": "harpsichord",
+                },
+                "ref": null,
+                "rendered": "Harpsichord",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "hurdy-gurdy",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Hurdy-gurdy",
+                  "value": "hurdy-gurdy",
+                },
+                "ref": null,
+                "rendered": "Hurdy-gurdy",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "kazoo",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Kazoo",
+                  "value": "kazoo",
+                },
+                "ref": null,
+                "rendered": "Kazoo",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "kick drum",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Kick drum",
+                  "value": "kick drum",
+                },
+                "ref": null,
+                "rendered": "Kick drum",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "lute",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Lute",
+                  "value": "lute",
+                },
+                "ref": null,
+                "rendered": "Lute",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "lyre",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Lyre",
+                  "value": "lyre",
+                },
+                "ref": null,
+                "rendered": "Lyre",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "mandolin",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Mandolin",
+                  "value": "mandolin",
+                },
+                "ref": null,
+                "rendered": "Mandolin",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "marimba",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Marimba",
+                  "value": "marimba",
+                },
+                "ref": null,
+                "rendered": "Marimba",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "mellotran",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Mellotran",
+                  "value": "mellotran",
+                },
+                "ref": null,
+                "rendered": "Mellotran",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "melodica",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Melodica",
+                  "value": "melodica",
+                },
+                "ref": null,
+                "rendered": "Melodica",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "oboe",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Oboe",
+                  "value": "oboe",
+                },
+                "ref": null,
+                "rendered": "Oboe",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "pan flute",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Pan flute",
+                  "value": "pan flute",
+                },
+                "ref": null,
+                "rendered": "Pan flute",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "piano",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Piano",
+                  "value": "piano",
+                },
+                "ref": null,
+                "rendered": "Piano",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "piccolo",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Piccolo",
+                  "value": "piccolo",
+                },
+                "ref": null,
+                "rendered": "Piccolo",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "pipe organ",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Pipe organ",
+                  "value": "pipe organ",
+                },
+                "ref": null,
+                "rendered": "Pipe organ",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "saxaphone",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Saxaphone",
+                  "value": "saxaphone",
+                },
+                "ref": null,
+                "rendered": "Saxaphone",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "sitar",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Sitar",
+                  "value": "sitar",
+                },
+                "ref": null,
+                "rendered": "Sitar",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "sousaphone",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Sousaphone",
+                  "value": "sousaphone",
+                },
+                "ref": null,
+                "rendered": "Sousaphone",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "tambourine",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Tambourine",
+                  "value": "tambourine",
+                },
+                "ref": null,
+                "rendered": "Tambourine",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "theremin",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Theremin",
+                  "value": "theremin",
+                },
+                "ref": null,
+                "rendered": "Theremin",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "trombone",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Trombone",
+                  "value": "trombone",
+                },
+                "ref": null,
+                "rendered": "Trombone",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "tuba",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Tuba",
+                  "value": "tuba",
+                },
+                "ref": null,
+                "rendered": "Tuba",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "ukulele",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Ukulele",
+                  "value": "ukulele",
+                },
+                "ref": null,
+                "rendered": "Ukulele",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "viola",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Viola",
+                  "value": "viola",
+                },
+                "ref": null,
+                "rendered": "Viola",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "violin",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Violin",
+                  "value": "violin",
+                },
+                "ref": null,
+                "rendered": "Violin",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "vuvuzela",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Vuvuzela",
+                  "value": "vuvuzela",
+                },
+                "ref": null,
+                "rendered": "Vuvuzela",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "washtub bass",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Washtub bass",
+                  "value": "washtub bass",
+                },
+                "ref": null,
+                "rendered": "Washtub bass",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "xylophone",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Xylophone",
+                  "value": "xylophone",
+                },
+                "ref": null,
+                "rendered": "Xylophone",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "zither",
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Zither",
+                  "value": "zither",
+                },
+                "ref": null,
+                "rendered": "Zither",
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <WithStyles(InputLabel)
+              htmlFor="skillLevel"
+            >
+              Skill level
+            </WithStyles(InputLabel)>,
+            <WithStyles(Select)
+              input={
+                <WithStyles(Input)
+                  id="skillLevel"
+                  name="skillLevel"
+                />
+              }
+              onChange={[MockFunction]}
+              value=""
+            >
+              <WithStyles(MenuItem)
+                value="Beginner"
+              >
+                Beginner
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="Intermediate"
+              >
+                Intermediate
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="Advanced"
+              >
+                Advanced
+              </WithStyles(MenuItem)>
+            </WithStyles(Select)>,
+          ],
+          "className": "nabi-instruments-select",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Skill level",
+              "htmlFor": "skillLevel",
+            },
+            "ref": null,
+            "rendered": "Skill level",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(MenuItem)
+                  value="Beginner"
+                >
+                  Beginner
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="Intermediate"
+                >
+                  Intermediate
+                </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  value="Advanced"
+                >
+                  Advanced
+                </WithStyles(MenuItem)>,
+              ],
+              "input": <WithStyles(Input)
+                id="skillLevel"
+                name="skillLevel"
+              />,
+              "onChange": [MockFunction],
+              "value": "",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Beginner",
+                  "value": "Beginner",
+                },
+                "ref": null,
+                "rendered": "Beginner",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Intermediate",
+                  "value": "Intermediate",
+                },
+                "ref": null,
+                "rendered": "Intermediate",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Advanced",
+                  "value": "Advanced",
+                },
+                "ref": null,
+                "rendered": "Advanced",
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Add",
+          "className": "nabi-instruments-add",
+          "color": "primary",
+          "onClick": [MockFunction],
+          "variant": "raised",
+        },
+        "ref": null,
+        "rendered": "Add",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "className": "nabi-margin-top-small",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <WithStyles(FormControl)
+            className="nabi-instruments-select"
+          >
+            <WithStyles(InputLabel)
+              htmlFor="instrument"
+            >
+              Select instrument
+            </WithStyles(InputLabel)>
+            <WithStyles(Select)
+              input={
+                <WithStyles(Input)
+                  id="instrument"
+                  name="instrument"
+                />
+              }
+              onChange={[MockFunction]}
+              value=""
+            >
+              <WithStyles(MenuItem)
+                value="accordion"
+              >
+                Accordion
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="air horn"
+              >
+                Air horn
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="bagpipe"
+              >
+                Bagpipe
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="banjo"
+              >
+                Banjo
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="bass guitar"
+              >
+                Bass guitar
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="bassoon"
+              >
+                Bassoon
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="bugle"
+              >
+                Bugle
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="calliope"
+              >
+                Calliope
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="cello"
+              >
+                Cello
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="clarinet"
+              >
+                Clarinet
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="clavichord"
+              >
+                Clavichord
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="concertina"
+              >
+                Concertina
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="didgeridoo"
+              >
+                Didgeridoo
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="dobro"
+              >
+                Dobro
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="dulcimer"
+              >
+                Dulcimer
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="fiddle"
+              >
+                Fiddle
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="fife"
+              >
+                Fife
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="flugelhorn"
+              >
+                Flugelhorn
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="flute"
+              >
+                Flute
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="french horn"
+              >
+                French horn
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="glockenspiel"
+              >
+                Glockenspiel
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="grand piano"
+              >
+                Grand piano
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="guitar"
+              >
+                Guitar
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="harmonica"
+              >
+                Harmonica
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="harp"
+              >
+                Harp
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="harpsichord"
+              >
+                Harpsichord
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="hurdy-gurdy"
+              >
+                Hurdy-gurdy
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="kazoo"
+              >
+                Kazoo
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="kick drum"
+              >
+                Kick drum
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="lute"
+              >
+                Lute
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="lyre"
+              >
+                Lyre
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="mandolin"
+              >
+                Mandolin
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="marimba"
+              >
+                Marimba
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="mellotran"
+              >
+                Mellotran
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="melodica"
+              >
+                Melodica
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="oboe"
+              >
+                Oboe
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="pan flute"
+              >
+                Pan flute
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="piano"
+              >
+                Piano
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="piccolo"
+              >
+                Piccolo
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="pipe organ"
+              >
+                Pipe organ
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="saxaphone"
+              >
+                Saxaphone
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="sitar"
+              >
+                Sitar
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="sousaphone"
+              >
+                Sousaphone
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="tambourine"
+              >
+                Tambourine
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="theremin"
+              >
+                Theremin
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="trombone"
+              >
+                Trombone
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="tuba"
+              >
+                Tuba
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="ukulele"
+              >
+                Ukulele
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="viola"
+              >
+                Viola
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="violin"
+              >
+                Violin
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="vuvuzela"
+              >
+                Vuvuzela
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="washtub bass"
+              >
+                Washtub bass
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="xylophone"
+              >
+                Xylophone
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="zither"
+              >
+                Zither
+              </WithStyles(MenuItem)>
+            </WithStyles(Select)>
+          </WithStyles(FormControl)>,
+          <WithStyles(FormControl)
+            className="nabi-instruments-select"
+          >
+            <WithStyles(InputLabel)
+              htmlFor="skillLevel"
+            >
+              Skill level
+            </WithStyles(InputLabel)>
+            <WithStyles(Select)
+              input={
+                <WithStyles(Input)
+                  id="skillLevel"
+                  name="skillLevel"
+                />
+              }
+              onChange={[MockFunction]}
+              value=""
+            >
+              <WithStyles(MenuItem)
+                value="Beginner"
+              >
+                Beginner
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="Intermediate"
+              >
+                Intermediate
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="Advanced"
+              >
+                Advanced
+              </WithStyles(MenuItem)>
+            </WithStyles(Select)>
+          </WithStyles(FormControl)>,
+          <WithStyles(Button)
+            className="nabi-instruments-add"
+            color="primary"
+            onClick={[MockFunction]}
+            variant="raised"
+          >
+            Add
+          </WithStyles(Button)>,
+          <WithStyles(Divider)
+            className="nabi-margin-top-small"
+          />,
+        ],
+        "className": "nabi-instruments",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <WithStyles(InputLabel)
+                htmlFor="instrument"
+              >
+                Select instrument
+              </WithStyles(InputLabel)>,
+              <WithStyles(Select)
+                input={
+                  <WithStyles(Input)
+                    id="instrument"
+                    name="instrument"
+                  />
+                }
+                onChange={[MockFunction]}
+                value=""
+              >
+                <WithStyles(MenuItem)
+                  value="accordion"
+                >
+                  Accordion
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="air horn"
+                >
+                  Air horn
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="bagpipe"
+                >
+                  Bagpipe
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="banjo"
+                >
+                  Banjo
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="bass guitar"
+                >
+                  Bass guitar
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="bassoon"
+                >
+                  Bassoon
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="bugle"
+                >
+                  Bugle
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="calliope"
+                >
+                  Calliope
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="cello"
+                >
+                  Cello
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="clarinet"
+                >
+                  Clarinet
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="clavichord"
+                >
+                  Clavichord
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="concertina"
+                >
+                  Concertina
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="didgeridoo"
+                >
+                  Didgeridoo
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="dobro"
+                >
+                  Dobro
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="dulcimer"
+                >
+                  Dulcimer
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="fiddle"
+                >
+                  Fiddle
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="fife"
+                >
+                  Fife
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="flugelhorn"
+                >
+                  Flugelhorn
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="flute"
+                >
+                  Flute
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="french horn"
+                >
+                  French horn
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="glockenspiel"
+                >
+                  Glockenspiel
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="grand piano"
+                >
+                  Grand piano
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="guitar"
+                >
+                  Guitar
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="harmonica"
+                >
+                  Harmonica
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="harp"
+                >
+                  Harp
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="harpsichord"
+                >
+                  Harpsichord
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="hurdy-gurdy"
+                >
+                  Hurdy-gurdy
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="kazoo"
+                >
+                  Kazoo
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="kick drum"
+                >
+                  Kick drum
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="lute"
+                >
+                  Lute
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="lyre"
+                >
+                  Lyre
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="mandolin"
+                >
+                  Mandolin
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="marimba"
+                >
+                  Marimba
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="mellotran"
+                >
+                  Mellotran
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="melodica"
+                >
+                  Melodica
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="oboe"
+                >
+                  Oboe
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="pan flute"
+                >
+                  Pan flute
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="piano"
+                >
+                  Piano
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="piccolo"
+                >
+                  Piccolo
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="pipe organ"
+                >
+                  Pipe organ
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="saxaphone"
+                >
+                  Saxaphone
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="sitar"
+                >
+                  Sitar
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="sousaphone"
+                >
+                  Sousaphone
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="tambourine"
+                >
+                  Tambourine
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="theremin"
+                >
+                  Theremin
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="trombone"
+                >
+                  Trombone
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="tuba"
+                >
+                  Tuba
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="ukulele"
+                >
+                  Ukulele
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="viola"
+                >
+                  Viola
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="violin"
+                >
+                  Violin
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="vuvuzela"
+                >
+                  Vuvuzela
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="washtub bass"
+                >
+                  Washtub bass
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="xylophone"
+                >
+                  Xylophone
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="zither"
+                >
+                  Zither
+                </WithStyles(MenuItem)>
+              </WithStyles(Select)>,
+            ],
+            "className": "nabi-instruments-select",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Select instrument",
+                "htmlFor": "instrument",
+              },
+              "ref": null,
+              "rendered": "Select instrument",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(MenuItem)
+                    value="accordion"
+                  >
+                    Accordion
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="air horn"
+                  >
+                    Air horn
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="bagpipe"
+                  >
+                    Bagpipe
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="banjo"
+                  >
+                    Banjo
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="bass guitar"
+                  >
+                    Bass guitar
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="bassoon"
+                  >
+                    Bassoon
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="bugle"
+                  >
+                    Bugle
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="calliope"
+                  >
+                    Calliope
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="cello"
+                  >
+                    Cello
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="clarinet"
+                  >
+                    Clarinet
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="clavichord"
+                  >
+                    Clavichord
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="concertina"
+                  >
+                    Concertina
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="didgeridoo"
+                  >
+                    Didgeridoo
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="dobro"
+                  >
+                    Dobro
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="dulcimer"
+                  >
+                    Dulcimer
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="fiddle"
+                  >
+                    Fiddle
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="fife"
+                  >
+                    Fife
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="flugelhorn"
+                  >
+                    Flugelhorn
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="flute"
+                  >
+                    Flute
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="french horn"
+                  >
+                    French horn
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="glockenspiel"
+                  >
+                    Glockenspiel
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="grand piano"
+                  >
+                    Grand piano
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="guitar"
+                  >
+                    Guitar
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="harmonica"
+                  >
+                    Harmonica
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="harp"
+                  >
+                    Harp
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="harpsichord"
+                  >
+                    Harpsichord
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="hurdy-gurdy"
+                  >
+                    Hurdy-gurdy
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="kazoo"
+                  >
+                    Kazoo
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="kick drum"
+                  >
+                    Kick drum
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="lute"
+                  >
+                    Lute
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="lyre"
+                  >
+                    Lyre
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="mandolin"
+                  >
+                    Mandolin
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="marimba"
+                  >
+                    Marimba
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="mellotran"
+                  >
+                    Mellotran
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="melodica"
+                  >
+                    Melodica
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="oboe"
+                  >
+                    Oboe
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="pan flute"
+                  >
+                    Pan flute
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="piano"
+                  >
+                    Piano
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="piccolo"
+                  >
+                    Piccolo
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="pipe organ"
+                  >
+                    Pipe organ
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="saxaphone"
+                  >
+                    Saxaphone
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="sitar"
+                  >
+                    Sitar
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="sousaphone"
+                  >
+                    Sousaphone
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="tambourine"
+                  >
+                    Tambourine
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="theremin"
+                  >
+                    Theremin
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="trombone"
+                  >
+                    Trombone
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="tuba"
+                  >
+                    Tuba
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="ukulele"
+                  >
+                    Ukulele
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="viola"
+                  >
+                    Viola
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="violin"
+                  >
+                    Violin
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="vuvuzela"
+                  >
+                    Vuvuzela
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="washtub bass"
+                  >
+                    Washtub bass
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="xylophone"
+                  >
+                    Xylophone
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="zither"
+                  >
+                    Zither
+                  </WithStyles(MenuItem)>,
+                ],
+                "input": <WithStyles(Input)
+                  id="instrument"
+                  name="instrument"
+                />,
+                "onChange": [MockFunction],
+                "value": "",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "accordion",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Accordion",
+                    "value": "accordion",
+                  },
+                  "ref": null,
+                  "rendered": "Accordion",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "air horn",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Air horn",
+                    "value": "air horn",
+                  },
+                  "ref": null,
+                  "rendered": "Air horn",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "bagpipe",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Bagpipe",
+                    "value": "bagpipe",
+                  },
+                  "ref": null,
+                  "rendered": "Bagpipe",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "banjo",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Banjo",
+                    "value": "banjo",
+                  },
+                  "ref": null,
+                  "rendered": "Banjo",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "bass guitar",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Bass guitar",
+                    "value": "bass guitar",
+                  },
+                  "ref": null,
+                  "rendered": "Bass guitar",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "bassoon",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Bassoon",
+                    "value": "bassoon",
+                  },
+                  "ref": null,
+                  "rendered": "Bassoon",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "bugle",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Bugle",
+                    "value": "bugle",
+                  },
+                  "ref": null,
+                  "rendered": "Bugle",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "calliope",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Calliope",
+                    "value": "calliope",
+                  },
+                  "ref": null,
+                  "rendered": "Calliope",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "cello",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Cello",
+                    "value": "cello",
+                  },
+                  "ref": null,
+                  "rendered": "Cello",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "clarinet",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Clarinet",
+                    "value": "clarinet",
+                  },
+                  "ref": null,
+                  "rendered": "Clarinet",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "clavichord",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Clavichord",
+                    "value": "clavichord",
+                  },
+                  "ref": null,
+                  "rendered": "Clavichord",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "concertina",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Concertina",
+                    "value": "concertina",
+                  },
+                  "ref": null,
+                  "rendered": "Concertina",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "didgeridoo",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Didgeridoo",
+                    "value": "didgeridoo",
+                  },
+                  "ref": null,
+                  "rendered": "Didgeridoo",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "dobro",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Dobro",
+                    "value": "dobro",
+                  },
+                  "ref": null,
+                  "rendered": "Dobro",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "dulcimer",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Dulcimer",
+                    "value": "dulcimer",
+                  },
+                  "ref": null,
+                  "rendered": "Dulcimer",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "fiddle",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Fiddle",
+                    "value": "fiddle",
+                  },
+                  "ref": null,
+                  "rendered": "Fiddle",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "fife",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Fife",
+                    "value": "fife",
+                  },
+                  "ref": null,
+                  "rendered": "Fife",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "flugelhorn",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Flugelhorn",
+                    "value": "flugelhorn",
+                  },
+                  "ref": null,
+                  "rendered": "Flugelhorn",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "flute",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Flute",
+                    "value": "flute",
+                  },
+                  "ref": null,
+                  "rendered": "Flute",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "french horn",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "French horn",
+                    "value": "french horn",
+                  },
+                  "ref": null,
+                  "rendered": "French horn",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "glockenspiel",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Glockenspiel",
+                    "value": "glockenspiel",
+                  },
+                  "ref": null,
+                  "rendered": "Glockenspiel",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "grand piano",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Grand piano",
+                    "value": "grand piano",
+                  },
+                  "ref": null,
+                  "rendered": "Grand piano",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "guitar",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Guitar",
+                    "value": "guitar",
+                  },
+                  "ref": null,
+                  "rendered": "Guitar",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "harmonica",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Harmonica",
+                    "value": "harmonica",
+                  },
+                  "ref": null,
+                  "rendered": "Harmonica",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "harp",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Harp",
+                    "value": "harp",
+                  },
+                  "ref": null,
+                  "rendered": "Harp",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "harpsichord",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Harpsichord",
+                    "value": "harpsichord",
+                  },
+                  "ref": null,
+                  "rendered": "Harpsichord",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "hurdy-gurdy",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Hurdy-gurdy",
+                    "value": "hurdy-gurdy",
+                  },
+                  "ref": null,
+                  "rendered": "Hurdy-gurdy",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "kazoo",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Kazoo",
+                    "value": "kazoo",
+                  },
+                  "ref": null,
+                  "rendered": "Kazoo",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "kick drum",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Kick drum",
+                    "value": "kick drum",
+                  },
+                  "ref": null,
+                  "rendered": "Kick drum",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "lute",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Lute",
+                    "value": "lute",
+                  },
+                  "ref": null,
+                  "rendered": "Lute",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "lyre",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Lyre",
+                    "value": "lyre",
+                  },
+                  "ref": null,
+                  "rendered": "Lyre",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "mandolin",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Mandolin",
+                    "value": "mandolin",
+                  },
+                  "ref": null,
+                  "rendered": "Mandolin",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "marimba",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Marimba",
+                    "value": "marimba",
+                  },
+                  "ref": null,
+                  "rendered": "Marimba",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "mellotran",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Mellotran",
+                    "value": "mellotran",
+                  },
+                  "ref": null,
+                  "rendered": "Mellotran",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "melodica",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Melodica",
+                    "value": "melodica",
+                  },
+                  "ref": null,
+                  "rendered": "Melodica",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "oboe",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Oboe",
+                    "value": "oboe",
+                  },
+                  "ref": null,
+                  "rendered": "Oboe",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "pan flute",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Pan flute",
+                    "value": "pan flute",
+                  },
+                  "ref": null,
+                  "rendered": "Pan flute",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "piano",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Piano",
+                    "value": "piano",
+                  },
+                  "ref": null,
+                  "rendered": "Piano",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "piccolo",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Piccolo",
+                    "value": "piccolo",
+                  },
+                  "ref": null,
+                  "rendered": "Piccolo",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "pipe organ",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Pipe organ",
+                    "value": "pipe organ",
+                  },
+                  "ref": null,
+                  "rendered": "Pipe organ",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "saxaphone",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Saxaphone",
+                    "value": "saxaphone",
+                  },
+                  "ref": null,
+                  "rendered": "Saxaphone",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "sitar",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Sitar",
+                    "value": "sitar",
+                  },
+                  "ref": null,
+                  "rendered": "Sitar",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "sousaphone",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Sousaphone",
+                    "value": "sousaphone",
+                  },
+                  "ref": null,
+                  "rendered": "Sousaphone",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "tambourine",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Tambourine",
+                    "value": "tambourine",
+                  },
+                  "ref": null,
+                  "rendered": "Tambourine",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "theremin",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Theremin",
+                    "value": "theremin",
+                  },
+                  "ref": null,
+                  "rendered": "Theremin",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "trombone",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Trombone",
+                    "value": "trombone",
+                  },
+                  "ref": null,
+                  "rendered": "Trombone",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "tuba",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Tuba",
+                    "value": "tuba",
+                  },
+                  "ref": null,
+                  "rendered": "Tuba",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "ukulele",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Ukulele",
+                    "value": "ukulele",
+                  },
+                  "ref": null,
+                  "rendered": "Ukulele",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "viola",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Viola",
+                    "value": "viola",
+                  },
+                  "ref": null,
+                  "rendered": "Viola",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "violin",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Violin",
+                    "value": "violin",
+                  },
+                  "ref": null,
+                  "rendered": "Violin",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "vuvuzela",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Vuvuzela",
+                    "value": "vuvuzela",
+                  },
+                  "ref": null,
+                  "rendered": "Vuvuzela",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "washtub bass",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Washtub bass",
+                    "value": "washtub bass",
+                  },
+                  "ref": null,
+                  "rendered": "Washtub bass",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "xylophone",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Xylophone",
+                    "value": "xylophone",
+                  },
+                  "ref": null,
+                  "rendered": "Xylophone",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "zither",
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Zither",
+                    "value": "zither",
+                  },
+                  "ref": null,
+                  "rendered": "Zither",
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <WithStyles(InputLabel)
+                htmlFor="skillLevel"
+              >
+                Skill level
+              </WithStyles(InputLabel)>,
+              <WithStyles(Select)
+                input={
+                  <WithStyles(Input)
+                    id="skillLevel"
+                    name="skillLevel"
+                  />
+                }
+                onChange={[MockFunction]}
+                value=""
+              >
+                <WithStyles(MenuItem)
+                  value="Beginner"
+                >
+                  Beginner
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="Intermediate"
+                >
+                  Intermediate
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="Advanced"
+                >
+                  Advanced
+                </WithStyles(MenuItem)>
+              </WithStyles(Select)>,
+            ],
+            "className": "nabi-instruments-select",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Skill level",
+                "htmlFor": "skillLevel",
+              },
+              "ref": null,
+              "rendered": "Skill level",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(MenuItem)
+                    value="Beginner"
+                  >
+                    Beginner
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="Intermediate"
+                  >
+                    Intermediate
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(MenuItem)
+                    value="Advanced"
+                  >
+                    Advanced
+                  </WithStyles(MenuItem)>,
+                ],
+                "input": <WithStyles(Input)
+                  id="skillLevel"
+                  name="skillLevel"
+                />,
+                "onChange": [MockFunction],
+                "value": "",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Beginner",
+                    "value": "Beginner",
+                  },
+                  "ref": null,
+                  "rendered": "Beginner",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Intermediate",
+                    "value": "Intermediate",
+                  },
+                  "ref": null,
+                  "rendered": "Intermediate",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Advanced",
+                    "value": "Advanced",
+                  },
+                  "ref": null,
+                  "rendered": "Advanced",
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Add",
+            "className": "nabi-instruments-add",
+            "color": "primary",
+            "onClick": [MockFunction],
+            "variant": "raised",
+          },
+          "ref": null,
+          "rendered": "Add",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "className": "nabi-margin-top-small",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

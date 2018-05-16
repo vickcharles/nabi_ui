@@ -58,6 +58,36 @@ ShallowWrapper {
             }
           }
         />,
+        <WithStyles(Typography)
+          className="nabi-margin-top-small"
+          variant="body2"
+        >
+          Instruments
+        </WithStyles(Typography)>,
+        Array [],
+        <Instruments
+          addInstrument={[Function]}
+          handleChange={[Function]}
+          instrument=""
+          skillLevel="Beginner"
+        />,
+        <Rates
+          fortyFiveMinsRate={0}
+          handleChange={[Function]}
+          ninetyMinsRate={0}
+          sixtyMinsRate={0}
+          thirtyMinsRate={0}
+          updateRates={[Function]}
+        />,
+        <PlaceForLessons
+          handleChange={[Function]}
+          handleChangePlaceForLessons={[Function]}
+          home={false}
+          online={false}
+          studio={false}
+          studioAddress=""
+          updateStudioAddress={[Function]}
+        />,
       ],
     },
     "ref": null,
@@ -99,6 +129,66 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Instruments",
+          "className": "nabi-margin-top-small",
+          "variant": "body2",
+        },
+        "ref": null,
+        "rendered": "Instruments",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "addInstrument": [Function],
+          "handleChange": [Function],
+          "instrument": "",
+          "skillLevel": "Beginner",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "fortyFiveMinsRate": 0,
+          "handleChange": [Function],
+          "ninetyMinsRate": 0,
+          "sixtyMinsRate": 0,
+          "thirtyMinsRate": 0,
+          "updateRates": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "handleChange": [Function],
+          "handleChangePlaceForLessons": [Function],
+          "home": false,
+          "online": false,
+          "studio": false,
+          "studioAddress": "",
+          "updateStudioAddress": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": "div",
   },
@@ -131,6 +221,36 @@ ShallowWrapper {
                 "zipCode": "",
               }
             }
+          />,
+          <WithStyles(Typography)
+            className="nabi-margin-top-small"
+            variant="body2"
+          >
+            Instruments
+          </WithStyles(Typography)>,
+          Array [],
+          <Instruments
+            addInstrument={[Function]}
+            handleChange={[Function]}
+            instrument=""
+            skillLevel="Beginner"
+          />,
+          <Rates
+            fortyFiveMinsRate={0}
+            handleChange={[Function]}
+            ninetyMinsRate={0}
+            sixtyMinsRate={0}
+            thirtyMinsRate={0}
+            updateRates={[Function]}
+          />,
+          <PlaceForLessons
+            handleChange={[Function]}
+            handleChangePlaceForLessons={[Function]}
+            home={false}
+            online={false}
+            studio={false}
+            studioAddress=""
+            updateStudioAddress={[Function]}
           />,
         ],
       },
@@ -168,6 +288,66 @@ ShallowWrapper {
               "role": "instructor",
               "zipCode": "",
             },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Instruments",
+            "className": "nabi-margin-top-small",
+            "variant": "body2",
+          },
+          "ref": null,
+          "rendered": "Instruments",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "addInstrument": [Function],
+            "handleChange": [Function],
+            "instrument": "",
+            "skillLevel": "Beginner",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "fortyFiveMinsRate": 0,
+            "handleChange": [Function],
+            "ninetyMinsRate": 0,
+            "sixtyMinsRate": 0,
+            "thirtyMinsRate": 0,
+            "updateRates": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "handleChange": [Function],
+            "handleChangePlaceForLessons": [Function],
+            "home": false,
+            "online": false,
+            "studio": false,
+            "studioAddress": "",
+            "updateStudioAddress": [Function],
           },
           "ref": null,
           "rendered": null,

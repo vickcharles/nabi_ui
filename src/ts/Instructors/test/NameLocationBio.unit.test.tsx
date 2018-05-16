@@ -6,7 +6,6 @@ import { Role, UserState } from '../../Users/model';
 
 describe('NameLocationBio', () => {
   let wrapper: any;
-  // const updateUser: (user: UserState) => {} = jest.fn();
   const bioChange: () => {} = jest.fn();
   const bioBlur: () => {} = jest.fn();
   const closeModal = jest.spyOn(NameLocationBio.prototype, 'closeModal');
