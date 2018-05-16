@@ -74,7 +74,7 @@ describe('Users actions', () => {
     expect(actions.updateUser(user)).toEqual(expectedAction);
   });
 
-  it('Creates an action to get state and city', () => {
+  it('Creates an action to get city, state and country', () => {
     moxios.wait(function () {
       let request = moxios.requests.mostRecent();
       request.respondWith({
@@ -82,12 +82,34 @@ describe('Users actions', () => {
         response: {
           'results': [
             {
-              'formatted_address': 'Oklahoma City, OK 73170, USA'
+              'adrress_components': [
+                {
+                  long_name: '73130',
+                  short_name: '73130',
+                  types: ['postal_code']
+                },
+                {
+                  long_name: 'Kings County',
+                  short_name: 'Kings County',
+                  types: ['political, administrative_area_level_2']
+                },
+                {
+                  long_name: 'New York',
+                  short_name: 'NY',
+                  types: ['political', 'administrative_area_level_1']
+                },
+                {
+                  long_name: 'United States',
+                  short_name: 'US',
+                  types: ['political', 'country']
+                }
+              ]
             }
           ]
         }
       });
     });
+
     const user: UserState = {
       id: 'foo',
       firstName: 'yix',
@@ -99,13 +121,16 @@ describe('Users actions', () => {
       hearAboutUs: 'fon',
       displayName: 'ber',
       city: '',
-      state: ''
+      state: '',
+      country: ''
     };
+
     const store = mockStore({});
     const expectedActions = [
         ZipCodeActions.FETCH_ZIPADDRESS_START,
         ZipCodeActions.FETCH_ZIPADDRES_DONE
     ];
+    
     return store.dispatch(actions.fetchZipCodeAddress(user))
       .then(() => {
         const actualActions = store.getActions().map( 
