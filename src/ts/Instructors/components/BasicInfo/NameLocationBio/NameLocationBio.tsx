@@ -18,14 +18,14 @@ interface NameLocationBioOwnProps {
   handleChange: (event: React.FormEvent<{}>) => void;
 }
 /**
- * Props interface for NameLocationBio
+ * Props for NameLocationBio
  * @interface NameLocationBioProps
  */
 interface NameLocationBioProps extends
 NameLocationBioOwnProps { }
 
 /**
- * State interface for NameLocationBio
+ * State for NameLocationBio
  * @interface NameLocationBioState
  */
 interface NameLocationBioState {

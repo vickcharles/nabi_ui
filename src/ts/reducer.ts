@@ -5,7 +5,7 @@ import instructorReducer from './Instructors';
 import { State } from './store';
 
 /** 
- * Combines Redux Reducers
+ * Combines redux reducers
  */
 const rootReducer = combineReducers<State>({
   users: userReducer,

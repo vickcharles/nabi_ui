@@ -17,7 +17,7 @@ import Rates from './Rates';
 import PlaceForLessons from './PlaceForLessons';
 
 /**
- * BasicInfo's own props
+ * BasicInfo dispatch props
  * @interface BasicInfoDispatchProps
  */
 interface BasicInfoDispatchProps {
@@ -35,11 +35,10 @@ interface BasicInfoOwnProps {
 }
 
 /**
- * State interface for BasicInfo
+ * State for BasicInfo
  * @interface BasicInfoState
  * @extends RatesState, PlaceForLessonsState
  */
-
 interface BasicInfoState extends RatesState, PlaceForLessonsState {
   bio: string;
   displayName: string;
@@ -50,7 +49,7 @@ interface BasicInfoState extends RatesState, PlaceForLessonsState {
 }
 
 /**
- * Props interface for BasicInfo
+ * Props for BasicInfo
  * @interface BasicInfoProps
  * @extends BasicInfoDispatchProps & BasicInfoOwnProps
  */

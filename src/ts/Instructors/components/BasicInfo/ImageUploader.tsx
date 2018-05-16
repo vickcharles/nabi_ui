@@ -2,7 +2,7 @@ import * as React from 'react';
 import CropprWrapper from './CropprWrapper';
 
 /**
- * Props interface for ImageUploader
+ * Props for ImageUploader
  * @interface ImageUploaderProps 
  */
 interface ImageUploaderProps {

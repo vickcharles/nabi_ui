@@ -7,7 +7,7 @@ import { Theme, withStyles, WithStyles } from 'material-ui/styles';
 import blur from './blur';
 
 /**
- * State interface for Croppr
+ * State for Croppr
  * @interface CropprState
  */
 interface CropprState {
@@ -16,7 +16,7 @@ interface CropprState {
   baseImage: any;
 }
 /**
- * Props interface for Croppr
+ * Props for Croppr
  * @interface CropprProps
  */
 interface CropprProps {
