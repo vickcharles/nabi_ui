@@ -6,13 +6,20 @@ import Button from 'material-ui/Button';
 import { Theme, withStyles, WithStyles } from 'material-ui/styles';
 import blur from './blur';
 
-interface CropprState {
+/**
+ * State for ImageCropper
+ * @interface ImageCropperState
+ */
+interface ImageCropperState {
   isLoading: boolean;
   isCropping: boolean;
   baseImage: any;
 }
-
-interface CropprProps {
+/**
+ * Props for ImageCropper
+ * @interface ImageCropperProps
+ */
+interface ImageCropperProps {
   originalImage?: any;
   imageChanged?(avatar: string): void;
 }
@@ -25,9 +32,14 @@ const styles = (theme: Theme) => ({
   }
 });
 
-type PropsWithStyles = CropprProps & WithStyles<'inIfiniteSpace'>;
+type PropsWithStyles = ImageCropperProps & WithStyles<'inIfiniteSpace'>;
 
-class CropprWrapper extends React.Component<PropsWithStyles, CropprState> {
+/**
+ * Crops an image file
+ * @class ImageCropper
+ * @extends React.Component<PropsWithStyles, ImageCropperState>
+ */
+class ImageCropper extends React.Component<PropsWithStyles, ImageCropperState> {
   cropperInstance: any;
   imageHolder: any;
   fileUpload: any;
@@ -63,7 +75,6 @@ class CropprWrapper extends React.Component<PropsWithStyles, CropprState> {
 
   componentDidUpdate() {
     if ( this.state.isCropping ) {
-        // this.cropperInstance  = new Croppr(this.imageHolder, { aspectRatio : 1, startSize : [150, 150, 'px'] });
         this.cropperInstance  = new Cropper(
           this.imageHolder,
           {
@@ -120,7 +131,6 @@ class CropprWrapper extends React.Component<PropsWithStyles, CropprState> {
   }
 
   imageToDataUri(img: string, width: number, height: number ): string {
-
     // create an off-screen canvas
     let canvas = document.createElement('canvas');
     let ctx: any = canvas.getContext('2d');
@@ -136,7 +146,7 @@ class CropprWrapper extends React.Component<PropsWithStyles, CropprState> {
 
     // encode image to data-uri with base64 version of compressed image
     return canvas.toDataURL();
-}
+  }
 
   render() {
     let currentLogo = this.state.baseImage ;
@@ -145,11 +155,11 @@ class CropprWrapper extends React.Component<PropsWithStyles, CropprState> {
       actions = (<Button color="primary" onClick={this.handleCrop} variant="raised">Change Photo</Button>);
     }
     const imgStyle = ( !this.state.isCropping ) ? {
-                                                  width: '140px',
-                                                  height: '140px',
-                                                  maxWidth: '100%',
-                                                  borderRadius: '50%',
-                                                } : { maxWidth: '100%'};
+      width: '140px',
+      height: '140px',
+      maxWidth: '100%',
+      borderRadius: '50%',
+    } : { maxWidth: '100%'};
     return (
       <div>
         <input
@@ -172,4 +182,4 @@ class CropprWrapper extends React.Component<PropsWithStyles, CropprState> {
   }
 }
 
-export default withStyles(styles)<CropprProps>(CropprWrapper);
+export default withStyles(styles)<ImageCropperProps>(ImageCropper);
