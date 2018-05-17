@@ -2,15 +2,15 @@ import * as React from 'react';
 import { Button } from 'material-ui';
 
 const BackgroundImageSection = () => {
-  return ( 
+  return (
     <section id="banner">
       <div className="container">
         <h1 className="nabi-font-montserrat nabi-text-semibold  nabi-font-jennasue"> 
         Share the love for music through education
         </h1>
-        <p className=" nabi-text-mediumbold nabi-font-montserrat  ">
+          <p className=" nabi-text-mediumbold nabi-font-montserrat  ">
           Learn music with your city's most talented and qualified music instructors
-        </p>
+          </p>
         <Button color="primary" variant="raised">
             FIND INSTRUCTOR
         </Button>
@@ -19,7 +19,7 @@ const BackgroundImageSection = () => {
         </Button>
       </div>
     </section>
-  );
+    );
 };
 
 export default BackgroundImageSection;

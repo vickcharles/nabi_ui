@@ -1,10 +1,12 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
+import Drawer from './Drawer';
 
 const Header = () => {
     return (
         <header>
             <Link id="nabi-logo-anchor" to="/">
+            <Drawer/>
                 <img 
                     id="nabi-logo" 
                     className="nabi-text-center" 
@@ -15,7 +17,7 @@ const Header = () => {
                     id="nabi-logo-text" 
                     className="nabi-text-center nabi-font-montserrat nabi-text-extrabold"
                 >
-                    Nabi Music
+                    Nabi Music 
                 </p>
             </Link>
         </header>
