@@ -80,11 +80,42 @@ describe('Users actions', () => {
       request.respondWith({
         status: 200,
         response: {
-          'results': [
+          "results": [
             {
-              'formatted_address': 'Oklahoma City, OK 73170, USA'
+              "address_components": [
+                {
+                  "long_name": "73170",
+                  "short_name": "73170",
+                  "types": ["postal_code"]
+                },
+                {
+                  "long_name": "Oklahoma City",
+                  "short_name": "Oklahoma City",
+                  "types": ["locality", "political"]
+                },
+                {
+                  "long_name": "Cleveland County",
+                  "short_name": "Cleveland County",
+                  "types": ["administrative_area_level_2", "political"]
+                },
+                {
+                  "long_name": "Oklahoma",
+                  "short_name": "OK",
+                  "types": ["administrative_area_level_1", "political"]
+                },
+                {
+                  "long_name": "United States",
+                  "short_name": "US",
+                  "types": ["country", "political"]
+                }
+              ],
+              "formatted_address": "Oklahoma City, OK 73170, USA",
+              "place_id": "ChIJUyovDstssocRC-42seBIaq8",
+              "postcode_localities": ["Moore", "Oklahoma City"],
+              "types": ["postal_code"]
             }
-          ]
+          ],
+          "status": "OK"
         }
       });
     });

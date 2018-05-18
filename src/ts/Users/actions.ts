@@ -90,7 +90,6 @@ export function fetchZipCodeAddress( user: UserState ) {
    return axios.get(url)
    .then(
      (res) => {
-        console.log(res);
         let AddressForm = res.data.results[0] || [];
         if ( res.data.results.length ) {
           function getValues(values: string[]) {
