@@ -1,6 +1,7 @@
 import * as React from 'react';
 import BackgroundImage from './BackgroundImage';
 import FreeLesson from './FreeLesson';
+import PopularInstrumetCard from './card';
 
 /** 
  * Homepage component
@@ -10,6 +11,7 @@ const Homepage = () => {
     <div>
       <BackgroundImage />
       <FreeLesson />
+      <PopularInstrumetCard />
     </div>
   );
 };
