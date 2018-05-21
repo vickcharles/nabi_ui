@@ -97,7 +97,7 @@ export class NameLocationBio extends React.Component<NameLocationBioProps, NameL
         </div>
         
         <Typography className="nabi-text-center">
-          {this.props.user.zipCode}
+        {`${this.props.user.city}, ${this.props.user.state} ${this.props.user.zipCode}`}
         </Typography>
 
         <Typography className="nabi-margin-top-small" variant="body2">

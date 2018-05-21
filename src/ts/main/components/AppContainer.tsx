@@ -5,7 +5,7 @@ import { Route, withRouter, Switch } from 'react-router-dom';
 
 import Header from './Header';
 import Homepage from './Homepage';
-import { createUser, changeAvatar, Registration } from '../../Users/';
+import { createUser, changeAvatar, Registration, fetchZipCodeAddress } from '../../Users/';
 import { UserState } from '../../Users/model';
 import { createInstructor, ProfileBuilder } from '../../Instructors';
 import { InstructorState } from '../../Instructors/model';
@@ -37,6 +37,8 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
     const dispatchCreateUser: any = (user: UserState) => dispatch(createUser(user));
     const dispatchCreateInstructor: any = (instructor: InstructorState) => dispatch(createInstructor(instructor));
     const dispatchChangeAvatar: any = (id: string, avatar: string) => dispatch(changeAvatar(id, avatar ));
+    const dispatchZipCodeSearch: any = (user: UserState) => dispatch(fetchZipCodeAddress( user ));
+
     /** 
      * Renders Registration component
      */
@@ -44,6 +46,7 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
       <Registration 
         createUser={dispatchCreateUser} 
         createInstructor={dispatchCreateInstructor}
+        searchZipCode={dispatchZipCodeSearch}
       />
     );
     /** 

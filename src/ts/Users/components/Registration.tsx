@@ -13,6 +13,7 @@ import { PageTitle } from '../../main';
 interface RegistrationProps {
   createUser: (user: UserState) => void;
   createInstructor: (instructor: InstructorState) => void;
+  searchZipCode: (user: UserState) => void;
 }
 
 /**
@@ -99,6 +100,10 @@ export class Registration extends React.Component<RegistrationProps, UserState &
 
     if ( this.state.role === Role.instructor) {
       this.props.createInstructor(userId);
+    }
+
+    if ( this.state.zipCode && true) {
+      this.props.searchZipCode(userValues);
     }
   }
   
