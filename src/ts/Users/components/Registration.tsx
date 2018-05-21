@@ -6,16 +6,29 @@ import { UserState, Role } from '../model';
 import { InstructorState } from '../../Instructors/model';
 import { PageTitle } from '../../main';
 
+/**
+ * Props for registration
+ * @interface RegistrationProps
+ */
 interface RegistrationProps {
   createUser: (user: UserState) => void;
   createInstructor: (instructor: InstructorState) => void;
   searchZipCode: (user: UserState) => void;
 }
 
+/**
+ * State for firing redirect
+ * @interface RedirectState
+ */
 interface RedirectState {
   fireRedirect: boolean;
 }
 
+/**
+ * Contains a form to register new users
+ * @class Registration
+ * @extends React.Component<RegistrationProps, UserState & RedirectState>
+ */
 export class Registration extends React.Component<RegistrationProps, UserState & RedirectState> {
   constructor(props: RegistrationProps) {
     super(props);

@@ -21,6 +21,10 @@ interface ZipCodeFetch extends Action {
 }
 
 // Create user
+/**
+ * Action to create new user
+ * @param {user} user - The new user
+ */
 export function createUser(user: UserState): CreateUser {
   return {
     user,
@@ -30,7 +34,6 @@ export function createUser(user: UserState): CreateUser {
 
 /**
  * Action to change avatar
- * 
  * @param {string} id - The id of the user
  * @param {string} avatar - The avatar of the user
  */
@@ -44,8 +47,7 @@ export function changeAvatar(id: string, avatar: string): ChangeAvatar {
 
 /**
  * Action to update user
- * 
- * @param {string} user - The new user
+ * @param {string} user - The updated user's state
  */
 export function updateUser(user: UserState): UpdateUser {
   return {

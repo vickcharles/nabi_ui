@@ -12,6 +12,10 @@ import Typography from 'material-ui/Typography/Typography';
 
 import { Role, hearAboutUsInfo } from '../model';
 
+/**
+ * Props for RegistrationForm
+ * @interface {RegistrationFormProps}
+ */
 interface RegistrationFormProps {
   handleChange: (event: React.FormEvent<{}>) => void;
   handleSubmit: (event: React.FormEvent<{}>) => void;
@@ -19,6 +23,10 @@ interface RegistrationFormProps {
   selectedRole: string;
 }
 
+/**
+ * Contains the registration form fields 
+ * @param RegistrationFormProps props - The component's props
+ */
 const RegistrationForm: React.StatelessComponent<RegistrationFormProps> = props => {
   const { handleChange, handleSubmit, hearAboutUs, selectedRole } = props;
   

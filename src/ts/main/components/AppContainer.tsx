@@ -10,13 +10,25 @@ import { UserState } from '../../Users/model';
 import { createInstructor, ProfileBuilder } from '../../Instructors';
 import { InstructorState } from '../../Instructors/model';
 
+/**
+ * State props to use with Redux connect
+ * @interface AppContainerStateProps
+ */
 export interface AppContainerStateProps {
   users: UserState[];
   dispatch: Dispatch<{}>;
 }
-
+/**
+ * Props for AppContainer
+ * @interface AppContainerProps
+ * @extends AppContainerStateProps
+ */
 export interface AppContainerProps extends AppContainerStateProps {}
-
+/**
+ * This is the application's main container
+ * @class AppContainer
+ * @extends React.Component<AppContainerProps, {}>
+ */
 class AppContainer extends React.Component<AppContainerProps, {}> {
   public render(): JSX.Element {
     
@@ -27,6 +39,9 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
     const dispatchChangeAvatar: any = (id: string, avatar: string) => dispatch(changeAvatar(id, avatar ));
     const dispatchZipCodeSearch: any = (user: UserState) => dispatch(fetchZipCodeAddress( user ));
 
+    /** 
+     * Renders Registration component
+     */
     const renderRegistration = (props: any) => (
       <Registration 
         createUser={dispatchCreateUser} 
@@ -34,7 +49,9 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
         searchZipCode={dispatchZipCodeSearch}
       />
     );
-
+    /** 
+     * Renders ProfileBuilder component
+     */
     const renderProfileBuilder = (props: any) => (
       <ProfileBuilder 
         users={users} 
@@ -67,7 +84,9 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
     );
   }
 }
-
+/** 
+ * Maps redux store state to props
+ */
 const mapStateToProps = (state: any, _ownProps: any) => ({
   users: state.users
 });

@@ -16,16 +16,29 @@ import SelectedInstrument from './Instruments/SelectedInstrument';
 import Rates from './Rates';
 import PlaceForLessons from './PlaceForLessons';
 
+/**
+ * BasicInfo dispatch props
+ * @interface BasicInfoDispatchProps
+ */
 interface BasicInfoDispatchProps {
   updateInstructor: (instructor: InstructorState) => void;
   updateUser: (user: UserState) => void;
 }
 
+/**
+ * BasicInfo's own props
+ * @interface BasicInfoOwnProps
+ */
 interface BasicInfoOwnProps { 
   user: UserState;
   changeAvatar: (id: string, avatar: string) => void;
 }
 
+/**
+ * State for BasicInfo
+ * @interface BasicInfoState
+ * @extends RatesState, PlaceForLessonsState
+ */
 interface BasicInfoState extends RatesState, PlaceForLessonsState {
   bio: string;
   displayName: string;
@@ -35,10 +48,20 @@ interface BasicInfoState extends RatesState, PlaceForLessonsState {
   studioAddress: string;
 }
 
+/**
+ * Props for BasicInfo
+ * @interface BasicInfoProps
+ * @extends BasicInfoDispatchProps & BasicInfoOwnProps
+ */
 interface BasicInfoProps extends
   BasicInfoDispatchProps,
   BasicInfoOwnProps { }
 
+/**
+ * BasicInfo: First step on the Profile Builder
+ * @class BasicInfo
+ * @extends React.Component<BasicInfoProps, BasicInfoState>
+ */
 export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
   constructor(props: BasicInfoProps) {
     super(props);
