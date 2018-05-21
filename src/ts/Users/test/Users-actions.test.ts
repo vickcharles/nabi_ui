@@ -82,30 +82,40 @@ describe('Users actions', () => {
         response: {
           'results': [
             {
-              'adrress_components': [
+              'address_components': [
                 {
-                  long_name: '73130',
-                  short_name: '73130',
-                  types: ['postal_code']
+                  'long_name': '73170',
+                  'short_name': '73170',
+                  'types': ['postal_code']
                 },
                 {
-                  long_name: 'Kings County',
-                  short_name: 'Kings County',
-                  types: ['political, administrative_area_level_2']
+                  'long_name': 'Oklahoma City',
+                  'short_name': 'Oklahoma City',
+                  'types': ['locality', 'political']
                 },
                 {
-                  long_name: 'New York',
-                  short_name: 'NY',
-                  types: ['political', 'administrative_area_level_1']
+                  'long_name': 'Cleveland County',
+                  'short_name': 'Cleveland County',
+                  'types': ['administrative_area_level_2', 'political']
                 },
                 {
-                  long_name: 'United States',
-                  short_name: 'US',
-                  types: ['political', 'country']
+                  'long_name': 'Oklahoma',
+                  'short_name': 'OK',
+                  'types': ['administrative_area_level_1', 'political']
+                },
+                {
+                  'long_name': 'United States',
+                  'short_name': 'US',
+                  'types': ['country', 'political']
                 }
-              ]
+              ],
+              'formatted_address': 'Oklahoma City, OK 73170, USA',
+              'place_id': 'ChIJUyovDstssocRC-42seBIaq8',
+              'postcode_localities': ['Moore', 'Oklahoma City'],
+              'types': ['postal_code']
             }
-          ]
+          ],
+          'status': 'OK'
         }
       });
     });
