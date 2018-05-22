@@ -151,7 +151,7 @@ const theme = createMuiTheme({
     },
     MuiSvgIcon: {
       colorPrimary: {
-        color: '#06c3e1'
+        color: '#06c3e1 !important'
       }
     },
     MuiTypography : {

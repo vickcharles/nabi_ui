@@ -2,6 +2,9 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 import Drawer from './Drawer';
 
+/** 
+ * Header component
+ */
 const Header = () => {
     return (
         <header>

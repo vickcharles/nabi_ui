@@ -15,7 +15,10 @@ const initialState: State = {
 
 let history: History;
 let store: Store<State>;
-
+/**
+ * Store singleton from redux
+ * @returns store
+ */
 export const getStore = () => {
     if (store) {
       return store;

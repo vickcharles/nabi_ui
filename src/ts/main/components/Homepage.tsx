@@ -3,6 +3,9 @@ import  { Link } from 'react-router-dom';
 import PageTitle from './PageTitle';
 import BackgroundImageSection from './HomeBackgroundSection';
 
+/** 
+ * Homepage component
+ */
 const Homepage = () => {
     return (
         <div>
