@@ -1,6 +1,6 @@
 import { AnyAction } from 'redux';
 import { UserState, IState } from './model';
-import { UserActions } from './constants/ActionTypes';
+import { UserActions, ZipCodeActions } from './constants/ActionTypes';
 
 const initialState: UserState[] = [];
 
@@ -27,6 +27,17 @@ export default function usersReducer(state: IState = initialState, action: AnyAc
             ...action.user
         }
         : user
+      );
+
+    case ZipCodeActions.FETCH_ZIPADDRES_DONE:
+      return <IState> state.map(user =>
+        user.id === action.zipcodedata.id
+          ? {
+            ...user,
+            city : action.zipcodedata.city,
+            state : action.zipcodedata.state
+          }
+          : user
       );
 
     default:

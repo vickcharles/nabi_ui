@@ -4,6 +4,9 @@ import instructorReducer from './Instructors';
 
 import { State } from './store';
 
+/** 
+ * Combines redux reducers
+ */
 const rootReducer = combineReducers<State>({
   users: userReducer,
   instructors: instructorReducer

@@ -57,7 +57,7 @@ ShallowWrapper {
         <WithStyles(Typography)
           className="nabi-text-center"
         >
-          
+          undefined, undefined 
         </WithStyles(Typography)>,
         <WithStyles(Typography)
           className="nabi-margin-top-small"
@@ -161,11 +161,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": "",
+          "children": "undefined, undefined ",
           "className": "nabi-text-center",
         },
         "ref": null,
-        "rendered": "",
+        "rendered": "undefined, undefined ",
         "type": [Function],
       },
       Object {
@@ -260,7 +260,7 @@ ShallowWrapper {
           <WithStyles(Typography)
             className="nabi-text-center"
           >
-            
+            undefined, undefined 
           </WithStyles(Typography)>,
           <WithStyles(Typography)
             className="nabi-margin-top-small"
@@ -364,11 +364,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "",
+            "children": "undefined, undefined ",
             "className": "nabi-text-center",
           },
           "ref": null,
-          "rendered": "",
+          "rendered": "undefined, undefined ",
           "type": [Function],
         },
         Object {

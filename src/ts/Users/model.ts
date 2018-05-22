@@ -61,6 +61,9 @@ export interface UserState {
   hearAboutUs: string;
   avatar?: string;
   displayName: string;
+  state?: string;
+  city?: string;
+  country?: string;
 }
 
 export type IState = UserState[];
