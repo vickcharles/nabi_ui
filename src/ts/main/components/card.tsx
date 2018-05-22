@@ -3,31 +3,41 @@ import  Card  from 'material-ui/Card';
 import { CardContent } from 'material-ui/Card';
 import CardMedia from 'material-ui/Card';
 import Typography from 'material-ui/Typography';
+import Button from 'material-ui/Button';
 
 /** 
  * Card component
  */
+export interface CardProps {
+  url: any;
+  text: string;
+  title: string;
+}
 
-const PopularInstrumentCard = () => {
+class PopularInstrumentCard extends React.Component <CardProps> {
+
+  render() {
     return (
         <div>
         <Card>
-        <CardMedia>
-        <img src="http://poze.zoopedia.ro/poze/large/pasari/Wallpaper_Pasari_cinteza_aurie_americana.jpg" alt="" />
-        </CardMedia>
+         <CardMedia>
+         <img src={this.props.url} alt=""/>
+         </CardMedia>
           <CardContent>
           <Typography  variant="headline" component="h2">
-            Lizard
+            {this.props.title}
           </Typography>
           <Typography component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+            {this.props.text}
           </Typography>
-        </CardContent>
-       
-      </Card>
+          <Button size="small" color="primary">
+            Share
+          </Button>
+          </CardContent>
+        </Card>
         </div>
     );
-};
+  }
+}
 
 export default PopularInstrumentCard ;
