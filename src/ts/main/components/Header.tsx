@@ -1,12 +1,10 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import Drawer from './Drawer';
 
 const Header = () => {
     return (
         <header>
             <Link id="nabi-logo-anchor" to="/">
-            <Drawer/>
                 <img 
                     id="nabi-logo" 
                     className="nabi-text-center" 
