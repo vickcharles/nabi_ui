@@ -1,14 +1,7 @@
 import * as React from 'react';
 import PopularInstrumetCard from './card';
 
-export interface MyProps {
-  id: string;
-  title: string;
-  text: string;
-  url: string;
-  data: String;
-}
-const data = [
+const data  = [
   {
     id: '1',
     title: 'html',
@@ -19,32 +12,50 @@ const data = [
   {
     id: '2',
     title: 'css',
-    text: 'https://i1.wp.com/informaticacoslada.com/wp-content/uploads/2015/07/css3.png?resize=365%2C512&ssl=1',
-   
+    text: 'I used to work at SapientNitro.',
+    url: '',
   },
   {
     id: '3',
-    title: 'Wordpress',
-    text: 'Now I work at SapientRazorfish.',
-    url: 'https://s.w.org/style/images/about/WordPress-logotype-wmark.png',
+    title: 'css',
+    text: 'I used to work at SapientNitro.',
+    url: '',
   },
 ];
 
-class PopularInstrumentSection extends React.Component {
+export interface MyCardProps {
+  key: number;
+  id: string;
+  title: string;
+  text: string;
+  url: string;
+  datas: string[];
+  data: any;
+ 
+}
+
+export interface DataProps {
+   datas: MyCardProps[];
+}
+class PopularInstrumentSection extends React.Component <DataProps, object>  {
 
     render() {
-        const Cards = data.map((data, idx, arr) =>
-
-          <PopularInstrumetCard  
-
-          title={data.title}
-          url={data.url}
-          />,
-         );  
-
+      const Cards = this.props.data.map((datas, i ) => {
         return (
+          
+          <PopularInstrumetCard 
+           key={i}
+           title={datas.title}
+           url={datas.url}
+           text={datas.text}
+          />
+
+        );
+        });
+
+      return (
           <div>
-          {Card}
+          {Cards}
           </div>
       );
     }
