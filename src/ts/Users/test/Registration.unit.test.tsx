@@ -26,7 +26,7 @@ describe('Registration', () => {
 
   describe('Method handleChange()', () => {
     function test_handleChange(name: string, value: string): void {
-      describe( 'When the event contains ' + name + ' for name and ' + value + ' for value', () => {
+      describe('When the event contains ' + name + ' for name and ' + value + ' for value', () => {
         beforeEach(() => {
           const event = {
             target: {
