@@ -11,7 +11,6 @@ interface PageTitleProps {
 /**
  * Page Title
  * @param {PageTitleProps} props 
- * @returns 
  */
 const PageTitle: React.StatelessComponent<PageTitleProps> = props => {
   return (

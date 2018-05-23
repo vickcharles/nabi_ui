@@ -5,12 +5,13 @@
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('https://fonts.googleapis.com/css?family=Montserrat:200');
+  src: url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,800');
 }
 
 body {
   background: #f0f3f6;
   margin: 0px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -20,44 +21,6 @@ header {
 
 li {
   list-style: none;
-}
-
-/*HOME PAGE*/
-#banner{
-  position: relative;
-  color:#f0f3f6;
-  background-image: url('../images/nabiBannerImage.jpg') !important;
-  background-size:cover !important;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center ;
-}
-
-#banner .container {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  top:45%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-}
-
-#banner h1{
-  width: 500px !important;
-  font-size: 32px !important;
-}
-
-#banner p{
-  width: 500px;
-  font-weight: 300 !important;
-  font-size: 20px !important;
-}
-
-#banner button{
-  margin-top: 40px !important;
-  margin-right: 30px !important;
-  padding: 15px 38px !important;
 }
 
 /*BACKGROUND COLOR*/
@@ -82,18 +45,6 @@ li {
   display: inline-block !important;
 }
 
-/*FONT SIZE*/
-.nabi-font-size-large {
-font-size: 32px;
-}
-
-.nabi-font-size-medium {
-  font-size: 20px;
-}
-
-.nabi-font-size-small {
-  font-size: 20px;
-}
 /*FONT FAMILY*/
 .nabi-font-jennasue {
 	font-family: 'JennaSue';
@@ -102,18 +53,14 @@ font-size: 32px;
 .nabi-font-montserrat {
 	font-family: 'Montserrat', sans-serif;
 }
-/*FONT COLOR*/
-.nabi-white-color{
-color: #f0f3f6;
-}
 
 /*FONT WEIGHT*/
 .nabi-text-mediumbold {
-  font-weight: 200 !important;
+  font-weight: 500 !important;
 }
 
 .nabi-text-semibold {
-	font-weight: 400;
+	font-weight: 600;
 }
 
 .nabi-text-extrabold {
@@ -186,6 +133,10 @@ color: #f0f3f6;
   margin-bottom: 40px !important;
 }
 
+.nabi-margin-bottom-zero {
+  margin-bottom: 0px !important;
+}
+
 .nabi-margin-left-xsmall {
   margin-left: 10px !important;
 }
@@ -248,6 +199,40 @@ color: #f0f3f6;
   text-transform: uppercase;
 }
 
+/*Homepage*/
+#banner {
+  height: 400px !important;
+  width: 100%;
+  position: relative;
+  color:#f0f3f6;
+  background-image: url('../images/nabiBannerImage.jpg') !important;
+  background-size:cover !important;
+  background-repeat: no-repeat;
+  background-position: center ;
+}
+
+#banner .container {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 55px;
+  position: absolute;
+}
+
+#banner h1 {
+  font-size: 38px !important;
+}
+
+#banner p {
+  font-size: 15px !important;
+}
+
+#banner button {
+  margin-top: 10px !important;
+  margin-right: 10px !important;
+  padding: 15px 20px !important;
+  font-size: 9px !important;
+}
+
 /*Page title*/
 #nabi-page-title {
   font-size: 25px !important;
@@ -281,24 +266,18 @@ color: #f0f3f6;
   .nabi-rates-field {
     display: inline !important;
   }
-  
-  #banner {
-    height: 400px !important;
-    background-image: cover !important;
-    width: 100% !important;
+  /*Homepage*/
+  #banner .container {
+    padding-top: 25px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
   }
-  #banner h1{
-    width: 350px !important;
-    font-size: 25px !important;
-  }
-
-  #banner p{
-    font-size: 15px !important;
-    width: 250px;
-    font-weight: 250 !important;
-  }
-
-  #banner button{
+  #banner button {
     margin-top: 10px !important;
     margin-right: 10px !important;
     padding: 15px 20px !important;
@@ -316,46 +295,33 @@ color: #f0f3f6;
     padding-right: 15px;
     width: 700px;
   }
-  #banner {
-    height: 500px !important;
-    
-  }
-
   /*Section*/
   .nabi-section {
     padding: 50px 80px;
   }
-  
-  #banner h1{
-    width: 500px !important;
-    font-size: 32px !important;
+  /*Homepage*/
+  #banner {
+    height: 500px !important;
   }
-    
-  #banner p{
-    width: 500px !important;
+  #banner h1 {
+    font-size: 60px !important;
+  }
+  #banner p {
     font-weight: 300;
     font-size: 20px !important;
   }
-
-  #banner button{
+  #banner button {
     margin-top: 40px !important;
     margin-right: 30px !important;
     padding: 15px 38px !important;
     font-size: 14px !important
   }
-
 }
 
 /* Tablets small laptops ----------- */
 
 @media (min-width: 960px) { 
    /****CUSTOM ELEMENTS****/
-
-   #banner {
-    height: 600px !important;
-    
-  }
-
   .nabi-container {
     width: 800px;
   }
@@ -366,24 +332,20 @@ color: #f0f3f6;
 	.hide-on-desktop {
 		display: none !important;
   }
-
   /*Instruments text*/
   .nabi-instruments-select {
     width: 38%;
     margin-right: 1% !important;
   }
-
   /*Instruments add button*/
   .nabi-instruments-add {
     width: 22%;
     margin-top: 0px !important;
   }
-
   /*Selected Instruments */
   .selected-instruments {
     width: 40%
   }
-
   /*Rates*/
   .rates {
     width: 40%
