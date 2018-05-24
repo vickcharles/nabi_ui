@@ -32,8 +32,13 @@ li {
   background-color: #fff;
 }
 
-.nabi-background-white {
-  background-color: #fff;
+.nabi-background-nabi {
+  background-color: #06c3e1;
+}
+
+/*CURSOR*/
+.nabi-cursor-pointer {
+  cursor: pointer;
 }
 
 /*DISPLAY*/
@@ -260,6 +265,11 @@ li {
   width: 70px;
 } 
 
+ /*Grid component*/
+ .nabi-grid-background-nabi div div {
+  background: #06c3e1 !important;
+}
+
 /* iPhones(landscape) ----------- */
 @media only screen  and (min-width : 375px) {
   /*Rates*/
@@ -328,7 +338,7 @@ li {
    /*Responsive Hide*/
 	.hide-on-mobile {
 		display: block !important;
-	}
+  }
 	.hide-on-desktop {
 		display: none !important;
   }
@@ -348,7 +358,11 @@ li {
   }
   /*Rates*/
   .rates {
-    width: 40%
+    width: 50%
+  }
+  /*Availability*/
+  .nabi-availability-legend-wrapper {
+    width: 50%;
   }
 }
 

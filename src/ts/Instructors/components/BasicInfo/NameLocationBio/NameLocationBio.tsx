@@ -86,7 +86,6 @@ export class NameLocationBio extends React.Component<NameLocationBioProps, NameL
           >
             {`${this.props.displayName}`}
           </Typography>
-         
           <IconButton 
             onClick={() => this.setState({ isModalOpenEditName: true })}
             onMouseOver={this.onMouseOver} 
@@ -95,15 +94,12 @@ export class NameLocationBio extends React.Component<NameLocationBioProps, NameL
             <Edit/>
           </IconButton>
         </div>
-        
         <Typography className="nabi-text-center">
         {`${this.props.user.city}, ${this.props.user.state} ${this.props.user.zipCode}`}
         </Typography>
-
         <Typography className="nabi-margin-top-small" variant="body2">
           Bio
         </Typography>
-
         <TextField
           id="bio"
           margin="normal"
@@ -116,9 +112,7 @@ export class NameLocationBio extends React.Component<NameLocationBioProps, NameL
           fullWidth={true}
           rows={6}
         />
-
         <Divider className="nabi-margin-top-small"/>
-
         <EditName 
           firstName={this.props.user.firstName}
           lastName={this.props.user.lastName}

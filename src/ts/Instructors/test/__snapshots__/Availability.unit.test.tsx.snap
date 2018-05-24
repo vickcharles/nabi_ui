@@ -1,0 +1,3750 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Availability Renders the component 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Availability
+    updateInstructor={[MockFunction]}
+    userId=""
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <WithStyles(Typography)
+          className="nabi-margin-top-small nabi-margin-bottom-xsmall"
+          variant="body2"
+        >
+          Availability
+        </WithStyles(Typography)>,
+        <WithStyles(Typography)>
+          Click to select your availability
+        </WithStyles(Typography)>,
+        <div
+          className="nabi-availability-legend-wrapper nabi-text-center nabi-margin-bottom-small"
+        >
+          <WithStyles(GridList)
+            cellHeight={50}
+            cols={2}
+          >
+            <WithStyles(GridListTile)>
+              <WithStyles(GridListTileBar)
+                title="Unavailable"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-grid-background-nabi"
+            >
+              <WithStyles(GridListTileBar)
+                title="Available"
+              />
+            </WithStyles(GridListTile)>
+          </WithStyles(GridList)>
+        </div>,
+        <div>
+          <WithStyles(GridList)
+            cellHeight={50}
+            cols={9}
+          >
+            <WithStyles(GridListTile)
+              className="nabi-background-white nabi-align-center"
+              cols={2}
+            >
+              <WithStyles(GridListTileBar)
+                className="nabi-text-dark nabi-font-weight-bold"
+                title="Schedule"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-align-center"
+            >
+              <WithStyles(GridListTileBar)
+                title="M"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-align-center"
+            >
+              <WithStyles(GridListTileBar)
+                title="Tu"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-align-center"
+            >
+              <WithStyles(GridListTileBar)
+                title="W"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-align-center"
+            >
+              <WithStyles(GridListTileBar)
+                title="Th"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-align-center"
+            >
+              <WithStyles(GridListTileBar)
+                title="F"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-align-center"
+            >
+              <WithStyles(GridListTileBar)
+                title="Sa"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-align-center"
+            >
+              <WithStyles(GridListTileBar)
+                title="Su"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-align-center"
+              cols={2}
+            >
+              <WithStyles(GridListTileBar)
+                title="Early Morning"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-align-center"
+              cols={2}
+            >
+              <WithStyles(GridListTileBar)
+                title="Late Morning"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-align-center"
+              cols={2}
+            >
+              <WithStyles(GridListTileBar)
+                title="Early Afternoon"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-align-center"
+              cols={2}
+            >
+              <WithStyles(GridListTileBar)
+                title="Late Afternoon"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+          </WithStyles(GridList)>
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Availability",
+          "className": "nabi-margin-top-small nabi-margin-bottom-xsmall",
+          "variant": "body2",
+        },
+        "ref": null,
+        "rendered": "Availability",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Click to select your availability",
+        },
+        "ref": null,
+        "rendered": "Click to select your availability",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <WithStyles(GridList)
+            cellHeight={50}
+            cols={2}
+          >
+            <WithStyles(GridListTile)>
+              <WithStyles(GridListTileBar)
+                title="Unavailable"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-grid-background-nabi"
+            >
+              <WithStyles(GridListTileBar)
+                title="Available"
+              />
+            </WithStyles(GridListTile)>
+          </WithStyles(GridList)>,
+          "className": "nabi-availability-legend-wrapper nabi-text-center nabi-margin-bottom-small",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "cellHeight": 50,
+            "children": Array [
+              <WithStyles(GridListTile)>
+                <WithStyles(GridListTileBar)
+                  title="Unavailable"
+                />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-grid-background-nabi"
+              >
+                <WithStyles(GridListTileBar)
+                  title="Available"
+                />
+              </WithStyles(GridListTile)>,
+            ],
+            "cols": 2,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar)
+                  title="Unavailable"
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "title": "Unavailable",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar)
+                  title="Available"
+                />,
+                "className": "nabi-grid-background-nabi",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "title": "Available",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <WithStyles(GridList)
+            cellHeight={50}
+            cols={9}
+          >
+            <WithStyles(GridListTile)
+              className="nabi-background-white nabi-align-center"
+              cols={2}
+            >
+              <WithStyles(GridListTileBar)
+                className="nabi-text-dark nabi-font-weight-bold"
+                title="Schedule"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-align-center"
+            >
+              <WithStyles(GridListTileBar)
+                title="M"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-align-center"
+            >
+              <WithStyles(GridListTileBar)
+                title="Tu"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-align-center"
+            >
+              <WithStyles(GridListTileBar)
+                title="W"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-align-center"
+            >
+              <WithStyles(GridListTileBar)
+                title="Th"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-align-center"
+            >
+              <WithStyles(GridListTileBar)
+                title="F"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-align-center"
+            >
+              <WithStyles(GridListTileBar)
+                title="Sa"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-align-center"
+            >
+              <WithStyles(GridListTileBar)
+                title="Su"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-align-center"
+              cols={2}
+            >
+              <WithStyles(GridListTileBar)
+                title="Early Morning"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-align-center"
+              cols={2}
+            >
+              <WithStyles(GridListTileBar)
+                title="Late Morning"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-align-center"
+              cols={2}
+            >
+              <WithStyles(GridListTileBar)
+                title="Early Afternoon"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-align-center"
+              cols={2}
+            >
+              <WithStyles(GridListTileBar)
+                title="Late Afternoon"
+              />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+            <WithStyles(GridListTile)
+              className="nabi-cursor-pointer"
+              onClick={[Function]}
+            >
+              <WithStyles(GridListTileBar) />
+            </WithStyles(GridListTile)>
+          </WithStyles(GridList)>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "cellHeight": 50,
+            "children": Array [
+              <WithStyles(GridListTile)
+                className="nabi-background-white nabi-align-center"
+                cols={2}
+              >
+                <WithStyles(GridListTileBar)
+                  className="nabi-text-dark nabi-font-weight-bold"
+                  title="Schedule"
+                />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+              >
+                <WithStyles(GridListTileBar)
+                  title="M"
+                />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+              >
+                <WithStyles(GridListTileBar)
+                  title="Tu"
+                />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+              >
+                <WithStyles(GridListTileBar)
+                  title="W"
+                />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+              >
+                <WithStyles(GridListTileBar)
+                  title="Th"
+                />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+              >
+                <WithStyles(GridListTileBar)
+                  title="F"
+                />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+              >
+                <WithStyles(GridListTileBar)
+                  title="Sa"
+                />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+              >
+                <WithStyles(GridListTileBar)
+                  title="Su"
+                />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+                cols={2}
+              >
+                <WithStyles(GridListTileBar)
+                  title="Early Morning"
+                />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+                cols={2}
+              >
+                <WithStyles(GridListTileBar)
+                  title="Late Morning"
+                />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+                cols={2}
+              >
+                <WithStyles(GridListTileBar)
+                  title="Early Afternoon"
+                />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+                cols={2}
+              >
+                <WithStyles(GridListTileBar)
+                  title="Late Afternoon"
+                />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>,
+            ],
+            "cols": 9,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar)
+                  className="nabi-text-dark nabi-font-weight-bold"
+                  title="Schedule"
+                />,
+                "className": "nabi-background-white nabi-align-center",
+                "cols": 2,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "className": "nabi-text-dark nabi-font-weight-bold",
+                  "title": "Schedule",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar)
+                  title="M"
+                />,
+                "className": "nabi-align-center",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "title": "M",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar)
+                  title="Tu"
+                />,
+                "className": "nabi-align-center",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "title": "Tu",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar)
+                  title="W"
+                />,
+                "className": "nabi-align-center",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "title": "W",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar)
+                  title="Th"
+                />,
+                "className": "nabi-align-center",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "title": "Th",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar)
+                  title="F"
+                />,
+                "className": "nabi-align-center",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "title": "F",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar)
+                  title="Sa"
+                />,
+                "className": "nabi-align-center",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "title": "Sa",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar)
+                  title="Su"
+                />,
+                "className": "nabi-align-center",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "title": "Su",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar)
+                  title="Early Morning"
+                />,
+                "className": "nabi-align-center",
+                "cols": 2,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "title": "Early Morning",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar)
+                  title="Late Morning"
+                />,
+                "className": "nabi-align-center",
+                "cols": 2,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "title": "Late Morning",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar)
+                  title="Early Afternoon"
+                />,
+                "className": "nabi-align-center",
+                "cols": 2,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "title": "Early Afternoon",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar)
+                  title="Late Afternoon"
+                />,
+                "className": "nabi-align-center",
+                "cols": 2,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "title": "Late Afternoon",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(GridListTileBar) />,
+                "className": "nabi-cursor-pointer",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <WithStyles(Typography)
+            className="nabi-margin-top-small nabi-margin-bottom-xsmall"
+            variant="body2"
+          >
+            Availability
+          </WithStyles(Typography)>,
+          <WithStyles(Typography)>
+            Click to select your availability
+          </WithStyles(Typography)>,
+          <div
+            className="nabi-availability-legend-wrapper nabi-text-center nabi-margin-bottom-small"
+          >
+            <WithStyles(GridList)
+              cellHeight={50}
+              cols={2}
+            >
+              <WithStyles(GridListTile)>
+                <WithStyles(GridListTileBar)
+                  title="Unavailable"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-grid-background-nabi"
+              >
+                <WithStyles(GridListTileBar)
+                  title="Available"
+                />
+              </WithStyles(GridListTile)>
+            </WithStyles(GridList)>
+          </div>,
+          <div>
+            <WithStyles(GridList)
+              cellHeight={50}
+              cols={9}
+            >
+              <WithStyles(GridListTile)
+                className="nabi-background-white nabi-align-center"
+                cols={2}
+              >
+                <WithStyles(GridListTileBar)
+                  className="nabi-text-dark nabi-font-weight-bold"
+                  title="Schedule"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+              >
+                <WithStyles(GridListTileBar)
+                  title="M"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+              >
+                <WithStyles(GridListTileBar)
+                  title="Tu"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+              >
+                <WithStyles(GridListTileBar)
+                  title="W"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+              >
+                <WithStyles(GridListTileBar)
+                  title="Th"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+              >
+                <WithStyles(GridListTileBar)
+                  title="F"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+              >
+                <WithStyles(GridListTileBar)
+                  title="Sa"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+              >
+                <WithStyles(GridListTileBar)
+                  title="Su"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+                cols={2}
+              >
+                <WithStyles(GridListTileBar)
+                  title="Early Morning"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+                cols={2}
+              >
+                <WithStyles(GridListTileBar)
+                  title="Late Morning"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+                cols={2}
+              >
+                <WithStyles(GridListTileBar)
+                  title="Early Afternoon"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+                cols={2}
+              >
+                <WithStyles(GridListTileBar)
+                  title="Late Afternoon"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+            </WithStyles(GridList)>
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Availability",
+            "className": "nabi-margin-top-small nabi-margin-bottom-xsmall",
+            "variant": "body2",
+          },
+          "ref": null,
+          "rendered": "Availability",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Click to select your availability",
+          },
+          "ref": null,
+          "rendered": "Click to select your availability",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <WithStyles(GridList)
+              cellHeight={50}
+              cols={2}
+            >
+              <WithStyles(GridListTile)>
+                <WithStyles(GridListTileBar)
+                  title="Unavailable"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-grid-background-nabi"
+              >
+                <WithStyles(GridListTileBar)
+                  title="Available"
+                />
+              </WithStyles(GridListTile)>
+            </WithStyles(GridList)>,
+            "className": "nabi-availability-legend-wrapper nabi-text-center nabi-margin-bottom-small",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "cellHeight": 50,
+              "children": Array [
+                <WithStyles(GridListTile)>
+                  <WithStyles(GridListTileBar)
+                    title="Unavailable"
+                  />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-grid-background-nabi"
+                >
+                  <WithStyles(GridListTileBar)
+                    title="Available"
+                  />
+                </WithStyles(GridListTile)>,
+              ],
+              "cols": 2,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar)
+                    title="Unavailable"
+                  />,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "title": "Unavailable",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar)
+                    title="Available"
+                  />,
+                  "className": "nabi-grid-background-nabi",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "title": "Available",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <WithStyles(GridList)
+              cellHeight={50}
+              cols={9}
+            >
+              <WithStyles(GridListTile)
+                className="nabi-background-white nabi-align-center"
+                cols={2}
+              >
+                <WithStyles(GridListTileBar)
+                  className="nabi-text-dark nabi-font-weight-bold"
+                  title="Schedule"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+              >
+                <WithStyles(GridListTileBar)
+                  title="M"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+              >
+                <WithStyles(GridListTileBar)
+                  title="Tu"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+              >
+                <WithStyles(GridListTileBar)
+                  title="W"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+              >
+                <WithStyles(GridListTileBar)
+                  title="Th"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+              >
+                <WithStyles(GridListTileBar)
+                  title="F"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+              >
+                <WithStyles(GridListTileBar)
+                  title="Sa"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+              >
+                <WithStyles(GridListTileBar)
+                  title="Su"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+                cols={2}
+              >
+                <WithStyles(GridListTileBar)
+                  title="Early Morning"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+                cols={2}
+              >
+                <WithStyles(GridListTileBar)
+                  title="Late Morning"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+                cols={2}
+              >
+                <WithStyles(GridListTileBar)
+                  title="Early Afternoon"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-align-center"
+                cols={2}
+              >
+                <WithStyles(GridListTileBar)
+                  title="Late Afternoon"
+                />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+              <WithStyles(GridListTile)
+                className="nabi-cursor-pointer"
+                onClick={[Function]}
+              >
+                <WithStyles(GridListTileBar) />
+              </WithStyles(GridListTile)>
+            </WithStyles(GridList)>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "cellHeight": 50,
+              "children": Array [
+                <WithStyles(GridListTile)
+                  className="nabi-background-white nabi-align-center"
+                  cols={2}
+                >
+                  <WithStyles(GridListTileBar)
+                    className="nabi-text-dark nabi-font-weight-bold"
+                    title="Schedule"
+                  />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-align-center"
+                >
+                  <WithStyles(GridListTileBar)
+                    title="M"
+                  />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-align-center"
+                >
+                  <WithStyles(GridListTileBar)
+                    title="Tu"
+                  />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-align-center"
+                >
+                  <WithStyles(GridListTileBar)
+                    title="W"
+                  />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-align-center"
+                >
+                  <WithStyles(GridListTileBar)
+                    title="Th"
+                  />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-align-center"
+                >
+                  <WithStyles(GridListTileBar)
+                    title="F"
+                  />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-align-center"
+                >
+                  <WithStyles(GridListTileBar)
+                    title="Sa"
+                  />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-align-center"
+                >
+                  <WithStyles(GridListTileBar)
+                    title="Su"
+                  />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-align-center"
+                  cols={2}
+                >
+                  <WithStyles(GridListTileBar)
+                    title="Early Morning"
+                  />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-align-center"
+                  cols={2}
+                >
+                  <WithStyles(GridListTileBar)
+                    title="Late Morning"
+                  />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-align-center"
+                  cols={2}
+                >
+                  <WithStyles(GridListTileBar)
+                    title="Early Afternoon"
+                  />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-align-center"
+                  cols={2}
+                >
+                  <WithStyles(GridListTileBar)
+                    title="Late Afternoon"
+                  />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+                <WithStyles(GridListTile)
+                  className="nabi-cursor-pointer"
+                  onClick={[Function]}
+                >
+                  <WithStyles(GridListTileBar) />
+                </WithStyles(GridListTile)>,
+              ],
+              "cols": 9,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "2",
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar)
+                    className="nabi-text-dark nabi-font-weight-bold"
+                    title="Schedule"
+                  />,
+                  "className": "nabi-background-white nabi-align-center",
+                  "cols": 2,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "className": "nabi-text-dark nabi-font-weight-bold",
+                    "title": "Schedule",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar)
+                    title="M"
+                  />,
+                  "className": "nabi-align-center",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "title": "M",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar)
+                    title="Tu"
+                  />,
+                  "className": "nabi-align-center",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "title": "Tu",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar)
+                    title="W"
+                  />,
+                  "className": "nabi-align-center",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "title": "W",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar)
+                    title="Th"
+                  />,
+                  "className": "nabi-align-center",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "title": "Th",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar)
+                    title="F"
+                  />,
+                  "className": "nabi-align-center",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "title": "F",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar)
+                    title="Sa"
+                  />,
+                  "className": "nabi-align-center",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "title": "Sa",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar)
+                    title="Su"
+                  />,
+                  "className": "nabi-align-center",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "title": "Su",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar)
+                    title="Early Morning"
+                  />,
+                  "className": "nabi-align-center",
+                  "cols": 2,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "title": "Early Morning",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar)
+                    title="Late Morning"
+                  />,
+                  "className": "nabi-align-center",
+                  "cols": 2,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "title": "Late Morning",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar)
+                    title="Early Afternoon"
+                  />,
+                  "className": "nabi-align-center",
+                  "cols": 2,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "title": "Early Afternoon",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar)
+                    title="Late Afternoon"
+                  />,
+                  "className": "nabi-align-center",
+                  "cols": 2,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "title": "Late Afternoon",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(GridListTileBar) />,
+                  "className": "nabi-cursor-pointer",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

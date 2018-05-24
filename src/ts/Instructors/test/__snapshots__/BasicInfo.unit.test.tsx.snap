@@ -88,6 +88,10 @@ ShallowWrapper {
           studioAddress=""
           updateStudioAddress={[Function]}
         />,
+        <Availability
+          updateInstructor={[Function]}
+          userId=""
+        />,
       ],
     },
     "ref": null,
@@ -189,6 +193,18 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "updateInstructor": [Function],
+          "userId": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": "div",
   },
@@ -251,6 +267,10 @@ ShallowWrapper {
             studio={false}
             studioAddress=""
             updateStudioAddress={[Function]}
+          />,
+          <Availability
+            updateInstructor={[Function]}
+            userId=""
           />,
         ],
       },
@@ -348,6 +368,18 @@ ShallowWrapper {
             "studio": false,
             "studioAddress": "",
             "updateStudioAddress": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "updateInstructor": [Function],
+            "userId": "",
           },
           "ref": null,
           "rendered": null,

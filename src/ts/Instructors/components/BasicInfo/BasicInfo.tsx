@@ -15,6 +15,7 @@ import Instruments from './Instruments/Instruments';
 import SelectedInstrument from './Instruments/SelectedInstrument';
 import Rates from './Rates';
 import PlaceForLessons from './PlaceForLessons';
+import Availability from './Availability';
 
 /**
  * BasicInfo dispatch props
@@ -272,6 +273,10 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
           online={this.state.online}
           studioAddress={this.state.studioAddress}
           updateStudioAddress={this.updateStudioAddress}
+        />
+        <Availability 
+          updateInstructor={(instructor: InstructorState) => this.updateInstructorCall(instructor)}
+          userId={this.props.user.id}
         />
       </div>
     );
