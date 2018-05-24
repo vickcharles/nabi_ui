@@ -39,7 +39,7 @@ interface AvailabilityState {
   sunLateAfternoon: boolean;
 }
 
-// NOTE: I am passing any as state type to fix linting warning, this may need attention
+// NOTE: Any is being passed as state type to fix linting warning, this may need attention
 export class Availability extends React.Component<AvailabilityProps, AvailabilityState & any> {
   constructor(props: AvailabilityProps) {
     super(props);
@@ -78,14 +78,15 @@ export class Availability extends React.Component<AvailabilityProps, Availabilit
   }
 
   public toggleAvailability(dayTime: string): void {
-    const isAvailable = this.state[dayTime] === false ? true : false;
-    
     this.setState(
-      { [dayTime]: isAvailable }, 
+      { [dayTime]: !this.state[dayTime] }, 
       () => {
       const instructor = {
         userId: this.props.userId,
-        availability: this.state.friEarlyAfternoon
+        availability: {
+          ...this.state,
+          [dayTime]: this.state[dayTime]
+        }
       };
       this.props.updateInstructor(instructor);
     });
