@@ -8,36 +8,34 @@ import Button from 'material-ui/Button';
 /** 
  * Card component
  */
+
 export interface CardProps {
-  url: any;
+  url: string;
   text: string;
   title: string;
 }
 
-class PopularInstrumentCard extends React.Component <CardProps> {
-
-  render() {
+const PopularInstrumentCard: React.StatelessComponent<CardProps> = props =>  {
     return (
-        <div>
-        <Card>
-         <CardMedia>
-         <img src={this.props.url} alt=""/>
-         </CardMedia>
-          <CardContent>
-          <Typography  variant="headline" component="h2">
-            {this.props.title}
-          </Typography>
-          <Typography component="p">
-            {this.props.text}
-          </Typography>
-          <Button size="small" color="primary">
-            Share
-          </Button>
-          </CardContent>
+      <div className="Cards">
+        <Card className="Cards">
+        <CardMedia className="CardMedia box-shadow-none">
+          <img src={props.url} alt=""/>
+        </CardMedia>
+        <CardContent>
+        <Typography  variant="headline" component="h2">
+          {props.title}
+         </Typography>
+        <Typography component="p">
+          {props.text}
+        </Typography>
+        <Button size="small" color="primary">
+          GET STARED
+        </Button>
+        </CardContent>
         </Card>
-        </div>
+      </div>
     );
-  }
-}
+};
 
 export default PopularInstrumentCard ;
