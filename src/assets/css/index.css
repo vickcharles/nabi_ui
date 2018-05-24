@@ -26,7 +26,38 @@ li {
 a {
   text-decoration: none;
 }
+/*POPULAR ISTRUMENT SECTION*/
+.nabi-popular-instrument-section {
+  height: auto;
+  padding-top:6% ;
+  padding-bottom: 8%;
+}
 
+.Cards {
+  width: 310px !important;
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  margin-right:2%;
+  margin-left: 0.4%;
+  margin-top: 2%;
+}
+
+.CardMedia {
+  height: 150px!important;
+  border: none !important;
+}
+
+.CardMedia img {
+  width: 100% !important;
+  height: 150px !important;
+
+}
+.container {
+  width: 83%;
+  margin-right: auto;
+  margin-left: auto;
+}
 /*BACKGROUND COLOR*/
 .nabi-background-color {
 	background-color: #f0f3f6;
@@ -44,7 +75,16 @@ a {
 .nabi-cursor-pointer {
 	cursor: pointer;
 }
+/*Color*/
 
+.nabi-color{
+  color:#06c3e1 !important;
+}
+
+/**/
+.box-shadow-none{
+  box-shadow: none !important;
+}
 /*DISPLAY*/
 .nabi-display-block {
   display: block !important;

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import BackgroundImageSection from './BackgroundImageSection';
-import PopularInstrumetCard from './card';
+import PopularInstrumentSection from './PopularInstrumentSection';
 
 /** 
  * Homepage component
@@ -9,7 +9,7 @@ const Homepage = () => {
   return (
     <div>
       <BackgroundImageSection />
-      <PopularInstrumetCard />
+      <PopularInstrumentSection />
     </div>
   );
 };
