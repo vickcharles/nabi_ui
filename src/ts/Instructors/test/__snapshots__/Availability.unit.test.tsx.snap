@@ -31,8 +31,7 @@ ShallowWrapper {
           Click to select your availability
         </WithStyles(Typography)>,
         <div
-          className="nabi-availability-legend-wrapper nabi-text-center 
-          nabi-margin-bottom-small"
+          className="nabi-availability-legend-wrapper nabi-text-center nabi-margin-bottom-small"
         >
           <WithStyles(GridList)
             cellHeight={50}
@@ -367,8 +366,7 @@ ShallowWrapper {
               />
             </WithStyles(GridListTile)>
           </WithStyles(GridList)>,
-          "className": "nabi-availability-legend-wrapper nabi-text-center 
-          nabi-margin-bottom-small",
+          "className": "nabi-availability-legend-wrapper nabi-text-center nabi-margin-bottom-small",
         },
         "ref": null,
         "rendered": Object {
@@ -1895,8 +1893,7 @@ ShallowWrapper {
             Click to select your availability
           </WithStyles(Typography)>,
           <div
-            className="nabi-availability-legend-wrapper nabi-text-center 
-          nabi-margin-bottom-small"
+            className="nabi-availability-legend-wrapper nabi-text-center nabi-margin-bottom-small"
           >
             <WithStyles(GridList)
               cellHeight={50}
@@ -2231,8 +2228,7 @@ ShallowWrapper {
                 />
               </WithStyles(GridListTile)>
             </WithStyles(GridList)>,
-            "className": "nabi-availability-legend-wrapper nabi-text-center 
-          nabi-margin-bottom-small",
+            "className": "nabi-availability-legend-wrapper nabi-text-center nabi-margin-bottom-small",
           },
           "ref": null,
           "rendered": Object {
