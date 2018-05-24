@@ -33,31 +33,31 @@ a {
   padding-bottom: 8%;
 }
 
-.Cards {
+.card {
   width: 310px !important;
   display: inline-block;
   position: relative;
   text-align: left;
-  margin-right:2%;
-  margin-left: 0.4%;
+  margin-left: 2%;
   margin-top: 2%;
+  height: 300px;
 }
 
-.CardMedia {
-  height: 150px!important;
-  border: none !important;
+.card:first-child {
+  margin-left: 0px !important;
+  margin-top: 0%;
 }
 
-.CardMedia img {
+.card img {
   width: 100% !important;
-  height: 150px !important;
-
+  height: 120px !important;
 }
 .container {
-  width: 83%;
+  width: 80%;
   margin-right: auto;
   margin-left: auto;
 }
+
 /*BACKGROUND COLOR*/
 .nabi-background-color {
 	background-color: #f0f3f6;
@@ -85,6 +85,7 @@ a {
 .box-shadow-none{
   box-shadow: none !important;
 }
+
 /*DISPLAY*/
 .nabi-display-block {
   display: block !important;
@@ -395,7 +396,16 @@ a {
 	.nabi-responsive-button {
 		padding: 5px 15px !important;
 		font-size: 11px !important;
-	}
+  }
+  .card {
+    margin-left: 0% !important;
+    width: 100% !important;
+    margin-top: 7%;
+  }
+  .card img {
+    width: 100% !important;
+    height: 180px !important;
+  }
 }
 
 /* iPads (landscape) ----------- */
@@ -455,7 +465,11 @@ a {
 		margin-right: 30px !important;
 		padding: 15px 38px !important;
 		font-size: 14px !important
-	}
+  }
+  .card{
+    margin: 10px  0 15px 15px!important;
+    width: 310px !important;
+  }
 	/*header*/
 	#menu {
 		top: 37% !important;
@@ -470,11 +484,7 @@ a {
 		padding: 12px 25px !important;
 		font-size: 12px !important;
 	}
-	header .container {
-		padding-bottom: 20px !important;
-		padding-top: 20px;
-	}
-}
+}  
 
 /* Tablets small laptops ----------- */
 @media (min-width: 960px) {

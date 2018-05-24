@@ -3,31 +3,30 @@ import PopularInstrumetCard from './card';
 
 export interface MyCardProps {
   id: string;
-  title: string;
-  text: string;
-  url: string;
+  ImageUrl: string;
+  instrument: string;
+  numberOfInstructors: number;
 }
 
 const data: MyCardProps[] = [
   {
     id: '1',
-    title: 'Learn Keyboard',
-    text: '19 Keyboard instructor in your area',
-    url: require('../../../assets/images/nabi-home-popular-instruments-drums.jpg'),
-   
+    instrument: 'guitar',
+    ImageUrl: require('../../../assets/images/nabi-home-popular-instruments-drums.jpg'),
+    numberOfInstructors: 10,
 },
 
   {
     id: '2',
-    title: 'Learn Guitar',
-    text: '7 guitar instructors in your area',
-    url: require('../../../assets/images/nabi-home-popular-instruments-drums.jpg'),
+    instrument: 'piano',
+    ImageUrl: require('../../../assets/images/nabi-home-popular-instruments-drums.jpg'),
+    numberOfInstructors: 17,
   },
   {
     id: '3',
-    title: 'Learn Drums',
-    text: '18 drums instructor in your area',
-    url: require('../../../assets/images/nabi-home-popular-instruments-drums.jpg'),
+    instrument: 'drums',
+    ImageUrl: require('../../../assets/images/nabi-home-popular-instruments-drums.jpg'),
+    numberOfInstructors: 16,
   },
 ];
 
@@ -38,9 +37,9 @@ class PopularInstrumentSection extends React.Component <{}, {}>  {
       return (
           <PopularInstrumetCard 
            key={i}
-           title={items.title}
-           url={items.url}
-           text={items.text}
+           ImageUrl={items.ImageUrl}
+           instrument={items.instrument}
+           numberOfInstructors={items.numberOfInstructors}
           />
       );
       });
