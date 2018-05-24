@@ -99,10 +99,7 @@ export class Availability extends React.Component<AvailabilityProps, Availabilit
             Availability
           </Typography>
           <Typography >Click to select your availability</Typography>
-        <div 
-          className="nabi-availability-legend-wrapper nabi-text-center 
-          nabi-margin-bottom-small"
-        >
+        <div className="nabi-availability-legend-wrapper nabi-text-center nabi-margin-bottom-small">
           <GridList cellHeight={50} cols={2}>
             <GridListTile>
               <GridListTileBar title="Unavailable" />
