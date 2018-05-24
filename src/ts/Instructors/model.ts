@@ -1,3 +1,19 @@
+export enum DegreeType {
+  associate = 'Associate Degree',
+  bachelors = 'Bachelor\'s Degree',
+  graduate = 'Graduate Degreee',
+  professional = 'Professional Degree',
+  certification = 'Certification',
+  other = 'Other'
+}
+
+export interface Education {
+  school: string;
+  graduationYear: number;
+  DegreeType: DegreeType;
+  fieldOfStudy: string;
+}
+
 export enum PlaceForLessonsOptions {
   home = 'Student\'s home',
   studio = 'Instructor\'s studio',
@@ -42,6 +58,7 @@ export interface InstructorState {
   rates?: RatesState;
   placeForLessons?: PlaceForLessonsState;
   studioAddress?: string;
+  education?: Education;
 }
 
 export type IState = InstructorState[];

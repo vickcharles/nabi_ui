@@ -13,6 +13,8 @@ import { PageTitle } from '../../main';
 import BasicInfo from './BasicInfo/BasicInfo';
 import { Role, UserState } from '../../Users/model';
 
+import Education from './Education/Education';
+
 const styles = (theme: Theme) => ({
   mobileStepper: {
     padding: '0px'
@@ -95,7 +97,7 @@ export class ProfileBuilder extends React.Component
       case 0:
         return <BasicInfo user={this.state.user} changeAvatar={this.props.changeAvatar}/>;
       case 1:
-        return '';
+        return <Education />;
       case 2:
         return '';
       case 3:
