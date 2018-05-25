@@ -9,10 +9,18 @@ import Button from 'material-ui/Button';
 
 import { DegreeType } from '../../model';
 
+/**
+ * Props for EducationFields
+ * @interface EducationFieldProps
+ */
 interface EducationFieldProps {
 
 }
 
+/**
+ * EducationFields
+ * @extends React.StatelessComponent<EducationFieldProps>
+ */
 const EducationFields: React.StatelessComponent<EducationFieldProps> = props => {
   return (
     <div className="nabi-education">
