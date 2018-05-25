@@ -17,7 +17,7 @@ export interface CardProps {
 
 const PopularInstrumentCard: React.StatelessComponent<CardProps> = props =>  {
     return (
-      <div className="card">
+      <div className="card nabi-display-inline-block">
         <Card>
         <CardMedia className="CardMedia box-shadow-none">
           <img src={props.ImageUrl} alt=""/>
