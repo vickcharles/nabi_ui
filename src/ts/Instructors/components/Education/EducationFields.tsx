@@ -39,7 +39,7 @@ const EducationFields: React.StatelessComponent<EducationFieldProps> = props => 
         id="studyField"
         margin="normal"
         name="studyField"
-        placeholder="Field of study (Major or concentration)"
+        placeholder="Field of study (major or concentration)"
         required={true}
       />
        <FormControl>
