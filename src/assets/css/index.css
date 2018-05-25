@@ -27,20 +27,13 @@ a {
   text-decoration: none;
 }
 /*POPULAR ISTRUMENT SECTION*/
-.nabi-popular-instrument-section {
-  height: auto;
-  padding-top:6% ;
-  padding-bottom: 8%;
-}
 
 .card {
-  width: 310px !important;
-  display: inline-block;
+  width: 100% !important;
   position: relative;
   text-align: left;
-  margin-left: 2%;
-  margin-top: 2%;
-  height: 300px;
+  margin-top: 5%;
+  height: 270px;
 }
 
 .card:first-child {
@@ -64,7 +57,6 @@ input {
 .free-lesson-right-section {
 	width: 280px;
 	margin: 0 auto;
-  height: 120px !important;
 }
 
 .free-lesson-image {
@@ -83,7 +75,11 @@ input {
   margin-right: auto;
   margin-left: auto;
 }
+.nabi-popular-title {
+ font-size: 18px;
+ font-weight: 400 !important;
 
+}
 /*BACKGROUND COLOR*/
 .nabi-background-color {
 	background-color: #f0f3f6;
@@ -534,15 +530,19 @@ input {
 	.nabi-responsive-button {
 		padding: 5px 15px !important;
 		font-size: 11px !important;
-	}
+  }
+  /*POPULAR ISTRUMENT SECTION*/
   .card {
     margin-left: 0% !important;
     width: 100% !important;
-    margin-top: 7%;
+    height: 300px;
+    margin-top: 8%;
   }
   .card img {
-    width: 100% !important;
     height: 180px !important;
+  }
+  .nabi-popular-title {
+    font-size: 22px;
   }
 }
 
@@ -608,9 +608,15 @@ input {
 		padding: 15px 38px !important;
 		font-size: 14px !important
   }
+  /*POPULAR ISTRUMENT SECTION*/
   .card{
     margin: 10px  0 15px 15px!important;
     width: 310px !important;
+    margin: 0px  0 25px 15px!important;
+    width: 350px !important;
+  }
+  .nabi-popular-title {
+    font-size: 28px;
   }
 	/*header*/
 	#menu {
@@ -707,6 +713,11 @@ input {
 	.free-lesson-image {
 		margin-left: 20px;
 	}
+  /*POPULAR ISTRUMENT SECTION*/
+  .card{
+    margin: 0px  0 0 15px!important;
+    width: 350px !important;
+  }
 }
 
 /* Laptops ----------- */

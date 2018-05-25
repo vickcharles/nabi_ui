@@ -12,14 +12,14 @@ const data: MyCardProps[] = [
   {
     id: '1',
     instrument: 'guitar',
-    ImageUrl: require('../../../assets/images/nabi-home-popular-instruments-drums.jpg'),
+    ImageUrl: require('../../../assets/images/nabi-home-popular-instruments-piano.png'),
     numberOfInstructors: 10,
 },
 
   {
     id: '2',
     instrument: 'piano',
-    ImageUrl: require('../../../assets/images/nabi-home-popular-instruments-drums.jpg'),
+    ImageUrl: require('../../../assets/images/nabi-home-popular-instruments-guitar.png'),
     numberOfInstructors: 17,
   },
   {
@@ -45,8 +45,8 @@ class PopularInstrumentSection extends React.Component <{}, {}>  {
       });
 
       return (
-        <div className="nabi-popular-instrument-section nabi-text-center nabi-background-color">
-          <h1 className="nabi-text-center nabi-text-mediumbold nabi-color">
+        <div className="nabi-margin-top-large nabi-margin-bottom-large  nabi-background-color">
+          <h1 className="nabi-text-center nabi-popular-title  nabi-color">
             Popular instrument 
           </h1>
           <div className="container nabi-text-center">
