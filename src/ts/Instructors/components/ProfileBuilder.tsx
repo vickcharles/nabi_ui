@@ -12,7 +12,6 @@ import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import { PageTitle } from '../../main';
 import BasicInfo from './BasicInfo/BasicInfo';
 import { Role, UserState } from '../../Users/model';
-
 import Education from './Education/Education';
 
 const styles = (theme: Theme) => ({
