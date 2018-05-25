@@ -42,6 +42,10 @@ li {
 }
 
 /*DISPLAY*/
+.nabi-display-block {
+  display: block !important;
+}
+
 .nabi-display-inline {
   display: inline !important;
 }
@@ -270,6 +274,11 @@ li {
   background: #06c3e1 !important;
 }
 
+/*Education*/
+.graduation-year {
+  width: 190px !important;
+}
+
 /* iPhones(landscape) ----------- */
 @media only screen  and (min-width : 375px) {
   /*Rates*/
@@ -363,6 +372,10 @@ li {
   /*Availability*/
   .nabi-availability-legend-wrapper {
     width: 50%;
+  }
+  /*Education*/
+  .nabi-education {
+    width: 600px !important;
   }
 }
 
