@@ -8,9 +8,9 @@ import MoneyIcon from '@material-ui/icons/AttachMoney';
 import Typography from 'material-ui/Typography';
 import Divider from 'material-ui/Divider';
 import TextField from 'material-ui/TextField';
-import { LessonDuration, RatesState } from '../../model';
+import { LessonDuration, RatesType } from '../../model';
 
-interface RatesProps extends RatesState {
+interface RatesProps extends RatesType {
   handleChange: (event: React.FormEvent<{}>) => void;
   updateRates: (event: React.FormEvent<{}>) => void;
 }

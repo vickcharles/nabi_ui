@@ -58,6 +58,11 @@ a {
 	display: inline-block !important;
 }
 
+/*FLOAT*/
+.nabi-float-right {
+	float: right;
+}
+
 /*FONT FAMILY*/
 .nabi-font-jennasue {
 	font-family: 'JennaSue';
@@ -490,7 +495,8 @@ a {
 		width: 50%;
   }
   /*Education*/
-  .nabi-education {
+  .nabi-education,
+  .selected-education {
     width: 600px !important;
   }
 }

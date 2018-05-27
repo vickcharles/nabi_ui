@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom';
 
 import RegistrationForm from './RegistrationForm';
 import { UserState, Role } from '../model';
-import { InstructorState } from '../../Instructors/model';
+import { InstructorType } from '../../Instructors/model';
 import { PageTitle } from '../../main';
 
 /**
@@ -12,7 +12,7 @@ import { PageTitle } from '../../main';
  */
 interface RegistrationProps {
   createUser: (user: UserState) => void;
-  createInstructor: (instructor: InstructorState) => void;
+  createInstructor: (instructor: InstructorType) => void;
   searchZipCode: (user: UserState) => void;
 }
 

@@ -4,7 +4,10 @@ exports[`Education Shallow Matches snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Education />,
+  Symbol(enzyme.__unrendered__): <Education
+    updateInstructor={[MockFunction]}
+    userId=""
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -18,15 +21,20 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        Array [],
         <WithStyles(Typography)
           className="nabi-margin-top-small"
           variant="body2"
         >
-          Education
+          Add Education
         </WithStyles(Typography)>,
-        <EducationFields />,
-        <WithStyles(Divider)
-          className="nabi-margin-top-small"
+        <EducationFields
+          addEducation={[Function]}
+          degreeType="Bachelor's Degree"
+          fieldOfStudy=""
+          graduationYear=""
+          handleChange={[Function]}
+          schoolName=""
         />,
       ],
     },
@@ -37,29 +45,25 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": "Education",
+          "children": "Add Education",
           "className": "nabi-margin-top-small",
           "variant": "body2",
         },
         "ref": null,
-        "rendered": "Education",
+        "rendered": "Add Education",
         "type": [Function],
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
         "props": Object {
-          "className": "nabi-margin-top-small",
+          "addEducation": [Function],
+          "degreeType": "Bachelor's Degree",
+          "fieldOfStudy": "",
+          "graduationYear": "",
+          "handleChange": [Function],
+          "schoolName": "",
         },
         "ref": null,
         "rendered": null,
@@ -75,15 +79,20 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          Array [],
           <WithStyles(Typography)
             className="nabi-margin-top-small"
             variant="body2"
           >
-            Education
+            Add Education
           </WithStyles(Typography)>,
-          <EducationFields />,
-          <WithStyles(Divider)
-            className="nabi-margin-top-small"
+          <EducationFields
+            addEducation={[Function]}
+            degreeType="Bachelor's Degree"
+            fieldOfStudy=""
+            graduationYear=""
+            handleChange={[Function]}
+            schoolName=""
           />,
         ],
       },
@@ -94,29 +103,25 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "Education",
+            "children": "Add Education",
             "className": "nabi-margin-top-small",
             "variant": "body2",
           },
           "ref": null,
-          "rendered": "Education",
+          "rendered": "Add Education",
           "type": [Function],
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
           "props": Object {
-            "className": "nabi-margin-top-small",
+            "addEducation": [Function],
+            "degreeType": "Bachelor's Degree",
+            "fieldOfStudy": "",
+            "graduationYear": "",
+            "handleChange": [Function],
+            "schoolName": "",
           },
           "ref": null,
           "rendered": null,

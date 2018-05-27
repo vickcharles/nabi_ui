@@ -7,7 +7,7 @@ import Typography from 'material-ui/Typography';
 
 import { UserState } from '../../../Users/model';
 import { updateUser } from '../../../Users';
-import { InstructorState, InstrumentsType, PlaceForLessonsState, RatesState, SkillLevel } from '../../model';
+import { InstructorType, InstrumentsType, PlaceForLessonsType, RatesType, SkillLevel } from '../../model';
 import { updateInstructor } from '../../';
 import NameLocationBio from './NameLocationBio/NameLocationBio';
 import ImageUploader from './ImageUploader';
@@ -22,7 +22,7 @@ import Availability from './Availability';
  * @interface BasicInfoDispatchProps
  */
 interface BasicInfoDispatchProps {
-  updateInstructor: (instructor: InstructorState) => void;
+  updateInstructor: (instructor: InstructorType) => void;
   updateUser: (user: UserState) => void;
 }
 
@@ -38,9 +38,9 @@ interface BasicInfoOwnProps {
 /**
  * State for BasicInfo
  * @interface BasicInfoState
- * @extends RatesState, PlaceForLessonsState
+ * @extends RatesType, PlaceForLessonsType
  */
-interface BasicInfoState extends RatesState, PlaceForLessonsState {
+interface BasicInfoState extends RatesType, PlaceForLessonsType {
   bio: string;
   displayName: string;
   instrument: string;
@@ -109,11 +109,10 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
       ...this.state,
       [name]: value
     });
-    
   }
 
   public handleBlurBio(event: any): void {
-    const instructor: InstructorState =  {
+    const instructor: InstructorType =  {
       userId: this.props.user.id,
       bio: this.state.bio
     };
@@ -138,7 +137,7 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
       this.setState(
         { instruments: [...this.state.instruments, instrumentToAdd] },
         () => {
-        const instructor: InstructorState =  {
+        const instructor: InstructorType =  {
           userId: this.props.user.id,
           instruments: this.state.instruments
         };
@@ -147,7 +146,7 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
     }
   }
 
-  public updateInstructorCall(instructor: InstructorState): void {
+  public updateInstructorCall(instructor: InstructorType): void {
     this.props.updateInstructor(instructor);
   }
 
@@ -156,7 +155,7 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
       { instruments: this.state.instruments.filter(
         instrument => instrumentName.indexOf(instrument.instrument) === -1)},
       () => {
-      const instructor: InstructorState =  {
+      const instructor: InstructorType =  {
         userId: this.props.user.id,
         instruments: this.state.instruments
       };
@@ -165,14 +164,14 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
   }
 
   public updateRates(event: any): void {
-    const rates: RatesState = {
+    const rates: RatesType = {
       thirtyMinsRate: this.state.thirtyMinsRate,
       fortyFiveMinsRate: this.state.fortyFiveMinsRate,
       sixtyMinsRate: this.state.sixtyMinsRate,
       ninetyMinsRate: this.state.ninetyMinsRate,
     };
 
-    const instructor: InstructorState =  {
+    const instructor: InstructorType =  {
       userId: this.props.user.id,
       rates: rates
     };
@@ -192,7 +191,7 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
           online: this.state.online
         };
     
-        const instructor: InstructorState =  {
+        const instructor: InstructorType =  {
           userId: this.props.user.id,
           placeForLessons: placeForLessons
         };
@@ -206,7 +205,7 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
           online: this.state.online
         };
     
-        const instructor: InstructorState =  {
+        const instructor: InstructorType =  {
           userId: this.props.user.id,
           placeForLessons: placeForLessons
         };
@@ -216,7 +215,7 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
   }
 
   public updateStudioAddress(event: any): void {
-    const instructor: InstructorState =  {
+    const instructor: InstructorType =  {
       userId: this.props.user.id,
       studioAddress: this.state.studioAddress
     };
@@ -275,7 +274,7 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
           updateStudioAddress={this.updateStudioAddress}
         />
         <Availability 
-          updateInstructor={(instructor: InstructorState) => this.updateInstructorCall(instructor)}
+          updateInstructor={(instructor: InstructorType) => this.updateInstructorCall(instructor)}
           userId={this.props.user.id}
         />
       </div>
@@ -288,7 +287,7 @@ function mapDispatchToProps(
   _ownProps: BasicInfoOwnProps
 ): BasicInfoDispatchProps {
   return {
-    updateInstructor: (instructor: InstructorState) => dispatch(updateInstructor(instructor)),
+    updateInstructor: (instructor: InstructorType) => dispatch(updateInstructor(instructor)),
     updateUser: (user: UserState) => dispatch(updateUser(user))
   };
 }

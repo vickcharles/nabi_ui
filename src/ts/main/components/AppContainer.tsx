@@ -8,7 +8,7 @@ import Homepage from './Homepage';
 import { createUser, changeAvatar, Registration, fetchZipCodeAddress } from '../../Users/';
 import { UserState } from '../../Users/model';
 import { createInstructor, ProfileBuilder } from '../../Instructors';
-import { InstructorState } from '../../Instructors/model';
+import { InstructorType } from '../../Instructors/model';
 
 /**
  * State props to use with Redux connect
@@ -35,7 +35,7 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
     const { dispatch, users } = this.props;
 
     const dispatchCreateUser: any = (user: UserState) => dispatch(createUser(user));
-    const dispatchCreateInstructor: any = (instructor: InstructorState) => dispatch(createInstructor(instructor));
+    const dispatchCreateInstructor: any = (instructor: InstructorType) => dispatch(createInstructor(instructor));
     const dispatchChangeAvatar: any = (id: string, avatar: string) => dispatch(changeAvatar(id, avatar ));
     const dispatchZipCodeSearch: any = (user: UserState) => dispatch(fetchZipCodeAddress( user ));
 

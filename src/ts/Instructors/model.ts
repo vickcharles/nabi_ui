@@ -7,10 +7,11 @@ export enum DegreeType {
   other = 'Other'
 }
 
-export interface Education {
-  school: string;
-  graduationYear: number;
-  DegreeType: DegreeType;
+export interface EducationType {
+  id?: number;
+  schoolName: string;
+  graduationYear: string;
+  degreeType: DegreeType;
   fieldOfStudy: string;
 }
 
@@ -20,7 +21,7 @@ export enum PlaceForLessonsOptions {
   online = 'Online',
 }
 
-export interface PlaceForLessonsState {
+export interface PlaceForLessonsType {
   home: boolean;
   studio: boolean;
   online: boolean;
@@ -33,7 +34,7 @@ export enum LessonDuration {
   ninetyMins = '90 mins'
 }
 
-export interface RatesState {
+export interface RatesType {
   thirtyMinsRate: number;
   fortyFiveMinsRate: number;
   sixtyMinsRate: number;
@@ -51,14 +52,14 @@ export interface InstrumentsType {
   skillLevel: SkillLevel;
 }
 
-export interface InstructorState {
+export interface InstructorType {
   userId: string;
   bio?: string;
   instruments?: InstrumentsType[];
-  rates?: RatesState;
-  placeForLessons?: PlaceForLessonsState;
+  rates?: RatesType;
+  placeForLessons?: PlaceForLessonsType;
   studioAddress?: string;
-  education?: Education;
+  education?: EducationType[];
 }
 
-export type IState = InstructorState[];
+export type IState = InstructorType[];
