@@ -1,44 +1,48 @@
 @font-face {
-  font-family: 'JennaSue';
-  src: url('../fonts/JennaSue.ttf');
+	font-family: 'JennaSue';
+	src: url('../fonts/JennaSue.ttf');
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,800');
+	font-family: 'Montserrat';
+	src: url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,800');
 }
 
 body {
-  background: #f0f3f6;
-  margin: 0px;
-  font-family: 'Montserrat', sans-serif;
+	background: #f0f3f6;
+	margin: 0px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 header {
-  background: white;
-  padding: 12px;
+	background: white;
+	position: relative;
 }
 
 li {
-  list-style: none;
+	list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /*BACKGROUND COLOR*/
 .nabi-background-color {
-  background-color: #f0f3f6;
+	background-color: #f0f3f6;
 }
 
 .nabi-background-white {
-  background-color: #fff;
+	background-color: #fff;
 }
 
 .nabi-background-nabi {
-  background-color: #06c3e1;
+	background-color: #06c3e1;
 }
 
 /*CURSOR*/
 .nabi-cursor-pointer {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 /*DISPLAY*/
@@ -47,11 +51,11 @@ li {
 }
 
 .nabi-display-inline {
-  display: inline !important;
+	display: inline !important;
 }
 
 .nabi-display-inline-block {
-  display: inline-block !important;
+	display: inline-block !important;
 }
 
 /*FONT FAMILY*/
@@ -65,7 +69,7 @@ li {
 
 /*FONT WEIGHT*/
 .nabi-text-mediumbold {
-  font-weight: 500 !important;
+	font-weight: 500 !important;
 }
 
 .nabi-text-semibold {
@@ -83,96 +87,96 @@ li {
 
 /*MARGIN*/
 .nabi-margin-small {
-  margin: 20px
+	margin: 20px
 }
 
 .nabi-margin-medium {
-  margin: 30px
+	margin: 30px
 }
 
 .nabi-margin-large {
-  margin: 40px
+	margin: 40px
 }
 
 .nabi-margin-top-xsmall {
-  margin-top: 10px !important;
+	margin-top: 10px !important;
 }
 
 .nabi-margin-top-small {
-  margin-top: 20px !important;
+	margin-top: 20px !important;
 }
 
 .nabi-margin-top-medium {
-  margin-top: 30px !important;
+	margin-top: 30px !important;
 }
 
 .nabi-margin-top-large {
-  margin-top: 40px !important;
+	margin-top: 40px !important;
 }
 
 .nabi-margin-right-xsmall {
-  margin-right: 10px !important;
+	margin-right: 10px !important;
 }
 
 .nabi-margin-right-small {
-  margin-right: 20px !important;
+	margin-right: 20px !important;
 }
 
 .nabi-margin-right-medium {
-  margin-right: 30px !important;
+	margin-right: 30px !important;
 }
 
 .nabi-margin-right-large {
-  margin-right: 40px !important;
+	margin-right: 40px !important;
 }
 
 .nabi-margin-bottom-xsmall {
-    margin-bottom: 10px !important;
+	margin-bottom: 10px !important;
 }
 
 .nabi-margin-bottom-small {
-  margin-bottom: 20px !important;
+	margin-bottom: 20px !important;
 }
 
 .nabi-margin-bottom-medium {
-  margin-bottom: 30px !important;
+	margin-bottom: 30px !important;
 }
 
 .nabi-margin-bottom-large {
-  margin-bottom: 40px !important;
+	margin-bottom: 40px !important;
 }
 
 .nabi-margin-bottom-zero {
-  margin-bottom: 0px !important;
+	margin-bottom: 0px !important;
 }
 
 .nabi-margin-left-xsmall {
-  margin-left: 10px !important;
+	margin-left: 10px !important;
 }
 
 .nabi-margin-left-small {
-  margin-left: 20px !important;
+	margin-left: 20px !important;
 }
 
 .nabi-margin-left-medium {
-  margin-left: 30px !important;
+	margin-left: 30px !important;
 }
 
 .nabi-margin-left-large {
-  margin-left: 40px !important;
+	margin-left: 40px !important;
 }
 
 /****CUSTOM ELEMENTS****/
 /*Container*/
 .nabi-container {
-  padding-left: 25px;
-  padding-right: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 /*Section*/
 .nabi-section {
-  border-radius: 17px;
-  padding: 25px 20px;
+	border-radius: 17px;
+	padding: 25px 20px;
 }
 
 /*Responsive Hide*/
@@ -186,92 +190,127 @@ li {
 
 /*Logo anchor*/
 #nabi-logo-anchor {
-  color: #000;
-  display: inherit;
-  text-decoration: none;
+	color: #000;
+	display: inherit;
+	text-decoration: none;
 }
 
 /*Logo logo*/
 #nabi-logo {
-  display: inherit;
-  margin: 0 auto;
-  text-align: center;
-  width: 75px;
-  width: 75px;
+	display: inherit;
+	margin: 0 auto;
+	margin-top: 10px;
+	text-align: center;
+	width: 55px !important;
 }
 
 /*Logo text*/
 #nabi-logo-text {
-  font-size: 22px;
-  margin-top: 4px;
-  margin-bottom: 0px;
-  text-transform: uppercase;
+	font-size: 16px;
+	margin-bottom: 0px;
+	margin-top: 4px;
+	text-transform: uppercase;
+}
+
+/*Header*/
+#menu {
+	position: absolute;
+	top: 11%;
+	color: #717a8a !important;
+}
+
+.nabi-header-container {
+	position: relative;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 65px;
+	padding-bottom: 5px;
+}
+
+.nabi-header-button {
+	position: absolute !important;
+	top: 9% !important;
+	right: 20px !important;
+}
+
+.nabi-responsive-button {
+	padding: 3px 14px !important;
+	font-size: 10px !important;
+}
+
+.nabi-header-button .login-button {
+	background-color: white !important;
+	color: #5a5b5e !important;
+}
+
+.header-divider {
+	margin: 0px -30px !important;
 }
 
 /*Homepage*/
 #banner {
-  height: 400px !important;
-  width: 100%;
-  position: relative;
-  color:#f0f3f6;
-  background-image: url('../images/nabiBannerImage.jpg') !important;
-  background-size:cover !important;
-  background-repeat: no-repeat;
-  background-position: center ;
+	height: 400px !important;
+	width: 100%;
+	position: relative;
+	color: #f0f3f6;
+	background-image: url('../images/nabiBannerImage.jpg') !important;
+	background-size: cover !important;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 #banner .container {
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 55px;
-  position: absolute;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 55px;
+	position: absolute;
 }
 
 #banner h1 {
-  font-size: 38px !important;
+	font-size: 38px !important;
 }
 
 #banner p {
-  font-size: 15px !important;
+	font-size: 15px !important;
 }
 
 #banner button {
-  margin-top: 10px !important;
-  margin-right: 10px !important;
-  padding: 15px 20px !important;
-  font-size: 9px !important;
+	margin-top: 10px !important;
+	margin-right: 10px !important;
+	padding: 15px 20px !important;
+	font-size: 9px !important;
 }
 
 /*Page title*/
 #nabi-page-title {
-  font-size: 25px !important;
-  margin: 30px !important;
+	font-size: 25px !important;
+	margin: 30px !important;
 }
 
 /*Highlighted text*/
 .nabi-highlighted-text {
-  background: rgba(6,195,225, 0.3);
-  border-radius: 3px;
-  padding: 4px 6px;
+	background: rgba(6, 195, 225, 0.3);
+	border-radius: 3px;
+	padding: 4px 6px;
 }
 
 /*Instruments fields*/
 .nabi-instruments-select {
-  width: 100%;
+	width: 100%;
 }
 
 .nabi-instruments-add {
-  margin-top: 15px !important;
+	margin-top: 15px !important;
 }
 
 /*Rates*/
 .nabi-rates-field input {
-  width: 70px;
-} 
+	width: 70px;
+}
 
- /*Grid component*/
- .nabi-grid-background-nabi div div {
-  background: #06c3e1 !important;
+/*Grid component*/
+.nabi-grid-background-nabi div div {
+	background: #06c3e1 !important;
 }
 
 /*Education*/
@@ -280,98 +319,175 @@ li {
 }
 
 /* iPhones(landscape) ----------- */
-@media only screen  and (min-width : 375px) {
-  /*Rates*/
-  .nabi-rates-field {
-    display: inline !important;
-  }
-  /*Homepage*/
-  #banner .container {
-    padding-top: 25px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-  }
-  #banner button {
-    margin-top: 10px !important;
-    margin-right: 10px !important;
-    padding: 15px 20px !important;
-    font-size: 10px !important;
-  }
+@media only screen and (min-width: 375px) {
+	/*Rates*/
+	.nabi-rates-field {
+		display: inline !important;
+	}
+	/*Homepage*/
+	#banner .container {
+		padding-top: 25px;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		position: absolute;
+		top: 45%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
+	#banner button {
+		margin-top: 10px !important;
+		margin-right: 10px !important;
+		padding: 15px 20px !important;
+		font-size: 10px !important;
+	}
+	#nabi-logo {
+		display: inherit;
+		margin: 0 auto;
+		margin-top: 10px;
+		text-align: center;
+		width: 55px !important;
+	}
+	#nabi-logo-text {
+		font-size: 16px;
+	}
+	/*HEADER*/
+	.nabi-responsive-button {
+		padding: 5px 15px !important;
+		font-size: 11px !important;
+	}
 }
 
 /* iPads (landscape) ----------- */
-@media only screen  and (min-width : 768px) {
-  /****CUSTOM ELEMENTS****/
-  /*Container*/
-  .nabi-container {
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 700px;
-  }
-  /*Section*/
-  .nabi-section {
-    padding: 50px 80px;
-  }
-  /*Homepage*/
-  #banner {
-    height: 500px !important;
-  }
-  #banner h1 {
-    font-size: 60px !important;
-  }
-  #banner p {
-    font-weight: 300;
-    font-size: 20px !important;
-  }
-  #banner button {
-    margin-top: 40px !important;
-    margin-right: 30px !important;
-    padding: 15px 38px !important;
-    font-size: 14px !important
-  }
+@media only screen and (min-width: 768px) {
+	/****CUSTOM ELEMENTS****/
+	/*Container*/
+	/*Responsive Hide*/
+	.hide-on-mobile {
+		display: block !important;
+	}
+	.hide-on-desktop {
+		display: none !important;
+	}
+	.nabi-container {
+		margin: 0 auto;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-left: 15px;
+		padding-right: 15px;
+		width: 700px;
+	}
+	.nabi-header-container {
+		margin: 0 auto;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-left: 15px;
+		padding-right: 15px;
+		width: 750px;
+	}
+	#nabi-logo {
+		display: inherit;
+		margin: 0 auto;
+		text-align: center;
+		width: 60px !important;
+		width: 60px !important;
+	}
+	#nabi-logo-text {
+		font-size: 19px;
+	}
+	/*Section*/
+	.nabi-section {
+		padding: 50px 80px;
+	}
+	/*Homepage*/
+	#banner {
+		height: 500px !important;
+	}
+	#banner h1 {
+		font-size: 60px !important;
+	}
+	#banner p {
+		font-weight: 300;
+		font-size: 20px !important;
+	}
+	#banner button {
+		margin-top: 40px !important;
+		margin-right: 30px !important;
+		padding: 15px 38px !important;
+		font-size: 14px !important
+	}
+	/*header*/
+	#menu {
+		top: 37% !important;
+	}
+	.nabi-header-button {
+		top: 35% !important;
+	}
+	.nabi-header-line {
+		border: 0px;
+	}
+	.nabi-responsive-button {
+		padding: 12px 25px !important;
+		font-size: 12px !important;
+	}
+	header .container {
+		padding-bottom: 20px !important;
+		padding-top: 20px;
+	}
 }
 
 /* Tablets small laptops ----------- */
-
-@media (min-width: 960px) { 
-   /****CUSTOM ELEMENTS****/
-  .nabi-container {
-    width: 800px;
-  }
-   /*Responsive Hide*/
+@media (min-width: 960px) {
+	/****CUSTOM ELEMENTS****/
+	.nabi-container {
+		width: 800px;
+	}
+	/*Responsive Hide*/
 	.hide-on-mobile {
 		display: block !important;
-  }
+	}
 	.hide-on-desktop {
 		display: none !important;
-  }
-  /*Instruments text*/
-  .nabi-instruments-select {
-    width: 38%;
-    margin-right: 1% !important;
-  }
-  /*Instruments add button*/
-  .nabi-instruments-add {
-    width: 22%;
-    margin-top: 0px !important;
+	}
+  /*Header*/
+  #nabi-logo {
+		display: inherit;
+		margin: 0 auto;
+		text-align: center;
+		width: 75px !important;
+		width: 75px !important;
+	}
+	#nabi-logo-text {
+		font-size: 22px;
+	}
+	.nabi-header-container {
+		width: 900px;
+	}
+	.nabi-responsive-button {
+		padding: 10px 25px !important;
+		font-size: 13px !important;
+	}
+	/*Instruments text*/
+	.nabi-instruments-select {
+		width: 38%;
+		margin-right: 1% !important;
+	}
+	/*Instruments add button*/
+	.nabi-instruments-add {
+		width: 22%;
+		margin-top: 0px !important;
   }
   /*Selected Instruments */
-  .selected-instruments {
-    width: 40%
-  }
-  /*Rates*/
-  .rates {
-    width: 50%
-  }
-  /*Availability*/
-  .nabi-availability-legend-wrapper {
-    width: 50%;
+	.selected-instruments {
+		width: 40%
+	}
+	/*Rates*/
+	.rates {
+		width: 50%
+	}
+	/*Availability*/
+	.nabi-availability-legend-wrapper {
+		width: 50%;
   }
   /*Education*/
   .nabi-education {
@@ -380,9 +496,13 @@ li {
 }
 
 /* Laptops ----------- */
-@media only screen  and (min-width : 1200px) {
-  /***** HOME *****/
-  .nabi-container {
-    width: 990px;
-  }
+@media only screen and (min-width: 1200px) {
+	/***** HOME *****/
+	.nabi-container {
+		width: 990px;
+	}
+	/*Header*/
+	.nabi-header-container {
+		width: 1150px;
+	}
 }

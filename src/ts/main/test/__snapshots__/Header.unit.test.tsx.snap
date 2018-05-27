@@ -17,90 +17,14 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <Link
-        id="nabi-logo-anchor"
-        replace={false}
-        to="/"
+      "children": <div
+        className="nabi-header-container"
       >
-        <img
-          alt="logo"
-          className="nabi-text-center"
-          id="nabi-logo"
-          src="logo.png"
+        <DrawerMenu />
+        <WithStyles(Divider)
+          className="header-divider hide-on-desktop"
         />
-        <p
-          className="nabi-text-center nabi-font-montserrat nabi-text-extrabold"
-          id="nabi-logo-text"
-        >
-          Nabi Music
-        </p>
-      </Link>,
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <img
-            alt="logo"
-            className="nabi-text-center"
-            id="nabi-logo"
-            src="logo.png"
-          />,
-          <p
-            className="nabi-text-center nabi-font-montserrat nabi-text-extrabold"
-            id="nabi-logo-text"
-          >
-            Nabi Music
-          </p>,
-        ],
-        "id": "nabi-logo-anchor",
-        "replace": false,
-        "to": "/",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "alt": "logo",
-            "className": "nabi-text-center",
-            "id": "nabi-logo",
-            "src": "logo.png",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "img",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Nabi Music",
-            "className": "nabi-text-center nabi-font-montserrat nabi-text-extrabold",
-            "id": "nabi-logo-text",
-          },
-          "ref": null,
-          "rendered": "Nabi Music",
-          "type": "p",
-        },
-      ],
-      "type": [Function],
-    },
-    "type": "header",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <Link
+        <Link
           id="nabi-logo-anchor"
           replace={false}
           to="/"
@@ -115,65 +39,503 @@ ShallowWrapper {
             className="nabi-text-center nabi-font-montserrat nabi-text-extrabold"
             id="nabi-logo-text"
           >
-            Nabi Music
+            NABI MUSIC
           </p>
-        </Link>,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
+        </Link>
+        <div
+          className="nabi-header-button"
+        >
+          <WithStyles(Button)
+            className="nabi-responsive-button"
+          >
+            LOG IN
+          </WithStyles(Button)>
+          <Link
+            replace={false}
+            to="/registration"
+          >
+            <WithStyles(Button)
+              className="nabi-responsive-button"
+              color="primary"
+              variant="raised"
+            >
+              CREATE ACCOUNT
+            </WithStyles(Button)>
+          </Link>
+        </div>
+      </div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <DrawerMenu />,
+          <WithStyles(Divider)
+            className="header-divider hide-on-desktop"
+          />,
+          <Link
+            id="nabi-logo-anchor"
+            replace={false}
+            to="/"
+          >
             <img
               alt="logo"
               className="nabi-text-center"
               id="nabi-logo"
               src="logo.png"
-            />,
+            />
             <p
               className="nabi-text-center nabi-font-montserrat nabi-text-extrabold"
               id="nabi-logo-text"
             >
-              Nabi Music
-            </p>,
+              NABI MUSIC
+            </p>
+          </Link>,
+          <div
+            className="nabi-header-button"
+          >
+            <WithStyles(Button)
+              className="nabi-responsive-button"
+            >
+              LOG IN
+            </WithStyles(Button)>
+            <Link
+              replace={false}
+              to="/registration"
+            >
+              <WithStyles(Button)
+                className="nabi-responsive-button"
+                color="primary"
+                variant="raised"
+              >
+                CREATE ACCOUNT
+              </WithStyles(Button)>
+            </Link>
+          </div>,
+        ],
+        "className": "nabi-header-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "className": "header-divider hide-on-desktop",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <img
+                alt="logo"
+                className="nabi-text-center"
+                id="nabi-logo"
+                src="logo.png"
+              />,
+              <p
+                className="nabi-text-center nabi-font-montserrat nabi-text-extrabold"
+                id="nabi-logo-text"
+              >
+                NABI MUSIC
+              </p>,
+            ],
+            "id": "nabi-logo-anchor",
+            "replace": false,
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "logo",
+                "className": "nabi-text-center",
+                "id": "nabi-logo",
+                "src": "logo.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "NABI MUSIC",
+                "className": "nabi-text-center nabi-font-montserrat nabi-text-extrabold",
+                "id": "nabi-logo-text",
+              },
+              "ref": null,
+              "rendered": "NABI MUSIC",
+              "type": "p",
+            },
           ],
-          "id": "nabi-logo-anchor",
-          "replace": false,
-          "to": "/",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <WithStyles(Button)
+                className="nabi-responsive-button"
+              >
+                LOG IN
+              </WithStyles(Button)>,
+              <Link
+                replace={false}
+                to="/registration"
+              >
+                <WithStyles(Button)
+                  className="nabi-responsive-button"
+                  color="primary"
+                  variant="raised"
+                >
+                  CREATE ACCOUNT
+                </WithStyles(Button)>
+              </Link>,
+            ],
+            "className": "nabi-header-button",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "LOG IN",
+                "className": "nabi-responsive-button",
+              },
+              "ref": null,
+              "rendered": "LOG IN",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <WithStyles(Button)
+                  className="nabi-responsive-button"
+                  color="primary"
+                  variant="raised"
+                >
+                  CREATE ACCOUNT
+                </WithStyles(Button)>,
+                "replace": false,
+                "to": "/registration",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "CREATE ACCOUNT",
+                  "className": "nabi-responsive-button",
+                  "color": "primary",
+                  "variant": "raised",
+                },
+                "ref": null,
+                "rendered": "CREATE ACCOUNT",
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "header",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="nabi-header-container"
+        >
+          <DrawerMenu />
+          <WithStyles(Divider)
+            className="header-divider hide-on-desktop"
+          />
+          <Link
+            id="nabi-logo-anchor"
+            replace={false}
+            to="/"
+          >
+            <img
+              alt="logo"
+              className="nabi-text-center"
+              id="nabi-logo"
+              src="logo.png"
+            />
+            <p
+              className="nabi-text-center nabi-font-montserrat nabi-text-extrabold"
+              id="nabi-logo-text"
+            >
+              NABI MUSIC
+            </p>
+          </Link>
+          <div
+            className="nabi-header-button"
+          >
+            <WithStyles(Button)
+              className="nabi-responsive-button"
+            >
+              LOG IN
+            </WithStyles(Button)>
+            <Link
+              replace={false}
+              to="/registration"
+            >
+              <WithStyles(Button)
+                className="nabi-responsive-button"
+                color="primary"
+                variant="raised"
+              >
+                CREATE ACCOUNT
+              </WithStyles(Button)>
+            </Link>
+          </div>
+        </div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <DrawerMenu />,
+            <WithStyles(Divider)
+              className="header-divider hide-on-desktop"
+            />,
+            <Link
+              id="nabi-logo-anchor"
+              replace={false}
+              to="/"
+            >
+              <img
+                alt="logo"
+                className="nabi-text-center"
+                id="nabi-logo"
+                src="logo.png"
+              />
+              <p
+                className="nabi-text-center nabi-font-montserrat nabi-text-extrabold"
+                id="nabi-logo-text"
+              >
+                NABI MUSIC
+              </p>
+            </Link>,
+            <div
+              className="nabi-header-button"
+            >
+              <WithStyles(Button)
+                className="nabi-responsive-button"
+              >
+                LOG IN
+              </WithStyles(Button)>
+              <Link
+                replace={false}
+                to="/registration"
+              >
+                <WithStyles(Button)
+                  className="nabi-responsive-button"
+                  color="primary"
+                  variant="raised"
+                >
+                  CREATE ACCOUNT
+                </WithStyles(Button)>
+              </Link>
+            </div>,
+          ],
+          "className": "nabi-header-container",
         },
         "ref": null,
         "rendered": Array [
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
             "props": Object {
-              "alt": "logo",
-              "className": "nabi-text-center",
-              "id": "nabi-logo",
-              "src": "logo.png",
+              "className": "header-divider hide-on-desktop",
             },
             "ref": null,
             "rendered": null,
-            "type": "img",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <img
+                  alt="logo"
+                  className="nabi-text-center"
+                  id="nabi-logo"
+                  src="logo.png"
+                />,
+                <p
+                  className="nabi-text-center nabi-font-montserrat nabi-text-extrabold"
+                  id="nabi-logo-text"
+                >
+                  NABI MUSIC
+                </p>,
+              ],
+              "id": "nabi-logo-anchor",
+              "replace": false,
+              "to": "/",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "logo",
+                  "className": "nabi-text-center",
+                  "id": "nabi-logo",
+                  "src": "logo.png",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "NABI MUSIC",
+                  "className": "nabi-text-center nabi-font-montserrat nabi-text-extrabold",
+                  "id": "nabi-logo-text",
+                },
+                "ref": null,
+                "rendered": "NABI MUSIC",
+                "type": "p",
+              },
+            ],
+            "type": [Function],
           },
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Nabi Music",
-              "className": "nabi-text-center nabi-font-montserrat nabi-text-extrabold",
-              "id": "nabi-logo-text",
+              "children": Array [
+                <WithStyles(Button)
+                  className="nabi-responsive-button"
+                >
+                  LOG IN
+                </WithStyles(Button)>,
+                <Link
+                  replace={false}
+                  to="/registration"
+                >
+                  <WithStyles(Button)
+                    className="nabi-responsive-button"
+                    color="primary"
+                    variant="raised"
+                  >
+                    CREATE ACCOUNT
+                  </WithStyles(Button)>
+                </Link>,
+              ],
+              "className": "nabi-header-button",
             },
             "ref": null,
-            "rendered": "Nabi Music",
-            "type": "p",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "LOG IN",
+                  "className": "nabi-responsive-button",
+                },
+                "ref": null,
+                "rendered": "LOG IN",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <WithStyles(Button)
+                    className="nabi-responsive-button"
+                    color="primary"
+                    variant="raised"
+                  >
+                    CREATE ACCOUNT
+                  </WithStyles(Button)>,
+                  "replace": false,
+                  "to": "/registration",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "CREATE ACCOUNT",
+                    "className": "nabi-responsive-button",
+                    "color": "primary",
+                    "variant": "raised",
+                  },
+                  "ref": null,
+                  "rendered": "CREATE ACCOUNT",
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+            ],
+            "type": "div",
           },
         ],
-        "type": [Function],
+        "type": "div",
       },
       "type": "header",
     },
