@@ -27,33 +27,10 @@ a {
   text-decoration: none;
 }
 
-/*POPULAR ISTRUMENT SECTION*/
-.card {
-  width: 100% !important;
-  position: relative;
-  text-align: left;
-  margin-top: 20px !important;
-  height: 270px;
-}
-
-.card:first-child {
-  margin-left: 0px !important;
-  margin-top: 0%;
-}
-
-.card img {
-  width: 100% !important;
-  height: 140px !important;
-}
 .container {
   width: 80%;
   margin-right: auto;
   margin-left: auto;
-}
-.nabi-popular-title {
- font-size: 18px;
- font-weight: 400 !important;
-
 }
 
 /*BACKGROUND COLOR*/
@@ -322,7 +299,7 @@ a {
 
 /*Page title*/
 #nabi-page-title {
-	font-size: 25px !important;
+	font-size: 18px !important;
 	margin: 30px !important;
 }
 
@@ -395,32 +372,16 @@ a {
 		padding: 5px 15px !important;
 		font-size: 11px !important;
   }
-  /*POPULAR ISTRUMENT SECTION*/
-  .card {
-    margin-left: 0% !important;
-    width: 100% !important;
-    height: 300px;
-    margin-top: 20px !important;
-  }
-  .card img {
-    height: 180px !important;
-  }
-  .nabi-popular-title {
-    font-size: 22px;
-  }
+	/*POPULAR ISTRUMENT SECTION*/
+	.popular-instrument-card {
+		height: 100% !important;
+	}
 }
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-width: 768px) {
 	/****CUSTOM ELEMENTS****/
 	/*Container*/
-	/*Responsive Hide*/
-	.hide-on-mobile {
-		display: block !important;
-	}
-	.hide-on-desktop {
-		display: none !important;
-	}
 	.nabi-container {
 		margin: 0 auto;
 		padding-top: 15px;
@@ -468,16 +429,6 @@ a {
 		padding: 15px 38px !important;
 		font-size: 14px !important
   }
-  /*POPULAR ISTRUMENT SECTION*/
-  .card{
-    margin: 10px  0 15px 15px!important;
-    width: 310px !important;
-    margin: 0px  0 25px 15px!important;
-    width: 290px !important;
-  }
-  .nabi-popular-title {
-    font-size: 28px;
-  }
 	/*header*/
 	#menu {
 		top: 37% !important;
@@ -506,6 +457,10 @@ a {
 	}
 	.hide-on-desktop {
 		display: none !important;
+	}
+	/*Page Title*/
+	#nabi-page-title {
+		font-size: 25px !important;
 	}
   /*Header*/
   #nabi-logo {
@@ -550,11 +505,6 @@ a {
   /*Education*/
   .nabi-education {
     width: 600px !important;
-  }
-  /*POPULAR ISTRUMENT SECTION*/
-  .card{
-    margin: 0px  0 25px 15px!important;
-    width: 350px !important;
   }
 }
 
