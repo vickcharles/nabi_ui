@@ -23,7 +23,7 @@ const PopularInstrumentCard: React.StatelessComponent<CardProps> = props =>  {
           <img src={props.ImageUrl} alt=""/>
         </CardMedia>
         <CardContent>
-        <Typography  variant="headline" component="h5">
+        <Typography  variant="headline" component="h2">
          Learn {props.instrument}
          </Typography>
         <Typography component="p">
