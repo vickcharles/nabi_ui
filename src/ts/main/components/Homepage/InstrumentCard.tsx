@@ -1,9 +1,16 @@
 import * as React from 'react';
-import  Card  from 'material-ui/Card';
-import { CardContent } from 'material-ui/Card';
-import CardMedia from 'material-ui/Card';
+import Card, { CardContent, CardMedia } from 'material-ui/Card';
 import Typography from 'material-ui/Typography';
 import Button from 'material-ui/Button';
+import { withStyles, WithStyles } from 'material-ui/styles';
+
+const styles = () => ({
+  media: {
+    height: 0,
+    paddingTop: '56.25%',
+    marginTop: '30'
+  }
+});
 
 /**
  * Props for InstrumentCard
@@ -16,30 +23,33 @@ export interface InstrumentCardProps {
   instructors: number;
 }
 
+type PropsWithStyles = InstrumentCardProps & WithStyles<'media'>;
+
 /** 
  * InstrumentCard component
  */
-const InstrumentCard: React.StatelessComponent<InstrumentCardProps> = props =>  {
-    return (
-      <div className="card nabi-display-inline-block">
-        <Card>
-        <CardMedia className="CardMedia box-shadow-none">
-          <img src={require(`../../../../assets/images/${props.image}`)} alt=""/>
-        </CardMedia>
+export const InstrumentCard: React.StatelessComponent<PropsWithStyles> = props =>  {
+  return (
+    <div>
+      <Card>
+        <CardMedia 
+          className={props.classes.media}
+          image={require(`../../../../assets/images/${props.image}`)}
+        />
         <CardContent>
-        <Typography  variant="headline" component="h2">
-         Learn {props.instrument}
-         </Typography>
-        <Typography component="p">
-        {props.instructors} {props.instrument} instructor in your area.
-        </Typography>
-        <Button size="small" color="primary">
-          GET STARED
-        </Button>
+          <Typography className="nabi-margin-top-small" variant="body2">
+            Learn {props.instrument}
+          </Typography>
+          <Typography>
+            {props.instructors} {props.instrument} instructors in your area.
+          </Typography>
+          <Button size="small" color="primary">
+            GET STARED
+          </Button>
         </CardContent>
-        </Card>
-      </div>
-    );
+      </Card>
+    </div>
+  );
 };
 
-export default InstrumentCard ;
+export default withStyles(styles)<InstrumentCardProps>(InstrumentCard);

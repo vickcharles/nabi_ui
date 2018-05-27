@@ -75,11 +75,6 @@ input {
   margin-right: auto;
   margin-left: auto;
 }
-.nabi-popular-title {
- font-size: 18px;
- font-weight: 400 !important;
-
-}
 
 /*BACKGROUND COLOR*/
 .nabi-background-color {
@@ -532,31 +527,15 @@ input {
 		padding: 5px 15px !important;
 		font-size: 11px !important;
   }
-  /*POPULAR ISTRUMENT SECTION*/
-  .card {
-    margin-left: 0% !important;
-    width: 100% !important;
-    height: 300px;
-    margin-top: 20px !important;
-  }
-  .card img {
-    height: 180px !important;
-  }
-  .nabi-popular-title {
-    font-size: 22px;
-  }
+	/*POPULAR ISTRUMENT SECTION*/
+	.popular-instrument-card {
+		height: 100% !important;
+	}
 }
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-width: 768px) {
 	/****CUSTOM ELEMENTS****/
-	/*Responsive Hide*/
-	.hide-on-mobile {
-		display: block !important;
-	}
-	.hide-on-desktop {
-		display: none !important;
-	}
 	/*Container*/
 	.nabi-container {
 		margin: 0 auto;
@@ -609,16 +588,6 @@ input {
 		padding: 15px 38px !important;
 		font-size: 14px !important
   }
-  /*POPULAR ISTRUMENT SECTION*/
-  .card{
-    margin: 10px  0 15px 15px!important;
-    width: 310px !important;
-    margin: 0px  0 25px 15px!important;
-    width: 290px !important;
-  }
-  .nabi-popular-title {
-    font-size: 28px;
-  }
 	/*header*/
 	#menu {
 		top: 37% !important;
@@ -648,7 +617,7 @@ input {
 	.hide-on-desktop {
 		display: none !important;
 	}
-	/*Page title*/
+	/*Page Title*/
 	#nabi-page-title {
 		font-size: 25px !important;
 	}
