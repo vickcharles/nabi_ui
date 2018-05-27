@@ -5,29 +5,33 @@ import CardMedia from 'material-ui/Card';
 import Typography from 'material-ui/Typography';
 import Button from 'material-ui/Button';
 
-/** 
- * Card component
+/**
+ * Props for InstrumentCard
+ * @interface InstrumentCardProps
  */
-
-export interface CardProps {
-  ImageUrl: string;
+export interface InstrumentCardProps {
+  id?: string;
+  image: string;
   instrument: string;
-  numberOfInstructors: number;
+  instructors: number;
 }
 
-const PopularInstrumentCard: React.StatelessComponent<CardProps> = props =>  {
+/** 
+ * InstrumentCard component
+ */
+const InstrumentCard: React.StatelessComponent<InstrumentCardProps> = props =>  {
     return (
       <div className="card nabi-display-inline-block">
         <Card>
         <CardMedia className="CardMedia box-shadow-none">
-          <img src={props.ImageUrl} alt=""/>
+          <img src={require(`../../../../assets/images/${props.image}`)} alt=""/>
         </CardMedia>
         <CardContent>
         <Typography  variant="headline" component="h2">
          Learn {props.instrument}
          </Typography>
         <Typography component="p">
-        {props.numberOfInstructors} {props.instrument} instructor in your area.
+        {props.instructors} {props.instrument} instructor in your area.
         </Typography>
         <Button size="small" color="primary">
           GET STARED
@@ -38,4 +42,4 @@ const PopularInstrumentCard: React.StatelessComponent<CardProps> = props =>  {
     );
 };
 
-export default PopularInstrumentCard ;
+export default InstrumentCard ;

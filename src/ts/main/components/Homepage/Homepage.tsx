@@ -1,7 +1,7 @@
 import * as React from 'react';
-import BackgroundImage from './BackgroundImage';
+import Banner from './Banner';
+import PopularInstruments from './PopularInstruments';
 import FreeLesson from './FreeLesson';
-import PopularInstrumentSection from './PopularInstrumentSection';
 
 /** 
  * Homepage component
@@ -9,8 +9,8 @@ import PopularInstrumentSection from './PopularInstrumentSection';
 const Homepage = () => {
   return (
     <div>
-      <BackgroundImage />
-      <PopularInstrumentSection />
+      <Banner />
+      <PopularInstruments />
       <FreeLesson />
     </div>
   );
