@@ -4,7 +4,14 @@ exports[`EducationFields Shallow Matches snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Education />,
+  Symbol(enzyme.__unrendered__): <EducationFields
+    addEducation={[MockFunction]}
+    degreeType="Bachelor's Degree"
+    fieldOfStudy=""
+    graduationYear=""
+    handleChange={[MockFunction]}
+    schoolName=""
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -18,13 +25,100 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <WithStyles(Typography)
-          className="nabi-margin-top-small"
-          variant="body2"
+        <div
+          className="nabi-education"
         >
-          Education
-        </WithStyles(Typography)>,
-        <EducationFields />,
+          <TextField
+            fullWidth={true}
+            id="schoolName"
+            margin="normal"
+            name="schoolName"
+            onChange={[MockFunction]}
+            placeholder="School name"
+            required={true}
+            select={false}
+            value=""
+          />
+          <TextField
+            className="graduation-year"
+            fullWidth={true}
+            id="graduationYear"
+            margin="normal"
+            name="graduationYear"
+            onChange={[MockFunction]}
+            placeholder="Graduation year"
+            required={true}
+            select={false}
+            value=""
+          />
+          <TextField
+            fullWidth={true}
+            id="fieldOfStudy"
+            margin="normal"
+            name="fieldOfStudy"
+            onChange={[MockFunction]}
+            placeholder="Field of study (major or concentration)"
+            required={true}
+            select={false}
+            value=""
+          />
+          <WithStyles(FormControl)>
+            <WithStyles(InputLabel)
+              htmlFor="degreeType"
+            >
+              Degree type
+            </WithStyles(InputLabel)>
+            <WithStyles(Select)
+              input={
+                <WithStyles(Input)
+                  id="degreeType"
+                  name="degreeType"
+                />
+              }
+              onChange={[MockFunction]}
+              value="Bachelor's Degree"
+            >
+              <WithStyles(MenuItem)
+                value="Associate Degree"
+              >
+                Associate Degree
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="Bachelor's Degree"
+              >
+                Bachelor's Degree
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="Graduate Degreee"
+              >
+                Graduate Degreee
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="Professional Degree"
+              >
+                Professional Degree
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="Certification"
+              >
+                Certification
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="Other"
+              >
+                Other
+              </WithStyles(MenuItem)>
+            </WithStyles(Select)>
+          </WithStyles(FormControl)>
+          <WithStyles(Button)
+            className="nabi-display-block nabi-margin-top-small"
+            color="primary"
+            onClick={[MockFunction]}
+            variant="raised"
+          >
+            Add
+          </WithStyles(Button)>
+        </div>,
         <WithStyles(Divider)
           className="nabi-margin-top-small"
         />,
@@ -35,24 +129,371 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "host",
         "props": Object {
-          "children": "Education",
-          "className": "nabi-margin-top-small",
-          "variant": "body2",
+          "children": Array [
+            <TextField
+              fullWidth={true}
+              id="schoolName"
+              margin="normal"
+              name="schoolName"
+              onChange={[MockFunction]}
+              placeholder="School name"
+              required={true}
+              select={false}
+              value=""
+            />,
+            <TextField
+              className="graduation-year"
+              fullWidth={true}
+              id="graduationYear"
+              margin="normal"
+              name="graduationYear"
+              onChange={[MockFunction]}
+              placeholder="Graduation year"
+              required={true}
+              select={false}
+              value=""
+            />,
+            <TextField
+              fullWidth={true}
+              id="fieldOfStudy"
+              margin="normal"
+              name="fieldOfStudy"
+              onChange={[MockFunction]}
+              placeholder="Field of study (major or concentration)"
+              required={true}
+              select={false}
+              value=""
+            />,
+            <WithStyles(FormControl)>
+              <WithStyles(InputLabel)
+                htmlFor="degreeType"
+              >
+                Degree type
+              </WithStyles(InputLabel)>
+              <WithStyles(Select)
+                input={
+                  <WithStyles(Input)
+                    id="degreeType"
+                    name="degreeType"
+                  />
+                }
+                onChange={[MockFunction]}
+                value="Bachelor's Degree"
+              >
+                <WithStyles(MenuItem)
+                  value="Associate Degree"
+                >
+                  Associate Degree
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="Bachelor's Degree"
+                >
+                  Bachelor's Degree
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="Graduate Degreee"
+                >
+                  Graduate Degreee
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="Professional Degree"
+                >
+                  Professional Degree
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="Certification"
+                >
+                  Certification
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="Other"
+                >
+                  Other
+                </WithStyles(MenuItem)>
+              </WithStyles(Select)>
+            </WithStyles(FormControl)>,
+            <WithStyles(Button)
+              className="nabi-display-block nabi-margin-top-small"
+              color="primary"
+              onClick={[MockFunction]}
+              variant="raised"
+            >
+              Add
+            </WithStyles(Button)>,
+          ],
+          "className": "nabi-education",
         },
         "ref": null,
-        "rendered": "Education",
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "fullWidth": true,
+              "id": "schoolName",
+              "margin": "normal",
+              "name": "schoolName",
+              "onChange": [MockFunction],
+              "placeholder": "School name",
+              "required": true,
+              "select": false,
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "className": "graduation-year",
+              "fullWidth": true,
+              "id": "graduationYear",
+              "margin": "normal",
+              "name": "graduationYear",
+              "onChange": [MockFunction],
+              "placeholder": "Graduation year",
+              "required": true,
+              "select": false,
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "fullWidth": true,
+              "id": "fieldOfStudy",
+              "margin": "normal",
+              "name": "fieldOfStudy",
+              "onChange": [MockFunction],
+              "placeholder": "Field of study (major or concentration)",
+              "required": true,
+              "select": false,
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(InputLabel)
+                  htmlFor="degreeType"
+                >
+                  Degree type
+                </WithStyles(InputLabel)>,
+                <WithStyles(Select)
+                  input={
+                    <WithStyles(Input)
+                      id="degreeType"
+                      name="degreeType"
+                    />
+                  }
+                  onChange={[MockFunction]}
+                  value="Bachelor's Degree"
+                >
+                  <WithStyles(MenuItem)
+                    value="Associate Degree"
+                  >
+                    Associate Degree
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="Bachelor's Degree"
+                  >
+                    Bachelor's Degree
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="Graduate Degreee"
+                  >
+                    Graduate Degreee
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="Professional Degree"
+                  >
+                    Professional Degree
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="Certification"
+                  >
+                    Certification
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="Other"
+                  >
+                    Other
+                  </WithStyles(MenuItem)>
+                </WithStyles(Select)>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Degree type",
+                  "htmlFor": "degreeType",
+                },
+                "ref": null,
+                "rendered": "Degree type",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <WithStyles(MenuItem)
+                      value="Associate Degree"
+                    >
+                      Associate Degree
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="Bachelor's Degree"
+                    >
+                      Bachelor's Degree
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="Graduate Degreee"
+                    >
+                      Graduate Degreee
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="Professional Degree"
+                    >
+                      Professional Degree
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="Certification"
+                    >
+                      Certification
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="Other"
+                    >
+                      Other
+                    </WithStyles(MenuItem)>,
+                  ],
+                  "input": <WithStyles(Input)
+                    id="degreeType"
+                    name="degreeType"
+                  />,
+                  "onChange": [MockFunction],
+                  "value": "Bachelor's Degree",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Associate Degree",
+                      "value": "Associate Degree",
+                    },
+                    "ref": null,
+                    "rendered": "Associate Degree",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Bachelor's Degree",
+                      "value": "Bachelor's Degree",
+                    },
+                    "ref": null,
+                    "rendered": "Bachelor's Degree",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Graduate Degreee",
+                      "value": "Graduate Degreee",
+                    },
+                    "ref": null,
+                    "rendered": "Graduate Degreee",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Professional Degree",
+                      "value": "Professional Degree",
+                    },
+                    "ref": null,
+                    "rendered": "Professional Degree",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Certification",
+                      "value": "Certification",
+                    },
+                    "ref": null,
+                    "rendered": "Certification",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Other",
+                      "value": "Other",
+                    },
+                    "ref": null,
+                    "rendered": "Other",
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Add",
+              "className": "nabi-display-block nabi-margin-top-small",
+              "color": "primary",
+              "onClick": [MockFunction],
+              "variant": "raised",
+            },
+            "ref": null,
+            "rendered": "Add",
+            "type": [Function],
+          },
+        ],
+        "type": "div",
       },
       Object {
         "instance": null,
@@ -75,13 +516,100 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <WithStyles(Typography)
-            className="nabi-margin-top-small"
-            variant="body2"
+          <div
+            className="nabi-education"
           >
-            Education
-          </WithStyles(Typography)>,
-          <EducationFields />,
+            <TextField
+              fullWidth={true}
+              id="schoolName"
+              margin="normal"
+              name="schoolName"
+              onChange={[MockFunction]}
+              placeholder="School name"
+              required={true}
+              select={false}
+              value=""
+            />
+            <TextField
+              className="graduation-year"
+              fullWidth={true}
+              id="graduationYear"
+              margin="normal"
+              name="graduationYear"
+              onChange={[MockFunction]}
+              placeholder="Graduation year"
+              required={true}
+              select={false}
+              value=""
+            />
+            <TextField
+              fullWidth={true}
+              id="fieldOfStudy"
+              margin="normal"
+              name="fieldOfStudy"
+              onChange={[MockFunction]}
+              placeholder="Field of study (major or concentration)"
+              required={true}
+              select={false}
+              value=""
+            />
+            <WithStyles(FormControl)>
+              <WithStyles(InputLabel)
+                htmlFor="degreeType"
+              >
+                Degree type
+              </WithStyles(InputLabel)>
+              <WithStyles(Select)
+                input={
+                  <WithStyles(Input)
+                    id="degreeType"
+                    name="degreeType"
+                  />
+                }
+                onChange={[MockFunction]}
+                value="Bachelor's Degree"
+              >
+                <WithStyles(MenuItem)
+                  value="Associate Degree"
+                >
+                  Associate Degree
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="Bachelor's Degree"
+                >
+                  Bachelor's Degree
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="Graduate Degreee"
+                >
+                  Graduate Degreee
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="Professional Degree"
+                >
+                  Professional Degree
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="Certification"
+                >
+                  Certification
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="Other"
+                >
+                  Other
+                </WithStyles(MenuItem)>
+              </WithStyles(Select)>
+            </WithStyles(FormControl)>
+            <WithStyles(Button)
+              className="nabi-display-block nabi-margin-top-small"
+              color="primary"
+              onClick={[MockFunction]}
+              variant="raised"
+            >
+              Add
+            </WithStyles(Button)>
+          </div>,
           <WithStyles(Divider)
             className="nabi-margin-top-small"
           />,
@@ -92,24 +620,371 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "host",
           "props": Object {
-            "children": "Education",
-            "className": "nabi-margin-top-small",
-            "variant": "body2",
+            "children": Array [
+              <TextField
+                fullWidth={true}
+                id="schoolName"
+                margin="normal"
+                name="schoolName"
+                onChange={[MockFunction]}
+                placeholder="School name"
+                required={true}
+                select={false}
+                value=""
+              />,
+              <TextField
+                className="graduation-year"
+                fullWidth={true}
+                id="graduationYear"
+                margin="normal"
+                name="graduationYear"
+                onChange={[MockFunction]}
+                placeholder="Graduation year"
+                required={true}
+                select={false}
+                value=""
+              />,
+              <TextField
+                fullWidth={true}
+                id="fieldOfStudy"
+                margin="normal"
+                name="fieldOfStudy"
+                onChange={[MockFunction]}
+                placeholder="Field of study (major or concentration)"
+                required={true}
+                select={false}
+                value=""
+              />,
+              <WithStyles(FormControl)>
+                <WithStyles(InputLabel)
+                  htmlFor="degreeType"
+                >
+                  Degree type
+                </WithStyles(InputLabel)>
+                <WithStyles(Select)
+                  input={
+                    <WithStyles(Input)
+                      id="degreeType"
+                      name="degreeType"
+                    />
+                  }
+                  onChange={[MockFunction]}
+                  value="Bachelor's Degree"
+                >
+                  <WithStyles(MenuItem)
+                    value="Associate Degree"
+                  >
+                    Associate Degree
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="Bachelor's Degree"
+                  >
+                    Bachelor's Degree
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="Graduate Degreee"
+                  >
+                    Graduate Degreee
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="Professional Degree"
+                  >
+                    Professional Degree
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="Certification"
+                  >
+                    Certification
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="Other"
+                  >
+                    Other
+                  </WithStyles(MenuItem)>
+                </WithStyles(Select)>
+              </WithStyles(FormControl)>,
+              <WithStyles(Button)
+                className="nabi-display-block nabi-margin-top-small"
+                color="primary"
+                onClick={[MockFunction]}
+                variant="raised"
+              >
+                Add
+              </WithStyles(Button)>,
+            ],
+            "className": "nabi-education",
           },
           "ref": null,
-          "rendered": "Education",
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "fullWidth": true,
+                "id": "schoolName",
+                "margin": "normal",
+                "name": "schoolName",
+                "onChange": [MockFunction],
+                "placeholder": "School name",
+                "required": true,
+                "select": false,
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "className": "graduation-year",
+                "fullWidth": true,
+                "id": "graduationYear",
+                "margin": "normal",
+                "name": "graduationYear",
+                "onChange": [MockFunction],
+                "placeholder": "Graduation year",
+                "required": true,
+                "select": false,
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "fullWidth": true,
+                "id": "fieldOfStudy",
+                "margin": "normal",
+                "name": "fieldOfStudy",
+                "onChange": [MockFunction],
+                "placeholder": "Field of study (major or concentration)",
+                "required": true,
+                "select": false,
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(InputLabel)
+                    htmlFor="degreeType"
+                  >
+                    Degree type
+                  </WithStyles(InputLabel)>,
+                  <WithStyles(Select)
+                    input={
+                      <WithStyles(Input)
+                        id="degreeType"
+                        name="degreeType"
+                      />
+                    }
+                    onChange={[MockFunction]}
+                    value="Bachelor's Degree"
+                  >
+                    <WithStyles(MenuItem)
+                      value="Associate Degree"
+                    >
+                      Associate Degree
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="Bachelor's Degree"
+                    >
+                      Bachelor's Degree
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="Graduate Degreee"
+                    >
+                      Graduate Degreee
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="Professional Degree"
+                    >
+                      Professional Degree
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="Certification"
+                    >
+                      Certification
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="Other"
+                    >
+                      Other
+                    </WithStyles(MenuItem)>
+                  </WithStyles(Select)>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Degree type",
+                    "htmlFor": "degreeType",
+                  },
+                  "ref": null,
+                  "rendered": "Degree type",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      <WithStyles(MenuItem)
+                        value="Associate Degree"
+                      >
+                        Associate Degree
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="Bachelor's Degree"
+                      >
+                        Bachelor's Degree
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="Graduate Degreee"
+                      >
+                        Graduate Degreee
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="Professional Degree"
+                      >
+                        Professional Degree
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="Certification"
+                      >
+                        Certification
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="Other"
+                      >
+                        Other
+                      </WithStyles(MenuItem)>,
+                    ],
+                    "input": <WithStyles(Input)
+                      id="degreeType"
+                      name="degreeType"
+                    />,
+                    "onChange": [MockFunction],
+                    "value": "Bachelor's Degree",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Associate Degree",
+                        "value": "Associate Degree",
+                      },
+                      "ref": null,
+                      "rendered": "Associate Degree",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Bachelor's Degree",
+                        "value": "Bachelor's Degree",
+                      },
+                      "ref": null,
+                      "rendered": "Bachelor's Degree",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Graduate Degreee",
+                        "value": "Graduate Degreee",
+                      },
+                      "ref": null,
+                      "rendered": "Graduate Degreee",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Professional Degree",
+                        "value": "Professional Degree",
+                      },
+                      "ref": null,
+                      "rendered": "Professional Degree",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Certification",
+                        "value": "Certification",
+                      },
+                      "ref": null,
+                      "rendered": "Certification",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Other",
+                        "value": "Other",
+                      },
+                      "ref": null,
+                      "rendered": "Other",
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Add",
+                "className": "nabi-display-block nabi-margin-top-small",
+                "color": "primary",
+                "onClick": [MockFunction],
+                "variant": "raised",
+              },
+              "ref": null,
+              "rendered": "Add",
+              "type": [Function],
+            },
+          ],
+          "type": "div",
         },
         Object {
           "instance": null,

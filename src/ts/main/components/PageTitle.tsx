@@ -8,6 +8,7 @@ import Typography from 'material-ui/Typography';
 interface PageTitleProps {
   pageTitle: string;
 }
+
 /**
  * Page Title
  * @param {PageTitleProps} props 
@@ -15,7 +16,7 @@ interface PageTitleProps {
 const PageTitle: React.StatelessComponent<PageTitleProps> = props => {
   return (
     <Typography variant="title" id="nabi-page-title">
-        {props.pageTitle}
+      {props.pageTitle}
     </Typography>
   );
 };

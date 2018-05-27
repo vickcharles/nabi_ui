@@ -1,6 +1,6 @@
 import reducer from '../';
 import { InstructorActions } from '../constants/ActionTypes';
-import { InstructorState, IState } from '../model';
+import { InstructorType, IState } from '../model';
 
 describe('Instructors reducer', () => {
   let state: IState;
@@ -21,7 +21,7 @@ describe('Instructors reducer', () => {
         instructor: {
           userId: 'hello',
           bio: 'something'
-        } as InstructorState
+        } as InstructorType
       })
     ).toEqual([
       {
@@ -43,7 +43,7 @@ describe('Instructors reducer', () => {
           instructor: {
             userId: 'foo',
             bio: 'something'
-          } as InstructorState
+          } as InstructorType
         })
       ).toEqual([
         {

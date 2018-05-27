@@ -1,8 +1,8 @@
 import { AnyAction } from 'redux';
-import { InstructorState, IState } from './model';
+import { InstructorType, IState } from './model';
 import { InstructorActions } from './constants/ActionTypes';
 
-const initialState: InstructorState[] = [];
+const initialState: InstructorType[] = [];
 
 export default function instructorsReducer(state: IState = initialState, action: AnyAction): IState {
   switch (action.type) {

@@ -2,12 +2,12 @@ import * as React from 'react';
 import { Registration } from '../';
 import { shallow } from 'enzyme';
 import { UserState } from '../model';
-import { InstructorState } from '../../Instructors/model';
+import { InstructorType } from '../../Instructors/model';
 
 describe('Registration', () => {
   let wrapper: any;
   const createUser: (user: UserState) => {} = jest.fn();
-  const createInstructor: (instructor: InstructorState) => {} = jest.fn();
+  const createInstructor: (instructor: InstructorType) => {} = jest.fn();
   const searchZipCode: (user: UserState) => {} = jest.fn();
 
   beforeEach(() => {

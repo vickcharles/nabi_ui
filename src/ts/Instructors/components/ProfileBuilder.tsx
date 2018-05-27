@@ -96,7 +96,7 @@ export class ProfileBuilder extends React.Component
       case 0:
         return <BasicInfo user={this.state.user} changeAvatar={this.props.changeAvatar}/>;
       case 1:
-        return <Education />;
+        return <Education userId={this.state.user.id}/>;
       case 2:
         return '';
       case 3:

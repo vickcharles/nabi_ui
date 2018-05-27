@@ -1,11 +1,11 @@
 import * as actions from '../actions';
 
 import { InstructorActions } from '../constants/ActionTypes';
-import { InstructorState } from '../model';
+import { InstructorType } from '../model';
 
 describe('Instructors actions', () => {
   it('Creates an action to add instructor', () => {
-    const instructor: InstructorState = {
+    const instructor: InstructorType = {
       userId: 'foo',
       bio: 'carupano'
     };
@@ -19,7 +19,7 @@ describe('Instructors actions', () => {
   });
 
   it('Creates an action to update Instructor', () => {
-    const instructor: InstructorState = {
+    const instructor: InstructorType = {
         userId: 'foo',
         bio: 'caracas'
     };
