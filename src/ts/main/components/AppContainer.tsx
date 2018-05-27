@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { Route, withRouter, Switch } from 'react-router-dom';
 
 import Header from './Header';
-import Homepage from './Homepage';
+import Homepage from './Homepage/Homepage';
 import { createUser, changeAvatar, Registration, fetchZipCodeAddress } from '../../Users/';
 import { UserState } from '../../Users/model';
 import { createInstructor, ProfileBuilder } from '../../Instructors';
