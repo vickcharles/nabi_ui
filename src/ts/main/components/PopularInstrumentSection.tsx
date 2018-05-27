@@ -47,7 +47,7 @@ class PopularInstrumentSection extends React.Component <{}, {}>  {
       return (
         <div className="nabi-margin-top-large nabi-margin-bottom-large  nabi-background-color">
           <h1 className="nabi-text-center nabi-popular-title  nabi-color">
-            Popular instrument 
+            Popular instruments 
           </h1>
           <div className="container nabi-text-center">
             {Cards}
