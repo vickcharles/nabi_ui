@@ -7,8 +7,8 @@ import { Button } from 'material-ui';
 const BackgroundImageSection = () => {
   return ( 
     <section id="banner">
-      <div className="container nabi-text-center">
-        <h1 className="nabi-text-mediumbold nabi-font-jennasue nabi-margin-bottom-xsmall"> 
+      <div className="container nabi-text-center nabi-color-white">
+        <h1 className="nabi-text-mediumbold nabi-jennasue-title nabi-color-white nabi-margin-bottom-xsmall">
           Share the love for music through education
         </h1>
         <p className="nabi-margin-bottom-zero">

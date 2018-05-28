@@ -5,6 +5,7 @@ import RegistrationForm from './RegistrationForm';
 import { UserState, Role } from '../model';
 import { InstructorType } from '../../Instructors/model';
 import { PageTitle } from '../../main';
+import { RedirectState } from '../../main/model';
 
 /**
  * Props for registration
@@ -16,18 +17,14 @@ interface RegistrationProps {
   searchZipCode: (user: UserState) => void;
 }
 
-/**
- * State for firing redirect
- * @interface RedirectState
- */
-interface RedirectState {
-  fireRedirect: boolean;
-}
-
 interface AgeDisclaimerState {
   showAgeDisclaimer: boolean;
 }
 
+/**
+ * State for Registration
+ * @interface RegistrationState
+ */
 interface RegistrationState extends 
 UserState,
 RedirectState,
@@ -151,7 +148,7 @@ export class Registration extends React.Component<RegistrationProps, Registratio
           />
         </div>
         {this.state.fireRedirect && this.state.role === 'instructor' && (
-          <Redirect to={`profile-builder/${this.state.id}`} />
+          <Redirect to={`welcome-instructor/${this.state.id}`} />
         )}
       </div>
     );

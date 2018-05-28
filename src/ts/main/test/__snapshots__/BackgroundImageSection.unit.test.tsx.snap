@@ -18,10 +18,10 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <div
-        className="container nabi-text-center"
+        className="container nabi-text-center nabi-color-white"
       >
         <h1
-          className="nabi-text-mediumbold nabi-font-jennasue nabi-margin-bottom-xsmall"
+          className="nabi-text-mediumbold nabi-jennasue-title nabi-color-white nabi-margin-bottom-xsmall"
         >
           Share the love for music through education
         </h1>
@@ -53,7 +53,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h1
-            className="nabi-text-mediumbold nabi-font-jennasue nabi-margin-bottom-xsmall"
+            className="nabi-text-mediumbold nabi-jennasue-title nabi-color-white nabi-margin-bottom-xsmall"
           >
             Share the love for music through education
           </h1>,
@@ -75,7 +75,7 @@ ShallowWrapper {
             START TEACHING
           </WithStyles(Button)>,
         ],
-        "className": "container nabi-text-center",
+        "className": "container nabi-text-center nabi-color-white",
       },
       "ref": null,
       "rendered": Array [
@@ -85,7 +85,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Share the love for music through education",
-            "className": "nabi-text-mediumbold nabi-font-jennasue nabi-margin-bottom-xsmall",
+            "className": "nabi-text-mediumbold nabi-jennasue-title nabi-color-white nabi-margin-bottom-xsmall",
           },
           "ref": null,
           "rendered": "Share the love for music through education",
@@ -141,10 +141,10 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <div
-          className="container nabi-text-center"
+          className="container nabi-text-center nabi-color-white"
         >
           <h1
-            className="nabi-text-mediumbold nabi-font-jennasue nabi-margin-bottom-xsmall"
+            className="nabi-text-mediumbold nabi-jennasue-title nabi-color-white nabi-margin-bottom-xsmall"
           >
             Share the love for music through education
           </h1>
@@ -176,7 +176,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <h1
-              className="nabi-text-mediumbold nabi-font-jennasue nabi-margin-bottom-xsmall"
+              className="nabi-text-mediumbold nabi-jennasue-title nabi-color-white nabi-margin-bottom-xsmall"
             >
               Share the love for music through education
             </h1>,
@@ -198,7 +198,7 @@ ShallowWrapper {
               START TEACHING
             </WithStyles(Button)>,
           ],
-          "className": "container nabi-text-center",
+          "className": "container nabi-text-center nabi-color-white",
         },
         "ref": null,
         "rendered": Array [
@@ -208,7 +208,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Share the love for music through education",
-              "className": "nabi-text-mediumbold nabi-font-jennasue nabi-margin-bottom-xsmall",
+              "className": "nabi-text-mediumbold nabi-jennasue-title nabi-color-white nabi-margin-bottom-xsmall",
             },
             "ref": null,
             "rendered": "Share the love for music through education",

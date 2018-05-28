@@ -37,6 +37,7 @@ const styles = (theme: Theme) => ({
 interface IdParams {
   id: string;
 }
+
 /**
  * Props for ProfileBuilder
  * @interface {ProfileBuilderProps}
