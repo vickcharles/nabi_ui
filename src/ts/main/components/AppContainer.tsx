@@ -5,6 +5,7 @@ import { Route, withRouter, Switch } from 'react-router-dom';
 
 import Header from './Header';
 import Homepage from './Homepage';
+import Welcome from './Welcome';
 import { createUser, changeAvatar, Registration, fetchZipCodeAddress } from '../../Users/';
 import { UserState } from '../../Users/model';
 import { createInstructor, ProfileBuilder } from '../../Instructors';
@@ -18,14 +19,16 @@ export interface AppContainerStateProps {
   users: UserState[];
   dispatch: Dispatch<{}>;
 }
+
 /**
  * Props for AppContainer
  * @interface AppContainerProps
  * @extends AppContainerStateProps
  */
 export interface AppContainerProps extends AppContainerStateProps {}
+
 /**
- * This is the application's main container
+ * AppContainer, this is the application's main container, it handles redux config and routes
  * @class AppContainer
  * @extends React.Component<AppContainerProps, {}>
  */
@@ -49,6 +52,18 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
         searchZipCode={dispatchZipCodeSearch}
       />
     );
+
+    /** 
+     * Renders Welcome for instructors
+     */
+    const renderWelcomeInstructors = (props: any) => (
+      <Welcome 
+        welcomeText="Now is time to build your profile and start finding teaching jobs."
+        actionText="BUILD PROFILE"
+        actionUrl="profile-builder"
+      />
+    );
+
     /** 
      * Renders ProfileBuilder component
      */
@@ -73,6 +88,11 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
             exact={true} 
             path="/registration" 
             render={renderRegistration}
+          />
+          <Route
+            exact={true}
+            path="/welcome-instructor/:id"
+            render={renderWelcomeInstructors}
           />
           <Route 
             exact={true} 

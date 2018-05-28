@@ -48,6 +48,15 @@ input {
 	background-color: #06c3e1;
 }
 
+/*COLOR*/
+.nabi-color-white {
+	color: #fff !important;
+}
+
+.nabi-color-nabi {
+	color: #06c3e1 !important;
+}
+
 /*CURSOR*/
 .nabi-cursor-pointer {
 	cursor: pointer;
@@ -265,7 +274,6 @@ input {
 	height: 400px !important;
 	width: 100%;
 	position: relative;
-	color: #f0f3f6;
 	background-image: url('../images/nabiBannerImage.jpg') !important;
 	background-size: cover !important;
 	background-repeat: no-repeat;
@@ -277,10 +285,6 @@ input {
 	padding-right: 25px;
 	padding-top: 55px;
 	position: absolute;
-}
-
-#banner h1 {
-	font-size: 38px !important;
 }
 
 #banner p {
@@ -298,6 +302,12 @@ input {
 #nabi-page-title {
 	font-size: 25px !important;
 	margin: 30px !important;
+}
+
+/*JennaSue title*/
+.nabi-jennasue-title {
+	font-family: 'JennaSue';
+	font-size: 38px !important;
 }
 
 /*Highlighted text*/
@@ -412,12 +422,13 @@ input {
 	.nabi-section {
 		padding: 50px 80px;
 	}
+	/*JennaSue title*/
+	.nabi-jennasue-title {
+		font-size: 60px !important;
+	}
 	/*Homepage*/
 	#banner {
 		height: 500px !important;
-	}
-	#banner h1 {
-		font-size: 60px !important;
 	}
 	#banner p {
 		font-weight: 300;
