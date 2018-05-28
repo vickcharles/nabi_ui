@@ -61,6 +61,7 @@ export interface UserState {
   hearAboutUs: string;
   avatar?: string;
   displayName: string;
+  birthday?: Date;
   state?: string;
   city?: string;
   country?: string;

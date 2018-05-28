@@ -24,12 +24,21 @@ interface RedirectState {
   fireRedirect: boolean;
 }
 
+interface AgeDisclaimerState {
+  showAgeDisclaimer: boolean;
+}
+
+interface RegistrationState extends 
+UserState,
+RedirectState,
+AgeDisclaimerState {}
+
 /**
  * Contains a form to register new users
  * @class Registration
  * @extends React.Component<RegistrationProps, UserState & RedirectState>
  */
-export class Registration extends React.Component<RegistrationProps, UserState & RedirectState> {
+export class Registration extends React.Component<RegistrationProps, RegistrationState> {
   constructor(props: RegistrationProps) {
     super(props);
 
@@ -43,11 +52,25 @@ export class Registration extends React.Component<RegistrationProps, UserState &
       role: Role.student,
       hearAboutUs: '',
       fireRedirect: false,
-      displayName: ''
+      displayName: '',
+      showAgeDisclaimer: false
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleBirthdayChange = this.handleBirthdayChange.bind(this);
+  }
+
+  public handleBirthdayChange(dateData: any, hasError: boolean): void {
+    let day = parseInt(dateData.day, 10);
+    let month = parseInt(dateData.month, 10) - 1; // javascript month starts on 0
+    let year = parseInt(dateData.year, 10);
+    let newBD = new Date(year, month, day);
+    
+    this.setState({
+      ...this.state,
+      'birthday': newBD
+    });
   }
 
   public handleChange(event: any): void {
@@ -122,6 +145,7 @@ export class Registration extends React.Component<RegistrationProps, UserState &
           <RegistrationForm
             handleChange={this.handleChange}
             handleSubmit={this.handleSubmit}
+            handleBirthdayChange={this.handleBirthdayChange}
             hearAboutUs={this.state.hearAboutUs}
             selectedRole={this.state.role}
           />

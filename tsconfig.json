@@ -1,4 +1,9 @@
 {
+  "lintOptions": {
+    "rules": { 
+    "no-bitwise":false
+    }
+  },
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "build/dist",
