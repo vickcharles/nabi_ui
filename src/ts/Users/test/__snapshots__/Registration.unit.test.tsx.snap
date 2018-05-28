@@ -29,6 +29,7 @@ ShallowWrapper {
           className="nabi-background-white nabi-section"
         >
           <RegistrationForm
+            handleBirthdayChange={[Function]}
             handleChange={[Function]}
             handleSubmit={[Function]}
             hearAboutUs=""
@@ -58,6 +59,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <RegistrationForm
+            handleBirthdayChange={[Function]}
             handleChange={[Function]}
             handleSubmit={[Function]}
             hearAboutUs=""
@@ -71,6 +73,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "handleBirthdayChange": [Function],
             "handleChange": [Function],
             "handleSubmit": [Function],
             "hearAboutUs": "",
@@ -100,6 +103,7 @@ ShallowWrapper {
             className="nabi-background-white nabi-section"
           >
             <RegistrationForm
+              handleBirthdayChange={[Function]}
               handleChange={[Function]}
               handleSubmit={[Function]}
               hearAboutUs=""
@@ -129,6 +133,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <RegistrationForm
+              handleBirthdayChange={[Function]}
               handleChange={[Function]}
               handleSubmit={[Function]}
               hearAboutUs=""
@@ -142,6 +147,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
+              "handleBirthdayChange": [Function],
               "handleChange": [Function],
               "handleSubmit": [Function],
               "hearAboutUs": "",

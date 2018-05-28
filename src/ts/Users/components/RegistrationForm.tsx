@@ -11,6 +11,7 @@ import TextField from 'material-ui/TextField';
 import Typography from 'material-ui/Typography/Typography';
 
 import { Role, hearAboutUsInfo } from '../model';
+import BirthdayField from './BirthdayField';
 
 /**
  * Props for RegistrationForm
@@ -19,6 +20,7 @@ import { Role, hearAboutUsInfo } from '../model';
 interface RegistrationFormProps {
   handleChange: (event: React.FormEvent<{}>) => void;
   handleSubmit: (event: React.FormEvent<{}>) => void;
+  handleBirthdayChange: (day: any, hasError: boolean) => void;
   hearAboutUs: string;
   selectedRole: string;
 }
@@ -28,7 +30,7 @@ interface RegistrationFormProps {
  * @param RegistrationFormProps props - The component's props
  */
 const RegistrationForm: React.StatelessComponent<RegistrationFormProps> = props => {
-  const { handleChange, handleSubmit, hearAboutUs, selectedRole } = props;
+  const { handleChange, handleSubmit, handleBirthdayChange, hearAboutUs, selectedRole } = props;
   
   const selectOptions: any = [];
   
@@ -135,6 +137,16 @@ const RegistrationForm: React.StatelessComponent<RegistrationFormProps> = props 
         required={true}
         type="password"
       />
+
+      <FormControl fullWidth={false} required={false}>
+        <InputLabel htmlFor="birthday">Birthday</InputLabel>
+        <BirthdayField
+          onChange={handleBirthdayChange}
+          id="birthday"
+          delimiter="/"
+          minAge={13}
+        />
+      </FormControl>
       
       <FormControl fullWidth={true} required={true}>
         <InputLabel htmlFor="hearAboutUs">How did you hear about us?</InputLabel>

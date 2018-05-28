@@ -7,6 +7,7 @@ describe('RegistrationForm', () => {
   let wrapper: any;
   const handleChange: () => void = jest.fn();
   const handleSubmit: () => void = jest.fn();
+  const handleBirthdayChange: () => void = jest.fn();
   
   describe('Mount', () => {
     beforeEach(() => {
@@ -14,6 +15,7 @@ describe('RegistrationForm', () => {
         <RegistrationForm
           handleChange={handleChange}
           handleSubmit={handleSubmit}
+          handleBirthdayChange={handleBirthdayChange}
           hearAboutUs=""
           selectedRole=""
         />
@@ -84,6 +86,7 @@ describe('RegistrationForm', () => {
         <RegistrationForm
           handleChange={handleChange}
           handleSubmit={handleSubmit}
+          handleBirthdayChange={handleBirthdayChange}
           hearAboutUs=""
           selectedRole=""
         />

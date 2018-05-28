@@ -5,6 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <RegistrationForm
+    handleBirthdayChange={[MockFunction]}
     handleChange={[MockFunction]}
     handleSubmit={[MockFunction]}
     hearAboutUs=""
@@ -143,6 +144,22 @@ ShallowWrapper {
           select={false}
           type="password"
         />,
+        <WithStyles(FormControl)
+          fullWidth={false}
+          required={false}
+        >
+          <WithStyles(InputLabel)
+            htmlFor="birthday"
+          >
+            Birthday
+          </WithStyles(InputLabel)>
+          <BirthdayField
+            delimiter="/"
+            id="birthday"
+            minAge={13}
+            onChange={[MockFunction]}
+          />
+        </WithStyles(FormControl)>,
         <WithStyles(FormControl)
           fullWidth={true}
           required={true}
@@ -582,6 +599,58 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <WithStyles(InputLabel)
+              htmlFor="birthday"
+            >
+              Birthday
+            </WithStyles(InputLabel)>,
+            <BirthdayField
+              delimiter="/"
+              id="birthday"
+              minAge={13}
+              onChange={[MockFunction]}
+            />,
+          ],
+          "fullWidth": false,
+          "required": false,
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Birthday",
+              "htmlFor": "birthday",
+            },
+            "ref": null,
+            "rendered": "Birthday",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "delimiter": "/",
+              "id": "birthday",
+              "minAge": 13,
+              "onChange": [MockFunction],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <WithStyles(InputLabel)
               htmlFor="hearAboutUs"
             >
               How did you hear about us?
@@ -954,6 +1023,22 @@ ShallowWrapper {
             select={false}
             type="password"
           />,
+          <WithStyles(FormControl)
+            fullWidth={false}
+            required={false}
+          >
+            <WithStyles(InputLabel)
+              htmlFor="birthday"
+            >
+              Birthday
+            </WithStyles(InputLabel)>
+            <BirthdayField
+              delimiter="/"
+              id="birthday"
+              minAge={13}
+              onChange={[MockFunction]}
+            />
+          </WithStyles(FormControl)>,
           <WithStyles(FormControl)
             fullWidth={true}
             required={true}
@@ -1384,6 +1469,58 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <WithStyles(InputLabel)
+                htmlFor="birthday"
+              >
+                Birthday
+              </WithStyles(InputLabel)>,
+              <BirthdayField
+                delimiter="/"
+                id="birthday"
+                minAge={13}
+                onChange={[MockFunction]}
+              />,
+            ],
+            "fullWidth": false,
+            "required": false,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Birthday",
+                "htmlFor": "birthday",
+              },
+              "ref": null,
+              "rendered": "Birthday",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "delimiter": "/",
+                "id": "birthday",
+                "minAge": 13,
+                "onChange": [MockFunction],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
         Object {
