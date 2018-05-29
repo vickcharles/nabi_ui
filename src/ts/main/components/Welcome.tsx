@@ -32,11 +32,15 @@ const Welcome: React.StatelessComponent<WelcomeProps> = props => {
       <div className="nabi-section nabi-text-center">
         <p className="nabi-jennasue-title nabi-color-nabi nabi-margin-bottom-xsmall">Welcome to Nabi!</p>
         <Typography>{props.welcomeText}</Typography>
-        <div className="nabi-text-center nabi-margin-top-large">
           <Link to={`/${props.actionUrl}/${props.match.params.id}`}>
-            <Button color="primary" variant="raised">{props.actionText}</Button>
+          <Button 
+            className="nabi-responsive-button nabi-margin-top-small" 
+            color="primary" 
+            variant="raised"
+          >
+            {props.actionText}
+          </Button>
           </Link>
-        </div>
       </div>
     </div>
   );

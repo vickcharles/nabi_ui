@@ -257,7 +257,7 @@ input {
 
 .nabi-responsive-button {
 	padding: 3px 14px !important;
-	font-size: 10px !important;
+	font-size: 11px !important;
 }
 
 .nabi-header-button .login-button {
@@ -266,7 +266,7 @@ input {
 }
 
 .header-divider {
-	margin: 0px -30px !important;
+	margin: 0px -27px !important;
 }
 
 /*Homepage*/
@@ -294,20 +294,20 @@ input {
 #banner button {
 	margin-top: 10px !important;
 	margin-right: 10px !important;
-	padding: 15px 20px !important;
-	font-size: 9px !important;
+	padding: 15px 11px !important;
+	font-size: 11px !important;
 }
 
 /*Page title*/
 #nabi-page-title {
-	font-size: 25px !important;
+	font-size: 18px !important;
 	margin: 30px !important;
 }
 
 /*JennaSue title*/
 .nabi-jennasue-title {
 	font-family: 'JennaSue';
-	font-size: 38px !important;
+	font-size: 42px !important;
 }
 
 /*Highlighted text*/
@@ -361,8 +361,8 @@ input {
 	#banner button {
 		margin-top: 10px !important;
 		margin-right: 10px !important;
-		padding: 15px 20px !important;
-		font-size: 10px !important;
+		padding: 15px 10px !important;
+		font-size: 13px !important;
 	}
 	#nabi-logo {
 		display: inherit;
@@ -377,7 +377,7 @@ input {
 	/*HEADER*/
 	.nabi-responsive-button {
 		padding: 5px 15px !important;
-		font-size: 11px !important;
+		font-size: 13px !important;
 	}
 }
 
@@ -452,7 +452,7 @@ input {
 	}
 	.nabi-responsive-button {
 		padding: 12px 25px !important;
-		font-size: 12px !important;
+		font-size: 14px !important;
 	}
 	header .container {
 		padding-bottom: 20px !important;
@@ -472,6 +472,10 @@ input {
 	}
 	.hide-on-desktop {
 		display: none !important;
+	}
+	/*Page title*/
+	#nabi-page-title {
+		font-size: 25px !important;
 	}
   /*Header*/
   #nabi-logo {

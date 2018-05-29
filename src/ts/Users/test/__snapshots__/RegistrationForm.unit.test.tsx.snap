@@ -218,7 +218,7 @@ ShallowWrapper {
           </WithStyles(Select)>
         </WithStyles(FormControl)>,
         <div
-          className="nabi-text-center nabi-margin-top-large"
+          className="nabi-text-center nabi-responsive-button nabi-margin-top-large"
         >
           <WithStyles(Button)
             color="primary"
@@ -874,7 +874,7 @@ ShallowWrapper {
           >
             Submit
           </WithStyles(Button)>,
-          "className": "nabi-text-center nabi-margin-top-large",
+          "className": "nabi-text-center nabi-responsive-button nabi-margin-top-large",
         },
         "ref": null,
         "rendered": Object {
@@ -1097,7 +1097,7 @@ ShallowWrapper {
             </WithStyles(Select)>
           </WithStyles(FormControl)>,
           <div
-            className="nabi-text-center nabi-margin-top-large"
+            className="nabi-text-center nabi-responsive-button nabi-margin-top-large"
           >
             <WithStyles(Button)
               color="primary"
@@ -1753,7 +1753,7 @@ ShallowWrapper {
             >
               Submit
             </WithStyles(Button)>,
-            "className": "nabi-text-center nabi-margin-top-large",
+            "className": "nabi-text-center nabi-responsive-button nabi-margin-top-large",
           },
           "ref": null,
           "rendered": Object {
