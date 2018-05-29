@@ -277,7 +277,7 @@ export class ProfileBuilder extends React.Component
     const { classes, theme } = this.props;
 
     return (
-      <div className="hide-on-desktop">
+      <div className="hide-on-desktop nabi-margin-top-medium">
         <MobileStepper
           variant="progress"
           steps={6}

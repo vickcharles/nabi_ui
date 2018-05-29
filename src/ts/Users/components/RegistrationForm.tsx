@@ -160,7 +160,7 @@ const RegistrationForm: React.StatelessComponent<RegistrationFormProps> = props 
         </Select>
       </FormControl>
 
-      <div className="nabi-text-center nabi-margin-top-large">
+      <div className="nabi-text-center nabi-responsive-button nabi-margin-top-large">
         <Button color="primary" onClick={handleSubmit} variant="raised">
             Submit
         </Button>

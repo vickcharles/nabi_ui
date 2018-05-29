@@ -129,7 +129,7 @@ const theme = createMuiTheme({
         backgroundColor: '#06c3e1'
       },
       colorPrimary: { 
-        backgroundColor: 'rgba(6, 195, 225, 0.25)'
+        backgroundColor: '#c6c9d0'
       }
     },
     MuiMobileStepper: {
