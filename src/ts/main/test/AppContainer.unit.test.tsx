@@ -4,7 +4,7 @@ import { MemoryRouter } from 'react-router-dom';
 import { shallow } from 'enzyme';
 
 describe('AppContainer', () => {
-  let wrapper: any = null;
+  let wrapper: any;
 
   beforeEach(() => {
     wrapper = shallow(

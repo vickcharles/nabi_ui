@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { shallow } from 'enzyme';
-import { BasicInfo } from '../components/BasicInfo/BasicInfo';
+import { BasicInfo } from '../components/ProfileBuilder/BasicInfo/BasicInfo';
 import { Role, UserState } from '../../Users/model';
 
 describe('BasicInfo', () => {

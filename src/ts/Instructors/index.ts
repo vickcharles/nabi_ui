@@ -1,4 +1,4 @@
-export { default as ProfileBuilder } from './components/ProfileBuilder';
+export { default as ProfileBuilder } from './components/ProfileBuilder/ProfileBuilder';
 export * from './actions';
 import * as Instructor from './model';
 export { Instructor };

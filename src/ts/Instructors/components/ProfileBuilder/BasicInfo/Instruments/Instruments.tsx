@@ -7,8 +7,8 @@ import Button from 'material-ui/Button';
 import { MenuItem } from 'material-ui/Menu';
 import Divider from 'material-ui/Divider';
 
-import { instruments } from '../../../../../assets/data/instruments';
-import { SkillLevel } from '../../../model';
+import { instruments } from '../../../../../../assets/data/instruments';
+import { SkillLevel } from '../../../../model';
 
 interface InstrumentsProps {
   instrument: string;

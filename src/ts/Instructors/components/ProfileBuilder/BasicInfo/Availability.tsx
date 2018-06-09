@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Typography from 'material-ui/Typography';
 import GridList, { GridListTile, GridListTileBar } from 'material-ui/GridList';
-import { InstructorType } from '../../model';
+import { InstructorType } from '../../../model';
 
 interface AvailabilityProps {
   updateInstructor: (instructor: InstructorType) => void;

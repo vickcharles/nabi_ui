@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { shallow } from 'enzyme';
 
-import { NameLocationBio } from '../components/BasicInfo/NameLocationBio/NameLocationBio';
+import { NameLocationBio } from '../components/ProfileBuilder/BasicInfo/NameLocationBio/NameLocationBio';
 import { Role, UserState } from '../../Users/model';
 
 describe('NameLocationBio', () => {

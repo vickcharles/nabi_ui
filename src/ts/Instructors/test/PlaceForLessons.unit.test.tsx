@@ -1,5 +1,5 @@
 import * as React from 'react';
-import PlaceForLessons from '../components/BasicInfo/PlaceForLessons';
+import PlaceForLessons from '../components/ProfileBuilder/BasicInfo/PlaceForLessons';
 import { shallow } from 'enzyme';
 
 describe('PlaceForLessons', () => {

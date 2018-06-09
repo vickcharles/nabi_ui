@@ -1,3 +1,14 @@
+export interface ExperienceType {
+  id?: number;
+  employer: string;
+  jobTitle: string;
+  fromMonth: string;
+  fromYear: string;
+  toMonth: string;
+  toYear: string;
+  location: string;
+}
+
 export enum DegreeType {
   associate = 'Associate Degree',
   bachelors = 'Bachelor\'s Degree',
@@ -60,6 +71,7 @@ export interface InstructorType {
   placeForLessons?: PlaceForLessonsType;
   studioAddress?: string;
   education?: EducationType[];
+  experience?: ExperienceType[];
 }
 
 export type IState = InstructorType[];

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Availability from '../components/BasicInfo/Availability';
+import Availability from '../components/ProfileBuilder/BasicInfo/Availability';
 import { shallow } from 'enzyme';
 
 describe('Availability', () => {
