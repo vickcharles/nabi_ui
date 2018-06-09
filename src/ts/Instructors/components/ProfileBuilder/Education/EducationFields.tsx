@@ -8,7 +8,7 @@ import { MenuItem } from 'material-ui/Menu';
 import Button from 'material-ui/Button';
 import Divider from 'material-ui/Divider';
 
-import { DegreeType, EducationType } from '../../model';
+import { DegreeType, EducationType } from '../../../model';
 
 /**
  * Props for EducationFields

@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Experience Shallow Matches snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Experience
+    updateInstructor={[MockFunction]}
+    userId=""
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        Array [],
+        <WithStyles(Typography)
+          className="nabi-margin-top-small"
+          variant="body2"
+        >
+          Add Experience
+        </WithStyles(Typography)>,
+        <ExperienceFields
+          addExperience={[Function]}
+          employer=""
+          fromMonth="jan"
+          fromYear=""
+          handleChange={[Function]}
+          jobTitle=""
+          location=""
+          toMonth="jan"
+          toYear=""
+        />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Add Experience",
+          "className": "nabi-margin-top-small",
+          "variant": "body2",
+        },
+        "ref": null,
+        "rendered": "Add Experience",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "addExperience": [Function],
+          "employer": "",
+          "fromMonth": "jan",
+          "fromYear": "",
+          "handleChange": [Function],
+          "jobTitle": "",
+          "location": "",
+          "toMonth": "jan",
+          "toYear": "",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          Array [],
+          <WithStyles(Typography)
+            className="nabi-margin-top-small"
+            variant="body2"
+          >
+            Add Experience
+          </WithStyles(Typography)>,
+          <ExperienceFields
+            addExperience={[Function]}
+            employer=""
+            fromMonth="jan"
+            fromYear=""
+            handleChange={[Function]}
+            jobTitle=""
+            location=""
+            toMonth="jan"
+            toYear=""
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Add Experience",
+            "className": "nabi-margin-top-small",
+            "variant": "body2",
+          },
+          "ref": null,
+          "rendered": "Add Experience",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "addExperience": [Function],
+            "employer": "",
+            "fromMonth": "jan",
+            "fromYear": "",
+            "handleChange": [Function],
+            "jobTitle": "",
+            "location": "",
+            "toMonth": "jan",
+            "toYear": "",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

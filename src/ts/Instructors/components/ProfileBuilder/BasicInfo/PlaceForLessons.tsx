@@ -5,7 +5,7 @@ import { FormGroup, FormControlLabel } from 'material-ui/Form';
 import Checkbox from 'material-ui/Checkbox';
 import TextField from 'material-ui/TextField';
 
-import { PlaceForLessonsOptions } from '../../model';
+import { PlaceForLessonsOptions } from '../../../model';
 
 interface PlaceForLessonsProps {
   handleChange: (event: React.FormEvent<{}>) => void;

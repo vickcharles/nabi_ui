@@ -1,19 +1,17 @@
 import * as React from 'react';
-import EducationFields from '../components/ProfileBuilder/Education/EducationFields';
+import EducationAdded from '../components/ProfileBuilder/Education/EducationAdded';
 import { shallow } from 'enzyme';
 import { DegreeType } from '../model';
 
-describe('EducationFields', () => {
+describe('EducationAdded', () => {
   let wrapper: any;
-  const handleChange: () => void = jest.fn();
-  const addEducation: () => void = jest.fn();
+  const deleteEducation: () => void = jest.fn();
 
   describe('Shallow', () => {
     beforeEach(() => {
       wrapper = shallow(
-        <EducationFields
-          handleChange={handleChange}
-          addEducation={addEducation}
+        <EducationAdded
+          deleteEducation={deleteEducation}
           schoolName=""
           graduationYear=""
           degreeType={DegreeType.bachelors}

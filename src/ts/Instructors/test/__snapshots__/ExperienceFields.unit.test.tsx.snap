@@ -1,0 +1,2531 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExperienceFields Shallow Matches snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ExperienceFields
+    addExperience={[MockFunction]}
+    employer="Oracle"
+    fromMonth="sep"
+    fromYear="2017"
+    handleChange={[MockFunction]}
+    jobTitle="Software Engineer"
+    location="Cambridge, MA"
+    toMonth="sep"
+    toYear="2018"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="nabi-experience"
+        >
+          <TextField
+            fullWidth={true}
+            id="employer"
+            margin="normal"
+            name="employer"
+            onChange={[MockFunction]}
+            placeholder="Company/ employer name"
+            required={true}
+            select={false}
+            value="Oracle"
+          />
+          <TextField
+            className=""
+            fullWidth={true}
+            id="jobTitle"
+            margin="normal"
+            name="jobTitle"
+            onChange={[MockFunction]}
+            placeholder="Job title"
+            required={true}
+            select={false}
+            value="Software Engineer"
+          />
+          <WithStyles(FormControl)
+            className="nabi-instruments-select"
+          >
+            <WithStyles(InputLabel)
+              htmlFor="fromMonth"
+            >
+              From
+            </WithStyles(InputLabel)>
+            <WithStyles(Select)
+              input={
+                <WithStyles(Input)
+                  id="fromMonth"
+                  name="fromMonth"
+                />
+              }
+              onChange={[MockFunction]}
+              value="sep"
+            >
+              <WithStyles(MenuItem)
+                value="jan"
+              >
+                Jan
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="feb"
+              >
+                Feb
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="mar"
+              >
+                Mar
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="apr"
+              >
+                Apr
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="may"
+              >
+                May
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="jun"
+              >
+                Jun
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="jul"
+              >
+                Jul
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="aug"
+              >
+                Aug
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="sep"
+              >
+                Sep
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="oct"
+              >
+                Oct
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="nov"
+              >
+                Nov
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="dec"
+              >
+                Dec
+              </WithStyles(MenuItem)>
+            </WithStyles(Select)>
+          </WithStyles(FormControl)>
+          <TextField
+            id="fromYear"
+            margin="normal"
+            name="fromYear"
+            onChange={[MockFunction]}
+            placeholder="Year"
+            required={true}
+            select={false}
+            value="2017"
+          />
+          <WithStyles(FormControl)
+            className="nabi-instruments-select"
+          >
+            <WithStyles(InputLabel)
+              htmlFor="toMonth"
+            >
+              To
+            </WithStyles(InputLabel)>
+            <WithStyles(Select)
+              input={
+                <WithStyles(Input)
+                  id="toMonth"
+                  name="toMonth"
+                />
+              }
+              onChange={[MockFunction]}
+              value="sep"
+            >
+              <WithStyles(MenuItem)
+                value="jan"
+              >
+                Jan
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="feb"
+              >
+                Feb
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="mar"
+              >
+                Mar
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="apr"
+              >
+                Apr
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="may"
+              >
+                May
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="jun"
+              >
+                Jun
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="jul"
+              >
+                Jul
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="aug"
+              >
+                Aug
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="sep"
+              >
+                Sep
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="oct"
+              >
+                Oct
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="nov"
+              >
+                Nov
+              </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                value="dec"
+              >
+                Dec
+              </WithStyles(MenuItem)>
+            </WithStyles(Select)>
+          </WithStyles(FormControl)>
+          <TextField
+            id="toYear"
+            margin="normal"
+            name="toYear"
+            onChange={[MockFunction]}
+            placeholder="Year"
+            required={true}
+            select={false}
+            value="2018"
+          />
+          <TextField
+            fullWidth={true}
+            id="location"
+            margin="normal"
+            name="location"
+            onChange={[MockFunction]}
+            placeholder="Job location"
+            required={true}
+            select={false}
+            value="Cambridge, MA"
+          />
+          <WithStyles(Button)
+            className="nabi-display-block nabi-margin-top-small"
+            color="primary"
+            onClick={[MockFunction]}
+            variant="raised"
+          >
+            Add
+          </WithStyles(Button)>
+        </div>,
+        <WithStyles(Divider)
+          className="nabi-margin-top-small"
+        />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <TextField
+              fullWidth={true}
+              id="employer"
+              margin="normal"
+              name="employer"
+              onChange={[MockFunction]}
+              placeholder="Company/ employer name"
+              required={true}
+              select={false}
+              value="Oracle"
+            />,
+            <TextField
+              className=""
+              fullWidth={true}
+              id="jobTitle"
+              margin="normal"
+              name="jobTitle"
+              onChange={[MockFunction]}
+              placeholder="Job title"
+              required={true}
+              select={false}
+              value="Software Engineer"
+            />,
+            <WithStyles(FormControl)
+              className="nabi-instruments-select"
+            >
+              <WithStyles(InputLabel)
+                htmlFor="fromMonth"
+              >
+                From
+              </WithStyles(InputLabel)>
+              <WithStyles(Select)
+                input={
+                  <WithStyles(Input)
+                    id="fromMonth"
+                    name="fromMonth"
+                  />
+                }
+                onChange={[MockFunction]}
+                value="sep"
+              >
+                <WithStyles(MenuItem)
+                  value="jan"
+                >
+                  Jan
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="feb"
+                >
+                  Feb
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="mar"
+                >
+                  Mar
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="apr"
+                >
+                  Apr
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="may"
+                >
+                  May
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="jun"
+                >
+                  Jun
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="jul"
+                >
+                  Jul
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="aug"
+                >
+                  Aug
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="sep"
+                >
+                  Sep
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="oct"
+                >
+                  Oct
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="nov"
+                >
+                  Nov
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="dec"
+                >
+                  Dec
+                </WithStyles(MenuItem)>
+              </WithStyles(Select)>
+            </WithStyles(FormControl)>,
+            <TextField
+              id="fromYear"
+              margin="normal"
+              name="fromYear"
+              onChange={[MockFunction]}
+              placeholder="Year"
+              required={true}
+              select={false}
+              value="2017"
+            />,
+            <WithStyles(FormControl)
+              className="nabi-instruments-select"
+            >
+              <WithStyles(InputLabel)
+                htmlFor="toMonth"
+              >
+                To
+              </WithStyles(InputLabel)>
+              <WithStyles(Select)
+                input={
+                  <WithStyles(Input)
+                    id="toMonth"
+                    name="toMonth"
+                  />
+                }
+                onChange={[MockFunction]}
+                value="sep"
+              >
+                <WithStyles(MenuItem)
+                  value="jan"
+                >
+                  Jan
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="feb"
+                >
+                  Feb
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="mar"
+                >
+                  Mar
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="apr"
+                >
+                  Apr
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="may"
+                >
+                  May
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="jun"
+                >
+                  Jun
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="jul"
+                >
+                  Jul
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="aug"
+                >
+                  Aug
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="sep"
+                >
+                  Sep
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="oct"
+                >
+                  Oct
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="nov"
+                >
+                  Nov
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="dec"
+                >
+                  Dec
+                </WithStyles(MenuItem)>
+              </WithStyles(Select)>
+            </WithStyles(FormControl)>,
+            <TextField
+              id="toYear"
+              margin="normal"
+              name="toYear"
+              onChange={[MockFunction]}
+              placeholder="Year"
+              required={true}
+              select={false}
+              value="2018"
+            />,
+            <TextField
+              fullWidth={true}
+              id="location"
+              margin="normal"
+              name="location"
+              onChange={[MockFunction]}
+              placeholder="Job location"
+              required={true}
+              select={false}
+              value="Cambridge, MA"
+            />,
+            <WithStyles(Button)
+              className="nabi-display-block nabi-margin-top-small"
+              color="primary"
+              onClick={[MockFunction]}
+              variant="raised"
+            >
+              Add
+            </WithStyles(Button)>,
+          ],
+          "className": "nabi-experience",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "fullWidth": true,
+              "id": "employer",
+              "margin": "normal",
+              "name": "employer",
+              "onChange": [MockFunction],
+              "placeholder": "Company/ employer name",
+              "required": true,
+              "select": false,
+              "value": "Oracle",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "className": "",
+              "fullWidth": true,
+              "id": "jobTitle",
+              "margin": "normal",
+              "name": "jobTitle",
+              "onChange": [MockFunction],
+              "placeholder": "Job title",
+              "required": true,
+              "select": false,
+              "value": "Software Engineer",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(InputLabel)
+                  htmlFor="fromMonth"
+                >
+                  From
+                </WithStyles(InputLabel)>,
+                <WithStyles(Select)
+                  input={
+                    <WithStyles(Input)
+                      id="fromMonth"
+                      name="fromMonth"
+                    />
+                  }
+                  onChange={[MockFunction]}
+                  value="sep"
+                >
+                  <WithStyles(MenuItem)
+                    value="jan"
+                  >
+                    Jan
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="feb"
+                  >
+                    Feb
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="mar"
+                  >
+                    Mar
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="apr"
+                  >
+                    Apr
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="may"
+                  >
+                    May
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="jun"
+                  >
+                    Jun
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="jul"
+                  >
+                    Jul
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="aug"
+                  >
+                    Aug
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="sep"
+                  >
+                    Sep
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="oct"
+                  >
+                    Oct
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="nov"
+                  >
+                    Nov
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="dec"
+                  >
+                    Dec
+                  </WithStyles(MenuItem)>
+                </WithStyles(Select)>,
+              ],
+              "className": "nabi-instruments-select",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "From",
+                  "htmlFor": "fromMonth",
+                },
+                "ref": null,
+                "rendered": "From",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <WithStyles(MenuItem)
+                      value="jan"
+                    >
+                      Jan
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="feb"
+                    >
+                      Feb
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="mar"
+                    >
+                      Mar
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="apr"
+                    >
+                      Apr
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="may"
+                    >
+                      May
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="jun"
+                    >
+                      Jun
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="jul"
+                    >
+                      Jul
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="aug"
+                    >
+                      Aug
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="sep"
+                    >
+                      Sep
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="oct"
+                    >
+                      Oct
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="nov"
+                    >
+                      Nov
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="dec"
+                    >
+                      Dec
+                    </WithStyles(MenuItem)>,
+                  ],
+                  "input": <WithStyles(Input)
+                    id="fromMonth"
+                    name="fromMonth"
+                  />,
+                  "onChange": [MockFunction],
+                  "value": "sep",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": "jan",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Jan",
+                      "value": "jan",
+                    },
+                    "ref": null,
+                    "rendered": "Jan",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "feb",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Feb",
+                      "value": "feb",
+                    },
+                    "ref": null,
+                    "rendered": "Feb",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "mar",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Mar",
+                      "value": "mar",
+                    },
+                    "ref": null,
+                    "rendered": "Mar",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "apr",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Apr",
+                      "value": "apr",
+                    },
+                    "ref": null,
+                    "rendered": "Apr",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "may",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "May",
+                      "value": "may",
+                    },
+                    "ref": null,
+                    "rendered": "May",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "jun",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Jun",
+                      "value": "jun",
+                    },
+                    "ref": null,
+                    "rendered": "Jun",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "jul",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Jul",
+                      "value": "jul",
+                    },
+                    "ref": null,
+                    "rendered": "Jul",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "aug",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Aug",
+                      "value": "aug",
+                    },
+                    "ref": null,
+                    "rendered": "Aug",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "sep",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Sep",
+                      "value": "sep",
+                    },
+                    "ref": null,
+                    "rendered": "Sep",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "oct",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Oct",
+                      "value": "oct",
+                    },
+                    "ref": null,
+                    "rendered": "Oct",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "nov",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Nov",
+                      "value": "nov",
+                    },
+                    "ref": null,
+                    "rendered": "Nov",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "dec",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Dec",
+                      "value": "dec",
+                    },
+                    "ref": null,
+                    "rendered": "Dec",
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "id": "fromYear",
+              "margin": "normal",
+              "name": "fromYear",
+              "onChange": [MockFunction],
+              "placeholder": "Year",
+              "required": true,
+              "select": false,
+              "value": "2017",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(InputLabel)
+                  htmlFor="toMonth"
+                >
+                  To
+                </WithStyles(InputLabel)>,
+                <WithStyles(Select)
+                  input={
+                    <WithStyles(Input)
+                      id="toMonth"
+                      name="toMonth"
+                    />
+                  }
+                  onChange={[MockFunction]}
+                  value="sep"
+                >
+                  <WithStyles(MenuItem)
+                    value="jan"
+                  >
+                    Jan
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="feb"
+                  >
+                    Feb
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="mar"
+                  >
+                    Mar
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="apr"
+                  >
+                    Apr
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="may"
+                  >
+                    May
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="jun"
+                  >
+                    Jun
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="jul"
+                  >
+                    Jul
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="aug"
+                  >
+                    Aug
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="sep"
+                  >
+                    Sep
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="oct"
+                  >
+                    Oct
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="nov"
+                  >
+                    Nov
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="dec"
+                  >
+                    Dec
+                  </WithStyles(MenuItem)>
+                </WithStyles(Select)>,
+              ],
+              "className": "nabi-instruments-select",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "To",
+                  "htmlFor": "toMonth",
+                },
+                "ref": null,
+                "rendered": "To",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <WithStyles(MenuItem)
+                      value="jan"
+                    >
+                      Jan
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="feb"
+                    >
+                      Feb
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="mar"
+                    >
+                      Mar
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="apr"
+                    >
+                      Apr
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="may"
+                    >
+                      May
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="jun"
+                    >
+                      Jun
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="jul"
+                    >
+                      Jul
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="aug"
+                    >
+                      Aug
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="sep"
+                    >
+                      Sep
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="oct"
+                    >
+                      Oct
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="nov"
+                    >
+                      Nov
+                    </WithStyles(MenuItem)>,
+                    <WithStyles(MenuItem)
+                      value="dec"
+                    >
+                      Dec
+                    </WithStyles(MenuItem)>,
+                  ],
+                  "input": <WithStyles(Input)
+                    id="toMonth"
+                    name="toMonth"
+                  />,
+                  "onChange": [MockFunction],
+                  "value": "sep",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": "jan",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Jan",
+                      "value": "jan",
+                    },
+                    "ref": null,
+                    "rendered": "Jan",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "feb",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Feb",
+                      "value": "feb",
+                    },
+                    "ref": null,
+                    "rendered": "Feb",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "mar",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Mar",
+                      "value": "mar",
+                    },
+                    "ref": null,
+                    "rendered": "Mar",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "apr",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Apr",
+                      "value": "apr",
+                    },
+                    "ref": null,
+                    "rendered": "Apr",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "may",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "May",
+                      "value": "may",
+                    },
+                    "ref": null,
+                    "rendered": "May",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "jun",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Jun",
+                      "value": "jun",
+                    },
+                    "ref": null,
+                    "rendered": "Jun",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "jul",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Jul",
+                      "value": "jul",
+                    },
+                    "ref": null,
+                    "rendered": "Jul",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "aug",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Aug",
+                      "value": "aug",
+                    },
+                    "ref": null,
+                    "rendered": "Aug",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "sep",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Sep",
+                      "value": "sep",
+                    },
+                    "ref": null,
+                    "rendered": "Sep",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "oct",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Oct",
+                      "value": "oct",
+                    },
+                    "ref": null,
+                    "rendered": "Oct",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "nov",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Nov",
+                      "value": "nov",
+                    },
+                    "ref": null,
+                    "rendered": "Nov",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "dec",
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Dec",
+                      "value": "dec",
+                    },
+                    "ref": null,
+                    "rendered": "Dec",
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "id": "toYear",
+              "margin": "normal",
+              "name": "toYear",
+              "onChange": [MockFunction],
+              "placeholder": "Year",
+              "required": true,
+              "select": false,
+              "value": "2018",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "fullWidth": true,
+              "id": "location",
+              "margin": "normal",
+              "name": "location",
+              "onChange": [MockFunction],
+              "placeholder": "Job location",
+              "required": true,
+              "select": false,
+              "value": "Cambridge, MA",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Add",
+              "className": "nabi-display-block nabi-margin-top-small",
+              "color": "primary",
+              "onClick": [MockFunction],
+              "variant": "raised",
+            },
+            "ref": null,
+            "rendered": "Add",
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "className": "nabi-margin-top-small",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="nabi-experience"
+          >
+            <TextField
+              fullWidth={true}
+              id="employer"
+              margin="normal"
+              name="employer"
+              onChange={[MockFunction]}
+              placeholder="Company/ employer name"
+              required={true}
+              select={false}
+              value="Oracle"
+            />
+            <TextField
+              className=""
+              fullWidth={true}
+              id="jobTitle"
+              margin="normal"
+              name="jobTitle"
+              onChange={[MockFunction]}
+              placeholder="Job title"
+              required={true}
+              select={false}
+              value="Software Engineer"
+            />
+            <WithStyles(FormControl)
+              className="nabi-instruments-select"
+            >
+              <WithStyles(InputLabel)
+                htmlFor="fromMonth"
+              >
+                From
+              </WithStyles(InputLabel)>
+              <WithStyles(Select)
+                input={
+                  <WithStyles(Input)
+                    id="fromMonth"
+                    name="fromMonth"
+                  />
+                }
+                onChange={[MockFunction]}
+                value="sep"
+              >
+                <WithStyles(MenuItem)
+                  value="jan"
+                >
+                  Jan
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="feb"
+                >
+                  Feb
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="mar"
+                >
+                  Mar
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="apr"
+                >
+                  Apr
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="may"
+                >
+                  May
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="jun"
+                >
+                  Jun
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="jul"
+                >
+                  Jul
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="aug"
+                >
+                  Aug
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="sep"
+                >
+                  Sep
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="oct"
+                >
+                  Oct
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="nov"
+                >
+                  Nov
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="dec"
+                >
+                  Dec
+                </WithStyles(MenuItem)>
+              </WithStyles(Select)>
+            </WithStyles(FormControl)>
+            <TextField
+              id="fromYear"
+              margin="normal"
+              name="fromYear"
+              onChange={[MockFunction]}
+              placeholder="Year"
+              required={true}
+              select={false}
+              value="2017"
+            />
+            <WithStyles(FormControl)
+              className="nabi-instruments-select"
+            >
+              <WithStyles(InputLabel)
+                htmlFor="toMonth"
+              >
+                To
+              </WithStyles(InputLabel)>
+              <WithStyles(Select)
+                input={
+                  <WithStyles(Input)
+                    id="toMonth"
+                    name="toMonth"
+                  />
+                }
+                onChange={[MockFunction]}
+                value="sep"
+              >
+                <WithStyles(MenuItem)
+                  value="jan"
+                >
+                  Jan
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="feb"
+                >
+                  Feb
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="mar"
+                >
+                  Mar
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="apr"
+                >
+                  Apr
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="may"
+                >
+                  May
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="jun"
+                >
+                  Jun
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="jul"
+                >
+                  Jul
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="aug"
+                >
+                  Aug
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="sep"
+                >
+                  Sep
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="oct"
+                >
+                  Oct
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="nov"
+                >
+                  Nov
+                </WithStyles(MenuItem)>
+                <WithStyles(MenuItem)
+                  value="dec"
+                >
+                  Dec
+                </WithStyles(MenuItem)>
+              </WithStyles(Select)>
+            </WithStyles(FormControl)>
+            <TextField
+              id="toYear"
+              margin="normal"
+              name="toYear"
+              onChange={[MockFunction]}
+              placeholder="Year"
+              required={true}
+              select={false}
+              value="2018"
+            />
+            <TextField
+              fullWidth={true}
+              id="location"
+              margin="normal"
+              name="location"
+              onChange={[MockFunction]}
+              placeholder="Job location"
+              required={true}
+              select={false}
+              value="Cambridge, MA"
+            />
+            <WithStyles(Button)
+              className="nabi-display-block nabi-margin-top-small"
+              color="primary"
+              onClick={[MockFunction]}
+              variant="raised"
+            >
+              Add
+            </WithStyles(Button)>
+          </div>,
+          <WithStyles(Divider)
+            className="nabi-margin-top-small"
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <TextField
+                fullWidth={true}
+                id="employer"
+                margin="normal"
+                name="employer"
+                onChange={[MockFunction]}
+                placeholder="Company/ employer name"
+                required={true}
+                select={false}
+                value="Oracle"
+              />,
+              <TextField
+                className=""
+                fullWidth={true}
+                id="jobTitle"
+                margin="normal"
+                name="jobTitle"
+                onChange={[MockFunction]}
+                placeholder="Job title"
+                required={true}
+                select={false}
+                value="Software Engineer"
+              />,
+              <WithStyles(FormControl)
+                className="nabi-instruments-select"
+              >
+                <WithStyles(InputLabel)
+                  htmlFor="fromMonth"
+                >
+                  From
+                </WithStyles(InputLabel)>
+                <WithStyles(Select)
+                  input={
+                    <WithStyles(Input)
+                      id="fromMonth"
+                      name="fromMonth"
+                    />
+                  }
+                  onChange={[MockFunction]}
+                  value="sep"
+                >
+                  <WithStyles(MenuItem)
+                    value="jan"
+                  >
+                    Jan
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="feb"
+                  >
+                    Feb
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="mar"
+                  >
+                    Mar
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="apr"
+                  >
+                    Apr
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="may"
+                  >
+                    May
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="jun"
+                  >
+                    Jun
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="jul"
+                  >
+                    Jul
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="aug"
+                  >
+                    Aug
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="sep"
+                  >
+                    Sep
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="oct"
+                  >
+                    Oct
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="nov"
+                  >
+                    Nov
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="dec"
+                  >
+                    Dec
+                  </WithStyles(MenuItem)>
+                </WithStyles(Select)>
+              </WithStyles(FormControl)>,
+              <TextField
+                id="fromYear"
+                margin="normal"
+                name="fromYear"
+                onChange={[MockFunction]}
+                placeholder="Year"
+                required={true}
+                select={false}
+                value="2017"
+              />,
+              <WithStyles(FormControl)
+                className="nabi-instruments-select"
+              >
+                <WithStyles(InputLabel)
+                  htmlFor="toMonth"
+                >
+                  To
+                </WithStyles(InputLabel)>
+                <WithStyles(Select)
+                  input={
+                    <WithStyles(Input)
+                      id="toMonth"
+                      name="toMonth"
+                    />
+                  }
+                  onChange={[MockFunction]}
+                  value="sep"
+                >
+                  <WithStyles(MenuItem)
+                    value="jan"
+                  >
+                    Jan
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="feb"
+                  >
+                    Feb
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="mar"
+                  >
+                    Mar
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="apr"
+                  >
+                    Apr
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="may"
+                  >
+                    May
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="jun"
+                  >
+                    Jun
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="jul"
+                  >
+                    Jul
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="aug"
+                  >
+                    Aug
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="sep"
+                  >
+                    Sep
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="oct"
+                  >
+                    Oct
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="nov"
+                  >
+                    Nov
+                  </WithStyles(MenuItem)>
+                  <WithStyles(MenuItem)
+                    value="dec"
+                  >
+                    Dec
+                  </WithStyles(MenuItem)>
+                </WithStyles(Select)>
+              </WithStyles(FormControl)>,
+              <TextField
+                id="toYear"
+                margin="normal"
+                name="toYear"
+                onChange={[MockFunction]}
+                placeholder="Year"
+                required={true}
+                select={false}
+                value="2018"
+              />,
+              <TextField
+                fullWidth={true}
+                id="location"
+                margin="normal"
+                name="location"
+                onChange={[MockFunction]}
+                placeholder="Job location"
+                required={true}
+                select={false}
+                value="Cambridge, MA"
+              />,
+              <WithStyles(Button)
+                className="nabi-display-block nabi-margin-top-small"
+                color="primary"
+                onClick={[MockFunction]}
+                variant="raised"
+              >
+                Add
+              </WithStyles(Button)>,
+            ],
+            "className": "nabi-experience",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "fullWidth": true,
+                "id": "employer",
+                "margin": "normal",
+                "name": "employer",
+                "onChange": [MockFunction],
+                "placeholder": "Company/ employer name",
+                "required": true,
+                "select": false,
+                "value": "Oracle",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "className": "",
+                "fullWidth": true,
+                "id": "jobTitle",
+                "margin": "normal",
+                "name": "jobTitle",
+                "onChange": [MockFunction],
+                "placeholder": "Job title",
+                "required": true,
+                "select": false,
+                "value": "Software Engineer",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(InputLabel)
+                    htmlFor="fromMonth"
+                  >
+                    From
+                  </WithStyles(InputLabel)>,
+                  <WithStyles(Select)
+                    input={
+                      <WithStyles(Input)
+                        id="fromMonth"
+                        name="fromMonth"
+                      />
+                    }
+                    onChange={[MockFunction]}
+                    value="sep"
+                  >
+                    <WithStyles(MenuItem)
+                      value="jan"
+                    >
+                      Jan
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="feb"
+                    >
+                      Feb
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="mar"
+                    >
+                      Mar
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="apr"
+                    >
+                      Apr
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="may"
+                    >
+                      May
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="jun"
+                    >
+                      Jun
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="jul"
+                    >
+                      Jul
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="aug"
+                    >
+                      Aug
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="sep"
+                    >
+                      Sep
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="oct"
+                    >
+                      Oct
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="nov"
+                    >
+                      Nov
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="dec"
+                    >
+                      Dec
+                    </WithStyles(MenuItem)>
+                  </WithStyles(Select)>,
+                ],
+                "className": "nabi-instruments-select",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "From",
+                    "htmlFor": "fromMonth",
+                  },
+                  "ref": null,
+                  "rendered": "From",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      <WithStyles(MenuItem)
+                        value="jan"
+                      >
+                        Jan
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="feb"
+                      >
+                        Feb
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="mar"
+                      >
+                        Mar
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="apr"
+                      >
+                        Apr
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="may"
+                      >
+                        May
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="jun"
+                      >
+                        Jun
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="jul"
+                      >
+                        Jul
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="aug"
+                      >
+                        Aug
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="sep"
+                      >
+                        Sep
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="oct"
+                      >
+                        Oct
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="nov"
+                      >
+                        Nov
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="dec"
+                      >
+                        Dec
+                      </WithStyles(MenuItem)>,
+                    ],
+                    "input": <WithStyles(Input)
+                      id="fromMonth"
+                      name="fromMonth"
+                    />,
+                    "onChange": [MockFunction],
+                    "value": "sep",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": "jan",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Jan",
+                        "value": "jan",
+                      },
+                      "ref": null,
+                      "rendered": "Jan",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "feb",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Feb",
+                        "value": "feb",
+                      },
+                      "ref": null,
+                      "rendered": "Feb",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "mar",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Mar",
+                        "value": "mar",
+                      },
+                      "ref": null,
+                      "rendered": "Mar",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "apr",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Apr",
+                        "value": "apr",
+                      },
+                      "ref": null,
+                      "rendered": "Apr",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "may",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "May",
+                        "value": "may",
+                      },
+                      "ref": null,
+                      "rendered": "May",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "jun",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Jun",
+                        "value": "jun",
+                      },
+                      "ref": null,
+                      "rendered": "Jun",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "jul",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Jul",
+                        "value": "jul",
+                      },
+                      "ref": null,
+                      "rendered": "Jul",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "aug",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Aug",
+                        "value": "aug",
+                      },
+                      "ref": null,
+                      "rendered": "Aug",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "sep",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Sep",
+                        "value": "sep",
+                      },
+                      "ref": null,
+                      "rendered": "Sep",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "oct",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Oct",
+                        "value": "oct",
+                      },
+                      "ref": null,
+                      "rendered": "Oct",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "nov",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Nov",
+                        "value": "nov",
+                      },
+                      "ref": null,
+                      "rendered": "Nov",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "dec",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Dec",
+                        "value": "dec",
+                      },
+                      "ref": null,
+                      "rendered": "Dec",
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "id": "fromYear",
+                "margin": "normal",
+                "name": "fromYear",
+                "onChange": [MockFunction],
+                "placeholder": "Year",
+                "required": true,
+                "select": false,
+                "value": "2017",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(InputLabel)
+                    htmlFor="toMonth"
+                  >
+                    To
+                  </WithStyles(InputLabel)>,
+                  <WithStyles(Select)
+                    input={
+                      <WithStyles(Input)
+                        id="toMonth"
+                        name="toMonth"
+                      />
+                    }
+                    onChange={[MockFunction]}
+                    value="sep"
+                  >
+                    <WithStyles(MenuItem)
+                      value="jan"
+                    >
+                      Jan
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="feb"
+                    >
+                      Feb
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="mar"
+                    >
+                      Mar
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="apr"
+                    >
+                      Apr
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="may"
+                    >
+                      May
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="jun"
+                    >
+                      Jun
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="jul"
+                    >
+                      Jul
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="aug"
+                    >
+                      Aug
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="sep"
+                    >
+                      Sep
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="oct"
+                    >
+                      Oct
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="nov"
+                    >
+                      Nov
+                    </WithStyles(MenuItem)>
+                    <WithStyles(MenuItem)
+                      value="dec"
+                    >
+                      Dec
+                    </WithStyles(MenuItem)>
+                  </WithStyles(Select)>,
+                ],
+                "className": "nabi-instruments-select",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "To",
+                    "htmlFor": "toMonth",
+                  },
+                  "ref": null,
+                  "rendered": "To",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": Array [
+                      <WithStyles(MenuItem)
+                        value="jan"
+                      >
+                        Jan
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="feb"
+                      >
+                        Feb
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="mar"
+                      >
+                        Mar
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="apr"
+                      >
+                        Apr
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="may"
+                      >
+                        May
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="jun"
+                      >
+                        Jun
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="jul"
+                      >
+                        Jul
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="aug"
+                      >
+                        Aug
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="sep"
+                      >
+                        Sep
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="oct"
+                      >
+                        Oct
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="nov"
+                      >
+                        Nov
+                      </WithStyles(MenuItem)>,
+                      <WithStyles(MenuItem)
+                        value="dec"
+                      >
+                        Dec
+                      </WithStyles(MenuItem)>,
+                    ],
+                    "input": <WithStyles(Input)
+                      id="toMonth"
+                      name="toMonth"
+                    />,
+                    "onChange": [MockFunction],
+                    "value": "sep",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": "jan",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Jan",
+                        "value": "jan",
+                      },
+                      "ref": null,
+                      "rendered": "Jan",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "feb",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Feb",
+                        "value": "feb",
+                      },
+                      "ref": null,
+                      "rendered": "Feb",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "mar",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Mar",
+                        "value": "mar",
+                      },
+                      "ref": null,
+                      "rendered": "Mar",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "apr",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Apr",
+                        "value": "apr",
+                      },
+                      "ref": null,
+                      "rendered": "Apr",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "may",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "May",
+                        "value": "may",
+                      },
+                      "ref": null,
+                      "rendered": "May",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "jun",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Jun",
+                        "value": "jun",
+                      },
+                      "ref": null,
+                      "rendered": "Jun",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "jul",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Jul",
+                        "value": "jul",
+                      },
+                      "ref": null,
+                      "rendered": "Jul",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "aug",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Aug",
+                        "value": "aug",
+                      },
+                      "ref": null,
+                      "rendered": "Aug",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "sep",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Sep",
+                        "value": "sep",
+                      },
+                      "ref": null,
+                      "rendered": "Sep",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "oct",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Oct",
+                        "value": "oct",
+                      },
+                      "ref": null,
+                      "rendered": "Oct",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "nov",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Nov",
+                        "value": "nov",
+                      },
+                      "ref": null,
+                      "rendered": "Nov",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "dec",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Dec",
+                        "value": "dec",
+                      },
+                      "ref": null,
+                      "rendered": "Dec",
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "id": "toYear",
+                "margin": "normal",
+                "name": "toYear",
+                "onChange": [MockFunction],
+                "placeholder": "Year",
+                "required": true,
+                "select": false,
+                "value": "2018",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "fullWidth": true,
+                "id": "location",
+                "margin": "normal",
+                "name": "location",
+                "onChange": [MockFunction],
+                "placeholder": "Job location",
+                "required": true,
+                "select": false,
+                "value": "Cambridge, MA",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Add",
+                "className": "nabi-display-block nabi-margin-top-small",
+                "color": "primary",
+                "onClick": [MockFunction],
+                "variant": "raised",
+              },
+              "ref": null,
+              "rendered": "Add",
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "className": "nabi-margin-top-small",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

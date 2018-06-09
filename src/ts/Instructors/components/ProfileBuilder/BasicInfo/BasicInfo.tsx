@@ -5,10 +5,10 @@ import { connect } from 'react-redux';
 
 import Typography from 'material-ui/Typography';
 
-import { UserState } from '../../../Users/model';
-import { updateUser } from '../../../Users';
-import { InstructorType, InstrumentsType, PlaceForLessonsType, RatesType, SkillLevel } from '../../model';
-import { updateInstructor } from '../../';
+import { UserState } from '../../../../Users/model';
+import { updateUser } from '../../../../Users';
+import { InstructorType, InstrumentsType, PlaceForLessonsType, RatesType, SkillLevel } from '../../../model';
+import { updateInstructor } from '../../../';
 import NameLocationBio from './NameLocationBio/NameLocationBio';
 import ImageUploader from './ImageUploader';
 import Instruments from './Instruments/Instruments';

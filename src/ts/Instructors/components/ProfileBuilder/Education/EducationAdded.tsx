@@ -2,13 +2,21 @@ import * as React from 'react';
 import IconButton from 'material-ui/IconButton';
 import DeleteIcon from '@material-ui/icons/Delete';
 import Typography from 'material-ui/Typography';
-import { EducationType }  from '../../model';
+import { EducationType }  from '../../../model';
 import Divider from 'material-ui/Divider';
 
+/**
+ * Props for EducationAdded
+ * @interface EducationAddedProps
+ */
 interface EducationAddedProps extends EducationType {
   deleteEducation: (educationId: any) => void;
 }
 
+/**
+ * EducationAdded
+ * @extends React.StatelessComponent<EducationAddedProps>
+ */
 const EducationAdded: React.StatelessComponent<EducationAddedProps> = props => {
   return (
     <div>

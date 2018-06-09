@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Rates from '../components/BasicInfo/Rates';
+import Rates from '../components/ProfileBuilder/BasicInfo/Rates';
 import { shallow } from 'enzyme';
 
 describe('Rates', () => {

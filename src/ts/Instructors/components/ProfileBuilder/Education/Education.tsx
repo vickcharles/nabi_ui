@@ -5,8 +5,8 @@ import { connect } from 'react-redux';
 import Typography from 'material-ui/Typography';
 
 import EducationFields from './EducationFields';
-import { DegreeType, EducationType, InstructorType } from '../../model';
-import { updateInstructor } from '../../';
+import { DegreeType, EducationType, InstructorType } from '../../../model';
+import { updateInstructor } from '../../../';
 import EducationAdded from './EducationAdded';
 
 /**

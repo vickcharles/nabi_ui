@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Education } from '../components/Education/Education';
+import { Education } from '../components/ProfileBuilder/Education/Education';
 import { shallow } from 'enzyme';
 import { InstructorType, DegreeType } from '../model';
 
@@ -12,10 +12,7 @@ describe('Education', () => {
   describe('Shallow', () => {
     beforeEach(() => {
       wrapper = shallow(
-        <Education 
-          userId=""
-          updateInstructor={updateInstructor}
-        />
+        <Education userId="" updateInstructor={updateInstructor} />
       );
     });
     
@@ -49,7 +46,7 @@ describe('Education', () => {
   });
 
   describe('Method addEducation()', () => {
-    describe('When id, schoolName, graduationmYear, degreeType and fieldStudy state are missing', () => {
+    describe('When id, schoolName, graduationYear, degreeType and fieldStudy state are missing', () => {
       beforeEach(() => {
         wrapper.instance().addEducation();
       });
@@ -66,7 +63,6 @@ describe('Education', () => {
     describe('When id, schoolName, graduationYear, degreeType and fieldStudy state are defined', () => {
       beforeEach(() => {
         wrapper.setState({
-          instrument: [],
           schoolName: 'UmassBoston',
           graduationYear: '2012',
           degreeType: DegreeType.bachelors,

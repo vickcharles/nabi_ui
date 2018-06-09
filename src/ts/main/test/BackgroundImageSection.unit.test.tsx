@@ -3,7 +3,7 @@ import BackgroundImageSection from '../components/BackgroundImageSection';
 import { shallow } from 'enzyme';
 
 describe('BackgroundImageSection', () => {
-  let wrapper: any = null;
+  let wrapper: any;
 
   beforeEach(() => {
     wrapper = shallow(

@@ -3,7 +3,7 @@ import PageTitle from '../components/PageTitle';
 import { shallow } from 'enzyme';
 
 describe('PageTitle', () => {
-  let wrapper: any = null;
+  let wrapper: any;
 
   beforeEach(() => {
     wrapper = shallow(

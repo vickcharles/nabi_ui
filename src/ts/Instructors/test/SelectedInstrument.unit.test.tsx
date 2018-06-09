@@ -1,5 +1,5 @@
 import * as React from 'react';
-import SelectedInstrument from '../components/BasicInfo/Instruments/SelectedInstrument';
+import SelectedInstrument from '../components/ProfileBuilder/BasicInfo/Instruments/SelectedInstrument';
 import { shallow } from 'enzyme';
 
 describe('SelectedInstrument', () => {

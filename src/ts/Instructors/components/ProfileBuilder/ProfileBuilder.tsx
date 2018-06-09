@@ -9,10 +9,11 @@ import MobileStepper from 'material-ui/MobileStepper';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 
-import { PageTitle } from '../../main';
+import { PageTitle } from '../../../main';
+import { Role, UserState } from '../../../Users/model';
 import BasicInfo from './BasicInfo/BasicInfo';
-import { Role, UserState } from '../../Users/model';
 import Education from './Education/Education';
+import Experience from './Experience/Experience';
 
 const styles = (theme: Theme) => ({
   mobileStepper: {
@@ -95,11 +96,11 @@ export class ProfileBuilder extends React.Component
   getStepContent(stepIndex: any) {
     switch (stepIndex) {
       case 0:
-        return <BasicInfo user={this.state.user} changeAvatar={this.props.changeAvatar}/>;
+        return <BasicInfo user={this.state.user} changeAvatar={this.props.changeAvatar} />;
       case 1:
-        return <Education userId={this.state.user.id}/>;
+        return <Education userId={this.state.user.id} />;
       case 2:
-        return '';
+        return <Experience userId={this.state.user.id} />;
       case 3:
         return '';
       case 4:

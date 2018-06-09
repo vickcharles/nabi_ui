@@ -3,7 +3,7 @@ import Welcome from '../components/Welcome';
 import { shallow } from 'enzyme';
 
 describe('Welcome', () => {
-  let wrapper: any = null;
+  let wrapper: any;
 
   beforeEach(() => {
     wrapper = shallow(
