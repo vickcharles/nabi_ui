@@ -1,0 +1,457 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FreeLesson Renders the component 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <FreeLesson />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="nabi-container nabi-padding-top-large nabi-padding-bottom-large nabi-position-relative"
+      >
+        <div
+          className="free-lesson-left-section"
+        >
+          <p
+            className="nabi-margin-bottom-xsmall nabi-margin-top-zero nabi-font-large"
+          >
+            Get stared with a free lesson today
+          </p>
+          <p
+            className="nabi-margin-bottom-zero nabi-font-medium"
+          >
+            Learn music with your city's most talented and qualified music instructors
+          </p>
+          <WithStyles(Button)
+            className="nabi-margin-top-xsmall"
+            color="secondary"
+            variant="raised"
+          >
+            Try your FREE lesson
+          </WithStyles(Button)>
+        </div>
+        <div
+          className="free-lesson-right-section nabi-margin-top-medium"
+        >
+          <img
+            alt=""
+            className="free-lesson-image"
+            src="nabi-home-music-icon.png"
+          />
+          <p
+            className="nabi-font-jennasue nabi-margin-top-zero free-lesson-lema"
+          >
+            Share the love for music thought education
+          </p>
+        </div>
+      </div>,
+      "className": "nabi-background-nabi free-lesson-section nabi-color-white",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="free-lesson-left-section"
+          >
+            <p
+              className="nabi-margin-bottom-xsmall nabi-margin-top-zero nabi-font-large"
+            >
+              Get stared with a free lesson today
+            </p>
+            <p
+              className="nabi-margin-bottom-zero nabi-font-medium"
+            >
+              Learn music with your city's most talented and qualified music instructors
+            </p>
+            <WithStyles(Button)
+              className="nabi-margin-top-xsmall"
+              color="secondary"
+              variant="raised"
+            >
+              Try your FREE lesson
+            </WithStyles(Button)>
+          </div>,
+          <div
+            className="free-lesson-right-section nabi-margin-top-medium"
+          >
+            <img
+              alt=""
+              className="free-lesson-image"
+              src="nabi-home-music-icon.png"
+            />
+            <p
+              className="nabi-font-jennasue nabi-margin-top-zero free-lesson-lema"
+            >
+              Share the love for music thought education
+            </p>
+          </div>,
+        ],
+        "className": "nabi-container nabi-padding-top-large nabi-padding-bottom-large nabi-position-relative",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p
+                className="nabi-margin-bottom-xsmall nabi-margin-top-zero nabi-font-large"
+              >
+                Get stared with a free lesson today
+              </p>,
+              <p
+                className="nabi-margin-bottom-zero nabi-font-medium"
+              >
+                Learn music with your city's most talented and qualified music instructors
+              </p>,
+              <WithStyles(Button)
+                className="nabi-margin-top-xsmall"
+                color="secondary"
+                variant="raised"
+              >
+                Try your FREE lesson
+              </WithStyles(Button)>,
+            ],
+            "className": "free-lesson-left-section",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Get stared with a free lesson today",
+                "className": "nabi-margin-bottom-xsmall nabi-margin-top-zero nabi-font-large",
+              },
+              "ref": null,
+              "rendered": "Get stared with a free lesson today",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Learn music with your city's most talented and qualified music instructors",
+                "className": "nabi-margin-bottom-zero nabi-font-medium",
+              },
+              "ref": null,
+              "rendered": "Learn music with your city's most talented and qualified music instructors",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Try your FREE lesson",
+                "className": "nabi-margin-top-xsmall",
+                "color": "secondary",
+                "variant": "raised",
+              },
+              "ref": null,
+              "rendered": "Try your FREE lesson",
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <img
+                alt=""
+                className="free-lesson-image"
+                src="nabi-home-music-icon.png"
+              />,
+              <p
+                className="nabi-font-jennasue nabi-margin-top-zero free-lesson-lema"
+              >
+                Share the love for music thought education
+              </p>,
+            ],
+            "className": "free-lesson-right-section nabi-margin-top-medium",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "",
+                "className": "free-lesson-image",
+                "src": "nabi-home-music-icon.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Share the love for music thought education",
+                "className": "nabi-font-jennasue nabi-margin-top-zero free-lesson-lema",
+              },
+              "ref": null,
+              "rendered": "Share the love for music thought education",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="nabi-container nabi-padding-top-large nabi-padding-bottom-large nabi-position-relative"
+        >
+          <div
+            className="free-lesson-left-section"
+          >
+            <p
+              className="nabi-margin-bottom-xsmall nabi-margin-top-zero nabi-font-large"
+            >
+              Get stared with a free lesson today
+            </p>
+            <p
+              className="nabi-margin-bottom-zero nabi-font-medium"
+            >
+              Learn music with your city's most talented and qualified music instructors
+            </p>
+            <WithStyles(Button)
+              className="nabi-margin-top-xsmall"
+              color="secondary"
+              variant="raised"
+            >
+              Try your FREE lesson
+            </WithStyles(Button)>
+          </div>
+          <div
+            className="free-lesson-right-section nabi-margin-top-medium"
+          >
+            <img
+              alt=""
+              className="free-lesson-image"
+              src="nabi-home-music-icon.png"
+            />
+            <p
+              className="nabi-font-jennasue nabi-margin-top-zero free-lesson-lema"
+            >
+              Share the love for music thought education
+            </p>
+          </div>
+        </div>,
+        "className": "nabi-background-nabi free-lesson-section nabi-color-white",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="free-lesson-left-section"
+            >
+              <p
+                className="nabi-margin-bottom-xsmall nabi-margin-top-zero nabi-font-large"
+              >
+                Get stared with a free lesson today
+              </p>
+              <p
+                className="nabi-margin-bottom-zero nabi-font-medium"
+              >
+                Learn music with your city's most talented and qualified music instructors
+              </p>
+              <WithStyles(Button)
+                className="nabi-margin-top-xsmall"
+                color="secondary"
+                variant="raised"
+              >
+                Try your FREE lesson
+              </WithStyles(Button)>
+            </div>,
+            <div
+              className="free-lesson-right-section nabi-margin-top-medium"
+            >
+              <img
+                alt=""
+                className="free-lesson-image"
+                src="nabi-home-music-icon.png"
+              />
+              <p
+                className="nabi-font-jennasue nabi-margin-top-zero free-lesson-lema"
+              >
+                Share the love for music thought education
+              </p>
+            </div>,
+          ],
+          "className": "nabi-container nabi-padding-top-large nabi-padding-bottom-large nabi-position-relative",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p
+                  className="nabi-margin-bottom-xsmall nabi-margin-top-zero nabi-font-large"
+                >
+                  Get stared with a free lesson today
+                </p>,
+                <p
+                  className="nabi-margin-bottom-zero nabi-font-medium"
+                >
+                  Learn music with your city's most talented and qualified music instructors
+                </p>,
+                <WithStyles(Button)
+                  className="nabi-margin-top-xsmall"
+                  color="secondary"
+                  variant="raised"
+                >
+                  Try your FREE lesson
+                </WithStyles(Button)>,
+              ],
+              "className": "free-lesson-left-section",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Get stared with a free lesson today",
+                  "className": "nabi-margin-bottom-xsmall nabi-margin-top-zero nabi-font-large",
+                },
+                "ref": null,
+                "rendered": "Get stared with a free lesson today",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Learn music with your city's most talented and qualified music instructors",
+                  "className": "nabi-margin-bottom-zero nabi-font-medium",
+                },
+                "ref": null,
+                "rendered": "Learn music with your city's most talented and qualified music instructors",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Try your FREE lesson",
+                  "className": "nabi-margin-top-xsmall",
+                  "color": "secondary",
+                  "variant": "raised",
+                },
+                "ref": null,
+                "rendered": "Try your FREE lesson",
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <img
+                  alt=""
+                  className="free-lesson-image"
+                  src="nabi-home-music-icon.png"
+                />,
+                <p
+                  className="nabi-font-jennasue nabi-margin-top-zero free-lesson-lema"
+                >
+                  Share the love for music thought education
+                </p>,
+              ],
+              "className": "free-lesson-right-section nabi-margin-top-medium",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "alt": "",
+                  "className": "free-lesson-image",
+                  "src": "nabi-home-music-icon.png",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "img",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Share the love for music thought education",
+                  "className": "nabi-font-jennasue nabi-margin-top-zero free-lesson-lema",
+                },
+                "ref": null,
+                "rendered": "Share the love for music thought education",
+                "type": "p",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

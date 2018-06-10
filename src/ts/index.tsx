@@ -19,10 +19,16 @@ const theme = createMuiTheme({
         color: '#06c3e1'
       },
       raised: {
-        backgroundColor: '#06c3e1 !important',
         borderRadius: '3px',
         boxShadow: 'inset 0 -3px 0 rgba(0,0,0,.1)',
         fontWeight: 500
+      },
+      raisedPrimary: {
+        backgroundColor: '#06c3e1 !important',
+      },
+      raisedSecondary: {
+        color: '#06c3e1 !important',
+        backgroundColor: '#fff !important'
       },
       root: {
         color: '#717a8a',

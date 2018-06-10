@@ -1,13 +1,13 @@
 import * as React from 'react';
-import BackgroundImageSection from '../components/BackgroundImageSection';
+import Homepage from '../components/Homepage';
 import { shallow } from 'enzyme';
 
-describe('BackgroundImageSection', () => {
+describe('Homepage', () => {
   let wrapper: any;
 
   beforeEach(() => {
     wrapper = shallow(
-      <BackgroundImageSection />
+      <Homepage />
     );
   });
 

@@ -10,7 +10,7 @@ import Divider from 'material-ui/Divider';
 const Header = () => {
   return (
     <header>
-      <div className="nabi-header-container">
+      <div className="nabi-header-container nabi-position-relative">
         <DrawerMenu />
         <Divider className="header-divider hide-on-desktop"/>
         <Link id="nabi-logo-anchor" to="/">
