@@ -12,11 +12,11 @@ body {
 	background: #f0f3f6;
 	margin: 0px;
 	font-family: 'Montserrat', sans-serif;
+	color: #717a8a !important;
 }
 
 header {
 	background: white;
-	position: relative;
 }
 
 li {
@@ -33,6 +33,26 @@ input {
 
 input {
   background: transparent;
+}
+
+/*Freeleson section*/
+.free-lesson-section {
+	text-align: center !important;
+}
+.free-lesson-right-section {
+	width: 280px;
+	margin: 0 auto;
+}
+
+.free-lesson-image {
+	height: 55px;
+}
+
+.free-lesson-lema {
+	font-size: 41px !important;
+	transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
 }
 
 /*BACKGROUND COLOR*/
@@ -55,6 +75,15 @@ input {
 
 .nabi-color-nabi {
 	color: #06c3e1 !important;
+}
+
+/*FONT SIZE*/
+.nabi-font-medium {
+	font-size: 15px !important;
+}
+
+.nabi-font-large {
+	font-size: 20px !important;
 }
 
 /*CURSOR*/
@@ -118,6 +147,10 @@ input {
 
 .nabi-margin-large {
 	margin: 40px
+}
+
+.nabi-margin-top-zero {
+  margin-top: 0px !important;
 }
 
 .nabi-margin-top-xsmall {
@@ -188,6 +221,96 @@ input {
 	margin-left: 40px !important;
 }
 
+/*PADDING*/
+.nabi-padding-small {
+	padding: 20px
+}
+
+.nabi-padding-medium {
+	padding: 30px
+}
+
+.nabi-padding-large {
+	padding: 40px
+}
+
+.nabi-padding-top-zero {
+  padding-top: 0px !important;
+}
+
+.nabi-padding-top-xsmall {
+	padding-top: 10px !important;
+}
+
+.nabi-padding-top-small {
+	padding-top: 20px !important;
+}
+
+.nabi-padding-top-medium {
+	padding-top: 30px !important;
+}
+
+.nabi-padding-top-large {
+	padding-top: 40px !important;
+}
+
+.nabi-padding-right-xsmall {
+	padding-right: 10px !important;
+}
+
+.nabi-padding-right-small {
+	padding-right: 20px !important;
+}
+
+.nabi-padding-right-medium {
+	padding-right: 30px !important;
+}
+
+.nabi-padding-right-large {
+	padding-right: 40px !important;
+}
+
+.nabi-padding-bottom-xsmall {
+	padding-bottom: 10px !important;
+}
+
+.nabi-padding-bottom-small {
+	padding-bottom: 20px !important;
+}
+
+.nabi-padding-bottom-medium {
+	padding-bottom: 30px !important;
+}
+
+.nabi-padding-bottom-large {
+	padding-bottom: 40px !important;
+}
+
+.nabi-padding-bottom-zero {
+	padding-bottom: 0px !important;
+}
+
+.nabi-padding-left-xsmall {
+	padding-left: 10px !important;
+}
+
+.nabi-padding-left-small {
+	padding-left: 20px !important;
+}
+
+.nabi-padding-left-medium {
+	padding-left: 30px !important;
+}
+
+.nabi-padding-left-large {
+	padding-left: 40px !important;
+}
+
+/*POSITION*/
+.nabi-position-relative {
+	position: relative;
+}
+
 /****CUSTOM ELEMENTS****/
 /*Container*/
 .nabi-container {
@@ -242,7 +365,6 @@ input {
 }
 
 .nabi-header-container {
-	position: relative;
 	padding-left: 25px;
 	padding-right: 25px;
 	padding-top: 65px;
@@ -273,7 +395,6 @@ input {
 #banner {
 	height: 400px !important;
 	width: 100%;
-	position: relative;
 	background-image: url('../images/nabiBannerImage.jpg') !important;
 	background-size: cover !important;
 	background-repeat: no-repeat;
@@ -285,10 +406,6 @@ input {
 	padding-right: 25px;
 	padding-top: 55px;
 	position: absolute;
-}
-
-#banner p {
-	font-size: 15px !important;
 }
 
 #banner button {
@@ -384,7 +501,6 @@ input {
 /* iPads (landscape) ----------- */
 @media only screen and (min-width: 768px) {
 	/****CUSTOM ELEMENTS****/
-	/*Container*/
 	/*Responsive Hide*/
 	.hide-on-mobile {
 		display: block !important;
@@ -392,6 +508,7 @@ input {
 	.hide-on-desktop {
 		display: none !important;
 	}
+	/*Container*/
 	.nabi-container {
 		margin: 0 auto;
 		padding-top: 15px;
@@ -418,6 +535,13 @@ input {
 	#nabi-logo-text {
 		font-size: 19px;
 	}
+	/*Font size*/
+	.nabi-font-medium {
+		font-size: 19px !important;
+	}
+	.nabi-font-large {
+		font-size: 25px !important;
+	}
 	/*Section*/
 	.nabi-section {
 		padding: 50px 80px;
@@ -429,10 +553,6 @@ input {
 	/*Homepage*/
 	#banner {
 		height: 500px !important;
-	}
-	#banner p {
-		font-weight: 300;
-		font-size: 20px !important;
 	}
 	#banner button {
 		margin-top: 40px !important;
@@ -466,7 +586,7 @@ input {
 	.nabi-container {
 		width: 800px;
 	}
-	/*Responsive Hide*/
+  /*Responsive Hide*/
 	.hide-on-mobile {
 		display: block !important;
 	}
@@ -522,6 +642,23 @@ input {
   .selected-education {
     width: 600px !important;
   }
+	/*Freeleson section*/
+	.free-lesson-section {
+		text-align: left !important;
+	}
+	.free-lesson-left-section {
+    width: 60%;
+  }
+  .free-lesson-right-section {
+    position: absolute;
+    right: 0%;
+    top: 5%;
+    margin-left: 20px;
+    width: 250px;
+	}
+	.free-lesson-image {
+		margin-left: 20px;
+	}
 }
 
 /* Laptops ----------- */

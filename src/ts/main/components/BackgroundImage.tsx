@@ -2,16 +2,16 @@ import * as React from 'react';
 import { Button } from 'material-ui';
 
 /** 
- * BackgroundImageSection component
+ * BackgroundImage component
  */
-const BackgroundImageSection = () => {
+const BackgroundImage = () => {
   return ( 
-    <section id="banner">
+    <section id="banner" className="nabi-position-relative">
       <div className="container nabi-text-center nabi-color-white">
         <h1 className="nabi-text-mediumbold nabi-jennasue-title nabi-color-white nabi-margin-bottom-xsmall">
           Share the love for music through education
         </h1>
-        <p className="nabi-margin-bottom-zero">
+        <p className="nabi-margin-bottom-zero nabi-font-medium">
           Learn music with your city's most talented and qualified music instructors
         </p>
         <Button color="primary" variant="raised">
@@ -25,4 +25,4 @@ const BackgroundImageSection = () => {
   );
 };
 
-export default BackgroundImageSection;
+export default BackgroundImage;

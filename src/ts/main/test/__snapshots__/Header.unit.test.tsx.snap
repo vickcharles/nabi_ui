@@ -18,7 +18,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <div
-        className="nabi-header-container"
+        className="nabi-header-container nabi-position-relative"
       >
         <DrawerMenu />
         <WithStyles(Divider)
@@ -116,7 +116,7 @@ ShallowWrapper {
             </Link>
           </div>,
         ],
-        "className": "nabi-header-container",
+        "className": "nabi-header-container nabi-position-relative",
       },
       "ref": null,
       "rendered": Array [
@@ -282,7 +282,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <div
-          className="nabi-header-container"
+          className="nabi-header-container nabi-position-relative"
         >
           <DrawerMenu />
           <WithStyles(Divider)
@@ -380,7 +380,7 @@ ShallowWrapper {
               </Link>
             </div>,
           ],
-          "className": "nabi-header-container",
+          "className": "nabi-header-container nabi-position-relative",
         },
         "ref": null,
         "rendered": Array [

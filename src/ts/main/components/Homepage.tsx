@@ -1,5 +1,6 @@
 import * as React from 'react';
-import BackgroundImageSection from './BackgroundImageSection';
+import BackgroundImage from './BackgroundImage';
+import FreeLesson from './FreeLesson';
 
 /** 
  * Homepage component
@@ -7,7 +8,8 @@ import BackgroundImageSection from './BackgroundImageSection';
 const Homepage = () => {
   return (
     <div>
-      <BackgroundImageSection />
+      <BackgroundImage />
+      <FreeLesson />
     </div>
   );
 };
