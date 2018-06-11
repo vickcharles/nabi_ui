@@ -18,6 +18,10 @@ import PageTitle from '../PageTitle';
 interface PopularInstrumentsState {
   instruments: InstrumentCardProps[];
   instrumentsToDisplay: InstrumentCardProps[];
+  positionStart: number;
+  positionEnd: number;
+  currentCount: number;
+  intervalId: any;
 }
 
 class PopularInstruments extends React.Component <{}, PopularInstrumentsState>  {
@@ -26,8 +30,41 @@ class PopularInstruments extends React.Component <{}, PopularInstrumentsState>  
 
     this.state = {
       instruments: popularInstruments,
-      instrumentsToDisplay: popularInstruments.slice(0, 3)
+      instrumentsToDisplay: popularInstruments.slice(0, 3),
+      positionStart: 0,
+      positionEnd: 0,
+      currentCount: 0,
+      intervalId: 0
     };
+
+    this.timer = this.timer.bind(this);
+    this.restart = this.restart.bind(this);
+  }
+  
+  public componentDidMount(): void {
+    var intervalId = setInterval(this.timer, 4000);
+    // store intervalId in the state so it can be accessed later:
+    this.setState({intervalId});
+  }
+  
+  componentWillUnmount(): void {
+    // use intervalId from the state to clear the interval
+    clearInterval(this.state.intervalId);
+  }
+  
+  timer(): void {
+    // setState method is used to update the state
+    this.setState({ currentCount: this.state.currentCount + 1 }, () => { 
+      if (this.state.currentCount === 2) {
+          this.setState({ currentCount: 0 });
+        }
+      });
+  }
+
+  restart(): any {
+    if (this.state.currentCount === 2) {
+      this.setState({ currentCount: 0 });
+    } 
   }
 
   public renderDesktopContent(): JSX.Element {
@@ -53,17 +90,17 @@ class PopularInstruments extends React.Component <{}, PopularInstrumentsState>  
   public renderMobileContent(): JSX.Element {
     return (
       <InstrumentCard 
-        image={this.state.instrumentsToDisplay[0].image}
-        instrument={this.state.instrumentsToDisplay[0].instrument}
-        instructors={this.state.instrumentsToDisplay[0].instructors}
+        image={this.state.instrumentsToDisplay[this.state.currentCount].image}
+        instrument={this.state.instrumentsToDisplay[this.state.currentCount].instrument}
+        instructors={this.state.instrumentsToDisplay[this.state.currentCount].instructors}
       />
     );
   }
 
   render() {
     return (
-      <div className="nabi-margin-top-large nabi-margin-bottom-large nabi-background-color">
-        
+      <div className="nabi-margin-top-xlarge nabi-margin-bottom-xlarge nabi-background-color">
+        {console.log(this.state.currentCount)}
         <PageTitle pageTitle="Popular Instruments" />
         <div className="container">
         <div className="hide-on-desktop">

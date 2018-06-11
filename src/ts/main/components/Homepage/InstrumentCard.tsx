@@ -43,7 +43,7 @@ export const InstrumentCard: React.StatelessComponent<PropsWithStyles> = props =
           <Typography>
             {props.instructors} {props.instrument} instructors in your area.
           </Typography>
-          <Button size="small" color="primary">
+          <Button size="small" color="primary" className="nabi-padding-left-zero">
             GET STARED
           </Button>
         </CardContent>

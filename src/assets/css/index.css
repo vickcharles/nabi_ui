@@ -200,6 +200,10 @@ input {
 	margin-top: 40px !important;
 }
 
+.nabi-margin-top-xlarge {
+	margin-top: 60px !important;
+}
+
 .nabi-margin-right-xsmall {
 	margin-right: 10px !important;
 }
@@ -230,6 +234,10 @@ input {
 
 .nabi-margin-bottom-large {
 	margin-bottom: 40px !important;
+}
+
+.nabi-margin-bottom-xlarge {
+	margin-bottom: 60px !important;
 }
 
 .nabi-margin-bottom-zero {
@@ -301,6 +309,10 @@ input {
 	padding-right: 40px !important;
 }
 
+.nabi-padding-bottom-zero {
+	padding-bottom: 0px !important;
+}
+
 .nabi-padding-bottom-xsmall {
 	padding-bottom: 10px !important;
 }
@@ -317,8 +329,8 @@ input {
 	padding-bottom: 40px !important;
 }
 
-.nabi-padding-bottom-zero {
-	padding-bottom: 0px !important;
+.nabi-padding-left-zero {
+	padding-left: 0px !important;
 }
 
 .nabi-padding-left-xsmall {
