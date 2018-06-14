@@ -23,6 +23,7 @@ interface RegistrationFormProps {
   handleBirthdayChange: (day: any, hasError: boolean) => void;
   hearAboutUs: string;
   selectedRole: string;
+  [key: string]: any;
 }
 
 /**
@@ -95,6 +96,9 @@ const RegistrationForm: React.StatelessComponent<RegistrationFormProps> = props 
         onChange={handleChange}
         placeholder="First Name"
         required={true}
+        error={props.fields.firstName.error && true}
+        helperText={props.fields.firstName.error}
+        
       />
 
       <TextField
@@ -105,6 +109,8 @@ const RegistrationForm: React.StatelessComponent<RegistrationFormProps> = props 
         onChange={handleChange}
         placeholder="Last Name"
         required={true}
+        error={props.fields.lastName.error && true}
+        helperText={props.fields.lastName.error}
       />
 
       <TextField
@@ -115,6 +121,8 @@ const RegistrationForm: React.StatelessComponent<RegistrationFormProps> = props 
         onChange={handleChange}
         placeholder="ZIP Code"
         required={true}
+        error={props.fields.zipCode.error && true}
+        helperText={props.fields.zipCode.error}
       />
 
       <TextField
@@ -125,6 +133,8 @@ const RegistrationForm: React.StatelessComponent<RegistrationFormProps> = props 
         onChange={handleChange}
         placeholder="Email"
         required={true}
+        error={props.fields.email.error && true}
+        helperText={props.fields.email.error}
       />
 
       <TextField
@@ -136,6 +146,8 @@ const RegistrationForm: React.StatelessComponent<RegistrationFormProps> = props 
         placeholder="Password"
         required={true}
         type="password"
+        error={props.fields.password.error && true}
+        helperText={props.fields.password.error}
       />
 
       <FormControl fullWidth={false} required={false}>
@@ -148,7 +160,11 @@ const RegistrationForm: React.StatelessComponent<RegistrationFormProps> = props 
         />
       </FormControl>
       
-      <FormControl fullWidth={true} required={true}>
+      <FormControl 
+        fullWidth={true} 
+        required={true}
+        error={props.fields.hearAboutUs.error && true}
+      >
         <InputLabel htmlFor="hearAboutUs">How did you hear about us?</InputLabel>
         <Select
           fullWidth={true}

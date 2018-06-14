@@ -22,12 +22,36 @@ interface AgeDisclaimerState {
 }
 
 /**
+ * FieldApi to simulate touched and error
+ *
+ * @interface FieldApi
+ */
+interface FieldApi {
+  touched: boolean;
+  error: string|undefined;
+}
+
+interface ValidatorsInterface {
+  fieldName: string;
+  validators: Array<(value: string, touched: boolean) => string>;
+}
+
+/**
+ * State Validator
+ *
+ * @interface RegistrationValidatorState
+ */
+interface RegistrationValidatorState {
+  fields: {[key: string]: FieldApi};
+}
+/**
  * State for Registration
  * @interface RegistrationState
  */
 interface RegistrationState extends 
 UserState,
 RedirectState,
+RegistrationValidatorState,
 AgeDisclaimerState {}
 
 /**
@@ -36,6 +60,7 @@ AgeDisclaimerState {}
  * @extends React.Component<RegistrationProps, UserState & RedirectState>
  */
 export class Registration extends React.Component<RegistrationProps, RegistrationState> {
+private validators: Array<ValidatorsInterface>;
   constructor(props: RegistrationProps) {
     super(props);
 
@@ -50,8 +75,126 @@ export class Registration extends React.Component<RegistrationProps, Registratio
       hearAboutUs: '',
       fireRedirect: false,
       displayName: '',
-      showAgeDisclaimer: false
+      showAgeDisclaimer: false,
+      fields: 
+        {
+          firstName: {touched: false, error: undefined },
+          lastName: { touched: false, error: undefined },
+          zipCode: { touched: false, error: undefined },
+          email: { touched: false, error: undefined },
+          password: { touched: false, error: undefined },
+          hearAboutUs: { touched: false, error: undefined }
+        }
     };
+
+    this.validators = [
+      {
+        fieldName: 'firstName',
+        validators: [
+          (value: string, touched: boolean) => {
+            return touched && !(/^[A-Za-z]{2,}$/).test( value ) ?
+              'Firstname must have at least two character and only letters! '
+            :
+              ''
+            ;
+          },
+          (value: string, touched: boolean) => {
+            return (/^\s*$/).test(value) ?
+              'Firstname is a mandatory field! '
+              :
+              ''
+              ;
+          }
+        ]
+      },
+      {
+        fieldName: 'lastName' ,
+        validators: [
+          (value: string, touched: boolean) => {
+            return touched && !(/^[A-Za-z]{2,}$/).test(value) ?
+              'Lastname must have at least two character and only letters! '
+              :
+              ''
+              ;
+          },
+          (value: string, touched: boolean) => {
+            return (/^\s*$/).test(value) ?
+              'Lastname is a mandatory field!'
+              :
+              ''
+              ;
+          }
+        ]
+      },
+      { fieldName: 'email',
+        validators: [
+          (value: string, touched: boolean) => {
+            // tslint:disable-next-line
+            return touched && !(/^([a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]{1,64}@([a-zA-Z0-9-]+.[a-zA-Z0-9-]{2,}){1,255}){1,320}$/).test(value) ?
+              'Email value is not valid! '
+              :
+              ''
+              ;
+          },
+          (value: string, touched: boolean) => {
+            return (/^\s*$/).test(value) ?
+              'Email is a mandatory field!'
+              :
+              ''
+              ;
+          }
+        ]
+      },
+      { fieldName: 'zipCode',
+        validators: [
+          (value: string, touched: boolean) => {
+            return touched && !(/^\ d{ 5} (-\ d{ 4} )?$/).test(value) ? 
+              'Must be a valid Zip Code' 
+              :
+              ''
+              ;
+          },
+          (value: string, touched: boolean) => {
+            return (/^\s*$/).test(value) ?
+              'Zip Code is a mandatory field!'
+              :
+              ''
+              ;
+          }
+        ]
+      },
+      {
+        fieldName: 'password',
+        validators: [
+          (value: string, touched: boolean) => {
+            return touched && !(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$/).test(value) ?
+              'Password must have a least 5 character one letter, one number'
+              :
+              ''
+              ;
+          },
+          (value: string, touched: boolean) => {
+            return (/^\s*$/).test(value) ?
+              'Password is a mandatory field!'
+              :
+              ''
+              ;
+          }
+        ]
+      },
+      {
+        fieldName: 'hearAboutUs',
+        validators: [
+          (value: string, touched: boolean) => {
+            return (/^\s*$/).test(value) ?
+              'Must select how you heard about us!'
+              :
+              ''
+              ;
+          }
+        ]
+      }
+    ];
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -74,25 +217,59 @@ export class Registration extends React.Component<RegistrationProps, Registratio
     const target = event.target;
     const value = target.value;
     const name = target.name;
-    
+
+    let newFieldsValue = Object.assign({}, this.state.fields);
+    if ( this.state.fields[name] && true ) {
+        newFieldsValue[name].touched = true;
+    }
+
     this.setState({
       ...this.state,
-      [name]: value
+      [name]: value,
+      fields: newFieldsValue
     });
   }
 
   public handleSubmit(event: React.SyntheticEvent<HTMLInputElement>): void {
+
     if (event) {
       event.preventDefault();
     }
 
-    this.setState({ id: this.generateId() });
+    // Create validations 
+    let newValidateFields = Object.assign({}, this.state.fields);
+    let hasErrors: boolean = false;
+    this.validators.map(
+      (valField) => {
+        if ( this.state.fields[valField.fieldName] ) {
+            let errors: string = valField.validators.map(
+              (fun) => {
+                let value = this.state[valField.fieldName];
+                return fun(value, newValidateFields[valField.fieldName].touched );
+              }
+            ).join(' ');
+            if ( !((/^\s*$/).test(errors) && true) ) {
+              newValidateFields[valField.fieldName].error = errors;
+              hasErrors = true;
+            } else {
+              newValidateFields[valField.fieldName].error = '';
+            }
+        }
+      }
+    );
 
-    if (!this.state.fireRedirect) {
-      this.setState({ fireRedirect: true }, () => {
-        this.createUser();
-      });
+    if ( hasErrors && true) {
+      this.setState({fields: newValidateFields});
+    } else {
+      this.setState({ id: this.generateId() });
+
+      if (!this.state.fireRedirect) {
+        this.setState({ fireRedirect: true }, () => {
+          this.createUser();
+        });
+      }
     }
+    
   }
   
   public createUser(): void {
@@ -145,6 +322,7 @@ export class Registration extends React.Component<RegistrationProps, Registratio
             handleBirthdayChange={this.handleBirthdayChange}
             hearAboutUs={this.state.hearAboutUs}
             selectedRole={this.state.role}
+            fields={this.state.fields}
           />
         </div>
         {this.state.fireRedirect && this.state.role === 'instructor' && (

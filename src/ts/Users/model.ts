@@ -65,6 +65,7 @@ export interface UserState {
   state?: string;
   city?: string;
   country?: string;
+  [key: string]: any;
 }
 
 export type IState = UserState[];
