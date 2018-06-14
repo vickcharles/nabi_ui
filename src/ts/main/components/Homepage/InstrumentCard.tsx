@@ -18,6 +18,7 @@ const styles = () => ({
  */
 export interface InstrumentCardProps {
   id?: string;
+  index?: number;
   image: string;
   instrument: string;
   instructors: number;
@@ -28,28 +29,43 @@ type PropsWithStyles = InstrumentCardProps & WithStyles<'media'>;
 /** 
  * InstrumentCard component
  */
-export const InstrumentCard: React.StatelessComponent<PropsWithStyles> = props =>  {
-  return (
-    <div>
-      <Card>
-        <CardMedia 
-          className={props.classes.media}
-          image={require(`../../../../assets/images/${props.image}`)}
-        />
-        <CardContent>
-          <Typography className="nabi-margin-top-small" variant="body2">
-            Learn {props.instrument}
-          </Typography>
-          <Typography>
-            {props.instructors} {props.instrument} instructors in your area.
-          </Typography>
-          <Button size="small" color="primary" className="nabi-padding-left-zero">
-            GET STARED
-          </Button>
-        </CardContent>
-      </Card>
-    </div>
-  );
-};
+class InstrumentCard extends React.Component<PropsWithStyles, {}> {
+  componentDidMount() {
+    const slides = document.querySelectorAll('.popular-instrument-card');
+    let currentSlide = 0;
+    setInterval(nextSlide, 4000);
+    function nextSlide() {
+        slides[currentSlide].className = 'popular-instrument-card';
+        currentSlide = (currentSlide + 1) % 8;
+        slides[currentSlide].className = 'popular-instrument-card nabi-showing';
+    }
+  }
+
+  public render() {
+    return (
+      <div>
+        <Card 
+          className={'popular-instrument-card' + (this.props.index === 0 ? ' nabi-showing' : '')}
+        >
+          <CardMedia 
+            className={this.props.classes.media}
+            image={require(`../../../../assets/images/${this.props.image}`)}
+          />
+          <CardContent>
+            <Typography className="nabi-margin-top-small" variant="body2">
+              Learn {this.props.instrument}
+            </Typography>
+            <Typography>
+              {this.props.instructors} {this.props.instrument} instructors in your area.
+            </Typography>
+            <Button size="small" color="primary" className="nabi-padding-left-zero">
+              GET STARED
+            </Button>
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
+}
 
 export default withStyles(styles)<InstrumentCardProps>(InstrumentCard);

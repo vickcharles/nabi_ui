@@ -1,7 +1,6 @@
 import * as React from 'react';
 import InstrumentCard from './InstrumentCard';
 import { popularInstruments } from '../../../../assets/data/popularInstruments';
-import GridList, { GridListTile } from 'material-ui/GridList';
 import { InstrumentCardProps } from './InstrumentCard';
 import PageTitle from '../PageTitle';
 
@@ -17,11 +16,6 @@ import PageTitle from '../PageTitle';
  */
 interface PopularInstrumentsState {
   instruments: InstrumentCardProps[];
-  instrumentsToDisplay: InstrumentCardProps[];
-  positionStart: number;
-  positionEnd: number;
-  currentCount: number;
-  intervalId: any;
 }
 
 class PopularInstruments extends React.Component <{}, PopularInstrumentsState>  {
@@ -30,85 +24,33 @@ class PopularInstruments extends React.Component <{}, PopularInstrumentsState>  
 
     this.state = {
       instruments: popularInstruments,
-      instrumentsToDisplay: popularInstruments.slice(0, 3),
-      positionStart: 0,
-      positionEnd: 0,
-      currentCount: 0,
-      intervalId: 0
     };
-
-    this.timer = this.timer.bind(this);
-    this.restart = this.restart.bind(this);
-  }
-  
-  public componentDidMount(): void {
-    var intervalId = setInterval(this.timer, 4000);
-    // store intervalId in the state so it can be accessed later:
-    this.setState({intervalId});
-  }
-  
-  componentWillUnmount(): void {
-    // use intervalId from the state to clear the interval
-    clearInterval(this.state.intervalId);
-  }
-  
-  timer(): void {
-    // setState method is used to update the state
-    this.setState({ currentCount: this.state.currentCount + 1 }, () => { 
-      if (this.state.currentCount === 2) {
-          this.setState({ currentCount: 0 });
-        }
-      });
   }
 
-  restart(): any {
-    if (this.state.currentCount === 2) {
-      this.setState({ currentCount: 0 });
-    } 
-  }
-
-  public renderDesktopContent(): JSX.Element {
-    const Cards = this.state.instrumentsToDisplay.map((items, i ) => {
+  public renderInstrumentCard(): any {
+    const Cards = this.state.instruments.map((items, i ) => {
       return (
-        <GridListTile key={i} className="nabi-align-center popular-instrument-card">
-          <InstrumentCard 
-            image={items.image}
-            instrument={items.instrument}
-            instructors={items.instructors}
-          />
-        </GridListTile>
+        <InstrumentCard 
+          key={i}
+          index={i}
+          image={items.image}
+          instrument={items.instrument}
+          instructors={items.instructors}
+        />
       );
     });
-
-    return (
-      <GridList cellHeight={50} cols={3}>
-        {Cards}
-      </GridList>
-    );
-  }
-
-  public renderMobileContent(): JSX.Element {
-    return (
-      <InstrumentCard 
-        image={this.state.instrumentsToDisplay[this.state.currentCount].image}
-        instrument={this.state.instrumentsToDisplay[this.state.currentCount].instrument}
-        instructors={this.state.instrumentsToDisplay[this.state.currentCount].instructors}
-      />
-    );
+    return Cards;
   }
 
   render() {
     return (
-      <div className="nabi-margin-top-xlarge nabi-margin-bottom-xlarge nabi-background-color">
-        {console.log(this.state.currentCount)}
-        <PageTitle pageTitle="Popular Instruments" />
-        <div className="container">
-        <div className="hide-on-desktop">
-          {this.renderMobileContent()}
-        </div>
-        <div className="hide-on-mobile">
-          {this.renderDesktopContent()}
-        </div>
+      <div className="nabi-margin-top-xlarge nabi-margin-bottom-medium nabi-background-color">
+        <div className="hide-on-desktop"><PageTitle pageTitle="Popular Instruments" /></div>
+        <div className="hide-on-mobile"><PageTitle pageTitle="How It Works" /></div>
+        <div className="nabi-container">
+          <div className="nabi-popular-instruments">
+            {this.renderInstrumentCard()}
+          </div>
         </div>
       </div>
     );

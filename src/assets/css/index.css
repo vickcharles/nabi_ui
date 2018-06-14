@@ -27,25 +27,6 @@ a {
   text-decoration: none;
 }
 
-/*POPULAR ISTRUMENT SECTION*/
-.card {
-  width: 100% !important;
-  position: relative;
-  text-align: left;
-  margin-top: 20px !important;
-  height: 270px;
-}
-
-.card:first-child {
-  margin-left: 0px !important;
-  margin-top: 0%;
-}
-
-.card img {
-  width: 100% !important;
-  height: 150px !important;
-}
-
 input {
   background: transparent;
 }
@@ -435,6 +416,7 @@ input {
 }
 
 /*Homepage*/
+/* Banner */
 #banner {
 	height: 400px !important;
 	width: 100%;
@@ -456,6 +438,31 @@ input {
 	margin-right: 10px !important;
 	padding: 15px 11px !important;
 	font-size: 11px !important;
+}
+
+/* Popular instruments card */
+.nabi-popular-instruments {
+	position: relative;
+  height: 326px;
+}
+
+.popular-instrument-card {
+	background: #fff;
+  width: 100% !important;
+	border-radius: 3px 3px 3px 3px;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+	transition: opacity 1s;
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12)
+}
+
+.nabi-showing{
+	opacity: 1;
+	z-index: 2;
 }
 
 /*Page title*/
@@ -538,10 +545,10 @@ input {
 	.nabi-responsive-button {
 		padding: 5px 15px !important;
 		font-size: 11px !important;
-  }
-	/*POPULAR ISTRUMENT SECTION*/
-	.popular-instrument-card {
-		height: 100% !important;
+	}
+	.nabi-popular-instruments {
+		width: 328px;
+		margin: 0 auto;
 	}
 }
 
@@ -696,10 +703,11 @@ input {
 		margin-left: 20px;
 	}
   /*POPULAR ISTRUMENT SECTION*/
-  .card{
-    margin: 0px  0 25px 15px!important;
-    width: 350px !important;
-  }
+	.nabi-popular-instruments {
+		width: 50%;
+    margin: 0px;
+    height: 370px;
+	}
 }
 
 /* Laptops ----------- */
@@ -711,5 +719,10 @@ input {
 	/*Header*/
 	.nabi-header-container {
 		width: 1150px;
+	}
+	/*POPULAR ISTRUMENT SECTION*/
+	.nabi-popular-instruments {
+		height: 420px;
+		margin: 0px;
 	}
 }
