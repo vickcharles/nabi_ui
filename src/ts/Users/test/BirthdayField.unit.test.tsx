@@ -13,6 +13,7 @@ describe('BirthdayField', () => {
         id="birthday"
         delimiter="/"
         minAge={13}
+        classes={{}}
       />
     );
   });

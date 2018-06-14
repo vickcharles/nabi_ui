@@ -1,5 +1,6 @@
 import * as React from 'react';
 import AgeDisclaimer from './AgeDisclaimer';
+import { withStyles, WithStyles } from 'material-ui/styles';
 
 export interface DayInterface {
   day: string;
@@ -27,13 +28,14 @@ interface BirthdayState {
   oldDate: string;
 }
 
-class BirthdayField extends React.Component<BirthdayProps, BirthdayState > {
+class BirthdayField 
+  extends React.Component<BirthdayProps & WithStyles<'root' | 'focused' |'fullWidth' >, BirthdayState > {
   private dayInput: any;
   private monthInput: any;
   private yearInput: any;
   private MonthArray = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-  constructor( props: BirthdayProps ) {
+  constructor(props: BirthdayProps & WithStyles < 'root' | 'focused' | 'fullWidth' >) {
     super( props );
 
     this.state = {
@@ -342,8 +344,8 @@ class BirthdayField extends React.Component<BirthdayProps, BirthdayState > {
       padding: '17px 2px'
     };
     const _inputClassName = this.state.isFocused ? 
-      'MuiInput-root-76 MuiInput-fullWidth-83 MuiInput-focused-78 MuiInput-formControl-77 MuiInput-underline-80' :
-      'MuiInput-root-76 MuiInput-fullWidth-83 MuiInput-formControl-77 MuiInput-underline-80';
+      `${this.props.classes.root} ${this.props.classes.focused} ${this.props.classes.fullWidth}` :
+      `${this.props.classes.root} ${this.props.classes.fullWidth}`;
     const monthStyle = this.state.isFocused ?
       { width: '4rem' } :
       { width: '4rem', marginLeft: '4.7rem' } ;
@@ -422,4 +424,26 @@ class BirthdayField extends React.Component<BirthdayProps, BirthdayState > {
   }
 }
 
-export default BirthdayField;
+export default withStyles( 
+  {
+    root: {
+      margin: 0,
+      marginTop: '16px',
+      marginBottom: '8px',
+      border: '2px solid #ebeef1 !important',
+      padding: 0,
+      position: 'relative',
+      minWidth: 0,
+      flexDirection: 'column',
+      lineHeight: '1.1875em',
+      borderRadius: '5px',
+      backgroundColor: '#f3f6f9 !important'
+    },
+    focused: {
+
+    },
+    fullWidth: {
+      width: '100%'
+    }
+  } 
+) < BirthdayProps > (BirthdayField);

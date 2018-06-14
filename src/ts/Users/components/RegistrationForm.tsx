@@ -152,14 +152,16 @@ const RegistrationForm: React.StatelessComponent<RegistrationFormProps> = props 
 
       <FormControl fullWidth={false} required={false}>
         <InputLabel htmlFor="birthday">Birthday</InputLabel>
-        <BirthdayField
-          onChange={handleBirthdayChange}
-          id="birthday"
-          delimiter="/"
-          minAge={13}
-        />
+       
+          <BirthdayField
+            onChange={handleBirthdayChange}
+            id="birthday"
+            delimiter="/"
+            minAge={13}
+          />
+          
       </FormControl>
-      
+
       <FormControl 
         fullWidth={true} 
         required={true}
