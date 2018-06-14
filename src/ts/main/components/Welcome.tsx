@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Link, match, withRouter, RouteComponentProps } from 'react-router-dom';
 import Button from 'material-ui/Button';
-import Typography from 'material-ui/Typography';
 
 /**
  * Id params
@@ -31,10 +30,10 @@ const Welcome: React.StatelessComponent<WelcomeProps> = props => {
     <div className="nabi-container">
       <div className="nabi-section nabi-text-center">
         <p className="nabi-jennasue-title nabi-color-nabi nabi-margin-bottom-xsmall">Welcome to Nabi!</p>
-        <Typography>{props.welcomeText}</Typography>
+        <p className="nabi-font-medium">{props.welcomeText}</p>
           <Link to={`/${props.actionUrl}/${props.match.params.id}`}>
           <Button 
-            className="nabi-responsive-button nabi-margin-top-small" 
+            className="nabi-margin-top-small" 
             color="primary" 
             variant="raised"
           >
