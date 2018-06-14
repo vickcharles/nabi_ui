@@ -1,0 +1,761 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PopularInstruments Renders the component 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PopularInstruments />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="hide-on-desktop"
+        >
+          <PageTitle
+            pageTitle="Popular Instruments"
+          />
+        </div>,
+        <div
+          className="hide-on-mobile"
+        >
+          <PageTitle
+            pageTitle="How It Works"
+          />
+        </div>,
+        <div
+          className="nabi-container"
+        >
+          <div
+            className="nabi-popular-instruments"
+          >
+            <WithStyles(InstrumentCard)
+              image="nabi-home-popular-instruments-piano.png"
+              index={0}
+              instructors={27}
+              instrument="piano"
+            />
+            <WithStyles(InstrumentCard)
+              image="nabi-home-popular-instruments-guitar.png"
+              index={1}
+              instructors={24}
+              instrument="guitar"
+            />
+            <WithStyles(InstrumentCard)
+              image="nabi-home-popular-instruments-drums.jpg"
+              index={2}
+              instructors={19}
+              instrument="drums"
+            />
+            <WithStyles(InstrumentCard)
+              image="nabi-home-popular-instruments-violin.jpg"
+              index={3}
+              instructors={18}
+              instrument="violin"
+            />
+            <WithStyles(InstrumentCard)
+              image="nabi-home-popular-instruments-piano.png"
+              index={4}
+              instructors={15}
+              instrument="saxophone"
+            />
+            <WithStyles(InstrumentCard)
+              image="nabi-home-popular-instruments-piano.png"
+              index={5}
+              instructors={10}
+              instrument="flute"
+            />
+            <WithStyles(InstrumentCard)
+              image="nabi-home-popular-instruments-piano.png"
+              index={6}
+              instructors={13}
+              instrument="clarinet"
+            />
+            <WithStyles(InstrumentCard)
+              image="nabi-home-popular-instruments-piano.png"
+              index={7}
+              instructors={23}
+              instrument="electric guitar"
+            />
+          </div>
+        </div>,
+      ],
+      "className": "nabi-margin-top-xlarge nabi-margin-bottom-medium nabi-background-color",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <PageTitle
+            pageTitle="Popular Instruments"
+          />,
+          "className": "hide-on-desktop",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "pageTitle": "Popular Instruments",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <PageTitle
+            pageTitle="How It Works"
+          />,
+          "className": "hide-on-mobile",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "pageTitle": "How It Works",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="nabi-popular-instruments"
+          >
+            <WithStyles(InstrumentCard)
+              image="nabi-home-popular-instruments-piano.png"
+              index={0}
+              instructors={27}
+              instrument="piano"
+            />
+            <WithStyles(InstrumentCard)
+              image="nabi-home-popular-instruments-guitar.png"
+              index={1}
+              instructors={24}
+              instrument="guitar"
+            />
+            <WithStyles(InstrumentCard)
+              image="nabi-home-popular-instruments-drums.jpg"
+              index={2}
+              instructors={19}
+              instrument="drums"
+            />
+            <WithStyles(InstrumentCard)
+              image="nabi-home-popular-instruments-violin.jpg"
+              index={3}
+              instructors={18}
+              instrument="violin"
+            />
+            <WithStyles(InstrumentCard)
+              image="nabi-home-popular-instruments-piano.png"
+              index={4}
+              instructors={15}
+              instrument="saxophone"
+            />
+            <WithStyles(InstrumentCard)
+              image="nabi-home-popular-instruments-piano.png"
+              index={5}
+              instructors={10}
+              instrument="flute"
+            />
+            <WithStyles(InstrumentCard)
+              image="nabi-home-popular-instruments-piano.png"
+              index={6}
+              instructors={13}
+              instrument="clarinet"
+            />
+            <WithStyles(InstrumentCard)
+              image="nabi-home-popular-instruments-piano.png"
+              index={7}
+              instructors={23}
+              instrument="electric guitar"
+            />
+          </div>,
+          "className": "nabi-container",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <WithStyles(InstrumentCard)
+                image="nabi-home-popular-instruments-piano.png"
+                index={0}
+                instructors={27}
+                instrument="piano"
+              />,
+              <WithStyles(InstrumentCard)
+                image="nabi-home-popular-instruments-guitar.png"
+                index={1}
+                instructors={24}
+                instrument="guitar"
+              />,
+              <WithStyles(InstrumentCard)
+                image="nabi-home-popular-instruments-drums.jpg"
+                index={2}
+                instructors={19}
+                instrument="drums"
+              />,
+              <WithStyles(InstrumentCard)
+                image="nabi-home-popular-instruments-violin.jpg"
+                index={3}
+                instructors={18}
+                instrument="violin"
+              />,
+              <WithStyles(InstrumentCard)
+                image="nabi-home-popular-instruments-piano.png"
+                index={4}
+                instructors={15}
+                instrument="saxophone"
+              />,
+              <WithStyles(InstrumentCard)
+                image="nabi-home-popular-instruments-piano.png"
+                index={5}
+                instructors={10}
+                instrument="flute"
+              />,
+              <WithStyles(InstrumentCard)
+                image="nabi-home-popular-instruments-piano.png"
+                index={6}
+                instructors={13}
+                instrument="clarinet"
+              />,
+              <WithStyles(InstrumentCard)
+                image="nabi-home-popular-instruments-piano.png"
+                index={7}
+                instructors={23}
+                instrument="electric guitar"
+              />,
+            ],
+            "className": "nabi-popular-instruments",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "class",
+              "props": Object {
+                "image": "nabi-home-popular-instruments-piano.png",
+                "index": 0,
+                "instructors": 27,
+                "instrument": "piano",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "class",
+              "props": Object {
+                "image": "nabi-home-popular-instruments-guitar.png",
+                "index": 1,
+                "instructors": 24,
+                "instrument": "guitar",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "class",
+              "props": Object {
+                "image": "nabi-home-popular-instruments-drums.jpg",
+                "index": 2,
+                "instructors": 19,
+                "instrument": "drums",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "3",
+              "nodeType": "class",
+              "props": Object {
+                "image": "nabi-home-popular-instruments-violin.jpg",
+                "index": 3,
+                "instructors": 18,
+                "instrument": "violin",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "4",
+              "nodeType": "class",
+              "props": Object {
+                "image": "nabi-home-popular-instruments-piano.png",
+                "index": 4,
+                "instructors": 15,
+                "instrument": "saxophone",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "5",
+              "nodeType": "class",
+              "props": Object {
+                "image": "nabi-home-popular-instruments-piano.png",
+                "index": 5,
+                "instructors": 10,
+                "instrument": "flute",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "6",
+              "nodeType": "class",
+              "props": Object {
+                "image": "nabi-home-popular-instruments-piano.png",
+                "index": 6,
+                "instructors": 13,
+                "instrument": "clarinet",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "7",
+              "nodeType": "class",
+              "props": Object {
+                "image": "nabi-home-popular-instruments-piano.png",
+                "index": 7,
+                "instructors": 23,
+                "instrument": "electric guitar",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="hide-on-desktop"
+          >
+            <PageTitle
+              pageTitle="Popular Instruments"
+            />
+          </div>,
+          <div
+            className="hide-on-mobile"
+          >
+            <PageTitle
+              pageTitle="How It Works"
+            />
+          </div>,
+          <div
+            className="nabi-container"
+          >
+            <div
+              className="nabi-popular-instruments"
+            >
+              <WithStyles(InstrumentCard)
+                image="nabi-home-popular-instruments-piano.png"
+                index={0}
+                instructors={27}
+                instrument="piano"
+              />
+              <WithStyles(InstrumentCard)
+                image="nabi-home-popular-instruments-guitar.png"
+                index={1}
+                instructors={24}
+                instrument="guitar"
+              />
+              <WithStyles(InstrumentCard)
+                image="nabi-home-popular-instruments-drums.jpg"
+                index={2}
+                instructors={19}
+                instrument="drums"
+              />
+              <WithStyles(InstrumentCard)
+                image="nabi-home-popular-instruments-violin.jpg"
+                index={3}
+                instructors={18}
+                instrument="violin"
+              />
+              <WithStyles(InstrumentCard)
+                image="nabi-home-popular-instruments-piano.png"
+                index={4}
+                instructors={15}
+                instrument="saxophone"
+              />
+              <WithStyles(InstrumentCard)
+                image="nabi-home-popular-instruments-piano.png"
+                index={5}
+                instructors={10}
+                instrument="flute"
+              />
+              <WithStyles(InstrumentCard)
+                image="nabi-home-popular-instruments-piano.png"
+                index={6}
+                instructors={13}
+                instrument="clarinet"
+              />
+              <WithStyles(InstrumentCard)
+                image="nabi-home-popular-instruments-piano.png"
+                index={7}
+                instructors={23}
+                instrument="electric guitar"
+              />
+            </div>
+          </div>,
+        ],
+        "className": "nabi-margin-top-xlarge nabi-margin-bottom-medium nabi-background-color",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <PageTitle
+              pageTitle="Popular Instruments"
+            />,
+            "className": "hide-on-desktop",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "pageTitle": "Popular Instruments",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <PageTitle
+              pageTitle="How It Works"
+            />,
+            "className": "hide-on-mobile",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "pageTitle": "How It Works",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="nabi-popular-instruments"
+            >
+              <WithStyles(InstrumentCard)
+                image="nabi-home-popular-instruments-piano.png"
+                index={0}
+                instructors={27}
+                instrument="piano"
+              />
+              <WithStyles(InstrumentCard)
+                image="nabi-home-popular-instruments-guitar.png"
+                index={1}
+                instructors={24}
+                instrument="guitar"
+              />
+              <WithStyles(InstrumentCard)
+                image="nabi-home-popular-instruments-drums.jpg"
+                index={2}
+                instructors={19}
+                instrument="drums"
+              />
+              <WithStyles(InstrumentCard)
+                image="nabi-home-popular-instruments-violin.jpg"
+                index={3}
+                instructors={18}
+                instrument="violin"
+              />
+              <WithStyles(InstrumentCard)
+                image="nabi-home-popular-instruments-piano.png"
+                index={4}
+                instructors={15}
+                instrument="saxophone"
+              />
+              <WithStyles(InstrumentCard)
+                image="nabi-home-popular-instruments-piano.png"
+                index={5}
+                instructors={10}
+                instrument="flute"
+              />
+              <WithStyles(InstrumentCard)
+                image="nabi-home-popular-instruments-piano.png"
+                index={6}
+                instructors={13}
+                instrument="clarinet"
+              />
+              <WithStyles(InstrumentCard)
+                image="nabi-home-popular-instruments-piano.png"
+                index={7}
+                instructors={23}
+                instrument="electric guitar"
+              />
+            </div>,
+            "className": "nabi-container",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <WithStyles(InstrumentCard)
+                  image="nabi-home-popular-instruments-piano.png"
+                  index={0}
+                  instructors={27}
+                  instrument="piano"
+                />,
+                <WithStyles(InstrumentCard)
+                  image="nabi-home-popular-instruments-guitar.png"
+                  index={1}
+                  instructors={24}
+                  instrument="guitar"
+                />,
+                <WithStyles(InstrumentCard)
+                  image="nabi-home-popular-instruments-drums.jpg"
+                  index={2}
+                  instructors={19}
+                  instrument="drums"
+                />,
+                <WithStyles(InstrumentCard)
+                  image="nabi-home-popular-instruments-violin.jpg"
+                  index={3}
+                  instructors={18}
+                  instrument="violin"
+                />,
+                <WithStyles(InstrumentCard)
+                  image="nabi-home-popular-instruments-piano.png"
+                  index={4}
+                  instructors={15}
+                  instrument="saxophone"
+                />,
+                <WithStyles(InstrumentCard)
+                  image="nabi-home-popular-instruments-piano.png"
+                  index={5}
+                  instructors={10}
+                  instrument="flute"
+                />,
+                <WithStyles(InstrumentCard)
+                  image="nabi-home-popular-instruments-piano.png"
+                  index={6}
+                  instructors={13}
+                  instrument="clarinet"
+                />,
+                <WithStyles(InstrumentCard)
+                  image="nabi-home-popular-instruments-piano.png"
+                  index={7}
+                  instructors={23}
+                  instrument="electric guitar"
+                />,
+              ],
+              "className": "nabi-popular-instruments",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "class",
+                "props": Object {
+                  "image": "nabi-home-popular-instruments-piano.png",
+                  "index": 0,
+                  "instructors": 27,
+                  "instrument": "piano",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "1",
+                "nodeType": "class",
+                "props": Object {
+                  "image": "nabi-home-popular-instruments-guitar.png",
+                  "index": 1,
+                  "instructors": 24,
+                  "instrument": "guitar",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "2",
+                "nodeType": "class",
+                "props": Object {
+                  "image": "nabi-home-popular-instruments-drums.jpg",
+                  "index": 2,
+                  "instructors": 19,
+                  "instrument": "drums",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "3",
+                "nodeType": "class",
+                "props": Object {
+                  "image": "nabi-home-popular-instruments-violin.jpg",
+                  "index": 3,
+                  "instructors": 18,
+                  "instrument": "violin",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "4",
+                "nodeType": "class",
+                "props": Object {
+                  "image": "nabi-home-popular-instruments-piano.png",
+                  "index": 4,
+                  "instructors": 15,
+                  "instrument": "saxophone",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "5",
+                "nodeType": "class",
+                "props": Object {
+                  "image": "nabi-home-popular-instruments-piano.png",
+                  "index": 5,
+                  "instructors": 10,
+                  "instrument": "flute",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "6",
+                "nodeType": "class",
+                "props": Object {
+                  "image": "nabi-home-popular-instruments-piano.png",
+                  "index": 6,
+                  "instructors": 13,
+                  "instrument": "clarinet",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "7",
+                "nodeType": "class",
+                "props": Object {
+                  "image": "nabi-home-popular-instruments-piano.png",
+                  "index": 7,
+                  "instructors": 23,
+                  "instrument": "electric guitar",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
