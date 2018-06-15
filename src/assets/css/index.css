@@ -86,16 +86,6 @@ input {
 .nabi-cursor-pointer {
 	cursor: pointer;
 }
-/*Color*/
-
-.nabi-color{
-  color:#06c3e1 !important;
-}
-
-/**/
-.box-shadow-none{
-  box-shadow: none !important;
-}
 
 /*DISPLAY*/
 .nabi-display-block {
