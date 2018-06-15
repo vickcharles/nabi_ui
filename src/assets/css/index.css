@@ -51,12 +51,6 @@ input {
   -moz-transform: rotate(-10deg);
 }
 
-.container {
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 /*BACKGROUND COLOR*/
 .nabi-background-color {
 	background-color: #f0f3f6;
