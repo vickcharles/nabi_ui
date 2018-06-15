@@ -26,8 +26,7 @@ const PopularInstruments: React.StatelessComponent = () => {
 
   return (
     <div className="nabi-margin-top-xlarge nabi-margin-bottom-medium nabi-background-color">
-      <div className="hide-on-desktop"><PageTitle pageTitle="Popular Instruments" /></div>
-      <div className="hide-on-mobile"><PageTitle pageTitle="How It Works" /></div>
+      <PageTitle pageTitle="Popular Instruments" />
       <div className="nabi-container">
         <div className="nabi-popular-instruments">
           {renderInstrumentCard()}
