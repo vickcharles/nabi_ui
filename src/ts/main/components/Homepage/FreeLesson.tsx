@@ -21,7 +21,7 @@ const FreeLesson = () => {
         </div>
         <div className="free-lesson-right-section nabi-margin-top-medium">
           <img 
-            src={require('../../../assets/images/nabi-home-music-icon.png')} 
+            src={require('../../../../assets/images/nabi-home-music-icon.png')} 
             alt=""
             className="free-lesson-image"
           />

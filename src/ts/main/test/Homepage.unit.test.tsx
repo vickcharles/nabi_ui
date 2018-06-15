@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Homepage from '../components/Homepage';
+import Homepage from '../components/Homepage/Homepage';
 import { shallow } from 'enzyme';
 
 describe('Homepage', () => {

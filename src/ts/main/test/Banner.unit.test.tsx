@@ -1,13 +1,13 @@
 import * as React from 'react';
-import BackgroundImage from '../components/BackgroundImage';
+import Banner from '../components/Homepage/Banner';
 import { shallow } from 'enzyme';
 
-describe('BackgroundImage', () => {
-  let wrapper: any;
+describe('Banner', () => {
+  let wrapper: any = null;
 
   beforeEach(() => {
     wrapper = shallow(
-      <BackgroundImage />
+      <Banner />
     );
   });
 

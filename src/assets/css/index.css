@@ -31,10 +31,6 @@ input {
   background: transparent;
 }
 
-input {
-  background: transparent;
-}
-
 /*Freeleson section*/
 .free-lesson-section {
 	text-align: center !important;
@@ -169,6 +165,10 @@ input {
 	margin-top: 40px !important;
 }
 
+.nabi-margin-top-xlarge {
+	margin-top: 60px !important;
+}
+
 .nabi-margin-right-xsmall {
 	margin-right: 10px !important;
 }
@@ -199,6 +199,10 @@ input {
 
 .nabi-margin-bottom-large {
 	margin-bottom: 40px !important;
+}
+
+.nabi-margin-bottom-xlarge {
+	margin-bottom: 60px !important;
 }
 
 .nabi-margin-bottom-zero {
@@ -270,6 +274,10 @@ input {
 	padding-right: 40px !important;
 }
 
+.nabi-padding-bottom-zero {
+	padding-bottom: 0px !important;
+}
+
 .nabi-padding-bottom-xsmall {
 	padding-bottom: 10px !important;
 }
@@ -286,8 +294,8 @@ input {
 	padding-bottom: 40px !important;
 }
 
-.nabi-padding-bottom-zero {
-	padding-bottom: 0px !important;
+.nabi-padding-left-zero {
+	padding-left: 0px !important;
 }
 
 .nabi-padding-left-xsmall {
@@ -392,6 +400,7 @@ input {
 }
 
 /*Homepage*/
+/* Banner */
 #banner {
 	height: 400px !important;
 	width: 100%;
@@ -413,6 +422,31 @@ input {
 	margin-right: 10px !important;
 	padding: 15px 11px !important;
 	font-size: 11px !important;
+}
+
+/* Popular instruments card */
+.nabi-popular-instruments {
+	position: relative;
+  height: 326px;
+}
+
+.popular-instrument-card {
+	background: #fff;
+  width: 100% !important;
+	border-radius: 3px 3px 3px 3px;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+	transition: opacity 1s;
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12)
+}
+
+.nabi-showing{
+	opacity: 1;
+	z-index: 2;
 }
 
 /*Page title*/
@@ -494,20 +528,17 @@ input {
 	/*HEADER*/
 	.nabi-responsive-button {
 		padding: 5px 15px !important;
-		font-size: 13px !important;
+		font-size: 11px !important;
+	}
+	.nabi-popular-instruments {
+		width: 328px;
+		margin: 0 auto;
 	}
 }
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-width: 768px) {
 	/****CUSTOM ELEMENTS****/
-	/*Responsive Hide*/
-	.hide-on-mobile {
-		display: block !important;
-	}
-	.hide-on-desktop {
-		display: none !important;
-	}
 	/*Container*/
 	.nabi-container {
 		margin: 0 auto;
@@ -559,7 +590,7 @@ input {
 		margin-right: 30px !important;
 		padding: 15px 38px !important;
 		font-size: 14px !important
-	}
+  }
 	/*header*/
 	#menu {
 		top: 37% !important;
@@ -574,11 +605,7 @@ input {
 		padding: 12px 25px !important;
 		font-size: 14px !important;
 	}
-	header .container {
-		padding-bottom: 20px !important;
-		padding-top: 20px;
-	}
-}
+}  
 
 /* Tablets small laptops ----------- */
 @media (min-width: 960px) {
@@ -593,7 +620,7 @@ input {
 	.hide-on-desktop {
 		display: none !important;
 	}
-	/*Page title*/
+	/*Page Title*/
 	#nabi-page-title {
 		font-size: 25px !important;
 	}
@@ -659,6 +686,12 @@ input {
 	.free-lesson-image {
 		margin-left: 20px;
 	}
+  /*POPULAR ISTRUMENT SECTION*/
+	.nabi-popular-instruments {
+		width: 50%;
+    margin: 0px;
+    height: 370px;
+	}
 }
 
 /* Laptops ----------- */
@@ -670,5 +703,10 @@ input {
 	/*Header*/
 	.nabi-header-container {
 		width: 1150px;
+	}
+	/*POPULAR ISTRUMENT SECTION*/
+	.nabi-popular-instruments {
+		height: 420px;
+		margin: 0px;
 	}
 }

@@ -2,9 +2,9 @@ import * as React from 'react';
 import { Button } from 'material-ui';
 
 /** 
- * BackgroundImage component
+ * Banner component
  */
-const BackgroundImage = () => {
+const Banner = () => {
   return ( 
     <section id="banner" className="nabi-position-relative">
       <div className="container nabi-text-center nabi-color-white">
@@ -25,4 +25,4 @@ const BackgroundImage = () => {
   );
 };
 
-export default BackgroundImage;
+export default Banner;
