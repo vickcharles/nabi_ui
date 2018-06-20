@@ -12,7 +12,7 @@ const Header = () => {
     <header>
       <div className="nabi-header-container nabi-position-relative">
         <DrawerMenu />
-        <Divider className="header-divider hide-on-desktop"/>
+        <Divider className="header-divider"/>
         <Link id="nabi-logo-anchor" to="/">
           <img 
             id="nabi-logo" 
