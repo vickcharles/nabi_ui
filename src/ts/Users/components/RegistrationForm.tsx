@@ -1,4 +1,8 @@
 import * as React from 'react';
+import * as moment from 'moment';
+
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
 import { FormLabel, FormControl, FormControlLabel } from 'material-ui/Form';
 import Button from 'material-ui/Button';
@@ -11,7 +15,6 @@ import TextField from 'material-ui/TextField';
 import Typography from 'material-ui/Typography/Typography';
 
 import { Role, hearAboutUsInfo } from '../model';
-import BirthdayField from './BirthdayField';
 
 /**
  * Props for RegistrationForm
@@ -20,28 +23,29 @@ import BirthdayField from './BirthdayField';
 interface RegistrationFormProps {
   handleChange: (event: React.FormEvent<{}>) => void;
   handleSubmit: (event: React.FormEvent<{}>) => void;
-  handleBirthdayChange: (day: any, hasError: boolean) => void;
+  handleBirthdayChange: (date: moment.Moment) => void;
   hearAboutUs: string;
+  birthday: moment.Moment | undefined;
   selectedRole: string;
 }
 
 /**
- * Contains the registration form fields 
+ * Contains the registration form fields
  * @param RegistrationFormProps props - The component's props
  */
 const RegistrationForm: React.StatelessComponent<RegistrationFormProps> = props => {
-  const { handleChange, handleSubmit, handleBirthdayChange, hearAboutUs, selectedRole } = props;
-  
+  const { handleChange, hearAboutUs, selectedRole } = props;
+
   const selectOptions: any = [];
-  
+
   for (const [key, value] of Object.entries(hearAboutUsInfo)) {
     selectOptions.push(<MenuItem key={key} value={value.value}>{value.label}</MenuItem>);
   }
 
   return (
-    <form 
-      className="nabi-general-form nabi-margin-top-medium" 
-      noValidate={true} 
+    <form
+      className="nabi-general-form nabi-margin-top-medium"
+      noValidate={true}
       autoComplete="off"
     >
       <FormControl component="fieldset" required={true}>
@@ -59,9 +63,9 @@ const RegistrationForm: React.StatelessComponent<RegistrationFormProps> = props 
       {
         (selectedRole !== Role.instructor) ?
           <div className="nabi-margin-top-small">
-            <FormControl fullWidth={true} component="fieldset" required={true}>
-              <FormLabel 
-                className="nabi-margin-bottom-xsmall" 
+            <FormControl component="fieldset" required={true}>
+              <FormLabel
+                className="nabi-margin-bottom-xsmall"
                 component="legend"
               >
                 Are the lessons for you or for your child?
@@ -82,9 +86,9 @@ const RegistrationForm: React.StatelessComponent<RegistrationFormProps> = props 
       <Divider className="nabi-margin-top-small"/>
 
       <Typography className="nabi-margin-top-small" variant="body2">
-        {(selectedRole === Role.student) ?  'Register as a student' : 
+        {(selectedRole === Role.student) ?  'Register as a student' :
         (selectedRole === Role.parent) ? 'Register as a parent' :
-        'Register as an instructor'}  
+        'Register as an instructor'}
       </Typography>
 
       <TextField
@@ -138,16 +142,21 @@ const RegistrationForm: React.StatelessComponent<RegistrationFormProps> = props 
         type="password"
       />
 
+      <Typography variant="body2">
+        Birthday
+      </Typography>
+
       <FormControl fullWidth={false} required={false}>
-        <InputLabel htmlFor="birthday">Birthday</InputLabel>
-        <BirthdayField
-          onChange={handleBirthdayChange}
-          id="birthday"
-          delimiter="/"
-          minAge={13}
+        <DatePicker
+          selected={props.birthday}
+          onChange={props.handleBirthdayChange}
+          peekNextMonth={true}
+          showMonthDropdown={true}
+          showYearDropdown={true}
+          dropdownMode="select"
         />
       </FormControl>
-      
+
       <FormControl fullWidth={true} required={true}>
         <InputLabel htmlFor="hearAboutUs">How did you hear about us?</InputLabel>
         <Select
@@ -161,7 +170,7 @@ const RegistrationForm: React.StatelessComponent<RegistrationFormProps> = props 
       </FormControl>
 
       <div className="nabi-text-center nabi-responsive-button nabi-margin-top-large">
-        <Button color="primary" onClick={handleSubmit} variant="raised">
+        <Button color="primary" onClick={props.handleSubmit} variant="raised">
             Submit
         </Button>
       </div>

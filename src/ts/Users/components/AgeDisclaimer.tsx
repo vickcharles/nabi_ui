@@ -24,7 +24,7 @@ const AgeDisclaimer: React.StatelessComponent <AgeDisclaimerProps> = props => {
         <DialogTitle id="form-dialog-title">AGE DISCLAIMER NOTICE</DialogTitle>
         <DialogContent>
             <DialogContentText>
-              You must be 13 years of age or older to create an account. Please have
+              You must be 18 years of age or older to create an account. Please have
               your parent or guardian assist you. For more assistance contact us at
               info@nabimusic.com.
             </DialogContentText>

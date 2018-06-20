@@ -5,6 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <RegistrationForm
+    birthday={undefined}
     handleBirthdayChange={[MockFunction]}
     handleChange={[MockFunction]}
     handleSubmit={[MockFunction]}
@@ -57,7 +58,6 @@ ShallowWrapper {
         >
           <WithStyles(FormControl)
             component="fieldset"
-            fullWidth={true}
             required={true}
           >
             <WithStyles(FormLabel)
@@ -144,20 +144,41 @@ ShallowWrapper {
           select={false}
           type="password"
         />,
+        <WithStyles(Typography)
+          variant="body2"
+        >
+          Birthday
+        </WithStyles(Typography)>,
         <WithStyles(FormControl)
           fullWidth={false}
           required={false}
         >
-          <WithStyles(InputLabel)
-            htmlFor="birthday"
-          >
-            Birthday
-          </WithStyles(InputLabel)>
-          <BirthdayField
-            delimiter="/"
-            id="birthday"
-            minAge={13}
+          <DatePicker
+            allowSameDay={false}
+            dateFormat="L"
+            dateFormatCalendar="MMMM YYYY"
+            disabled={false}
+            disabledKeyboardNavigation={false}
+            dropdownMode="select"
+            monthsShown={1}
+            onBlur={[Function]}
             onChange={[MockFunction]}
+            onClickOutside={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMonthChange={[Function]}
+            onSelect={[Function]}
+            onYearChange={[Function]}
+            peekNextMonth={true}
+            preventOpenOnFocus={false}
+            selected={undefined}
+            shouldCloseOnSelect={true}
+            showMonthDropdown={true}
+            showTimeSelect={false}
+            showYearDropdown={true}
+            timeCaption="Time"
+            timeIntervals={30}
+            withPortal={false}
           />
         </WithStyles(FormControl)>,
         <WithStyles(FormControl)
@@ -343,7 +364,6 @@ ShallowWrapper {
         "props": Object {
           "children": <WithStyles(FormControl)
             component="fieldset"
-            fullWidth={true}
             required={true}
           >
             <WithStyles(FormLabel)
@@ -402,7 +422,6 @@ ShallowWrapper {
               </RadioGroup>,
             ],
             "component": "fieldset",
-            "fullWidth": true,
             "required": true,
           },
           "ref": null,
@@ -597,51 +616,84 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": Array [
-            <WithStyles(InputLabel)
-              htmlFor="birthday"
-            >
-              Birthday
-            </WithStyles(InputLabel)>,
-            <BirthdayField
-              delimiter="/"
-              id="birthday"
-              minAge={13}
-              onChange={[MockFunction]}
-            />,
-          ],
+          "children": "Birthday",
+          "variant": "body2",
+        },
+        "ref": null,
+        "rendered": "Birthday",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <DatePicker
+            allowSameDay={false}
+            dateFormat="L"
+            dateFormatCalendar="MMMM YYYY"
+            disabled={false}
+            disabledKeyboardNavigation={false}
+            dropdownMode="select"
+            monthsShown={1}
+            onBlur={[Function]}
+            onChange={[MockFunction]}
+            onClickOutside={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMonthChange={[Function]}
+            onSelect={[Function]}
+            onYearChange={[Function]}
+            peekNextMonth={true}
+            preventOpenOnFocus={false}
+            selected={undefined}
+            shouldCloseOnSelect={true}
+            showMonthDropdown={true}
+            showTimeSelect={false}
+            showYearDropdown={true}
+            timeCaption="Time"
+            timeIntervals={30}
+            withPortal={false}
+          />,
           "fullWidth": false,
           "required": false,
         },
         "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "Birthday",
-              "htmlFor": "birthday",
-            },
-            "ref": null,
-            "rendered": "Birthday",
-            "type": [Function],
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "allowSameDay": false,
+            "dateFormat": "L",
+            "dateFormatCalendar": "MMMM YYYY",
+            "disabled": false,
+            "disabledKeyboardNavigation": false,
+            "dropdownMode": "select",
+            "monthsShown": 1,
+            "onBlur": [Function],
+            "onChange": [MockFunction],
+            "onClickOutside": [Function],
+            "onFocus": [Function],
+            "onKeyDown": [Function],
+            "onMonthChange": [Function],
+            "onSelect": [Function],
+            "onYearChange": [Function],
+            "peekNextMonth": true,
+            "preventOpenOnFocus": false,
+            "selected": undefined,
+            "shouldCloseOnSelect": true,
+            "showMonthDropdown": true,
+            "showTimeSelect": false,
+            "showYearDropdown": true,
+            "timeCaption": "Time",
+            "timeIntervals": 30,
+            "withPortal": false,
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "delimiter": "/",
-              "id": "birthday",
-              "minAge": 13,
-              "onChange": [MockFunction],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-        ],
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         "type": [Function],
       },
       Object {
@@ -936,7 +988,6 @@ ShallowWrapper {
           >
             <WithStyles(FormControl)
               component="fieldset"
-              fullWidth={true}
               required={true}
             >
               <WithStyles(FormLabel)
@@ -1023,20 +1074,41 @@ ShallowWrapper {
             select={false}
             type="password"
           />,
+          <WithStyles(Typography)
+            variant="body2"
+          >
+            Birthday
+          </WithStyles(Typography)>,
           <WithStyles(FormControl)
             fullWidth={false}
             required={false}
           >
-            <WithStyles(InputLabel)
-              htmlFor="birthday"
-            >
-              Birthday
-            </WithStyles(InputLabel)>
-            <BirthdayField
-              delimiter="/"
-              id="birthday"
-              minAge={13}
+            <DatePicker
+              allowSameDay={false}
+              dateFormat="L"
+              dateFormatCalendar="MMMM YYYY"
+              disabled={false}
+              disabledKeyboardNavigation={false}
+              dropdownMode="select"
+              monthsShown={1}
+              onBlur={[Function]}
               onChange={[MockFunction]}
+              onClickOutside={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMonthChange={[Function]}
+              onSelect={[Function]}
+              onYearChange={[Function]}
+              peekNextMonth={true}
+              preventOpenOnFocus={false}
+              selected={undefined}
+              shouldCloseOnSelect={true}
+              showMonthDropdown={true}
+              showTimeSelect={false}
+              showYearDropdown={true}
+              timeCaption="Time"
+              timeIntervals={30}
+              withPortal={false}
             />
           </WithStyles(FormControl)>,
           <WithStyles(FormControl)
@@ -1222,7 +1294,6 @@ ShallowWrapper {
           "props": Object {
             "children": <WithStyles(FormControl)
               component="fieldset"
-              fullWidth={true}
               required={true}
             >
               <WithStyles(FormLabel)
@@ -1281,7 +1352,6 @@ ShallowWrapper {
                 </RadioGroup>,
               ],
               "component": "fieldset",
-              "fullWidth": true,
               "required": true,
             },
             "ref": null,
@@ -1476,51 +1546,84 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": Array [
-              <WithStyles(InputLabel)
-                htmlFor="birthday"
-              >
-                Birthday
-              </WithStyles(InputLabel)>,
-              <BirthdayField
-                delimiter="/"
-                id="birthday"
-                minAge={13}
-                onChange={[MockFunction]}
-              />,
-            ],
+            "children": "Birthday",
+            "variant": "body2",
+          },
+          "ref": null,
+          "rendered": "Birthday",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <DatePicker
+              allowSameDay={false}
+              dateFormat="L"
+              dateFormatCalendar="MMMM YYYY"
+              disabled={false}
+              disabledKeyboardNavigation={false}
+              dropdownMode="select"
+              monthsShown={1}
+              onBlur={[Function]}
+              onChange={[MockFunction]}
+              onClickOutside={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMonthChange={[Function]}
+              onSelect={[Function]}
+              onYearChange={[Function]}
+              peekNextMonth={true}
+              preventOpenOnFocus={false}
+              selected={undefined}
+              shouldCloseOnSelect={true}
+              showMonthDropdown={true}
+              showTimeSelect={false}
+              showYearDropdown={true}
+              timeCaption="Time"
+              timeIntervals={30}
+              withPortal={false}
+            />,
             "fullWidth": false,
             "required": false,
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "Birthday",
-                "htmlFor": "birthday",
-              },
-              "ref": null,
-              "rendered": "Birthday",
-              "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "allowSameDay": false,
+              "dateFormat": "L",
+              "dateFormatCalendar": "MMMM YYYY",
+              "disabled": false,
+              "disabledKeyboardNavigation": false,
+              "dropdownMode": "select",
+              "monthsShown": 1,
+              "onBlur": [Function],
+              "onChange": [MockFunction],
+              "onClickOutside": [Function],
+              "onFocus": [Function],
+              "onKeyDown": [Function],
+              "onMonthChange": [Function],
+              "onSelect": [Function],
+              "onYearChange": [Function],
+              "peekNextMonth": true,
+              "preventOpenOnFocus": false,
+              "selected": undefined,
+              "shouldCloseOnSelect": true,
+              "showMonthDropdown": true,
+              "showTimeSelect": false,
+              "showYearDropdown": true,
+              "timeCaption": "Time",
+              "timeIntervals": 30,
+              "withPortal": false,
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "delimiter": "/",
-                "id": "birthday",
-                "minAge": 13,
-                "onChange": [MockFunction],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           "type": [Function],
         },
         Object {
