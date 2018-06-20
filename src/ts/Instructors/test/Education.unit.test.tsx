@@ -15,7 +15,7 @@ describe('Education', () => {
         <Education userId="" updateInstructor={updateInstructor} />
       );
     });
-    
+
     it('Matches snapshot', () => {
       expect(wrapper).toMatchSnapshot();
     });
@@ -54,7 +54,7 @@ describe('Education', () => {
       it('Does not add education()', () => {
         expect(wrapper.state('education').length).toBe(0);
       });
-      
+
       it('Does not call updateInstructorCall', () => {
         expect(updateInstructorCall).not.toBeCalled();
       });
@@ -74,7 +74,7 @@ describe('Education', () => {
       it('Adds education()', () => {
         expect(wrapper.state('education').length).toBe(1);
       });
-      
+
       it('Calls updateInstructorCall', () => {
         expect(updateInstructorCall).toBeCalled();
       });

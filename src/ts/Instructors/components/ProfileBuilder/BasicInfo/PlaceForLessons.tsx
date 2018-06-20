@@ -5,7 +5,7 @@ import { FormGroup, FormControlLabel } from 'material-ui/Form';
 import Checkbox from 'material-ui/Checkbox';
 import TextField from 'material-ui/TextField';
 
-import { PlaceForLessonsOptions } from '../../../model';
+import { placeForLessonsOptions } from '../../../model';
 
 interface PlaceForLessonsProps {
   handleChange: (event: React.FormEvent<{}>) => void;
@@ -39,32 +39,32 @@ const PlaceForLessons: React.StatelessComponent<PlaceForLessonsProps> = props =>
         <FormControlLabel
           control={
             <Checkbox
-              name="home"
+              name={placeForLessonsOptions.Home.name}
               checked={props.home}
               onChange={props.handleChangePlaceForLessons}
             />
           }
-          label={PlaceForLessonsOptions.home}
+          label={placeForLessonsOptions.Home.label}
         />
         <FormControlLabel
           control={
             <Checkbox
-              name="studio"
+              name={placeForLessonsOptions.Studio.name}
               checked={props.studio}
               onChange={props.handleChangePlaceForLessons}
             />
           }
-          label={PlaceForLessonsOptions.studio}
+          label={placeForLessonsOptions.Studio.label}
         />
         <FormControlLabel
           control={
             <Checkbox
-              name="online"
+              name={placeForLessonsOptions.Online.name}
               checked={props.online}
               onChange={props.handleChangePlaceForLessons}
             />
           }
-          label={PlaceForLessonsOptions.online}
+          label={placeForLessonsOptions.Online.label}
         />
       </FormGroup>
       {studioAddressTextfield}

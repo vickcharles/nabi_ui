@@ -502,7 +502,7 @@ input {
 	width: 70px;
 }
 
-/*Grid component*/
+/*Availability*/
 .nabi-grid-background-nabi div div {
 	background: #06c3e1 !important;
 }
@@ -510,6 +510,11 @@ input {
 /*Education*/
 .graduation-year {
   width: 190px !important;
+}
+
+/*Qualifications*/
+.qualifications label {
+	display: flex;
 }
 
 /* iPhones(landscape) ----------- */
@@ -621,11 +626,14 @@ input {
 	.nabi-header-line {
 		border: 0px;
 	}
+	.header-divider {
+		display: none;
+	}
 	.nabi-responsive-button {
 		padding: 12px 25px !important;
 		font-size: 14px !important;
 	}
-}  
+}
 
 /* Tablets small laptops ----------- */
 @media (min-width: 960px) {

@@ -22,7 +22,7 @@ ShallowWrapper {
       >
         <DrawerMenu />
         <WithStyles(Divider)
-          className="header-divider hide-on-desktop"
+          className="header-divider"
         />
         <Link
           id="nabi-logo-anchor"
@@ -74,7 +74,7 @@ ShallowWrapper {
         "children": Array [
           <DrawerMenu />,
           <WithStyles(Divider)
-            className="header-divider hide-on-desktop"
+            className="header-divider"
           />,
           <Link
             id="nabi-logo-anchor"
@@ -134,7 +134,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "className": "header-divider hide-on-desktop",
+            "className": "header-divider",
           },
           "ref": null,
           "rendered": null,
@@ -286,7 +286,7 @@ ShallowWrapper {
         >
           <DrawerMenu />
           <WithStyles(Divider)
-            className="header-divider hide-on-desktop"
+            className="header-divider"
           />
           <Link
             id="nabi-logo-anchor"
@@ -338,7 +338,7 @@ ShallowWrapper {
           "children": Array [
             <DrawerMenu />,
             <WithStyles(Divider)
-              className="header-divider hide-on-desktop"
+              className="header-divider"
             />,
             <Link
               id="nabi-logo-anchor"
@@ -398,7 +398,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "className": "header-divider hide-on-desktop",
+              "className": "header-divider",
             },
             "ref": null,
             "rendered": null,

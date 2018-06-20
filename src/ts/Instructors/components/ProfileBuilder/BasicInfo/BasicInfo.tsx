@@ -59,7 +59,7 @@ interface BasicInfoProps extends
   BasicInfoOwnProps { }
 
 /**
- * BasicInfo: First step on the Profile Builder
+ * BasicInfo: First step of the Profile Builder
  * @class BasicInfo
  * @extends React.Component<BasicInfoProps, BasicInfoState>
  */

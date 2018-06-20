@@ -44,7 +44,7 @@ interface EducationState extends EducationType {
 }
 
 /**
- * Education: Second step on the Profile Builder
+ * Education: Second step of the Profile Builder
  * @class Education
  * @extends React.Component<EducationProps, EducationState>
  */

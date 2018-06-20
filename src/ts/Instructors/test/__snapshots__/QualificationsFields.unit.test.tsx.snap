@@ -1,0 +1,1351 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QualificationsFields Shallow Matches snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <QualificationsFields
+    add={false}
+    aspergerSyndrome={false}
+    autism={false}
+    depression={false}
+    diabetes={false}
+    downSyndrome={false}
+    epilepsy={false}
+    handleChangeQualifications={[MockFunction]}
+    musicTherapy={false}
+    ocd={false}
+    visualImpairment={false}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <WithStyles(Typography)
+          className="nabi-margin-top-small nabi-margin-bottom-small"
+          variant="body2"
+        >
+          Additional Qualifications
+        </WithStyles(Typography)>,
+        <WithStyles(FormGroup)
+          className="nabi-margin-left-small"
+        >
+          <WithStyles(GridWrapper)
+            container={true}
+            spacing={24}
+          >
+            <WithStyles(GridWrapper)
+              className="qualifications nabi-padding-top-zero nabi-padding-bottom-zero"
+              item={true}
+              md={6}
+              xs={12}
+            >
+              <WithStyles(FormControlLabel)
+                control={
+                  <WithStyles(Checkbox)
+                    name="add"
+                    onChange={[MockFunction]}
+                  />
+                }
+                label="ADD"
+              />
+              <WithStyles(FormControlLabel)
+                control={
+                  <WithStyles(Checkbox)
+                    name="aspergerSyndrome"
+                    onChange={[MockFunction]}
+                  />
+                }
+                label="Asperger syndrome"
+              />
+              <WithStyles(FormControlLabel)
+                control={
+                  <WithStyles(Checkbox)
+                    name="autism"
+                    onChange={[MockFunction]}
+                  />
+                }
+                label="Autism"
+              />
+              <WithStyles(FormControlLabel)
+                control={
+                  <WithStyles(Checkbox)
+                    name="depression"
+                    onChange={[MockFunction]}
+                  />
+                }
+                label="Depression"
+              />
+              <WithStyles(FormControlLabel)
+                control={
+                  <WithStyles(Checkbox)
+                    name="diabetes"
+                    onChange={[MockFunction]}
+                  />
+                }
+                label="Diabetes"
+              />
+            </WithStyles(GridWrapper)>
+            <WithStyles(GridWrapper)
+              className="qualifications nabi-padding-top-zero"
+              item={true}
+              md={6}
+              xs={12}
+            >
+              <WithStyles(FormControlLabel)
+                control={
+                  <WithStyles(Checkbox)
+                    name="downSyndrome"
+                    onChange={[MockFunction]}
+                  />
+                }
+                label="Down syndrome"
+              />
+              <WithStyles(FormControlLabel)
+                control={
+                  <WithStyles(Checkbox)
+                    name="epilepsy"
+                    onChange={[MockFunction]}
+                  />
+                }
+                label="Epilepsy"
+              />
+              <WithStyles(FormControlLabel)
+                control={
+                  <WithStyles(Checkbox)
+                    name="musicTherapy"
+                    onChange={[MockFunction]}
+                  />
+                }
+                label="Music therapy"
+              />
+              <WithStyles(FormControlLabel)
+                control={
+                  <WithStyles(Checkbox)
+                    name="ocd"
+                    onChange={[MockFunction]}
+                  />
+                }
+                label="OCD"
+              />
+              <WithStyles(FormControlLabel)
+                control={
+                  <WithStyles(Checkbox)
+                    name="visualImpairment"
+                    onChange={[MockFunction]}
+                  />
+                }
+                label="Visual impairement"
+              />
+            </WithStyles(GridWrapper)>
+          </WithStyles(GridWrapper)>
+        </WithStyles(FormGroup)>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Additional Qualifications",
+          "className": "nabi-margin-top-small nabi-margin-bottom-small",
+          "variant": "body2",
+        },
+        "ref": null,
+        "rendered": "Additional Qualifications",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <WithStyles(GridWrapper)
+            container={true}
+            spacing={24}
+          >
+            <WithStyles(GridWrapper)
+              className="qualifications nabi-padding-top-zero nabi-padding-bottom-zero"
+              item={true}
+              md={6}
+              xs={12}
+            >
+              <WithStyles(FormControlLabel)
+                control={
+                  <WithStyles(Checkbox)
+                    name="add"
+                    onChange={[MockFunction]}
+                  />
+                }
+                label="ADD"
+              />
+              <WithStyles(FormControlLabel)
+                control={
+                  <WithStyles(Checkbox)
+                    name="aspergerSyndrome"
+                    onChange={[MockFunction]}
+                  />
+                }
+                label="Asperger syndrome"
+              />
+              <WithStyles(FormControlLabel)
+                control={
+                  <WithStyles(Checkbox)
+                    name="autism"
+                    onChange={[MockFunction]}
+                  />
+                }
+                label="Autism"
+              />
+              <WithStyles(FormControlLabel)
+                control={
+                  <WithStyles(Checkbox)
+                    name="depression"
+                    onChange={[MockFunction]}
+                  />
+                }
+                label="Depression"
+              />
+              <WithStyles(FormControlLabel)
+                control={
+                  <WithStyles(Checkbox)
+                    name="diabetes"
+                    onChange={[MockFunction]}
+                  />
+                }
+                label="Diabetes"
+              />
+            </WithStyles(GridWrapper)>
+            <WithStyles(GridWrapper)
+              className="qualifications nabi-padding-top-zero"
+              item={true}
+              md={6}
+              xs={12}
+            >
+              <WithStyles(FormControlLabel)
+                control={
+                  <WithStyles(Checkbox)
+                    name="downSyndrome"
+                    onChange={[MockFunction]}
+                  />
+                }
+                label="Down syndrome"
+              />
+              <WithStyles(FormControlLabel)
+                control={
+                  <WithStyles(Checkbox)
+                    name="epilepsy"
+                    onChange={[MockFunction]}
+                  />
+                }
+                label="Epilepsy"
+              />
+              <WithStyles(FormControlLabel)
+                control={
+                  <WithStyles(Checkbox)
+                    name="musicTherapy"
+                    onChange={[MockFunction]}
+                  />
+                }
+                label="Music therapy"
+              />
+              <WithStyles(FormControlLabel)
+                control={
+                  <WithStyles(Checkbox)
+                    name="ocd"
+                    onChange={[MockFunction]}
+                  />
+                }
+                label="OCD"
+              />
+              <WithStyles(FormControlLabel)
+                control={
+                  <WithStyles(Checkbox)
+                    name="visualImpairment"
+                    onChange={[MockFunction]}
+                  />
+                }
+                label="Visual impairement"
+              />
+            </WithStyles(GridWrapper)>
+          </WithStyles(GridWrapper)>,
+          "className": "nabi-margin-left-small",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <WithStyles(GridWrapper)
+                className="qualifications nabi-padding-top-zero nabi-padding-bottom-zero"
+                item={true}
+                md={6}
+                xs={12}
+              >
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="add"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="ADD"
+                />
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="aspergerSyndrome"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="Asperger syndrome"
+                />
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="autism"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="Autism"
+                />
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="depression"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="Depression"
+                />
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="diabetes"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="Diabetes"
+                />
+              </WithStyles(GridWrapper)>,
+              <WithStyles(GridWrapper)
+                className="qualifications nabi-padding-top-zero"
+                item={true}
+                md={6}
+                xs={12}
+              >
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="downSyndrome"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="Down syndrome"
+                />
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="epilepsy"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="Epilepsy"
+                />
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="musicTherapy"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="Music therapy"
+                />
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="ocd"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="OCD"
+                />
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="visualImpairment"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="Visual impairement"
+                />
+              </WithStyles(GridWrapper)>,
+            ],
+            "container": true,
+            "spacing": 24,
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(FormControlLabel)
+                    control={
+                      <WithStyles(Checkbox)
+                        name="add"
+                        onChange={[MockFunction]}
+                      />
+                    }
+                    label="ADD"
+                  />,
+                  <WithStyles(FormControlLabel)
+                    control={
+                      <WithStyles(Checkbox)
+                        name="aspergerSyndrome"
+                        onChange={[MockFunction]}
+                      />
+                    }
+                    label="Asperger syndrome"
+                  />,
+                  <WithStyles(FormControlLabel)
+                    control={
+                      <WithStyles(Checkbox)
+                        name="autism"
+                        onChange={[MockFunction]}
+                      />
+                    }
+                    label="Autism"
+                  />,
+                  <WithStyles(FormControlLabel)
+                    control={
+                      <WithStyles(Checkbox)
+                        name="depression"
+                        onChange={[MockFunction]}
+                      />
+                    }
+                    label="Depression"
+                  />,
+                  <WithStyles(FormControlLabel)
+                    control={
+                      <WithStyles(Checkbox)
+                        name="diabetes"
+                        onChange={[MockFunction]}
+                      />
+                    }
+                    label="Diabetes"
+                  />,
+                ],
+                "className": "qualifications nabi-padding-top-zero nabi-padding-bottom-zero",
+                "item": true,
+                "md": 6,
+                "xs": 12,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "Add",
+                  "nodeType": "class",
+                  "props": Object {
+                    "control": <WithStyles(Checkbox)
+                      name="add"
+                      onChange={[MockFunction]}
+                    />,
+                    "label": "ADD",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "Asperger",
+                  "nodeType": "class",
+                  "props": Object {
+                    "control": <WithStyles(Checkbox)
+                      name="aspergerSyndrome"
+                      onChange={[MockFunction]}
+                    />,
+                    "label": "Asperger syndrome",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "Autism",
+                  "nodeType": "class",
+                  "props": Object {
+                    "control": <WithStyles(Checkbox)
+                      name="autism"
+                      onChange={[MockFunction]}
+                    />,
+                    "label": "Autism",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "Depression",
+                  "nodeType": "class",
+                  "props": Object {
+                    "control": <WithStyles(Checkbox)
+                      name="depression"
+                      onChange={[MockFunction]}
+                    />,
+                    "label": "Depression",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "Diabetes",
+                  "nodeType": "class",
+                  "props": Object {
+                    "control": <WithStyles(Checkbox)
+                      name="diabetes"
+                      onChange={[MockFunction]}
+                    />,
+                    "label": "Diabetes",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(FormControlLabel)
+                    control={
+                      <WithStyles(Checkbox)
+                        name="downSyndrome"
+                        onChange={[MockFunction]}
+                      />
+                    }
+                    label="Down syndrome"
+                  />,
+                  <WithStyles(FormControlLabel)
+                    control={
+                      <WithStyles(Checkbox)
+                        name="epilepsy"
+                        onChange={[MockFunction]}
+                      />
+                    }
+                    label="Epilepsy"
+                  />,
+                  <WithStyles(FormControlLabel)
+                    control={
+                      <WithStyles(Checkbox)
+                        name="musicTherapy"
+                        onChange={[MockFunction]}
+                      />
+                    }
+                    label="Music therapy"
+                  />,
+                  <WithStyles(FormControlLabel)
+                    control={
+                      <WithStyles(Checkbox)
+                        name="ocd"
+                        onChange={[MockFunction]}
+                      />
+                    }
+                    label="OCD"
+                  />,
+                  <WithStyles(FormControlLabel)
+                    control={
+                      <WithStyles(Checkbox)
+                        name="visualImpairment"
+                        onChange={[MockFunction]}
+                      />
+                    }
+                    label="Visual impairement"
+                  />,
+                ],
+                "className": "qualifications nabi-padding-top-zero",
+                "item": true,
+                "md": 6,
+                "xs": 12,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "DownSyndrome",
+                  "nodeType": "class",
+                  "props": Object {
+                    "control": <WithStyles(Checkbox)
+                      name="downSyndrome"
+                      onChange={[MockFunction]}
+                    />,
+                    "label": "Down syndrome",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "Epilepsy",
+                  "nodeType": "class",
+                  "props": Object {
+                    "control": <WithStyles(Checkbox)
+                      name="epilepsy"
+                      onChange={[MockFunction]}
+                    />,
+                    "label": "Epilepsy",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "MusicTherapy",
+                  "nodeType": "class",
+                  "props": Object {
+                    "control": <WithStyles(Checkbox)
+                      name="musicTherapy"
+                      onChange={[MockFunction]}
+                    />,
+                    "label": "Music therapy",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "Ocd",
+                  "nodeType": "class",
+                  "props": Object {
+                    "control": <WithStyles(Checkbox)
+                      name="ocd"
+                      onChange={[MockFunction]}
+                    />,
+                    "label": "OCD",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "VisualImpairment",
+                  "nodeType": "class",
+                  "props": Object {
+                    "control": <WithStyles(Checkbox)
+                      name="visualImpairment"
+                      onChange={[MockFunction]}
+                    />,
+                    "label": "Visual impairement",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <WithStyles(Typography)
+            className="nabi-margin-top-small nabi-margin-bottom-small"
+            variant="body2"
+          >
+            Additional Qualifications
+          </WithStyles(Typography)>,
+          <WithStyles(FormGroup)
+            className="nabi-margin-left-small"
+          >
+            <WithStyles(GridWrapper)
+              container={true}
+              spacing={24}
+            >
+              <WithStyles(GridWrapper)
+                className="qualifications nabi-padding-top-zero nabi-padding-bottom-zero"
+                item={true}
+                md={6}
+                xs={12}
+              >
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="add"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="ADD"
+                />
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="aspergerSyndrome"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="Asperger syndrome"
+                />
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="autism"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="Autism"
+                />
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="depression"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="Depression"
+                />
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="diabetes"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="Diabetes"
+                />
+              </WithStyles(GridWrapper)>
+              <WithStyles(GridWrapper)
+                className="qualifications nabi-padding-top-zero"
+                item={true}
+                md={6}
+                xs={12}
+              >
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="downSyndrome"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="Down syndrome"
+                />
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="epilepsy"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="Epilepsy"
+                />
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="musicTherapy"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="Music therapy"
+                />
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="ocd"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="OCD"
+                />
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="visualImpairment"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="Visual impairement"
+                />
+              </WithStyles(GridWrapper)>
+            </WithStyles(GridWrapper)>
+          </WithStyles(FormGroup)>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Additional Qualifications",
+            "className": "nabi-margin-top-small nabi-margin-bottom-small",
+            "variant": "body2",
+          },
+          "ref": null,
+          "rendered": "Additional Qualifications",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <WithStyles(GridWrapper)
+              container={true}
+              spacing={24}
+            >
+              <WithStyles(GridWrapper)
+                className="qualifications nabi-padding-top-zero nabi-padding-bottom-zero"
+                item={true}
+                md={6}
+                xs={12}
+              >
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="add"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="ADD"
+                />
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="aspergerSyndrome"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="Asperger syndrome"
+                />
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="autism"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="Autism"
+                />
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="depression"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="Depression"
+                />
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="diabetes"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="Diabetes"
+                />
+              </WithStyles(GridWrapper)>
+              <WithStyles(GridWrapper)
+                className="qualifications nabi-padding-top-zero"
+                item={true}
+                md={6}
+                xs={12}
+              >
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="downSyndrome"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="Down syndrome"
+                />
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="epilepsy"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="Epilepsy"
+                />
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="musicTherapy"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="Music therapy"
+                />
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="ocd"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="OCD"
+                />
+                <WithStyles(FormControlLabel)
+                  control={
+                    <WithStyles(Checkbox)
+                      name="visualImpairment"
+                      onChange={[MockFunction]}
+                    />
+                  }
+                  label="Visual impairement"
+                />
+              </WithStyles(GridWrapper)>
+            </WithStyles(GridWrapper)>,
+            "className": "nabi-margin-left-small",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(GridWrapper)
+                  className="qualifications nabi-padding-top-zero nabi-padding-bottom-zero"
+                  item={true}
+                  md={6}
+                  xs={12}
+                >
+                  <WithStyles(FormControlLabel)
+                    control={
+                      <WithStyles(Checkbox)
+                        name="add"
+                        onChange={[MockFunction]}
+                      />
+                    }
+                    label="ADD"
+                  />
+                  <WithStyles(FormControlLabel)
+                    control={
+                      <WithStyles(Checkbox)
+                        name="aspergerSyndrome"
+                        onChange={[MockFunction]}
+                      />
+                    }
+                    label="Asperger syndrome"
+                  />
+                  <WithStyles(FormControlLabel)
+                    control={
+                      <WithStyles(Checkbox)
+                        name="autism"
+                        onChange={[MockFunction]}
+                      />
+                    }
+                    label="Autism"
+                  />
+                  <WithStyles(FormControlLabel)
+                    control={
+                      <WithStyles(Checkbox)
+                        name="depression"
+                        onChange={[MockFunction]}
+                      />
+                    }
+                    label="Depression"
+                  />
+                  <WithStyles(FormControlLabel)
+                    control={
+                      <WithStyles(Checkbox)
+                        name="diabetes"
+                        onChange={[MockFunction]}
+                      />
+                    }
+                    label="Diabetes"
+                  />
+                </WithStyles(GridWrapper)>,
+                <WithStyles(GridWrapper)
+                  className="qualifications nabi-padding-top-zero"
+                  item={true}
+                  md={6}
+                  xs={12}
+                >
+                  <WithStyles(FormControlLabel)
+                    control={
+                      <WithStyles(Checkbox)
+                        name="downSyndrome"
+                        onChange={[MockFunction]}
+                      />
+                    }
+                    label="Down syndrome"
+                  />
+                  <WithStyles(FormControlLabel)
+                    control={
+                      <WithStyles(Checkbox)
+                        name="epilepsy"
+                        onChange={[MockFunction]}
+                      />
+                    }
+                    label="Epilepsy"
+                  />
+                  <WithStyles(FormControlLabel)
+                    control={
+                      <WithStyles(Checkbox)
+                        name="musicTherapy"
+                        onChange={[MockFunction]}
+                      />
+                    }
+                    label="Music therapy"
+                  />
+                  <WithStyles(FormControlLabel)
+                    control={
+                      <WithStyles(Checkbox)
+                        name="ocd"
+                        onChange={[MockFunction]}
+                      />
+                    }
+                    label="OCD"
+                  />
+                  <WithStyles(FormControlLabel)
+                    control={
+                      <WithStyles(Checkbox)
+                        name="visualImpairment"
+                        onChange={[MockFunction]}
+                      />
+                    }
+                    label="Visual impairement"
+                  />
+                </WithStyles(GridWrapper)>,
+              ],
+              "container": true,
+              "spacing": 24,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <WithStyles(FormControlLabel)
+                      control={
+                        <WithStyles(Checkbox)
+                          name="add"
+                          onChange={[MockFunction]}
+                        />
+                      }
+                      label="ADD"
+                    />,
+                    <WithStyles(FormControlLabel)
+                      control={
+                        <WithStyles(Checkbox)
+                          name="aspergerSyndrome"
+                          onChange={[MockFunction]}
+                        />
+                      }
+                      label="Asperger syndrome"
+                    />,
+                    <WithStyles(FormControlLabel)
+                      control={
+                        <WithStyles(Checkbox)
+                          name="autism"
+                          onChange={[MockFunction]}
+                        />
+                      }
+                      label="Autism"
+                    />,
+                    <WithStyles(FormControlLabel)
+                      control={
+                        <WithStyles(Checkbox)
+                          name="depression"
+                          onChange={[MockFunction]}
+                        />
+                      }
+                      label="Depression"
+                    />,
+                    <WithStyles(FormControlLabel)
+                      control={
+                        <WithStyles(Checkbox)
+                          name="diabetes"
+                          onChange={[MockFunction]}
+                        />
+                      }
+                      label="Diabetes"
+                    />,
+                  ],
+                  "className": "qualifications nabi-padding-top-zero nabi-padding-bottom-zero",
+                  "item": true,
+                  "md": 6,
+                  "xs": 12,
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": "Add",
+                    "nodeType": "class",
+                    "props": Object {
+                      "control": <WithStyles(Checkbox)
+                        name="add"
+                        onChange={[MockFunction]}
+                      />,
+                      "label": "ADD",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Asperger",
+                    "nodeType": "class",
+                    "props": Object {
+                      "control": <WithStyles(Checkbox)
+                        name="aspergerSyndrome"
+                        onChange={[MockFunction]}
+                      />,
+                      "label": "Asperger syndrome",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Autism",
+                    "nodeType": "class",
+                    "props": Object {
+                      "control": <WithStyles(Checkbox)
+                        name="autism"
+                        onChange={[MockFunction]}
+                      />,
+                      "label": "Autism",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Depression",
+                    "nodeType": "class",
+                    "props": Object {
+                      "control": <WithStyles(Checkbox)
+                        name="depression"
+                        onChange={[MockFunction]}
+                      />,
+                      "label": "Depression",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Diabetes",
+                    "nodeType": "class",
+                    "props": Object {
+                      "control": <WithStyles(Checkbox)
+                        name="diabetes"
+                        onChange={[MockFunction]}
+                      />,
+                      "label": "Diabetes",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <WithStyles(FormControlLabel)
+                      control={
+                        <WithStyles(Checkbox)
+                          name="downSyndrome"
+                          onChange={[MockFunction]}
+                        />
+                      }
+                      label="Down syndrome"
+                    />,
+                    <WithStyles(FormControlLabel)
+                      control={
+                        <WithStyles(Checkbox)
+                          name="epilepsy"
+                          onChange={[MockFunction]}
+                        />
+                      }
+                      label="Epilepsy"
+                    />,
+                    <WithStyles(FormControlLabel)
+                      control={
+                        <WithStyles(Checkbox)
+                          name="musicTherapy"
+                          onChange={[MockFunction]}
+                        />
+                      }
+                      label="Music therapy"
+                    />,
+                    <WithStyles(FormControlLabel)
+                      control={
+                        <WithStyles(Checkbox)
+                          name="ocd"
+                          onChange={[MockFunction]}
+                        />
+                      }
+                      label="OCD"
+                    />,
+                    <WithStyles(FormControlLabel)
+                      control={
+                        <WithStyles(Checkbox)
+                          name="visualImpairment"
+                          onChange={[MockFunction]}
+                        />
+                      }
+                      label="Visual impairement"
+                    />,
+                  ],
+                  "className": "qualifications nabi-padding-top-zero",
+                  "item": true,
+                  "md": 6,
+                  "xs": 12,
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": "DownSyndrome",
+                    "nodeType": "class",
+                    "props": Object {
+                      "control": <WithStyles(Checkbox)
+                        name="downSyndrome"
+                        onChange={[MockFunction]}
+                      />,
+                      "label": "Down syndrome",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Epilepsy",
+                    "nodeType": "class",
+                    "props": Object {
+                      "control": <WithStyles(Checkbox)
+                        name="epilepsy"
+                        onChange={[MockFunction]}
+                      />,
+                      "label": "Epilepsy",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "MusicTherapy",
+                    "nodeType": "class",
+                    "props": Object {
+                      "control": <WithStyles(Checkbox)
+                        name="musicTherapy"
+                        onChange={[MockFunction]}
+                      />,
+                      "label": "Music therapy",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "Ocd",
+                    "nodeType": "class",
+                    "props": Object {
+                      "control": <WithStyles(Checkbox)
+                        name="ocd"
+                        onChange={[MockFunction]}
+                      />,
+                      "label": "OCD",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": "VisualImpairment",
+                    "nodeType": "class",
+                    "props": Object {
+                      "control": <WithStyles(Checkbox)
+                        name="visualImpairment"
+                        onChange={[MockFunction]}
+                      />,
+                      "label": "Visual impairement",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
