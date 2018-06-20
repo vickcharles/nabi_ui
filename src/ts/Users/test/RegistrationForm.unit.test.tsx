@@ -8,7 +8,7 @@ describe('RegistrationForm', () => {
   const handleChange: () => void = jest.fn();
   const handleSubmit: () => void = jest.fn();
   const handleBirthdayChange: () => void = jest.fn();
-  
+
   describe('Mount', () => {
     beforeEach(() => {
       wrapper = mount(
@@ -17,6 +17,7 @@ describe('RegistrationForm', () => {
           handleSubmit={handleSubmit}
           handleBirthdayChange={handleBirthdayChange}
           hearAboutUs=""
+          birthday={undefined}
           selectedRole=""
         />
       );
@@ -59,7 +60,7 @@ describe('RegistrationForm', () => {
         expect(wrapper.find('fieldset')).toHaveLength(2);
       });
     });
-    
+
     describe('When selectedRole is set to ' + Role.instructor, () => {
       beforeEach(() => {
         wrapper.setProps({ selectedRole: Role.instructor });
@@ -88,11 +89,12 @@ describe('RegistrationForm', () => {
           handleSubmit={handleSubmit}
           handleBirthdayChange={handleBirthdayChange}
           hearAboutUs=""
+          birthday={undefined}
           selectedRole=""
         />
       );
     });
-    
+
     it('Matches snapshot', () => {
       expect(wrapper).toMatchSnapshot();
     });

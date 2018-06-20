@@ -468,6 +468,26 @@ input {
 	padding: 4px 6px;
 }
 
+/*Date Picker*/
+.react-datepicker__input-container {
+	border-radius:  5px;
+	border: 2px solid #ebeef1 !important;
+	margin: 10px 0px 0px;
+	padding: 14px 18px;
+	background: #f3f6f9;
+}
+
+.react-datepicker__input-container input {
+	border: none;
+	color: #717a8a;
+  padding: 0;
+	font-size: 14px;
+}
+
+.react-datepicker-popper {
+	z-index: 11;
+}
+
 /*Instruments fields*/
 .nabi-instruments-select {
 	width: 100%;
