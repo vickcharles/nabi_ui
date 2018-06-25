@@ -643,6 +643,10 @@ input {
 		padding: 12px 25px !important;
 		font-size: 14px !important;
 	}
+	/*Rates*/
+	.rates {
+		width: 247px;
+	}
 }
 
 /* Tablets small laptops ----------- */
@@ -693,10 +697,6 @@ input {
   /*Selected Instruments */
 	.selected-instruments {
 		width: 40%
-	}
-	/*Rates*/
-	.rates {
-		width: 50%
 	}
 	/*Availability*/
 	.nabi-availability-legend-wrapper {
