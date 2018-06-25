@@ -138,6 +138,11 @@ const theme = createMuiTheme({
         backgroundColor: '#c6c9d0'
       }
     },
+    MuiMenuItem: {
+      root: {
+        color: '#717a8a'
+      }
+    },
     MuiMobileStepper: {
       root: {
         background: '#fff'

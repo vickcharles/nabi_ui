@@ -1,12 +1,16 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
+
 import Drawer from 'material-ui/Drawer';
 import { MenuItem } from 'material-ui/Menu';
 import IconButton from 'material-ui/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import Divider from 'material-ui/Divider';
+
+import { nonRegisteredUserMenuItems } from '../model';
 
 interface DrawerMenuState {
   isDrawerOpen: boolean;
-  
 }
 
 export default class DrawerMenu extends React.Component<{}, DrawerMenuState>  {
@@ -19,6 +23,19 @@ export default class DrawerMenu extends React.Component<{}, DrawerMenuState>  {
   handleClose = () => this.setState({isDrawerOpen: false});
 
   render() {
+    const menuItems: any = [];
+
+    for (const [key, item] of Object.entries(nonRegisteredUserMenuItems)) {
+      menuItems.push(
+        <Link key={key} to={item.url}>
+          <MenuItem className={item.className} onClick={this.handleClose}>
+            {item.label}
+          </MenuItem>
+          {item.divider && <Divider />}
+        </Link>
+      );
+    }
+
     return (
       <div>
         <IconButton onClick={this.handleToggle} id="menu" aria-label="Menu">
@@ -28,8 +45,7 @@ export default class DrawerMenu extends React.Component<{}, DrawerMenuState>  {
           onClick={this.handleClose}
           open={this.state.isDrawerOpen}
         >
-          <MenuItem onClick={this.handleClose}>*TODO*</MenuItem>
-          <MenuItem onClick={this.handleClose}>*TODO*</MenuItem>
+          {menuItems}
         </Drawer>
       </div>
     );
