@@ -1,5 +1,5 @@
-import { InstrumentCardProps } from '../../ts/main/components/Homepage/InstrumentCard';
-export const popularInstruments: InstrumentCardProps[] = [
+import { InstrumentCardType } from '../../ts/main/components/Homepage/InstrumentCard';
+export const popularInstruments: InstrumentCardType[] = [
   {
     'id': '0',
     'instrument': 'piano',
@@ -14,37 +14,43 @@ export const popularInstruments: InstrumentCardProps[] = [
   },
   {
     'id': '2',
-    'instrument': 'drums',
+    'instrument': 'singing',
     'image': 'nabi-home-popular-instruments-drums.jpg',
     'instructors': 19
   },
   {
     'id': '3',
+    'instrument': 'drums',
+    'image': 'nabi-home-popular-instruments-drums.jpg',
+    'instructors': 19
+  },
+  {
+    'id': '4',
     'instrument': 'violin',
     'image': 'nabi-home-popular-instruments-violin.jpg',
     'instructors': 18
   },
   {
-    'id': '4',
+    'id': '5',
     'instrument': 'saxophone',
     'image': 'nabi-home-popular-instruments-piano.png',
     'instructors': 15
   },
   {
-    'id': '5',
+    'id': '6',
     'instrument': 'flute',
     'image': 'nabi-home-popular-instruments-piano.png',
     'instructors': 10
   },
   {
-    'id': '6',
+    'id': '7',
     'instrument': 'clarinet',
     'image': 'nabi-home-popular-instruments-piano.png',
     'instructors': 13
   },
   {
-    'id': '7',
-    'instrument': 'electric guitar',
+    'id': '8',
+    'instrument': 'bass',
     'image': 'nabi-home-popular-instruments-piano.png',
     'instructors': 23
   },

@@ -12,11 +12,14 @@ const styles = () => ({
   }
 });
 
+interface ClassNameProp {
+  className?: string;
+}
 /**
  * Props for InstrumentCard
  * @interface InstrumentCardProps
  */
-export interface InstrumentCardProps {
+export interface InstrumentCardType {
   id?: string;
   index?: number;
   image: string;
@@ -24,30 +27,36 @@ export interface InstrumentCardProps {
   instructors: number;
 }
 
+export interface InstrumentCardProps extends
+  InstrumentCardType,
+  ClassNameProp {}
+
 type PropsWithStyles = InstrumentCardProps & WithStyles<'media'>;
 
-/** 
+/**
  * InstrumentCard component
  */
 class InstrumentCard extends React.Component<PropsWithStyles, {}> {
   componentDidMount() {
-    const slides = document.querySelectorAll('.popular-instrument-card');
-    let currentSlide = 0;
-    setInterval(nextSlide, 4000);
-    function nextSlide() {
-        slides[currentSlide].className = 'popular-instrument-card';
-        currentSlide = (currentSlide + 1) % 8;
-        slides[currentSlide].className = 'popular-instrument-card nabi-showing';
+    if (this.props.className) {
+      const slides = document.querySelectorAll(`.${this.props.className}`);
+      let currentSlide = 0;
+      const nextSlide = () =>  {
+          slides[currentSlide].className = `${this.props.className}`;
+          currentSlide = (currentSlide + 1) % 9;
+          slides[currentSlide].className = `${this.props.className} nabi-showing`;
+      };
+      setInterval(nextSlide, 4000);
     }
   }
 
   public render() {
     return (
       <div>
-        <Card 
-          className={'popular-instrument-card' + (this.props.index === 0 ? ' nabi-showing' : '')}
+        <Card
+          className={this.props.className + (this.props.index === 0 ? ' nabi-showing' : '')}
         >
-          <CardMedia 
+          <CardMedia
             className={this.props.classes.media}
             image={require(`../../../../assets/images/${this.props.image}`)}
           />
