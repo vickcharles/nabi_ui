@@ -31,6 +31,7 @@ export default class DrawerMenu extends React.Component<{}, DrawerMenuState>  {
           <MenuItem className={item.className} onClick={this.handleClose}>
             {item.label}
           </MenuItem>
+          {item.divider && <Divider />}
         </Link>
       );
     }
@@ -44,27 +45,7 @@ export default class DrawerMenu extends React.Component<{}, DrawerMenuState>  {
           onClick={this.handleClose}
           open={this.state.isDrawerOpen}
         >
-          <Link to="registration">
-            <MenuItem className="nabi-color-nabi" onClick={this.handleClose}>
-              Create Account
-            </MenuItem>
-          </Link>
-          <Link to="info-parents">
-            <MenuItem onClick={this.handleClose}>Information for parents</MenuItem>
-          </Link>
-          <Link to="info-instructors">
-            <MenuItem onClick={this.handleClose}>Become a Nabi instructor</MenuItem>
-            </Link>
-          <Link to="info-instruments">
-            <MenuItem onClick={this.handleClose}>Don't have an instrument?</MenuItem>
-          </Link>
-          <Divider />
-          <Link to="terms-of-use">
-            <MenuItem onClick={this.handleClose}>Terms of use</MenuItem>
-          </Link>
-          <Link to="contact">
-            <MenuItem onClick={this.handleClose}>Help/ contact</MenuItem>
-          </Link>
+          {menuItems}
         </Drawer>
       </div>
     );

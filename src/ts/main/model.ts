@@ -6,6 +6,7 @@ export interface MenuItem {
   className?: string;
   label: string;
   url: string;
+  divider?: boolean;
 }
 
 /**
@@ -16,7 +17,7 @@ export const nonRegisteredUserMenuItems = {
   createAccount: <MenuItem> {
     label: 'Create Account',
     url: 'registration',
-    className: 'nabi-color-nabi'
+    className: 'nabi-color-nabi nabi-margin-top-small'
   },
   infoParents: <MenuItem> {
     label: 'Information for parents',
@@ -29,6 +30,7 @@ export const nonRegisteredUserMenuItems = {
   infoInstruments: <MenuItem> {
     label: 'Don\'t have an instrument?',
     url: 'info-instruments',
+    divider: true
   },
   termsOfUse: <MenuItem> {
     label: 'Terms of use',
