@@ -7,7 +7,7 @@ import Header from './Header';
 import Welcome from './Welcome';
 import Homepage from './Homepage/Homepage';
 import { createUser, changeAvatar, Registration, fetchZipCodeAddress } from '../../Users/';
-import { UserState } from '../../Users/model';
+import { UserState, Role } from '../../Users/model';
 import { createInstructor, ProfileBuilder } from '../../Instructors';
 import { InstructorType } from '../../Instructors/model';
 
@@ -34,7 +34,7 @@ export interface AppContainerProps extends AppContainerStateProps {}
  */
 class AppContainer extends React.Component<AppContainerProps, {}> {
   public render(): JSX.Element {
-    
+
     const { dispatch, users } = this.props;
 
     const dispatchCreateUser: any = (user: UserState) => dispatch(createUser(user));
@@ -42,34 +42,70 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
     const dispatchChangeAvatar: any = (id: string, avatar: string) => dispatch(changeAvatar(id, avatar ));
     const dispatchZipCodeSearch: any = (user: UserState) => dispatch(fetchZipCodeAddress( user ));
 
-    /** 
+    /**
      * Renders Registration component
      */
     const renderRegistration = (props: any) => (
-      <Registration 
-        createUser={dispatchCreateUser} 
+      <Registration
+        createUser={dispatchCreateUser}
         createInstructor={dispatchCreateInstructor}
         searchZipCode={dispatchZipCodeSearch}
       />
     );
 
-    /** 
+    /**
+     * Renders Registration component for instructors
+     */
+    const renderRegistrationInstructor = (props: any) => (
+      <Registration
+        createUser={dispatchCreateUser}
+        createInstructor={dispatchCreateInstructor}
+        searchZipCode={dispatchZipCodeSearch}
+        role={Role.instructor}
+      />
+    );
+
+    /**
+     * Renders Registration component for students
+     */
+    const renderRegistrationStudent = (props: any) => (
+      <Registration
+        createUser={dispatchCreateUser}
+        createInstructor={dispatchCreateInstructor}
+        searchZipCode={dispatchZipCodeSearch}
+        role={Role.student}
+      />
+    );
+
+    /**
+     * Renders Registration component for students
+     */
+    const renderRegistrationParent = (props: any) => (
+      <Registration
+        createUser={dispatchCreateUser}
+        createInstructor={dispatchCreateInstructor}
+        searchZipCode={dispatchZipCodeSearch}
+        role={Role.parent}
+      />
+    );
+
+    /**
      * Renders Welcome for instructors
      */
     const renderWelcomeInstructors = (props: any) => (
-      <Welcome 
+      <Welcome
         welcomeText="Now is time to build your profile and start finding teaching jobs."
         actionText="BUILD PROFILE"
         actionUrl="profile-builder"
       />
     );
 
-    /** 
+    /**
      * Renders ProfileBuilder component
      */
     const renderProfileBuilder = (props: any) => (
-      <ProfileBuilder 
-        users={users} 
+      <ProfileBuilder
+        users={users}
         classes={null}
         changeAvatar={dispatchChangeAvatar}
       />
@@ -79,24 +115,39 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
       <div>
         <Header />
         <Switch>
-          <Route 
-            exact={true} 
-            path="/" 
-            component={Homepage} 
+          <Route
+            exact={true}
+            path="/"
+            component={Homepage}
           />
-          <Route 
-            exact={true} 
-            path="/registration" 
+          <Route
+            exact={true}
+            path="/registration"
             render={renderRegistration}
+          />
+          <Route
+            exact={true}
+            path="/registration-instructor"
+            render={renderRegistrationInstructor}
+          />
+          <Route
+            exact={true}
+            path="/registration-student"
+            render={renderRegistrationStudent}
+          />
+          <Route
+            exact={true}
+            path="/registration-parent"
+            render={renderRegistrationParent}
           />
           <Route
             exact={true}
             path="/welcome-instructor/:id"
             render={renderWelcomeInstructors}
           />
-          <Route 
-            exact={true} 
-            path="/profile-builder/:id" 
+          <Route
+            exact={true}
+            path="/profile-builder/:id"
             render={renderProfileBuilder}
           />
         </Switch>
@@ -104,7 +155,7 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
     );
   }
 }
-/** 
+/**
  * Maps redux store state to props
  */
 const mapStateToProps = (state: any, _ownProps: any) => ({

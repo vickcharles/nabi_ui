@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
+
 import Card, { CardContent, CardMedia } from 'material-ui/Card';
 import Typography from 'material-ui/Typography';
 import Button from 'material-ui/Button';
@@ -67,9 +69,11 @@ class InstrumentCard extends React.Component<PropsWithStyles, {}> {
             <Typography>
               {this.props.instructors} {this.props.instrument} instructors in your area.
             </Typography>
-            <Button size="small" color="primary" className="nabi-padding-left-zero">
-              GET STARED
-            </Button>
+            <Link to="registration-student">
+              <Button size="small" color="primary" className="nabi-padding-left-zero">
+                GET STARED
+              </Button>
+            </Link>
           </CardContent>
         </Card>
       </div>

@@ -17,6 +17,7 @@ interface RegistrationProps {
   createUser: (user: UserState) => void;
   createInstructor: (instructor: InstructorType) => void;
   searchZipCode: (user: UserState) => void;
+  role?: Role;
 }
 
 interface OpenModalState {
@@ -58,6 +59,12 @@ export class Registration extends React.Component<RegistrationProps, Registratio
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleBirthdayChange = this.handleBirthdayChange.bind(this);
+  }
+
+  componentWillMount() {
+    if (this.props.role) {
+        this.setState({role: this.props.role});
+    }
   }
 
   public handleChange(event: any): void {
