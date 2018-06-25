@@ -430,10 +430,20 @@ input {
   height: 326px;
 }
 
+.popular-instrument-card-group {
+	width: 100%;
+	position: absolute;
+	opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
 .popular-instrument-card {
 	background: #fff;
   width: 100% !important;
-	border-radius: 3px 3px 3px 3px;
   position: absolute;
   opacity: 0;
   z-index: 1;
@@ -444,7 +454,7 @@ input {
 	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12)
 }
 
-.nabi-showing{
+.nabi-showing {
 	opacity: 1;
 	z-index: 2;
 }
@@ -696,7 +706,12 @@ input {
   .nabi-education,
   .selected-education {
     width: 600px !important;
-  }
+	}
+	/*Popular instruments*/
+	.nabi-popular-instruments {
+    width: 100%;
+    margin: 0 auto;
+	}
 	/*Freeleson section*/
 	.free-lesson-section {
 		text-align: left !important;
@@ -714,12 +729,6 @@ input {
 	.free-lesson-image {
 		margin-left: 20px;
 	}
-  /*POPULAR ISTRUMENT SECTION*/
-	.nabi-popular-instruments {
-		width: 50%;
-    margin: 0px;
-    height: 370px;
-	}
 }
 
 /* Laptops ----------- */
@@ -731,10 +740,5 @@ input {
 	/*Header*/
 	.nabi-header-container {
 		width: 1150px;
-	}
-	/*POPULAR ISTRUMENT SECTION*/
-	.nabi-popular-instruments {
-		height: 420px;
-		margin: 0px;
 	}
 }
