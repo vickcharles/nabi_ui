@@ -88,6 +88,12 @@ export class Registration extends React.Component<RegistrationProps, Registratio
 
       if (userAge <= 17) {
         this.setState({ openModal: true });
+      } else {
+        if (!this.state.fireRedirect && !this.state.openModal) {
+          this.setState({ fireRedirect: true }, () => {
+            this.createUser();
+          });
+        }
       }
     }
   }
@@ -99,12 +105,6 @@ export class Registration extends React.Component<RegistrationProps, Registratio
 
     this.displayAgeDisclaimer();
     this.setState({ id: this.generateId() });
-
-    if (!this.state.fireRedirect) {
-      this.setState({ fireRedirect: true }, () => {
-        this.createUser();
-      });
-    }
   }
 
   public createUser(): void {
@@ -162,13 +162,13 @@ export class Registration extends React.Component<RegistrationProps, Registratio
             selectedRole={this.state.role}
           />
         </div>
-        {this.state.fireRedirect && this.state.role === 'instructor' && (
-          <Redirect to={`welcome-instructor/${this.state.id}`} />
-        )}
         <AgeDisclaimer
           isFormDialogOpen={this.state.openModal}
           closeHandler={closeModal}
         />
+        {this.state.fireRedirect && this.state.role === 'instructor' && (
+          <Redirect to={`welcome-instructor/${this.state.id}`} />
+        )}
       </div>
     );
   }

@@ -103,9 +103,5 @@ describe('Registration', () => {
     it('Calls createUser', () => {
       expect(createUser).toBeCalled();
     });
-
-    it('Fires redirect()', () => {
-      expect(wrapper.state('fireRedirect')).toBeTruthy();
-    });
   });
 });
