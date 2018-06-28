@@ -85,6 +85,7 @@ export class Registration extends React.Component<RegistrationProps, Registratio
   public displayAgeDisclaimer(): void {
     if (this.state.birthday) {
       const userAge = Math.abs(this.state.birthday.diff(moment(), 'years'));
+
       if (userAge <= 17) {
         this.setState({ openModal: true });
       } else {
