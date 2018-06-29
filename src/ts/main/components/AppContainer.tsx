@@ -99,6 +99,9 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
         actionUrl="profile-builder"
       />
     );
+    /**
+     * Renders Welcome for students
+     */
     const renderWelcomeStudent = (props: any) => (
       <Welcome
         welcomeText="Now is time to send a request and connect with music teachers in your area."
