@@ -48,7 +48,7 @@ export class Registration extends React.Component<RegistrationProps, Registratio
       email: '',
       password: '',
       zipCode: '',
-      role: Role.student,
+      role: Role.instructor,
       hearAboutUs: '',
       birthday: moment(),
       fireRedirect: false,
@@ -133,7 +133,6 @@ export class Registration extends React.Component<RegistrationProps, Registratio
     if ( this.state.role === Role.instructor) {
       this.props.createInstructor(userId);
     }
-
     if ( this.state.zipCode && true) {
       this.props.searchZipCode(userValues);
     }
@@ -166,9 +165,15 @@ export class Registration extends React.Component<RegistrationProps, Registratio
           isFormDialogOpen={this.state.openModal}
           closeHandler={closeModal}
         />
-        {this.state.fireRedirect && this.state.role === 'instructor' && (
+        {(this.state.fireRedirect && this.state.role === Role.instructor &&
           <Redirect to={`welcome-instructor/${this.state.id}`} />
         )}
+         {(this.state.fireRedirect && this.state.role === Role.student  &&
+          <Redirect to={`welcome-student/${this.state.id}`} />
+        )}
+         {this.state.fireRedirect && this.state.role === Role.parent &&
+          <Redirect to={`welcome-student/${this.state.id}`} />
+        }
       </div>
     );
   }

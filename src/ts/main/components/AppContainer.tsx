@@ -99,6 +99,13 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
         actionUrl="profile-builder"
       />
     );
+    const renderWelcomeStudent = (props: any) => (
+      <Welcome
+        welcomeText="Now is time to send a request and connect with music teachers in your area"
+        actionText="REQUEST INSTRUCTOR"
+        actionUrl="request-instructor"
+      />
+    );
 
     /**
      * Renders ProfileBuilder component
@@ -145,6 +152,11 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
             path="/welcome-instructor/:id"
             render={renderWelcomeInstructors}
           />
+           <Route
+            exact={true}
+            path="/welcome-student/:id"
+            render={renderWelcomeStudent}
+           />
           <Route
             exact={true}
             path="/profile-builder/:id"
