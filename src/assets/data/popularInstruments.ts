@@ -15,7 +15,7 @@ export const popularInstruments: InstrumentCardType[] = [
   {
     'id': '2',
     'instrument': 'singing',
-    'image': 'nabi-home-popular-instruments-drums.jpg',
+    'image': 'nabi-singing.png',
     'instructors': 19
   },
   {
@@ -27,31 +27,31 @@ export const popularInstruments: InstrumentCardType[] = [
   {
     'id': '4',
     'instrument': 'violin',
-    'image': 'nabi-home-popular-instruments-violin.jpg',
+    'image': 'nabi-violin.png',
     'instructors': 18
   },
   {
     'id': '5',
     'instrument': 'saxophone',
-    'image': 'nabi-home-popular-instruments-piano.png',
+    'image': 'nabi-saxophone.png',
     'instructors': 15
   },
   {
     'id': '6',
     'instrument': 'flute',
-    'image': 'nabi-home-popular-instruments-piano.png',
+    'image': 'nabi-flute.png',
     'instructors': 10
   },
   {
     'id': '7',
     'instrument': 'clarinet',
-    'image': 'nabi-home-popular-instruments-piano.png',
+    'image': 'nabi-clarinet.png',
     'instructors': 13
   },
   {
     'id': '8',
-    'instrument': 'bass',
-    'image': 'nabi-home-popular-instruments-piano.png',
+    'instrument': 'cello',
+    'image': 'nabi-cello.png',
     'instructors': 23
   },
 ];

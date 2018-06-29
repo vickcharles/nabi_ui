@@ -43,7 +43,7 @@ ShallowWrapper {
             />
             <WithStyles(InstrumentCard)
               className="popular-instrument-card"
-              image="nabi-home-popular-instruments-drums.jpg"
+              image="nabi-singing.png"
               index={2}
               instructors={19}
               instrument="singing"
@@ -57,38 +57,38 @@ ShallowWrapper {
             />
             <WithStyles(InstrumentCard)
               className="popular-instrument-card"
-              image="nabi-home-popular-instruments-violin.jpg"
+              image="nabi-violin.png"
               index={4}
               instructors={18}
               instrument="violin"
             />
             <WithStyles(InstrumentCard)
               className="popular-instrument-card"
-              image="nabi-home-popular-instruments-piano.png"
+              image="nabi-saxophone.png"
               index={5}
               instructors={15}
               instrument="saxophone"
             />
             <WithStyles(InstrumentCard)
               className="popular-instrument-card"
-              image="nabi-home-popular-instruments-piano.png"
+              image="nabi-flute.png"
               index={6}
               instructors={10}
               instrument="flute"
             />
             <WithStyles(InstrumentCard)
               className="popular-instrument-card"
-              image="nabi-home-popular-instruments-piano.png"
+              image="nabi-clarinet.png"
               index={7}
               instructors={13}
               instrument="clarinet"
             />
             <WithStyles(InstrumentCard)
               className="popular-instrument-card"
-              image="nabi-home-popular-instruments-piano.png"
+              image="nabi-cello.png"
               index={8}
               instructors={23}
-              instrument="bass"
+              instrument="cello"
             />
           </div>
           <div
@@ -129,7 +129,7 @@ ShallowWrapper {
                 >
                   <WithStyles(InstrumentCard)
                     className=""
-                    image="nabi-home-popular-instruments-drums.jpg"
+                    image="nabi-singing.png"
                     index={2}
                     instructors={19}
                     instrument="singing"
@@ -161,7 +161,7 @@ ShallowWrapper {
                 >
                   <WithStyles(InstrumentCard)
                     className=""
-                    image="nabi-home-popular-instruments-violin.jpg"
+                    image="nabi-violin.png"
                     index={1}
                     instructors={18}
                     instrument="violin"
@@ -172,7 +172,7 @@ ShallowWrapper {
                 >
                   <WithStyles(InstrumentCard)
                     className=""
-                    image="nabi-home-popular-instruments-piano.png"
+                    image="nabi-saxophone.png"
                     index={2}
                     instructors={15}
                     instrument="saxophone"
@@ -193,7 +193,7 @@ ShallowWrapper {
                 >
                   <WithStyles(InstrumentCard)
                     className=""
-                    image="nabi-home-popular-instruments-piano.png"
+                    image="nabi-flute.png"
                     index={0}
                     instructors={10}
                     instrument="flute"
@@ -204,7 +204,7 @@ ShallowWrapper {
                 >
                   <WithStyles(InstrumentCard)
                     className=""
-                    image="nabi-home-popular-instruments-piano.png"
+                    image="nabi-clarinet.png"
                     index={1}
                     instructors={13}
                     instrument="clarinet"
@@ -215,10 +215,10 @@ ShallowWrapper {
                 >
                   <WithStyles(InstrumentCard)
                     className=""
-                    image="nabi-home-popular-instruments-piano.png"
+                    image="nabi-cello.png"
                     index={2}
                     instructors={23}
-                    instrument="bass"
+                    instrument="cello"
                   />
                 </WithStyles(GridListTile)>
               </WithStyles(GridList)>
@@ -266,7 +266,7 @@ ShallowWrapper {
               />
               <WithStyles(InstrumentCard)
                 className="popular-instrument-card"
-                image="nabi-home-popular-instruments-drums.jpg"
+                image="nabi-singing.png"
                 index={2}
                 instructors={19}
                 instrument="singing"
@@ -280,38 +280,38 @@ ShallowWrapper {
               />
               <WithStyles(InstrumentCard)
                 className="popular-instrument-card"
-                image="nabi-home-popular-instruments-violin.jpg"
+                image="nabi-violin.png"
                 index={4}
                 instructors={18}
                 instrument="violin"
               />
               <WithStyles(InstrumentCard)
                 className="popular-instrument-card"
-                image="nabi-home-popular-instruments-piano.png"
+                image="nabi-saxophone.png"
                 index={5}
                 instructors={15}
                 instrument="saxophone"
               />
               <WithStyles(InstrumentCard)
                 className="popular-instrument-card"
-                image="nabi-home-popular-instruments-piano.png"
+                image="nabi-flute.png"
                 index={6}
                 instructors={10}
                 instrument="flute"
               />
               <WithStyles(InstrumentCard)
                 className="popular-instrument-card"
-                image="nabi-home-popular-instruments-piano.png"
+                image="nabi-clarinet.png"
                 index={7}
                 instructors={13}
                 instrument="clarinet"
               />
               <WithStyles(InstrumentCard)
                 className="popular-instrument-card"
-                image="nabi-home-popular-instruments-piano.png"
+                image="nabi-cello.png"
                 index={8}
                 instructors={23}
-                instrument="bass"
+                instrument="cello"
               />
             </div>,
             <div
@@ -352,7 +352,7 @@ ShallowWrapper {
                   >
                     <WithStyles(InstrumentCard)
                       className=""
-                      image="nabi-home-popular-instruments-drums.jpg"
+                      image="nabi-singing.png"
                       index={2}
                       instructors={19}
                       instrument="singing"
@@ -384,7 +384,7 @@ ShallowWrapper {
                   >
                     <WithStyles(InstrumentCard)
                       className=""
-                      image="nabi-home-popular-instruments-violin.jpg"
+                      image="nabi-violin.png"
                       index={1}
                       instructors={18}
                       instrument="violin"
@@ -395,7 +395,7 @@ ShallowWrapper {
                   >
                     <WithStyles(InstrumentCard)
                       className=""
-                      image="nabi-home-popular-instruments-piano.png"
+                      image="nabi-saxophone.png"
                       index={2}
                       instructors={15}
                       instrument="saxophone"
@@ -416,7 +416,7 @@ ShallowWrapper {
                   >
                     <WithStyles(InstrumentCard)
                       className=""
-                      image="nabi-home-popular-instruments-piano.png"
+                      image="nabi-flute.png"
                       index={0}
                       instructors={10}
                       instrument="flute"
@@ -427,7 +427,7 @@ ShallowWrapper {
                   >
                     <WithStyles(InstrumentCard)
                       className=""
-                      image="nabi-home-popular-instruments-piano.png"
+                      image="nabi-clarinet.png"
                       index={1}
                       instructors={13}
                       instrument="clarinet"
@@ -438,10 +438,10 @@ ShallowWrapper {
                   >
                     <WithStyles(InstrumentCard)
                       className=""
-                      image="nabi-home-popular-instruments-piano.png"
+                      image="nabi-cello.png"
                       index={2}
                       instructors={23}
-                      instrument="bass"
+                      instrument="cello"
                     />
                   </WithStyles(GridListTile)>
                 </WithStyles(GridList)>
@@ -474,7 +474,7 @@ ShallowWrapper {
                 />,
                 <WithStyles(InstrumentCard)
                   className="popular-instrument-card"
-                  image="nabi-home-popular-instruments-drums.jpg"
+                  image="nabi-singing.png"
                   index={2}
                   instructors={19}
                   instrument="singing"
@@ -488,38 +488,38 @@ ShallowWrapper {
                 />,
                 <WithStyles(InstrumentCard)
                   className="popular-instrument-card"
-                  image="nabi-home-popular-instruments-violin.jpg"
+                  image="nabi-violin.png"
                   index={4}
                   instructors={18}
                   instrument="violin"
                 />,
                 <WithStyles(InstrumentCard)
                   className="popular-instrument-card"
-                  image="nabi-home-popular-instruments-piano.png"
+                  image="nabi-saxophone.png"
                   index={5}
                   instructors={15}
                   instrument="saxophone"
                 />,
                 <WithStyles(InstrumentCard)
                   className="popular-instrument-card"
-                  image="nabi-home-popular-instruments-piano.png"
+                  image="nabi-flute.png"
                   index={6}
                   instructors={10}
                   instrument="flute"
                 />,
                 <WithStyles(InstrumentCard)
                   className="popular-instrument-card"
-                  image="nabi-home-popular-instruments-piano.png"
+                  image="nabi-clarinet.png"
                   index={7}
                   instructors={13}
                   instrument="clarinet"
                 />,
                 <WithStyles(InstrumentCard)
                   className="popular-instrument-card"
-                  image="nabi-home-popular-instruments-piano.png"
+                  image="nabi-cello.png"
                   index={8}
                   instructors={23}
-                  instrument="bass"
+                  instrument="cello"
                 />,
               ],
               "className": "hide-on-desktop nabi-popular-instruments",
@@ -562,7 +562,7 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "className": "popular-instrument-card",
-                  "image": "nabi-home-popular-instruments-drums.jpg",
+                  "image": "nabi-singing.png",
                   "index": 2,
                   "instructors": 19,
                   "instrument": "singing",
@@ -592,7 +592,7 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "className": "popular-instrument-card",
-                  "image": "nabi-home-popular-instruments-violin.jpg",
+                  "image": "nabi-violin.png",
                   "index": 4,
                   "instructors": 18,
                   "instrument": "violin",
@@ -607,7 +607,7 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "className": "popular-instrument-card",
-                  "image": "nabi-home-popular-instruments-piano.png",
+                  "image": "nabi-saxophone.png",
                   "index": 5,
                   "instructors": 15,
                   "instrument": "saxophone",
@@ -622,7 +622,7 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "className": "popular-instrument-card",
-                  "image": "nabi-home-popular-instruments-piano.png",
+                  "image": "nabi-flute.png",
                   "index": 6,
                   "instructors": 10,
                   "instrument": "flute",
@@ -637,7 +637,7 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "className": "popular-instrument-card",
-                  "image": "nabi-home-popular-instruments-piano.png",
+                  "image": "nabi-clarinet.png",
                   "index": 7,
                   "instructors": 13,
                   "instrument": "clarinet",
@@ -652,10 +652,10 @@ ShallowWrapper {
                 "nodeType": "class",
                 "props": Object {
                   "className": "popular-instrument-card",
-                  "image": "nabi-home-popular-instruments-piano.png",
+                  "image": "nabi-cello.png",
                   "index": 8,
                   "instructors": 23,
-                  "instrument": "bass",
+                  "instrument": "cello",
                 },
                 "ref": null,
                 "rendered": null,
@@ -705,7 +705,7 @@ ShallowWrapper {
                     >
                       <WithStyles(InstrumentCard)
                         className=""
-                        image="nabi-home-popular-instruments-drums.jpg"
+                        image="nabi-singing.png"
                         index={2}
                         instructors={19}
                         instrument="singing"
@@ -737,7 +737,7 @@ ShallowWrapper {
                     >
                       <WithStyles(InstrumentCard)
                         className=""
-                        image="nabi-home-popular-instruments-violin.jpg"
+                        image="nabi-violin.png"
                         index={1}
                         instructors={18}
                         instrument="violin"
@@ -748,7 +748,7 @@ ShallowWrapper {
                     >
                       <WithStyles(InstrumentCard)
                         className=""
-                        image="nabi-home-popular-instruments-piano.png"
+                        image="nabi-saxophone.png"
                         index={2}
                         instructors={15}
                         instrument="saxophone"
@@ -769,7 +769,7 @@ ShallowWrapper {
                     >
                       <WithStyles(InstrumentCard)
                         className=""
-                        image="nabi-home-popular-instruments-piano.png"
+                        image="nabi-flute.png"
                         index={0}
                         instructors={10}
                         instrument="flute"
@@ -780,7 +780,7 @@ ShallowWrapper {
                     >
                       <WithStyles(InstrumentCard)
                         className=""
-                        image="nabi-home-popular-instruments-piano.png"
+                        image="nabi-clarinet.png"
                         index={1}
                         instructors={13}
                         instrument="clarinet"
@@ -791,10 +791,10 @@ ShallowWrapper {
                     >
                       <WithStyles(InstrumentCard)
                         className=""
-                        image="nabi-home-popular-instruments-piano.png"
+                        image="nabi-cello.png"
                         index={2}
                         instructors={23}
-                        instrument="bass"
+                        instrument="cello"
                       />
                     </WithStyles(GridListTile)>
                   </WithStyles(GridList)>
@@ -841,7 +841,7 @@ ShallowWrapper {
                     >
                       <WithStyles(InstrumentCard)
                         className=""
-                        image="nabi-home-popular-instruments-drums.jpg"
+                        image="nabi-singing.png"
                         index={2}
                         instructors={19}
                         instrument="singing"
@@ -885,7 +885,7 @@ ShallowWrapper {
                       >
                         <WithStyles(InstrumentCard)
                           className=""
-                          image="nabi-home-popular-instruments-drums.jpg"
+                          image="nabi-singing.png"
                           index={2}
                           instructors={19}
                           instrument="singing"
@@ -968,7 +968,7 @@ ShallowWrapper {
                       "props": Object {
                         "children": <WithStyles(InstrumentCard)
                           className=""
-                          image="nabi-home-popular-instruments-drums.jpg"
+                          image="nabi-singing.png"
                           index={2}
                           instructors={19}
                           instrument="singing"
@@ -982,7 +982,7 @@ ShallowWrapper {
                         "nodeType": "class",
                         "props": Object {
                           "className": "",
-                          "image": "nabi-home-popular-instruments-drums.jpg",
+                          "image": "nabi-singing.png",
                           "index": 2,
                           "instructors": 19,
                           "instrument": "singing",
@@ -1024,7 +1024,7 @@ ShallowWrapper {
                     >
                       <WithStyles(InstrumentCard)
                         className=""
-                        image="nabi-home-popular-instruments-violin.jpg"
+                        image="nabi-violin.png"
                         index={1}
                         instructors={18}
                         instrument="violin"
@@ -1035,7 +1035,7 @@ ShallowWrapper {
                     >
                       <WithStyles(InstrumentCard)
                         className=""
-                        image="nabi-home-popular-instruments-piano.png"
+                        image="nabi-saxophone.png"
                         index={2}
                         instructors={15}
                         instrument="saxophone"
@@ -1068,7 +1068,7 @@ ShallowWrapper {
                       >
                         <WithStyles(InstrumentCard)
                           className=""
-                          image="nabi-home-popular-instruments-violin.jpg"
+                          image="nabi-violin.png"
                           index={1}
                           instructors={18}
                           instrument="violin"
@@ -1079,7 +1079,7 @@ ShallowWrapper {
                       >
                         <WithStyles(InstrumentCard)
                           className=""
-                          image="nabi-home-popular-instruments-piano.png"
+                          image="nabi-saxophone.png"
                           index={2}
                           instructors={15}
                           instrument="saxophone"
@@ -1130,7 +1130,7 @@ ShallowWrapper {
                       "props": Object {
                         "children": <WithStyles(InstrumentCard)
                           className=""
-                          image="nabi-home-popular-instruments-violin.jpg"
+                          image="nabi-violin.png"
                           index={1}
                           instructors={18}
                           instrument="violin"
@@ -1144,7 +1144,7 @@ ShallowWrapper {
                         "nodeType": "class",
                         "props": Object {
                           "className": "",
-                          "image": "nabi-home-popular-instruments-violin.jpg",
+                          "image": "nabi-violin.png",
                           "index": 1,
                           "instructors": 18,
                           "instrument": "violin",
@@ -1162,7 +1162,7 @@ ShallowWrapper {
                       "props": Object {
                         "children": <WithStyles(InstrumentCard)
                           className=""
-                          image="nabi-home-popular-instruments-piano.png"
+                          image="nabi-saxophone.png"
                           index={2}
                           instructors={15}
                           instrument="saxophone"
@@ -1176,7 +1176,7 @@ ShallowWrapper {
                         "nodeType": "class",
                         "props": Object {
                           "className": "",
-                          "image": "nabi-home-popular-instruments-piano.png",
+                          "image": "nabi-saxophone.png",
                           "index": 2,
                           "instructors": 15,
                           "instrument": "saxophone",
@@ -1207,7 +1207,7 @@ ShallowWrapper {
                     >
                       <WithStyles(InstrumentCard)
                         className=""
-                        image="nabi-home-popular-instruments-piano.png"
+                        image="nabi-flute.png"
                         index={0}
                         instructors={10}
                         instrument="flute"
@@ -1218,7 +1218,7 @@ ShallowWrapper {
                     >
                       <WithStyles(InstrumentCard)
                         className=""
-                        image="nabi-home-popular-instruments-piano.png"
+                        image="nabi-clarinet.png"
                         index={1}
                         instructors={13}
                         instrument="clarinet"
@@ -1229,10 +1229,10 @@ ShallowWrapper {
                     >
                       <WithStyles(InstrumentCard)
                         className=""
-                        image="nabi-home-popular-instruments-piano.png"
+                        image="nabi-cello.png"
                         index={2}
                         instructors={23}
-                        instrument="bass"
+                        instrument="cello"
                       />
                     </WithStyles(GridListTile)>
                   </WithStyles(GridList)>,
@@ -1251,7 +1251,7 @@ ShallowWrapper {
                       >
                         <WithStyles(InstrumentCard)
                           className=""
-                          image="nabi-home-popular-instruments-piano.png"
+                          image="nabi-flute.png"
                           index={0}
                           instructors={10}
                           instrument="flute"
@@ -1262,7 +1262,7 @@ ShallowWrapper {
                       >
                         <WithStyles(InstrumentCard)
                           className=""
-                          image="nabi-home-popular-instruments-piano.png"
+                          image="nabi-clarinet.png"
                           index={1}
                           instructors={13}
                           instrument="clarinet"
@@ -1273,10 +1273,10 @@ ShallowWrapper {
                       >
                         <WithStyles(InstrumentCard)
                           className=""
-                          image="nabi-home-popular-instruments-piano.png"
+                          image="nabi-cello.png"
                           index={2}
                           instructors={23}
-                          instrument="bass"
+                          instrument="cello"
                         />
                       </WithStyles(GridListTile)>,
                     ],
@@ -1292,7 +1292,7 @@ ShallowWrapper {
                       "props": Object {
                         "children": <WithStyles(InstrumentCard)
                           className=""
-                          image="nabi-home-popular-instruments-piano.png"
+                          image="nabi-flute.png"
                           index={0}
                           instructors={10}
                           instrument="flute"
@@ -1306,7 +1306,7 @@ ShallowWrapper {
                         "nodeType": "class",
                         "props": Object {
                           "className": "",
-                          "image": "nabi-home-popular-instruments-piano.png",
+                          "image": "nabi-flute.png",
                           "index": 0,
                           "instructors": 10,
                           "instrument": "flute",
@@ -1324,7 +1324,7 @@ ShallowWrapper {
                       "props": Object {
                         "children": <WithStyles(InstrumentCard)
                           className=""
-                          image="nabi-home-popular-instruments-piano.png"
+                          image="nabi-clarinet.png"
                           index={1}
                           instructors={13}
                           instrument="clarinet"
@@ -1338,7 +1338,7 @@ ShallowWrapper {
                         "nodeType": "class",
                         "props": Object {
                           "className": "",
-                          "image": "nabi-home-popular-instruments-piano.png",
+                          "image": "nabi-clarinet.png",
                           "index": 1,
                           "instructors": 13,
                           "instrument": "clarinet",
@@ -1356,10 +1356,10 @@ ShallowWrapper {
                       "props": Object {
                         "children": <WithStyles(InstrumentCard)
                           className=""
-                          image="nabi-home-popular-instruments-piano.png"
+                          image="nabi-cello.png"
                           index={2}
                           instructors={23}
-                          instrument="bass"
+                          instrument="cello"
                         />,
                         "cols": 1,
                       },
@@ -1370,10 +1370,10 @@ ShallowWrapper {
                         "nodeType": "class",
                         "props": Object {
                           "className": "",
-                          "image": "nabi-home-popular-instruments-piano.png",
+                          "image": "nabi-cello.png",
                           "index": 2,
                           "instructors": 23,
-                          "instrument": "bass",
+                          "instrument": "cello",
                         },
                         "ref": null,
                         "rendered": null,
@@ -1427,7 +1427,7 @@ ShallowWrapper {
               />
               <WithStyles(InstrumentCard)
                 className="popular-instrument-card"
-                image="nabi-home-popular-instruments-drums.jpg"
+                image="nabi-singing.png"
                 index={2}
                 instructors={19}
                 instrument="singing"
@@ -1441,38 +1441,38 @@ ShallowWrapper {
               />
               <WithStyles(InstrumentCard)
                 className="popular-instrument-card"
-                image="nabi-home-popular-instruments-violin.jpg"
+                image="nabi-violin.png"
                 index={4}
                 instructors={18}
                 instrument="violin"
               />
               <WithStyles(InstrumentCard)
                 className="popular-instrument-card"
-                image="nabi-home-popular-instruments-piano.png"
+                image="nabi-saxophone.png"
                 index={5}
                 instructors={15}
                 instrument="saxophone"
               />
               <WithStyles(InstrumentCard)
                 className="popular-instrument-card"
-                image="nabi-home-popular-instruments-piano.png"
+                image="nabi-flute.png"
                 index={6}
                 instructors={10}
                 instrument="flute"
               />
               <WithStyles(InstrumentCard)
                 className="popular-instrument-card"
-                image="nabi-home-popular-instruments-piano.png"
+                image="nabi-clarinet.png"
                 index={7}
                 instructors={13}
                 instrument="clarinet"
               />
               <WithStyles(InstrumentCard)
                 className="popular-instrument-card"
-                image="nabi-home-popular-instruments-piano.png"
+                image="nabi-cello.png"
                 index={8}
                 instructors={23}
-                instrument="bass"
+                instrument="cello"
               />
             </div>
             <div
@@ -1513,7 +1513,7 @@ ShallowWrapper {
                   >
                     <WithStyles(InstrumentCard)
                       className=""
-                      image="nabi-home-popular-instruments-drums.jpg"
+                      image="nabi-singing.png"
                       index={2}
                       instructors={19}
                       instrument="singing"
@@ -1545,7 +1545,7 @@ ShallowWrapper {
                   >
                     <WithStyles(InstrumentCard)
                       className=""
-                      image="nabi-home-popular-instruments-violin.jpg"
+                      image="nabi-violin.png"
                       index={1}
                       instructors={18}
                       instrument="violin"
@@ -1556,7 +1556,7 @@ ShallowWrapper {
                   >
                     <WithStyles(InstrumentCard)
                       className=""
-                      image="nabi-home-popular-instruments-piano.png"
+                      image="nabi-saxophone.png"
                       index={2}
                       instructors={15}
                       instrument="saxophone"
@@ -1577,7 +1577,7 @@ ShallowWrapper {
                   >
                     <WithStyles(InstrumentCard)
                       className=""
-                      image="nabi-home-popular-instruments-piano.png"
+                      image="nabi-flute.png"
                       index={0}
                       instructors={10}
                       instrument="flute"
@@ -1588,7 +1588,7 @@ ShallowWrapper {
                   >
                     <WithStyles(InstrumentCard)
                       className=""
-                      image="nabi-home-popular-instruments-piano.png"
+                      image="nabi-clarinet.png"
                       index={1}
                       instructors={13}
                       instrument="clarinet"
@@ -1599,10 +1599,10 @@ ShallowWrapper {
                   >
                     <WithStyles(InstrumentCard)
                       className=""
-                      image="nabi-home-popular-instruments-piano.png"
+                      image="nabi-cello.png"
                       index={2}
                       instructors={23}
-                      instrument="bass"
+                      instrument="cello"
                     />
                   </WithStyles(GridListTile)>
                 </WithStyles(GridList)>
@@ -1650,7 +1650,7 @@ ShallowWrapper {
                 />
                 <WithStyles(InstrumentCard)
                   className="popular-instrument-card"
-                  image="nabi-home-popular-instruments-drums.jpg"
+                  image="nabi-singing.png"
                   index={2}
                   instructors={19}
                   instrument="singing"
@@ -1664,38 +1664,38 @@ ShallowWrapper {
                 />
                 <WithStyles(InstrumentCard)
                   className="popular-instrument-card"
-                  image="nabi-home-popular-instruments-violin.jpg"
+                  image="nabi-violin.png"
                   index={4}
                   instructors={18}
                   instrument="violin"
                 />
                 <WithStyles(InstrumentCard)
                   className="popular-instrument-card"
-                  image="nabi-home-popular-instruments-piano.png"
+                  image="nabi-saxophone.png"
                   index={5}
                   instructors={15}
                   instrument="saxophone"
                 />
                 <WithStyles(InstrumentCard)
                   className="popular-instrument-card"
-                  image="nabi-home-popular-instruments-piano.png"
+                  image="nabi-flute.png"
                   index={6}
                   instructors={10}
                   instrument="flute"
                 />
                 <WithStyles(InstrumentCard)
                   className="popular-instrument-card"
-                  image="nabi-home-popular-instruments-piano.png"
+                  image="nabi-clarinet.png"
                   index={7}
                   instructors={13}
                   instrument="clarinet"
                 />
                 <WithStyles(InstrumentCard)
                   className="popular-instrument-card"
-                  image="nabi-home-popular-instruments-piano.png"
+                  image="nabi-cello.png"
                   index={8}
                   instructors={23}
-                  instrument="bass"
+                  instrument="cello"
                 />
               </div>,
               <div
@@ -1736,7 +1736,7 @@ ShallowWrapper {
                     >
                       <WithStyles(InstrumentCard)
                         className=""
-                        image="nabi-home-popular-instruments-drums.jpg"
+                        image="nabi-singing.png"
                         index={2}
                         instructors={19}
                         instrument="singing"
@@ -1768,7 +1768,7 @@ ShallowWrapper {
                     >
                       <WithStyles(InstrumentCard)
                         className=""
-                        image="nabi-home-popular-instruments-violin.jpg"
+                        image="nabi-violin.png"
                         index={1}
                         instructors={18}
                         instrument="violin"
@@ -1779,7 +1779,7 @@ ShallowWrapper {
                     >
                       <WithStyles(InstrumentCard)
                         className=""
-                        image="nabi-home-popular-instruments-piano.png"
+                        image="nabi-saxophone.png"
                         index={2}
                         instructors={15}
                         instrument="saxophone"
@@ -1800,7 +1800,7 @@ ShallowWrapper {
                     >
                       <WithStyles(InstrumentCard)
                         className=""
-                        image="nabi-home-popular-instruments-piano.png"
+                        image="nabi-flute.png"
                         index={0}
                         instructors={10}
                         instrument="flute"
@@ -1811,7 +1811,7 @@ ShallowWrapper {
                     >
                       <WithStyles(InstrumentCard)
                         className=""
-                        image="nabi-home-popular-instruments-piano.png"
+                        image="nabi-clarinet.png"
                         index={1}
                         instructors={13}
                         instrument="clarinet"
@@ -1822,10 +1822,10 @@ ShallowWrapper {
                     >
                       <WithStyles(InstrumentCard)
                         className=""
-                        image="nabi-home-popular-instruments-piano.png"
+                        image="nabi-cello.png"
                         index={2}
                         instructors={23}
-                        instrument="bass"
+                        instrument="cello"
                       />
                     </WithStyles(GridListTile)>
                   </WithStyles(GridList)>
@@ -1858,7 +1858,7 @@ ShallowWrapper {
                   />,
                   <WithStyles(InstrumentCard)
                     className="popular-instrument-card"
-                    image="nabi-home-popular-instruments-drums.jpg"
+                    image="nabi-singing.png"
                     index={2}
                     instructors={19}
                     instrument="singing"
@@ -1872,38 +1872,38 @@ ShallowWrapper {
                   />,
                   <WithStyles(InstrumentCard)
                     className="popular-instrument-card"
-                    image="nabi-home-popular-instruments-violin.jpg"
+                    image="nabi-violin.png"
                     index={4}
                     instructors={18}
                     instrument="violin"
                   />,
                   <WithStyles(InstrumentCard)
                     className="popular-instrument-card"
-                    image="nabi-home-popular-instruments-piano.png"
+                    image="nabi-saxophone.png"
                     index={5}
                     instructors={15}
                     instrument="saxophone"
                   />,
                   <WithStyles(InstrumentCard)
                     className="popular-instrument-card"
-                    image="nabi-home-popular-instruments-piano.png"
+                    image="nabi-flute.png"
                     index={6}
                     instructors={10}
                     instrument="flute"
                   />,
                   <WithStyles(InstrumentCard)
                     className="popular-instrument-card"
-                    image="nabi-home-popular-instruments-piano.png"
+                    image="nabi-clarinet.png"
                     index={7}
                     instructors={13}
                     instrument="clarinet"
                   />,
                   <WithStyles(InstrumentCard)
                     className="popular-instrument-card"
-                    image="nabi-home-popular-instruments-piano.png"
+                    image="nabi-cello.png"
                     index={8}
                     instructors={23}
-                    instrument="bass"
+                    instrument="cello"
                   />,
                 ],
                 "className": "hide-on-desktop nabi-popular-instruments",
@@ -1946,7 +1946,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "className": "popular-instrument-card",
-                    "image": "nabi-home-popular-instruments-drums.jpg",
+                    "image": "nabi-singing.png",
                     "index": 2,
                     "instructors": 19,
                     "instrument": "singing",
@@ -1976,7 +1976,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "className": "popular-instrument-card",
-                    "image": "nabi-home-popular-instruments-violin.jpg",
+                    "image": "nabi-violin.png",
                     "index": 4,
                     "instructors": 18,
                     "instrument": "violin",
@@ -1991,7 +1991,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "className": "popular-instrument-card",
-                    "image": "nabi-home-popular-instruments-piano.png",
+                    "image": "nabi-saxophone.png",
                     "index": 5,
                     "instructors": 15,
                     "instrument": "saxophone",
@@ -2006,7 +2006,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "className": "popular-instrument-card",
-                    "image": "nabi-home-popular-instruments-piano.png",
+                    "image": "nabi-flute.png",
                     "index": 6,
                     "instructors": 10,
                     "instrument": "flute",
@@ -2021,7 +2021,7 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "className": "popular-instrument-card",
-                    "image": "nabi-home-popular-instruments-piano.png",
+                    "image": "nabi-clarinet.png",
                     "index": 7,
                     "instructors": 13,
                     "instrument": "clarinet",
@@ -2036,10 +2036,10 @@ ShallowWrapper {
                   "nodeType": "class",
                   "props": Object {
                     "className": "popular-instrument-card",
-                    "image": "nabi-home-popular-instruments-piano.png",
+                    "image": "nabi-cello.png",
                     "index": 8,
                     "instructors": 23,
-                    "instrument": "bass",
+                    "instrument": "cello",
                   },
                   "ref": null,
                   "rendered": null,
@@ -2089,7 +2089,7 @@ ShallowWrapper {
                       >
                         <WithStyles(InstrumentCard)
                           className=""
-                          image="nabi-home-popular-instruments-drums.jpg"
+                          image="nabi-singing.png"
                           index={2}
                           instructors={19}
                           instrument="singing"
@@ -2121,7 +2121,7 @@ ShallowWrapper {
                       >
                         <WithStyles(InstrumentCard)
                           className=""
-                          image="nabi-home-popular-instruments-violin.jpg"
+                          image="nabi-violin.png"
                           index={1}
                           instructors={18}
                           instrument="violin"
@@ -2132,7 +2132,7 @@ ShallowWrapper {
                       >
                         <WithStyles(InstrumentCard)
                           className=""
-                          image="nabi-home-popular-instruments-piano.png"
+                          image="nabi-saxophone.png"
                           index={2}
                           instructors={15}
                           instrument="saxophone"
@@ -2153,7 +2153,7 @@ ShallowWrapper {
                       >
                         <WithStyles(InstrumentCard)
                           className=""
-                          image="nabi-home-popular-instruments-piano.png"
+                          image="nabi-flute.png"
                           index={0}
                           instructors={10}
                           instrument="flute"
@@ -2164,7 +2164,7 @@ ShallowWrapper {
                       >
                         <WithStyles(InstrumentCard)
                           className=""
-                          image="nabi-home-popular-instruments-piano.png"
+                          image="nabi-clarinet.png"
                           index={1}
                           instructors={13}
                           instrument="clarinet"
@@ -2175,10 +2175,10 @@ ShallowWrapper {
                       >
                         <WithStyles(InstrumentCard)
                           className=""
-                          image="nabi-home-popular-instruments-piano.png"
+                          image="nabi-cello.png"
                           index={2}
                           instructors={23}
-                          instrument="bass"
+                          instrument="cello"
                         />
                       </WithStyles(GridListTile)>
                     </WithStyles(GridList)>
@@ -2225,7 +2225,7 @@ ShallowWrapper {
                       >
                         <WithStyles(InstrumentCard)
                           className=""
-                          image="nabi-home-popular-instruments-drums.jpg"
+                          image="nabi-singing.png"
                           index={2}
                           instructors={19}
                           instrument="singing"
@@ -2269,7 +2269,7 @@ ShallowWrapper {
                         >
                           <WithStyles(InstrumentCard)
                             className=""
-                            image="nabi-home-popular-instruments-drums.jpg"
+                            image="nabi-singing.png"
                             index={2}
                             instructors={19}
                             instrument="singing"
@@ -2352,7 +2352,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <WithStyles(InstrumentCard)
                             className=""
-                            image="nabi-home-popular-instruments-drums.jpg"
+                            image="nabi-singing.png"
                             index={2}
                             instructors={19}
                             instrument="singing"
@@ -2366,7 +2366,7 @@ ShallowWrapper {
                           "nodeType": "class",
                           "props": Object {
                             "className": "",
-                            "image": "nabi-home-popular-instruments-drums.jpg",
+                            "image": "nabi-singing.png",
                             "index": 2,
                             "instructors": 19,
                             "instrument": "singing",
@@ -2408,7 +2408,7 @@ ShallowWrapper {
                       >
                         <WithStyles(InstrumentCard)
                           className=""
-                          image="nabi-home-popular-instruments-violin.jpg"
+                          image="nabi-violin.png"
                           index={1}
                           instructors={18}
                           instrument="violin"
@@ -2419,7 +2419,7 @@ ShallowWrapper {
                       >
                         <WithStyles(InstrumentCard)
                           className=""
-                          image="nabi-home-popular-instruments-piano.png"
+                          image="nabi-saxophone.png"
                           index={2}
                           instructors={15}
                           instrument="saxophone"
@@ -2452,7 +2452,7 @@ ShallowWrapper {
                         >
                           <WithStyles(InstrumentCard)
                             className=""
-                            image="nabi-home-popular-instruments-violin.jpg"
+                            image="nabi-violin.png"
                             index={1}
                             instructors={18}
                             instrument="violin"
@@ -2463,7 +2463,7 @@ ShallowWrapper {
                         >
                           <WithStyles(InstrumentCard)
                             className=""
-                            image="nabi-home-popular-instruments-piano.png"
+                            image="nabi-saxophone.png"
                             index={2}
                             instructors={15}
                             instrument="saxophone"
@@ -2514,7 +2514,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <WithStyles(InstrumentCard)
                             className=""
-                            image="nabi-home-popular-instruments-violin.jpg"
+                            image="nabi-violin.png"
                             index={1}
                             instructors={18}
                             instrument="violin"
@@ -2528,7 +2528,7 @@ ShallowWrapper {
                           "nodeType": "class",
                           "props": Object {
                             "className": "",
-                            "image": "nabi-home-popular-instruments-violin.jpg",
+                            "image": "nabi-violin.png",
                             "index": 1,
                             "instructors": 18,
                             "instrument": "violin",
@@ -2546,7 +2546,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <WithStyles(InstrumentCard)
                             className=""
-                            image="nabi-home-popular-instruments-piano.png"
+                            image="nabi-saxophone.png"
                             index={2}
                             instructors={15}
                             instrument="saxophone"
@@ -2560,7 +2560,7 @@ ShallowWrapper {
                           "nodeType": "class",
                           "props": Object {
                             "className": "",
-                            "image": "nabi-home-popular-instruments-piano.png",
+                            "image": "nabi-saxophone.png",
                             "index": 2,
                             "instructors": 15,
                             "instrument": "saxophone",
@@ -2591,7 +2591,7 @@ ShallowWrapper {
                       >
                         <WithStyles(InstrumentCard)
                           className=""
-                          image="nabi-home-popular-instruments-piano.png"
+                          image="nabi-flute.png"
                           index={0}
                           instructors={10}
                           instrument="flute"
@@ -2602,7 +2602,7 @@ ShallowWrapper {
                       >
                         <WithStyles(InstrumentCard)
                           className=""
-                          image="nabi-home-popular-instruments-piano.png"
+                          image="nabi-clarinet.png"
                           index={1}
                           instructors={13}
                           instrument="clarinet"
@@ -2613,10 +2613,10 @@ ShallowWrapper {
                       >
                         <WithStyles(InstrumentCard)
                           className=""
-                          image="nabi-home-popular-instruments-piano.png"
+                          image="nabi-cello.png"
                           index={2}
                           instructors={23}
-                          instrument="bass"
+                          instrument="cello"
                         />
                       </WithStyles(GridListTile)>
                     </WithStyles(GridList)>,
@@ -2635,7 +2635,7 @@ ShallowWrapper {
                         >
                           <WithStyles(InstrumentCard)
                             className=""
-                            image="nabi-home-popular-instruments-piano.png"
+                            image="nabi-flute.png"
                             index={0}
                             instructors={10}
                             instrument="flute"
@@ -2646,7 +2646,7 @@ ShallowWrapper {
                         >
                           <WithStyles(InstrumentCard)
                             className=""
-                            image="nabi-home-popular-instruments-piano.png"
+                            image="nabi-clarinet.png"
                             index={1}
                             instructors={13}
                             instrument="clarinet"
@@ -2657,10 +2657,10 @@ ShallowWrapper {
                         >
                           <WithStyles(InstrumentCard)
                             className=""
-                            image="nabi-home-popular-instruments-piano.png"
+                            image="nabi-cello.png"
                             index={2}
                             instructors={23}
-                            instrument="bass"
+                            instrument="cello"
                           />
                         </WithStyles(GridListTile)>,
                       ],
@@ -2676,7 +2676,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <WithStyles(InstrumentCard)
                             className=""
-                            image="nabi-home-popular-instruments-piano.png"
+                            image="nabi-flute.png"
                             index={0}
                             instructors={10}
                             instrument="flute"
@@ -2690,7 +2690,7 @@ ShallowWrapper {
                           "nodeType": "class",
                           "props": Object {
                             "className": "",
-                            "image": "nabi-home-popular-instruments-piano.png",
+                            "image": "nabi-flute.png",
                             "index": 0,
                             "instructors": 10,
                             "instrument": "flute",
@@ -2708,7 +2708,7 @@ ShallowWrapper {
                         "props": Object {
                           "children": <WithStyles(InstrumentCard)
                             className=""
-                            image="nabi-home-popular-instruments-piano.png"
+                            image="nabi-clarinet.png"
                             index={1}
                             instructors={13}
                             instrument="clarinet"
@@ -2722,7 +2722,7 @@ ShallowWrapper {
                           "nodeType": "class",
                           "props": Object {
                             "className": "",
-                            "image": "nabi-home-popular-instruments-piano.png",
+                            "image": "nabi-clarinet.png",
                             "index": 1,
                             "instructors": 13,
                             "instrument": "clarinet",
@@ -2740,10 +2740,10 @@ ShallowWrapper {
                         "props": Object {
                           "children": <WithStyles(InstrumentCard)
                             className=""
-                            image="nabi-home-popular-instruments-piano.png"
+                            image="nabi-cello.png"
                             index={2}
                             instructors={23}
-                            instrument="bass"
+                            instrument="cello"
                           />,
                           "cols": 1,
                         },
@@ -2754,10 +2754,10 @@ ShallowWrapper {
                           "nodeType": "class",
                           "props": Object {
                             "className": "",
-                            "image": "nabi-home-popular-instruments-piano.png",
+                            "image": "nabi-cello.png",
                             "index": 2,
                             "instructors": 23,
-                            "instrument": "bass",
+                            "instrument": "cello",
                           },
                           "ref": null,
                           "rendered": null,
