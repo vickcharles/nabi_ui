@@ -34,13 +34,15 @@ ShallowWrapper {
             handleChange={[Function]}
             handleSubmit={[Function]}
             hearAboutUs=""
-            selectedRole="student"
+            selectedRole="instructor"
           />
         </div>,
         <AgeDisclaimer
           closeHandler={[Function]}
           isFormDialogOpen={false}
         />,
+        false,
+        false,
         false,
       ],
       "className": "nabi-container",
@@ -69,7 +71,7 @@ ShallowWrapper {
             handleChange={[Function]}
             handleSubmit={[Function]}
             hearAboutUs=""
-            selectedRole="student"
+            selectedRole="instructor"
           />,
           "className": "nabi-background-white nabi-section",
         },
@@ -84,7 +86,7 @@ ShallowWrapper {
             "handleChange": [Function],
             "handleSubmit": [Function],
             "hearAboutUs": "",
-            "selectedRole": "student",
+            "selectedRole": "instructor",
           },
           "ref": null,
           "rendered": null,
@@ -104,6 +106,8 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      false,
+      false,
       false,
     ],
     "type": "div",
@@ -127,13 +131,15 @@ ShallowWrapper {
               handleChange={[Function]}
               handleSubmit={[Function]}
               hearAboutUs=""
-              selectedRole="student"
+              selectedRole="instructor"
             />
           </div>,
           <AgeDisclaimer
             closeHandler={[Function]}
             isFormDialogOpen={false}
           />,
+          false,
+          false,
           false,
         ],
         "className": "nabi-container",
@@ -162,7 +168,7 @@ ShallowWrapper {
               handleChange={[Function]}
               handleSubmit={[Function]}
               hearAboutUs=""
-              selectedRole="student"
+              selectedRole="instructor"
             />,
             "className": "nabi-background-white nabi-section",
           },
@@ -177,7 +183,7 @@ ShallowWrapper {
               "handleChange": [Function],
               "handleSubmit": [Function],
               "hearAboutUs": "",
-              "selectedRole": "student",
+              "selectedRole": "instructor",
             },
             "ref": null,
             "rendered": null,
@@ -197,6 +203,8 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
+        false,
+        false,
         false,
       ],
       "type": "div",

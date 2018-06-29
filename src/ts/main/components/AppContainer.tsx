@@ -101,7 +101,7 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
     );
     const renderWelcomeStudent = (props: any) => (
       <Welcome
-        welcomeText="Now is time to send a request and connect with music teachers in your area"
+        welcomeText="Now is time to send a request and connect with music teachers in your area."
         actionText="REQUEST INSTRUCTOR"
         actionUrl="request-instructor"
       />
