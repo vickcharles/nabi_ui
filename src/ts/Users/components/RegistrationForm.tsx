@@ -167,7 +167,11 @@ const RegistrationForm: React.StatelessComponent<RegistrationFormProps> = props 
         required={true}
         error={props.fields.hearAboutUs.error && true}
       >
-        <InputLabel htmlFor="hearAboutUs">How did you hear about us?</InputLabel>
+        <InputLabel htmlFor="hearAboutUs">
+          {(props.fields.hearAboutUs.error && true) ? 
+              props.fields.hearAboutUs.error : 
+              'How did you hear about us?'
+          }</InputLabel>
         <Select
           fullWidth={true}
           input={<Input id="hearAboutUs" name="hearAboutUs" />}

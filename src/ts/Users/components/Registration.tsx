@@ -6,7 +6,11 @@ import { UserState, Role } from '../model';
 import { InstructorType } from '../../Instructors/model';
 import { PageTitle } from '../../main';
 import { RedirectState } from '../../main/model';
-
+import { fields, 
+         validators, 
+         validateFields, 
+         RegistrationValidatorState, 
+         ValidatorsInterface } from './RegistrationValidator';
 /**
  * Props for registration
  * @interface RegistrationProps
@@ -21,29 +25,6 @@ interface AgeDisclaimerState {
   showAgeDisclaimer: boolean;
 }
 
-/**
- * FieldApi to simulate touched and error
- *
- * @interface FieldApi
- */
-interface FieldApi {
-  touched: boolean;
-  error: string|undefined;
-}
-
-interface ValidatorsInterface {
-  fieldName: string;
-  validators: Array<(value: string, touched: boolean) => string>;
-}
-
-/**
- * State Validator
- *
- * @interface RegistrationValidatorState
- */
-interface RegistrationValidatorState {
-  fields: {[key: string]: FieldApi};
-}
 /**
  * State for Registration
  * @interface RegistrationState
@@ -76,125 +57,11 @@ private validators: Array<ValidatorsInterface>;
       fireRedirect: false,
       displayName: '',
       showAgeDisclaimer: false,
-      fields: 
-        {
-          firstName: {touched: false, error: undefined },
-          lastName: { touched: false, error: undefined },
-          zipCode: { touched: false, error: undefined },
-          email: { touched: false, error: undefined },
-          password: { touched: false, error: undefined },
-          hearAboutUs: { touched: false, error: undefined }
-        }
+      fields: fields 
+        
     };
 
-    this.validators = [
-      {
-        fieldName: 'firstName',
-        validators: [
-          (value: string, touched: boolean) => {
-            return touched && !(/^[A-Za-z]{2,}$/).test( value ) ?
-              'Firstname must have at least two character and only letters! '
-            :
-              ''
-            ;
-          },
-          (value: string, touched: boolean) => {
-            return (/^\s*$/).test(value) ?
-              'Firstname is a mandatory field! '
-              :
-              ''
-              ;
-          }
-        ]
-      },
-      {
-        fieldName: 'lastName' ,
-        validators: [
-          (value: string, touched: boolean) => {
-            return touched && !(/^[A-Za-z]{2,}$/).test(value) ?
-              'Lastname must have at least two character and only letters! '
-              :
-              ''
-              ;
-          },
-          (value: string, touched: boolean) => {
-            return (/^\s*$/).test(value) ?
-              'Lastname is a mandatory field!'
-              :
-              ''
-              ;
-          }
-        ]
-      },
-      { fieldName: 'email',
-        validators: [
-          (value: string, touched: boolean) => {
-            // tslint:disable-next-line
-            return touched && !(/^([a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]{1,64}@([a-zA-Z0-9-]+.[a-zA-Z0-9-]{2,}){1,255}){1,320}$/).test(value) ?
-              'Email value is not valid! '
-              :
-              ''
-              ;
-          },
-          (value: string, touched: boolean) => {
-            return (/^\s*$/).test(value) ?
-              'Email is a mandatory field!'
-              :
-              ''
-              ;
-          }
-        ]
-      },
-      { fieldName: 'zipCode',
-        validators: [
-          (value: string, touched: boolean) => {
-            return touched && !(/^\ d{ 5} (-\ d{ 4} )?$/).test(value) ? 
-              'Must be a valid Zip Code' 
-              :
-              ''
-              ;
-          },
-          (value: string, touched: boolean) => {
-            return (/^\s*$/).test(value) ?
-              'Zip Code is a mandatory field!'
-              :
-              ''
-              ;
-          }
-        ]
-      },
-      {
-        fieldName: 'password',
-        validators: [
-          (value: string, touched: boolean) => {
-            return touched && !(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,}$/).test(value) ?
-              'Password must have a least 5 character one letter, one number'
-              :
-              ''
-              ;
-          },
-          (value: string, touched: boolean) => {
-            return (/^\s*$/).test(value) ?
-              'Password is a mandatory field!'
-              :
-              ''
-              ;
-          }
-        ]
-      },
-      {
-        fieldName: 'hearAboutUs',
-        validators: [
-          (value: string, touched: boolean) => {
-            return (/^\s*$/).test(value) ?
-              'Must select how you heard about us!'
-              :
-              ''
-              ;
-          }
-        ]
-      }
-    ];
+    this.validators = validators;
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -237,29 +104,13 @@ private validators: Array<ValidatorsInterface>;
     }
 
     // Create validations 
-    let newValidateFields = Object.assign({}, this.state.fields);
-    let hasErrors: boolean = false;
-    this.validators.map(
-      (valField) => {
-        if ( this.state.fields[valField.fieldName] ) {
-            let errors: string = valField.validators.map(
-              (fun) => {
-                let value = this.state[valField.fieldName];
-                return fun(value, newValidateFields[valField.fieldName].touched );
-              }
-            ).join(' ');
-            if ( !((/^\s*$/).test(errors) && true) ) {
-              newValidateFields[valField.fieldName].error = errors;
-              hasErrors = true;
-            } else {
-              newValidateFields[valField.fieldName].error = '';
-            }
-        }
-      }
-    );
+    // let newValidateFields = {} ; //Object.assign({}, this.state.fields);
+    // let hasErrors: boolean = false;
 
-    if ( hasErrors && true) {
-      this.setState({fields: newValidateFields});
+    let temp = validateFields( this.state, this.validators);
+    
+    if ( temp.hasErrors && true) {
+      this.setState({fields: temp.newValidateFields});
     } else {
       this.setState({ id: this.generateId() });
 
@@ -269,7 +120,6 @@ private validators: Array<ValidatorsInterface>;
         });
       }
     }
-    
   }
   
   public createUser(): void {
