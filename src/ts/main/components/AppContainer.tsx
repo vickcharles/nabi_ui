@@ -6,6 +6,7 @@ import { Route, withRouter, Switch } from 'react-router-dom';
 import Header from './Header';
 import Welcome from './Welcome';
 import Homepage from './Homepage/Homepage';
+import  { Request } from '../../Students/components/Request';
 import { createUser, changeAvatar, Registration, fetchZipCodeAddress } from '../../Users/';
 import { UserState, Role } from '../../Users/model';
 import { createInstructor, ProfileBuilder } from '../../Instructors';
@@ -109,6 +110,9 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
         actionUrl="request-instructor"
       />
     );
+    const renderRequestInstructor = (props: any) => (
+        <Request />
+    );
 
     /**
      * Renders ProfileBuilder component
@@ -144,6 +148,11 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
             exact={true}
             path="/registration-student"
             render={renderRegistrationStudent}
+          />
+          <Route
+            exact={true}
+            path="/request-instructor"
+            render={renderRequestInstructor}
           />
           <Route
             exact={true}

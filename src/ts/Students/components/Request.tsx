@@ -7,8 +7,10 @@ export class Request extends React.Component {
   public render (): JSX.Element {
     return (
       <div className="nabi-container">
-        <PageTitle pageTitle="REGISTRATION" />
+      <div className="nabi-background-white nabi-section">
+        <PageTitle pageTitle="REQUEST INSTRUCTOR" />
         <RequestForm />
+      </div>
       </div>
     );
   }
