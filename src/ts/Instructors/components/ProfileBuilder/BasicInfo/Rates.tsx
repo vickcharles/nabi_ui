@@ -39,12 +39,11 @@ const Rates: React.StatelessComponent<RatesProps> = props => {
     return (
       <ListItem key={i} className="nabi-margin-bottom-small">
         <ListItemText
-          primary={`- ${list.listText} lesson`}
+          primary={`- ${list.listText}`}
         />
         <ListItemSecondaryAction>
           <MoneyIcon color="primary"/>
           <TextField
-            fullWidth={true}
             id={list.name}
             name={list.name}
             onChange={props.handleChange}
@@ -58,11 +57,11 @@ const Rates: React.StatelessComponent<RatesProps> = props => {
       </ListItem>
     );
   });
-  
+
   return (
     <div>
      <Typography className="nabi-margin-top-small" variant="body2">
-        Rates
+        Rates for lessons
       </Typography>
       <div className="rates">
         {ratesListItems}

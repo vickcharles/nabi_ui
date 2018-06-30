@@ -31,10 +31,6 @@ input {
   background: transparent;
 }
 
-input {
-  background: transparent;
-}
-
 /*Freeleson section*/
 .free-lesson-section {
 	text-align: center !important;
@@ -169,6 +165,10 @@ input {
 	margin-top: 40px !important;
 }
 
+.nabi-margin-top-xlarge {
+	margin-top: 60px !important;
+}
+
 .nabi-margin-right-xsmall {
 	margin-right: 10px !important;
 }
@@ -199,6 +199,10 @@ input {
 
 .nabi-margin-bottom-large {
 	margin-bottom: 40px !important;
+}
+
+.nabi-margin-bottom-xlarge {
+	margin-bottom: 60px !important;
 }
 
 .nabi-margin-bottom-zero {
@@ -270,6 +274,10 @@ input {
 	padding-right: 40px !important;
 }
 
+.nabi-padding-bottom-zero {
+	padding-bottom: 0px !important;
+}
+
 .nabi-padding-bottom-xsmall {
 	padding-bottom: 10px !important;
 }
@@ -286,8 +294,8 @@ input {
 	padding-bottom: 40px !important;
 }
 
-.nabi-padding-bottom-zero {
-	padding-bottom: 0px !important;
+.nabi-padding-left-zero {
+	padding-left: 0px !important;
 }
 
 .nabi-padding-left-xsmall {
@@ -392,6 +400,7 @@ input {
 }
 
 /*Homepage*/
+/* Banner */
 #banner {
 	height: 400px !important;
 	width: 100%;
@@ -415,6 +424,41 @@ input {
 	font-size: 11px !important;
 }
 
+/* Popular instruments card */
+.nabi-popular-instruments {
+	position: relative;
+  height: 326px;
+}
+
+.popular-instrument-card-group {
+	width: 100%;
+	position: absolute;
+	opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.popular-instrument-card {
+	background: #fff;
+  width: 100% !important;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+	transition: opacity 1s;
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12)
+}
+
+.nabi-showing {
+	opacity: 1;
+	z-index: 2;
+}
+
 /*Page title*/
 #nabi-page-title {
 	font-size: 18px !important;
@@ -434,6 +478,26 @@ input {
 	padding: 4px 6px;
 }
 
+/*Date Picker*/
+.react-datepicker__input-container {
+	border-radius:  5px;
+	border: 2px solid #ebeef1 !important;
+	margin: 10px 0px 0px;
+	padding: 14px 18px;
+	background: #f3f6f9;
+}
+
+.react-datepicker__input-container input {
+	border: none;
+	color: #717a8a;
+  padding: 0;
+	font-size: 14px;
+}
+
+.react-datepicker-popper {
+	z-index: 11;
+}
+
 /*Instruments fields*/
 .nabi-instruments-select {
 	width: 100%;
@@ -448,7 +512,7 @@ input {
 	width: 70px;
 }
 
-/*Grid component*/
+/*Availability*/
 .nabi-grid-background-nabi div div {
 	background: #06c3e1 !important;
 }
@@ -456,6 +520,11 @@ input {
 /*Education*/
 .graduation-year {
   width: 190px !important;
+}
+
+/*Qualifications*/
+.qualifications label {
+	display: flex;
 }
 
 /* iPhones(landscape) ----------- */
@@ -494,20 +563,17 @@ input {
 	/*HEADER*/
 	.nabi-responsive-button {
 		padding: 5px 15px !important;
-		font-size: 13px !important;
+		font-size: 11px !important;
+	}
+	.nabi-popular-instruments {
+		width: 328px;
+		margin: 0 auto;
 	}
 }
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-width: 768px) {
 	/****CUSTOM ELEMENTS****/
-	/*Responsive Hide*/
-	.hide-on-mobile {
-		display: block !important;
-	}
-	.hide-on-desktop {
-		display: none !important;
-	}
 	/*Container*/
 	.nabi-container {
 		margin: 0 auto;
@@ -559,7 +625,7 @@ input {
 		margin-right: 30px !important;
 		padding: 15px 38px !important;
 		font-size: 14px !important
-	}
+  }
 	/*header*/
 	#menu {
 		top: 37% !important;
@@ -570,13 +636,16 @@ input {
 	.nabi-header-line {
 		border: 0px;
 	}
+	.header-divider {
+		display: none;
+	}
 	.nabi-responsive-button {
 		padding: 12px 25px !important;
 		font-size: 14px !important;
 	}
-	header .container {
-		padding-bottom: 20px !important;
-		padding-top: 20px;
+	/*Rates*/
+	.rates {
+		width: 247px;
 	}
 }
 
@@ -593,7 +662,7 @@ input {
 	.hide-on-desktop {
 		display: none !important;
 	}
-	/*Page title*/
+	/*Page Title*/
 	#nabi-page-title {
 		font-size: 25px !important;
 	}
@@ -629,10 +698,6 @@ input {
 	.selected-instruments {
 		width: 40%
 	}
-	/*Rates*/
-	.rates {
-		width: 50%
-	}
 	/*Availability*/
 	.nabi-availability-legend-wrapper {
 		width: 50%;
@@ -641,7 +706,12 @@ input {
   .nabi-education,
   .selected-education {
     width: 600px !important;
-  }
+	}
+	/*Popular instruments*/
+	.nabi-popular-instruments {
+    width: 100%;
+    margin: 0 auto;
+	}
 	/*Freeleson section*/
 	.free-lesson-section {
 		text-align: left !important;

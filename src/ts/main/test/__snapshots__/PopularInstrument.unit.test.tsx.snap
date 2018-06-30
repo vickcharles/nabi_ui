@@ -1,0 +1,2791 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PopularInstruments Renders the component 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PopularInstruments />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <PageTitle
+          pageTitle="Popular Instruments"
+        />,
+        <div
+          className="nabi-container"
+        >
+          <div
+            className="hide-on-desktop nabi-popular-instruments"
+          >
+            <WithStyles(InstrumentCard)
+              className="popular-instrument-card"
+              image="nabi-home-popular-instruments-piano.png"
+              index={0}
+              instructors={27}
+              instrument="piano"
+            />
+            <WithStyles(InstrumentCard)
+              className="popular-instrument-card"
+              image="nabi-home-popular-instruments-guitar.png"
+              index={1}
+              instructors={24}
+              instrument="guitar"
+            />
+            <WithStyles(InstrumentCard)
+              className="popular-instrument-card"
+              image="nabi-singing.png"
+              index={2}
+              instructors={19}
+              instrument="singing"
+            />
+            <WithStyles(InstrumentCard)
+              className="popular-instrument-card"
+              image="nabi-home-popular-instruments-drums.jpg"
+              index={3}
+              instructors={19}
+              instrument="drums"
+            />
+            <WithStyles(InstrumentCard)
+              className="popular-instrument-card"
+              image="nabi-violin.png"
+              index={4}
+              instructors={18}
+              instrument="violin"
+            />
+            <WithStyles(InstrumentCard)
+              className="popular-instrument-card"
+              image="nabi-saxophone.png"
+              index={5}
+              instructors={15}
+              instrument="saxophone"
+            />
+            <WithStyles(InstrumentCard)
+              className="popular-instrument-card"
+              image="nabi-flute.png"
+              index={6}
+              instructors={10}
+              instrument="flute"
+            />
+            <WithStyles(InstrumentCard)
+              className="popular-instrument-card"
+              image="nabi-clarinet.png"
+              index={7}
+              instructors={13}
+              instrument="clarinet"
+            />
+            <WithStyles(InstrumentCard)
+              className="popular-instrument-card"
+              image="nabi-cello.png"
+              index={8}
+              instructors={23}
+              instrument="cello"
+            />
+          </div>
+          <div
+            className="hide-on-mobile nabi-popular-instruments"
+          >
+            <div
+              className="popular-instrument-card-group nabi-showing"
+            >
+              <WithStyles(GridList)
+                cellHeight={330}
+                className=""
+                cols={3}
+              >
+                <WithStyles(GridListTile)
+                  cols={1}
+                >
+                  <WithStyles(InstrumentCard)
+                    className=""
+                    image="nabi-home-popular-instruments-piano.png"
+                    index={0}
+                    instructors={27}
+                    instrument="piano"
+                  />
+                </WithStyles(GridListTile)>
+                <WithStyles(GridListTile)
+                  cols={1}
+                >
+                  <WithStyles(InstrumentCard)
+                    className=""
+                    image="nabi-home-popular-instruments-guitar.png"
+                    index={1}
+                    instructors={24}
+                    instrument="guitar"
+                  />
+                </WithStyles(GridListTile)>
+                <WithStyles(GridListTile)
+                  cols={1}
+                >
+                  <WithStyles(InstrumentCard)
+                    className=""
+                    image="nabi-singing.png"
+                    index={2}
+                    instructors={19}
+                    instrument="singing"
+                  />
+                </WithStyles(GridListTile)>
+              </WithStyles(GridList)>
+            </div>
+            <div
+              className="popular-instrument-card-group"
+            >
+              <WithStyles(GridList)
+                cellHeight={330}
+                className=""
+                cols={3}
+              >
+                <WithStyles(GridListTile)
+                  cols={1}
+                >
+                  <WithStyles(InstrumentCard)
+                    className=""
+                    image="nabi-home-popular-instruments-drums.jpg"
+                    index={0}
+                    instructors={19}
+                    instrument="drums"
+                  />
+                </WithStyles(GridListTile)>
+                <WithStyles(GridListTile)
+                  cols={1}
+                >
+                  <WithStyles(InstrumentCard)
+                    className=""
+                    image="nabi-violin.png"
+                    index={1}
+                    instructors={18}
+                    instrument="violin"
+                  />
+                </WithStyles(GridListTile)>
+                <WithStyles(GridListTile)
+                  cols={1}
+                >
+                  <WithStyles(InstrumentCard)
+                    className=""
+                    image="nabi-saxophone.png"
+                    index={2}
+                    instructors={15}
+                    instrument="saxophone"
+                  />
+                </WithStyles(GridListTile)>
+              </WithStyles(GridList)>
+            </div>
+            <div
+              className="popular-instrument-card-group"
+            >
+              <WithStyles(GridList)
+                cellHeight={330}
+                className=""
+                cols={3}
+              >
+                <WithStyles(GridListTile)
+                  cols={1}
+                >
+                  <WithStyles(InstrumentCard)
+                    className=""
+                    image="nabi-flute.png"
+                    index={0}
+                    instructors={10}
+                    instrument="flute"
+                  />
+                </WithStyles(GridListTile)>
+                <WithStyles(GridListTile)
+                  cols={1}
+                >
+                  <WithStyles(InstrumentCard)
+                    className=""
+                    image="nabi-clarinet.png"
+                    index={1}
+                    instructors={13}
+                    instrument="clarinet"
+                  />
+                </WithStyles(GridListTile)>
+                <WithStyles(GridListTile)
+                  cols={1}
+                >
+                  <WithStyles(InstrumentCard)
+                    className=""
+                    image="nabi-cello.png"
+                    index={2}
+                    instructors={23}
+                    instrument="cello"
+                  />
+                </WithStyles(GridListTile)>
+              </WithStyles(GridList)>
+            </div>
+          </div>
+        </div>,
+      ],
+      "className": "nabi-margin-top-xlarge nabi-margin-bottom-medium nabi-background-color",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "pageTitle": "Popular Instruments",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="hide-on-desktop nabi-popular-instruments"
+            >
+              <WithStyles(InstrumentCard)
+                className="popular-instrument-card"
+                image="nabi-home-popular-instruments-piano.png"
+                index={0}
+                instructors={27}
+                instrument="piano"
+              />
+              <WithStyles(InstrumentCard)
+                className="popular-instrument-card"
+                image="nabi-home-popular-instruments-guitar.png"
+                index={1}
+                instructors={24}
+                instrument="guitar"
+              />
+              <WithStyles(InstrumentCard)
+                className="popular-instrument-card"
+                image="nabi-singing.png"
+                index={2}
+                instructors={19}
+                instrument="singing"
+              />
+              <WithStyles(InstrumentCard)
+                className="popular-instrument-card"
+                image="nabi-home-popular-instruments-drums.jpg"
+                index={3}
+                instructors={19}
+                instrument="drums"
+              />
+              <WithStyles(InstrumentCard)
+                className="popular-instrument-card"
+                image="nabi-violin.png"
+                index={4}
+                instructors={18}
+                instrument="violin"
+              />
+              <WithStyles(InstrumentCard)
+                className="popular-instrument-card"
+                image="nabi-saxophone.png"
+                index={5}
+                instructors={15}
+                instrument="saxophone"
+              />
+              <WithStyles(InstrumentCard)
+                className="popular-instrument-card"
+                image="nabi-flute.png"
+                index={6}
+                instructors={10}
+                instrument="flute"
+              />
+              <WithStyles(InstrumentCard)
+                className="popular-instrument-card"
+                image="nabi-clarinet.png"
+                index={7}
+                instructors={13}
+                instrument="clarinet"
+              />
+              <WithStyles(InstrumentCard)
+                className="popular-instrument-card"
+                image="nabi-cello.png"
+                index={8}
+                instructors={23}
+                instrument="cello"
+              />
+            </div>,
+            <div
+              className="hide-on-mobile nabi-popular-instruments"
+            >
+              <div
+                className="popular-instrument-card-group nabi-showing"
+              >
+                <WithStyles(GridList)
+                  cellHeight={330}
+                  className=""
+                  cols={3}
+                >
+                  <WithStyles(GridListTile)
+                    cols={1}
+                  >
+                    <WithStyles(InstrumentCard)
+                      className=""
+                      image="nabi-home-popular-instruments-piano.png"
+                      index={0}
+                      instructors={27}
+                      instrument="piano"
+                    />
+                  </WithStyles(GridListTile)>
+                  <WithStyles(GridListTile)
+                    cols={1}
+                  >
+                    <WithStyles(InstrumentCard)
+                      className=""
+                      image="nabi-home-popular-instruments-guitar.png"
+                      index={1}
+                      instructors={24}
+                      instrument="guitar"
+                    />
+                  </WithStyles(GridListTile)>
+                  <WithStyles(GridListTile)
+                    cols={1}
+                  >
+                    <WithStyles(InstrumentCard)
+                      className=""
+                      image="nabi-singing.png"
+                      index={2}
+                      instructors={19}
+                      instrument="singing"
+                    />
+                  </WithStyles(GridListTile)>
+                </WithStyles(GridList)>
+              </div>
+              <div
+                className="popular-instrument-card-group"
+              >
+                <WithStyles(GridList)
+                  cellHeight={330}
+                  className=""
+                  cols={3}
+                >
+                  <WithStyles(GridListTile)
+                    cols={1}
+                  >
+                    <WithStyles(InstrumentCard)
+                      className=""
+                      image="nabi-home-popular-instruments-drums.jpg"
+                      index={0}
+                      instructors={19}
+                      instrument="drums"
+                    />
+                  </WithStyles(GridListTile)>
+                  <WithStyles(GridListTile)
+                    cols={1}
+                  >
+                    <WithStyles(InstrumentCard)
+                      className=""
+                      image="nabi-violin.png"
+                      index={1}
+                      instructors={18}
+                      instrument="violin"
+                    />
+                  </WithStyles(GridListTile)>
+                  <WithStyles(GridListTile)
+                    cols={1}
+                  >
+                    <WithStyles(InstrumentCard)
+                      className=""
+                      image="nabi-saxophone.png"
+                      index={2}
+                      instructors={15}
+                      instrument="saxophone"
+                    />
+                  </WithStyles(GridListTile)>
+                </WithStyles(GridList)>
+              </div>
+              <div
+                className="popular-instrument-card-group"
+              >
+                <WithStyles(GridList)
+                  cellHeight={330}
+                  className=""
+                  cols={3}
+                >
+                  <WithStyles(GridListTile)
+                    cols={1}
+                  >
+                    <WithStyles(InstrumentCard)
+                      className=""
+                      image="nabi-flute.png"
+                      index={0}
+                      instructors={10}
+                      instrument="flute"
+                    />
+                  </WithStyles(GridListTile)>
+                  <WithStyles(GridListTile)
+                    cols={1}
+                  >
+                    <WithStyles(InstrumentCard)
+                      className=""
+                      image="nabi-clarinet.png"
+                      index={1}
+                      instructors={13}
+                      instrument="clarinet"
+                    />
+                  </WithStyles(GridListTile)>
+                  <WithStyles(GridListTile)
+                    cols={1}
+                  >
+                    <WithStyles(InstrumentCard)
+                      className=""
+                      image="nabi-cello.png"
+                      index={2}
+                      instructors={23}
+                      instrument="cello"
+                    />
+                  </WithStyles(GridListTile)>
+                </WithStyles(GridList)>
+              </div>
+            </div>,
+          ],
+          "className": "nabi-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <WithStyles(InstrumentCard)
+                  className="popular-instrument-card"
+                  image="nabi-home-popular-instruments-piano.png"
+                  index={0}
+                  instructors={27}
+                  instrument="piano"
+                />,
+                <WithStyles(InstrumentCard)
+                  className="popular-instrument-card"
+                  image="nabi-home-popular-instruments-guitar.png"
+                  index={1}
+                  instructors={24}
+                  instrument="guitar"
+                />,
+                <WithStyles(InstrumentCard)
+                  className="popular-instrument-card"
+                  image="nabi-singing.png"
+                  index={2}
+                  instructors={19}
+                  instrument="singing"
+                />,
+                <WithStyles(InstrumentCard)
+                  className="popular-instrument-card"
+                  image="nabi-home-popular-instruments-drums.jpg"
+                  index={3}
+                  instructors={19}
+                  instrument="drums"
+                />,
+                <WithStyles(InstrumentCard)
+                  className="popular-instrument-card"
+                  image="nabi-violin.png"
+                  index={4}
+                  instructors={18}
+                  instrument="violin"
+                />,
+                <WithStyles(InstrumentCard)
+                  className="popular-instrument-card"
+                  image="nabi-saxophone.png"
+                  index={5}
+                  instructors={15}
+                  instrument="saxophone"
+                />,
+                <WithStyles(InstrumentCard)
+                  className="popular-instrument-card"
+                  image="nabi-flute.png"
+                  index={6}
+                  instructors={10}
+                  instrument="flute"
+                />,
+                <WithStyles(InstrumentCard)
+                  className="popular-instrument-card"
+                  image="nabi-clarinet.png"
+                  index={7}
+                  instructors={13}
+                  instrument="clarinet"
+                />,
+                <WithStyles(InstrumentCard)
+                  className="popular-instrument-card"
+                  image="nabi-cello.png"
+                  index={8}
+                  instructors={23}
+                  instrument="cello"
+                />,
+              ],
+              "className": "hide-on-desktop nabi-popular-instruments",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "class",
+                "props": Object {
+                  "className": "popular-instrument-card",
+                  "image": "nabi-home-popular-instruments-piano.png",
+                  "index": 0,
+                  "instructors": 27,
+                  "instrument": "piano",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "1",
+                "nodeType": "class",
+                "props": Object {
+                  "className": "popular-instrument-card",
+                  "image": "nabi-home-popular-instruments-guitar.png",
+                  "index": 1,
+                  "instructors": 24,
+                  "instrument": "guitar",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "2",
+                "nodeType": "class",
+                "props": Object {
+                  "className": "popular-instrument-card",
+                  "image": "nabi-singing.png",
+                  "index": 2,
+                  "instructors": 19,
+                  "instrument": "singing",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "3",
+                "nodeType": "class",
+                "props": Object {
+                  "className": "popular-instrument-card",
+                  "image": "nabi-home-popular-instruments-drums.jpg",
+                  "index": 3,
+                  "instructors": 19,
+                  "instrument": "drums",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "4",
+                "nodeType": "class",
+                "props": Object {
+                  "className": "popular-instrument-card",
+                  "image": "nabi-violin.png",
+                  "index": 4,
+                  "instructors": 18,
+                  "instrument": "violin",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "5",
+                "nodeType": "class",
+                "props": Object {
+                  "className": "popular-instrument-card",
+                  "image": "nabi-saxophone.png",
+                  "index": 5,
+                  "instructors": 15,
+                  "instrument": "saxophone",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "6",
+                "nodeType": "class",
+                "props": Object {
+                  "className": "popular-instrument-card",
+                  "image": "nabi-flute.png",
+                  "index": 6,
+                  "instructors": 10,
+                  "instrument": "flute",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "7",
+                "nodeType": "class",
+                "props": Object {
+                  "className": "popular-instrument-card",
+                  "image": "nabi-clarinet.png",
+                  "index": 7,
+                  "instructors": 13,
+                  "instrument": "clarinet",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "8",
+                "nodeType": "class",
+                "props": Object {
+                  "className": "popular-instrument-card",
+                  "image": "nabi-cello.png",
+                  "index": 8,
+                  "instructors": 23,
+                  "instrument": "cello",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="popular-instrument-card-group nabi-showing"
+                >
+                  <WithStyles(GridList)
+                    cellHeight={330}
+                    className=""
+                    cols={3}
+                  >
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-home-popular-instruments-piano.png"
+                        index={0}
+                        instructors={27}
+                        instrument="piano"
+                      />
+                    </WithStyles(GridListTile)>
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-home-popular-instruments-guitar.png"
+                        index={1}
+                        instructors={24}
+                        instrument="guitar"
+                      />
+                    </WithStyles(GridListTile)>
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-singing.png"
+                        index={2}
+                        instructors={19}
+                        instrument="singing"
+                      />
+                    </WithStyles(GridListTile)>
+                  </WithStyles(GridList)>
+                </div>,
+                <div
+                  className="popular-instrument-card-group"
+                >
+                  <WithStyles(GridList)
+                    cellHeight={330}
+                    className=""
+                    cols={3}
+                  >
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-home-popular-instruments-drums.jpg"
+                        index={0}
+                        instructors={19}
+                        instrument="drums"
+                      />
+                    </WithStyles(GridListTile)>
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-violin.png"
+                        index={1}
+                        instructors={18}
+                        instrument="violin"
+                      />
+                    </WithStyles(GridListTile)>
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-saxophone.png"
+                        index={2}
+                        instructors={15}
+                        instrument="saxophone"
+                      />
+                    </WithStyles(GridListTile)>
+                  </WithStyles(GridList)>
+                </div>,
+                <div
+                  className="popular-instrument-card-group"
+                >
+                  <WithStyles(GridList)
+                    cellHeight={330}
+                    className=""
+                    cols={3}
+                  >
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-flute.png"
+                        index={0}
+                        instructors={10}
+                        instrument="flute"
+                      />
+                    </WithStyles(GridListTile)>
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-clarinet.png"
+                        index={1}
+                        instructors={13}
+                        instrument="clarinet"
+                      />
+                    </WithStyles(GridListTile)>
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-cello.png"
+                        index={2}
+                        instructors={23}
+                        instrument="cello"
+                      />
+                    </WithStyles(GridListTile)>
+                  </WithStyles(GridList)>
+                </div>,
+              ],
+              "className": "hide-on-mobile nabi-popular-instruments",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <WithStyles(GridList)
+                    cellHeight={330}
+                    className=""
+                    cols={3}
+                  >
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-home-popular-instruments-piano.png"
+                        index={0}
+                        instructors={27}
+                        instrument="piano"
+                      />
+                    </WithStyles(GridListTile)>
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-home-popular-instruments-guitar.png"
+                        index={1}
+                        instructors={24}
+                        instrument="guitar"
+                      />
+                    </WithStyles(GridListTile)>
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-singing.png"
+                        index={2}
+                        instructors={19}
+                        instrument="singing"
+                      />
+                    </WithStyles(GridListTile)>
+                  </WithStyles(GridList)>,
+                  "className": "popular-instrument-card-group nabi-showing",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "cellHeight": 330,
+                    "children": Array [
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-home-popular-instruments-piano.png"
+                          index={0}
+                          instructors={27}
+                          instrument="piano"
+                        />
+                      </WithStyles(GridListTile)>,
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-home-popular-instruments-guitar.png"
+                          index={1}
+                          instructors={24}
+                          instrument="guitar"
+                        />
+                      </WithStyles(GridListTile)>,
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-singing.png"
+                          index={2}
+                          instructors={19}
+                          instrument="singing"
+                        />
+                      </WithStyles(GridListTile)>,
+                    ],
+                    "className": "",
+                    "cols": 3,
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": "0",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-home-popular-instruments-piano.png"
+                          index={0}
+                          instructors={27}
+                          instrument="piano"
+                        />,
+                        "cols": 1,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": "0",
+                        "nodeType": "class",
+                        "props": Object {
+                          "className": "",
+                          "image": "nabi-home-popular-instruments-piano.png",
+                          "index": 0,
+                          "instructors": 27,
+                          "instrument": "piano",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "1",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-home-popular-instruments-guitar.png"
+                          index={1}
+                          instructors={24}
+                          instrument="guitar"
+                        />,
+                        "cols": 1,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": "1",
+                        "nodeType": "class",
+                        "props": Object {
+                          "className": "",
+                          "image": "nabi-home-popular-instruments-guitar.png",
+                          "index": 1,
+                          "instructors": 24,
+                          "instrument": "guitar",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "2",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-singing.png"
+                          index={2}
+                          instructors={19}
+                          instrument="singing"
+                        />,
+                        "cols": 1,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": "2",
+                        "nodeType": "class",
+                        "props": Object {
+                          "className": "",
+                          "image": "nabi-singing.png",
+                          "index": 2,
+                          "instructors": 19,
+                          "instrument": "singing",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <WithStyles(GridList)
+                    cellHeight={330}
+                    className=""
+                    cols={3}
+                  >
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-home-popular-instruments-drums.jpg"
+                        index={0}
+                        instructors={19}
+                        instrument="drums"
+                      />
+                    </WithStyles(GridListTile)>
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-violin.png"
+                        index={1}
+                        instructors={18}
+                        instrument="violin"
+                      />
+                    </WithStyles(GridListTile)>
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-saxophone.png"
+                        index={2}
+                        instructors={15}
+                        instrument="saxophone"
+                      />
+                    </WithStyles(GridListTile)>
+                  </WithStyles(GridList)>,
+                  "className": "popular-instrument-card-group",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "cellHeight": 330,
+                    "children": Array [
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-home-popular-instruments-drums.jpg"
+                          index={0}
+                          instructors={19}
+                          instrument="drums"
+                        />
+                      </WithStyles(GridListTile)>,
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-violin.png"
+                          index={1}
+                          instructors={18}
+                          instrument="violin"
+                        />
+                      </WithStyles(GridListTile)>,
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-saxophone.png"
+                          index={2}
+                          instructors={15}
+                          instrument="saxophone"
+                        />
+                      </WithStyles(GridListTile)>,
+                    ],
+                    "className": "",
+                    "cols": 3,
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": "0",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-home-popular-instruments-drums.jpg"
+                          index={0}
+                          instructors={19}
+                          instrument="drums"
+                        />,
+                        "cols": 1,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": "0",
+                        "nodeType": "class",
+                        "props": Object {
+                          "className": "",
+                          "image": "nabi-home-popular-instruments-drums.jpg",
+                          "index": 0,
+                          "instructors": 19,
+                          "instrument": "drums",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "1",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-violin.png"
+                          index={1}
+                          instructors={18}
+                          instrument="violin"
+                        />,
+                        "cols": 1,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": "1",
+                        "nodeType": "class",
+                        "props": Object {
+                          "className": "",
+                          "image": "nabi-violin.png",
+                          "index": 1,
+                          "instructors": 18,
+                          "instrument": "violin",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "2",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-saxophone.png"
+                          index={2}
+                          instructors={15}
+                          instrument="saxophone"
+                        />,
+                        "cols": 1,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": "2",
+                        "nodeType": "class",
+                        "props": Object {
+                          "className": "",
+                          "image": "nabi-saxophone.png",
+                          "index": 2,
+                          "instructors": 15,
+                          "instrument": "saxophone",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <WithStyles(GridList)
+                    cellHeight={330}
+                    className=""
+                    cols={3}
+                  >
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-flute.png"
+                        index={0}
+                        instructors={10}
+                        instrument="flute"
+                      />
+                    </WithStyles(GridListTile)>
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-clarinet.png"
+                        index={1}
+                        instructors={13}
+                        instrument="clarinet"
+                      />
+                    </WithStyles(GridListTile)>
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-cello.png"
+                        index={2}
+                        instructors={23}
+                        instrument="cello"
+                      />
+                    </WithStyles(GridListTile)>
+                  </WithStyles(GridList)>,
+                  "className": "popular-instrument-card-group",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "cellHeight": 330,
+                    "children": Array [
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-flute.png"
+                          index={0}
+                          instructors={10}
+                          instrument="flute"
+                        />
+                      </WithStyles(GridListTile)>,
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-clarinet.png"
+                          index={1}
+                          instructors={13}
+                          instrument="clarinet"
+                        />
+                      </WithStyles(GridListTile)>,
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-cello.png"
+                          index={2}
+                          instructors={23}
+                          instrument="cello"
+                        />
+                      </WithStyles(GridListTile)>,
+                    ],
+                    "className": "",
+                    "cols": 3,
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": "0",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-flute.png"
+                          index={0}
+                          instructors={10}
+                          instrument="flute"
+                        />,
+                        "cols": 1,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": "0",
+                        "nodeType": "class",
+                        "props": Object {
+                          "className": "",
+                          "image": "nabi-flute.png",
+                          "index": 0,
+                          "instructors": 10,
+                          "instrument": "flute",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "1",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-clarinet.png"
+                          index={1}
+                          instructors={13}
+                          instrument="clarinet"
+                        />,
+                        "cols": 1,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": "1",
+                        "nodeType": "class",
+                        "props": Object {
+                          "className": "",
+                          "image": "nabi-clarinet.png",
+                          "index": 1,
+                          "instructors": 13,
+                          "instrument": "clarinet",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": "2",
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-cello.png"
+                          index={2}
+                          instructors={23}
+                          instrument="cello"
+                        />,
+                        "cols": 1,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": "2",
+                        "nodeType": "class",
+                        "props": Object {
+                          "className": "",
+                          "image": "nabi-cello.png",
+                          "index": 2,
+                          "instructors": 23,
+                          "instrument": "cello",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": [Function],
+                      },
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <PageTitle
+            pageTitle="Popular Instruments"
+          />,
+          <div
+            className="nabi-container"
+          >
+            <div
+              className="hide-on-desktop nabi-popular-instruments"
+            >
+              <WithStyles(InstrumentCard)
+                className="popular-instrument-card"
+                image="nabi-home-popular-instruments-piano.png"
+                index={0}
+                instructors={27}
+                instrument="piano"
+              />
+              <WithStyles(InstrumentCard)
+                className="popular-instrument-card"
+                image="nabi-home-popular-instruments-guitar.png"
+                index={1}
+                instructors={24}
+                instrument="guitar"
+              />
+              <WithStyles(InstrumentCard)
+                className="popular-instrument-card"
+                image="nabi-singing.png"
+                index={2}
+                instructors={19}
+                instrument="singing"
+              />
+              <WithStyles(InstrumentCard)
+                className="popular-instrument-card"
+                image="nabi-home-popular-instruments-drums.jpg"
+                index={3}
+                instructors={19}
+                instrument="drums"
+              />
+              <WithStyles(InstrumentCard)
+                className="popular-instrument-card"
+                image="nabi-violin.png"
+                index={4}
+                instructors={18}
+                instrument="violin"
+              />
+              <WithStyles(InstrumentCard)
+                className="popular-instrument-card"
+                image="nabi-saxophone.png"
+                index={5}
+                instructors={15}
+                instrument="saxophone"
+              />
+              <WithStyles(InstrumentCard)
+                className="popular-instrument-card"
+                image="nabi-flute.png"
+                index={6}
+                instructors={10}
+                instrument="flute"
+              />
+              <WithStyles(InstrumentCard)
+                className="popular-instrument-card"
+                image="nabi-clarinet.png"
+                index={7}
+                instructors={13}
+                instrument="clarinet"
+              />
+              <WithStyles(InstrumentCard)
+                className="popular-instrument-card"
+                image="nabi-cello.png"
+                index={8}
+                instructors={23}
+                instrument="cello"
+              />
+            </div>
+            <div
+              className="hide-on-mobile nabi-popular-instruments"
+            >
+              <div
+                className="popular-instrument-card-group nabi-showing"
+              >
+                <WithStyles(GridList)
+                  cellHeight={330}
+                  className=""
+                  cols={3}
+                >
+                  <WithStyles(GridListTile)
+                    cols={1}
+                  >
+                    <WithStyles(InstrumentCard)
+                      className=""
+                      image="nabi-home-popular-instruments-piano.png"
+                      index={0}
+                      instructors={27}
+                      instrument="piano"
+                    />
+                  </WithStyles(GridListTile)>
+                  <WithStyles(GridListTile)
+                    cols={1}
+                  >
+                    <WithStyles(InstrumentCard)
+                      className=""
+                      image="nabi-home-popular-instruments-guitar.png"
+                      index={1}
+                      instructors={24}
+                      instrument="guitar"
+                    />
+                  </WithStyles(GridListTile)>
+                  <WithStyles(GridListTile)
+                    cols={1}
+                  >
+                    <WithStyles(InstrumentCard)
+                      className=""
+                      image="nabi-singing.png"
+                      index={2}
+                      instructors={19}
+                      instrument="singing"
+                    />
+                  </WithStyles(GridListTile)>
+                </WithStyles(GridList)>
+              </div>
+              <div
+                className="popular-instrument-card-group"
+              >
+                <WithStyles(GridList)
+                  cellHeight={330}
+                  className=""
+                  cols={3}
+                >
+                  <WithStyles(GridListTile)
+                    cols={1}
+                  >
+                    <WithStyles(InstrumentCard)
+                      className=""
+                      image="nabi-home-popular-instruments-drums.jpg"
+                      index={0}
+                      instructors={19}
+                      instrument="drums"
+                    />
+                  </WithStyles(GridListTile)>
+                  <WithStyles(GridListTile)
+                    cols={1}
+                  >
+                    <WithStyles(InstrumentCard)
+                      className=""
+                      image="nabi-violin.png"
+                      index={1}
+                      instructors={18}
+                      instrument="violin"
+                    />
+                  </WithStyles(GridListTile)>
+                  <WithStyles(GridListTile)
+                    cols={1}
+                  >
+                    <WithStyles(InstrumentCard)
+                      className=""
+                      image="nabi-saxophone.png"
+                      index={2}
+                      instructors={15}
+                      instrument="saxophone"
+                    />
+                  </WithStyles(GridListTile)>
+                </WithStyles(GridList)>
+              </div>
+              <div
+                className="popular-instrument-card-group"
+              >
+                <WithStyles(GridList)
+                  cellHeight={330}
+                  className=""
+                  cols={3}
+                >
+                  <WithStyles(GridListTile)
+                    cols={1}
+                  >
+                    <WithStyles(InstrumentCard)
+                      className=""
+                      image="nabi-flute.png"
+                      index={0}
+                      instructors={10}
+                      instrument="flute"
+                    />
+                  </WithStyles(GridListTile)>
+                  <WithStyles(GridListTile)
+                    cols={1}
+                  >
+                    <WithStyles(InstrumentCard)
+                      className=""
+                      image="nabi-clarinet.png"
+                      index={1}
+                      instructors={13}
+                      instrument="clarinet"
+                    />
+                  </WithStyles(GridListTile)>
+                  <WithStyles(GridListTile)
+                    cols={1}
+                  >
+                    <WithStyles(InstrumentCard)
+                      className=""
+                      image="nabi-cello.png"
+                      index={2}
+                      instructors={23}
+                      instrument="cello"
+                    />
+                  </WithStyles(GridListTile)>
+                </WithStyles(GridList)>
+              </div>
+            </div>
+          </div>,
+        ],
+        "className": "nabi-margin-top-xlarge nabi-margin-bottom-medium nabi-background-color",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "pageTitle": "Popular Instruments",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="hide-on-desktop nabi-popular-instruments"
+              >
+                <WithStyles(InstrumentCard)
+                  className="popular-instrument-card"
+                  image="nabi-home-popular-instruments-piano.png"
+                  index={0}
+                  instructors={27}
+                  instrument="piano"
+                />
+                <WithStyles(InstrumentCard)
+                  className="popular-instrument-card"
+                  image="nabi-home-popular-instruments-guitar.png"
+                  index={1}
+                  instructors={24}
+                  instrument="guitar"
+                />
+                <WithStyles(InstrumentCard)
+                  className="popular-instrument-card"
+                  image="nabi-singing.png"
+                  index={2}
+                  instructors={19}
+                  instrument="singing"
+                />
+                <WithStyles(InstrumentCard)
+                  className="popular-instrument-card"
+                  image="nabi-home-popular-instruments-drums.jpg"
+                  index={3}
+                  instructors={19}
+                  instrument="drums"
+                />
+                <WithStyles(InstrumentCard)
+                  className="popular-instrument-card"
+                  image="nabi-violin.png"
+                  index={4}
+                  instructors={18}
+                  instrument="violin"
+                />
+                <WithStyles(InstrumentCard)
+                  className="popular-instrument-card"
+                  image="nabi-saxophone.png"
+                  index={5}
+                  instructors={15}
+                  instrument="saxophone"
+                />
+                <WithStyles(InstrumentCard)
+                  className="popular-instrument-card"
+                  image="nabi-flute.png"
+                  index={6}
+                  instructors={10}
+                  instrument="flute"
+                />
+                <WithStyles(InstrumentCard)
+                  className="popular-instrument-card"
+                  image="nabi-clarinet.png"
+                  index={7}
+                  instructors={13}
+                  instrument="clarinet"
+                />
+                <WithStyles(InstrumentCard)
+                  className="popular-instrument-card"
+                  image="nabi-cello.png"
+                  index={8}
+                  instructors={23}
+                  instrument="cello"
+                />
+              </div>,
+              <div
+                className="hide-on-mobile nabi-popular-instruments"
+              >
+                <div
+                  className="popular-instrument-card-group nabi-showing"
+                >
+                  <WithStyles(GridList)
+                    cellHeight={330}
+                    className=""
+                    cols={3}
+                  >
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-home-popular-instruments-piano.png"
+                        index={0}
+                        instructors={27}
+                        instrument="piano"
+                      />
+                    </WithStyles(GridListTile)>
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-home-popular-instruments-guitar.png"
+                        index={1}
+                        instructors={24}
+                        instrument="guitar"
+                      />
+                    </WithStyles(GridListTile)>
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-singing.png"
+                        index={2}
+                        instructors={19}
+                        instrument="singing"
+                      />
+                    </WithStyles(GridListTile)>
+                  </WithStyles(GridList)>
+                </div>
+                <div
+                  className="popular-instrument-card-group"
+                >
+                  <WithStyles(GridList)
+                    cellHeight={330}
+                    className=""
+                    cols={3}
+                  >
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-home-popular-instruments-drums.jpg"
+                        index={0}
+                        instructors={19}
+                        instrument="drums"
+                      />
+                    </WithStyles(GridListTile)>
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-violin.png"
+                        index={1}
+                        instructors={18}
+                        instrument="violin"
+                      />
+                    </WithStyles(GridListTile)>
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-saxophone.png"
+                        index={2}
+                        instructors={15}
+                        instrument="saxophone"
+                      />
+                    </WithStyles(GridListTile)>
+                  </WithStyles(GridList)>
+                </div>
+                <div
+                  className="popular-instrument-card-group"
+                >
+                  <WithStyles(GridList)
+                    cellHeight={330}
+                    className=""
+                    cols={3}
+                  >
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-flute.png"
+                        index={0}
+                        instructors={10}
+                        instrument="flute"
+                      />
+                    </WithStyles(GridListTile)>
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-clarinet.png"
+                        index={1}
+                        instructors={13}
+                        instrument="clarinet"
+                      />
+                    </WithStyles(GridListTile)>
+                    <WithStyles(GridListTile)
+                      cols={1}
+                    >
+                      <WithStyles(InstrumentCard)
+                        className=""
+                        image="nabi-cello.png"
+                        index={2}
+                        instructors={23}
+                        instrument="cello"
+                      />
+                    </WithStyles(GridListTile)>
+                  </WithStyles(GridList)>
+                </div>
+              </div>,
+            ],
+            "className": "nabi-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(InstrumentCard)
+                    className="popular-instrument-card"
+                    image="nabi-home-popular-instruments-piano.png"
+                    index={0}
+                    instructors={27}
+                    instrument="piano"
+                  />,
+                  <WithStyles(InstrumentCard)
+                    className="popular-instrument-card"
+                    image="nabi-home-popular-instruments-guitar.png"
+                    index={1}
+                    instructors={24}
+                    instrument="guitar"
+                  />,
+                  <WithStyles(InstrumentCard)
+                    className="popular-instrument-card"
+                    image="nabi-singing.png"
+                    index={2}
+                    instructors={19}
+                    instrument="singing"
+                  />,
+                  <WithStyles(InstrumentCard)
+                    className="popular-instrument-card"
+                    image="nabi-home-popular-instruments-drums.jpg"
+                    index={3}
+                    instructors={19}
+                    instrument="drums"
+                  />,
+                  <WithStyles(InstrumentCard)
+                    className="popular-instrument-card"
+                    image="nabi-violin.png"
+                    index={4}
+                    instructors={18}
+                    instrument="violin"
+                  />,
+                  <WithStyles(InstrumentCard)
+                    className="popular-instrument-card"
+                    image="nabi-saxophone.png"
+                    index={5}
+                    instructors={15}
+                    instrument="saxophone"
+                  />,
+                  <WithStyles(InstrumentCard)
+                    className="popular-instrument-card"
+                    image="nabi-flute.png"
+                    index={6}
+                    instructors={10}
+                    instrument="flute"
+                  />,
+                  <WithStyles(InstrumentCard)
+                    className="popular-instrument-card"
+                    image="nabi-clarinet.png"
+                    index={7}
+                    instructors={13}
+                    instrument="clarinet"
+                  />,
+                  <WithStyles(InstrumentCard)
+                    className="popular-instrument-card"
+                    image="nabi-cello.png"
+                    index={8}
+                    instructors={23}
+                    instrument="cello"
+                  />,
+                ],
+                "className": "hide-on-desktop nabi-popular-instruments",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "0",
+                  "nodeType": "class",
+                  "props": Object {
+                    "className": "popular-instrument-card",
+                    "image": "nabi-home-popular-instruments-piano.png",
+                    "index": 0,
+                    "instructors": 27,
+                    "instrument": "piano",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "1",
+                  "nodeType": "class",
+                  "props": Object {
+                    "className": "popular-instrument-card",
+                    "image": "nabi-home-popular-instruments-guitar.png",
+                    "index": 1,
+                    "instructors": 24,
+                    "instrument": "guitar",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "2",
+                  "nodeType": "class",
+                  "props": Object {
+                    "className": "popular-instrument-card",
+                    "image": "nabi-singing.png",
+                    "index": 2,
+                    "instructors": 19,
+                    "instrument": "singing",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "3",
+                  "nodeType": "class",
+                  "props": Object {
+                    "className": "popular-instrument-card",
+                    "image": "nabi-home-popular-instruments-drums.jpg",
+                    "index": 3,
+                    "instructors": 19,
+                    "instrument": "drums",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "4",
+                  "nodeType": "class",
+                  "props": Object {
+                    "className": "popular-instrument-card",
+                    "image": "nabi-violin.png",
+                    "index": 4,
+                    "instructors": 18,
+                    "instrument": "violin",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "5",
+                  "nodeType": "class",
+                  "props": Object {
+                    "className": "popular-instrument-card",
+                    "image": "nabi-saxophone.png",
+                    "index": 5,
+                    "instructors": 15,
+                    "instrument": "saxophone",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "6",
+                  "nodeType": "class",
+                  "props": Object {
+                    "className": "popular-instrument-card",
+                    "image": "nabi-flute.png",
+                    "index": 6,
+                    "instructors": 10,
+                    "instrument": "flute",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "7",
+                  "nodeType": "class",
+                  "props": Object {
+                    "className": "popular-instrument-card",
+                    "image": "nabi-clarinet.png",
+                    "index": 7,
+                    "instructors": 13,
+                    "instrument": "clarinet",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "8",
+                  "nodeType": "class",
+                  "props": Object {
+                    "className": "popular-instrument-card",
+                    "image": "nabi-cello.png",
+                    "index": 8,
+                    "instructors": 23,
+                    "instrument": "cello",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="popular-instrument-card-group nabi-showing"
+                  >
+                    <WithStyles(GridList)
+                      cellHeight={330}
+                      className=""
+                      cols={3}
+                    >
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-home-popular-instruments-piano.png"
+                          index={0}
+                          instructors={27}
+                          instrument="piano"
+                        />
+                      </WithStyles(GridListTile)>
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-home-popular-instruments-guitar.png"
+                          index={1}
+                          instructors={24}
+                          instrument="guitar"
+                        />
+                      </WithStyles(GridListTile)>
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-singing.png"
+                          index={2}
+                          instructors={19}
+                          instrument="singing"
+                        />
+                      </WithStyles(GridListTile)>
+                    </WithStyles(GridList)>
+                  </div>,
+                  <div
+                    className="popular-instrument-card-group"
+                  >
+                    <WithStyles(GridList)
+                      cellHeight={330}
+                      className=""
+                      cols={3}
+                    >
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-home-popular-instruments-drums.jpg"
+                          index={0}
+                          instructors={19}
+                          instrument="drums"
+                        />
+                      </WithStyles(GridListTile)>
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-violin.png"
+                          index={1}
+                          instructors={18}
+                          instrument="violin"
+                        />
+                      </WithStyles(GridListTile)>
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-saxophone.png"
+                          index={2}
+                          instructors={15}
+                          instrument="saxophone"
+                        />
+                      </WithStyles(GridListTile)>
+                    </WithStyles(GridList)>
+                  </div>,
+                  <div
+                    className="popular-instrument-card-group"
+                  >
+                    <WithStyles(GridList)
+                      cellHeight={330}
+                      className=""
+                      cols={3}
+                    >
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-flute.png"
+                          index={0}
+                          instructors={10}
+                          instrument="flute"
+                        />
+                      </WithStyles(GridListTile)>
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-clarinet.png"
+                          index={1}
+                          instructors={13}
+                          instrument="clarinet"
+                        />
+                      </WithStyles(GridListTile)>
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-cello.png"
+                          index={2}
+                          instructors={23}
+                          instrument="cello"
+                        />
+                      </WithStyles(GridListTile)>
+                    </WithStyles(GridList)>
+                  </div>,
+                ],
+                "className": "hide-on-mobile nabi-popular-instruments",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <WithStyles(GridList)
+                      cellHeight={330}
+                      className=""
+                      cols={3}
+                    >
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-home-popular-instruments-piano.png"
+                          index={0}
+                          instructors={27}
+                          instrument="piano"
+                        />
+                      </WithStyles(GridListTile)>
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-home-popular-instruments-guitar.png"
+                          index={1}
+                          instructors={24}
+                          instrument="guitar"
+                        />
+                      </WithStyles(GridListTile)>
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-singing.png"
+                          index={2}
+                          instructors={19}
+                          instrument="singing"
+                        />
+                      </WithStyles(GridListTile)>
+                    </WithStyles(GridList)>,
+                    "className": "popular-instrument-card-group nabi-showing",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "cellHeight": 330,
+                      "children": Array [
+                        <WithStyles(GridListTile)
+                          cols={1}
+                        >
+                          <WithStyles(InstrumentCard)
+                            className=""
+                            image="nabi-home-popular-instruments-piano.png"
+                            index={0}
+                            instructors={27}
+                            instrument="piano"
+                          />
+                        </WithStyles(GridListTile)>,
+                        <WithStyles(GridListTile)
+                          cols={1}
+                        >
+                          <WithStyles(InstrumentCard)
+                            className=""
+                            image="nabi-home-popular-instruments-guitar.png"
+                            index={1}
+                            instructors={24}
+                            instrument="guitar"
+                          />
+                        </WithStyles(GridListTile)>,
+                        <WithStyles(GridListTile)
+                          cols={1}
+                        >
+                          <WithStyles(InstrumentCard)
+                            className=""
+                            image="nabi-singing.png"
+                            index={2}
+                            instructors={19}
+                            instrument="singing"
+                          />
+                        </WithStyles(GridListTile)>,
+                      ],
+                      "className": "",
+                      "cols": 3,
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": "0",
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": <WithStyles(InstrumentCard)
+                            className=""
+                            image="nabi-home-popular-instruments-piano.png"
+                            index={0}
+                            instructors={27}
+                            instrument="piano"
+                          />,
+                          "cols": 1,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": "0",
+                          "nodeType": "class",
+                          "props": Object {
+                            "className": "",
+                            "image": "nabi-home-popular-instruments-piano.png",
+                            "index": 0,
+                            "instructors": 27,
+                            "instrument": "piano",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": "1",
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": <WithStyles(InstrumentCard)
+                            className=""
+                            image="nabi-home-popular-instruments-guitar.png"
+                            index={1}
+                            instructors={24}
+                            instrument="guitar"
+                          />,
+                          "cols": 1,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": "1",
+                          "nodeType": "class",
+                          "props": Object {
+                            "className": "",
+                            "image": "nabi-home-popular-instruments-guitar.png",
+                            "index": 1,
+                            "instructors": 24,
+                            "instrument": "guitar",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": "2",
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": <WithStyles(InstrumentCard)
+                            className=""
+                            image="nabi-singing.png"
+                            index={2}
+                            instructors={19}
+                            instrument="singing"
+                          />,
+                          "cols": 1,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": "2",
+                          "nodeType": "class",
+                          "props": Object {
+                            "className": "",
+                            "image": "nabi-singing.png",
+                            "index": 2,
+                            "instructors": 19,
+                            "instrument": "singing",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": [Function],
+                      },
+                    ],
+                    "type": [Function],
+                  },
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <WithStyles(GridList)
+                      cellHeight={330}
+                      className=""
+                      cols={3}
+                    >
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-home-popular-instruments-drums.jpg"
+                          index={0}
+                          instructors={19}
+                          instrument="drums"
+                        />
+                      </WithStyles(GridListTile)>
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-violin.png"
+                          index={1}
+                          instructors={18}
+                          instrument="violin"
+                        />
+                      </WithStyles(GridListTile)>
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-saxophone.png"
+                          index={2}
+                          instructors={15}
+                          instrument="saxophone"
+                        />
+                      </WithStyles(GridListTile)>
+                    </WithStyles(GridList)>,
+                    "className": "popular-instrument-card-group",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "cellHeight": 330,
+                      "children": Array [
+                        <WithStyles(GridListTile)
+                          cols={1}
+                        >
+                          <WithStyles(InstrumentCard)
+                            className=""
+                            image="nabi-home-popular-instruments-drums.jpg"
+                            index={0}
+                            instructors={19}
+                            instrument="drums"
+                          />
+                        </WithStyles(GridListTile)>,
+                        <WithStyles(GridListTile)
+                          cols={1}
+                        >
+                          <WithStyles(InstrumentCard)
+                            className=""
+                            image="nabi-violin.png"
+                            index={1}
+                            instructors={18}
+                            instrument="violin"
+                          />
+                        </WithStyles(GridListTile)>,
+                        <WithStyles(GridListTile)
+                          cols={1}
+                        >
+                          <WithStyles(InstrumentCard)
+                            className=""
+                            image="nabi-saxophone.png"
+                            index={2}
+                            instructors={15}
+                            instrument="saxophone"
+                          />
+                        </WithStyles(GridListTile)>,
+                      ],
+                      "className": "",
+                      "cols": 3,
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": "0",
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": <WithStyles(InstrumentCard)
+                            className=""
+                            image="nabi-home-popular-instruments-drums.jpg"
+                            index={0}
+                            instructors={19}
+                            instrument="drums"
+                          />,
+                          "cols": 1,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": "0",
+                          "nodeType": "class",
+                          "props": Object {
+                            "className": "",
+                            "image": "nabi-home-popular-instruments-drums.jpg",
+                            "index": 0,
+                            "instructors": 19,
+                            "instrument": "drums",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": "1",
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": <WithStyles(InstrumentCard)
+                            className=""
+                            image="nabi-violin.png"
+                            index={1}
+                            instructors={18}
+                            instrument="violin"
+                          />,
+                          "cols": 1,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": "1",
+                          "nodeType": "class",
+                          "props": Object {
+                            "className": "",
+                            "image": "nabi-violin.png",
+                            "index": 1,
+                            "instructors": 18,
+                            "instrument": "violin",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": "2",
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": <WithStyles(InstrumentCard)
+                            className=""
+                            image="nabi-saxophone.png"
+                            index={2}
+                            instructors={15}
+                            instrument="saxophone"
+                          />,
+                          "cols": 1,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": "2",
+                          "nodeType": "class",
+                          "props": Object {
+                            "className": "",
+                            "image": "nabi-saxophone.png",
+                            "index": 2,
+                            "instructors": 15,
+                            "instrument": "saxophone",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": [Function],
+                      },
+                    ],
+                    "type": [Function],
+                  },
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <WithStyles(GridList)
+                      cellHeight={330}
+                      className=""
+                      cols={3}
+                    >
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-flute.png"
+                          index={0}
+                          instructors={10}
+                          instrument="flute"
+                        />
+                      </WithStyles(GridListTile)>
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-clarinet.png"
+                          index={1}
+                          instructors={13}
+                          instrument="clarinet"
+                        />
+                      </WithStyles(GridListTile)>
+                      <WithStyles(GridListTile)
+                        cols={1}
+                      >
+                        <WithStyles(InstrumentCard)
+                          className=""
+                          image="nabi-cello.png"
+                          index={2}
+                          instructors={23}
+                          instrument="cello"
+                        />
+                      </WithStyles(GridListTile)>
+                    </WithStyles(GridList)>,
+                    "className": "popular-instrument-card-group",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "cellHeight": 330,
+                      "children": Array [
+                        <WithStyles(GridListTile)
+                          cols={1}
+                        >
+                          <WithStyles(InstrumentCard)
+                            className=""
+                            image="nabi-flute.png"
+                            index={0}
+                            instructors={10}
+                            instrument="flute"
+                          />
+                        </WithStyles(GridListTile)>,
+                        <WithStyles(GridListTile)
+                          cols={1}
+                        >
+                          <WithStyles(InstrumentCard)
+                            className=""
+                            image="nabi-clarinet.png"
+                            index={1}
+                            instructors={13}
+                            instrument="clarinet"
+                          />
+                        </WithStyles(GridListTile)>,
+                        <WithStyles(GridListTile)
+                          cols={1}
+                        >
+                          <WithStyles(InstrumentCard)
+                            className=""
+                            image="nabi-cello.png"
+                            index={2}
+                            instructors={23}
+                            instrument="cello"
+                          />
+                        </WithStyles(GridListTile)>,
+                      ],
+                      "className": "",
+                      "cols": 3,
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": "0",
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": <WithStyles(InstrumentCard)
+                            className=""
+                            image="nabi-flute.png"
+                            index={0}
+                            instructors={10}
+                            instrument="flute"
+                          />,
+                          "cols": 1,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": "0",
+                          "nodeType": "class",
+                          "props": Object {
+                            "className": "",
+                            "image": "nabi-flute.png",
+                            "index": 0,
+                            "instructors": 10,
+                            "instrument": "flute",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": "1",
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": <WithStyles(InstrumentCard)
+                            className=""
+                            image="nabi-clarinet.png"
+                            index={1}
+                            instructors={13}
+                            instrument="clarinet"
+                          />,
+                          "cols": 1,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": "1",
+                          "nodeType": "class",
+                          "props": Object {
+                            "className": "",
+                            "image": "nabi-clarinet.png",
+                            "index": 1,
+                            "instructors": 13,
+                            "instrument": "clarinet",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": "2",
+                        "nodeType": "class",
+                        "props": Object {
+                          "children": <WithStyles(InstrumentCard)
+                            className=""
+                            image="nabi-cello.png"
+                            index={2}
+                            instructors={23}
+                            instrument="cello"
+                          />,
+                          "cols": 1,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": "2",
+                          "nodeType": "class",
+                          "props": Object {
+                            "className": "",
+                            "image": "nabi-cello.png",
+                            "index": 2,
+                            "instructors": 23,
+                            "instrument": "cello",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": [Function],
+                        },
+                        "type": [Function],
+                      },
+                    ],
+                    "type": [Function],
+                  },
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

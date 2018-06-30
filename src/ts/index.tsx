@@ -130,12 +130,17 @@ const theme = createMuiTheme({
         marginTop: '0px'
       }
     },
-    MuiLinearProgress : { 
+    MuiLinearProgress : {
       barColorPrimary: {
         backgroundColor: '#06c3e1'
       },
-      colorPrimary: { 
+      colorPrimary: {
         backgroundColor: '#c6c9d0'
+      }
+    },
+    MuiMenuItem: {
+      root: {
+        color: '#717a8a'
       }
     },
     MuiMobileStepper: {

@@ -1,13 +1,13 @@
 import * as React from 'react';
-import FreeLesson from '../components/Homepage/FreeLesson';
+import PopularInstruments from '../components/Homepage/PopularInstruments';
 import { shallow } from 'enzyme';
 
-describe('FreeLesson', () => {
+describe('PopularInstruments', () => {
   let wrapper: any;
 
   beforeEach(() => {
     wrapper = shallow(
-      <FreeLesson />
+      <PopularInstruments/>
     );
   });
 

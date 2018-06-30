@@ -44,7 +44,7 @@ interface ExperienceState extends ExperienceType {
 }
 
 /**
- * Experience: Third step on the Profile Builder
+ * Experience: Third step of the Profile Builder
  * @class Experience
  * @extends React.Component<ExperienceProps, ExperienceState>
  */

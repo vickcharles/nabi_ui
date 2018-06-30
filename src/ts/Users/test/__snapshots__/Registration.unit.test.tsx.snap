@@ -29,6 +29,7 @@ ShallowWrapper {
           className="nabi-background-white nabi-section"
         >
           <RegistrationForm
+            birthday={"2017-02-14T12:51:48.000Z"}
             handleBirthdayChange={[Function]}
             handleChange={[Function]}
             handleSubmit={[Function]}
@@ -36,6 +37,10 @@ ShallowWrapper {
             selectedRole="student"
           />
         </div>,
+        <AgeDisclaimer
+          closeHandler={[Function]}
+          isFormDialogOpen={false}
+        />,
         false,
       ],
       "className": "nabi-container",
@@ -59,6 +64,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <RegistrationForm
+            birthday={"2017-02-14T12:51:48.000Z"}
             handleBirthdayChange={[Function]}
             handleChange={[Function]}
             handleSubmit={[Function]}
@@ -73,6 +79,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "birthday": "2017-02-14T12:51:48.000Z",
             "handleBirthdayChange": [Function],
             "handleChange": [Function],
             "handleSubmit": [Function],
@@ -84,6 +91,18 @@ ShallowWrapper {
           "type": [Function],
         },
         "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "closeHandler": [Function],
+          "isFormDialogOpen": false,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
       },
       false,
     ],
@@ -103,6 +122,7 @@ ShallowWrapper {
             className="nabi-background-white nabi-section"
           >
             <RegistrationForm
+              birthday={"2017-02-14T12:51:48.000Z"}
               handleBirthdayChange={[Function]}
               handleChange={[Function]}
               handleSubmit={[Function]}
@@ -110,6 +130,10 @@ ShallowWrapper {
               selectedRole="student"
             />
           </div>,
+          <AgeDisclaimer
+            closeHandler={[Function]}
+            isFormDialogOpen={false}
+          />,
           false,
         ],
         "className": "nabi-container",
@@ -133,6 +157,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <RegistrationForm
+              birthday={"2017-02-14T12:51:48.000Z"}
               handleBirthdayChange={[Function]}
               handleChange={[Function]}
               handleSubmit={[Function]}
@@ -147,6 +172,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
+              "birthday": "2017-02-14T12:51:48.000Z",
               "handleBirthdayChange": [Function],
               "handleChange": [Function],
               "handleSubmit": [Function],
@@ -158,6 +184,18 @@ ShallowWrapper {
             "type": [Function],
           },
           "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "closeHandler": [Function],
+            "isFormDialogOpen": false,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
         },
         false,
       ],

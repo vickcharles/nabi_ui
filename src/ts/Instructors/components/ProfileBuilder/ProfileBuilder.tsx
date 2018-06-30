@@ -14,6 +14,7 @@ import { Role, UserState } from '../../../Users/model';
 import BasicInfo from './BasicInfo/BasicInfo';
 import Education from './Education/Education';
 import Experience from './Experience/Experience';
+import Qualifications from './Qualifications/Qualifications';
 
 const styles = (theme: Theme) => ({
   mobileStepper: {
@@ -102,7 +103,7 @@ export class ProfileBuilder extends React.Component
       case 2:
         return <Experience userId={this.state.user.id} />;
       case 3:
-        return '';
+        return <Qualifications userId={this.state.user.id} />;
       case 4:
         return '';
       default:

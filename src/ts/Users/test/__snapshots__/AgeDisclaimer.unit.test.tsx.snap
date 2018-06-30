@@ -32,7 +32,7 @@ ShallowWrapper {
         </WithStyles(DialogTitle)>
         <WithStyles(DialogContent)>
           <WithStyles(DialogContentText)>
-            You must be 13 years of age or older to create an account. Please have your parent or guardian assist you. For more assistance contact us at info@nabimusic.com.
+            You must be 18 years of age or older to create an account. Please have your parent or guardian assist you. For more assistance contact us at info@nabimusic.com.
           </WithStyles(DialogContentText)>
         </WithStyles(DialogContent)>
         <WithStyles(DialogActions)>
@@ -61,7 +61,7 @@ ShallowWrapper {
           </WithStyles(DialogTitle)>,
           <WithStyles(DialogContent)>
             <WithStyles(DialogContentText)>
-              You must be 13 years of age or older to create an account. Please have your parent or guardian assist you. For more assistance contact us at info@nabimusic.com.
+              You must be 18 years of age or older to create an account. Please have your parent or guardian assist you. For more assistance contact us at info@nabimusic.com.
             </WithStyles(DialogContentText)>
           </WithStyles(DialogContent)>,
           <WithStyles(DialogActions)>
@@ -97,7 +97,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <WithStyles(DialogContentText)>
-              You must be 13 years of age or older to create an account. Please have your parent or guardian assist you. For more assistance contact us at info@nabimusic.com.
+              You must be 18 years of age or older to create an account. Please have your parent or guardian assist you. For more assistance contact us at info@nabimusic.com.
             </WithStyles(DialogContentText)>,
           },
           "ref": null,
@@ -106,10 +106,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": "You must be 13 years of age or older to create an account. Please have your parent or guardian assist you. For more assistance contact us at info@nabimusic.com.",
+              "children": "You must be 18 years of age or older to create an account. Please have your parent or guardian assist you. For more assistance contact us at info@nabimusic.com.",
             },
             "ref": null,
-            "rendered": "You must be 13 years of age or older to create an account. Please have your parent or guardian assist you. For more assistance contact us at info@nabimusic.com.",
+            "rendered": "You must be 18 years of age or older to create an account. Please have your parent or guardian assist you. For more assistance contact us at info@nabimusic.com.",
             "type": [Function],
           },
           "type": [Function],
@@ -167,7 +167,7 @@ ShallowWrapper {
           </WithStyles(DialogTitle)>
           <WithStyles(DialogContent)>
             <WithStyles(DialogContentText)>
-              You must be 13 years of age or older to create an account. Please have your parent or guardian assist you. For more assistance contact us at info@nabimusic.com.
+              You must be 18 years of age or older to create an account. Please have your parent or guardian assist you. For more assistance contact us at info@nabimusic.com.
             </WithStyles(DialogContentText)>
           </WithStyles(DialogContent)>
           <WithStyles(DialogActions)>
@@ -196,7 +196,7 @@ ShallowWrapper {
             </WithStyles(DialogTitle)>,
             <WithStyles(DialogContent)>
               <WithStyles(DialogContentText)>
-                You must be 13 years of age or older to create an account. Please have your parent or guardian assist you. For more assistance contact us at info@nabimusic.com.
+                You must be 18 years of age or older to create an account. Please have your parent or guardian assist you. For more assistance contact us at info@nabimusic.com.
               </WithStyles(DialogContentText)>
             </WithStyles(DialogContent)>,
             <WithStyles(DialogActions)>
@@ -232,7 +232,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": <WithStyles(DialogContentText)>
-                You must be 13 years of age or older to create an account. Please have your parent or guardian assist you. For more assistance contact us at info@nabimusic.com.
+                You must be 18 years of age or older to create an account. Please have your parent or guardian assist you. For more assistance contact us at info@nabimusic.com.
               </WithStyles(DialogContentText)>,
             },
             "ref": null,
@@ -241,10 +241,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": "You must be 13 years of age or older to create an account. Please have your parent or guardian assist you. For more assistance contact us at info@nabimusic.com.",
+                "children": "You must be 18 years of age or older to create an account. Please have your parent or guardian assist you. For more assistance contact us at info@nabimusic.com.",
               },
               "ref": null,
-              "rendered": "You must be 13 years of age or older to create an account. Please have your parent or guardian assist you. For more assistance contact us at info@nabimusic.com.",
+              "rendered": "You must be 18 years of age or older to create an account. Please have your parent or guardian assist you. For more assistance contact us at info@nabimusic.com.",
               "type": [Function],
             },
             "type": [Function],

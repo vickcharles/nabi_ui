@@ -1,14 +1,15 @@
 import * as React from 'react';
-import BackgroundImage from './BackgroundImage';
+import Banner from './Banner';
+import PopularInstruments from './PopularInstruments';
 import FreeLesson from './FreeLesson';
-
 /** 
  * Homepage component
  */
 const Homepage = () => {
   return (
     <div>
-      <BackgroundImage />
+      <Banner />
+      <PopularInstruments />
       <FreeLesson />
     </div>
   );

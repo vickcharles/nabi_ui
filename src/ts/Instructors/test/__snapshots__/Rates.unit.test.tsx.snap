@@ -29,7 +29,7 @@ ShallowWrapper {
           className="nabi-margin-top-small"
           variant="body2"
         >
-          Rates
+          Rates for lessons
         </WithStyles(Typography)>,
         <div
           className="rates"
@@ -38,7 +38,7 @@ ShallowWrapper {
             className="nabi-margin-bottom-small"
           >
             <WithStyles(ListItemText)
-              primary="- 30 mins lesson"
+              primary="- 30 mins"
             />
             <WithStyles(ListItemSecondaryAction)>
               <pure(AttachMoney)
@@ -46,7 +46,6 @@ ShallowWrapper {
               />
               <TextField
                 className="nabi-rates-field"
-                fullWidth={true}
                 id="thirtyMinsRate"
                 name="thirtyMinsRate"
                 onBlur={[MockFunction]}
@@ -62,7 +61,7 @@ ShallowWrapper {
             className="nabi-margin-bottom-small"
           >
             <WithStyles(ListItemText)
-              primary="- 45 mins lesson"
+              primary="- 45 mins"
             />
             <WithStyles(ListItemSecondaryAction)>
               <pure(AttachMoney)
@@ -70,7 +69,6 @@ ShallowWrapper {
               />
               <TextField
                 className="nabi-rates-field"
-                fullWidth={true}
                 id="fortyFiveMinsRate"
                 name="fortyFiveMinsRate"
                 onBlur={[MockFunction]}
@@ -86,7 +84,7 @@ ShallowWrapper {
             className="nabi-margin-bottom-small"
           >
             <WithStyles(ListItemText)
-              primary="- 60 mins lesson"
+              primary="- 60 mins"
             />
             <WithStyles(ListItemSecondaryAction)>
               <pure(AttachMoney)
@@ -94,7 +92,6 @@ ShallowWrapper {
               />
               <TextField
                 className="nabi-rates-field"
-                fullWidth={true}
                 id="sixtyMinsRate"
                 name="sixtyMinsRate"
                 onBlur={[MockFunction]}
@@ -110,7 +107,7 @@ ShallowWrapper {
             className="nabi-margin-bottom-small"
           >
             <WithStyles(ListItemText)
-              primary="- 90 mins lesson"
+              primary="- 90 mins"
             />
             <WithStyles(ListItemSecondaryAction)>
               <pure(AttachMoney)
@@ -118,7 +115,6 @@ ShallowWrapper {
               />
               <TextField
                 className="nabi-rates-field"
-                fullWidth={true}
                 id="ninetyMinsRate"
                 name="ninetyMinsRate"
                 onBlur={[MockFunction]}
@@ -143,12 +139,12 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": "Rates",
+          "children": "Rates for lessons",
           "className": "nabi-margin-top-small",
           "variant": "body2",
         },
         "ref": null,
-        "rendered": "Rates",
+        "rendered": "Rates for lessons",
         "type": [Function],
       },
       Object {
@@ -161,7 +157,7 @@ ShallowWrapper {
               className="nabi-margin-bottom-small"
             >
               <WithStyles(ListItemText)
-                primary="- 30 mins lesson"
+                primary="- 30 mins"
               />
               <WithStyles(ListItemSecondaryAction)>
                 <pure(AttachMoney)
@@ -169,7 +165,6 @@ ShallowWrapper {
                 />
                 <TextField
                   className="nabi-rates-field"
-                  fullWidth={true}
                   id="thirtyMinsRate"
                   name="thirtyMinsRate"
                   onBlur={[MockFunction]}
@@ -185,7 +180,7 @@ ShallowWrapper {
               className="nabi-margin-bottom-small"
             >
               <WithStyles(ListItemText)
-                primary="- 45 mins lesson"
+                primary="- 45 mins"
               />
               <WithStyles(ListItemSecondaryAction)>
                 <pure(AttachMoney)
@@ -193,7 +188,6 @@ ShallowWrapper {
                 />
                 <TextField
                   className="nabi-rates-field"
-                  fullWidth={true}
                   id="fortyFiveMinsRate"
                   name="fortyFiveMinsRate"
                   onBlur={[MockFunction]}
@@ -209,7 +203,7 @@ ShallowWrapper {
               className="nabi-margin-bottom-small"
             >
               <WithStyles(ListItemText)
-                primary="- 60 mins lesson"
+                primary="- 60 mins"
               />
               <WithStyles(ListItemSecondaryAction)>
                 <pure(AttachMoney)
@@ -217,7 +211,6 @@ ShallowWrapper {
                 />
                 <TextField
                   className="nabi-rates-field"
-                  fullWidth={true}
                   id="sixtyMinsRate"
                   name="sixtyMinsRate"
                   onBlur={[MockFunction]}
@@ -233,7 +226,7 @@ ShallowWrapper {
               className="nabi-margin-bottom-small"
             >
               <WithStyles(ListItemText)
-                primary="- 90 mins lesson"
+                primary="- 90 mins"
               />
               <WithStyles(ListItemSecondaryAction)>
                 <pure(AttachMoney)
@@ -241,7 +234,6 @@ ShallowWrapper {
                 />
                 <TextField
                   className="nabi-rates-field"
-                  fullWidth={true}
                   id="ninetyMinsRate"
                   name="ninetyMinsRate"
                   onBlur={[MockFunction]}
@@ -265,7 +257,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <WithStyles(ListItemText)
-                  primary="- 30 mins lesson"
+                  primary="- 30 mins"
                 />,
                 <WithStyles(ListItemSecondaryAction)>
                   <pure(AttachMoney)
@@ -273,7 +265,6 @@ ShallowWrapper {
                   />
                   <TextField
                     className="nabi-rates-field"
-                    fullWidth={true}
                     id="thirtyMinsRate"
                     name="thirtyMinsRate"
                     onBlur={[MockFunction]}
@@ -294,7 +285,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "primary": "- 30 mins lesson",
+                  "primary": "- 30 mins",
                 },
                 "ref": null,
                 "rendered": null,
@@ -311,7 +302,6 @@ ShallowWrapper {
                     />,
                     <TextField
                       className="nabi-rates-field"
-                      fullWidth={true}
                       id="thirtyMinsRate"
                       name="thirtyMinsRate"
                       onBlur={[MockFunction]}
@@ -342,7 +332,6 @@ ShallowWrapper {
                     "nodeType": "function",
                     "props": Object {
                       "className": "nabi-rates-field",
-                      "fullWidth": true,
                       "id": "thirtyMinsRate",
                       "name": "thirtyMinsRate",
                       "onBlur": [MockFunction],
@@ -369,7 +358,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <WithStyles(ListItemText)
-                  primary="- 45 mins lesson"
+                  primary="- 45 mins"
                 />,
                 <WithStyles(ListItemSecondaryAction)>
                   <pure(AttachMoney)
@@ -377,7 +366,6 @@ ShallowWrapper {
                   />
                   <TextField
                     className="nabi-rates-field"
-                    fullWidth={true}
                     id="fortyFiveMinsRate"
                     name="fortyFiveMinsRate"
                     onBlur={[MockFunction]}
@@ -398,7 +386,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "primary": "- 45 mins lesson",
+                  "primary": "- 45 mins",
                 },
                 "ref": null,
                 "rendered": null,
@@ -415,7 +403,6 @@ ShallowWrapper {
                     />,
                     <TextField
                       className="nabi-rates-field"
-                      fullWidth={true}
                       id="fortyFiveMinsRate"
                       name="fortyFiveMinsRate"
                       onBlur={[MockFunction]}
@@ -446,7 +433,6 @@ ShallowWrapper {
                     "nodeType": "function",
                     "props": Object {
                       "className": "nabi-rates-field",
-                      "fullWidth": true,
                       "id": "fortyFiveMinsRate",
                       "name": "fortyFiveMinsRate",
                       "onBlur": [MockFunction],
@@ -473,7 +459,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <WithStyles(ListItemText)
-                  primary="- 60 mins lesson"
+                  primary="- 60 mins"
                 />,
                 <WithStyles(ListItemSecondaryAction)>
                   <pure(AttachMoney)
@@ -481,7 +467,6 @@ ShallowWrapper {
                   />
                   <TextField
                     className="nabi-rates-field"
-                    fullWidth={true}
                     id="sixtyMinsRate"
                     name="sixtyMinsRate"
                     onBlur={[MockFunction]}
@@ -502,7 +487,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "primary": "- 60 mins lesson",
+                  "primary": "- 60 mins",
                 },
                 "ref": null,
                 "rendered": null,
@@ -519,7 +504,6 @@ ShallowWrapper {
                     />,
                     <TextField
                       className="nabi-rates-field"
-                      fullWidth={true}
                       id="sixtyMinsRate"
                       name="sixtyMinsRate"
                       onBlur={[MockFunction]}
@@ -550,7 +534,6 @@ ShallowWrapper {
                     "nodeType": "function",
                     "props": Object {
                       "className": "nabi-rates-field",
-                      "fullWidth": true,
                       "id": "sixtyMinsRate",
                       "name": "sixtyMinsRate",
                       "onBlur": [MockFunction],
@@ -577,7 +560,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <WithStyles(ListItemText)
-                  primary="- 90 mins lesson"
+                  primary="- 90 mins"
                 />,
                 <WithStyles(ListItemSecondaryAction)>
                   <pure(AttachMoney)
@@ -585,7 +568,6 @@ ShallowWrapper {
                   />
                   <TextField
                     className="nabi-rates-field"
-                    fullWidth={true}
                     id="ninetyMinsRate"
                     name="ninetyMinsRate"
                     onBlur={[MockFunction]}
@@ -606,7 +588,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "primary": "- 90 mins lesson",
+                  "primary": "- 90 mins",
                 },
                 "ref": null,
                 "rendered": null,
@@ -623,7 +605,6 @@ ShallowWrapper {
                     />,
                     <TextField
                       className="nabi-rates-field"
-                      fullWidth={true}
                       id="ninetyMinsRate"
                       name="ninetyMinsRate"
                       onBlur={[MockFunction]}
@@ -654,7 +635,6 @@ ShallowWrapper {
                     "nodeType": "function",
                     "props": Object {
                       "className": "nabi-rates-field",
-                      "fullWidth": true,
                       "id": "ninetyMinsRate",
                       "name": "ninetyMinsRate",
                       "onBlur": [MockFunction],
@@ -702,7 +682,7 @@ ShallowWrapper {
             className="nabi-margin-top-small"
             variant="body2"
           >
-            Rates
+            Rates for lessons
           </WithStyles(Typography)>,
           <div
             className="rates"
@@ -711,7 +691,7 @@ ShallowWrapper {
               className="nabi-margin-bottom-small"
             >
               <WithStyles(ListItemText)
-                primary="- 30 mins lesson"
+                primary="- 30 mins"
               />
               <WithStyles(ListItemSecondaryAction)>
                 <pure(AttachMoney)
@@ -719,7 +699,6 @@ ShallowWrapper {
                 />
                 <TextField
                   className="nabi-rates-field"
-                  fullWidth={true}
                   id="thirtyMinsRate"
                   name="thirtyMinsRate"
                   onBlur={[MockFunction]}
@@ -735,7 +714,7 @@ ShallowWrapper {
               className="nabi-margin-bottom-small"
             >
               <WithStyles(ListItemText)
-                primary="- 45 mins lesson"
+                primary="- 45 mins"
               />
               <WithStyles(ListItemSecondaryAction)>
                 <pure(AttachMoney)
@@ -743,7 +722,6 @@ ShallowWrapper {
                 />
                 <TextField
                   className="nabi-rates-field"
-                  fullWidth={true}
                   id="fortyFiveMinsRate"
                   name="fortyFiveMinsRate"
                   onBlur={[MockFunction]}
@@ -759,7 +737,7 @@ ShallowWrapper {
               className="nabi-margin-bottom-small"
             >
               <WithStyles(ListItemText)
-                primary="- 60 mins lesson"
+                primary="- 60 mins"
               />
               <WithStyles(ListItemSecondaryAction)>
                 <pure(AttachMoney)
@@ -767,7 +745,6 @@ ShallowWrapper {
                 />
                 <TextField
                   className="nabi-rates-field"
-                  fullWidth={true}
                   id="sixtyMinsRate"
                   name="sixtyMinsRate"
                   onBlur={[MockFunction]}
@@ -783,7 +760,7 @@ ShallowWrapper {
               className="nabi-margin-bottom-small"
             >
               <WithStyles(ListItemText)
-                primary="- 90 mins lesson"
+                primary="- 90 mins"
               />
               <WithStyles(ListItemSecondaryAction)>
                 <pure(AttachMoney)
@@ -791,7 +768,6 @@ ShallowWrapper {
                 />
                 <TextField
                   className="nabi-rates-field"
-                  fullWidth={true}
                   id="ninetyMinsRate"
                   name="ninetyMinsRate"
                   onBlur={[MockFunction]}
@@ -816,12 +792,12 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "Rates",
+            "children": "Rates for lessons",
             "className": "nabi-margin-top-small",
             "variant": "body2",
           },
           "ref": null,
-          "rendered": "Rates",
+          "rendered": "Rates for lessons",
           "type": [Function],
         },
         Object {
@@ -834,7 +810,7 @@ ShallowWrapper {
                 className="nabi-margin-bottom-small"
               >
                 <WithStyles(ListItemText)
-                  primary="- 30 mins lesson"
+                  primary="- 30 mins"
                 />
                 <WithStyles(ListItemSecondaryAction)>
                   <pure(AttachMoney)
@@ -842,7 +818,6 @@ ShallowWrapper {
                   />
                   <TextField
                     className="nabi-rates-field"
-                    fullWidth={true}
                     id="thirtyMinsRate"
                     name="thirtyMinsRate"
                     onBlur={[MockFunction]}
@@ -858,7 +833,7 @@ ShallowWrapper {
                 className="nabi-margin-bottom-small"
               >
                 <WithStyles(ListItemText)
-                  primary="- 45 mins lesson"
+                  primary="- 45 mins"
                 />
                 <WithStyles(ListItemSecondaryAction)>
                   <pure(AttachMoney)
@@ -866,7 +841,6 @@ ShallowWrapper {
                   />
                   <TextField
                     className="nabi-rates-field"
-                    fullWidth={true}
                     id="fortyFiveMinsRate"
                     name="fortyFiveMinsRate"
                     onBlur={[MockFunction]}
@@ -882,7 +856,7 @@ ShallowWrapper {
                 className="nabi-margin-bottom-small"
               >
                 <WithStyles(ListItemText)
-                  primary="- 60 mins lesson"
+                  primary="- 60 mins"
                 />
                 <WithStyles(ListItemSecondaryAction)>
                   <pure(AttachMoney)
@@ -890,7 +864,6 @@ ShallowWrapper {
                   />
                   <TextField
                     className="nabi-rates-field"
-                    fullWidth={true}
                     id="sixtyMinsRate"
                     name="sixtyMinsRate"
                     onBlur={[MockFunction]}
@@ -906,7 +879,7 @@ ShallowWrapper {
                 className="nabi-margin-bottom-small"
               >
                 <WithStyles(ListItemText)
-                  primary="- 90 mins lesson"
+                  primary="- 90 mins"
                 />
                 <WithStyles(ListItemSecondaryAction)>
                   <pure(AttachMoney)
@@ -914,7 +887,6 @@ ShallowWrapper {
                   />
                   <TextField
                     className="nabi-rates-field"
-                    fullWidth={true}
                     id="ninetyMinsRate"
                     name="ninetyMinsRate"
                     onBlur={[MockFunction]}
@@ -938,7 +910,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <WithStyles(ListItemText)
-                    primary="- 30 mins lesson"
+                    primary="- 30 mins"
                   />,
                   <WithStyles(ListItemSecondaryAction)>
                     <pure(AttachMoney)
@@ -946,7 +918,6 @@ ShallowWrapper {
                     />
                     <TextField
                       className="nabi-rates-field"
-                      fullWidth={true}
                       id="thirtyMinsRate"
                       name="thirtyMinsRate"
                       onBlur={[MockFunction]}
@@ -967,7 +938,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "primary": "- 30 mins lesson",
+                    "primary": "- 30 mins",
                   },
                   "ref": null,
                   "rendered": null,
@@ -984,7 +955,6 @@ ShallowWrapper {
                       />,
                       <TextField
                         className="nabi-rates-field"
-                        fullWidth={true}
                         id="thirtyMinsRate"
                         name="thirtyMinsRate"
                         onBlur={[MockFunction]}
@@ -1015,7 +985,6 @@ ShallowWrapper {
                       "nodeType": "function",
                       "props": Object {
                         "className": "nabi-rates-field",
-                        "fullWidth": true,
                         "id": "thirtyMinsRate",
                         "name": "thirtyMinsRate",
                         "onBlur": [MockFunction],
@@ -1042,7 +1011,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <WithStyles(ListItemText)
-                    primary="- 45 mins lesson"
+                    primary="- 45 mins"
                   />,
                   <WithStyles(ListItemSecondaryAction)>
                     <pure(AttachMoney)
@@ -1050,7 +1019,6 @@ ShallowWrapper {
                     />
                     <TextField
                       className="nabi-rates-field"
-                      fullWidth={true}
                       id="fortyFiveMinsRate"
                       name="fortyFiveMinsRate"
                       onBlur={[MockFunction]}
@@ -1071,7 +1039,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "primary": "- 45 mins lesson",
+                    "primary": "- 45 mins",
                   },
                   "ref": null,
                   "rendered": null,
@@ -1088,7 +1056,6 @@ ShallowWrapper {
                       />,
                       <TextField
                         className="nabi-rates-field"
-                        fullWidth={true}
                         id="fortyFiveMinsRate"
                         name="fortyFiveMinsRate"
                         onBlur={[MockFunction]}
@@ -1119,7 +1086,6 @@ ShallowWrapper {
                       "nodeType": "function",
                       "props": Object {
                         "className": "nabi-rates-field",
-                        "fullWidth": true,
                         "id": "fortyFiveMinsRate",
                         "name": "fortyFiveMinsRate",
                         "onBlur": [MockFunction],
@@ -1146,7 +1112,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <WithStyles(ListItemText)
-                    primary="- 60 mins lesson"
+                    primary="- 60 mins"
                   />,
                   <WithStyles(ListItemSecondaryAction)>
                     <pure(AttachMoney)
@@ -1154,7 +1120,6 @@ ShallowWrapper {
                     />
                     <TextField
                       className="nabi-rates-field"
-                      fullWidth={true}
                       id="sixtyMinsRate"
                       name="sixtyMinsRate"
                       onBlur={[MockFunction]}
@@ -1175,7 +1140,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "primary": "- 60 mins lesson",
+                    "primary": "- 60 mins",
                   },
                   "ref": null,
                   "rendered": null,
@@ -1192,7 +1157,6 @@ ShallowWrapper {
                       />,
                       <TextField
                         className="nabi-rates-field"
-                        fullWidth={true}
                         id="sixtyMinsRate"
                         name="sixtyMinsRate"
                         onBlur={[MockFunction]}
@@ -1223,7 +1187,6 @@ ShallowWrapper {
                       "nodeType": "function",
                       "props": Object {
                         "className": "nabi-rates-field",
-                        "fullWidth": true,
                         "id": "sixtyMinsRate",
                         "name": "sixtyMinsRate",
                         "onBlur": [MockFunction],
@@ -1250,7 +1213,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <WithStyles(ListItemText)
-                    primary="- 90 mins lesson"
+                    primary="- 90 mins"
                   />,
                   <WithStyles(ListItemSecondaryAction)>
                     <pure(AttachMoney)
@@ -1258,7 +1221,6 @@ ShallowWrapper {
                     />
                     <TextField
                       className="nabi-rates-field"
-                      fullWidth={true}
                       id="ninetyMinsRate"
                       name="ninetyMinsRate"
                       onBlur={[MockFunction]}
@@ -1279,7 +1241,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "primary": "- 90 mins lesson",
+                    "primary": "- 90 mins",
                   },
                   "ref": null,
                   "rendered": null,
@@ -1296,7 +1258,6 @@ ShallowWrapper {
                       />,
                       <TextField
                         className="nabi-rates-field"
-                        fullWidth={true}
                         id="ninetyMinsRate"
                         name="ninetyMinsRate"
                         onBlur={[MockFunction]}
@@ -1327,7 +1288,6 @@ ShallowWrapper {
                       "nodeType": "function",
                       "props": Object {
                         "className": "nabi-rates-field",
-                        "fullWidth": true,
                         "id": "ninetyMinsRate",
                         "name": "ninetyMinsRate",
                         "onBlur": [MockFunction],

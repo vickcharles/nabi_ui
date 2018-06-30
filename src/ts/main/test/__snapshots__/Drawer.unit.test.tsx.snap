@@ -29,16 +29,73 @@ ShallowWrapper {
           onClick={[Function]}
           open={false}
         >
-          <WithStyles(MenuItem)
-            onClick={[Function]}
+          <Link
+            replace={false}
+            to="registration"
           >
-            *TODO*
-          </WithStyles(MenuItem)>
-          <WithStyles(MenuItem)
-            onClick={[Function]}
+            <WithStyles(MenuItem)
+              className="nabi-color-nabi nabi-margin-top-small"
+              onClick={[Function]}
+            >
+              Create Account
+            </WithStyles(MenuItem)>
+          </Link>
+          <Link
+            replace={false}
+            to="info-parents"
           >
-            *TODO*
-          </WithStyles(MenuItem)>
+            <WithStyles(MenuItem)
+              className={undefined}
+              onClick={[Function]}
+            >
+              Information for parents
+            </WithStyles(MenuItem)>
+          </Link>
+          <Link
+            replace={false}
+            to="info-instructors"
+          >
+            <WithStyles(MenuItem)
+              className={undefined}
+              onClick={[Function]}
+            >
+              Become a Nabi instructor
+            </WithStyles(MenuItem)>
+          </Link>
+          <Link
+            replace={false}
+            to="info-instruments"
+          >
+            <WithStyles(MenuItem)
+              className={undefined}
+              onClick={[Function]}
+            >
+              Don't have an instrument?
+            </WithStyles(MenuItem)>
+            <WithStyles(Divider) />
+          </Link>
+          <Link
+            replace={false}
+            to="terms-of-use"
+          >
+            <WithStyles(MenuItem)
+              className={undefined}
+              onClick={[Function]}
+            >
+              Terms of use
+            </WithStyles(MenuItem)>
+          </Link>
+          <Link
+            replace={false}
+            to="contact"
+          >
+            <WithStyles(MenuItem)
+              className={undefined}
+              onClick={[Function]}
+            >
+              Contact Us
+            </WithStyles(MenuItem)>
+          </Link>
         </WithStyles(Drawer)>,
       ],
     },
@@ -72,16 +129,73 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": Array [
-            <WithStyles(MenuItem)
-              onClick={[Function]}
+            <Link
+              replace={false}
+              to="registration"
             >
-              *TODO*
-            </WithStyles(MenuItem)>,
-            <WithStyles(MenuItem)
-              onClick={[Function]}
+              <WithStyles(MenuItem)
+                className="nabi-color-nabi nabi-margin-top-small"
+                onClick={[Function]}
+              >
+                Create Account
+              </WithStyles(MenuItem)>
+            </Link>,
+            <Link
+              replace={false}
+              to="info-parents"
             >
-              *TODO*
-            </WithStyles(MenuItem)>,
+              <WithStyles(MenuItem)
+                className={undefined}
+                onClick={[Function]}
+              >
+                Information for parents
+              </WithStyles(MenuItem)>
+            </Link>,
+            <Link
+              replace={false}
+              to="info-instructors"
+            >
+              <WithStyles(MenuItem)
+                className={undefined}
+                onClick={[Function]}
+              >
+                Become a Nabi instructor
+              </WithStyles(MenuItem)>
+            </Link>,
+            <Link
+              replace={false}
+              to="info-instruments"
+            >
+              <WithStyles(MenuItem)
+                className={undefined}
+                onClick={[Function]}
+              >
+                Don't have an instrument?
+              </WithStyles(MenuItem)>
+              <WithStyles(Divider) />
+            </Link>,
+            <Link
+              replace={false}
+              to="terms-of-use"
+            >
+              <WithStyles(MenuItem)
+                className={undefined}
+                onClick={[Function]}
+              >
+                Terms of use
+              </WithStyles(MenuItem)>
+            </Link>,
+            <Link
+              replace={false}
+              to="contact"
+            >
+              <WithStyles(MenuItem)
+                className={undefined}
+                onClick={[Function]}
+              >
+                Contact Us
+              </WithStyles(MenuItem)>
+            </Link>,
           ],
           "onClick": [Function],
           "open": false,
@@ -90,26 +204,226 @@ ShallowWrapper {
         "rendered": Array [
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "createAccount",
             "nodeType": "class",
             "props": Object {
-              "children": "*TODO*",
-              "onClick": [Function],
+              "children": Array [
+                <WithStyles(MenuItem)
+                  className="nabi-color-nabi nabi-margin-top-small"
+                  onClick={[Function]}
+                >
+                  Create Account
+                </WithStyles(MenuItem)>,
+                undefined,
+              ],
+              "replace": false,
+              "to": "registration",
             },
             "ref": null,
-            "rendered": "*TODO*",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Create Account",
+                  "className": "nabi-color-nabi nabi-margin-top-small",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Create Account",
+                "type": [Function],
+              },
+              undefined,
+            ],
             "type": [Function],
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "infoParents",
             "nodeType": "class",
             "props": Object {
-              "children": "*TODO*",
-              "onClick": [Function],
+              "children": Array [
+                <WithStyles(MenuItem)
+                  className={undefined}
+                  onClick={[Function]}
+                >
+                  Information for parents
+                </WithStyles(MenuItem)>,
+                undefined,
+              ],
+              "replace": false,
+              "to": "info-parents",
             },
             "ref": null,
-            "rendered": "*TODO*",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Information for parents",
+                  "className": undefined,
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Information for parents",
+                "type": [Function],
+              },
+              undefined,
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "infoInstructors",
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(MenuItem)
+                  className={undefined}
+                  onClick={[Function]}
+                >
+                  Become a Nabi instructor
+                </WithStyles(MenuItem)>,
+                undefined,
+              ],
+              "replace": false,
+              "to": "info-instructors",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Become a Nabi instructor",
+                  "className": undefined,
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Become a Nabi instructor",
+                "type": [Function],
+              },
+              undefined,
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "infoInstruments",
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(MenuItem)
+                  className={undefined}
+                  onClick={[Function]}
+                >
+                  Don't have an instrument?
+                </WithStyles(MenuItem)>,
+                <WithStyles(Divider) />,
+              ],
+              "replace": false,
+              "to": "info-instruments",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Don't have an instrument?",
+                  "className": undefined,
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Don't have an instrument?",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "termsOfUse",
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(MenuItem)
+                  className={undefined}
+                  onClick={[Function]}
+                >
+                  Terms of use
+                </WithStyles(MenuItem)>,
+                undefined,
+              ],
+              "replace": false,
+              "to": "terms-of-use",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Terms of use",
+                  "className": undefined,
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Terms of use",
+                "type": [Function],
+              },
+              undefined,
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "contact",
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <WithStyles(MenuItem)
+                  className={undefined}
+                  onClick={[Function]}
+                >
+                  Contact Us
+                </WithStyles(MenuItem)>,
+                undefined,
+              ],
+              "replace": false,
+              "to": "contact",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Contact Us",
+                  "className": undefined,
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Contact Us",
+                "type": [Function],
+              },
+              undefined,
+            ],
             "type": [Function],
           },
         ],
@@ -136,16 +450,73 @@ ShallowWrapper {
             onClick={[Function]}
             open={false}
           >
-            <WithStyles(MenuItem)
-              onClick={[Function]}
+            <Link
+              replace={false}
+              to="registration"
             >
-              *TODO*
-            </WithStyles(MenuItem)>
-            <WithStyles(MenuItem)
-              onClick={[Function]}
+              <WithStyles(MenuItem)
+                className="nabi-color-nabi nabi-margin-top-small"
+                onClick={[Function]}
+              >
+                Create Account
+              </WithStyles(MenuItem)>
+            </Link>
+            <Link
+              replace={false}
+              to="info-parents"
             >
-              *TODO*
-            </WithStyles(MenuItem)>
+              <WithStyles(MenuItem)
+                className={undefined}
+                onClick={[Function]}
+              >
+                Information for parents
+              </WithStyles(MenuItem)>
+            </Link>
+            <Link
+              replace={false}
+              to="info-instructors"
+            >
+              <WithStyles(MenuItem)
+                className={undefined}
+                onClick={[Function]}
+              >
+                Become a Nabi instructor
+              </WithStyles(MenuItem)>
+            </Link>
+            <Link
+              replace={false}
+              to="info-instruments"
+            >
+              <WithStyles(MenuItem)
+                className={undefined}
+                onClick={[Function]}
+              >
+                Don't have an instrument?
+              </WithStyles(MenuItem)>
+              <WithStyles(Divider) />
+            </Link>
+            <Link
+              replace={false}
+              to="terms-of-use"
+            >
+              <WithStyles(MenuItem)
+                className={undefined}
+                onClick={[Function]}
+              >
+                Terms of use
+              </WithStyles(MenuItem)>
+            </Link>
+            <Link
+              replace={false}
+              to="contact"
+            >
+              <WithStyles(MenuItem)
+                className={undefined}
+                onClick={[Function]}
+              >
+                Contact Us
+              </WithStyles(MenuItem)>
+            </Link>
           </WithStyles(Drawer)>,
         ],
       },
@@ -179,16 +550,73 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              <WithStyles(MenuItem)
-                onClick={[Function]}
+              <Link
+                replace={false}
+                to="registration"
               >
-                *TODO*
-              </WithStyles(MenuItem)>,
-              <WithStyles(MenuItem)
-                onClick={[Function]}
+                <WithStyles(MenuItem)
+                  className="nabi-color-nabi nabi-margin-top-small"
+                  onClick={[Function]}
+                >
+                  Create Account
+                </WithStyles(MenuItem)>
+              </Link>,
+              <Link
+                replace={false}
+                to="info-parents"
               >
-                *TODO*
-              </WithStyles(MenuItem)>,
+                <WithStyles(MenuItem)
+                  className={undefined}
+                  onClick={[Function]}
+                >
+                  Information for parents
+                </WithStyles(MenuItem)>
+              </Link>,
+              <Link
+                replace={false}
+                to="info-instructors"
+              >
+                <WithStyles(MenuItem)
+                  className={undefined}
+                  onClick={[Function]}
+                >
+                  Become a Nabi instructor
+                </WithStyles(MenuItem)>
+              </Link>,
+              <Link
+                replace={false}
+                to="info-instruments"
+              >
+                <WithStyles(MenuItem)
+                  className={undefined}
+                  onClick={[Function]}
+                >
+                  Don't have an instrument?
+                </WithStyles(MenuItem)>
+                <WithStyles(Divider) />
+              </Link>,
+              <Link
+                replace={false}
+                to="terms-of-use"
+              >
+                <WithStyles(MenuItem)
+                  className={undefined}
+                  onClick={[Function]}
+                >
+                  Terms of use
+                </WithStyles(MenuItem)>
+              </Link>,
+              <Link
+                replace={false}
+                to="contact"
+              >
+                <WithStyles(MenuItem)
+                  className={undefined}
+                  onClick={[Function]}
+                >
+                  Contact Us
+                </WithStyles(MenuItem)>
+              </Link>,
             ],
             "onClick": [Function],
             "open": false,
@@ -197,26 +625,226 @@ ShallowWrapper {
           "rendered": Array [
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "createAccount",
               "nodeType": "class",
               "props": Object {
-                "children": "*TODO*",
-                "onClick": [Function],
+                "children": Array [
+                  <WithStyles(MenuItem)
+                    className="nabi-color-nabi nabi-margin-top-small"
+                    onClick={[Function]}
+                  >
+                    Create Account
+                  </WithStyles(MenuItem)>,
+                  undefined,
+                ],
+                "replace": false,
+                "to": "registration",
               },
               "ref": null,
-              "rendered": "*TODO*",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Create Account",
+                    "className": "nabi-color-nabi nabi-margin-top-small",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Create Account",
+                  "type": [Function],
+                },
+                undefined,
+              ],
               "type": [Function],
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "infoParents",
               "nodeType": "class",
               "props": Object {
-                "children": "*TODO*",
-                "onClick": [Function],
+                "children": Array [
+                  <WithStyles(MenuItem)
+                    className={undefined}
+                    onClick={[Function]}
+                  >
+                    Information for parents
+                  </WithStyles(MenuItem)>,
+                  undefined,
+                ],
+                "replace": false,
+                "to": "info-parents",
               },
               "ref": null,
-              "rendered": "*TODO*",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Information for parents",
+                    "className": undefined,
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Information for parents",
+                  "type": [Function],
+                },
+                undefined,
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "infoInstructors",
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(MenuItem)
+                    className={undefined}
+                    onClick={[Function]}
+                  >
+                    Become a Nabi instructor
+                  </WithStyles(MenuItem)>,
+                  undefined,
+                ],
+                "replace": false,
+                "to": "info-instructors",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Become a Nabi instructor",
+                    "className": undefined,
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Become a Nabi instructor",
+                  "type": [Function],
+                },
+                undefined,
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "infoInstruments",
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(MenuItem)
+                    className={undefined}
+                    onClick={[Function]}
+                  >
+                    Don't have an instrument?
+                  </WithStyles(MenuItem)>,
+                  <WithStyles(Divider) />,
+                ],
+                "replace": false,
+                "to": "info-instruments",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Don't have an instrument?",
+                    "className": undefined,
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Don't have an instrument?",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "termsOfUse",
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(MenuItem)
+                    className={undefined}
+                    onClick={[Function]}
+                  >
+                    Terms of use
+                  </WithStyles(MenuItem)>,
+                  undefined,
+                ],
+                "replace": false,
+                "to": "terms-of-use",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Terms of use",
+                    "className": undefined,
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Terms of use",
+                  "type": [Function],
+                },
+                undefined,
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "contact",
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <WithStyles(MenuItem)
+                    className={undefined}
+                    onClick={[Function]}
+                  >
+                    Contact Us
+                  </WithStyles(MenuItem)>,
+                  undefined,
+                ],
+                "replace": false,
+                "to": "contact",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Contact Us",
+                    "className": undefined,
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Contact Us",
+                  "type": [Function],
+                },
+                undefined,
+              ],
               "type": [Function],
             },
           ],

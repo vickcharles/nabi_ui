@@ -1,3 +1,5 @@
+import * as moment from 'moment';
+
 export enum HearAboutUs {
   Google = 'google',
   Facebook = 'facebook',
@@ -61,7 +63,7 @@ export interface UserState {
   hearAboutUs: string;
   avatar?: string;
   displayName: string;
-  birthday?: Date;
+  birthday?: moment.Moment;
   state?: string;
   city?: string;
   country?: string;
