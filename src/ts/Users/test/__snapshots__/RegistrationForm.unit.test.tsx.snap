@@ -6,6 +6,34 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <RegistrationForm
     birthday={undefined}
+    fields={
+      Object {
+        "email": Object {
+          "error": undefined,
+          "touched": false,
+        },
+        "firstName": Object {
+          "error": undefined,
+          "touched": false,
+        },
+        "hearAboutUs": Object {
+          "error": undefined,
+          "touched": false,
+        },
+        "lastName": Object {
+          "error": undefined,
+          "touched": false,
+        },
+        "password": Object {
+          "error": undefined,
+          "touched": false,
+        },
+        "zipCode": Object {
+          "error": undefined,
+          "touched": false,
+        },
+      }
+    }
     handleBirthdayChange={[MockFunction]}
     handleChange={[MockFunction]}
     handleSubmit={[MockFunction]}
@@ -94,7 +122,9 @@ ShallowWrapper {
           Register as an instructor
         </WithStyles(Typography)>,
         <TextField
+          error={undefined}
           fullWidth={true}
+          helperText={undefined}
           id="firstName"
           margin="normal"
           name="firstName"
@@ -104,7 +134,9 @@ ShallowWrapper {
           select={false}
         />,
         <TextField
+          error={undefined}
           fullWidth={true}
+          helperText={undefined}
           id="lastName"
           margin="normal"
           name="lastName"
@@ -114,7 +146,9 @@ ShallowWrapper {
           select={false}
         />,
         <TextField
+          error={undefined}
           fullWidth={true}
+          helperText={undefined}
           id="zipCode"
           margin="normal"
           name="zipCode"
@@ -124,7 +158,9 @@ ShallowWrapper {
           select={false}
         />,
         <TextField
+          error={undefined}
           fullWidth={true}
+          helperText={undefined}
           id="email"
           margin="normal"
           name="email"
@@ -134,7 +170,9 @@ ShallowWrapper {
           select={false}
         />,
         <TextField
+          error={undefined}
           fullWidth={true}
+          helperText={undefined}
           id="password"
           margin="normal"
           name="password"
@@ -182,6 +220,7 @@ ShallowWrapper {
           />
         </WithStyles(FormControl)>,
         <WithStyles(FormControl)
+          error={undefined}
           fullWidth={true}
           required={true}
         >
@@ -525,7 +564,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "error": undefined,
           "fullWidth": true,
+          "helperText": undefined,
           "id": "firstName",
           "margin": "normal",
           "name": "firstName",
@@ -543,7 +584,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "error": undefined,
           "fullWidth": true,
+          "helperText": undefined,
           "id": "lastName",
           "margin": "normal",
           "name": "lastName",
@@ -561,7 +604,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "error": undefined,
           "fullWidth": true,
+          "helperText": undefined,
           "id": "zipCode",
           "margin": "normal",
           "name": "zipCode",
@@ -579,7 +624,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "error": undefined,
           "fullWidth": true,
+          "helperText": undefined,
           "id": "email",
           "margin": "normal",
           "name": "email",
@@ -597,7 +644,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "error": undefined,
           "fullWidth": true,
+          "helperText": undefined,
           "id": "password",
           "margin": "normal",
           "name": "password",
@@ -755,6 +804,7 @@ ShallowWrapper {
               </WithStyles(MenuItem)>
             </WithStyles(Select)>,
           ],
+          "error": undefined,
           "fullWidth": true,
           "required": true,
         },
@@ -1024,7 +1074,9 @@ ShallowWrapper {
             Register as an instructor
           </WithStyles(Typography)>,
           <TextField
+            error={undefined}
             fullWidth={true}
+            helperText={undefined}
             id="firstName"
             margin="normal"
             name="firstName"
@@ -1034,7 +1086,9 @@ ShallowWrapper {
             select={false}
           />,
           <TextField
+            error={undefined}
             fullWidth={true}
+            helperText={undefined}
             id="lastName"
             margin="normal"
             name="lastName"
@@ -1044,7 +1098,9 @@ ShallowWrapper {
             select={false}
           />,
           <TextField
+            error={undefined}
             fullWidth={true}
+            helperText={undefined}
             id="zipCode"
             margin="normal"
             name="zipCode"
@@ -1054,7 +1110,9 @@ ShallowWrapper {
             select={false}
           />,
           <TextField
+            error={undefined}
             fullWidth={true}
+            helperText={undefined}
             id="email"
             margin="normal"
             name="email"
@@ -1064,7 +1122,9 @@ ShallowWrapper {
             select={false}
           />,
           <TextField
+            error={undefined}
             fullWidth={true}
+            helperText={undefined}
             id="password"
             margin="normal"
             name="password"
@@ -1112,6 +1172,7 @@ ShallowWrapper {
             />
           </WithStyles(FormControl)>,
           <WithStyles(FormControl)
+            error={undefined}
             fullWidth={true}
             required={true}
           >
@@ -1455,7 +1516,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "error": undefined,
             "fullWidth": true,
+            "helperText": undefined,
             "id": "firstName",
             "margin": "normal",
             "name": "firstName",
@@ -1473,7 +1536,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "error": undefined,
             "fullWidth": true,
+            "helperText": undefined,
             "id": "lastName",
             "margin": "normal",
             "name": "lastName",
@@ -1491,7 +1556,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "error": undefined,
             "fullWidth": true,
+            "helperText": undefined,
             "id": "zipCode",
             "margin": "normal",
             "name": "zipCode",
@@ -1509,7 +1576,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "error": undefined,
             "fullWidth": true,
+            "helperText": undefined,
             "id": "email",
             "margin": "normal",
             "name": "email",
@@ -1527,7 +1596,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "error": undefined,
             "fullWidth": true,
+            "helperText": undefined,
             "id": "password",
             "margin": "normal",
             "name": "password",
@@ -1685,6 +1756,7 @@ ShallowWrapper {
                 </WithStyles(MenuItem)>
               </WithStyles(Select)>,
             ],
+            "error": undefined,
             "fullWidth": true,
             "required": true,
           },

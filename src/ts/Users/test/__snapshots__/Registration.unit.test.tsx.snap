@@ -30,6 +30,34 @@ ShallowWrapper {
         >
           <RegistrationForm
             birthday={"2017-02-14T12:51:48.000Z"}
+            fields={
+              Object {
+                "email": Object {
+                  "error": undefined,
+                  "touched": false,
+                },
+                "firstName": Object {
+                  "error": undefined,
+                  "touched": false,
+                },
+                "hearAboutUs": Object {
+                  "error": undefined,
+                  "touched": false,
+                },
+                "lastName": Object {
+                  "error": undefined,
+                  "touched": false,
+                },
+                "password": Object {
+                  "error": undefined,
+                  "touched": false,
+                },
+                "zipCode": Object {
+                  "error": undefined,
+                  "touched": false,
+                },
+              }
+            }
             handleBirthdayChange={[Function]}
             handleChange={[Function]}
             handleSubmit={[Function]}
@@ -65,6 +93,34 @@ ShallowWrapper {
         "props": Object {
           "children": <RegistrationForm
             birthday={"2017-02-14T12:51:48.000Z"}
+            fields={
+              Object {
+                "email": Object {
+                  "error": undefined,
+                  "touched": false,
+                },
+                "firstName": Object {
+                  "error": undefined,
+                  "touched": false,
+                },
+                "hearAboutUs": Object {
+                  "error": undefined,
+                  "touched": false,
+                },
+                "lastName": Object {
+                  "error": undefined,
+                  "touched": false,
+                },
+                "password": Object {
+                  "error": undefined,
+                  "touched": false,
+                },
+                "zipCode": Object {
+                  "error": undefined,
+                  "touched": false,
+                },
+              }
+            }
             handleBirthdayChange={[Function]}
             handleChange={[Function]}
             handleSubmit={[Function]}
@@ -80,6 +136,32 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "birthday": "2017-02-14T12:51:48.000Z",
+            "fields": Object {
+              "email": Object {
+                "error": undefined,
+                "touched": false,
+              },
+              "firstName": Object {
+                "error": undefined,
+                "touched": false,
+              },
+              "hearAboutUs": Object {
+                "error": undefined,
+                "touched": false,
+              },
+              "lastName": Object {
+                "error": undefined,
+                "touched": false,
+              },
+              "password": Object {
+                "error": undefined,
+                "touched": false,
+              },
+              "zipCode": Object {
+                "error": undefined,
+                "touched": false,
+              },
+            },
             "handleBirthdayChange": [Function],
             "handleChange": [Function],
             "handleSubmit": [Function],
@@ -123,6 +205,34 @@ ShallowWrapper {
           >
             <RegistrationForm
               birthday={"2017-02-14T12:51:48.000Z"}
+              fields={
+                Object {
+                  "email": Object {
+                    "error": undefined,
+                    "touched": false,
+                  },
+                  "firstName": Object {
+                    "error": undefined,
+                    "touched": false,
+                  },
+                  "hearAboutUs": Object {
+                    "error": undefined,
+                    "touched": false,
+                  },
+                  "lastName": Object {
+                    "error": undefined,
+                    "touched": false,
+                  },
+                  "password": Object {
+                    "error": undefined,
+                    "touched": false,
+                  },
+                  "zipCode": Object {
+                    "error": undefined,
+                    "touched": false,
+                  },
+                }
+              }
               handleBirthdayChange={[Function]}
               handleChange={[Function]}
               handleSubmit={[Function]}
@@ -158,6 +268,34 @@ ShallowWrapper {
           "props": Object {
             "children": <RegistrationForm
               birthday={"2017-02-14T12:51:48.000Z"}
+              fields={
+                Object {
+                  "email": Object {
+                    "error": undefined,
+                    "touched": false,
+                  },
+                  "firstName": Object {
+                    "error": undefined,
+                    "touched": false,
+                  },
+                  "hearAboutUs": Object {
+                    "error": undefined,
+                    "touched": false,
+                  },
+                  "lastName": Object {
+                    "error": undefined,
+                    "touched": false,
+                  },
+                  "password": Object {
+                    "error": undefined,
+                    "touched": false,
+                  },
+                  "zipCode": Object {
+                    "error": undefined,
+                    "touched": false,
+                  },
+                }
+              }
               handleBirthdayChange={[Function]}
               handleChange={[Function]}
               handleSubmit={[Function]}
@@ -173,6 +311,32 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "birthday": "2017-02-14T12:51:48.000Z",
+              "fields": Object {
+                "email": Object {
+                  "error": undefined,
+                  "touched": false,
+                },
+                "firstName": Object {
+                  "error": undefined,
+                  "touched": false,
+                },
+                "hearAboutUs": Object {
+                  "error": undefined,
+                  "touched": false,
+                },
+                "lastName": Object {
+                  "error": undefined,
+                  "touched": false,
+                },
+                "password": Object {
+                  "error": undefined,
+                  "touched": false,
+                },
+                "zipCode": Object {
+                  "error": undefined,
+                  "touched": false,
+                },
+              },
               "handleBirthdayChange": [Function],
               "handleChange": [Function],
               "handleSubmit": [Function],

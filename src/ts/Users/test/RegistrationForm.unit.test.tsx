@@ -2,6 +2,7 @@ import * as React from 'react';
 import RegistrationForm from '../components/RegistrationForm';
 import { mount, shallow } from 'enzyme';
 import { Role } from '../model';
+import { fields } from '../components/RegistrationValidator';
 
 describe('RegistrationForm', () => {
   let wrapper: any;
@@ -19,6 +20,7 @@ describe('RegistrationForm', () => {
           hearAboutUs=""
           birthday={undefined}
           selectedRole=""
+          fields={fields}
         />
       );
     });
@@ -79,6 +81,28 @@ describe('RegistrationForm', () => {
         expect(wrapper.find('fieldset')).toHaveLength(1);
       });
     });
+
+    describe('When fields has erros', () => {
+      let _fields = { 
+        ...fields, 
+        ['firstName']: { 
+          toucehd: true, 
+          error: 'Invalid name. Must contain at least two characters and alphabetical letters only' 
+        }
+      };
+      beforeEach(() => {
+        wrapper.setProps({ fields: _fields });
+      });
+
+      it('Text contains \'Invalid Name. Must contain at ...\' When FirstName Has Errors', () => {
+        expect(
+          wrapper
+            .find('#firstName-helper-text')
+            .at(0)
+            .text()
+        ).toEqual('Invalid name. Must contain at least two characters and alphabetical letters only');
+      });
+    });
   });
 
   describe('Shallow', () => {
@@ -91,6 +115,7 @@ describe('RegistrationForm', () => {
           hearAboutUs=""
           birthday={undefined}
           selectedRole=""
+          fields={fields}
         />
       );
     });
