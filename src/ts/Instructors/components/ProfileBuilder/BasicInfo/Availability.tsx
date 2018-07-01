@@ -79,7 +79,7 @@ export class Availability extends React.Component<AvailabilityProps, Availabilit
 
   public toggleAvailability(dayTime: string): void {
     this.setState(
-      { [dayTime]: !this.state[dayTime] }, 
+      { [dayTime]: !this.state[dayTime] },
       () => {
       const instructor = {
         userId: this.props.userId,
@@ -92,7 +92,20 @@ export class Availability extends React.Component<AvailabilityProps, Availabilit
     });
   }
 
-  public render(): JSX.Element {      
+  public renderWeekdays(): JSX.Element[] {
+    const weekdays = ['M', 'Tu', 'W', 'Th', 'F', 'Sa', 'Su'];
+    return weekdays.map(weekday => {
+      return (
+        <GridListTile key={weekday} className="nabi-align-center">
+          <GridListTileBar
+              title={weekday}
+          />
+        </GridListTile>
+      );
+    });
+  }
+
+  public render(): JSX.Element {
     return (
       <div>
         <Typography className="nabi-margin-top-small nabi-margin-bottom-xsmall" variant="body2">
@@ -115,41 +128,9 @@ export class Availability extends React.Component<AvailabilityProps, Availabilit
             <GridListTile key={2} cols={2} className="nabi-background-white nabi-align-center">
               <GridListTileBar className="nabi-text-dark nabi-font-weight-bold" title="Schedule"/>
             </GridListTile>
-            <GridListTile className="nabi-align-center">
-              <GridListTileBar
-                title="M"
-              />
-            </GridListTile>
-            <GridListTile className="nabi-align-center">
-              <GridListTileBar
-                title="Tu"
-              />
-            </GridListTile>
-            <GridListTile className="nabi-align-center">
-              <GridListTileBar
-                title="W"
-              />
-            </GridListTile>
-            <GridListTile className="nabi-align-center">
-              <GridListTileBar
-                title="Th"
-              />
-            </GridListTile>
-            <GridListTile className="nabi-align-center">
-              <GridListTileBar
-                title="F"
-              />
-            </GridListTile>
-            <GridListTile className="nabi-align-center">
-              <GridListTileBar
-                title="Sa"
-              />
-            </GridListTile>
-            <GridListTile className="nabi-align-center">
-              <GridListTileBar
-                title="Su"
-              />
-            </GridListTile>
+
+            {this.renderWeekdays()}
+
             <GridListTile cols={2} className="nabi-align-center">
               <GridListTileBar
                 title="Early Morning"
