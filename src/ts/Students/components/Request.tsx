@@ -1,6 +1,5 @@
 import * as React from 'react';
 import RequestForm from './RequestForm';
-
 import { PageTitle } from '../../main';
 
 export class Request extends React.Component {
@@ -14,5 +13,4 @@ export class Request extends React.Component {
       </div>
     );
   }
-
 }

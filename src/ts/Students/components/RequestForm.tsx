@@ -15,7 +15,7 @@ import { LessonDuration } from '../../Instructors/model';
 /**
  * RequestForm component
  */
-const RequestForm = () => {
+const RequestForm: React.StatelessComponent = props => {
   const instumentSelectItems = instruments.map(instrument => {
     const instrumentName = instrument.charAt(0).toUpperCase() + instrument.slice(1);
     return (
@@ -29,12 +29,12 @@ const RequestForm = () => {
         autoComplete="off"
       >
       <div className="request">
-      <Typography className="nabi-margin-top-small  typography" variant="body2">
+      <Typography className="nabi-margin-top-small typography" variant="body2">
         Instrument
       </Typography>
 
       <FormControl className="nabi-instruments-select instrument">
-        <InputLabel htmlFor="instrument"> Select instrument</InputLabel>
+        <InputLabel htmlFor="instrument">Piano</InputLabel>
         <Select
           input={<Input id="instrument" name="instrument" />}
           value={''}
@@ -49,7 +49,7 @@ const RequestForm = () => {
       </Typography>
 
       <FormControl className="nabi-instruments-select skill-level">
-      <InputLabel htmlFor="Beginner"> Beginner</InputLabel>
+      <InputLabel htmlFor="skillLevel"> Beginner</InputLabel>
         <Select
           input={<Input id="skillLevel" name="skillLevel" />}
           value={''}
@@ -59,6 +59,7 @@ const RequestForm = () => {
           <MenuItem value={SkillLevel.advanced}>{SkillLevel.advanced}</MenuItem>
         </Select>
       </FormControl>
+      </div>
       <div className="request">
       <Typography className="nabi-margin-top-small typography" variant="body2">
         Place for lessson
@@ -93,18 +94,19 @@ const RequestForm = () => {
           <MenuItem value={LessonDuration.ninetyMins}>{LessonDuration.ninetyMins}</MenuItem>
         </Select>
       </FormControl>
+      </div>
+       <div className="request">
         <Typography className="nabi-margin-top-large" variant="body2">
-        Request title
+          Request title
         </Typography>
-      <TextField
+        <TextField
           fullWidth={true}
           id="request title"
           margin="normal"
           name="request title"
           placeholder="Request title. Example: &quot;piano teacher needed&quot;"
           required={true}
-          value={''}
-      />
+        />
         <Typography className="nabi-margin-top-small" variant="body2">
           Request message
         </Typography>
@@ -118,7 +120,6 @@ const RequestForm = () => {
           fullWidth={true}
           rows={6}
         />
-       </div>
        </div>
         <Button color="primary" variant="raised" className="nabi-send-request">
           SEND REQUEST
