@@ -74,7 +74,7 @@ const RequestForm = () => {
           <MenuItem value={PlaceForLessons.studio}>{PlaceForLessons.studio}</MenuItem>
           <MenuItem value={PlaceForLessons.online}>{PlaceForLessons.online}</MenuItem>
         </Select>
-      </FormControl>
+        </FormControl>
        </div>
        <div className="request">
       <Typography className="nabi-margin-top-small typography" variant="body2">
@@ -82,7 +82,7 @@ const RequestForm = () => {
       </Typography>
 
       <FormControl className="nabi-instruments-select">
-      <InputLabel htmlFor="lesssonduration">{LessonDuration.fortyFiveMins}</InputLabel>
+       <InputLabel htmlFor="lesssonduration">{LessonDuration.fortyFiveMins}</InputLabel>
         <Select
           input={<Input id="lesssonDuration" name="lesssonDuration" />}
           value={''}
@@ -93,9 +93,9 @@ const RequestForm = () => {
           <MenuItem value={LessonDuration.ninetyMins}>{LessonDuration.ninetyMins}</MenuItem>
         </Select>
       </FormControl>
-      <Typography className="nabi-margin-top-large" variant="body2">
+        <Typography className="nabi-margin-top-large" variant="body2">
         Request title
-      </Typography>
+        </Typography>
       <TextField
           fullWidth={true}
           id="request title"
@@ -120,7 +120,7 @@ const RequestForm = () => {
         />
        </div>
        </div>
-       <Button color="primary" variant="raised" className="nabi-send-request">
+        <Button color="primary" variant="raised" className="nabi-send-request">
           SEND REQUEST
         </Button>
       </form>
