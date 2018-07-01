@@ -313,7 +313,10 @@ input {
 .nabi-padding-left-large {
 	padding-left: 40px !important;
 }
-
+/*Display*/
+.display-inline {
+	display: inline-block !important;
+}
 /*POSITION*/
 .nabi-position-relative {
 	position: relative;
@@ -506,6 +509,11 @@ input {
 .nabi-instruments-add {
 	margin-top: 15px !important;
 }
+.nabi-send-request{
+   margin-top: 30px !important;
+   text-align: right !important;
+   margin-right: 30px !important;
+}
 
 /*Rates*/
 .nabi-rates-field input {
@@ -532,6 +540,9 @@ input {
 	/*Rates*/
 	.nabi-rates-field {
 		display: inline !important;
+	}
+	.request .nabi-instruments-select {
+		margin-left: 0px;
 	}
 	/*Homepage*/
 	#banner .container {
@@ -591,6 +602,7 @@ input {
 		padding-right: 15px;
 		width: 750px;
 	}
+
 	#nabi-logo {
 		display: inherit;
 		margin: 0 auto;
@@ -727,8 +739,22 @@ input {
     width: 250px;
 	}
 	.free-lesson-image {
-		margin-left: 20px;
+	margin-left: 20px;
 	}
+	
+	/*REQUEST INSTRUCTOR FORM*/
+    .request .typography {
+	display: inline-block;
+    }
+    .request .nabi-instruments-select {
+	margin-left: 40px;
+    }
+    .request .skill-level{
+	margin-left: 92px;
+    }
+    .request .instrument{
+	margin-left: 78px;
+    }
 }
 
 /* Laptops ----------- */

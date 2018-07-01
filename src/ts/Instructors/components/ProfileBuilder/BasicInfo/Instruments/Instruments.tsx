@@ -24,7 +24,7 @@ const Instruments: React.StatelessComponent<InstrumentsProps> = props => {
       <MenuItem key={instrument} value={instrument}>{instrumentName}</MenuItem>
     );
   });
-  
+
   return (
     <div className="nabi-instruments">
       <FormControl className="nabi-instruments-select">

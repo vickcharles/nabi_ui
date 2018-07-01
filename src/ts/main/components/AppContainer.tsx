@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Dispatch } from 'redux';
 import { connect } from 'react-redux';
 import { Route, withRouter, Switch } from 'react-router-dom';
+import { Request } from '../../Students/components/Request';
 
 import Header from './Header';
 import Welcome from './Welcome';
@@ -99,6 +100,9 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
         actionUrl="profile-builder"
       />
     );
+    const renderRequestInstructor = (props: any) => (
+     <Request />
+    );
 
     /**
      * Renders ProfileBuilder component
@@ -145,6 +149,11 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
             path="/welcome-instructor/:id"
             render={renderWelcomeInstructors}
           />
+           <Route
+            exact={true}
+            path="/request"
+            render={renderRequestInstructor}
+           />
           <Route
             exact={true}
             path="/profile-builder/:id"
