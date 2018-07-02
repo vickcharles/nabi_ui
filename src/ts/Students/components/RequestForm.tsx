@@ -121,9 +121,11 @@ const RequestForm: React.StatelessComponent = props => {
           rows={6}
         />
        </div>
+       <div className="request-button">
         <Button color="primary" variant="raised" className="nabi-send-request">
           SEND REQUEST
         </Button>
+        </div>
       </form>
     );
   };

@@ -509,10 +509,19 @@ input {
 .nabi-instruments-add {
 	margin-top: 15px !important;
 }
-.nabi-send-request{
-   margin-top: 30px !important;
-   text-align: right !important;
-   margin-right: 30px !important;
+
+.request-button{
+	width: 100%;
+	height: px;
+	position: relative;
+}
+.request-button .nabi-send-request{
+	text-align: center !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	position: absolute;
+	margin-top: 30px !important;
+	right: 0% !important;
 }
 
 /*Rates*/
@@ -568,6 +577,7 @@ input {
 		text-align: center;
 		width: 55px !important;
 	}
+
 	#nabi-logo-text {
 		font-size: 16px;
 	}
