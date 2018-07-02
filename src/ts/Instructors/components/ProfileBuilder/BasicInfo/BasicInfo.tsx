@@ -7,7 +7,8 @@ import Typography from 'material-ui/Typography';
 
 import { UserState } from '../../../../Users/model';
 import { updateUser } from '../../../../Users';
-import { InstructorType, InstrumentsType, PlaceForLessonsType, RatesType, SkillLevel } from '../../../model';
+import { InstructorType, InstrumentsType, SkillLevel } from '../../../model';
+import { PlaceForLessonsType, InstructorTypes, RatesType } from '../../../../main/model';
 import { updateInstructor } from '../../../';
 import NameLocationBio from './NameLocationBio/NameLocationBio';
 import ImageUploader from './ImageUploader';
@@ -30,7 +31,7 @@ interface BasicInfoDispatchProps {
  * BasicInfo's own props
  * @interface BasicInfoOwnProps
  */
-interface BasicInfoOwnProps { 
+interface BasicInfoOwnProps {
   user: UserState;
   changeAvatar: (id: string, avatar: string) => void;
 }
@@ -171,7 +172,7 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
       ninetyMinsRate: this.state.ninetyMinsRate,
     };
 
-    const instructor: InstructorType =  {
+    const instructor: InstructorTypes =  {
       userId: this.props.user.id,
       rates: rates
     };
@@ -182,7 +183,7 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
   public handleChangePlaceForLessons(event: any): void {
     const target = event.target;
     const name = target.name;
-    
+
     if (target.checked) {
       this.setState({ [name]: true }, () => {
         const placeForLessons = {
@@ -190,8 +191,8 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
           studio: this.state.studio,
           online: this.state.online
         };
-    
-        const instructor: InstructorType =  {
+
+        const instructor: InstructorTypes =  {
           userId: this.props.user.id,
           placeForLessons: placeForLessons
         };
@@ -204,8 +205,8 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
           studio: this.state.studio,
           online: this.state.online
         };
-    
-        const instructor: InstructorType =  {
+
+        const instructor: InstructorTypes =  {
           userId: this.props.user.id,
           placeForLessons: placeForLessons
         };
@@ -222,7 +223,7 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
 
     this.updateInstructorCall(instructor);
   }
-  
+
   public render(): JSX.Element {
     const selectedInstruments = this.state.instruments.map((instrument, i) => (
       <SelectedInstrument
@@ -235,10 +236,10 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
 
     return (
       <div>
-        <ImageUploader 
+        <ImageUploader
           imageChanged={(avatar: string) => {this.props.changeAvatar(this.props.user.id, avatar); }}
         />
-        <NameLocationBio 
+        <NameLocationBio
           user={this.props.user}
           bioBlur={this.handleBlurBio}
           bioChange={this.handleChange}
@@ -256,15 +257,15 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
           handleChange={this.handleChange}
           addInstrument={this.addInstrument}
         />
-        <Rates 
-          handleChange={this.handleChange} 
+        <Rates
+          handleChange={this.handleChange}
           thirtyMinsRate={this.state.thirtyMinsRate}
           fortyFiveMinsRate={this.state.fortyFiveMinsRate}
           sixtyMinsRate={this.state.sixtyMinsRate}
           ninetyMinsRate={this.state.ninetyMinsRate}
           updateRates={this.updateRates}
         />
-        <PlaceForLessons 
+        <PlaceForLessons
           handleChange={this.handleChange}
           handleChangePlaceForLessons={this.handleChangePlaceForLessons}
           home={this.state.home}
@@ -273,7 +274,7 @@ export class BasicInfo extends React.Component<BasicInfoProps, BasicInfoState> {
           studioAddress={this.state.studioAddress}
           updateStudioAddress={this.updateStudioAddress}
         />
-        <Availability 
+        <Availability
           updateInstructor={(instructor: InstructorType) => this.updateInstructorCall(instructor)}
           userId={this.props.user.id}
         />

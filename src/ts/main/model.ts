@@ -42,6 +42,55 @@ export const nonRegisteredUserMenuItems = {
   },
 };
 
+export enum PlaceForLessons {
+  home = 'Student\'s home',
+  studio = 'Instructor\'s studio',
+  online = 'Online',
+}
+
+export interface PlaceForLessonsOptions {
+  label: PlaceForLessons;
+  name: string;
+}
+
+export const placeForLessonsOptions = {
+  Home: <PlaceForLessonsOptions> {
+    label: PlaceForLessons.home,
+    name: 'home'
+  },
+  Studio: <PlaceForLessonsOptions> {
+    label: PlaceForLessons.studio,
+    name: 'studio'
+  },
+  Online: <PlaceForLessonsOptions> {
+    label: PlaceForLessons.online,
+    name: 'online'
+  }
+};
+export enum LessonDuration {
+  thirtyMins = '30 mins',
+  fortyFiveMins = '45 mins',
+  sixtyMins = '60 mins',
+  ninetyMins = '90 mins'
+}
+
+export interface RatesType {
+  thirtyMinsRate: number;
+  fortyFiveMinsRate: number;
+  sixtyMinsRate: number;
+  ninetyMinsRate: number;
+}
+
+export interface PlaceForLessonsType {
+  home: boolean;
+  studio: boolean;
+  online: boolean;
+}
+export interface InstructorTypes {
+  placeForLessons?: PlaceForLessonsType;
+  rates?: RatesType;
+  userId: string;
+}
 /**
  * State for firing redirect
  * @interface RedirectState

@@ -100,52 +100,6 @@ export interface EducationType {
   fieldOfStudy: string;
 }
 
-export enum PlaceForLessons {
-  home = 'Student\'s home',
-  studio = 'Instructor\'s studio',
-  online = 'Online',
-}
-
-export interface PlaceForLessonsOptions {
-  label: PlaceForLessons;
-  name: string;
-}
-
-export const placeForLessonsOptions = {
-  Home: <PlaceForLessonsOptions> {
-    label: PlaceForLessons.home,
-    name: 'home'
-  },
-  Studio: <PlaceForLessonsOptions> {
-    label: PlaceForLessons.studio,
-    name: 'studio'
-  },
-  Online: <PlaceForLessonsOptions> {
-    label: PlaceForLessons.online,
-    name: 'online'
-  }
-};
-
-export interface PlaceForLessonsType {
-  home: boolean;
-  studio: boolean;
-  online: boolean;
-}
-
-export enum LessonDuration {
-  thirtyMins = '30 mins',
-  fortyFiveMins = '45 mins',
-  sixtyMins = '60 mins',
-  ninetyMins = '90 mins'
-}
-
-export interface RatesType {
-  thirtyMinsRate: number;
-  fortyFiveMinsRate: number;
-  sixtyMinsRate: number;
-  ninetyMinsRate: number;
-}
-
 export enum SkillLevel {
   beginner = 'Beginner',
   intermediate = 'Intermediate',
@@ -156,13 +110,17 @@ export interface InstrumentsType {
   instrument: string;
   skillLevel: SkillLevel;
 }
+export interface RatesType {
+  thirtyMinsRate: number;
+  fortyFiveMinsRate: number;
+  sixtyMinsRate: number;
+  ninetyMinsRate: number;
+}
 
 export interface InstructorType {
   userId: string;
   bio?: string;
   instruments?: InstrumentsType[];
-  rates?: RatesType;
-  placeForLessons?: PlaceForLessonsType;
   studioAddress?: string;
   education?: EducationType[];
   experience?: ExperienceType[];

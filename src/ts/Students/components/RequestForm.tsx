@@ -9,8 +9,8 @@ import Button from 'material-ui/Button';
 import Select from 'material-ui/Select';
 import { instruments } from '../../../assets/data/instruments';
 import { SkillLevel } from '../../Instructors/model';
-import { PlaceForLessons } from '../../Instructors/model';
-import { LessonDuration } from '../../Instructors/model';
+import { PlaceForLessons } from '../../main/model';
+import { LessonDuration } from '../../main/model';
 
 /**
  * RequestForm component
@@ -62,11 +62,11 @@ const RequestForm: React.StatelessComponent = props => {
       </div>
       <div className="request">
       <Typography className="nabi-margin-top-small typography" variant="body2">
-        Place for lessson
+        Place for lessons
       </Typography>
 
       <FormControl className="nabi-instruments-select">
-      <InputLabel htmlFor="Placeforlessson">{PlaceForLessons.home}</InputLabel>
+      <InputLabel htmlFor="Placeforlessons">{PlaceForLessons.home}</InputLabel>
         <Select
           input={<Input id="Placeforlessson" name="Placeforlessson" />}
           value={''}
