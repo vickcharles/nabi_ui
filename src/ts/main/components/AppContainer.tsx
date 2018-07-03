@@ -160,9 +160,14 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
             path="/welcome-instructor/:id"
             render={renderWelcomeInstructors}
           />
+          <Route
+            exact={true}
+            path="/request-instructor/:id"
+            render={renderRequestInstructor}
+          />
            <Route
             exact={true}
-            path="/welcome-student"
+            path="/welcome-student/:id"
             render={renderWelcomeStudent}
            />
           <Route
