@@ -102,6 +102,17 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
     );
     const renderRequestInstructor = (props: any) => (
      <Request />
+    /**
+     * Renders Welcome for students
+     */
+    );
+
+    const renderWelcomeStudent = (props: any) => (
+      <Welcome
+        welcomeText="Now is time to send a request and connect with music teachers in your area."
+        actionText="REQUEST INSTRUCTOR"
+        actionUrl="request-instructor"
+      />
     );
 
     /**
@@ -151,8 +162,8 @@ class AppContainer extends React.Component<AppContainerProps, {}> {
           />
            <Route
             exact={true}
-            path="/request"
-            render={renderRequestInstructor}
+            path="/welcome-student"
+            render={renderWelcomeStudent}
            />
           <Route
             exact={true}

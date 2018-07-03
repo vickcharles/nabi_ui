@@ -7,7 +7,7 @@ describe('PopularInstruments', () => {
 
   beforeEach(() => {
     wrapper = shallow(
-      <InstrumentCard 
+      <InstrumentCard
         id=""
         index={0}
         image=""

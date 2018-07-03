@@ -67,7 +67,7 @@ class InstrumentCard extends React.Component<PropsWithStyles, {}> {
               Learn {this.props.instrument}
             </Typography>
             <Typography>
-              {this.props.instructors} {this.props.instrument} instructors in your area.
+              {this.props.instructors} {this.props.instrument} instructors in your area
             </Typography>
             <Link to="registration-student">
               <Button size="small" color="primary" className="nabi-padding-left-zero">
